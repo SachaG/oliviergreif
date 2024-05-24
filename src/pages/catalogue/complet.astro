@@ -1,0 +1,17 @@
+---
+import {  getCatalogueWithIds } from '../../helpers';
+
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+    <h2>Catalogue</h2>
+    {(getCatalogueWithIds()).map(({ id, date_comp, opus, titre, editeur, commentaire}) => <div>
+        <h4>{date_comp}</h4>
+        <h5>{opus}</h5>
+        <h3><a href={id}>{titre}</a></h3>
+        <h5>{editeur}</h5>
+        <div set:html={commentaire}></div>
+        <hr/>
+    </div>)}
+</Layout>

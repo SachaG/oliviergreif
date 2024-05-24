@@ -1,0 +1,27 @@
+---
+import catalogue from '../../../data/catalogue.yml';
+import { getCatalogueWithIds } from '../../helpers'
+import Layout from '../../layouts/Layout.astro';
+import type { Oeuvre } from '../../types';
+
+const catalogueWithIds = getCatalogueWithIds()
+
+export function getStaticPaths() {
+  return getCatalogueWithIds().map(o=> ({params:{ id: o.id}}))
+}
+
+const { id } = Astro.params;
+const oeuvre = catalogueWithIds.find(o => o.id === id)
+if (!oeuvre) {
+  throw new Error('404')
+}
+const {titre, commentaire} = oeuvre
+---
+
+<Layout title="Welcome to Astro.">
+<h1>
+{titre}
+</h1>
+
+<div set:html={commentaire}></div>
+</Layout>
