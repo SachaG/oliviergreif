@@ -50,3 +50,7 @@ export type Actualite = {
 	texte: string;
 };
 export type ActualiteWithId = Actualite & WithId;
+
+export type Lien = {
+	texte: string;
+};

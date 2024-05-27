@@ -1,0 +1,17 @@
+---
+import { getLiens } from "../helpers";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Liens">
+	<h2>Liens</h2>
+	<ul>
+		{
+			getLiens().map((lien) => {
+				const { texte } = lien;
+				return <li set:html={texte} />;
+			})
+		}
+	</ul>
+</Layout>

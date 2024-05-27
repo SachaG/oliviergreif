@@ -3,6 +3,7 @@ import catalogue from "../data/catalogue.yml";
 import concerts from "../data/concerts.yml";
 import disques from "../data/disques.yml";
 import editeurs from "../data/editeurs.yml";
+import liens from "../data/liens.yml";
 import actualites from "../data/actualites.yml";
 import type {
 	WithId,
@@ -16,6 +17,7 @@ import type {
 	DisqueWithId,
 	EditeurWithId,
 	ActualiteWithId,
+	Lien,
 } from "./types";
 
 export const convertTitle = (title: string) => slugify(title, { lower: true });
@@ -81,3 +83,7 @@ export const getActualites = () =>
 	decorate<Actualite>(actualites, "actualites");
 export const getActualite = (id: string) =>
 	getter<ActualiteWithId>(id, getActualites());
+
+// Liens
+
+export const getLiens = () => liens as Lien[];
