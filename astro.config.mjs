@@ -6,4 +6,5 @@ export default defineConfig({
 		plugins: [yaml()],
 	},
 	site: "https://oliviergreif.github.io",
+	base: "oliviergreif",
 });
