@@ -5,6 +5,5 @@ export default defineConfig({
 	vite: {
 		plugins: [yaml()],
 	},
-	site: "https://oliviergreif.github.io",
-	base: "oliviergreif",
+	site: "https://ogreifv2.sachagreif.com",
 });
