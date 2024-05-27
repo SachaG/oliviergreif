@@ -1,20 +1,20 @@
 ---
-import {  getDisque, getDisques, getPaths } from '../../helpers'
-import Layout from '../../layouts/Layout.astro';
+import { getDisque, getDisques, getItemsStaticPaths } from "../../helpers";
+import Layout from "../../layouts/Layout.astro";
 
 export function getStaticPaths() {
-  return getPaths(getDisques())
+	return getItemsStaticPaths(getDisques());
 }
 
 const { id } = Astro.params;
-const oeuvre = getDisque(id)
-const {titre, commentaire} = oeuvre
+const oeuvre = getDisque(id);
+const { titre, commentaire } = oeuvre;
 ---
 
 <Layout title={titre}>
-<h1>
-{titre}
-</h1>
+	<h1>
+		{titre}
+	</h1>
 
-<div set:html={commentaire}></div>
+	<div set:html={commentaire} />
 </Layout>

@@ -1,15 +1,24 @@
 ---
-import {  getActualites } from '../../helpers';
+import { getActualites, getPath } from "../../helpers";
 
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Actualités">
-    <h2>Actualités</h2>
-    {(getActualites()).map(({ id,titre, date, texte}) => <div>
-        <h3><a href={id}>{titre}</a></h3>
-        <h5>{date}</h5>
-        <div set:html={texte}></div>
-        <hr/>
-    </div>)}
+	<h2>Actualités</h2>
+	{
+		getActualites().map((actualite) => {
+			const { id, titre, date, texte } = actualite;
+			return (
+				<div>
+					<h3>
+						<a href={getPath(actualite)}>{titre}</a>
+					</h3>
+					<h5>{date}</h5>
+					<div set:html={texte} />
+					<hr />
+				</div>
+			);
+		})
+	}
 </Layout>

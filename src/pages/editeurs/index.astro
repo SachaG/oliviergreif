@@ -1,10 +1,21 @@
 ---
-import { getEditeurs } from '../../helpers';
+import { getEditeurs, getPath } from "../../helpers";
 
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Editeurs">
-    <h2>Editeurs</h2>
-    {(getEditeurs()).map(({id, titre}) => <div><h2><a href={id}>{titre}</a></h2></div>)}
+	<h2>Editeurs</h2>
+	{
+		getEditeurs().map((editeur) => {
+			const { id, titre } = editeur;
+			return (
+				<div>
+					<h2>
+						<a href={getPath(editeur)}>{titre}</a>
+					</h2>
+				</div>
+			);
+		})
+	}
 </Layout>

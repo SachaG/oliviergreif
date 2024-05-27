@@ -1,10 +1,21 @@
 ---
-import { getConcerts } from '../../helpers';
+import { getConcerts, getPath } from "../../helpers";
 
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Concerts">
-    <h2>Concerts</h2>
-    {(getConcerts()).map(({id, titre}) => <div><h2><a href={id}>{titre}</a></h2></div>)}
+	<h2>Concerts</h2>
+	{
+		getConcerts().map((concert) => {
+			const { id, titre } = concert;
+			return (
+				<div>
+					<h2>
+						<a href={getPath(concert)}>{titre}</a>
+					</h2>
+				</div>
+			);
+		})
+	}
 </Layout>

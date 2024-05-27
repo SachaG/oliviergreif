@@ -1,10 +1,21 @@
 ---
-import { getDisques } from '../../helpers';
+import { getDisques, getPath } from "../../helpers";
 
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Disques">
-    <h2>Disques</h2>
-    {(getDisques()).map(({id, titre}) => <div><h2><a href={id}>{titre}</a></h2></div>)}
+	<h2>Disques</h2>
+	{
+		getDisques().map((disque) => {
+			const { id, titre } = disque;
+			return (
+				<div>
+					<h2>
+						<a href={getPath(disque)}>{titre}</a>
+					</h2>
+				</div>
+			);
+		})
+	}
 </Layout>

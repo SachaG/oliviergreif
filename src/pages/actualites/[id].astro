@@ -1,20 +1,24 @@
 ---
-import { getActualite, getActualites, getPaths } from '../../helpers'
-import Layout from '../../layouts/Layout.astro';
+import {
+	getActualite,
+	getActualites,
+	getItemsStaticPaths,
+} from "../../helpers";
+import Layout from "../../layouts/Layout.astro";
 
 export function getStaticPaths() {
-  return getPaths(getActualites())
+	return getItemsStaticPaths(getActualites());
 }
 
 const { id } = Astro.params;
-const actualite = getActualite(id)
-const {titre, texte} = actualite
+const actualite = getActualite(id);
+const { titre, texte } = actualite;
 ---
 
 <Layout title={titre}>
-<h1>
-{titre}
-</h1>
+	<h1>
+		{titre}
+	</h1>
 
-<div set:html={texte}></div>
+	<div set:html={texte} />
 </Layout>

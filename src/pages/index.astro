@@ -1,12 +1,25 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		home
 
-		<ul><li><a href="/catalogue">Catalogue</a></li><li><a href="/concerts">Concerts</a></li><li><a href="/disques">Disques</a></li><li><a href="/editeurs">Editeurs</a></li></ul>
+		<ul>
+			<li><a href="/catalogue">Catalogue</a></li>
+			<li>
+				<a href="/concerts">Concerts</a>
+			</li>
+
+			<li><a href="/disques">Disques</a></li>
+			<li>
+				<a href="/editeurs">Editeurs</a>
+			</li>
+			<li>
+				<a href="/actualites">Actualites</a>
+			</li>
+		</ul>
 	</main>
 </Layout>
 
@@ -46,7 +59,10 @@ import Layout from '../layouts/Layout.astro';
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
