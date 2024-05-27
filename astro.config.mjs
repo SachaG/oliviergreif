@@ -6,4 +6,5 @@ export default defineConfig({
 		plugins: [yaml()],
 	},
 	site: "https://ogreifv2.sachagreif.com",
+	prefetch: true,
 });
