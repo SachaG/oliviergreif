@@ -1,3 +1,7 @@
+export type WithId = {
+  id: string;
+};
+
 export type Oeuvre = {
   opus: string;
   titre: string;
@@ -8,7 +12,9 @@ export type Oeuvre = {
   editeur?: string;
   creation?: string;
   commentaire?: string;
+  formation?: string;
 };
+export type OeuvreWithId = Oeuvre & WithId;
 
 export type Concert = {
   date: string;
@@ -18,3 +24,28 @@ export type Concert = {
   adresse?: string;
   commentaire?: string;
 };
+export type ConcertWithId = Concert & WithId;
+
+export type Disque = {
+  titre: string;
+  oeuvres?: string[];
+  date_disque?: string;
+  interpretes_disque?: string;
+  commentaire?: string;
+};
+export type DisqueWithId = Disque & WithId;
+
+export type Editeur = {
+  titre: string;
+  url?: string;
+  adresse?: string;
+  commentaire?: string;
+};
+export type EditeurWithId = Editeur & WithId;
+
+export type Actualite = {
+  date: number;
+  titre: string;
+  texte: string;
+};
+export type ActualiteWithId = Actualite & WithId;

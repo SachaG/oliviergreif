@@ -1,0 +1,20 @@
+---
+import { getActualite, getActualites, getPaths } from '../../helpers'
+import Layout from '../../layouts/Layout.astro';
+
+export function getStaticPaths() {
+  return getPaths(getActualites())
+}
+
+const { id } = Astro.params;
+const actualite = getActualite(id)
+const {titre, texte} = actualite
+---
+
+<Layout title={titre}>
+<h1>
+{titre}
+</h1>
+
+<div set:html={texte}></div>
+</Layout>

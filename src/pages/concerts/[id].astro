@@ -1,19 +1,15 @@
 ---
-import { getConcertsWithIds } from '../../helpers'
+import {  getConcert, getConcerts, getPaths } from '../../helpers'
 import Layout from '../../layouts/Layout.astro';
 
-const concertsWithId = getConcertsWithIds()
-
 export function getStaticPaths() {
-  return getConcertsWithIds().map(o=> ({params:{ id: o.id}}))
+  return getPaths(getConcerts())
 }
 
 const { id } = Astro.params;
-const concert = concertsWithId.find(o => o.id === id)
-if (!concert) {
-  throw new Error('404')
-}
-const {date, titre, commentaire} = concert
+const concert = getConcert(id)
+
+const { date, titre, commentaire } = concert
 ---
 
 <Layout title="Welcome to Astro.">

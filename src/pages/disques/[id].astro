@@ -1,17 +1,17 @@
 ---
-import { getCatalogue, getOeuvre, getPaths } from '../../helpers'
+import {  getDisque, getDisques, getPaths } from '../../helpers'
 import Layout from '../../layouts/Layout.astro';
 
 export function getStaticPaths() {
-  return getPaths(getCatalogue())
+  return getPaths(getDisques())
 }
 
 const { id } = Astro.params;
-const oeuvre = getOeuvre(id)
+const oeuvre = getDisque(id)
 const {titre, commentaire} = oeuvre
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={titre}>
 <h1>
 {titre}
 </h1>

@@ -1,0 +1,10 @@
+---
+import { getEditeurs } from '../../helpers';
+
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Editeurs">
+    <h2>Editeurs</h2>
+    {(getEditeurs()).map(({id, titre}) => <div><h2><a href={id}>{titre}</a></h2></div>)}
+</Layout>
