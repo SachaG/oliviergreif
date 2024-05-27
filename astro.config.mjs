@@ -5,4 +5,5 @@ export default defineConfig({
 	vite: {
 		plugins: [yaml()],
 	},
+	site: "https://oliviergreif.github.io",
 });
