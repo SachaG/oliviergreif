@@ -3,7 +3,7 @@ import { getActualite } from "../../helpers";
 
 const { id } = Astro.props;
 const actualite = getActualite(id);
-const { titre, texte, date } = actualite;
+const { titre, texte, rawDate, date } = actualite;
 ---
 
 <div>

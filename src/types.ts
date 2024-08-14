@@ -18,7 +18,8 @@ export type Oeuvre = {
 export type OeuvreWithId = Oeuvre & WithId;
 
 export type Concert = {
-	date: string;
+	rawDate: string;
+	date: Date;
 	titre: string;
 	oeuvres?: string[];
 	interpretes?: string;
@@ -45,7 +46,8 @@ export type Editeur = {
 export type EditeurWithId = Editeur & WithId;
 
 export type Actualite = {
-	date: number;
+	rawDate: number;
+	date: Date;
 	titre: string;
 	texte: string;
 };

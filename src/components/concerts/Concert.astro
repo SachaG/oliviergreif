@@ -1,10 +1,10 @@
 ---
-import { getConcert, getPath } from "../../helpers";
+import { getConcert, getPath, getOeuvre, convertTitle } from "../../helpers";
 
 const { id } = Astro.props;
 const concert = getConcert(id);
 
-const { date, titre, commentaire } = concert;
+const { interpretes, adresse, date, titre, commentaire, oeuvres } = concert;
 ---
 
 <div>
@@ -12,5 +12,42 @@ const { date, titre, commentaire } = concert;
 		<a href={getPath(concert)}>{titre}</a>
 	</h3>
 	<h4>{date}</h4>
+	{
+		adresse && (
+			<div>
+				<>
+					<h4>Adresse</h4>
+					<p>{adresse}</p>
+				</>
+			</div>
+		)
+	}
+	{
+		interpretes && (
+			<div>
+				<>
+					<h4>Interprètes</h4>
+					<p>{interpretes}</p>
+				</>
+			</div>
+		)
+	}
+	{
+		oeuvres && (
+			<div>
+				<h4>Oeuvres</h4>
+				<ul>
+					{oeuvres.map((titre) => {
+						const oeuvre = getOeuvre(convertTitle(titre));
+						return (
+							<li>
+								<a href={getPath(oeuvre)}>{titre}</a>
+							</li>
+						);
+					})}
+				</ul>
+			</div>
+		)
+	}
 	<div set:html={commentaire} />
 </div>

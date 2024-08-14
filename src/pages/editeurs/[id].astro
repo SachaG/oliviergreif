@@ -1,4 +1,5 @@
 ---
+import Editeur from "../../components/editeurs/Editeur.astro";
 import { getEditeur, getEditeurs, getItemsStaticPaths } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
@@ -12,9 +13,5 @@ const { titre, commentaire } = editeur;
 ---
 
 <Layout title={titre}>
-	<h1>
-		{titre}
-	</h1>
-
-	<div set:html={commentaire} />
+	<Editeur id={id} />
 </Layout>

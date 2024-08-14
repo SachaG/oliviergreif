@@ -2,80 +2,56 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import HomeBlock from "../components/HomeBlock.astro";
+import { getSectionPath, getSection } from "../helpers";
+import ConcertComponent from "../components/concerts/Concert.astro";
+import type { ConcertWithId } from "../types";
+const concertsSection = getSection<ConcertWithId>("concerts");
+const { items: concerts } = concertsSection;
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>Olivier Greif</main>
+<Layout>
 	<h1>Olivier Greif</h1>
-	<HomeBlock sectionId="actualites" />
-	<hr />
-	<HomeBlock sectionId="concerts" />
-	<hr />
-	<HomeBlock sectionId="catalogue" />
-	<hr />
-	<HomeBlock sectionId="editeurs" />
-	<hr />
-	<HomeBlock sectionId="disques" />
+	<section class="first">
+		<!-- <HomeBlock sectionId="concerts" /> -->
+		<section>
+			<h3>Concerts À Venir</h3>
+			{
+				concerts
+					.filter((concert) => concert.date >= new Date())
+					.map((concert) => <ConcertComponent id={concert.id} />)
+			}
+			<h3>Concerts Passés</h3>
+			{
+				concerts
+					.filter((concert) => concert.date < new Date())
+					.slice(0, 3)
+					.map((concert) => <ConcertComponent id={concert.id} />)
+			}
+			<a href={getSectionPath(concertsSection)}>Voir tous les concerts</a>
+		</section>
+		<HomeBlock sectionId="actualites" limit={2} />
+	</section>
+
+	<!-- <section class="second">
+		<HomeBlock sectionId="catalogue" />
+		<HomeBlock sectionId="editeurs" />
+		<HomeBlock sectionId="disques" />
+	</section> -->
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
+	html {
+		--spacing: 80px;
 	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(
-			rgba(var(--accent-dark), 66%),
-			rgba(var(--accent-dark), 33%)
-		);
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
+	.first {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+		gap: var(--spacing);
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: var(--spacing);
+	}
+	.second {
+		display: grid;
+		gap: var(--spacing);
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 </style>

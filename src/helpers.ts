@@ -25,18 +25,18 @@ import EditeurComponent from "./components/editeurs/Editeur.astro";
 import ActualiteComponent from "./components/actualites/Actualite.astro";
 import ConcertComponent from "./components/concerts/Concert.astro";
 
-type SectionItem =
+type ItemWithId =
 	| OeuvreWithId
 	| ConcertWithId
 	| DisqueWithId
 	| EditeurWithId
 	| ActualiteWithId;
 
-type Section = {
+type Section<T> = {
 	id: string;
 	label: string;
 	moreLabel: string;
-	items: Array<SectionItem>;
+	items: Array<T>;
 	component: any;
 };
 type SectionIds =
@@ -71,7 +71,7 @@ const decorate = <T extends Oeuvre | Concert | Disque | Editeur | Actualite>(
 export const getItemsStaticPaths = (items: WithId[]) =>
 	items.map((item) => ({ params: { id: item.id } }));
 
-export const getPath = (item: SectionItem) => `/${item.parentSlug}/${item.id}`;
+export const getPath = (item: ItemWithId) => `/${item.parentSlug}/${item.id}`;
 
 // Catalogue
 
@@ -81,9 +81,17 @@ export const getOeuvre = (id: string) =>
 
 // Concerts
 
-export const getConcerts = () => decorate<Concert>(concerts, "concerts");
+const parseConcert = (concert: ConcertWithId) => {
+	const [day, month, year] = concert.rawDate.split("/");
+	return {
+		...concert,
+		date: new Date(`${month}/${day}/${year}`),
+	};
+};
+export const getConcerts = () =>
+	decorate<Concert>(concerts, "concerts").map(parseConcert);
 export const getConcert = (id: string) =>
-	getter<ConcertWithId>(id, getConcerts());
+	parseConcert(getter<ConcertWithId>(id, getConcerts()));
 
 // Disques
 
@@ -98,10 +106,16 @@ export const getEditeur = (id: string) =>
 
 // Actualites
 
+const parseActualite = (actu: ActualiteWithId) => ({
+	...actu,
+	date: new Date(Number(`${actu.rawDate}000`)),
+});
 export const getActualites = () =>
-	decorate<Actualite>(actualites, "actualites");
+	decorate<Actualite>(actualites, "actualites")
+		.map(parseActualite)
+		.toReversed();
 export const getActualite = (id: string) =>
-	getter<ActualiteWithId>(id, getActualites());
+	parseActualite(getter<ActualiteWithId>(id, getActualites()));
 
 // Liens
 
@@ -141,9 +155,11 @@ const allItems = {
 		component: ActualiteComponent,
 	},
 };
-export const getSection = (sectionId: SectionIds) => ({
-	id: sectionId,
-	...allItems[sectionId],
-});
 
-export const getSectionPath = (section: Section) => `/${section.id}`;
+export const getSection = <T>(sectionId: SectionIds) =>
+	({
+		id: sectionId,
+		...allItems[sectionId],
+	}) as Section<T>;
+
+export const getSectionPath = <T>(section: Section<T>) => `/${section.id}`;

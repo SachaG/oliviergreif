@@ -1,18 +1,93 @@
 ---
-import { getOeuvre, getPath } from "../../helpers";
+import {
+	convertTitle,
+	getConcerts,
+	getEditeur,
+	getOeuvre,
+	getPath,
+} from "../../helpers";
 const { id } = Astro.props;
 const oeuvre = getOeuvre(id);
-const { date_comp, opus, titre, editeur, commentaire } = oeuvre;
+const {
+	date_comp,
+	opus,
+	titre,
+	editeur,
+	commentaire,
+	formation,
+	texte,
+	creation,
+	duree,
+} = oeuvre;
+
+const concerts = getConcerts().filter((concert) =>
+	concert.oeuvres?.includes(titre),
+);
+
+const editeurItem = editeur && getEditeur(convertTitle(editeur));
 ---
 
 <div>
 	<div>
-		<h4>{date_comp}</h4>
-		<h5>{opus}</h5>
 		<h3>
 			<a href={getPath(oeuvre)}>{titre}</a>
 		</h3>
-		<h5>{editeur}</h5>
+		<h4>Opus</h4>
+		<p>{opus}</p>
+		{
+			editeurItem && (
+				<>
+					<h4>Éditeur</h4>
+					<p>
+						<a href={getPath(editeurItem)}>{editeur}</a>
+					</p>
+				</>
+			)
+		}
+
+		<h4>Formation</h4>
+		<p>{formation}</p>
+
+		<h4>Composé En</h4>
+		<p>{date_comp}</p>
+		{
+			texte && (
+				<div>
+					<h4>Texte</h4>
+					<p>{texte}</p>
+				</div>
+			)
+		}
+		{
+			creation && (
+				<div>
+					<h4>Création</h4>
+					<p>{creation}</p>
+				</div>
+			)
+		}
+		{
+			duree && (
+				<div>
+					<h4>Durée</h4>
+					<p>{duree}</p>
+				</div>
+			)
+		}
+		{
+			concerts && concerts.length > 0 && (
+				<div>
+					<h4>Concerts</h4>
+					{concerts.map((concert) => {
+						return (
+							<li>
+								<a href={getPath(concert)}>{concert.titre}</a>
+							</li>
+						);
+					})}
+				</div>
+			)
+		}
 		<div set:html={commentaire} />
 	</div>
 </div>

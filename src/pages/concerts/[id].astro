@@ -1,4 +1,5 @@
 ---
+import Concert from "../../components/concerts/Concert.astro";
 import { getConcert, getConcerts, getItemsStaticPaths } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
@@ -12,10 +13,6 @@ const concert = getConcert(id);
 const { date, titre, commentaire } = concert;
 ---
 
-<Layout title="Welcome to Astro.">
-	<h1>
-		{titre}
-	</h1>
-	<h2>{date}</h2>
-	<div set:html={commentaire} />
+<Layout title={titre}>
+	<Concert id={id} />
 </Layout>
