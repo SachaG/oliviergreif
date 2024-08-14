@@ -1,10 +1,12 @@
 ---
-import { getConcert, getPath, getOeuvre, convertTitle } from "../../helpers";
+import { getConcert, getPath } from "../../helpers";
+import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
 
-const { id } = Astro.props;
+const { id, variant = "full" } = Astro.props;
 const concert = getConcert(id);
 
 const { interpretes, adresse, date, titre, commentaire, oeuvres } = concert;
+const showFull = variant === "full";
 ---
 
 <div>
@@ -13,7 +15,7 @@ const { interpretes, adresse, date, titre, commentaire, oeuvres } = concert;
 	</h3>
 	<h4>{date}</h4>
 	{
-		adresse && (
+		adresse && showFull && (
 			<div>
 				<>
 					<h4>Adresse</h4>
@@ -32,22 +34,7 @@ const { interpretes, adresse, date, titre, commentaire, oeuvres } = concert;
 			</div>
 		)
 	}
-	{
-		oeuvres && (
-			<div>
-				<h4>Oeuvres</h4>
-				<ul>
-					{oeuvres.map((titre) => {
-						const oeuvre = getOeuvre(convertTitle(titre));
-						return (
-							<li>
-								<a href={getPath(oeuvre)}>{titre}</a>
-							</li>
-						);
-					})}
-				</ul>
-			</div>
-		)
-	}
-	<div set:html={commentaire} />
+	<CatalogueRelated titres={oeuvres} />
+
+	{showFull && <div set:html={commentaire} />}
 </div>

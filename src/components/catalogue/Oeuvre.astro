@@ -2,6 +2,7 @@
 import {
 	convertTitle,
 	getConcerts,
+	getDisques,
 	getEditeur,
 	getOeuvre,
 	getPath,
@@ -22,6 +23,10 @@ const {
 
 const concerts = getConcerts().filter((concert) =>
 	concert.oeuvres?.includes(titre),
+);
+
+const disques = getDisques().filter((disque) =>
+	disque.oeuvres?.includes(titre),
 );
 
 const editeurItem = editeur && getEditeur(convertTitle(editeur));
@@ -45,11 +50,24 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 			)
 		}
 
-		<h4>Formation</h4>
-		<p>{formation}</p>
+		{
+			formation && (
+				<>
+					<h4>Formation</h4>
+					<p>{formation}</p>
+				</>
+			)
+		}
 
-		<h4>Composé En</h4>
-		<p>{date_comp}</p>
+		{
+			date_comp && (
+				<>
+					<h4>Composé En</h4>
+					<p>{date_comp}</p>
+				</>
+			)
+		}
+
 		{
 			texte && (
 				<div>
@@ -82,6 +100,20 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 						return (
 							<li>
 								<a href={getPath(concert)}>{concert.titre}</a>
+							</li>
+						);
+					})}
+				</div>
+			)
+		}
+		{
+			disques && disques.length > 0 && (
+				<div>
+					<h4>Disques</h4>
+					{disques.map((disque) => {
+						return (
+							<li>
+								<a href={getPath(disque)}>{disque.titre}</a>
 							</li>
 						);
 					})}

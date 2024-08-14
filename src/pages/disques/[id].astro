@@ -1,4 +1,5 @@
 ---
+import Disque from "../../components/disques/Disque.astro";
 import { getDisque, getDisques, getItemsStaticPaths } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
@@ -12,9 +13,5 @@ const { titre, commentaire } = oeuvre;
 ---
 
 <Layout title={titre}>
-	<h1>
-		{titre}
-	</h1>
-
-	<div set:html={commentaire} />
+	<Disque id={id} />
 </Layout>

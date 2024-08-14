@@ -1,14 +1,24 @@
 ---
-import { getDisque } from "../../helpers";
+import { getDisque, getPath } from "../../helpers";
+import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
 const { id } = Astro.props;
-const oeuvre = getDisque(id);
-const { titre, commentaire } = oeuvre;
+const disque = getDisque(id);
+const { titre, commentaire, oeuvres, date_disque, interpretes_disque, maison } =
+	disque;
 ---
 
 <div>
-	<h1>
-		{titre}
-	</h1>
+	<h2>
+		<a href={getPath(disque)}>{titre}</a>
+	</h2>
+
+	<h4>Année d'Édition</h4>
+	<p>{date_disque}</p>
+	<h4>Interprètes</h4>
+	<p>{interpretes_disque}</p>
+	<h4>Maison d'Édition</h4>
+	<p>{maison}</p>
+	<CatalogueRelated titres={oeuvres} />
 
 	<div set:html={commentaire} />
 </div>

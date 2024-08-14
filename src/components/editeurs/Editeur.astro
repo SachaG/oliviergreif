@@ -1,5 +1,6 @@
 ---
 import { getCatalogue, getEditeur, getPath } from "../../helpers";
+import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
 
 const { id } = Astro.props;
 const editeur = getEditeur(id);
@@ -15,13 +16,5 @@ const oeuvres = getCatalogue().filter((oeuvre) => oeuvre.editeur === titre);
 
 	<div set:html={commentaire} />
 	<h4>Oeuvres</h4>
-	<ul>
-		{
-			oeuvres.map((oeuvre) => (
-				<li>
-					<a href={getPath(oeuvre)}>{oeuvre.titre}</a>
-				</li>
-			))
-		}
-	</ul>
+	<CatalogueRelated titres={oeuvres.map((o) => o.titre)} />
 </div>

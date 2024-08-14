@@ -18,14 +18,18 @@ const { items: concerts } = concertsSection;
 			{
 				concerts
 					.filter((concert) => concert.date >= new Date())
-					.map((concert) => <ConcertComponent id={concert.id} />)
+					.map((concert) => (
+						<ConcertComponent id={concert.id} variant="short" />
+					))
 			}
 			<h3>Concerts Passés</h3>
 			{
 				concerts
 					.filter((concert) => concert.date < new Date())
 					.slice(0, 3)
-					.map((concert) => <ConcertComponent id={concert.id} />)
+					.map((concert) => (
+						<ConcertComponent id={concert.id} variant="short" />
+					))
 			}
 			<a href={getSectionPath(concertsSection)}>Voir tous les concerts</a>
 		</section>

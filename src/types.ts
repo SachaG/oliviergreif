@@ -34,6 +34,7 @@ export type Disque = {
 	date_disque?: string;
 	interpretes_disque?: string;
 	commentaire?: string;
+	maison?: string;
 };
 export type DisqueWithId = Disque & WithId;
 

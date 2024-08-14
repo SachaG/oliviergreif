@@ -9,7 +9,11 @@ const { items, label, moreLabel, component: ItemComponent } = section;
 <section>
 	<h2>{label}</h2>
 	<div>
-		{items.slice(0, limit).map((item) => <ItemComponent id={item.id} />)}
+		{
+			items
+				.slice(0, limit)
+				.map((item) => <ItemComponent id={item.id} variant="short" />)
+		}
 	</div>
 	<a href={getSectionPath(section)}>{moreLabel}</a>
 </section>
