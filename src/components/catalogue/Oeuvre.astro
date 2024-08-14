@@ -7,6 +7,7 @@ import {
 	getOeuvre,
 	getPath,
 } from "../../helpers";
+import Field from "../Field.astro";
 const { id } = Astro.props;
 const oeuvre = getOeuvre(id);
 const {
@@ -49,49 +50,12 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 				</>
 			)
 		}
+		<Field label="Formation" value={formation} />
+		<Field label="Composé En" value={date_comp} />
+		<Field label="Texte" value={texte} />
+		<Field label="Création" value={creation} />
+		<Field label="Durée" value={duree} />
 
-		{
-			formation && (
-				<>
-					<h4>Formation</h4>
-					<p>{formation}</p>
-				</>
-			)
-		}
-
-		{
-			date_comp && (
-				<>
-					<h4>Composé En</h4>
-					<p>{date_comp}</p>
-				</>
-			)
-		}
-
-		{
-			texte && (
-				<div>
-					<h4>Texte</h4>
-					<p>{texte}</p>
-				</div>
-			)
-		}
-		{
-			creation && (
-				<div>
-					<h4>Création</h4>
-					<p>{creation}</p>
-				</div>
-			)
-		}
-		{
-			duree && (
-				<div>
-					<h4>Durée</h4>
-					<p>{duree}</p>
-				</div>
-			)
-		}
 		{
 			concerts && concerts.length > 0 && (
 				<div>
