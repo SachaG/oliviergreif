@@ -1,4 +1,5 @@
 ---
+import Oeuvre from "../../components/catalogue/Oeuvre.astro";
 import { getCatalogue, getPath } from "../../helpers";
 
 import Layout from "../../layouts/Layout.astro";
@@ -6,21 +7,5 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout title="Catalogue">
 	<h2>Catalogue</h2>
-	{
-		getCatalogue().map((oeuvre) => {
-			const { id, date_comp, opus, titre, editeur, commentaire } = oeuvre;
-			return (
-				<div>
-					<h4>{date_comp}</h4>
-					<h5>{opus}</h5>
-					<h3>
-						<a href={getPath(oeuvre)}>{titre}</a>
-					</h3>
-					<h5>{editeur}</h5>
-					<div set:html={commentaire} />
-					<hr />
-				</div>
-			);
-		})
-	}
+	{getCatalogue().map((oeuvre) => <Oeuvre id={oeuvre.id} />)}
 </Layout>

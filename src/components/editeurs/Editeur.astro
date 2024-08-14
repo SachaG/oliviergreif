@@ -1,0 +1,15 @@
+---
+import { getEditeur, getEditeurs, getItemsStaticPaths } from "../../helpers";
+
+const { id } = Astro.props;
+const editeur = getEditeur(id);
+const { titre, commentaire } = editeur;
+---
+
+<div>
+	<h1>
+		{titre}
+	</h1>
+
+	<div set:html={commentaire} />
+</div>

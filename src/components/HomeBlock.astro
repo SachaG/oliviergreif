@@ -1,0 +1,15 @@
+---
+import { getPath, getSection, getSectionPath } from "../helpers";
+
+const { sectionId } = Astro.props;
+const section = getSection(sectionId);
+const { items, label, moreLabel, component: ItemComponent } = section;
+---
+
+<section>
+	<h3>{label}</h3>
+	<div>
+		{items.slice(0, 5).map((item) => <ItemComponent id={item.id} />)}
+	</div>
+	<a href={getSectionPath(section)}>{moreLabel}</a>
+</section>

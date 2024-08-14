@@ -19,6 +19,32 @@ import type {
 	ActualiteWithId,
 	Lien,
 } from "./types";
+import OeuvreComponent from "./components/catalogue/Oeuvre.astro";
+import DisqueComponent from "./components/disques/Disque.astro";
+import EditeurComponent from "./components/editeurs/Editeur.astro";
+import ActualiteComponent from "./components/actualites/Actualite.astro";
+import ConcertComponent from "./components/concerts/Concert.astro";
+
+type SectionItem =
+	| OeuvreWithId
+	| ConcertWithId
+	| DisqueWithId
+	| EditeurWithId
+	| ActualiteWithId;
+
+type Section = {
+	id: string;
+	label: string;
+	moreLabel: string;
+	items: Array<SectionItem>;
+	component: any;
+};
+type SectionIds =
+	| "catalogue"
+	| "concerts"
+	| "disques"
+	| "editeurs"
+	| "actualites";
 
 export const convertTitle = (title: string) => slugify(title, { lower: true });
 
@@ -45,14 +71,7 @@ const decorate = <T extends Oeuvre | Concert | Disque | Editeur | Actualite>(
 export const getItemsStaticPaths = (items: WithId[]) =>
 	items.map((item) => ({ params: { id: item.id } }));
 
-export const getPath = (
-	item:
-		| OeuvreWithId
-		| ConcertWithId
-		| DisqueWithId
-		| EditeurWithId
-		| ActualiteWithId,
-) => `/${item.parentSlug}/${item.id}`;
+export const getPath = (item: SectionItem) => `/${item.parentSlug}/${item.id}`;
 
 // Catalogue
 
@@ -87,3 +106,44 @@ export const getActualite = (id: string) =>
 // Liens
 
 export const getLiens = () => liens as Lien[];
+
+// Items
+
+const allItems = {
+	catalogue: {
+		label: "Catalogue",
+		items: getCatalogue(),
+		moreLabel: "Voir toutes les oeuvres",
+		component: OeuvreComponent,
+	},
+	concerts: {
+		label: "Concerts",
+		items: getConcerts(),
+		moreLabel: "Voir tous les concerts",
+		component: ConcertComponent,
+	},
+	disques: {
+		label: "Disques",
+		items: getDisques(),
+		moreLabel: "Voir tous les disques",
+		component: DisqueComponent,
+	},
+	editeurs: {
+		label: "Éditeurs",
+		items: getEditeurs(),
+		moreLabel: "Voir tous les éditeurs",
+		component: EditeurComponent,
+	},
+	actualites: {
+		label: "Actualités",
+		items: getActualites(),
+		moreLabel: "Voir toutes les actualités",
+		component: ActualiteComponent,
+	},
+};
+export const getSection = (sectionId: SectionIds) => ({
+	id: sectionId,
+	...allItems[sectionId],
+});
+
+export const getSectionPath = (section: Section) => `/${section.id}`;

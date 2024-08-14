@@ -1,0 +1,14 @@
+---
+import { getDisque } from "../../helpers";
+const { id } = Astro.props;
+const oeuvre = getDisque(id);
+const { titre, commentaire } = oeuvre;
+---
+
+<div>
+	<h1>
+		{titre}
+	</h1>
+
+	<div set:html={commentaire} />
+</div>
