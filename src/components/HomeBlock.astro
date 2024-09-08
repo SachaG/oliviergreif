@@ -7,8 +7,8 @@ const { items, label, moreLabel, component: ItemComponent } = section;
 ---
 
 <section>
-	<h2>{label}</h2>
-	<div>
+	<h4 class="block-heading">{label}</h4>
+	<div class="block-content">
 		{
 			items
 				.slice(0, limit)
@@ -17,3 +17,16 @@ const { items, label, moreLabel, component: ItemComponent } = section;
 	</div>
 	<a href={getSectionPath(section)}>{moreLabel}</a>
 </section>
+
+<style>
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.block-content {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+</style>

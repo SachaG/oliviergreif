@@ -1,11 +1,55 @@
 ---
-import Oeuvre from "../../components/catalogue/Oeuvre.astro";
-import { getCatalogue, getPath } from "../../helpers";
-
+import Oeuvre from "../../components/catalogue/Oeuvre.compact.astro";
+import { getCatalogue, pluralize, uniq } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
+import Instruments from "../../components/catalogue/Instruments.astro";
+
+const catalogue = getCatalogue();
+
+const years = uniq(catalogue.map((o) => o.date_comp)).toSorted();
+const catalogueByYear = years.map((year) => ({
+	year,
+	items: catalogue.filter((o) => o.date_comp === year),
+}));
 ---
 
 <Layout title="Catalogue">
-	<h2>Catalogue</h2>
-	{getCatalogue().map((oeuvre) => <Oeuvre id={oeuvre.id} />)}
+	<div class="grid">
+		<main>
+			<h2>
+				Catalogue ({catalogue.length}
+				{pluralize("oeuvre", catalogue.length)})
+			</h2>
+			{
+				catalogueByYear.map(({ year, items }, index) => {
+					return (
+						<div class="year">
+							<h4 class="year-title">
+								<span>{year}</span>
+							</h4>
+							<div class="items">
+								{items.map((oeuvre) => (
+									<Oeuvre id={oeuvre.id} />
+								))}
+							</div>
+						</div>
+					);
+				})
+			}
+		</main>
+		<section class="sidebar">
+			<div class="sidebar-contents">
+				<Instruments />
+			</div>
+		</section>
+	</div>
 </Layout>
+
+<style type="text/scss">
+	.year-title {
+		position: sticky;
+		top: 0px;
+		background: #ffffffcc;
+		font-size: 5rem;
+	}
+</style>

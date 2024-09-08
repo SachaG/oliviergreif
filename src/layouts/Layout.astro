@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
 
 interface Props {
@@ -18,13 +19,88 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{fullTitle}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<Nav />
-		<slot />
+		<div class="main-content">
+			<h1><a href="/">Olivier Greif</a></h1>
+			<Nav />
+			<slot />
+		</div>
+		<Footer />
 	</body>
 </html>
 <style is:global>
+	/* https://www.joshwcomeau.com/css/custom-css-reset/
+	*/
+	/*
+  1. Use a more-intuitive box-sizing model.
+*/
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+	/*
+  2. Remove default margin
+*/
+	* {
+		margin: 0;
+	}
+	/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+	body {
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+	}
+	/*
+  5. Improve media defaults
+*/
+	img,
+	picture,
+	video,
+	canvas,
+	svg {
+		display: block;
+		max-width: 100%;
+	}
+	/*
+  6. Remove built-in form typography styles
+*/
+	input,
+	button,
+	textarea,
+	select {
+		font: inherit;
+	}
+	/*
+  7. Avoid text overflows
+*/
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		overflow-wrap: break-word;
+	}
+	/*
+  8. Create a root stacking context
+*/
+	#root,
+	#__next {
+		isolation: isolate;
+	}
+
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
@@ -35,6 +111,13 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
+		--textColor: #2f2a24;
+		--linkColor: #ff8800;
+		--textSecondaryColor: #868686;
+		--borderColor: #d8d8d8;
+		--spacing: 60px;
+		--halfSpacing: 30px;
+		--quarterSpacing: 15px;
 	}
 	html {
 		font-family: system-ui, sans-serif;
@@ -49,5 +132,134 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+	body {
+		font-family: "Work Sans", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 1.6;
+		border: var(--linkColor) 10px solid;
+		padding: 80px;
+		margin: 0;
+		font-size: 18px;
+		min-height: 100vh;
+		color: var(--textColor);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Playfair Display", serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		margin: 0;
+		margin-bottom: var(--quarterSpacing);
+		line-height: 1;
+	}
+	p {
+		margin-bottom: var(--quarterSpacing);
+	}
+	a {
+		text-decoration: none;
+		&:link,
+		&:visited {
+			color: #ff8800;
+		}
+		&:hover {
+			color: #92622b;
+		}
+	}
+	h1 {
+		font-size: 3rem;
+		line-height: 1;
+		a,
+		a:link,
+		a:visited {
+			color: #2f2a24;
+		}
+	}
+	h2 {
+		font-size: 4rem;
+	}
+	h3 {
+		font-size: 2rem;
+	}
+	h4 {
+		font-size: 1.5rem;
+		&.block-heading {
+			border-bottom: 1px solid #c3af98;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+		}
+	}
+	h5 {
+		font-size: 1.2rem;
+	}
+	.items {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing);
+	}
+	.main-content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing);
+	}
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing);
+		max-width: 1000px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		gap: var(--spacing);
+	}
+	.sidebar {
+	}
+	.sidebar-contents {
+		position: sticky;
+		top: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: var(--halfSpacing);
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+		text-indent: 0;
+		border-top: 1px solid #ddd;
+
+		th,
+		td {
+			text-align: left;
+			text-align: start;
+			vertical-align: top;
+			padding-bottom: var(--quarterSpacing);
+			padding-top: var(--quarterSpacing);
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			width: 200px;
+		}
+		tr {
+		}
+	}
+	ul.items-list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: var(--quarterSpacing);
 	}
 </style>

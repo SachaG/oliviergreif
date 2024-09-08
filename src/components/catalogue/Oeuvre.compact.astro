@@ -1,0 +1,82 @@
+---
+import {
+	convertTitle,
+	getConcerts,
+	getDisques,
+	getEditeur,
+	getOeuvre,
+	getPath,
+} from "../../helpers";
+import Field from "../Field.astro";
+const { id } = Astro.props;
+const oeuvre = getOeuvre(id);
+const {
+	date_comp,
+	opus,
+	titre,
+	editeur,
+	commentaire,
+	formation,
+	texte,
+	creation,
+	duree,
+} = oeuvre;
+
+const concerts = getConcerts().filter((concert) =>
+	concert.oeuvres?.includes(titre),
+);
+
+const disques = getDisques().filter((disque) =>
+	disque.oeuvres?.includes(titre),
+);
+
+const editeurItem = editeur && getEditeur(convertTitle(editeur));
+---
+
+<div>
+	<div class="opus">Opus {opus}</div>
+	<h3>
+		<a href={getPath(oeuvre)}>{titre}</a>
+	</h3>
+	<main>
+		<table class="infos">
+			<tbody>
+				{
+					editeurItem && (
+						<tr>
+							<th>Éditeur</th>
+							<td>
+								<a href={getPath(editeurItem)}>{editeur}</a>
+							</td>
+						</tr>
+					)
+				}
+				<Field label="Formation" value={formation} />
+				<Field label="Texte" value={texte} />
+				<Field label="Création" value={creation} />
+				<Field label="Durée" value={duree} />
+			</tbody>
+		</table>
+	</main>
+</div>
+
+<style type="text/scss">
+	.opus {
+		text-transform: uppercase;
+		color: var(--textSecondaryColor);
+		margin-bottom: var(--quarterSpacing);
+	}
+	.infos {
+		th,
+		td {
+			text-align: left;
+			vertical-align: top;
+			padding-bottom: var(--quarterSpacing);
+		}
+		th {
+			min-width: 200px;
+		}
+		tr {
+		}
+	}
+</style>

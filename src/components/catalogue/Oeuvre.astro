@@ -34,56 +34,81 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 ---
 
 <div>
-	<div>
-		<h3>
-			<a href={getPath(oeuvre)}>{titre}</a>
-		</h3>
-		<h4>Opus</h4>
-		<p>{opus}</p>
-		{
-			editeurItem && (
-				<>
-					<h4>Éditeur</h4>
-					<p>
-						<a href={getPath(editeurItem)}>{editeur}</a>
-					</p>
-				</>
-			)
-		}
-		<Field label="Formation" value={formation} />
-		<Field label="Composé En" value={date_comp} />
-		<Field label="Texte" value={texte} />
-		<Field label="Création" value={creation} />
-		<Field label="Durée" value={duree} />
-
-		{
-			concerts && concerts.length > 0 && (
-				<div>
-					<h4>Concerts</h4>
-					{concerts.map((concert) => {
-						return (
-							<li>
-								<a href={getPath(concert)}>{concert.titre}</a>
-							</li>
-						);
-					})}
-				</div>
-			)
-		}
-		{
-			disques && disques.length > 0 && (
-				<div>
-					<h4>Disques</h4>
-					{disques.map((disque) => {
-						return (
-							<li>
-								<a href={getPath(disque)}>{disque.titre}</a>
-							</li>
-						);
-					})}
-				</div>
-			)
-		}
-		<div set:html={commentaire} />
+	<div class="opus">Opus {opus}</div>
+	<h2 class="title">
+		{titre}
+	</h2>
+	<div class="grid">
+		<main>
+			<table class="infos">
+				<tbody>
+					{
+						editeurItem && (
+							<tr>
+								<th>Éditeur</th>
+								<td>
+									<a href={getPath(editeurItem)}>{editeur}</a>
+								</td>
+							</tr>
+						)
+					}
+					<Field label="Formation" value={formation} />
+					<Field label="Date de Composition" value={date_comp} />
+					<Field label="Texte" value={texte} />
+					<Field label="Création" value={creation} />
+					<Field label="Durée" value={duree} />
+				</tbody>
+			</table>
+			<div set:html={commentaire} />
+		</main>
+		<nav class="sidebar">
+			{
+				disques && disques.length > 0 && (
+					<div>
+						<h4>Disques</h4>
+						<ul class="nav-list">
+							{disques.map((disque) => {
+								return (
+									<li>
+										<a href={getPath(disque)}>
+											{disque.titre}
+										</a>
+									</li>
+								);
+							})}
+						</ul>
+					</div>
+				)
+			}
+			{
+				concerts && concerts.length > 0 && (
+					<div>
+						<h4>Concerts</h4>
+						<ul class="items-list">
+							{concerts.map((concert) => {
+								return (
+									<li>
+										<a href={getPath(concert)}>
+											{concert.titre}
+										</a>
+									</li>
+								);
+							})}
+						</ul>
+					</div>
+				)
+			}
+		</nav>
 	</div>
 </div>
+
+<style type="text/scss">
+	.opus {
+		text-transform: uppercase;
+		color: var(--textSecondaryColor);
+		margin-bottom: var(--quarterSpacing);
+	}
+	.title {
+		margin-bottom: var(--spacing);
+	}
+</style>

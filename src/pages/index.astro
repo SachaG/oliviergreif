@@ -10,27 +10,40 @@ const { items: concerts } = concertsSection;
 ---
 
 <Layout>
-	<h1>Olivier Greif</h1>
 	<section class="first">
 		<!-- <HomeBlock sectionId="concerts" /> -->
-		<section>
-			<h3>Concerts À Venir</h3>
-			{
-				concerts
-					.filter((concert) => concert.date >= new Date())
-					.map((concert) => (
-						<ConcertComponent id={concert.id} variant="short" />
-					))
-			}
-			<h3>Concerts Passés</h3>
-			{
-				concerts
-					.filter((concert) => concert.date < new Date())
-					.slice(0, 3)
-					.map((concert) => (
-						<ConcertComponent id={concert.id} variant="short" />
-					))
-			}
+		<section class="concerts">
+			<div class="concerts-block">
+				<h4 class="block-heading">Concerts À Venir</h4>
+				<div class="concerts-list">
+					{
+						concerts
+							.filter((concert) => concert.date >= new Date())
+							.map((concert) => (
+								<ConcertComponent
+									id={concert.id}
+									variant="short"
+								/>
+							))
+					}
+				</div>
+			</div>
+			<div class="concerts-block">
+				<h4 class="block-heading">Concerts Passés</h4>
+				<div class="concerts-list">
+					{
+						concerts
+							.filter((concert) => concert.date < new Date())
+							.slice(0, 3)
+							.map((concert) => (
+								<ConcertComponent
+									id={concert.id}
+									variant="short"
+								/>
+							))
+					}
+				</div>
+			</div>
 			<a href={getSectionPath(concertsSection)}>Voir tous les concerts</a>
 		</section>
 		<HomeBlock sectionId="actualites" limit={2} />
@@ -50,12 +63,22 @@ const { items: concerts } = concertsSection;
 	.first {
 		display: grid;
 		gap: var(--spacing);
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 2fr 1fr;
 		margin-bottom: var(--spacing);
 	}
 	.second {
 		display: grid;
 		gap: var(--spacing);
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.concerts {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+	.concerts-list {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
 	}
 </style>

@@ -1,0 +1,18 @@
+---
+import { convertTitle } from "../../helpers";
+
+const { formation, currentFormationId } = Astro.props;
+const isCurrent = convertTitle(formation) === currentFormationId;
+---
+
+<li class={isCurrent ? "formation-current" : ""}>
+	<a href={`/catalogue/formations/${convertTitle(formation)}`}>{formation}</a>
+</li>
+
+<style>
+	.formation-current {
+		a {
+			font-weight: bold;
+		}
+	}
+</style>

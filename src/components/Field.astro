@@ -9,9 +9,9 @@ const { label, value } = Astro.props;
 
 {
 	value ? (
-		<div>
-			<h4>{label}</h4>
-			<p>{value}</p>
-		</div>
+		<tr>
+			<th>{label}</th>
+			<td>{value}</td>
+		</tr>
 	) : null
 }

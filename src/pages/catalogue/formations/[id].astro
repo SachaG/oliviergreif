@@ -1,0 +1,50 @@
+---
+import Oeuvre from "../../../components/catalogue/Oeuvre.astro";
+import { getItemsStaticPaths } from "../../../helpers";
+import { convertTitle, pluralize } from "../../../helpers";
+import { getCatalogue, getFormations, getPath } from "../../../helpers";
+
+import Layout from "../../../layouts/Layout.astro";
+import type { WithId } from "../../../types";
+import Formations from "../../../components/catalogue/Formations.astro";
+
+const { id: currentFormationId } = Astro.params;
+
+export function getStaticPaths() {
+	return getItemsStaticPaths(
+		getFormations().map(
+			(formation) => ({ id: convertTitle(formation) }) as WithId,
+		),
+	);
+}
+
+const catalogue = getCatalogue({ formationId: currentFormationId });
+const formations = getFormations();
+---
+
+<Layout title="Catalogue">
+	<div class="grid">
+		<main>
+			<h2>
+				Catalogue: {
+					formations.find(
+						(f) => convertTitle(f) === currentFormationId,
+					)
+				} ({catalogue.length}
+				{pluralize("oeuvre", catalogue.length)})
+			</h2>
+			{catalogue.map((oeuvre) => <Oeuvre id={oeuvre.id} />)}
+		</main>
+		<section class="sidebar">
+			<Formations currentFormationId={currentFormationId} />
+		</section>
+	</div>
+</Layout>
+
+<style>
+	.grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: var(--spacing);
+	}
+</style>

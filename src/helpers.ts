@@ -75,10 +75,37 @@ export const getPath = (item: ItemWithId) => `/${item.parentSlug}/${item.id}`;
 
 // Catalogue
 
-export const getCatalogue = () => decorate<Oeuvre>(catalogue, "catalogue");
+export const getCatalogue = (options?: { instrumentId?: string }) => {
+	const allItems = decorate<Oeuvre>(catalogue, "catalogue").toSorted(
+		(a, b) => a.opus > b.opus,
+	);
+	const { instrumentId } = options || {};
+	return instrumentId
+		? allItems.filter((oeuvre) =>
+				oeuvre.instruments?.map(convertTitle).includes(instrumentId),
+			)
+		: allItems;
+};
 export const getOeuvre = (id: string) =>
 	getter<OeuvreWithId>(id, getCatalogue());
 
+export const getFormations = () =>
+	uniq(
+		catalogue
+			.filter((o) => !!o.formation)
+			.map((oeuvre: OeuvreWithId) =>
+				capitalizeFirstLetter(oeuvre.formation?.toLowerCase()!),
+			),
+	).toSorted() as string[];
+
+export const getInstruments = () =>
+	uniq(
+		catalogue
+			.filter((o) => !!o.instruments)
+			.map((oeuvre: OeuvreWithId) => oeuvre.instruments)
+			.flat()
+			.map((i) => capitalizeFirstLetter(i)),
+	).sort() as string[];
 // Concerts
 
 const parseConcert = (concert: ConcertWithId) => {
@@ -163,3 +190,12 @@ export const getSection = <T>(sectionId: SectionIds) =>
 	}) as Section<T>;
 
 export const getSectionPath = <T>(section: Section<T>) => `/${section.id}`;
+
+export function capitalizeFirstLetter(s: string) {
+	return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+export const pluralize = (s: string, n: number) => (n > 1 ? `${s}s` : s);
+
+// see https://youmightnotneed.com/lodash#uniq
+export const uniq = (a) => [...new Set(a)];

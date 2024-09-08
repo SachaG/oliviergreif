@@ -10,11 +10,10 @@ const oeuvres = getCatalogue().filter((oeuvre) => oeuvre.editeur === titre);
 ---
 
 <div>
-	<h1>
+	<h3>
 		{titre}
-	</h1>
+	</h3>
 
 	<div set:html={commentaire} />
-	<h4>Oeuvres</h4>
 	<CatalogueRelated titres={oeuvres.map((o) => o.titre)} />
 </div>

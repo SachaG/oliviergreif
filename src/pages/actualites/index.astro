@@ -7,5 +7,7 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout title="Actualités">
 	<h2>Actualités</h2>
-	{getActualites().map(({ id }) => <Actualite id={id} />)}
+	<main>
+		{getActualites().map(({ id }) => <Actualite id={id} />)}
+	</main>
 </Layout>

@@ -12,7 +12,8 @@
 
 - opus: "﻿001"
   titre: "Cinq Chansons Enfantines"
-  formation: "Voix et piano."
+  formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1961
   nb_pages: 9
   duree: ""
@@ -25,6 +26,7 @@
 - opus: "001 bis"
   titre: "Petite Suite"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1961
   nb_pages: 10
   duree: "5 mn"
@@ -36,7 +38,8 @@
 
 - opus: "002"
   titre: "Quatre Poèmes de J. Prévert"
-  formation: "voix et piano"
+  formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1963
   nb_pages: 12
   duree: ""
@@ -48,7 +51,8 @@
 
 - opus: "003"
   titre: "Saltimbanques (les)"
-  formation: "Voix et piano."
+  formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1965
   nb_pages: 5
   duree: ""
@@ -61,6 +65,7 @@
 - opus: "004"
   titre: "Première Sonate pour Piano (Sonatine)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1965
   nb_pages: 7
   duree: ""
@@ -73,6 +78,7 @@
 - opus: "005"
   titre: "Thème Varié pour Piano"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1965
   nb_pages: 5
   duree: ""
@@ -85,6 +91,7 @@
 - opus: "006"
   titre: "Sonate n°2 pour Piano (Suite pour Piano)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1965
   nb_pages: 19
   duree: ""
@@ -97,6 +104,7 @@
 - opus: "007"
   titre: "Sept Variations sur un Thème Original"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1966
   nb_pages: 11
   duree: ""
@@ -109,6 +117,7 @@
 - opus: "008"
   titre: "Étude pour Piano"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1966
   nb_pages: 3
   duree: ""
@@ -121,6 +130,7 @@
 - opus: "009"
   titre: "Trois Variations sur un Thème de Schumann"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1966
   nb_pages: 8
   duree: ""
@@ -133,6 +143,7 @@
 - opus: "010"
   titre: "Premier Quatuor à Cordes"
   formation: "Quatuor à cordes"
+  instruments: [violon, violon, alto, violoncelle]
   date_comp: 1966
   nb_pages: 51
   duree: ""
@@ -145,6 +156,7 @@
 - opus: "011"
   titre: "Chanson de Gaspard Hauser (la)"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1966
   nb_pages: 4
   duree: ""
@@ -157,6 +169,7 @@
 - opus: "012"
   titre: "Regrets (les)"
   formation: "Soprano, alto, basse et piano"
+  instruments: [voix, voix, alto, piano]
   date_comp: 1966
   nb_pages: 6
   duree: ""
@@ -169,6 +182,7 @@
 - opus: "013"
   titre: "Toit (un)"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1966
   nb_pages: 13
   duree: ""
@@ -181,6 +195,7 @@
 - opus: "014"
   titre: "Marche pour Flûte et Piano"
   formation: "Flûte et piano"
+  instruments: [flûte, piano]
   date_comp: 1967
   nb_pages: 2
   duree: "1 mn 15 selon Olivier."
@@ -193,6 +208,7 @@
 - opus: "015"
   titre: "Sonate n°1 pour Violon et Piano"
   formation: "Violon et piano"
+  instruments: [violon, piano]
   date_comp: 1967
   nb_pages: 14
   duree: ""
@@ -205,6 +221,7 @@
 - opus: "016"
   titre: "Cadence pour Piano / Variations continues"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1967
   nb_pages: 8
   duree: ""
@@ -217,6 +234,7 @@
 - opus: "017"
   titre: "Sonate n°2 pour Violon et Piano"
   formation: "Violon et piano"
+  instruments: [violon, piano]
   date_comp: 1967
   nb_pages: 20
   duree: "13 mn 15 (selon la partition éditée)"
@@ -228,7 +246,8 @@
 
 - opus: "018"
   titre: "Ostinato pour Piano"
-  formation: "piano"
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1967
   nb_pages: 13
   duree: ""
@@ -241,6 +260,7 @@
 - opus: "019"
   titre: "Little and the Fat (the)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1967
   nb_pages: 7
   duree: ""
@@ -253,6 +273,7 @@
 - opus: "020"
   titre: "Mort Joyeux (le)"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1968
   nb_pages: 4
   duree: ""
@@ -265,6 +286,7 @@
 - opus: "021"
   titre: "Études pour Piano (23)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1968
   nb_pages: 40
   duree: ""
@@ -277,6 +299,7 @@
 - opus: "022"
   titre: "Sonate n°3 pour Piano “Quatre Soli avec Fugue”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1968
   nb_pages: 19
   duree: ""
@@ -288,7 +311,8 @@
 
 - opus: "023"
   titre: "Alabama Song"
-  formation: "piano"
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1968
   nb_pages: 3
   duree: ""
@@ -300,7 +324,8 @@
 
 - opus: "024"
   titre: "Sonate n°4 pour Piano “Trois Pièces”"
-  formation: "Piano."
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1968
   nb_pages: 7
   duree: ""
@@ -313,6 +338,7 @@
 - opus: "025"
   titre: "Concerto pour Violon et Orchestre"
   formation: "Violon et piano"
+  instruments: [violon, piano]
   date_comp: 1969
   nb_pages: 52
   duree: ""
@@ -325,6 +351,7 @@
 - opus: "026"
   titre: "Sonate n°5 pour Piano “Trois pièces”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1969
   nb_pages: 3
   duree: ""
@@ -336,7 +363,8 @@
 
 - opus: "027"
   titre: "Sonate n°6 pour Piano"
-  formation: "Piano."
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1969
   nb_pages: 20
   duree: ""
@@ -348,7 +376,8 @@
 
 - opus: "028"
   titre: "Sonate n°7 pour Piano"
-  formation: "Piano."
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1969
   nb_pages: 15
   duree: ""
@@ -360,7 +389,8 @@
 
 - opus: "029"
   titre: "Ile du Docteur Moreau (l’)"
-  formation: "Piano."
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1969
   nb_pages: 2
   duree: ""
@@ -372,7 +402,8 @@
 
 - opus: "030"
   titre: "Sonate n°8 pour Piano “Nocturne”"
-  formation: "Piano "
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1969
   nb_pages: 3
   duree: ""
@@ -385,6 +416,7 @@
 - opus: "031"
   titre: "In Memoriam"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1969
   nb_pages: 19
   duree: ""
@@ -397,6 +429,7 @@
 - opus: "032"
   titre: "Morbid Fixations"
   formation: "2 pianos"
+  instruments: [piano, piano]
   date_comp: 1969
   nb_pages: 7
   duree: ""
@@ -409,6 +442,7 @@
 - opus: "033"
   titre: "Sonate n°9 pour Piano “Suite Paradisiac Memories”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1970
   nb_pages: 41
   duree: ""
@@ -421,6 +455,7 @@
 - opus: "033a"
   titre: "Rondo pour Piano “42nd Street”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1970
   nb_pages: 16
   duree: "6 mn"
@@ -433,6 +468,7 @@
 - opus: "034"
   titre: "Sonate n°10 pour Piano “Marche, Valse”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1970
   nb_pages: 33
   duree: ""
@@ -445,6 +481,7 @@
 - opus: "035"
   titre: "Glorieuse (la)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1971
   nb_pages: 17
   duree: ""
@@ -457,6 +494,7 @@
 - opus: "036"
   titre: "Sonate n°1 pour 2 Pianos (“Concerto pour deux Pianos”)"
   formation: "2 pianos"
+  instruments: [piano]
   date_comp: 1971
   nb_pages: 12
   duree: ""
@@ -469,6 +507,7 @@
 - opus: "037"
   titre: "Second Hommage à Raymond Roussel"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1971
   nb_pages: 3
   duree: ""
@@ -481,6 +520,7 @@
 - opus: "038"
   titre: "Sonate n°11 pour Piano"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1971
   nb_pages: 12
   duree: ""
@@ -493,6 +533,7 @@
 - opus: "039"
   titre: "Die Ilse – Paradisiac Memories n°2"
   formation: "Mezzo soprano, clarinette, quatuor à cordes, piano et percussion."
+  instruments: [voix, clarinette, violon, alto, violoncelle, piano, percussions]
   date_comp: 1972
   nb_pages: 42
   duree: ""
@@ -505,6 +546,7 @@
 - opus: "039a/039b"
   titre: "Triomphe de la Tonalité (le)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1972
   nb_pages: 2
   duree: ""
@@ -517,6 +559,7 @@
 - opus: "040"
   titre: "Wiener Konzert"
   formation: "Voix de femme et piano"
+  instruments: [voix, piano]
   date_comp: 1973
   nb_pages: 31
   duree: "22 mn (évaluation par Olivier), 17 mn (sur le disque Saphir Productions)"
@@ -529,6 +572,7 @@
 - opus: "041"
   titre: "Cantate “And Death Shall Have no Dominion”"
   formation: "Soprano, baryton, piano, instruments à vents, batterie."
+  instruments: [voix, piano, vents, batterie]
   date_comp: 1974
   nb_pages: 45
   duree: "22 mn selon Olivier."
@@ -541,6 +585,7 @@
 - opus: "042"
   titre: "Ancient Music"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1974
   nb_pages: 25
   duree: ""
@@ -553,6 +598,7 @@
 - opus: "043"
   titre: "Bomben auf Engelland - 1"
   formation: "Voix de femme et piano"
+  instruments: [voix, piano]
   date_comp: 1974
   nb_pages: 7
   duree: "8 mn (selon Olivier)"
@@ -565,6 +611,7 @@
 - opus: "044"
   titre: "Taking Leave of a Friend"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1974
   nb_pages: 8
   duree: "8 mn (selon Olivier)"
@@ -577,6 +624,7 @@
 - opus: "045"
   titre: "Sonate n°12 pour Piano “Sonatine”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1974
   nb_pages: 22
   duree: "14 mn (selon Olivier)"
@@ -589,6 +637,7 @@
 - opus: "046"
   titre: "Périgourdine (la)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1974
   nb_pages: 17
   duree: ""
@@ -601,6 +650,7 @@
 - opus: "047"
   titre: "Sonate n°13 pour Piano"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1974
   nb_pages: 78
   duree: "57 mn (selon Olivier)"
@@ -612,7 +662,8 @@
 
 - opus: "048"
   titre: "Sonate n°14 pour piano “Dans le Goût Ancien”"
-  formation: "Piano."
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1974
   nb_pages: 55
   duree: ""
@@ -625,6 +676,7 @@
 - opus: "049"
   titre: "Light Music"
   formation: "Voix de femme, voix d'homme et piano"
+  instruments: [voix, piano]
   date_comp: 1974
   nb_pages: 59
   duree: ""
@@ -637,6 +689,7 @@
 - opus: "050"
   titre: "Songs (three)"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1974
   nb_pages: 78
   duree: ""
@@ -649,6 +702,7 @@
 - opus: "051"
   titre: "Birthday Song"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1974
   nb_pages: 11
   duree: ""
@@ -661,6 +715,7 @@
 - opus: "052"
   titre: "Scherzo pour Piano"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1974
   nb_pages: 22
   duree: ""
@@ -673,6 +728,7 @@
 - opus: "053"
   titre: "Variations sur un Thème Militaire Allemand"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1975
   nb_pages:
   duree: ""
@@ -685,6 +741,7 @@
 - opus: "054"
   titre: "Sonate n°15 “de Guerre”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1975
   nb_pages: 53
   duree: "30 mn"
@@ -697,6 +754,7 @@
 - opus: "055"
   titre: "Pillow Talk"
   formation: "Piano et peut-être voix."
+  instruments: [voix, piano]
   date_comp: 1975
   nb_pages: 13
   duree: ""
@@ -709,6 +767,7 @@
 - opus: "056"
   titre: "Tombeau de Ravel (le)"
   formation: "Piano à 4 mains"
+  instruments: [piano]
   date_comp: 1975
   nb_pages: 45
   duree: "15 mn"
@@ -721,6 +780,7 @@
 - opus: "057"
   titre: "Menuet"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1975
   nb_pages: 2
   duree: ""
@@ -733,6 +793,7 @@
 - opus: "058"
   titre: "Spirit’s Song (the)"
   formation: "Piano et voix"
+  instruments: [voix, piano]
   date_comp: 1975
   nb_pages: 12
   duree: ""
@@ -745,6 +806,7 @@
 - opus: "059"
   titre: "Time is on my Side"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1975
   nb_pages: 3
   duree: ""
@@ -817,6 +879,7 @@
 - opus: "065"
   titre: "Sonate n°16 pour Piano “Silver String”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1976
   nb_pages: 11
   duree: ""
@@ -841,6 +904,7 @@
 - opus: "067"
   titre: "Étude pour l’Égalité des Doigts"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1976
   nb_pages: 3
   duree: ""
@@ -865,6 +929,7 @@
 - opus: "069"
   titre: "Adagio"
   formation: "Violon et piano"
+  instruments: [violon, piano]
   date_comp: 1976
   nb_pages: 3
   duree: ""
@@ -877,6 +942,7 @@
 - opus: "070"
   titre: "Sonate pour Violon et Piano n°3 “The Meeting of the Waters”"
   formation: "Violon et piano"
+  instruments: [violon, piano]
   date_comp: 1976
   nb_pages: 34
   duree: "31 mn selon Olivier"
@@ -888,7 +954,7 @@
 
 - opus: "071"
   titre: "Bomben auf Engelland"
-  formation: "Chant, saxophone, piano."
+  formation: "Chant, saxophone, piano"
   date_comp: 1976
   nb_pages: 16
   duree: "8 mn"
@@ -901,6 +967,7 @@
 - opus: "072"
   titre: "Einst da ich Bittre Tränen Vergoss"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1976
   nb_pages: 10
   duree: ""
@@ -936,7 +1003,8 @@
 
 - opus: "075"
   titre: "Sonate n°17 pour Piano"
-  formation: "piano "
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1977
   nb_pages: 12
   duree: ""
@@ -948,7 +1016,8 @@
 
 - opus: "076"
   titre: "Sonate n°18 pour Piano “Three Poems of Li T’ai Po”"
-  formation: "Piano "
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1977
   nb_pages: 26
   duree: ""
@@ -961,6 +1030,7 @@
 - opus: "078"
   titre: "Piano Book"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1977
   nb_pages: 112
   duree: ""
@@ -985,6 +1055,7 @@
 - opus: "080"
   titre: "Pièces pour Piano (5) pour un concours"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1977
   nb_pages: 11
   duree: ""
@@ -997,6 +1068,7 @@
 - opus: "081"
   titre: "Pièce pour Piano pour un Concours (Refusée)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1977
   nb_pages:
   duree: ""
@@ -1009,6 +1081,7 @@
 - opus: "082"
   titre: "Pièces pour Piano (5) pour un concours - 2"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1977
   nb_pages: 10
   duree: ""
@@ -1021,6 +1094,7 @@
 - opus: "083"
   titre: "Pièces pour Violon et Piano (2) – 1"
   formation: "Violon et piano"
+  instruments: [violon, piano]
   date_comp: 1977
   nb_pages: 5
   duree: ""
@@ -1032,7 +1106,8 @@
 
 - opus: "084"
   titre: "Pièces pour Violon et Piano (2) – 2"
-  formation: "Violon et piano."
+  formation: "Violon et piano"
+  instruments: [violon, piano]
   date_comp: 1977
   nb_pages: 5
   duree: ""
@@ -1044,7 +1119,8 @@
 
 - opus: "085"
   titre: "Pièces pour Alto et Piano (2) – 1"
-  formation: "Alto et piano"
+  formation: "Alto et Piano"
+  instruments: [alto, piano]
   date_comp: 1977
   nb_pages: 5
   duree: ""
@@ -1057,6 +1133,7 @@
 - opus: "086"
   titre: "Variations on Peter Philips “Galiarda Dolorosa”"
   formation: "Violon et piano"
+  instruments: [violon, piano]
   date_comp: 1977
   nb_pages: 26
   duree: ""
@@ -1092,7 +1169,8 @@
 
 - opus: "095"
   titre: "Na Pari Tomaï"
-  formation: "Alto et piano"
+  formation: "Alto et Piano"
+  instruments: [alto, piano]
   date_comp: 1977
   nb_pages: 20
   duree: ""
@@ -1116,6 +1194,7 @@
 - opus: "103"
   titre: "Veni Creator"
   formation: "Violoncelle et piano"
+  instruments: [violoncelle, piano]
   date_comp: 1978
   nb_pages: 14
   duree: "12 mn"
@@ -1128,6 +1207,7 @@
 - opus: "104"
   titre: "Pièces pour Violon et Piano (2) – 3"
   formation: "Violon et piano"
+  instruments: [violon, piano]
   date_comp: 1978
   nb_pages: 6
   duree: ""
@@ -1139,7 +1219,8 @@
 
 - opus: "105"
   titre: "Pièces pour Alto et Piano (2) – 2"
-  formation: "Alto et piano"
+  formation: "Alto et Piano"
+  instruments: [alto, piano]
   date_comp: 1978
   nb_pages: 7
   duree: ""
@@ -1164,6 +1245,7 @@
 - opus: "120"
   titre: "Running Suite"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1979
   nb_pages: 6
   duree: ""
@@ -1176,6 +1258,7 @@
 - opus: "127"
   titre: "Easter Wings, Discipline"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1979
   nb_pages: 6
   duree: ""
@@ -1188,6 +1271,7 @@
 - opus: "128"
   titre: "Song"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1979
   nb_pages: 6
   duree: ""
@@ -1199,7 +1283,8 @@
 
 - opus: "139"
   titre: "En Rêve"
-  formation: "Violoncelle et piano."
+  formation: "Violoncelle et piano"
+  instruments: [violoncelle, piano]
   date_comp: 1979
   nb_pages: 4
   duree: ""
@@ -1212,6 +1297,7 @@
 - opus: "310"
   titre: "Chants de l’Âme (les)"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1979-1995
   nb_pages: 68
   duree: "47 mn"
@@ -1248,6 +1334,7 @@
 - opus: "147"
   titre: "Petit Choral Varié"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1980
   nb_pages: 1
   duree: ""
@@ -1296,6 +1383,7 @@
 - opus: "167"
   titre: "Pièces pour Violoncelle et piano (2) pour un concours – 1"
   formation: "Violoncelle et piano"
+  instruments: [violoncelle, piano]
   date_comp: 1982
   nb_pages: 6
   duree: ""
@@ -1308,6 +1396,7 @@
 - opus: "169"
   titre: "Hiroshima / Nagasaki"
   formation: "Chœur mixte a cappella."
+  instruments: [voix]
   date_comp: 1983
   nb_pages: 52
   duree: "32 mn"
@@ -1321,6 +1410,7 @@
 - opus: "170"
   titre: "Oi Akashe"
   formation: "Violoncelle et piano"
+  instruments: [violoncelle, piano]
   date_comp: 1983
   nb_pages: 17
   duree: ""
@@ -1332,7 +1422,8 @@
 
 - opus: "171"
   titre: "Pièces pour Alto et Piano (2) – 3"
-  formation: "Alto et Piano."
+  formation: "Alto et Piano"
+  instruments: [alto, piano]
   date_comp: 1983
   nb_pages: 8
   duree: ""
@@ -1345,6 +1436,7 @@
 - opus: "173"
   titre: "Pièces pour Violoncelle et Piano (2) pour un concours – 2"
   formation: "Violoncelle et piano"
+  instruments: [violoncelle, piano]
   date_comp: 1983
   nb_pages: 6
   duree: ""
@@ -1356,7 +1448,8 @@
 
 - opus: "174"
   titre: "Pièces pour Alto et Piano (2) – 4"
-  formation: "Alto et Piano."
+  formation: "Alto et Piano"
+  instruments: [alto, piano]
   date_comp: 1983
   nb_pages: 5
   duree: ""
@@ -1368,7 +1461,8 @@
 
 - opus: "175"
   titre: "Carillon (Inclus dans “Piano Book”)"
-  formation: "piano"
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1983
   nb_pages: 2
   duree: ""
@@ -1392,6 +1486,16 @@
 - opus: "177"
   titre: "Premaloker, méditation pour grand chœur mixte"
   formation: "Double chœr mixte, 12 voix d’homme, flûte, clarinette, violon, violoncelle, célesta, orgue électronique"
+  instruments:
+      [
+          voix,
+          flûte,
+          clarinette,
+          violon,
+          violoncelle,
+          célesta,
+          orgue électronique,
+      ]
   date_comp: 1983
   nb_pages: 28
   duree: ""
@@ -1404,6 +1508,7 @@
 - opus: "181"
   titre: "Portrait de Johanne Margarethe Büchting"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1984
   nb_pages: 1
   duree: ""
@@ -1416,6 +1521,7 @@
 - opus: "182"
   titre: "Portrait d’Edith Regina Jaus-Büchting et d’Andreas Büchting"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1984
   nb_pages: 1
   duree: ""
@@ -1428,6 +1534,7 @@
 - opus: "183"
   titre: "Valse sur le nom de Godino"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1984
   nb_pages: 1
   duree: ""
@@ -1440,6 +1547,7 @@
 - opus: "184"
   titre: "Prélude pour Henri Barda"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1984
   nb_pages: 1
   duree: ""
@@ -1452,6 +1560,7 @@
 - opus: "185"
   titre: "Caprice pour Colette"
   formation: "Violon"
+  instruments: [violon]
   date_comp: 1984
   nb_pages: 1
   duree: ""
@@ -1464,6 +1573,7 @@
 - opus: "195"
   titre: "Préludes pour piano (6)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1985
   nb_pages: 21
   duree: ""
@@ -1476,6 +1586,7 @@
 - opus: "196"
   titre: "Fantaisie"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1985
   nb_pages: 2
   duree: ""
@@ -1512,6 +1623,7 @@
 - opus: "228"
   titre: "Subala"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1987
   nb_pages: 2
   duree: ""
@@ -1523,7 +1635,8 @@
 
 - opus: "235b"
   titre: "O Gamelan"
-  formation: "piano"
+  formation: "Piano"
+  instruments: [piano]
   date_comp: 1988
   nb_pages:
   duree: ""
@@ -1536,6 +1649,7 @@
 - opus: "248"
   titre: "Amenhotep, fils de Hapou"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1990
   nb_pages: 2
   duree: ""
@@ -1548,6 +1662,7 @@
 - opus: "256"
   titre: "Le Rêve du Monde"
   formation: "Piano, célesta, accordéon ou bandonéon, orchestre."
+  instruments: [piano, célesta, accordéon, bandonéon, orchestre]
   date_comp: 1991
   nb_pages: 10
   duree: ""
@@ -1559,7 +1674,8 @@
 
 - opus: "270"
   titre: "Hölderlin Lieder"
-  formation: "Voix et piano."
+  formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1991
   nb_pages: 78
   duree: ""
@@ -1572,6 +1688,7 @@
 - opus: "271"
   titre: "Hälfte des Lebens"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1991
   nb_pages: 3
   duree: ""
@@ -1584,6 +1701,7 @@
 - opus: "283"
   titre: "Sonate de Requiem"
   formation: "Violoncelle et piano"
+  instruments: [violoncelle, piano]
   date_comp: 1992
   nb_pages: 64
   duree: "27 mn"
@@ -1608,6 +1726,7 @@
 - opus: "289"
   titre: "Sonate pour Piano n°19 “Trois Pièces Sérieuses”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1993
   nb_pages: 9
   duree: ""
@@ -1620,6 +1739,7 @@
 - opus: "290"
   titre: "Sonate pour Piano n°20 “Le Rêve du Monde”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1993
   nb_pages: 18
   duree: ""
@@ -1644,6 +1764,7 @@
 - opus: "292"
   titre: "Quodlibet"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1993
   nb_pages: 2
   duree: ""
@@ -1656,6 +1777,7 @@
 - opus: "293"
   titre: "A Tragic Football Game"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1993
   nb_pages: 3
   duree: ""
@@ -1668,6 +1790,7 @@
 - opus: "295"
   titre: "Am Grabe Franz Liszts"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1993
   nb_pages: 13
   duree: ""
@@ -1680,6 +1803,7 @@
 - opus: "297"
   titre: "Once a Lady was Here"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1994
   nb_pages: 5
   duree: ""
@@ -1692,6 +1816,7 @@
 - opus: "298"
   titre: "Night without Sleep"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1994
   nb_pages: 7
   duree: ""
@@ -1716,6 +1841,7 @@
 - opus: "302"
   titre: "Fantôme d’Enrico Clifford (le)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1994
   nb_pages: 5
   duree: ""
@@ -1728,6 +1854,7 @@
 - opus: "303"
   titre: "Sonate pour Piano n°21 “Codex Domini”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1994
   nb_pages: 22
   duree: ""
@@ -1764,6 +1891,7 @@
 - opus: "308"
   titre: "Sonate pour 2 Violoncelles “The Battle of Agincourt”"
   formation: "2 violoncelles"
+  instruments: [violoncelle, violoncelle]
   date_comp: 1995
   nb_pages: 55
   duree: ""
@@ -1812,6 +1940,7 @@
 - opus: "319"
   titre: "Sonate pour piano n° 22 “Les plaisirs de Chérence”"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1997
   nb_pages: 25
   duree: ""
@@ -1836,6 +1965,7 @@
 - opus: "321"
   titre: "Lys de Marie (le)"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1997
   nb_pages: 1
   duree: ""
@@ -1848,6 +1978,7 @@
 - opus: "323"
   titre: "Livre des Saints Irlandais (le)"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1997
   nb_pages: 28
   duree: "20 mn"
@@ -1860,6 +1991,7 @@
 - opus: "326"
   titre: "Troubadours et Ménestrels"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1997
   nb_pages: 2
   duree: ""
@@ -1884,6 +2016,7 @@
 - opus: "331"
   titre: "Table des Matières"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1998
   nb_pages: 5
   duree: ""
@@ -1896,6 +2029,7 @@
 - opus: "347"
   titre: "Imago Mundi"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1998
   nb_pages: 51
   duree: ""
@@ -1908,6 +2042,7 @@
 - opus: "348"
   titre: "B comme Brigitte"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1998
   nb_pages: 3
   duree: ""
@@ -1932,6 +2067,7 @@
 - opus: "350"
   titre: "Trois chansons apocryphes"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 1998
   nb_pages: 19
   duree: "14 mn"
@@ -1992,6 +2128,7 @@
 - opus: "355"
   titre: "Shylock Funèbre"
   formation: "Violoncelle et piano"
+  instruments: [violoncelle, piano]
   date_comp: 1999
   nb_pages: 16
   duree: "10mn"
@@ -2040,6 +2177,7 @@
 - opus: "359"
   titre: "Portraits et Apparitions"
   formation: "Piano"
+  instruments: [piano]
   date_comp: 1999
   nb_pages: 39
   duree: "65 mn"
@@ -2064,6 +2202,7 @@
 - opus: "361"
   titre: "Three Settings of Musset"
   formation: "Voix et piano"
+  instruments: [voix, piano]
   date_comp: 2000
   nb_pages: 27
   duree: "19 mn"

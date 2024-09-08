@@ -1,6 +1,7 @@
 ---
 import { getConcert, getPath } from "../../helpers";
 import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
+import Date from "../Date.astro";
 import Field from "../Field.astro";
 
 const { id, variant = "full" } = Astro.props;
@@ -14,7 +15,7 @@ const showFull = variant === "full";
 	<h3>
 		<a href={getPath(concert)}>{titre}</a>
 	</h3>
-	<h4>{date}</h4>
+	<Date date={date} />
 	{showFull && <Field label="Adresse" value={adresse} />}
 	<Field label="Interprètes" value={interpretes} />
 

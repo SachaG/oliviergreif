@@ -1,0 +1,20 @@
+---
+import { convertTitle } from "../../helpers";
+
+const { instrument, currentInstrumentId } = Astro.props;
+const isCurrent = convertTitle(instrument) === currentInstrumentId;
+---
+
+<li class={isCurrent ? "instrument-current" : ""}>
+	<a href={`/catalogue/instruments/${convertTitle(instrument)}`}
+		>{instrument}</a
+	>
+</li>
+
+<style>
+	.instrument-current {
+		a {
+			font-weight: bold;
+		}
+	}
+</style>
