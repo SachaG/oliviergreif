@@ -11,15 +11,25 @@ const { interpretes, adresse, date, titre, commentaire, oeuvres } = concert;
 const showFull = variant === "full";
 ---
 
-<div>
+<div class="content-block">
+	<Date date={date} />
+
 	<h3>
 		<a href={getPath(concert)}>{titre}</a>
 	</h3>
-	<Date date={date} />
-	{showFull && <Field label="Adresse" value={adresse} />}
-	<Field label="Interprètes" value={interpretes} />
-
-	<CatalogueRelated titres={oeuvres} />
+	<table>
+		<tbody>
+			{showFull && <Field label="Adresse">{adresse}</Field>}
+			<Field label="Interprètes">{interpretes}</Field>
+			{
+				oeuvres && oeuvres.length && (
+					<Field label="Œuvres">
+						<CatalogueRelated titres={oeuvres} />
+					</Field>
+				)
+			}
+		</tbody>
+	</table>
 
 	{showFull && <div set:html={commentaire} />}
 </div>

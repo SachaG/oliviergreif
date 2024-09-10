@@ -75,19 +75,49 @@ export const getPath = (item: ItemWithId) => `/${item.parentSlug}/${item.id}`;
 
 // Catalogue
 
-export const getCatalogue = (options?: { instrumentId?: string }) => {
-	const allItems = decorate<Oeuvre>(catalogue, "catalogue").toSorted(
-		(a, b) => a.opus > b.opus,
+export const sortByOpus = (catalogue: OeuvreWithId[]) =>
+	catalogue.toSorted(
+		(a: OeuvreWithId, b: OeuvreWithId) => Number(a.opus) - Number(b.opus),
 	);
+
+export const getCatalogue = (options?: { instrumentId?: string }) => {
+	const allItems = sortByOpus(decorate<Oeuvre>(catalogue, "catalogue"));
 	const { instrumentId } = options || {};
-	return instrumentId
-		? allItems.filter((oeuvre) =>
+	if (instrumentId) {
+		console.log(instrumentId);
+		if (instrumentId === convertTitle(OTHER_INSTRUMENTS)) {
+			return allItems.filter(
+				(oeuvre) =>
+					oeuvre.instruments &&
+					intersection(oeuvre.instruments, otherInstruments).length >
+						0,
+			);
+		} else {
+			return allItems.filter((oeuvre) =>
 				oeuvre.instruments?.map(convertTitle).includes(instrumentId),
-			)
-		: allItems;
+			);
+		}
+	} else {
+		return allItems;
+	}
 };
 export const getOeuvre = (id: string) =>
 	getter<OeuvreWithId>(id, getCatalogue());
+
+// Instruments
+
+export const OTHER_INSTRUMENTS = "autres instruments";
+export const otherInstruments = [
+	"machine à vent",
+	"saxophone",
+	"harpe",
+	"luth",
+	"accordéon",
+	"bandonéon",
+	"orgue",
+	"guitare",
+	"célesta",
+];
 
 export const getFormations = () =>
 	uniq(
@@ -98,14 +128,17 @@ export const getFormations = () =>
 			),
 	).toSorted() as string[];
 
-export const getInstruments = () =>
-	uniq(
-		catalogue
-			.filter((o) => !!o.instruments)
-			.map((oeuvre: OeuvreWithId) => oeuvre.instruments)
-			.flat()
-			.map((i) => capitalizeFirstLetter(i)),
-	).sort() as string[];
+export const getInstruments = () => {
+	const allInstruments = catalogue
+		.filter((o) => !!o.instruments)
+		.map((oeuvre: OeuvreWithId) => oeuvre.instruments)
+		.flat();
+	const instruments = uniq(allInstruments)
+		.sort()
+		.filter((i) => !otherInstruments.includes(i));
+	return instruments as string[];
+};
+
 // Concerts
 
 const parseConcert = (concert: ConcertWithId) => {
@@ -199,3 +232,7 @@ export const pluralize = (s: string, n: number) => (n > 1 ? `${s}s` : s);
 
 // see https://youmightnotneed.com/lodash#uniq
 export const uniq = (a) => [...new Set(a)];
+
+// see https://youmightnotneed.com/lodash#intersection
+export const intersection = (arr: any[], ...args: any[]) =>
+	arr.filter((item) => args.every((arr) => arr.includes(item)));

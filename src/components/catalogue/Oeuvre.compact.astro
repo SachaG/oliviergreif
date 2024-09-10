@@ -40,22 +40,17 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 	</h3>
 	<main>
 		<table class="infos">
-			<tbody>
-				{
-					editeurItem && (
-						<tr>
-							<th>Éditeur</th>
-							<td>
-								<a href={getPath(editeurItem)}>{editeur}</a>
-							</td>
-						</tr>
-					)
-				}
-				<Field label="Formation" value={formation} />
-				<Field label="Texte" value={texte} />
-				<Field label="Création" value={creation} />
-				<Field label="Durée" value={duree} />
-			</tbody>
+			{
+				editeurItem && (
+					<Field label="Éditeur">
+						<a href={getPath(editeurItem)}>{editeur}</a>
+					</Field>
+				)
+			}
+			<Field label="Formation">{formation}</Field>
+			{texte && <Field label="Texte">{texte}</Field>}
+			{creation && <Field label="Création">{creation}</Field>}
+			{duree && <Field label="Durée">{duree}</Field>}
 		</table>
 	</main>
 </div>

@@ -1,13 +1,13 @@
 ---
 import Instrument from "../../components/catalogue/Instrument.astro";
-import { getInstruments } from "../../helpers";
+import { getInstruments, OTHER_INSTRUMENTS } from "../../helpers";
 
 const instruments = getInstruments();
 const { currentInstrumentId } = Astro.props;
 ---
 
 <div class="instruments">
-	<h3>Instrument</h3>
+	<h3>Instruments</h3>
 	<ul class="items-list">
 		{
 			instruments.map((instrument) => (
@@ -17,7 +17,21 @@ const { currentInstrumentId } = Astro.props;
 				/>
 			))
 		}
+		<Instrument
+			instrument={OTHER_INSTRUMENTS}
+			currentInstrumentId={currentInstrumentId}
+		/>
 	</ul>
 </div>
 
-<style type="text/scss"></style>
+<style type="text/scss">
+	.instruments .items-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: var(--halfSpacing);
+		row-gap: var(--quarterSpacing);
+		overflow-y: scroll;
+		max-height: 80vh;
+		overscroll-behavior: contain;
+	}
+</style>

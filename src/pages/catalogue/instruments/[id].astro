@@ -4,18 +4,21 @@ import {
 	capitalizeFirstLetter,
 	getInstruments,
 	getItemsStaticPaths,
+	OTHER_INSTRUMENTS,
 } from "../../../helpers";
 import { convertTitle, pluralize } from "../../../helpers";
 import { getCatalogue } from "../../../helpers";
 import Layout from "../../../layouts/Layout.astro";
 import type { WithId } from "../../../types";
 import Instruments from "../../../components/catalogue/Instruments.astro";
+import SubgridLayout from "../../../components/SubgridLayout.astro";
+import { otherInstruments } from "../../../helpers";
 
 const { id: currentInstrumentId } = Astro.params;
 
 export function getStaticPaths() {
 	return getItemsStaticPaths(
-		getInstruments().map(
+		[...getInstruments(), OTHER_INSTRUMENTS].map(
 			(instrument) => ({ id: convertTitle(instrument) }) as WithId,
 		),
 	);
@@ -23,9 +26,11 @@ export function getStaticPaths() {
 
 const catalogue = getCatalogue({ instrumentId: currentInstrumentId });
 const instruments = getInstruments();
-const title = capitalizeFirstLetter(
-	instruments.find((i) => convertTitle(i) === currentInstrumentId) || "",
-);
+const isOtherInstruments =
+	currentInstrumentId === convertTitle(OTHER_INSTRUMENTS);
+const title = isOtherInstruments
+	? OTHER_INSTRUMENTS
+	: instruments.find((i) => convertTitle(i) === currentInstrumentId) || "";
 const maxNumberOfInstruments = Math.max(
 	...catalogue.map((o) => o.instruments?.length || 0),
 );
@@ -38,30 +43,39 @@ const catalogueByNumberOfInstruments = [...Array(maxNumberOfInstruments)]
 ---
 
 <Layout title={`Catalogue (${title})`}>
-	<h2>
-		Catalogue: {title} ({catalogue.length}
-		{pluralize("oeuvre", catalogue.length)})
-	</h2>
+	<div>
+		<h2>
+			Catalogue: {capitalizeFirstLetter(title)} ({catalogue.length}
+			{pluralize("œuvre", catalogue.length)})
+		</h2>
+		{
+			isOtherInstruments && (
+				<h4>
+					{otherInstruments.map(capitalizeFirstLetter).join(", ")}
+				</h4>
+			)
+		}
+	</div>
 	<div class="grid">
 		<main>
 			{
 				catalogueByNumberOfInstruments.map(({ count, items }) => (
-					<div class="count">
-						<h4 class="count-title">
+					<SubgridLayout>
+						<h4 class="count-title" slot="col1">
 							<span>
 								{count} {pluralize("instrument", count)}{" "}
 								<span>
 									({items.length}{" "}
-									{pluralize("oeuvre", items.length)})
+									{pluralize("œuvre", items.length)})
 								</span>
 							</span>
 						</h4>
-						<div class="items">
+						<div class="items" slot="main">
 							{items.map((oeuvre) => (
 								<Oeuvre id={oeuvre.id} />
 							))}
 						</div>
-					</div>
+					</SubgridLayout>
 				))
 			}
 		</main>
@@ -77,7 +91,6 @@ const catalogueByNumberOfInstruments = [...Array(maxNumberOfInstruments)]
 	.count-title {
 		position: sticky;
 		top: 0px;
-		background: #ffffffcc;
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 </style>

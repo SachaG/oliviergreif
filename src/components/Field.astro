@@ -7,11 +7,9 @@ interface Props {
 const { label, value } = Astro.props;
 ---
 
-{
-	value ? (
-		<tr>
-			<th>{label}</th>
-			<td>{value}</td>
-		</tr>
-	) : null
-}
+<tr>
+	<th>{label}</th>
+	<td>
+		<slot />
+	</td>
+</tr>

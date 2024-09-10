@@ -1,0 +1,12 @@
+<section class="grid-layout">
+	<div><slot name="col1" /></div>
+	<div><slot name="main" /></div>
+	<div><slot name="sidebar" /></div>
+</section>
+
+<style type="text/scss">
+	.grid-layout {
+		display: grid;
+		grid-template-columns: 1fr 3fr 2fr;
+	}
+</style>

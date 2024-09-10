@@ -1,0 +1,12 @@
+<section class="subgrid-layout">
+	<div><slot name="col1" /></div>
+	<div><slot name="main" /></div>
+</section>
+
+<style type="text/scss">
+	.subgrid-layout {
+		display: grid;
+		grid-template-columns: min-content 1fr;
+		gap: var(--spacing);
+	}
+</style>

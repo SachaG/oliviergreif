@@ -11,8 +11,7 @@ const { titres } = Astro.props;
 {
 	titres && titres.length > 0 ? (
 		<div>
-			<h4>Oeuvres</h4>
-			<ul>
+			<ul class="items-list">
 				{titres.map((titre) => {
 					const oeuvre = getOeuvre(convertTitle(titre));
 					return (

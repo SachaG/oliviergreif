@@ -12,6 +12,6 @@ const oeuvre = getOeuvre(id);
 const { titre, commentaire } = oeuvre;
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={titre}>
 	<Oeuvre id={id} />
 </Layout>
