@@ -1,37 +1,46 @@
 ---
-import Instrument from "../../components/catalogue/Instrument.astro";
-import { getInstruments, OTHER_INSTRUMENTS } from "../../helpers";
-
-const instruments = getInstruments();
+import { getInstrumentsGroups, instrumentGroups } from "../../helpers";
 const { currentInstrumentId } = Astro.props;
+import { capitalizeFirstLetter } from "../../helpers";
+import { getInstrumentGroupLink, getCatalogue } from "../../helpers";
+import T from "../T.astro";
 ---
 
 <div class="instruments">
 	<h3>Instruments</h3>
 	<ul class="items-list">
 		{
-			instruments.map((instrument) => (
-				<Instrument
-					instrument={instrument}
-					currentInstrumentId={currentInstrumentId}
-				/>
-			))
+			getInstrumentsGroups().map((instrumentGroupId) => {
+				const isCurrent = instrumentGroupId === currentInstrumentId;
+				const count = getCatalogue({ instrumentGroupId }).length;
+
+				return (
+					<li class={isCurrent ? "instrument-current" : ""}>
+						<a href={getInstrumentGroupLink(instrumentGroupId)}>
+							<T
+								k={instrumentGroupId}
+								fallback={capitalizeFirstLetter(
+									instrumentGroupId,
+								)}
+							/>
+							({count})
+						</a>
+					</li>
+				);
+			})
 		}
-		<Instrument
-			instrument={OTHER_INSTRUMENTS}
-			currentInstrumentId={currentInstrumentId}
-		/>
 	</ul>
 </div>
 
 <style type="text/scss">
 	.instruments .items-list {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: var(--halfSpacing);
-		row-gap: var(--quarterSpacing);
 		overflow-y: scroll;
 		max-height: 80vh;
 		overscroll-behavior: contain;
+	}
+	.instrument-current {
+		a {
+			font-weight: bold;
+		}
 	}
 </style>

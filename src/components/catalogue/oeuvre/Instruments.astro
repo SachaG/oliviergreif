@@ -1,0 +1,25 @@
+---
+import { capitalizeFirstLetter, getInstrumentLink } from "../../../helpers";
+import type { OeuvreWithId } from "../../../types";
+
+interface Props {
+	oeuvre: OeuvreWithId;
+}
+
+const { oeuvre } = Astro.props;
+const { instruments = [], formation } = oeuvre;
+---
+
+<div>
+	{
+		instruments.map((instrumentId, i) => (
+			<span>
+				<a
+					href={getInstrumentLink(instrumentId)}
+					class={`instrument-${instrumentId}`}
+				>{capitalizeFirstLetter(instrumentId)}</a>{i < instruments.length - 1 && <span>, </span>}
+			</span>
+		))
+	}
+	({formation})
+</div>

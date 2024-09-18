@@ -170,7 +170,7 @@
 - opus: "012"
   titre: "Regrets (les)"
   formation: "Soprano, alto, basse et piano"
-  instruments: [voix, voix, voix, piano]
+  instruments: [soprano, alto (voix), basse (voix), piano]
   date_comp: 1966
   nb_pages: 6
   duree: ""
@@ -535,7 +535,16 @@
   titre: "Die Ilse – Paradisiac Memories n°2"
   formation: "Mezzo soprano, clarinette, quatuor à cordes, piano et percussion."
   instruments:
-      [voix, clarinette, violon, violon, alto, violoncelle, piano, percussions]
+      [
+          mezzo soprano,
+          clarinette,
+          violon,
+          violon,
+          alto,
+          violoncelle,
+          piano,
+          percussions,
+      ]
   date_comp: 1972
   nb_pages: 42
   duree: ""
@@ -574,7 +583,7 @@
 - opus: "041"
   titre: "Cantate “And Death Shall Have no Dominion”"
   formation: "Soprano, baryton, piano, instruments à vents, batterie."
-  instruments: [voix, voix, piano, vents, percussions]
+  instruments: [soprano, baryton, piano, vents, percussions]
   date_comp: 1974
   nb_pages: 45
   duree: "22 mn selon Olivier."
@@ -678,7 +687,7 @@
 - opus: "049"
   titre: "Light Music"
   formation: "Voix de femme, voix d'homme et piano"
-  instruments: [voix, voix, piano]
+  instruments: [soprano, baryton, piano]
   date_comp: 1974
   nb_pages: 59
   duree: ""
@@ -860,7 +869,7 @@
 - opus: "063"
   titre: "Songs (four)"
   formation: "Voix de femme et piano"
-  instruments: [voix, piano]
+  instruments: [soprano, piano]
   date_comp: 1976
   nb_pages: 30
   duree: ""
@@ -964,7 +973,7 @@
 - opus: "071"
   titre: "Bomben auf Engelland"
   formation: "Chant, saxophone, piano"
-  instruments: [piano, voix, saxophone]
+  instruments: [piano, soprano, saxophone]
   date_comp: 1976
   nb_pages: 16
   duree: "8 mn"
@@ -1326,7 +1335,7 @@
 - opus: "142"
   titre: "Little Black Mass"
   formation: "Voix de femme, alto et piano"
-  instruments: [voix, alto, piano]
+  instruments: [soprano, alto, piano]
   date_comp: 1980
   nb_pages: 38
   duree: ""
@@ -1393,9 +1402,9 @@
   formation: "Soprano, ténor, baryton, clarinette, cor en fa, piano, orgue électronique et percussions."
   instruments:
       [
-          voix,
-          voix,
-          voix,
+          soprano,
+          ténor,
+          baryton,
           clarinette,
           cor,
           piano,
@@ -1427,7 +1436,7 @@
 - opus: "169"
   titre: "Hiroshima / Nagasaki"
   formation: "Chœur mixte a cappella."
-  instruments: [voix]
+  instruments: [chœur]
   date_comp: 1983
   nb_pages: 52
   duree: "32 mn"
@@ -1668,8 +1677,8 @@
           machine à vent,
           luth,
           guitare,
-          saxophone alto,
-          voix,
+          saxophone,
+          soprano,
           chœur,
       ]
   date_comp: 1986
@@ -1775,7 +1784,7 @@
 - opus: "284"
   titre: "Forêts Anciennes"
   formation: "Piano, pianoforte ou clavecin"
-  instruments: [piano, pianoforte ou clavecin]
+  instruments: [piano, clavecin]
   date_comp: 1993
   nb_pages: 3
   duree: ""

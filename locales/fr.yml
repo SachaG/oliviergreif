@@ -1,0 +1,50 @@
+id: fr
+name: Français
+strings:
+    # nav
+    - key: accueil
+      t: Accueil
+    - key: catalogue
+      t: Catalogue
+    - key: concerts
+      t: Concerts
+    - key: disques
+      t: Disques
+    - key: editeurs
+      t: Editeurs
+    - key: actualites
+      t: Actualités
+    - key: biographie
+      t: Biographie
+    - key: association
+      t: Association
+    - key: liens
+      t: Liens
+    - key: contact
+      t: Contact
+
+    # catalog info
+    - key: opus
+      t: Opus
+    - key: formation
+      t: Formation
+    - key: textes
+      t: Textes
+    - key: creation
+      t: Création
+    - key: duree
+      t: Durée
+
+    # instruments
+    - key: oeuvre
+      t: œeuvre
+    - key: oeuvres
+      t: œuvres
+    - key: instrument
+      t: Instrument
+    - key: instruments
+      t: Instruments
+    - key: autres-instruments
+      t: Autres Instruments
+    - key: clavier-et-orgue
+      t: Clavier et Orgue

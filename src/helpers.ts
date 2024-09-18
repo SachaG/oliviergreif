@@ -19,7 +19,7 @@ import type {
 	ActualiteWithId,
 	Lien,
 } from "./types";
-import OeuvreComponent from "./components/catalogue/Oeuvre.astro";
+import OeuvreComponent from "./components/catalogue/oeuvre/Oeuvre.astro";
 import DisqueComponent from "./components/disques/Disque.astro";
 import EditeurComponent from "./components/editeurs/Editeur.astro";
 import ActualiteComponent from "./components/actualites/Actualite.astro";
@@ -46,7 +46,8 @@ type SectionIds =
 	| "editeurs"
 	| "actualites";
 
-export const convertTitle = (title: string) => slugify(title, { lower: true });
+export const convertTitle = (title: string) =>
+	slugify(title, { lower: true, remove: /[*+~.()'"!:@]/g });
 
 const getter = <T extends WithId>(id: string, items: T[]) => {
 	const item = items.find((item) => item.id === id);
@@ -80,23 +81,26 @@ export const sortByOpus = (catalogue: OeuvreWithId[]) =>
 		(a: OeuvreWithId, b: OeuvreWithId) => Number(a.opus) - Number(b.opus),
 	);
 
-export const getCatalogue = (options?: { instrumentId?: string }) => {
+export const getCatalogue = (options?: {
+	instrumentId?: string;
+	instrumentGroupId?: keyof typeof instrumentGroups;
+}) => {
 	const allItems = sortByOpus(decorate<Oeuvre>(catalogue, "catalogue"));
-	const { instrumentId } = options || {};
-	if (instrumentId) {
-		console.log(instrumentId);
-		if (instrumentId === convertTitle(OTHER_INSTRUMENTS)) {
-			return allItems.filter(
-				(oeuvre) =>
-					oeuvre.instruments &&
-					intersection(oeuvre.instruments, otherInstruments).length >
-						0,
-			);
-		} else {
-			return allItems.filter((oeuvre) =>
-				oeuvre.instruments?.map(convertTitle).includes(instrumentId),
-			);
-		}
+	const { instrumentId, instrumentGroupId } = options || {};
+	if (instrumentGroupId) {
+		console.log(instrumentGroupId);
+		return allItems.filter(
+			(oeuvre) =>
+				oeuvre.instruments &&
+				intersection(
+					oeuvre.instruments,
+					instrumentGroups[instrumentGroupId],
+				).length > 0,
+		);
+	} else if (instrumentId) {
+		return allItems.filter((oeuvre) =>
+			oeuvre.instruments?.map(convertTitle).includes(instrumentId),
+		);
 	} else {
 		return allItems;
 	}
@@ -106,19 +110,43 @@ export const getOeuvre = (id: string) =>
 
 // Instruments
 
-export const OTHER_INSTRUMENTS = "autres instruments";
-export const otherInstruments = [
-	"machine à vent",
-	"saxophone",
-	"harpe",
-	"luth",
-	"accordéon",
-	"bandonéon",
-	"orgue",
-	"guitare",
-	"célesta",
-];
-
+export const instrumentGroups = {
+	violon: ["violon"],
+	piano: ["piano"],
+	alto: ["alto"],
+	violoncelle: ["violoncelle"],
+	percussions: ["batterie", "percussions"],
+	cuivres: ["saxophone", "cor", "trompette"],
+	vents: ["flûte", "hautbois", "clarinette", "basson", "bois"],
+	voix: [
+		"voix",
+		"mezzo soprano",
+		"soprano",
+		"ténor",
+		"alto (voix)",
+		"baryton",
+		"chœur",
+		"basse (voix)",
+		"soli",
+	],
+	"clavier-et-orgue": [
+		"synthétiseur",
+		"clavecin",
+		"orgue",
+		"orgue électronique",
+	],
+	"autres-instruments": [
+		"machine à vent",
+		"harpe",
+		"luth",
+		"accordéon",
+		"bandonéon",
+		"orgue",
+		"guitare",
+		"célesta",
+		"orchestre",
+	],
+};
 export const getFormations = () =>
 	uniq(
 		catalogue
@@ -129,14 +157,32 @@ export const getFormations = () =>
 	).toSorted() as string[];
 
 export const getInstruments = () => {
-	const allInstruments = catalogue
-		.filter((o) => !!o.instruments)
+	const allInstruments: string[] = catalogue
+		.filter((o: OeuvreWithId) => !!o.instruments)
 		.map((oeuvre: OeuvreWithId) => oeuvre.instruments)
 		.flat();
+	const groupedInstruments = Object.values(instrumentGroups).flat();
 	const instruments = uniq(allInstruments)
 		.sort()
-		.filter((i) => !otherInstruments.includes(i));
-	return instruments as string[];
+		.filter((i) => !groupedInstruments.includes(i as string));
+	return instruments;
+};
+
+export const getInstrumentsGroups = () =>
+	Object.keys(instrumentGroups) as Array<keyof typeof instrumentGroups>;
+
+export const isInstrumentGroup = (instrument: string) =>
+	Object.keys(instrumentGroups).includes(instrument);
+
+export const getInstrumentGroupLink = (instrumentGroupId: string) =>
+	`/catalogue/instruments/${instrumentGroupId}`;
+
+export const getInstrumentLink = (instrumentId: string) => {
+	const instrumentGroupId = getInstrumentsGroups().find((id) => {
+		const instruments = instrumentGroups[id];
+		return instruments.includes(instrumentId);
+	});
+	return instrumentGroupId && getInstrumentGroupLink(instrumentGroupId);
 };
 
 // Concerts

@@ -1,13 +1,15 @@
 ---
 import {
+	capitalizeFirstLetter,
 	convertTitle,
 	getConcerts,
 	getDisques,
 	getEditeur,
 	getOeuvre,
 	getPath,
-} from "../../helpers";
-import Field from "../Field.astro";
+} from "../../../helpers";
+import Field from "../../Field.astro";
+import Instruments from "./Instruments.astro";
 const { id } = Astro.props;
 const oeuvre = getOeuvre(id);
 const {
@@ -17,6 +19,7 @@ const {
 	editeur,
 	commentaire,
 	formation,
+	instruments = [],
 	texte,
 	creation,
 	duree,
@@ -31,9 +34,12 @@ const disques = getDisques().filter((disque) =>
 );
 
 const editeurItem = editeur && getEditeur(convertTitle(editeur));
+const className = instruments
+	?.map((i) => `instrument-${convertTitle(i)}`)
+	.join(" ");
 ---
 
-<div>
+<div class={`visible ${className}`}>
 	<div class="opus">Opus {opus}</div>
 	<h3>
 		<a href={getPath(oeuvre)}>{titre}</a>
@@ -47,31 +53,37 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 					</Field>
 				)
 			}
-			<Field label="Formation">{formation}</Field>
+			<Field label="Formation"><Instruments oeuvre={oeuvre} /></Field>
 			{texte && <Field label="Texte">{texte}</Field>}
 			{creation && <Field label="Création">{creation}</Field>}
 			{duree && <Field label="Durée">{duree}</Field>}
 		</table>
 	</main>
-</div>
 
-<style type="text/scss">
-	.opus {
-		text-transform: uppercase;
-		color: var(--textSecondaryColor);
-		margin-bottom: var(--quarterSpacing);
-	}
-	.infos {
-		th,
-		td {
-			text-align: left;
-			vertical-align: top;
-			padding-bottom: var(--quarterSpacing);
+	<style type="text/scss">
+		.opus {
+			text-transform: uppercase;
+			color: var(--textSecondaryColor);
+			margin-bottom: var(--quarterSpacing);
 		}
-		th {
-			min-width: 200px;
+		.infos {
+			th,
+			td {
+				text-align: left;
+				vertical-align: top;
+				padding-bottom: var(--quarterSpacing);
+			}
+			th {
+				min-width: 200px;
+			}
+			tr {
+			}
 		}
-		tr {
+		.visible {
+			display: block;
 		}
-	}
-</style>
+		.hidden {
+			display: none;
+		}
+	</style>
+</div>

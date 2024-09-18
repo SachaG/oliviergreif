@@ -1,0 +1,50 @@
+id: en
+name: English
+strings:
+    # nav
+    - key: accueil
+      t: Home
+    - key: catalogue
+      t: Catalog
+    - key: concerts
+      t: Concerts
+    - key: disques
+      t: Discs
+    - key: editeurs
+      t: Publishers
+    - key: actualites
+      t: News
+    - key: biographie
+      t: Biography
+    - key: association
+      t: Association
+    - key: liens
+      t: Links
+    - key: contact
+      t: Contact
+
+    # catalog info
+    - key: opus
+      t: Opus
+    - key: formation
+      t: Formation
+    - key: textes
+      t: Texts
+    - key: creation
+      t: Creation
+    - key: duree
+      t: Durée
+
+    # instruments
+    - key: oeuvre
+      t: work
+    - key: oeuvres
+      t: works
+    - key: instrument
+      t: Instrument
+    - key: instruments
+      t: Instruments
+    - key: autres-instruments
+      t: Other Instruments
+    - key: clavier-et-orgue
+      t: Keyboard and Organ

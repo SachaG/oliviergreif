@@ -1,10 +1,10 @@
 ---
-import Oeuvre from "../../../components/catalogue/Oeuvre.compact.astro";
+import Oeuvre from "../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
 import {
 	capitalizeFirstLetter,
-	getInstruments,
+	getInstrumentsGroups,
 	getItemsStaticPaths,
-	OTHER_INSTRUMENTS,
+	instrumentGroups,
 } from "../../../helpers";
 import { convertTitle, pluralize } from "../../../helpers";
 import { getCatalogue } from "../../../helpers";
@@ -12,29 +12,24 @@ import Layout from "../../../layouts/Layout.astro";
 import type { WithId } from "../../../types";
 import Instruments from "../../../components/catalogue/Instruments.astro";
 import SubgridLayout from "../../../components/SubgridLayout.astro";
-import { otherInstruments } from "../../../helpers";
+import T from "../../../components/T.astro";
 
-const { id: currentInstrumentId } = Astro.params;
+const { id } = Astro.params;
+const instrumentGroupId = id as keyof typeof instrumentGroups;
 
 export function getStaticPaths() {
 	return getItemsStaticPaths(
-		[...getInstruments(), OTHER_INSTRUMENTS].map(
+		getInstrumentsGroups().map(
 			(instrument) => ({ id: convertTitle(instrument) }) as WithId,
 		),
 	);
 }
 
-const catalogue = getCatalogue({ instrumentId: currentInstrumentId });
-const instruments = getInstruments();
-const isOtherInstruments =
-	currentInstrumentId === convertTitle(OTHER_INSTRUMENTS);
-const title = isOtherInstruments
-	? OTHER_INSTRUMENTS
-	: instruments.find((i) => convertTitle(i) === currentInstrumentId) || "";
-const maxNumberOfInstruments = Math.max(
-	...catalogue.map((o) => o.instruments?.length || 0),
-);
-const catalogueByNumberOfInstruments = [...Array(maxNumberOfInstruments)]
+const instruments = instrumentGroups[instrumentGroupId];
+const catalogue = getCatalogue({ instrumentGroupId });
+const title = instrumentGroupId || "";
+
+const catalogueByNumberOfInstruments = [...Array(100)]
 	.map((x, count) => ({
 		count: count + 1,
 		items: catalogue.filter((o) => o.instruments?.length === count + 1),
@@ -42,17 +37,66 @@ const catalogueByNumberOfInstruments = [...Array(maxNumberOfInstruments)]
 	.filter(({ items }) => items.length > 0);
 ---
 
+<script>
+	import { convertTitle } from "../../../helpers";
+
+	// Find our component DOM on the page.
+	const checkboxes =
+		document.querySelectorAll<HTMLInputElement>(".instrument-toggle");
+
+	// Add event listeners to fire confetti when a button is clicked.
+	checkboxes.forEach((checkbox) => {
+		checkbox.addEventListener("click", (e) => {
+			// Get the checked/unchecked status
+			const isChecked = checkbox.checked;
+
+			// Get the value of the data-filter attribute
+			const instrument = checkbox.getAttribute("data-instrument");
+			const oeuvres = document.querySelectorAll<HTMLDivElement>(
+				`.instrument-${convertTitle(instrument || "")}`,
+			);
+
+			if (isChecked) {
+				oeuvres.forEach((oeuvre) => {
+					oeuvre.classList.add("visible");
+					oeuvre.classList.remove("hidden");
+				});
+			} else {
+				oeuvres.forEach((oeuvre) => {
+					oeuvre.classList.add("hidden");
+					oeuvre.classList.remove("visible");
+				});
+			}
+		});
+	});
+</script>
+
 <Layout title={`Catalogue (${title})`}>
 	<div>
 		<h2>
-			Catalogue: {capitalizeFirstLetter(title)} ({catalogue.length}
-			{pluralize("œuvre", catalogue.length)})
+			Catalogue: <T
+				k={instrumentGroupId}
+				fallback={capitalizeFirstLetter(title)}
+			/> ({catalogue.length}
+			<T k="oeuvre" kPlural="oeuvres" count={catalogue.length} />)
 		</h2>
 		{
-			isOtherInstruments && (
-				<h4>
-					{otherInstruments.map(capitalizeFirstLetter).join(", ")}
-				</h4>
+			instruments.length > 1 && (
+				<div class="instruments-list">
+					{instruments.map((instrument) => (
+						<h5>
+							<label>
+								<input
+									class="instrument-toggle"
+									type="checkbox"
+									checked="checked"
+									data-instrument={instrument}
+								/>
+								<span>{capitalizeFirstLetter(instrument)}</span>
+							</label>
+						</h5>
+					))}
+				</div>
 			)
 		}
 	</div>
@@ -60,28 +104,35 @@ const catalogueByNumberOfInstruments = [...Array(maxNumberOfInstruments)]
 		<main>
 			{
 				catalogueByNumberOfInstruments.map(({ count, items }) => (
-					<SubgridLayout>
-						<h4 class="count-title" slot="col1">
-							<span>
-								{count} {pluralize("instrument", count)}{" "}
-								<span>
-									({items.length}{" "}
-									{pluralize("œuvre", items.length)})
+					<div class="subcontainer">
+						<SubgridLayout>
+							<h4 class="count-title" slot="col1">
+								<span class="count-heading">
+									{count}
+									<T
+										k="instrument"
+										kPlural="instruments"
+										count={count}
+									/>
+									{/* <span>
+										({items.length}{" "}
+										{pluralize("œuvre", items.length)})
+									</span> */}
 								</span>
-							</span>
-						</h4>
-						<div class="items" slot="main">
-							{items.map((oeuvre) => (
-								<Oeuvre id={oeuvre.id} />
-							))}
-						</div>
-					</SubgridLayout>
+							</h4>
+							<div class="items" slot="main">
+								{items.map((oeuvre) => (
+									<Oeuvre id={oeuvre.id} />
+								))}
+							</div>
+						</SubgridLayout>
+					</div>
 				))
 			}
 		</main>
 		<section class="sidebar">
 			<div class="sidebar-contents">
-				<Instruments currentInstrumentId={currentInstrumentId} />
+				<Instruments currentInstrumentId={instrumentGroupId} />
 			</div>
 		</section>
 	</div>
@@ -92,5 +143,17 @@ const catalogueByNumberOfInstruments = [...Array(maxNumberOfInstruments)]
 		position: sticky;
 		top: 0px;
 		font-size: 2rem;
+	}
+	@supports (selector(:has(*))) {
+		.subcontainer:not(:has(.visible)) {
+			display: none;
+		}
+	}
+	.instruments-list {
+		display: flex;
+		gap: var(--halfSpacing);
+	}
+	.count-heading {
+		white-space: nowrap;
 	}
 </style>
