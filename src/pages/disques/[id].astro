@@ -9,7 +9,7 @@ export function getStaticPaths() {
 
 const { id } = Astro.params;
 const oeuvre = getDisque(id);
-const { titre, commentaire } = oeuvre;
+const { titre } = oeuvre;
 ---
 
 <Layout title={titre}>

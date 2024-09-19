@@ -1,10 +1,11 @@
 import slugify from "slugify";
-import catalogue from "../data/catalogue.yml";
-import concerts from "../data/concerts.yml";
-import disques from "../data/disques.yml";
-import editeurs from "../data/editeurs.yml";
-import liens from "../data/liens.yml";
-import actualites from "../data/actualites.yml";
+import catalogue_ from "../data/catalogue.yml";
+import concerts_ from "../data/concerts.yml";
+import disques_ from "../data/disques.yml";
+import editeurs_ from "../data/editeurs.yml";
+import liens_ from "../data/liens.yml";
+import actualites_ from "../data/actualites.yml";
+
 import type {
 	WithId,
 	Concert,
@@ -25,21 +26,29 @@ import EditeurComponent from "./components/editeurs/Editeur.astro";
 import ActualiteComponent from "./components/actualites/Actualite.astro";
 import ConcertComponent from "./components/concerts/Concert.astro";
 
-type ItemWithId =
+const catalogue = catalogue_ as Oeuvre[];
+const concerts = concerts_ as Concert[];
+const disques = disques_ as Disque[];
+const editeurs = editeurs_ as Editeur[];
+const liens = liens_ as Lien[];
+const actualites = actualites_ as Actualite[];
+
+export type ItemWithId =
 	| OeuvreWithId
 	| ConcertWithId
 	| DisqueWithId
 	| EditeurWithId
 	| ActualiteWithId;
 
-type Section<T> = {
+export type Section<T> = {
 	id: string;
 	label: string;
 	moreLabel: string;
 	items: Array<T>;
 	component: any;
 };
-type SectionIds =
+
+export type SectionIds =
 	| "catalogue"
 	| "concerts"
 	| "disques"
@@ -47,7 +56,10 @@ type SectionIds =
 	| "actualites";
 
 export const convertTitle = (title: string) =>
-	slugify(title, { lower: true, remove: /[*+~.()'"!:@]/g });
+	slugify(title.replaceAll("/", ""), {
+		lower: true,
+		remove: /[*+~.()'"!:@]/g,
+	});
 
 const getter = <T extends WithId>(id: string, items: T[]) => {
 	const item = items.find((item) => item.id === id);
@@ -117,7 +129,7 @@ export const instrumentGroups = {
 	violoncelle: ["violoncelle"],
 	percussions: ["batterie", "percussions"],
 	cuivres: ["saxophone", "cor", "trompette"],
-	vents: ["flûte", "hautbois", "clarinette", "basson", "bois"],
+	vents: ["vents", "flûte", "hautbois", "clarinette", "basson", "bois"],
 	voix: [
 		"voix",
 		"mezzo soprano",
@@ -149,18 +161,18 @@ export const instrumentGroups = {
 };
 export const getFormations = () =>
 	uniq(
-		catalogue
+		getCatalogue()
 			.filter((o) => !!o.formation)
-			.map((oeuvre: OeuvreWithId) =>
+			.map((oeuvre: Oeuvre) =>
 				capitalizeFirstLetter(oeuvre.formation?.toLowerCase()!),
 			),
 	).toSorted() as string[];
 
 export const getInstruments = () => {
-	const allInstruments: string[] = catalogue
+	const allInstruments = getCatalogue()
 		.filter((o: OeuvreWithId) => !!o.instruments)
 		.map((oeuvre: OeuvreWithId) => oeuvre.instruments)
-		.flat();
+		.flat() as string[];
 	const groupedInstruments = Object.values(instrumentGroups).flat();
 	const instruments = uniq(allInstruments)
 		.sort()
@@ -178,10 +190,13 @@ export const getInstrumentGroupLink = (instrumentGroupId: string) =>
 	`/catalogue/instruments/${instrumentGroupId}`;
 
 export const getInstrumentLink = (instrumentId: string) => {
+	console.log(instrumentId);
 	const instrumentGroupId = getInstrumentsGroups().find((id) => {
 		const instruments = instrumentGroups[id];
 		return instruments.includes(instrumentId);
 	});
+	console.log(instrumentGroupId);
+
 	return instrumentGroupId && getInstrumentGroupLink(instrumentGroupId);
 };
 
@@ -277,7 +292,7 @@ export function capitalizeFirstLetter(s: string) {
 export const pluralize = (s: string, n: number) => (n > 1 ? `${s}s` : s);
 
 // see https://youmightnotneed.com/lodash#uniq
-export const uniq = (a) => [...new Set(a)];
+export const uniq = (a: any) => [...new Set(a)];
 
 // see https://youmightnotneed.com/lodash#intersection
 export const intersection = (arr: any[], ...args: any[]) =>

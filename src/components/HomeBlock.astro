@@ -1,5 +1,11 @@
 ---
-import { getPath, getSection, getSectionPath } from "../helpers";
+import { getSection, getSectionPath } from "../helpers";
+import type { SectionIds } from "../helpers";
+
+interface Props {
+	sectionId: SectionIds;
+	limit: number;
+}
 
 const { sectionId, limit = 5 } = Astro.props;
 const section = getSection(sectionId);
@@ -12,6 +18,7 @@ const { items, label, moreLabel, component: ItemComponent } = section;
 		{
 			items
 				.slice(0, limit)
+				// @ts-ignore
 				.map((item) => <ItemComponent id={item.id} variant="short" />)
 		}
 	</div>

@@ -10,7 +10,7 @@ export function getStaticPaths() {
 const { id } = Astro.params;
 const concert = getConcert(id);
 
-const { date, titre, commentaire } = concert;
+const { titre } = concert;
 ---
 
 <Layout title={titre}>

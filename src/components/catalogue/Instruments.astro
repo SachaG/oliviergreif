@@ -1,5 +1,5 @@
 ---
-import { getInstrumentsGroups, instrumentGroups } from "../../helpers";
+import { getInstrumentsGroups } from "../../helpers";
 const { currentInstrumentId } = Astro.props;
 import { capitalizeFirstLetter } from "../../helpers";
 import { getInstrumentGroupLink, getCatalogue } from "../../helpers";
@@ -13,18 +13,29 @@ import T from "../T.astro";
 			getInstrumentsGroups().map((instrumentGroupId) => {
 				const isCurrent = instrumentGroupId === currentInstrumentId;
 				const count = getCatalogue({ instrumentGroupId }).length;
-
 				return (
 					<li class={isCurrent ? "instrument-current" : ""}>
-						<a href={getInstrumentGroupLink(instrumentGroupId)}>
-							<T
-								k={instrumentGroupId}
-								fallback={capitalizeFirstLetter(
-									instrumentGroupId,
-								)}
-							/>
-							({count})
-						</a>
+						<h5>
+							<a href={getInstrumentGroupLink(instrumentGroupId)}>
+								<T
+									k={instrumentGroupId}
+									fallback={capitalizeFirstLetter(
+										instrumentGroupId,
+									)}
+								/>
+								<span class="count">({count})</span>
+							</a>
+						</h5>
+						{/* {instruments.length > 1 && (
+							<p>
+								{instruments.map((i) => (
+									<>
+										<T k={i} />
+										<span>, </span>
+									</>
+								))}
+							</p>
+						)} */}
 					</li>
 				);
 			})
@@ -42,5 +53,15 @@ import T from "../T.astro";
 		a {
 			font-weight: bold;
 		}
+	}
+	.count {
+		font-weight: normal;
+	}
+	h5 {
+		margin-bottom: 5px;
+	}
+	p {
+		margin-bottom: 0;
+		font-size: 1rem;
 	}
 </style>

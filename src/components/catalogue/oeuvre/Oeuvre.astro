@@ -1,6 +1,5 @@
 ---
 import {
-	capitalizeFirstLetter,
 	convertTitle,
 	getConcerts,
 	getDisques,
@@ -9,21 +8,13 @@ import {
 	getPath,
 } from "../../../helpers";
 import Field from "../../Field.astro";
-import GridLayout from "../../GridLayout.astro";
+import GridLayout from "../../layouts/GridLayout.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import Instruments from "./Instruments.astro";
 const { id } = Astro.props;
 const oeuvre = getOeuvre(id);
-const {
-	date_comp,
-	opus,
-	titre,
-	editeur,
-	commentaire,
-	formation,
-	instruments = [],
-	texte,
-	creation,
-	duree,
-} = oeuvre;
+const { date_comp, opus, titre, editeur, commentaire, texte, creation, duree } =
+	oeuvre;
 
 const concerts = getConcerts().filter((concert) =>
 	concert.oeuvres?.includes(titre),
@@ -36,12 +27,14 @@ const disques = getDisques().filter((disque) =>
 const editeurItem = editeur && getEditeur(convertTitle(editeur));
 ---
 
-<div>
-	<div class="opus">Opus {opus}</div>
-	<h2 class="title">
-		{titre}
-	</h2>
-	<GridLayout>
+<MainLayout>
+	<div slot="heading">
+		<div class="opus">Opus {opus}</div>
+		<h2 class="title">
+			{titre}
+		</h2>
+	</div>
+	<GridLayout slot="content">
 		<div slot="col1">1234</div>
 		<main slot="main">
 			<table class="infos">
@@ -57,7 +50,9 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 						)
 					}
 
-					<Field label="Formation" />
+					<Field label="Instruments"
+						><Instruments oeuvre={oeuvre} /></Field
+					>
 					<Field label="Année">{date_comp}</Field>
 					<Field label="Texte">{texte}</Field>
 					<Field label="Création">{creation}</Field>
@@ -107,15 +102,12 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 			</div>
 		</nav>
 	</GridLayout>
-</div>
+</MainLayout>
 
 <style type="text/scss">
 	.opus {
 		text-transform: uppercase;
 		color: var(--textSecondaryColor);
 		margin-bottom: var(--quarterSpacing);
-	}
-	.title {
-		margin-bottom: var(--spacing);
 	}
 </style>

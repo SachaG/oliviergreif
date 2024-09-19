@@ -1,18 +1,16 @@
 ---
+import { capitalizeFirstLetter } from "../helpers";
+
 interface Props {
 	date: Date;
 }
 
-const options = {
+const options: Intl.DateTimeFormatOptions = {
 	weekday: "long",
 	year: "numeric",
 	month: "long",
 	day: "numeric",
 };
-
-function capitalizeFirstLetter(string) {
-	return string.charAt(0).toUpperCase() + string.slice(1);
-}
 
 const formattedDate = capitalizeFirstLetter(
 	Astro.props.date.toLocaleDateString("fr-FR", options),

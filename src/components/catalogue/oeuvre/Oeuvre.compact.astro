@@ -1,37 +1,18 @@
 ---
-import {
-	capitalizeFirstLetter,
-	convertTitle,
-	getConcerts,
-	getDisques,
-	getEditeur,
-	getOeuvre,
-	getPath,
-} from "../../../helpers";
+import { convertTitle, getEditeur, getOeuvre, getPath } from "../../../helpers";
 import Field from "../../Field.astro";
 import Instruments from "./Instruments.astro";
 const { id } = Astro.props;
 const oeuvre = getOeuvre(id);
 const {
-	date_comp,
 	opus,
 	titre,
 	editeur,
-	commentaire,
-	formation,
 	instruments = [],
 	texte,
 	creation,
 	duree,
 } = oeuvre;
-
-const concerts = getConcerts().filter((concert) =>
-	concert.oeuvres?.includes(titre),
-);
-
-const disques = getDisques().filter((disque) =>
-	disque.oeuvres?.includes(titre),
-);
 
 const editeurItem = editeur && getEditeur(convertTitle(editeur));
 const className = instruments
@@ -53,7 +34,7 @@ const className = instruments
 					</Field>
 				)
 			}
-			<Field label="Formation"><Instruments oeuvre={oeuvre} /></Field>
+			<Field label="Instruments"><Instruments oeuvre={oeuvre} /></Field>
 			{texte && <Field label="Texte">{texte}</Field>}
 			{creation && <Field label="Création">{creation}</Field>}
 			{duree && <Field label="Durée">{duree}</Field>}

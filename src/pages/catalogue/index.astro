@@ -3,7 +3,9 @@ import Oeuvre from "../../components/catalogue/oeuvre/Oeuvre.compact.astro";
 import { getCatalogue, pluralize, uniq } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 import Instruments from "../../components/catalogue/Instruments.astro";
-import SubgridLayout from "../../components/SubgridLayout.astro";
+import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
+import GridLayout from "../../components/layouts/GridLayout.astro";
+import MainLayout from "../../components/layouts/MainLayout.astro";
 
 const catalogue = getCatalogue();
 
@@ -15,42 +17,45 @@ const catalogueByYear = years.map((year) => ({
 ---
 
 <Layout title="Catalogue">
-	<div class="grid">
-		<main>
+	<MainLayout>
+		<span slot="heading">
 			<h2>
 				Catalogue ({catalogue.length}
 				{pluralize("oeuvre", catalogue.length)})
 			</h2>
-			{
-				catalogueByYear.map(({ year, items }, index) => {
-					return (
-						<SubgridLayout>
-							<h4 class="year-title" slot="col1">
-								<span>{year}</span>
-							</h4>
-							<div class="items" slot="main">
-								{items.map((oeuvre) => (
-									<Oeuvre id={oeuvre.id} />
-								))}
-							</div>
-						</SubgridLayout>
-					);
-				})
-			}
-		</main>
-		<section class="sidebar">
-			<div class="sidebar-contents">
-				<Instruments />
-			</div>
-		</section>
-	</div>
+		</span>
+		<GridLayout slot="content">
+			<main slot="main">
+				{
+					catalogueByYear.map(({ year, items }) => {
+						return (
+							<SubgridLayout>
+								<h4 class="year-title" slot="col1">
+									<span>{year}</span>
+								</h4>
+								<div class="items" slot="main">
+									{items.map((oeuvre) => (
+										<Oeuvre id={oeuvre.id} />
+									))}
+								</div>
+							</SubgridLayout>
+						);
+					})
+				}
+			</main>
+			<section class="sidebar" slot="sidebar">
+				<div class="sidebar-contents">
+					<Instruments />
+				</div>
+			</section>
+		</GridLayout>
+	</MainLayout>
 </Layout>
 
 <style type="text/scss">
 	.year-title {
 		position: sticky;
 		top: 0px;
-		// background: #ffffffcc;
 		font-size: 2rem;
 	}
 </style>
