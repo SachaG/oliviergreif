@@ -1,6 +1,5 @@
 ---
 import Actualite from "../../components/actualites/Actualite.compact.astro";
-import GridLayout from "../../components/layouts/GridLayout.astro";
 import PageLayout from "../../components/layouts/PageLayout.astro";
 import { getActualites } from "../../helpers";
 
@@ -10,8 +9,10 @@ import Layout from "../../layouts/Layout.astro";
 <Layout title="Actualités">
 	<PageLayout>
 		<h2 slot="page-heading">Actualités</h2>
-		<GridLayout slot="page-content">
-			{getActualites().map(({ id }) => <Actualite slot="main" id={id} />)}
-		</GridLayout>
+		{
+			getActualites().map(({ id }) => (
+				<Actualite slot="page-content" id={id} />
+			))
+		}
 	</PageLayout>
 </Layout>

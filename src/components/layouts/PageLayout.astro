@@ -1,10 +1,32 @@
-<section class="page-layout">
-	<div class="heading"><slot name="page-heading" /></div>
-	<div><slot name="page-content" /></div>
-</section>
+<div class="page-layout">
+	<section class="heading"><slot name="page-heading" /></section>
+	<section class="grid">
+		<main><slot name="page-content" /></main>
+		<div class="sidebar">
+			<div class="sidebar-contents">
+				<slot name="page-sidebar" />
+			</div>
+		</div>
+	</section>
+</div>
 
 <style type="text/scss">
 	.heading {
 		margin-bottom: var(--spacing);
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		gap: var(--spacing);
+	}
+
+	.sidebar {
+		position: sticky;
+		top: 10px;
+	}
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing);
 	}
 </style>

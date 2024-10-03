@@ -8,7 +8,6 @@ import {
 	getPath,
 } from "../../../helpers";
 import Field from "../../Field.astro";
-import GridLayout from "../../layouts/GridLayout.astro";
 import PageLayout from "../../layouts/PageLayout.astro";
 import Instruments from "./Instruments.astro";
 const { id } = Astro.props;
@@ -34,77 +33,75 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 			{titre}
 		</h2>
 	</div>
-	<GridLayout slot="page-content">
-		<main slot="main">
-			<table class="infos">
-				<tbody>
-					{
-						editeurItem && (
-							<tr>
-								<th>Éditeur</th>
-								<td>
-									<a href={getPath(editeurItem)}>{editeur}</a>
-								</td>
-							</tr>
-						)
-					}
+	<main slot="page-content">
+		<table class="infos">
+			<tbody>
+				{
+					editeurItem && (
+						<tr>
+							<th>Éditeur</th>
+							<td>
+								<a href={getPath(editeurItem)}>{editeur}</a>
+							</td>
+						</tr>
+					)
+				}
 
-					<Field label="Instruments"
-						><Instruments oeuvre={oeuvre} /></Field
-					>
-					{annee && <Field label="Année">{annee}</Field>}
-					{texte && <Field label="Texte">{texte}</Field>}
-					{creation && <Field label="Création">{creation}</Field>}
-					{duree && <Field label="Durée">{duree}</Field>}
-					{
-						commentaire && (
-							<Field>
-								<div set:html={commentaire} />
-							</Field>
-						)
-					}
-				</tbody>
-			</table>
-		</main>
-		<nav class="sidebar" slot="sidebar">
-			<div class="sidebar-contents">
+				<Field label="Instruments"
+					><Instruments oeuvre={oeuvre} /></Field
+				>
+				{annee && <Field label="Année">{annee}</Field>}
+				{texte && <Field label="Texte">{texte}</Field>}
+				{creation && <Field label="Création">{creation}</Field>}
+				{duree && <Field label="Durée">{duree}</Field>}
 				{
-					disques && disques.length > 0 && (
-						<div>
-							<h4>Disques</h4>
-							<ul class="items-list">
-								{disques.map((disque) => {
-									return (
-										<li>
-											<a href={getPath(disque)}>
-												{disque.titre}
-											</a>
-										</li>
-									);
-								})}
-							</ul>
-						</div>
+					commentaire && (
+						<Field>
+							<div set:html={commentaire} />
+						</Field>
 					)
 				}
-				{
-					concerts && concerts.length > 0 && (
-						<div>
-							<h4>Concerts</h4>
-							<ul class="items-list">
-								{concerts.map((concert) => {
-									return (
-										<li>
-											<a href={getPath(concert)}>
-												{concert.titre}
-											</a>
-										</li>
-									);
-								})}
-							</ul>
-						</div>
-					)
-				}
-			</div>
-		</nav>
-	</GridLayout>
+			</tbody>
+		</table>
+	</main>
+	<nav class="sidebar" slot="page-sidebar">
+		<div class="sidebar-contents">
+			{
+				disques && disques.length > 0 && (
+					<div>
+						<h4>Disques</h4>
+						<ul class="items-list">
+							{disques.map((disque) => {
+								return (
+									<li>
+										<a href={getPath(disque)}>
+											{disque.titre}
+										</a>
+									</li>
+								);
+							})}
+						</ul>
+					</div>
+				)
+			}
+			{
+				concerts && concerts.length > 0 && (
+					<div>
+						<h4>Concerts</h4>
+						<ul class="items-list">
+							{concerts.map((concert) => {
+								return (
+									<li>
+										<a href={getPath(concert)}>
+											{concert.titre}
+										</a>
+									</li>
+								);
+							})}
+						</ul>
+					</div>
+				)
+			}
+		</div>
+	</nav>
 </PageLayout>

@@ -1,6 +1,5 @@
 ---
 import Concert from "../../components/concerts/Concert.compact.astro";
-import GridLayout from "../../components/layouts/GridLayout.astro";
 import PageLayout from "../../components/layouts/PageLayout.astro";
 import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
 import { getConcerts, getItemsByYear, uniq } from "../../helpers";
@@ -15,21 +14,19 @@ const concertsByYear = getItemsByYear<ConcertWithId>(concerts);
 <Layout title="Concerts">
 	<PageLayout
 		><h2 slot="page-heading">Concerts</h2>
-		<GridLayout slot="page-content">
-			{
-				concertsByYear.map((yearItem) => (
-					<SubgridLayout slot="main">
-						<div slot="col1">
-							<h4>{yearItem.year}</h4>
-						</div>
-						<div class="feed-items" slot="main">
-							{yearItem.items.map((concert) => (
-								<Concert id={concert.id} />
-							))}
-						</div>
-					</SubgridLayout>
-				))
-			}
-		</GridLayout>
+		{
+			concertsByYear.map((yearItem) => (
+				<SubgridLayout slot="page-content">
+					<div slot="col1">
+						<h4>{yearItem.year}</h4>
+					</div>
+					<div class="feed-items" slot="main">
+						{yearItem.items.map((concert) => (
+							<Concert id={concert.id} />
+						))}
+					</div>
+				</SubgridLayout>
+			))
+		}
 	</PageLayout>
 </Layout>

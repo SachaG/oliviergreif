@@ -3,7 +3,6 @@ import { getConcert, getPath } from "../../helpers";
 import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
 import Date from "../Date.astro";
 import Field from "../Field.astro";
-import GridLayout from "../layouts/GridLayout.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 
 const { id, variant = "full" } = Astro.props;
@@ -21,28 +20,26 @@ const showFull = variant === "full";
 			{titre}
 		</h2>
 	</div>
-	<GridLayout slot="page-content">
-		<main slot="main">
-			<table>
-				<tbody>
-					{showFull && <Field label="Adresse">{adresse}</Field>}
-					<Field label="Interprètes">{interpretes}</Field>
-					{
-						oeuvres && oeuvres.length && (
-							<Field label="Œuvres">
-								<CatalogueRelated titres={oeuvres} />
-							</Field>
-						)
-					}
-					{
-						commentaire && (
-							<Field>
-								<div set:html={commentaire} />
-							</Field>
-						)
-					}
-				</tbody>
-			</table>
-		</main>
-	</GridLayout>
+	<div slot="page-content">
+		<table>
+			<tbody>
+				{showFull && <Field label="Adresse">{adresse}</Field>}
+				<Field label="Interprètes">{interpretes}</Field>
+				{
+					oeuvres && oeuvres.length && (
+						<Field label="Œuvres">
+							<CatalogueRelated titres={oeuvres} />
+						</Field>
+					)
+				}
+				{
+					commentaire && (
+						<Field>
+							<div set:html={commentaire} />
+						</Field>
+					)
+				}
+			</tbody>
+		</table>
+	</div>
 </PageLayout>

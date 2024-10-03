@@ -13,7 +13,6 @@ import type { WithId } from "../../../types";
 import Instruments from "../../../components/catalogue/Instruments.astro";
 import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
 import T from "../../../components/T.astro";
-import GridLayout from "../../../components/layouts/GridLayout.astro";
 import PageLayout from "../../../components/layouts/PageLayout.astro";
 
 const { id } = Astro.params;
@@ -105,61 +104,56 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 				)
 			}
 		</div>
-		<GridLayout slot="page-content">
-			<main slot="main">
-				{
-					catalogueByNumberOfInstruments.map(({ count, items }) => (
-						<div class="subcontainer">
-							<SubgridLayout>
-								<h4 class="count-title" slot="col1">
-									<span class="count-heading">
-										{count}
-										<T
-											k="instrument"
-											kPlural="instruments"
-											count={count}
-										/>
-										{/* <span>
+		{
+			catalogueByNumberOfInstruments.map(({ count, items }) => (
+				<div class="subcontainer" slot="page-content">
+					<SubgridLayout>
+						<h4 class="count-title" slot="col1">
+							<span class="count-heading">
+								{count}
+								<T
+									k="instrument"
+									kPlural="instruments"
+									count={count}
+								/>
+								{/* <span>
 										({items.length}{" "}
 										{pluralize("œuvre", items.length)})
 									</span> */}
-									</span>
-								</h4>
-								<div class="feed-items" slot="main">
-									{items.map((oeuvre) => (
-										<Oeuvre id={oeuvre.id} />
-									))}
-								</div>
-							</SubgridLayout>
+							</span>
+						</h4>
+						<div class="feed-items" slot="main">
+							{items.map((oeuvre) => (
+								<Oeuvre id={oeuvre.id} />
+							))}
 						</div>
-					))
-				}
-			</main>
-			<section class="sidebar" slot="sidebar">
-				<div class="sidebar-contents">
-					<Instruments currentInstrumentId={instrumentGroupId} />
+					</SubgridLayout>
 				</div>
-			</section>
-		</GridLayout>
-	</PageLayout>
-</Layout>
-
-<style type="text/scss">
-	.count-title {
-		position: sticky;
-		top: 0px;
-		font-size: 1.6rem;
-	}
-	@supports (selector(:has(*))) {
-		.subcontainer:not(:has(.visible)) {
-			display: none;
+			))
 		}
-	}
-	.instruments-list {
-		display: flex;
-		gap: var(--halfSpacing);
-	}
-	.count-heading {
-		white-space: nowrap;
-	}
-</style>
+		<Instruments
+			slot="page-sidebar"
+			currentInstrumentId={instrumentGroupId}
+		/>
+	</PageLayout>
+
+	<style type="text/scss">
+		.count-title {
+			position: sticky;
+			top: 0px;
+			font-size: 1.6rem;
+		}
+		@supports (selector(:has(*))) {
+			.subcontainer:not(:has(.visible)) {
+				display: none;
+			}
+		}
+		.instruments-list {
+			display: flex;
+			gap: var(--halfSpacing);
+		}
+		.count-heading {
+			white-space: nowrap;
+		}
+	</style>
+</Layout>
