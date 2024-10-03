@@ -3,7 +3,7 @@
 type Oeuvre = {
 	opus: string;
 	titre: string;
-	date_comp?: number;
+	annee?: number;
 	nb_pages?: number;
 	duree?: string;
 	texte?: string;

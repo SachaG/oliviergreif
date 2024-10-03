@@ -100,7 +100,6 @@ export const getCatalogue = (options?: {
 	const allItems = sortByOpus(decorate<Oeuvre>(catalogue, "catalogue"));
 	const { instrumentId, instrumentGroupId } = options || {};
 	if (instrumentGroupId) {
-		console.log(instrumentGroupId);
 		return allItems.filter(
 			(oeuvre) =>
 				oeuvre.instruments &&
@@ -190,13 +189,10 @@ export const getInstrumentGroupLink = (instrumentGroupId: string) =>
 	`/catalogue/instruments/${instrumentGroupId}`;
 
 export const getInstrumentLink = (instrumentId: string) => {
-	console.log(instrumentId);
 	const instrumentGroupId = getInstrumentsGroups().find((id) => {
 		const instruments = instrumentGroups[id];
 		return instruments.includes(instrumentId);
 	});
-	console.log(instrumentGroupId);
-
 	return instrumentGroupId && getInstrumentGroupLink(instrumentGroupId);
 };
 
@@ -204,11 +200,14 @@ export const getInstrumentLink = (instrumentId: string) => {
 
 const parseConcert = (concert: ConcertWithId) => {
 	const [day, month, year] = concert.rawDate.split("/");
+	const date = new Date(`${month}/${day}/${year}`);
 	return {
 		...concert,
-		date: new Date(`${month}/${day}/${year}`),
+		date,
+		annee: date.getFullYear(),
 	};
 };
+
 export const getConcerts = () =>
 	decorate<Concert>(concerts, "concerts").map(parseConcert);
 export const getConcert = (id: string) =>
@@ -227,10 +226,15 @@ export const getEditeur = (id: string) =>
 
 // Actualites
 
-const parseActualite = (actu: ActualiteWithId) => ({
-	...actu,
-	date: new Date(Number(`${actu.rawDate}000`)),
-});
+const parseActualite = (actu: ActualiteWithId) => {
+	const date = new Date(Number(`${actu.rawDate}000`));
+	return {
+		...actu,
+		date,
+		annee: date.getFullYear(),
+	};
+};
+
 export const getActualites = () =>
 	decorate<Actualite>(actualites, "actualites")
 		.map(parseActualite)
@@ -297,3 +301,20 @@ export const uniq = (a: any) => [...new Set(a)];
 // see https://youmightnotneed.com/lodash#intersection
 export const intersection = (arr: any[], ...args: any[]) =>
 	arr.filter((item) => args.every((arr) => arr.includes(item)));
+
+export const getItemsByYear = <
+	X extends OeuvreWithId | ConcertWithId | DisqueWithId | ActualiteWithId,
+>(
+	items: Array<X>,
+) => {
+	const years = uniq(items.filter((i) => i.annee).map((i) => i.annee))
+		.toSorted()
+		.toReversed() as number[];
+	const itemsByYear: Array<{ year: number; items: X[] }> = years.map(
+		(year) => ({
+			year,
+			items: items.filter((o) => o.annee === year),
+		}),
+	);
+	return itemsByYear;
+};

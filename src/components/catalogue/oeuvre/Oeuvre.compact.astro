@@ -15,6 +15,7 @@ const {
 } = oeuvre;
 
 const editeurItem = editeur && getEditeur(convertTitle(editeur));
+
 const className = instruments
 	?.map((i) => `instrument-${convertTitle(i)}`)
 	.join(" ");
@@ -26,45 +27,21 @@ const className = instruments
 		<a href={getPath(oeuvre)}>{titre}</a>
 	</h3>
 	<main>
-		<table class="infos">
-			{
-				editeurItem && (
-					<Field label="Éditeur">
-						<a href={getPath(editeurItem)}>{editeur}</a>
-					</Field>
-				)
-			}
-			<Field label="Instruments"><Instruments oeuvre={oeuvre} /></Field>
-			{texte && <Field label="Texte">{texte}</Field>}
-			{creation && <Field label="Création">{creation}</Field>}
-			{duree && <Field label="Durée">{duree}</Field>}
-		</table>
+		<Instruments oeuvre={oeuvre} />
 	</main>
-
-	<style type="text/scss">
-		.opus {
-			text-transform: uppercase;
-			color: var(--textSecondaryColor);
-			margin-bottom: var(--quarterSpacing);
-		}
-		.infos {
-			th,
-			td {
-				text-align: left;
-				vertical-align: top;
-				padding-bottom: var(--quarterSpacing);
-			}
-			th {
-				min-width: 200px;
-			}
-			tr {
-			}
-		}
-		.visible {
-			display: block;
-		}
-		.hidden {
-			display: none;
-		}
-	</style>
 </div>
+
+<style type="text/scss">
+	.opus {
+		text-transform: uppercase;
+		color: var(--textSecondaryColor);
+		margin-bottom: var(--eighthSpacing);
+	}
+
+	.visible {
+		display: block;
+	}
+	.hidden {
+		display: none;
+	}
+</style>

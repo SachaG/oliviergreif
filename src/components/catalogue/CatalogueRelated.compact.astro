@@ -1,0 +1,21 @@
+---
+import { convertTitle, getOeuvre, getPath } from "../../helpers";
+
+interface Props {
+	oeuvres: string[];
+}
+const { oeuvres } = Astro.props;
+---
+
+<div>
+	{
+		oeuvres.map((oeuvreName, i) => {
+			const oeuvre = getOeuvre(convertTitle(oeuvreName));
+			return (
+				<>
+					<a href={getPath(oeuvre)}>{oeuvreName}</a>{i < oeuvres.length - 1 && <span>, </span>}
+				</>
+			);
+		})
+	}
+</div>

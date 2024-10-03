@@ -1,11 +1,35 @@
 ---
-import Concert from "../../components/concerts/Concert.astro";
-import { getConcerts } from "../../helpers";
+import Concert from "../../components/concerts/Concert.compact.astro";
+import GridLayout from "../../components/layouts/GridLayout.astro";
+import MainLayout from "../../components/layouts/MainLayout.astro";
+import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
+import { getConcerts, getItemsByYear, uniq } from "../../helpers";
 
 import Layout from "../../layouts/Layout.astro";
+import type { ConcertWithId } from "../../types";
+
+const concerts = getConcerts();
+const concertsByYear = getItemsByYear<ConcertWithId>(concerts);
 ---
 
 <Layout title="Concerts">
-	<h2>Concerts</h2>
-	{getConcerts().map((concert) => <Concert id={concert.id} />)}
+	<MainLayout
+		><h2 slot="heading">Concerts</h2>
+		<GridLayout slot="content">
+			{
+				concertsByYear.map((yearItem) => (
+					<SubgridLayout slot="main">
+						<div slot="col1">
+							<h4>{yearItem.year}</h4>
+						</div>
+						<div class="feed-items" slot="main">
+							{yearItem.items.map((concert) => (
+								<Concert id={concert.id} />
+							))}
+						</div>
+					</SubgridLayout>
+				))
+			}
+		</GridLayout>
+	</MainLayout>
 </Layout>

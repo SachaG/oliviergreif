@@ -1,12 +1,26 @@
 <section class="subgrid-layout">
-	<div><slot name="col1" /></div>
-	<div><slot name="main" /></div>
+	<div class="col1"><div class="heading"><slot name="col1" /></div></div>
+	<div class="main"><slot name="main" /></div>
 </section>
 
 <style type="text/scss">
 	.subgrid-layout {
 		display: grid;
 		grid-template-columns: min-content 1fr;
+		gap: var(--spacing);
+	}
+
+	.heading {
+		position: sticky;
+		top: 10px;
+		h4 {
+			font-size: 2rem;
+		}
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
 		gap: var(--spacing);
 	}
 </style>

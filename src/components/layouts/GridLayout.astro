@@ -1,12 +1,22 @@
 <section class="grid-layout">
-	<div><slot name="main" /></div>
-	<div><slot name="sidebar" /></div>
+	<div class="main"><slot name="main" /></div>
+	<div><div class="sidebar"><slot name="sidebar" /></div></div>
 </section>
 
 <style type="text/scss">
 	.grid-layout {
 		display: grid;
 		grid-template-columns: 3fr 1fr;
+		gap: var(--spacing);
+	}
+
+	.sidebar {
+		position: sticky;
+		top: 10px;
+	}
+	.main {
+		display: flex;
+		flex-direction: column;
 		gap: var(--spacing);
 	}
 </style>

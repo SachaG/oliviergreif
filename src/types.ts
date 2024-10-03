@@ -6,7 +6,7 @@ export type WithId = {
 export type Oeuvre = {
 	opus: string;
 	titre: string;
-	date_comp?: number;
+	annee?: number;
 	nb_pages?: number;
 	duree?: string;
 	texte?: string;
@@ -21,6 +21,7 @@ export type OeuvreWithId = Oeuvre & WithId;
 export type Concert = {
 	rawDate: string;
 	date: Date;
+	annee?: number;
 	titre: string;
 	oeuvres?: string[];
 	interpretes?: string;
@@ -33,6 +34,7 @@ export type Disque = {
 	titre: string;
 	oeuvres?: string[];
 	date_disque?: string;
+	annee?: number;
 	interpretes_disque?: string;
 	commentaire?: string;
 	maison?: string;
@@ -50,6 +52,7 @@ export type EditeurWithId = Editeur & WithId;
 export type Actualite = {
 	rawDate: number;
 	date: Date;
+	annee?: number;
 	titre: string;
 	texte: string;
 };

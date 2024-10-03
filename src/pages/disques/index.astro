@@ -1,11 +1,34 @@
 ---
-import Disque from "../../components/disques/Disque.astro";
-import { getDisques } from "../../helpers";
-
+import Disque from "../../components/disques/Disque.compact.astro";
+import { getDisques, getItemsByYear } from "../../helpers";
+import GridLayout from "../../components/layouts/GridLayout.astro";
+import MainLayout from "../../components/layouts/MainLayout.astro";
+import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
+import type { DisqueWithId } from "../../types";
 import Layout from "../../layouts/Layout.astro";
+
+const disques = getDisques();
+const disquesByYear = getItemsByYear<DisqueWithId>(disques);
 ---
 
 <Layout title="Disques">
-	<h2>Disques</h2>
-	{getDisques().map((disque) => <Disque id={disque.id} />)}
+	<MainLayout
+		><h2 slot="heading">Disques</h2>
+		<GridLayout slot="content">
+			{
+				disquesByYear.map((yearItem) => (
+					<SubgridLayout slot="main">
+						<div slot="col1">
+							<h4>{yearItem.year}</h4>
+						</div>
+						<div class="feed-items" slot="main">
+							{yearItem.items.map((disque) => (
+								<Disque id={disque.id} />
+							))}
+						</div>
+					</SubgridLayout>
+				))
+			}
+		</GridLayout>
+	</MainLayout>
 </Layout>

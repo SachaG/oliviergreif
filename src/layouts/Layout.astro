@@ -113,11 +113,13 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		);
 		--textColor: #2f2a24;
 		--linkColor: #ff8800;
+		--linkHoverColor: #925b1d;
 		--textSecondaryColor: #868686;
 		--borderColor: #d8d8d8;
 		--spacing: 60px;
 		--halfSpacing: 30px;
 		--quarterSpacing: 15px;
+		--eighthSpacing: 8px;
 	}
 	html {
 		font-family: system-ui, sans-serif;
@@ -158,7 +160,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		font-weight: 700;
 		font-style: normal;
 		margin: 0;
-		margin-bottom: var(--quarterSpacing);
+		margin-bottom: var(--eighthSpacing);
 		line-height: 1.3;
 	}
 	p {
@@ -168,10 +170,10 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		text-decoration: none;
 		&:link,
 		&:visited {
-			color: #ff8800;
+			color: var(--linkColor);
 		}
 		&:hover {
-			color: #92622b;
+			color: var(--linkHoverColor);
 		}
 	}
 	h1 {
@@ -214,6 +216,11 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		display: flex;
 		flex-direction: column;
 		gap: var(--quarterSpacing);
+	}
+	.feed-items {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing);
 	}
 	main {
 		display: flex;
@@ -266,5 +273,14 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		display: flex;
 		flex-direction: column;
 		gap: var(--quarterSpacing);
+	}
+
+	.subheading {
+		font-family: "Work Sans", sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: var(--textSecondaryColor);
+		margin-bottom: var(--quarterSpacing);
+		font-size: 1.2rem;
 	}
 </style>
