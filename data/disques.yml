@@ -1,5 +1,5 @@
 - titre: "Office des Naufragés par l’ensemble Accroche Note"
-  date_disque: "2005"
+  annee: 2005
   interpretes_disque: >
       Ensemble Accroche Note : Françoise Kubler, soprano, Armand Angster, clarinettes, Stéphanie-Marie Degand, violon, Nathanëlle Marie, violon, Pierre Franck, alto, Christophe Beau, violoncelle, Alexandre Gasparov, piano, Nita Klein, récitante
   maison: >
@@ -8,7 +8,7 @@
       - Office des Naufragés (l’)
 
 - titre: "Quatuor n°4 “Ulysses” par Syntonia"
-  date_disque: "2002"
+  annee: 2002
   interpretes_disque: >
       Ensemble Syntonia
   maison: >
@@ -17,7 +17,7 @@
       - Quatuor n°4 “Ulysses”
 
 - titre: "Sonate Codex Domini, Sonate n°2 pour violon et Piano, Tombeau de Ravel, Wiener Konzert"
-  date_disque: "2007"
+  annee: 2007
   interpretes_disque: >
       Sonate n°2 pour Violon et Piano: Geneviève Laurenceau, violon, Lorène de Ratuld, piano<br />
       Sonate pour piano n°21 “Codex Domini”:  Jong Hwa Park, piano<br />
@@ -32,7 +32,7 @@
       - Wiener Konzert
 
 - titre: "Trios Greif & Chostakovitch"
-  date_disque: "2003"
+  annee: 2003
   interpretes_disque: >
       Jan Orawiec, violon, Dimitri Maslennikov, violoncelle, Jonathan Benichou, piano
   maison: >
@@ -41,7 +41,7 @@
       - Trio
 
 - titre: "Requiem par les BBC Singers, Trois portraits et apparitions par O. Greif"
-  date_disque: "2005"
+  annee: 2005
   interpretes_disque: >
       Requiem: BBC Singers, direction John Poole<br />
       Portraits et Apparitions 4, 8 et 1: Olivier Greif
@@ -52,7 +52,7 @@
       - Portraits et Apparitions
 
 - titre: "Chants de l’Âme par Jennifer Smith et Olivier Greif, Lettres de Westerbork par Doris Lamprecht"
-  date_disque: "1999"
+  annee: 1999
   interpretes_disque: >
       Chant de l’Âme: Jennifer Smith, soprano et Oloivier Greif<br />
       Lettres de Westerbork: Doris Lamprecht, mezzo, Alexis Galpérine et Éric Crambes, violons
@@ -63,7 +63,7 @@
       - Lettres de Westerbork
 
 - titre: "Hommage à Olivier Greif: Sonate de requiem, Trois chansons apocryphes, Tombeau de Ravel, Quatuor n°3"
-  date_disque: "2001"
+  annee: 2001
   interpretes_disque: >
       Sonate de Requiem: Christoph Henkel, violoncelle, Olivier Greif, piano (Création, Festival de Kuhmo, Finlande, 1993)<br />
       Trois chansons apocryphes: Marie Devellereau, soprano, Olivier Greif, piano (Création, La Prée, 1999)<br />
@@ -78,7 +78,7 @@
       - Trois chansons apocryphes
 
 - titre: "Sonate de guerre par P. Amoyel"
-  date_disque: "2000"
+  annee: 2000
   interpretes_disque: >
       Pascal Amoyel
   maison: >
@@ -87,7 +87,7 @@
       - Sonate n°15 “de Guerre”
 
 - titre: "Sonate de Requiem par O. Greif et C. Henkel"
-  date_disque: "1996"
+  annee: 1996
   interpretes_disque: >
       Christoph Henkel, violoncelle, Olivier Greif, piano
   maison: >
@@ -97,7 +97,7 @@
       - Sonate de Requiem
 
 - titre: "Benjamin Britten par O. Greif"
-  date_disque: "1998"
+  annee: 1998
   interpretes_disque: >
       Olivier Greif, piano
   maison: >
@@ -105,7 +105,7 @@
   oeuvres:
 
 - titre: "Francis Poulenc par O. Greif"
-  date_disque: "1999"
+  annee: 1999
   interpretes_disque: >
       Olivier Greif, piano
   maison: >
@@ -114,7 +114,7 @@
   oeuvres:
 
 - titre: "Sonate de Requiem et Trio par P. Amoyel et E. Bertrand"
-  date_disque: "2006"
+  annee: 2006
   interpretes_disque: >
       Emmanuelle Bertrand, violoncelle, Antje Weithaas, violon, Pascal Amoyel, piano
   maison: >
@@ -124,7 +124,7 @@
       - Trio
 
 - titre: "Quatuor n°2 et The Battle of Agincourt par l’ensemble Syntonia"
-  date_disque: "2010"
+  annee: 2010
   interpretes_disque: >
       Ensemble Syntonia et Alain Buet, baryton (pour le quatuor n°2), Patrick Langot et Agnès Vestermann (pour The Battle of Agincourt).
   maison: >
@@ -134,7 +134,7 @@
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
 
 - titre: "Meeting of the Waters: Intégrale de l’œuvre pour violon et piano, Stéphanie Moraly et Romain David"
-  date_disque: "2010"
+  annee: 2010
   interpretes_disque: >
       Stéphanie Moraly, violon et Romain David, piano.
   maison: >
@@ -150,7 +150,7 @@
       - Adagio
 
 - titre: "Pascal Amoyel plays Greif: Sonate de Guerre et Plaisirs de Chérence"
-  date_disque: "2010"
+  annee: 2010
   interpretes_disque: >
       Pascal Amoyel, piano. Emmanuelle Bertrand, violoncelle.
   maison: >
@@ -160,7 +160,7 @@
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
 
 - titre: "Le Rêve du Monde: sonates pour piano et violon et piano, cantates, par O. Greif et al."
-  date_disque: "2010"
+  annee: 2010
   interpretes_disque: >
       Olivier Greif et Devy Erlih, Evelyn Brunner, Henri Barda, Nell Froger, Ryo Noda, Gottfried Schneider, Howaqrd Haskin, Jo-Ann Pickens, Catherine Dubosc, Jean-Paul Fouchécourt.
   maison: >
@@ -178,7 +178,7 @@
       - Les Trottoirs de Paris
 
 - titre: "Musique de chambre: Veni Creator, Galiarda dolorosa, 42nd Street, Adieu New York, etc."
-  date_disque: "2010"
+  annee: 2010
   interpretes_disque: >
       Delphine Biron, violoncelle. Bertrand Giraud, piano. Mathieu Godefroy, violon. Frédéric Chatoux, flûte. Alexandre Chabod, clarinette.
   maison: >
@@ -197,7 +197,7 @@
       - Adieu New York
 
 - titre: "Concerto pour violoncelle et Sonate de Requiem par Demarquette"
-  date_disque: "2010"
+  annee: 2010
   interpretes_disque: >
       Henri Demarquette, violoncelle. Giovanni Bellucci, piano. Orchestre national de France, direction Jean-Claude Casadesus.
   maison: >
@@ -206,7 +206,7 @@
       - Sonate de Requiem
 
 - titre: "Chevauchées lyriques (deuxième chanson enfantine) par Loiseleur des Longchamps"
-  date_disque: "2011"
+  annee: 2011
   interpretes_disque: >
       L’oiseleur des Longchamps et Mary Olivon
   maison: >
@@ -215,7 +215,7 @@
       - Cinq Chansons Enfantines
 
 - titre: "The French Avant-garde in the 20th Century"
-  date_disque: "2014"
+  annee: 2014
   interpretes_disque: >
       Nicolas Horvath
   maison:
@@ -223,7 +223,7 @@
       - Second Hommage à Raymond Roussel
 
 - titre: "Portraits et Apparitions, Les plaisirs de Chérence, par O. Greif"
-  date_disque: "2014"
+  annee: 2014
   interpretes_disque: >
       Olivier Greif, piano
   maison:
@@ -232,7 +232,8 @@
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
 
 - titre: "Le Quintette"
-  date_disque: "Enregistré du 19 au 23 février 2020. Parution le 1er octobre 2020."
+  #   annee: Enregistré du 19 au 23 février 2020. Parution le 1er octobre 2020."
+  annee: 2020
   interpretes_disque: >
       Quintette Syntonia: Stéphanie Moraly et Thibault Noally, violons; Hélène Desaint, alto; Patrick Langot, violoncelle; Romain David, piano.
   maison:
@@ -240,7 +241,7 @@
       - Quintette pour Piano et cordes “A tale of the world”
 
 - titre: "Chants de l’âme et Trottoirs de Paris"
-  date_disque: "2020"
+  annee: 2020
   interpretes_disque: >
       Chants de l’âme: Marie-Laure Granier, Soprano et Philippe Hattat, piano. Les Trottoirs de Paris: Clémentine Decouture, soprano et Paco Garcia, ténor. D’une douleur muette, de Thierry Escaich: Marie-Laure Granier, Soprano; Yan Levionnois, violoncelle; Philippe Hattat, piano.
   maison:
