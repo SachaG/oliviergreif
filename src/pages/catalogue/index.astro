@@ -5,7 +5,7 @@ import Layout from "../../layouts/Layout.astro";
 import Instruments from "../../components/catalogue/Instruments.astro";
 import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
 import GridLayout from "../../components/layouts/GridLayout.astro";
-import MainLayout from "../../components/layouts/MainLayout.astro";
+import PageLayout from "../../components/layouts/PageLayout.astro";
 import type { OeuvreWithId } from "../../types";
 
 const catalogue = getCatalogue();
@@ -13,14 +13,17 @@ const catalogueByYear = getItemsByYear<OeuvreWithId>(catalogue);
 ---
 
 <Layout title="Catalogue">
-	<MainLayout>
-		<span slot="heading">
+	<PageLayout>
+		<span slot="page-heading">
 			<h2>
-				Catalogue ({catalogue.length}
-				{pluralize("oeuvre", catalogue.length)})
+				Catalogue
+				<span class="heading-metadata"
+					>({catalogue.length}
+					{pluralize("oeuvre", catalogue.length)})</span
+				>
 			</h2>
 		</span>
-		<GridLayout slot="content">
+		<GridLayout slot="page-content">
 			<main slot="main">
 				{
 					catalogueByYear.map(({ year, items }) => {
@@ -45,5 +48,5 @@ const catalogueByYear = getItemsByYear<OeuvreWithId>(catalogue);
 				</div>
 			</section>
 		</GridLayout>
-	</MainLayout>
+	</PageLayout>
 </Layout>

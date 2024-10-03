@@ -9,7 +9,7 @@ import {
 } from "../../../helpers";
 import Field from "../../Field.astro";
 import GridLayout from "../../layouts/GridLayout.astro";
-import MainLayout from "../../layouts/MainLayout.astro";
+import PageLayout from "../../layouts/PageLayout.astro";
 import Instruments from "./Instruments.astro";
 const { id } = Astro.props;
 const oeuvre = getOeuvre(id);
@@ -27,14 +27,14 @@ const disques = getDisques().filter((disque) =>
 const editeurItem = editeur && getEditeur(convertTitle(editeur));
 ---
 
-<MainLayout>
-	<div slot="heading">
+<PageLayout>
+	<div slot="page-heading">
 		<h3 class="subheading opus">Opus {opus}</h3>
 		<h2 class="title">
 			{titre}
 		</h2>
 	</div>
-	<GridLayout slot="content">
+	<GridLayout slot="page-content">
 		<main slot="main">
 			<table class="infos">
 				<tbody>
@@ -107,4 +107,4 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 			</div>
 		</nav>
 	</GridLayout>
-</MainLayout>
+</PageLayout>

@@ -2,7 +2,7 @@
 import Disque from "../../components/disques/Disque.compact.astro";
 import { getDisques, getItemsByYear } from "../../helpers";
 import GridLayout from "../../components/layouts/GridLayout.astro";
-import MainLayout from "../../components/layouts/MainLayout.astro";
+import PageLayout from "../../components/layouts/PageLayout.astro";
 import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
 import type { DisqueWithId } from "../../types";
 import Layout from "../../layouts/Layout.astro";
@@ -12,9 +12,9 @@ const disquesByYear = getItemsByYear<DisqueWithId>(disques);
 ---
 
 <Layout title="Disques">
-	<MainLayout
-		><h2 slot="heading">Disques</h2>
-		<GridLayout slot="content">
+	<PageLayout
+		><h2 slot="page-heading">Disques</h2>
+		<GridLayout slot="page-content">
 			{
 				disquesByYear.map((yearItem) => (
 					<SubgridLayout slot="main">
@@ -30,5 +30,5 @@ const disquesByYear = getItemsByYear<DisqueWithId>(disques);
 				))
 			}
 		</GridLayout>
-	</MainLayout>
+	</PageLayout>
 </Layout>

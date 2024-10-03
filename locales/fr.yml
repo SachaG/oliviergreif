@@ -37,7 +37,7 @@ strings:
 
     # instruments
     - key: oeuvre
-      t: œeuvre
+      t: œuvre
     - key: oeuvres
       t: œuvres
     - key: instrument

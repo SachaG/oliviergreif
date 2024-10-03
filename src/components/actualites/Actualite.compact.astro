@@ -1,0 +1,17 @@
+---
+import { getActualite, getPath } from "../../helpers";
+import Date from "../Date.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+
+const { id } = Astro.props;
+const actualite = getActualite(id);
+const { titre, texte, date } = actualite;
+---
+
+<div>
+	<Date date={date} />
+	<h3>
+		<a href={getPath(actualite)}>{titre}</a>
+	</h3>
+	<div set:html={texte} />
+</div>

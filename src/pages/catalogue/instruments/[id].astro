@@ -14,7 +14,7 @@ import Instruments from "../../../components/catalogue/Instruments.astro";
 import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
 import T from "../../../components/T.astro";
 import GridLayout from "../../../components/layouts/GridLayout.astro";
-import MainLayout from "../../../components/layouts/MainLayout.astro";
+import PageLayout from "../../../components/layouts/PageLayout.astro";
 
 const { id } = Astro.params;
 const instrumentGroupId = id as keyof typeof instrumentGroups;
@@ -74,8 +74,8 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 </script>
 
 <Layout title={`Catalogue (${title})`}>
-	<MainLayout>
-		<div slot="heading">
+	<PageLayout>
+		<div slot="page-heading">
 			<h2>
 				Catalogue: <T
 					k={instrumentGroupId}
@@ -105,7 +105,7 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 				)
 			}
 		</div>
-		<GridLayout slot="content">
+		<GridLayout slot="page-content">
 			<main slot="main">
 				{
 					catalogueByNumberOfInstruments.map(({ count, items }) => (
@@ -141,7 +141,7 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 				</div>
 			</section>
 		</GridLayout>
-	</MainLayout>
+	</PageLayout>
 </Layout>
 
 <style type="text/scss">

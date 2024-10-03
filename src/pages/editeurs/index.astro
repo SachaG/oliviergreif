@@ -1,11 +1,21 @@
 ---
-import Editeur from "../../components/editeurs/Editeur.astro";
+import Editeur from "../../components/editeurs/Editeur.compact.astro";
+import GridLayout from "../../components/layouts/GridLayout.astro";
+import PageLayout from "../../components/layouts/PageLayout.astro";
 import { getEditeurs } from "../../helpers";
 
 import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Editeurs">
-	<h2>Editeurs</h2>
-	{getEditeurs().map((editeur) => <Editeur id={editeur.id} />)}
+	<PageLayout>
+		<h2 slot="page-heading">Editeurs</h2>
+		<GridLayout slot="page-content">
+			{
+				getEditeurs().map((editeur) => (
+					<Editeur slot="main" id={editeur.id} />
+				))
+			}
+		</GridLayout>
+	</PageLayout>
 </Layout>

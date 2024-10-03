@@ -1,16 +1,19 @@
 ---
 import { getActualite } from "../../helpers";
 import Date from "../Date.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 
 const { id } = Astro.props;
 const actualite = getActualite(id);
 const { titre, texte, date } = actualite;
 ---
 
-<div>
-	<Date date={date} />
-	<h3>
-		{titre}
-	</h3>
-	<div set:html={texte} />
-</div>
+<PageLayout>
+	<span slot="page-heading">
+		<Date date={date} />
+		<h2 class="title">
+			{titre}
+		</h2>
+	</span>
+	<div slot="page-content" set:html={texte} />
+</PageLayout>

@@ -1,0 +1,21 @@
+---
+import { getCatalogue, getEditeur, getPath } from "../../helpers";
+import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
+import T from "../T.astro";
+
+const { id } = Astro.props;
+const editeur = getEditeur(id);
+const { titre, commentaire } = editeur;
+
+const oeuvres = getCatalogue().filter((oeuvre) => oeuvre.editeur === titre);
+---
+
+<div>
+	<h3>
+		<a href={getPath(editeur)}>{titre}</a>
+	</h3>
+	<p>
+		{oeuvres.length}
+		<T k="oeuvre" kPlural="oeuvres" count={oeuvres.length} />
+	</p>
+</div>
