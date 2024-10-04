@@ -1,11 +1,16 @@
 ---
 import { getDisque, getPath } from "../../helpers";
 import CatalogueRelated from "../catalogue/CatalogueRelated.compact.astro";
-import Field from "../Field.astro";
 const { id } = Astro.props;
 const disque = getDisque(id);
-const { titre, commentaire, oeuvres, annee, interpretes_disque, maison } =
-	disque;
+const {
+	titre,
+	oeuvres,
+	// commentaire,
+	// annee,
+	// interpretes_disque,
+	// maison,
+} = disque;
 ---
 
 <div>

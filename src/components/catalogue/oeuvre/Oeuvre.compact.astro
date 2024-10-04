@@ -1,20 +1,17 @@
 ---
-import { convertTitle, getEditeur, getOeuvre, getPath } from "../../../helpers";
-import Field from "../../Field.astro";
+import { convertTitle, getOeuvre, getPath } from "../../../helpers";
 import Instruments from "./Instruments.astro";
 const { id } = Astro.props;
 const oeuvre = getOeuvre(id);
 const {
 	opus,
 	titre,
-	editeur,
 	instruments = [],
-	texte,
-	creation,
-	duree,
+	// editeur,
+	// texte,
+	// creation,
+	// duree,
 } = oeuvre;
-
-const editeurItem = editeur && getEditeur(convertTitle(editeur));
 
 const className = instruments
 	?.map((i) => `instrument-${convertTitle(i)}`)

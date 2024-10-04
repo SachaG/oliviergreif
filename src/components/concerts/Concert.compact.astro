@@ -1,14 +1,19 @@
 ---
-import { convertTitle, getConcert, getOeuvre, getPath } from "../../helpers";
+import { getConcert, getPath } from "../../helpers";
 import CatalogueRelated from "../catalogue/CatalogueRelated.compact.astro";
 import Date from "../Date.astro";
-import Field from "../Field.astro";
 
-const { id, variant = "full" } = Astro.props;
+const { id } = Astro.props;
 const concert = getConcert(id);
 
-const { interpretes, adresse, date, titre, commentaire, oeuvres } = concert;
-const showFull = variant === "full";
+const {
+	date,
+	titre,
+	oeuvres,
+	// interpretes,
+	// adresse,
+	// commentaire,
+} = concert;
 ---
 
 <div class="concert concert-compact">
