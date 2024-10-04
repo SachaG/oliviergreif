@@ -20,11 +20,11 @@ import type {
 	ActualiteWithId,
 	Lien,
 } from "./types";
-import OeuvreComponent from "./components/catalogue/oeuvre/Oeuvre.astro";
-import DisqueComponent from "./components/disques/Disque.astro";
-import EditeurComponent from "./components/editeurs/Editeur.astro";
-import ActualiteComponent from "./components/actualites/Actualite.astro";
-import ConcertComponent from "./components/concerts/Concert.astro";
+// import OeuvreComponent from "./components/catalogue/oeuvre/Oeuvre.astro";
+// import DisqueComponent from "./components/disques/Disque.astro";
+// import EditeurComponent from "./components/editeurs/Editeur.astro";
+// import ActualiteComponent from "./components/actualites/Actualite.astro";
+// import ConcertComponent from "./components/concerts/Concert.astro";
 
 const catalogue = catalogue_ as Oeuvre[];
 const concerts = concerts_ as Concert[];
