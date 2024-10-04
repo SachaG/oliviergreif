@@ -44,7 +44,7 @@ export type Section<T> = {
 	id: string;
 	label: string;
 	moreLabel: string;
-	items: Array<T>;
+	items: Array;
 	component: any;
 };
 
@@ -78,7 +78,7 @@ const decorate = <T extends Oeuvre | Concert | Disque | Editeur | Actualite>(
 		...item,
 		parentSlug,
 		id: convertTitle(item.titre),
-	})) as Array<T & WithId>;
+	})) as Array;
 
 // paths helpers
 export const getItemsStaticPaths = (items: WithId[]) =>
@@ -180,7 +180,7 @@ export const getInstruments = () => {
 };
 
 export const getInstrumentsGroups = () =>
-	Object.keys(instrumentGroups) as Array<keyof typeof instrumentGroups>;
+	Object.keys(instrumentGroups) as Array;
 
 export const isInstrumentGroup = (instrument: string) =>
 	Object.keys(instrumentGroups).includes(instrument);
@@ -253,31 +253,31 @@ const allItems = {
 		label: "Catalogue",
 		items: getCatalogue(),
 		moreLabel: "Voir toutes les oeuvres",
-		component: OeuvreComponent,
+		// component: OeuvreComponent,
 	},
 	concerts: {
 		label: "Concerts",
 		items: getConcerts(),
 		moreLabel: "Voir tous les concerts",
-		component: ConcertComponent,
+		// component: ConcertComponent,
 	},
 	disques: {
 		label: "Disques",
 		items: getDisques(),
 		moreLabel: "Voir tous les disques",
-		component: DisqueComponent,
+		// component: DisqueComponent,
 	},
 	editeurs: {
 		label: "Éditeurs",
 		items: getEditeurs(),
 		moreLabel: "Voir tous les éditeurs",
-		component: EditeurComponent,
+		// component: EditeurComponent,
 	},
 	actualites: {
 		label: "Actualités",
 		items: getActualites(),
 		moreLabel: "Voir toutes les actualités",
-		component: ActualiteComponent,
+		// component: ActualiteComponent,
 	},
 };
 
@@ -285,9 +285,9 @@ export const getSection = <T>(sectionId: SectionIds) =>
 	({
 		id: sectionId,
 		...allItems[sectionId],
-	}) as Section<T>;
+	}) as Section;
 
-export const getSectionPath = <T>(section: Section<T>) => `/${section.id}`;
+export const getSectionPath = <T>(section: Section) => `/${section.id}`;
 
 export function capitalizeFirstLetter(s: string) {
 	return s.charAt(0).toUpperCase() + s.slice(1);
@@ -305,16 +305,14 @@ export const intersection = (arr: any[], ...args: any[]) =>
 export const getItemsByYear = <
 	X extends OeuvreWithId | ConcertWithId | DisqueWithId | ActualiteWithId,
 >(
-	items: Array<X>,
+	items: Array,
 ) => {
 	const years = uniq(items.filter((i) => i.annee).map((i) => i.annee))
 		.toSorted()
 		.toReversed() as number[];
-	const itemsByYear: Array<{ year: number; items: X[] }> = years.map(
-		(year) => ({
-			year,
-			items: items.filter((o) => o.annee === year),
-		}),
-	);
+	const itemsByYear: Array = years.map((year) => ({
+		year,
+		items: items.filter((o) => o.annee === year),
+	}));
 	return itemsByYear;
 };
