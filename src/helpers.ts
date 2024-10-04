@@ -44,7 +44,7 @@ export type Section<T> = {
 	id: string;
 	label: string;
 	moreLabel: string;
-	items: Array;
+	items: Array<T>;
 	component: any;
 };
 
@@ -78,7 +78,7 @@ const decorate = <T extends Oeuvre | Concert | Disque | Editeur | Actualite>(
 		...item,
 		parentSlug,
 		id: convertTitle(item.titre),
-	})) as Array;
+	})) as Array<T & WithId>;
 
 // paths helpers
 export const getItemsStaticPaths = (items: WithId[]) =>
@@ -180,7 +180,7 @@ export const getInstruments = () => {
 };
 
 export const getInstrumentsGroups = () =>
-	Object.keys(instrumentGroups) as Array;
+	Object.keys(instrumentGroups) as Array<keyof typeof instrumentGroups>;
 
 export const isInstrumentGroup = (instrument: string) =>
 	Object.keys(instrumentGroups).includes(instrument);
@@ -285,9 +285,9 @@ export const getSection = <T>(sectionId: SectionIds) =>
 	({
 		id: sectionId,
 		...allItems[sectionId],
-	}) as Section;
+	}) as Section<T>;
 
-export const getSectionPath = <T>(section: Section) => `/${section.id}`;
+export const getSectionPath = <T>(section: Section<T>) => `/${section.id}`;
 
 export function capitalizeFirstLetter(s: string) {
 	return s.charAt(0).toUpperCase() + s.slice(1);
@@ -305,14 +305,16 @@ export const intersection = (arr: any[], ...args: any[]) =>
 export const getItemsByYear = <
 	X extends OeuvreWithId | ConcertWithId | DisqueWithId | ActualiteWithId,
 >(
-	items: Array,
+	items: Array<X>,
 ) => {
 	const years = uniq(items.filter((i) => i.annee).map((i) => i.annee))
 		.toSorted()
 		.toReversed() as number[];
-	const itemsByYear: Array = years.map((year) => ({
-		year,
-		items: items.filter((o) => o.annee === year),
-	}));
+	const itemsByYear: Array<{ year: number; items: X[] }> = years.map(
+		(year) => ({
+			year,
+			items: items.filter((o) => o.annee === year),
+		}),
+	);
 	return itemsByYear;
 };
