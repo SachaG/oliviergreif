@@ -112,7 +112,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 			white 60%
 		);
 		--textColor: #2f2a24;
-		--linkColor: #ff8800;
+		--linkColor: #e87c00;
 		--linkHoverColor: #925b1d;
 		--textSecondaryColor: #868686;
 		--borderColor: #d8d8d8;
@@ -273,8 +273,32 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		display: flex;
 		flex-direction: column;
 		gap: var(--quarterSpacing);
+		li {
+			border-bottom: 1px solid var(--borderColor);
+			margin: 0;
+			padding-bottom: var(--quarterSpacing);
+			&:last-child {
+				border: none;
+				padding-bottom: 0;
+			}
+		}
 	}
 
+	.feed-heading {
+		a {
+			color: var(--textColor);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&:hover {
+				&::after {
+					content: "→";
+					display: inline-block;
+					color: var(--textSecondaryColor);
+				}
+			}
+		}
+	}
 	.subheading {
 		font-family: "Work Sans", sans-serif;
 		font-weight: normal;
