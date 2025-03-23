@@ -96,9 +96,10 @@ export const sortByOpus = (catalogue: OeuvreWithId[]) =>
 export const getCatalogue = (options?: {
 	instrumentId?: string;
 	instrumentGroupId?: keyof typeof instrumentGroups;
+	categoryId?: string;
 }) => {
 	const allItems = sortByOpus(decorate<Oeuvre>(catalogue, "catalogue"));
-	const { instrumentId, instrumentGroupId } = options || {};
+	const { instrumentId, instrumentGroupId, categoryId } = options || {};
 	if (instrumentGroupId) {
 		return allItems.filter(
 			(oeuvre) =>
@@ -112,6 +113,8 @@ export const getCatalogue = (options?: {
 		return allItems.filter((oeuvre) =>
 			oeuvre.instruments?.map(convertTitle).includes(instrumentId),
 		);
+	} else if (categoryId) {
+		return allItems.filter((oeuvre) => oeuvre.categorie === categoryId);
 	} else {
 		return allItems;
 	}
@@ -166,6 +169,16 @@ export const getFormations = () =>
 				capitalizeFirstLetter(oeuvre.formation?.toLowerCase()!),
 			),
 	).toSorted() as string[];
+
+export const getCategories = () =>
+	uniq(
+		getCatalogue()
+			.filter((o) => !!o.categorie)
+			.map((oeuvre: Oeuvre) => oeuvre.categorie),
+	).toSorted() as string[];
+
+export const getCategoryLink = (categoryId: string) =>
+	`/catalogue/categorie/${categoryId}`;
 
 export const getInstruments = () => {
 	const allInstruments = getCatalogue()

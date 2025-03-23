@@ -1,18 +1,6 @@
-- opus: "345"
-  titre: "Funeral march to the memory of a cat"
-  formation: "Piano"
-  instruments: [piano]
-  annee:
-  nb_pages: 2
-  duree: ""
-  texte: ""
-  editeur: "Donemus"
-  creation:
-  commentaire: >
-      <p>Œuvre retrouvée dans les papiers d’Olivier après sa mort.<br />La partition est publiée par Donemus dans le recueil Piano Book III.</p>
-
-- opus: "﻿001"
+- opus: "001"
   titre: "Cinq Chansons Enfantines"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1961
@@ -26,6 +14,7 @@
 
 - opus: "001 bis"
   titre: "Petite Suite"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1961
@@ -39,19 +28,21 @@
 
 - opus: "002"
   titre: "Quatre Poèmes de J. Prévert"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1963
   nb_pages: 12
   duree: ""
   texte: "Jacques Prévert"
-  editeur:
+  editeur: Association Olivier Greif
   creation: 4 mars 2000 Université Paris III Sorbonne-Nouvelle (Censier), dans le cadre d’un hommage à Prévert pour son centenaire,  par Jacques Loiseleur des Longchamps et Grigori Abramian
   commentaire: >
       <p>Œuvre révisée en 1971. Manuscrit soigné et lisible.</p>
 
 - opus: "003"
   titre: "Saltimbanques (les)"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1965
@@ -65,6 +56,7 @@
 
 - opus: "004"
   titre: "Première Sonate pour Piano (Sonatine)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1965
@@ -78,6 +70,7 @@
 
 - opus: "005"
   titre: "Thème Varié pour Piano"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1965
@@ -91,6 +84,7 @@
 
 - opus: "006"
   titre: "Sonate n°2 pour Piano (Suite pour Piano)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1965
@@ -104,6 +98,7 @@
 
 - opus: "007"
   titre: "Sept Variations sur un Thème Original"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1966
@@ -117,6 +112,7 @@
 
 - opus: "008"
   titre: "Étude pour Piano"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1966
@@ -130,6 +126,7 @@
 
 - opus: "009"
   titre: "Trois Variations sur un Thème de Schumann"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1966
@@ -143,6 +140,7 @@
 
 - opus: "010"
   titre: "Premier Quatuor à Cordes"
+  categorie: musique_de_chambre
   formation: "Quatuor à cordes"
   instruments: [violon, violon, alto, violoncelle]
   annee: 1966
@@ -156,6 +154,7 @@
 
 - opus: "011"
   titre: "Chanson de Gaspard Hauser (la)"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1966
@@ -169,6 +168,7 @@
 
 - opus: "012"
   titre: "Regrets (les)"
+  categorie: melodies
   formation: "Soprano, alto, basse et piano"
   instruments: [soprano, alto (voix), basse (voix), piano]
   annee: 1966
@@ -182,6 +182,7 @@
 
 - opus: "013"
   titre: "Toit (un)"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1966
@@ -195,6 +196,7 @@
 
 - opus: "014"
   titre: "Marche pour Flûte et Piano"
+  categorie: musique_de_chambre
   formation: "Flûte et piano"
   instruments: [flûte, piano]
   annee: 1967
@@ -208,6 +210,7 @@
 
 - opus: "015"
   titre: "Sonate n°1 pour Violon et Piano"
+  categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
   annee: 1967
@@ -221,6 +224,7 @@
 
 - opus: "016"
   titre: "Cadence pour Piano / Variations continues"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1967
@@ -234,6 +238,7 @@
 
 - opus: "017"
   titre: "Sonate n°2 pour Violon et Piano"
+  categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
   annee: 1967
@@ -247,6 +252,7 @@
 
 - opus: "018"
   titre: "Ostinato pour Piano"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1967
@@ -260,6 +266,7 @@
 
 - opus: "019"
   titre: "Little and the Fat (the)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1967
@@ -273,6 +280,7 @@
 
 - opus: "020"
   titre: "Mort Joyeux (le)"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1968
@@ -286,6 +294,7 @@
 
 - opus: "021"
   titre: "Études pour Piano (23)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1968
@@ -299,6 +308,7 @@
 
 - opus: "022"
   titre: "Sonate n°3 pour Piano “Quatre Soli avec Fugue”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1968
@@ -312,6 +322,7 @@
 
 - opus: "023"
   titre: "Alabama Song"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1968
@@ -325,6 +336,7 @@
 
 - opus: "024"
   titre: "Sonate n°4 pour Piano “Trois Pièces”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1968
@@ -338,6 +350,7 @@
 
 - opus: "025"
   titre: "Concerto pour Violon et Orchestre"
+  categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
   annee: 1969
@@ -351,6 +364,7 @@
 
 - opus: "026"
   titre: "Sonate n°5 pour Piano “Trois pièces”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1969
@@ -364,6 +378,7 @@
 
 - opus: "027"
   titre: "Sonate n°6 pour Piano"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1969
@@ -377,6 +392,7 @@
 
 - opus: "028"
   titre: "Sonate n°7 pour Piano"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1969
@@ -390,6 +406,7 @@
 
 - opus: "029"
   titre: "Ile du Docteur Moreau (l’)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1969
@@ -403,6 +420,7 @@
 
 - opus: "030"
   titre: "Sonate n°8 pour Piano “Nocturne”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1969
@@ -416,6 +434,7 @@
 
 - opus: "031"
   titre: "In Memoriam"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1969
@@ -429,6 +448,7 @@
 
 - opus: "032"
   titre: "Morbid Fixations"
+  categorie: piano
   formation: "2 pianos"
   instruments: [piano, piano]
   annee: 1969
@@ -442,6 +462,7 @@
 
 - opus: "033"
   titre: "Sonate n°9 pour Piano “Suite Paradisiac Memories”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1970
@@ -455,6 +476,7 @@
 
 - opus: "033a"
   titre: "Rondo pour Piano “42nd Street”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1970
@@ -468,6 +490,7 @@
 
 - opus: "034"
   titre: "Sonate n°10 pour Piano “Marche, Valse”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1970
@@ -481,6 +504,7 @@
 
 - opus: "035"
   titre: "Glorieuse (la)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1971
@@ -494,6 +518,7 @@
 
 - opus: "036"
   titre: "Sonate n°1 pour 2 Pianos (“Concerto pour deux Pianos”)"
+  categorie: piano
   formation: "2 pianos"
   instruments: [piano, piano]
   annee: 1971
@@ -507,6 +532,7 @@
 
 - opus: "037"
   titre: "Second Hommage à Raymond Roussel"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1971
@@ -520,6 +546,7 @@
 
 - opus: "038"
   titre: "Sonate n°11 pour Piano"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1971
@@ -533,6 +560,7 @@
 
 - opus: "039"
   titre: "Die Ilse – Paradisiac Memories n°2"
+  categorie: cantate
   formation: "Mezzo soprano, clarinette, quatuor à cordes, piano et percussion."
   instruments:
       [
@@ -556,6 +584,7 @@
 
 - opus: "039a/039b"
   titre: "Triomphe de la Tonalité (le)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1972
@@ -569,6 +598,7 @@
 
 - opus: "040"
   titre: "Wiener Konzert"
+  categorie: melodies
   formation: "Voix de femme et piano"
   instruments: [voix, piano]
   annee: 1973
@@ -582,6 +612,7 @@
 
 - opus: "041"
   titre: "Cantate “And Death Shall Have no Dominion”"
+  categorie: cantate
   formation: "Soprano, baryton, piano, instruments à vents, batterie."
   instruments: [soprano, baryton, piano, vents, percussions]
   annee: 1974
@@ -595,6 +626,7 @@
 
 - opus: "042"
   titre: "Ancient Music"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1974
@@ -608,6 +640,7 @@
 
 - opus: "043"
   titre: "Bomben auf Engelland - 1"
+  categorie: melodies
   formation: "Voix de femme et piano"
   instruments: [voix, piano]
   annee: 1974
@@ -621,6 +654,7 @@
 
 - opus: "044"
   titre: "Taking Leave of a Friend"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1974
@@ -634,6 +668,7 @@
 
 - opus: "045"
   titre: "Sonate n°12 pour Piano “Sonatine”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1974
@@ -647,6 +682,7 @@
 
 - opus: "046"
   titre: "Périgourdine (la)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1974
@@ -660,6 +696,7 @@
 
 - opus: "047"
   titre: "Sonate n°13 pour Piano"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1974
@@ -673,6 +710,7 @@
 
 - opus: "048"
   titre: "Sonate n°14 pour piano “Dans le Goût Ancien”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1974
@@ -686,6 +724,7 @@
 
 - opus: "049"
   titre: "Light Music"
+  categorie: melodies
   formation: "Voix de femme, voix d'homme et piano"
   instruments: [soprano, baryton, piano]
   annee: 1974
@@ -699,6 +738,7 @@
 
 - opus: "050"
   titre: "Songs (three)"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1974
@@ -712,6 +752,7 @@
 
 - opus: "051"
   titre: "Birthday Song"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1974
@@ -725,6 +766,7 @@
 
 - opus: "052"
   titre: "Scherzo pour Piano"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1974
@@ -738,6 +780,7 @@
 
 - opus: "053"
   titre: "Variations sur un Thème Militaire Allemand"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1975
@@ -751,6 +794,7 @@
 
 - opus: "054"
   titre: "Sonate n°15 “de Guerre”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1975
@@ -764,6 +808,7 @@
 
 - opus: "055"
   titre: "Pillow Talk"
+  categorie: piano
   formation: "Piano et peut-être voix."
   instruments: [voix, piano]
   annee: 1975
@@ -777,6 +822,7 @@
 
 - opus: "056"
   titre: "Tombeau de Ravel (le)"
+  categorie: piano
   formation: "Piano à 4 mains"
   instruments: [piano, piano]
   annee: 1975
@@ -790,6 +836,7 @@
 
 - opus: "057"
   titre: "Menuet"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1975
@@ -803,6 +850,7 @@
 
 - opus: "058"
   titre: "Spirit’s Song (the)"
+  categorie: melodies
   formation: "Piano et voix"
   instruments: [voix, piano]
   annee: 1975
@@ -816,6 +864,7 @@
 
 - opus: "059"
   titre: "Time is on my Side"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1975
@@ -829,6 +878,7 @@
 
 - opus: "060"
   titre: "Rockin’ Chairs"
+  categorie: piano
   formation: "2 pianos"
   instruments: [piano, piano]
   annee: 1975
@@ -842,6 +892,7 @@
 
 - opus: "061"
   titre: "Eloïse (ou Le Dit du Monde), oratorio en cinq parties"
+  categorie: cantate
   formation: "Soli, chœur et orchestre"
   instruments: [soli, chœur, piano]
   annee: 1975
@@ -855,6 +906,7 @@
 
 - opus: "062"
   titre: "Sonate n°2 pour 2 pianos"
+  categorie: piano
   formation: "2 pianos, avec quelques lignes de cor."
   instruments: [piano, piano, cor]
   annee: 1975
@@ -868,6 +920,7 @@
 
 - opus: "063"
   titre: "Songs (four)"
+  categorie: melodies
   formation: "Voix de femme et piano"
   instruments: [soprano, piano]
   annee: 1976
@@ -881,6 +934,7 @@
 
 - opus: "064"
   titre: "Sonate n°3 pour 2 pianos"
+  categorie: piano
   formation: "2 pianos"
   instruments: [piano, piano]
   annee: 1976
@@ -894,6 +948,7 @@
 
 - opus: "065"
   titre: "Sonate n°16 pour Piano “Silver String”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1976
@@ -920,6 +975,7 @@
 
 - opus: "067"
   titre: "Étude pour l’Égalité des Doigts"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1976
@@ -933,6 +989,7 @@
 
 - opus: "068"
   titre: "Bells (the)"
+  categorie: cantate
   formation: "Chœur et orchestre"
   instruments: [piano, piano, guitare, batterie, chœur]
   annee: 1976
@@ -946,6 +1003,7 @@
 
 - opus: "069"
   titre: "Adagio"
+  categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
   annee: 1976
@@ -959,6 +1017,7 @@
 
 - opus: "070"
   titre: "Sonate pour Violon et Piano n°3 “The Meeting of the Waters”"
+  categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
   annee: 1976
@@ -972,6 +1031,7 @@
 
 - opus: "071"
   titre: "Bomben auf Engelland"
+  categorie: cantate
   formation: "Chant, saxophone, piano"
   instruments: [piano, soprano, saxophone]
   annee: 1976
@@ -985,6 +1045,7 @@
 
 - opus: "072"
   titre: "Einst da ich Bittre Tränen Vergoss"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1976
@@ -998,6 +1059,7 @@
 
 - opus: "073"
   titre: "Petite Cantate de Chambre"
+  categorie: cantate
   formation: "Voix de femme et 2 pianos"
   instruments: [piano, piano, voix]
   annee: 1976
@@ -1011,6 +1073,7 @@
 
 - opus: "074"
   titre: "Sonate pour Hautbois et Clavecin [ou Saxophone Alto et Piano]"
+  categorie: musique_de_chambre
   formation: "Hautbois et clavecin"
   instruments: [clavecin, hautbois]
   annee: 1976
@@ -1024,6 +1087,7 @@
 
 - opus: "075"
   titre: "Sonate n°17 pour Piano"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1977
@@ -1037,6 +1101,7 @@
 
 - opus: "076"
   titre: "Sonate n°18 pour Piano “Three Poems of Li T’ai Po”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1977
@@ -1050,6 +1115,7 @@
 
 - opus: "077"
   titre: "Revelation"
+  categorie: melodies
   formation: "Voix de femme et alto."
   instruments: [voix, alto]
   annee: 1977
@@ -1062,6 +1128,7 @@
 
 - opus: "078"
   titre: "Piano Book"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1977
@@ -1075,6 +1142,7 @@
 
 - opus: "079"
   titre: "Mélodies pour Voix de Femme et Piano (5)"
+  categorie: melodies
   formation: "Voix de femme et piano"
   instruments: [voix, piano]
   annee: 1977
@@ -1088,6 +1156,7 @@
 
 - opus: "080"
   titre: "Pièces pour Piano (5) pour un concours"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1977
@@ -1101,6 +1170,7 @@
 
 - opus: "081"
   titre: "Pièce pour Piano pour un Concours (Refusée)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1977
@@ -1114,6 +1184,7 @@
 
 - opus: "082"
   titre: "Pièces pour Piano (5) pour un concours - 2"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1977
@@ -1127,6 +1198,7 @@
 
 - opus: "083"
   titre: "Pièces pour Violon et Piano (2) – 1"
+  categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
   annee: 1977
@@ -1140,6 +1212,7 @@
 
 - opus: "084"
   titre: "Pièces pour Violon et Piano (2) – 2"
+  categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
   annee: 1977
@@ -1153,6 +1226,7 @@
 
 - opus: "085"
   titre: "Pièces pour Alto et Piano (2) – 1"
+  categorie: musique_de_chambre
   formation: "Alto et Piano"
   instruments: [alto, piano]
   annee: 1977
@@ -1166,6 +1240,7 @@
 
 - opus: "086"
   titre: "Variations on Peter Philips “Galiarda Dolorosa”"
+  categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
   annee: 1977
@@ -1179,6 +1254,7 @@
 
 - opus: "087"
   titre: "Three Poems of Sri Chinmoy"
+  categorie: melodies
   formation: "Voix de femme et piano"
   instruments: [voix, piano]
   annee: 1977
@@ -1193,6 +1269,7 @@
 - opus: "089"
   titre: "Danse des Araucans"
   formation: "2 pianos et percussions"
+  categorie: musique_de_chambre
   instruments: [piano, piano, percussions]
   annee: 1977
   nb_pages: 9
@@ -1205,6 +1282,7 @@
 
 - opus: "095"
   titre: "Na Pari Tomaï"
+  categorie: musique_de_chambre
   formation: "Alto et Piano"
   instruments: [alto, piano]
   annee: 1977
@@ -1218,6 +1296,7 @@
 
 - opus: "103"
   titre: "Veni Creator"
+  categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
   annee: 1978
@@ -1231,6 +1310,7 @@
 
 - opus: "104"
   titre: "Pièces pour Violon et Piano (2) – 3"
+  categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
   annee: 1978
@@ -1244,6 +1324,7 @@
 
 - opus: "105"
   titre: "Pièces pour Alto et Piano (2) – 2"
+  categorie: musique_de_chambre
   formation: "Alto et Piano"
   instruments: [alto, piano]
   annee: 1978
@@ -1257,6 +1338,7 @@
 
 - opus: "118"
   titre: "Sonate de Requiem 1ère Version"
+  categorie: musique_de_chambre
   formation: "violoncelle, piano"
   annee: 1979
   nb_pages:
@@ -1269,6 +1351,7 @@
 
 - opus: "120"
   titre: "Running Suite"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1979
@@ -1282,6 +1365,7 @@
 
 - opus: "127"
   titre: "Easter Wings, Discipline"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1979
@@ -1295,6 +1379,7 @@
 
 - opus: "128"
   titre: "Song"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1979
@@ -1308,6 +1393,7 @@
 
 - opus: "310"
   titre: "Chants de l’Âme (les)"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1979-1995
@@ -1321,6 +1407,7 @@
 
 - opus: "139"
   titre: "En Rêve"
+  categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
   annee: 1979
@@ -1334,6 +1421,7 @@
 
 - opus: "142"
   titre: "Little Black Mass"
+  categorie: cantate
   formation: "Voix de femme, alto et piano"
   instruments: [soprano, alto, piano]
   annee: 1980
@@ -1347,6 +1435,7 @@
 
 - opus: "144"
   titre: "Livre du Pélerin (le)"
+  categorie: cantate
   formation: "Voix de femme, flûte, hautbois, clarinette, basson, cor, violon, piano"
   instruments: [voix, flûte, hautbois, clarinette, basson, cor, violon, piano]
   annee: 1980
@@ -1360,6 +1449,7 @@
 
 - opus: "147"
   titre: "Petit Choral Varié"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1980
@@ -1373,6 +1463,7 @@
 
 - opus: "154"
   titre: "Solo from “Nô”"
+  categorie: musique_de_chambre
   formation: "Violoncelle seul"
   instruments: [violoncelle]
   annee: 1981
@@ -1386,6 +1477,7 @@
 
 - opus: "155"
   titre: "À la Recherche d’une Pièce"
+  categorie: melodies
   formation: "Chant non accompagné"
   instruments: [voix]
   annee: 1981
@@ -1399,6 +1491,7 @@
 
 - opus: "158"
   titre: "Nô, Opéra de Chambre en 10 Scènes"
+  categorie: opera
   formation: "Soprano, ténor, baryton, clarinette, cor en fa, piano, orgue électronique et percussions."
   instruments:
       [
@@ -1422,6 +1515,7 @@
 
 - opus: "167"
   titre: "Pièces pour Violoncelle et piano (2) pour un concours – 1"
+  categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
   annee: 1982
@@ -1435,6 +1529,7 @@
 
 - opus: "169"
   titre: "Hiroshima / Nagasaki"
+  categorie: musique_chorale
   formation: "Chœur mixte a cappella."
   instruments: [chœur]
   annee: 1983
@@ -1449,6 +1544,7 @@
 
 - opus: "170"
   titre: "Oi Akashe"
+  categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
   annee: 1983
@@ -1462,6 +1558,7 @@
 
 - opus: "171"
   titre: "Pièces pour Alto et Piano (2) – 3"
+  categorie: musique_de_chambre
   formation: "Alto et Piano"
   instruments: [alto, piano]
   annee: 1983
@@ -1475,6 +1572,7 @@
 
 - opus: "173"
   titre: "Pièces pour Violoncelle et Piano (2) pour un concours – 2"
+  categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
   annee: 1983
@@ -1488,6 +1586,7 @@
 
 - opus: "174"
   titre: "Pièces pour Alto et Piano (2) – 4"
+  categorie: musique_de_chambre
   formation: "Alto et Piano"
   instruments: [alto, piano]
   annee: 1983
@@ -1501,6 +1600,7 @@
 
 - opus: "175"
   titre: "Carillon (Inclus dans “Piano Book”)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1983
@@ -1513,6 +1613,7 @@
 
 - opus: "176"
   titre: "Vocalise de Serge Rachmaninoff"
+  categorie: cantate
   formation: "Voix de femme, 4 violons, 2 altos, 2 violoncelles, hautbois et piano"
   instruments:
       [
@@ -1539,6 +1640,7 @@
 
 - opus: "177"
   titre: "Premaloker, méditation pour grand chœur mixte"
+  categorie: cantate
   formation: "Double chœur mixte, 12 voix d’homme, flûte, clarinette, violon, violoncelle, célesta, orgue électronique"
   instruments:
       [
@@ -1563,6 +1665,7 @@
 
 - opus: "181"
   titre: "Portrait de Johanne Margarethe Büchting"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1984
@@ -1576,6 +1679,7 @@
 
 - opus: "182"
   titre: "Portrait d’Edith Regina Jaus-Büchting et d’Andreas Büchting"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1984
@@ -1589,6 +1693,7 @@
 
 - opus: "183"
   titre: "Valse sur le nom de Godino"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1984
@@ -1602,6 +1707,7 @@
 
 - opus: "184"
   titre: "Prélude pour Henri Barda"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1984
@@ -1615,6 +1721,7 @@
 
 - opus: "185"
   titre: "Caprice pour Colette"
+  categorie: musique_de_chambre
   formation: "Violon"
   instruments: [violon]
   annee: 1984
@@ -1628,6 +1735,7 @@
 
 - opus: "195"
   titre: "Préludes pour piano (6)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1985
@@ -1641,6 +1749,7 @@
 
 - opus: "196"
   titre: "Fantaisie"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1985
@@ -1654,6 +1763,7 @@
 
 - opus: "197"
   titre: "Pièce en Trio"
+  categorie: musique_de_chambre
   formation: "Violon, violoncelle, piano"
   instruments: [violon, violoncelle, piano]
   annee: 1985
@@ -1667,6 +1777,7 @@
 
 - opus: "206"
   titre: "The Golden Flute"
+  categorie: cantate
   formation: "Soprano, chœur d'hommes et orchestre."
   instruments:
       [
@@ -1692,6 +1803,7 @@
 
 - opus: "228"
   titre: "Subala"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1987
@@ -1705,6 +1817,7 @@
 
 - opus: "235b"
   titre: "O Gamelan"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1988
@@ -1718,6 +1831,7 @@
 
 - opus: "248"
   titre: "Amenhotep, fils de Hapou"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1990
@@ -1731,6 +1845,7 @@
 
 - opus: "256"
   titre: "Le Rêve du Monde"
+  categorie: orchestre
   formation: "Piano, célesta, accordéon ou bandonéon, orchestre."
   instruments: [piano, célesta, accordéon, bandonéon, orchestre]
   annee: 1991
@@ -1744,6 +1859,7 @@
 
 - opus: "270"
   titre: "Hölderlin Lieder"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1991
@@ -1757,6 +1873,7 @@
 
 - opus: "271"
   titre: "Hälfte des Lebens"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1991
@@ -1770,6 +1887,7 @@
 
 - opus: "283"
   titre: "Sonate de Requiem"
+  categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
   annee: 1992
@@ -1783,6 +1901,7 @@
 
 - opus: "284"
   titre: "Forêts Anciennes"
+  categorie: piano
   formation: "Piano, pianoforte ou clavecin"
   instruments: [piano, clavecin]
   annee: 1993
@@ -1796,6 +1915,7 @@
 
 - opus: "289"
   titre: "Sonate pour Piano n°19 “Trois Pièces Sérieuses”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1993
@@ -1809,6 +1929,7 @@
 
 - opus: "290"
   titre: "Sonate pour Piano n°20 “Le Rêve du Monde”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1993
@@ -1822,6 +1943,7 @@
 
 - opus: "291"
   titre: "Lettres de Westerbork"
+  categorie: musique_de_chambre
   formation: "Voix, 2 violons"
   instruments: [voix, violon, violon]
   annee: 1993
@@ -1835,6 +1957,7 @@
 
 - opus: "292"
   titre: "Quodlibet"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1993
@@ -1848,6 +1971,7 @@
 
 - opus: "293"
   titre: "A Tragic Football Game"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1993
@@ -1861,6 +1985,7 @@
 
 - opus: "295"
   titre: "Am Grabe Franz Liszts"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1993
@@ -1874,6 +1999,7 @@
 
 - opus: "297"
   titre: "Once a Lady was Here"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1994
@@ -1887,6 +2013,7 @@
 
 - opus: "298"
   titre: "Night without Sleep"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1994
@@ -1900,6 +2027,7 @@
 
 - opus: "301"
   titre: "Tailor of Gloucester (the)"
+  categorie: musique_de_chambre
   formation: "Cor anglais, cor en fa, violon, harpe, célesta et synthétiseur."
   instruments: [cor, cor, violon, harpe, célesta, synthétiseur]
   annee: 1994
@@ -1913,6 +2041,7 @@
 
 - opus: "302"
   titre: "Fantôme d’Enrico Clifford (le)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1994
@@ -1926,6 +2055,7 @@
 
 - opus: "303"
   titre: "Sonate pour Piano n°21 “Codex Domini”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1994
@@ -1939,6 +2069,7 @@
 
 - opus: "346"
   titre: "Symphonie “Hiroshima”"
+  categorie: cantate
   formation: "Voix soliste, chœur d’hommes et orchestre."
   instruments: [voix, chœur, piano]
   annee: 1994
@@ -1952,6 +2083,7 @@
 
 - opus: "307"
   titre: "Quintette pour Piano et cordes “A tale of the world”"
+  categorie: musique_de_chambre
   formation: "Piano et quatuor à cordes"
   instruments: [piano, violon, violon, alto, violoncelle]
   annee: 1995
@@ -1965,6 +2097,7 @@
 
 - opus: "308"
   titre: "Sonate pour 2 Violoncelles “The Battle of Agincourt”"
+  categorie: musique_de_chambre
   formation: "2 violoncelles"
   instruments: [violoncelle, violoncelle]
   annee: 1995
@@ -1978,6 +2111,7 @@
 
 - opus: "312"
   titre: "Hymnes Spéculatifs"
+  categorie: cantate
   formation: "Voix, clarinette, cor, violoncelle et piano"
   instruments: [voix, clarinette, cor, violoncelle, piano]
   annee: 1996
@@ -1991,8 +2125,9 @@
 
 - opus: "314"
   titre: "Quatuor à Cordes n°2 avec Voix"
+  categorie: musique_de_chambre
   formation: "Quatuor à cordes avec voix"
-  instruments: [voix, violon, violon, alto, violoncelle, piano]
+  instruments: [voix, violon, violon, alto, violoncelle]
   annee: 1996
   nb_pages: 41
   duree: "29 mn"
@@ -2005,6 +2140,7 @@
 
 - opus: "315"
   titre: "Les Trottoirs de Paris"
+  categorie: melodies
   instruments: [voix, voix, piano]
   formation: "2 voix et piano"
   annee: 1996
@@ -2018,6 +2154,7 @@
 
 - opus: "319"
   titre: "Sonate pour piano n° 22 “Les plaisirs de Chérence”"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1997
@@ -2031,6 +2168,7 @@
 
 - opus: "320"
   titre: "Ritournelle pour Quintette à Vent"
+  categorie: musique_de_chambre
   formation: "Flûte, hautbois, clarinette, basson, cor en fa."
   instruments: [flûte, hautbois, clarinette, basson, cor]
   annee: 1997
@@ -2044,6 +2182,7 @@
 
 - opus: "321"
   titre: "Lys de Marie (le)"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1997
@@ -2057,6 +2196,7 @@
 
 - opus: "323"
   titre: "Livre des Saints Irlandais (le)"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1997
@@ -2070,6 +2210,7 @@
 
 - opus: "326"
   titre: "Troubadours et Ménestrels"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1997
@@ -2083,6 +2224,7 @@
 
 - opus: "327"
   titre: "Symphonie"
+  categorie: orchestre
   formation: "Voix, 2 flûtes, 2 hautbois, 2 clarinettes, 2 bassons, 2 cors, 2 trompettes, 2 timbales, cordes."
   instruments:
       [
@@ -2116,6 +2258,7 @@
 
 - opus: "331"
   titre: "Table des Matières"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1998
@@ -2127,8 +2270,23 @@
   commentaire: >
       <p>Indications sur la page de titre: “Texte composé d’un assemblage de titres de chapitres des Misérables de Victor Hugo, en latin. Paris, 3 mars 1998.” <br />Manuscrit recopié, très lisible.<br />Dernière partition avec un numéro d’opus inscrit par Olivier Greif. Les numéros suivants ont été donnés par Jean-Jacques Greif</p>
 
+- opus: "345"
+  titre: "Funeral march to the memory of a cat"
+  categorie: piano
+  formation: "Piano"
+  instruments: [piano]
+  annee:
+  nb_pages: 2
+  duree: ""
+  texte: ""
+  editeur: "Donemus"
+  creation:
+  commentaire: >
+      <p>Œuvre retrouvée dans les papiers d’Olivier après sa mort.<br />La partition est publiée par Donemus dans le recueil Piano Book III.</p>
+
 - opus: "347"
   titre: "Imago Mundi"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1998
@@ -2142,6 +2300,7 @@
 
 - opus: "348"
   titre: "B comme Brigitte"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1998
@@ -2155,6 +2314,7 @@
 
 - opus: "349"
   titre: "Adieu New York"
+  categorie: musique_de_chambre
   formation: "Piano, flûte, clarinette, violon, violoncelle"
   instruments: [piano, flûte, clarinette, violon, violoncelle]
   annee: 1998
@@ -2168,6 +2328,7 @@
 
 - opus: "350"
   titre: "Trois chansons apocryphes"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 1998
@@ -2181,6 +2342,7 @@
 
 - opus: "351"
   titre: "Quatuor n°3 “Todesfuge”"
+  categorie: musique_de_chambre
   formation: "Quatuor à cordes avec voix."
   instruments: [voix, violon, violon, alto, violoncelle]
   annee: 1998
@@ -2194,6 +2356,7 @@
 
 - opus: "352"
   titre: "Quadruple Concerto “La Danse des morts”"
+  categorie: orchestre
   formation: "Piano, violon, alto, violoncelle et orchestre (2 hautbois, 2 cors et orchestre à cordes)."
   instruments: [piano, violon, alto, violoncelle, hautbois, hautbois, cor, cor]
   annee: 1998
@@ -2207,6 +2370,7 @@
 
 - opus: "353"
   titre: "Trio"
+  categorie: musique_de_chambre
   formation: "Piano, violon et violoncelle."
   instruments: [piano, violon, violoncelle]
   annee: 1998
@@ -2220,6 +2384,7 @@
 
 - opus: "354"
   titre: "Office des Naufragés (l’)"
+  categorie: cantate
   formation: "Voix de femme, clarinette, piano et quatuor à cordes"
   instruments: [voix, clarinette, piano, violon, violon, alto, violoncelle]
   annee: 1998
@@ -2233,6 +2398,7 @@
 
 - opus: "355"
   titre: "Shylock Funèbre"
+  categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
   annee: 1999
@@ -2246,6 +2412,7 @@
 
 - opus: "356"
   titre: "Ich Ruf zu Dir"
+  categorie: musique_de_chambre
   formation: "Piano, clarinette et quatuor à cordes."
   instruments: [piano, clarinette, violon, violon, alto, violoncelle]
   annee: 1999
@@ -2259,6 +2426,7 @@
 
 - opus: "357"
   titre: "Concerto pour Violoncelle “Durch Adams Fall”"
+  categorie: orchestre
   formation: "Violoncelle et orchestre (2 x flûtes, hautbois, clarinettes, bassons, cors, trompettes – piano, cordes, percusssion)."
   instruments:
       [
@@ -2292,6 +2460,7 @@
 
 - opus: "358"
   titre: "Requiem"
+  categorie: musique_chorale
   formation: "Double chœur mixte a cappella"
   instruments: [chœur, chœur]
   annee: 1999
@@ -2305,6 +2474,7 @@
 
 - opus: "359"
   titre: "Portraits et Apparitions"
+  categorie: piano
   formation: "Piano"
   instruments: [piano]
   annee: 1999
@@ -2318,6 +2488,7 @@
 
 - opus: "360"
   titre: "Quatuor n°4 “Ulysses”"
+  categorie: musique_de_chambre
   formation: "Quatuor à cordes"
   instruments: [violon, violon, alto, violoncelle]
   annee: 2000
@@ -2331,6 +2502,7 @@
 
 - opus: "361"
   titre: "Three Settings of Musset"
+  categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
   annee: 2000
@@ -2344,6 +2516,7 @@
 
 - opus: "327a"
   titre: "Symphonie version voix et orgue"
+  categorie: orchestre
   formation: "Voix et orgue"
   instruments: [voix, orgue]
   annee: 2011

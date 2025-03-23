@@ -1,8 +1,8 @@
 ---
 import Oeuvre from "../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
-import AllCatalog from "../../../components/catalogue/AllCatalog.astro";
 import {
 	capitalizeFirstLetter,
+	getCategories,
 	getInstrumentsGroups,
 	getItemsStaticPaths,
 	instrumentGroups,
@@ -16,21 +16,21 @@ import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
 import T from "../../../components/T.astro";
 import PageLayout from "../../../components/layouts/PageLayout.astro";
 import Categories from "../../../components/catalogue/Categories.astro";
+import AllCatalog from "../../../components/catalogue/AllCatalog.astro";
 
 const { id } = Astro.params;
-const instrumentGroupId = id as keyof typeof instrumentGroups;
+const categoryId = id as string;
 
 export function getStaticPaths() {
 	return getItemsStaticPaths(
-		getInstrumentsGroups().map(
-			(instrument) => ({ id: convertTitle(instrument) }) as WithId
+		getCategories().map(
+			(categoryId) => ({ id: convertTitle(categoryId) }) as WithId
 		)
 	);
 }
 
-const instruments = instrumentGroups[instrumentGroupId];
-const catalogue = getCatalogue({ instrumentGroupId });
-const title = instrumentGroupId || "";
+const catalogue = getCatalogue({ categoryId });
+const title = categoryId || "";
 
 const catalogueByNumberOfInstruments = [...Array(100)]
 	.map((_x, count) => ({
@@ -40,71 +40,16 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 	.filter(({ items }) => items.length > 0);
 ---
 
-<script>
-	import { convertTitle } from "../../../helpers";
-
-	// Find our component DOM on the page.
-	const checkboxes =
-		document.querySelectorAll<HTMLInputElement>(".instrument-toggle");
-
-	// Add event listeners to fire confetti when a button is clicked.
-	checkboxes.forEach((checkbox) => {
-		checkbox.addEventListener("click", () => {
-			// Get the checked/unchecked status
-			const isChecked = checkbox.checked;
-
-			// Get the value of the data-filter attribute
-			const instrument = checkbox.getAttribute("data-instrument");
-			const oeuvres = document.querySelectorAll<HTMLDivElement>(
-				`.instrument-${convertTitle(instrument || "")}`
-			);
-
-			if (isChecked) {
-				oeuvres.forEach((oeuvre) => {
-					oeuvre.classList.add("visible");
-					oeuvre.classList.remove("hidden");
-				});
-			} else {
-				oeuvres.forEach((oeuvre) => {
-					oeuvre.classList.add("hidden");
-					oeuvre.classList.remove("visible");
-				});
-			}
-		});
-	});
-</script>
-
 <Layout title={`Catalogue (${title})`}>
 	<PageLayout>
 		<div slot="page-heading">
 			<h2>
 				Catalogue: <T
-					k={instrumentGroupId}
+					k={categoryId}
 					fallback={capitalizeFirstLetter(title)}
 				/> ({catalogue.length}
 				<T k="oeuvre" kPlural="oeuvres" count={catalogue.length} />)
 			</h2>
-			{
-				instruments.length > 1 && (
-					<div class="instruments-list">
-						{instruments.map((instrument) => (
-							<h5>
-								<label>
-									<input
-										class="instrument-toggle"
-										type="checkbox"
-										checked="checked"
-										data-instrument={instrument}
-									/>
-									<span>
-										{capitalizeFirstLetter(instrument)}
-									</span>
-								</label>
-							</h5>
-						))}
-					</div>
-				)
-			}
 		</div>
 		{
 			catalogueByNumberOfInstruments.map(({ count, items }) => (
@@ -134,11 +79,8 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 			))
 		}
 		<AllCatalog slot="page-sidebar" />
-		<Categories slot="page-sidebar" />
-		<Instruments
-			slot="page-sidebar"
-			currentInstrumentId={instrumentGroupId}
-		/>
+		<Categories slot="page-sidebar" currentCategoryId={categoryId} />
+		<Instruments slot="page-sidebar" />
 	</PageLayout>
 
 	<style type="text/scss">

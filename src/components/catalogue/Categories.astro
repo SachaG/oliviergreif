@@ -1,0 +1,57 @@
+---
+const { currentCategoryId } = Astro.props;
+import { capitalizeFirstLetter } from "../../helpers";
+import { getCategories, getCategoryLink, getCatalogue } from "../../helpers";
+import T from "../T.astro";
+---
+
+<div class="categories">
+	<h3>Catégories</h3>
+	<ul class="items-list">
+		{
+			getCategories().map((categoryId) => {
+				const isCurrent = categoryId === currentCategoryId;
+				const count = getCatalogue({ categoryId }).length;
+				return (
+					<li class={isCurrent ? "category-current" : ""}>
+						<h5>
+							<a href={getCategoryLink(categoryId)}>
+								<T
+									k={categoryId}
+									fallback={capitalizeFirstLetter(categoryId)}
+								/>
+								<span class="count">({count})</span>
+							</a>
+						</h5>
+					</li>
+				);
+			})
+		}
+	</ul>
+</div>
+
+<style type="text/scss">
+	.categories .items-list {
+		overflow-y: scroll;
+		max-height: 80vh;
+		overscroll-behavior: contain;
+	}
+	a {
+		font-weight: normal;
+	}
+	.category-current {
+		a {
+			font-weight: bold;
+		}
+	}
+	.count {
+		font-weight: normal;
+	}
+	h5 {
+		margin-bottom: 5px;
+	}
+	p {
+		margin-bottom: 0;
+		font-size: 1rem;
+	}
+</style>

@@ -3,6 +3,7 @@ import Oeuvre from "../../components/catalogue/oeuvre/Oeuvre.compact.astro";
 import { getCatalogue, getItemsByYear, pluralize } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 import Instruments from "../../components/catalogue/Instruments.astro";
+import Categories from "../../components/catalogue/Categories.astro";
 import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
 import PageLayout from "../../components/layouts/PageLayout.astro";
 import type { OeuvreWithId } from "../../types";
@@ -38,6 +39,7 @@ const catalogueByYear = getItemsByYear<OeuvreWithId>(catalogue);
 				);
 			})
 		}
+		<Categories slot="page-sidebar" />
 		<Instruments slot="page-sidebar" />
 	</PageLayout>
 </Layout>

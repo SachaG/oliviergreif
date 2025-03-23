@@ -48,3 +48,19 @@ strings:
       t: Autres Instruments
     - key: clavier-et-orgue
       t: Clavier et Orgue
+
+    # categories
+    - key: cantate
+      t: Cantate
+    - key: melodies
+      t: Mélodies
+    - key: musique_chorale
+      t: Musique Chorale
+    - key: opera
+      t: Opéra
+    - key: orchestre
+      t: Orchestre
+    - key: piano
+      t: Piano
+    - key: musique_de_chambre
+      t: Musique de Chambre

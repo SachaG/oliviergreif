@@ -15,6 +15,7 @@ export type Oeuvre = {
 	commentaire?: string;
 	formation?: string;
 	instruments?: string[];
+	categorie?: string;
 };
 export type OeuvreWithId = Oeuvre & WithId;
 
