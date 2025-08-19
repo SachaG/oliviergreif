@@ -1,10 +1,10 @@
 import slugify from "slugify";
-import catalogue_ from "../data/catalogue.yml";
-import concerts_ from "../data/concerts.yml";
-import disques_ from "../data/disques.yml";
-import editeurs_ from "../data/editeurs.yml";
-import liens_ from "../data/liens.yml";
-import actualites_ from "../data/actualites.yml";
+import catalogue_ from "./data/catalogue.yml";
+import concerts_ from "./data/concerts.yml";
+import disques_ from "./data/disques.yml";
+import editeurs_ from "./data/editeurs.yml";
+import liens_ from "./data/liens.yml";
+import actualites_ from "./data/actualites.yml";
 
 import type {
 	WithId,
