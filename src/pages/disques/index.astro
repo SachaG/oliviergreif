@@ -11,8 +11,7 @@ const disquesByYear = getItemsByYear<DisqueWithId>(disques);
 ---
 
 <Layout title="Disques">
-	<PageLayout
-		><h2 slot="page-heading">Disques</h2>
+	<PageLayout sectionId="disques">
 		{
 			disquesByYear.map((yearItem) => (
 				<SubgridLayout slot="page-content">

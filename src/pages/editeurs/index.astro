@@ -7,8 +7,7 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Editeurs">
-	<PageLayout>
-		<h2 slot="page-heading">Editeurs</h2>
+	<PageLayout sectionId="editeurs">
 		{
 			getEditeurs().map((editeur) => (
 				<Editeur slot="page-content" id={editeur.id} />

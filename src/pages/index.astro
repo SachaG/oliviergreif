@@ -1,83 +1,304 @@
 ---
 import Layout from "../layouts/Layout.astro";
 // import HomeBlock from "../components/HomeBlock.astro";
-import { getSectionPath, getSection } from "../helpers";
+import { getSectionPath, getSection, sections } from "../helpers";
 import ConcertComponent from "../components/concerts/Concert.compact.astro";
 import type { ConcertWithId } from "../types";
 const concertsSection = getSection<ConcertWithId>("concerts");
 const { items: concerts } = concertsSection;
+import HomeSection from "../components/home/HomeSection.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-	<section class="first">
-		<!-- <HomeBlock sectionId="concerts" /> -->
-		<section class="concerts">
-			<div class="concerts-block">
-				<h4 class="block-heading">Concerts À Venir</h4>
-				<div class="concerts-list">
-					{
-						concerts
-							.filter((concert) => concert.date >= new Date())
-							.map((concert) => (
-								<ConcertComponent
-									id={concert.id}
-									variant="short"
-								/>
-							))
-					}
-				</div>
+	<div class="home-sections">
+		<div class="home-section section-title">
+			<div class="bg"></div>
+			<div class="inner">
+				<h1>Olivier Greif</h1>
+				<h2>Pianiste et Compositeur (1950-2000)</h2>
+				<cite>
+					“Un jour viendra – je ne serai plus de ce monde – où ma
+					musique vous submergera de son évidence.”
+				</cite>
 			</div>
-			<div class="concerts-block">
-				<h4 class="block-heading">Concerts Passés</h4>
-				<div class="concerts-list">
-					{
-						concerts
-							.filter((concert) => concert.date < new Date())
-							.slice(0, 3)
-							.map((concert) => (
-								<ConcertComponent
-									id={concert.id}
-									variant="short"
-								/>
-							))
-					}
-				</div>
-			</div>
-			<a href={getSectionPath(concertsSection)}>Voir tous les concerts</a>
-		</section>
-		<!-- <HomeBlock sectionId="actualites" limit={2} /> -->
-	</section>
-
-	<!-- <section class="second">
-		<HomeBlock sectionId="catalogue" />
-		<HomeBlock sectionId="editeurs" />
-		<HomeBlock sectionId="disques" />
-	</section> -->
+		</div>
+		{
+			sections.map((section) => (
+				<HomeSection sectionId={section.id} {...section} />
+			))
+		}
+		<Footer />
+	</div>
 </Layout>
 
-<style>
-	html {
-		--spacing: 80px;
-	}
-	.first {
+<style is:global>
+	.home-sections {
+		--borderColor: white;
+		border: 2px solid var(--borderColor);
+		height: 100vh;
+		width: 100vw;
 		display: grid;
-		gap: var(--spacing);
-		grid-template-columns: 2fr 1fr;
-		margin-bottom: var(--spacing);
+		gap: 2px;
+		/* gap: 0px; */
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: 1fr 1fr 1fr min-content;
+		/* grid-template-areas:
+			"title title title concerts concerts actualites "
+			"catalogue catalogue biographie biographie disques media"
+			"catalogue catalogue editeurs association liens contact"
+			"footer footer footer footer footer footer"; */
+		grid-template-areas:
+			"title title title concerts concerts actualites "
+			"catalogue catalogue biographie biographie disques actualites"
+			"catalogue catalogue liens liens disques footer";
 	}
-	.second {
-		display: grid;
-		gap: var(--spacing);
-		grid-template-columns: 1fr 1fr 1fr;
+
+	.home-section {
+		padding: var(--spacing);
+		background: var(--mainColor);
+		/* border: 2px solid var(--borderColor); */
+		position: relative;
+		.bg {
+			background: url("/images/ogreif-large.jpg") fixed;
+			background-size: cover;
+			filter: saturate(0.3) opacity(0.2);
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			/* transition: all 600ms ease-in; */
+		}
+		&:hover {
+			background: rgb(132, 214, 223);
+			.bg {
+			}
+		}
 	}
-	.concerts {
-		display: flex;
-		flex-direction: column;
-		gap: 40px;
+	.section-title {
+		view-transition-name: title;
+		grid-area: title;
+		h1 {
+			font-size: 6rem;
+		}
+		h2 {
+			font-size: 1.5rem;
+		}
+		background: rgb(132, 214, 223);
 	}
-	.concerts-list {
-		display: flex;
-		flex-direction: column;
-		gap: 40px;
+	.section-footer {
+		view-transition-name: footer;
+		grid-area: footer;
+		background: rgb(255, 255, 255);
+		padding: 0;
 	}
+	.section-concerts {
+		/* --blockId: concerts; */
+		/* --mainColor: #71a0e2; */
+		/* --mainColor #ffadad; */
+		/* --mainColor: #1bb4d3; */
+	}
+	.catalogue {
+		--blockId: catalogue;
+		/* --mainColor: #8bdacd; */
+		/* --mainColor: #e9cca7; */
+		--mainColor: #41afc5;
+	}
+	.disques {
+		--blockId: disques;
+		/* --mainColor: #d6a2bf; */
+		/* --mainColor: #edeeb6; */
+		--mainColor: #5cafbf;
+	}
+	.editeurs {
+		--blockId: editeurs;
+		/* --mainColor: #c49c67; */
+		/* --mainColor: #b1e5a6; */
+		--mainColor: #79b5c0;
+	}
+	.actualites {
+		--blockId: actualites;
+		/* --mainColor: #aa90c1; */
+		/* --mainColor: #93e5ed; */
+		--mainColor: #5cafbf;
+	}
+	.biographie {
+		--blockId: biographie;
+		--mainColor: #e7e082;
+		/* --mainColor: #9abbf0; */
+		--mainColor: #5cafbf;
+	}
+	.association {
+		--blockId: association;
+		/* --mainColor: #88ade5; */
+		--mainColor: #a0e7ff;
+		--mainColor: #5cafbf;
+	}
+	.liens {
+		--blockId: liens;
+		--mainColor: #df755d;
+		/* --mainColor: #b3a9f0; */
+		--mainColor: #5cafbf;
+	}
+	.media {
+		--blockId: media;
+		--mainColor: #72e69e;
+		/* --mainColor: #eeb8ee; */
+		/* --mainColor: black; */
+		--mainColor: #5cafbf;
+	}
+	.contact {
+		--blockId: contact;
+		--mainColor: #d486b7;
+		/* --mainColor: #79c5de; */
+		/* --mainColor: white; */
+		--mainColor: #5cafbf;
+	}
+
+	.section-catalogue .bg,
+	.home-sections:has(.section-catalogue:hover) .home-section .bg {
+		background: url("/images/ogreif.jpg") fixed;
+		background-size: cover;
+	}
+	.section-concerts .bg,
+	.home-sections:has(.section-concerts:hover) .home-section .bg {
+		background: url("/images/ogreif2.jpg") fixed;
+		background-size: cover;
+	}
+
+	.section-actualites .bg,
+	.home-sections:has(.section-actualites:hover) .home-section .bg {
+		background: url("/images/ogreif3.jpg") fixed;
+		background-size: cover;
+	}
+	.section-biographie .bg,
+	.home-sections:has(.section-biographie:hover) .home-section .bg {
+		background: url("/images/ogreif4.jpg") fixed;
+		background-size: cover;
+	}
+	.section-editeurs .bg,
+	.home-sections:has(.section-editeurs:hover) .home-section .bg {
+		background: url("/images/ogreif5.jpg") fixed;
+		background-size: cover;
+	}
+	.section-disques .bg,
+	.home-sections:has(.section-disques:hover) .home-section .bg {
+		background: url("/images/ogreif6.jpg") fixed;
+		background-size: cover;
+	}
+	.section-media .bg,
+	.home-sections:has(.section-media:hover) .home-section .bg {
+		background: url("/images/ogreif7.jpg") fixed;
+		background-size: cover;
+	}
+	.section-association .bg,
+	.home-sections:has(.section-association:hover) .home-section .bg {
+		background: url("/images/ogreif8.jpg") fixed;
+		background-size: cover;
+	}
+	.section-liens .bg,
+	.home-sections:has(.section-liens:hover) .home-section .bg {
+		background: url("/images/ogreif5.jpg") fixed;
+		background-size: cover;
+	}
+	.section-contact .bg,
+	.home-sections:has(.section-contact:hover) .home-section .bg {
+		background: url("/images/ogreif2.jpg") fixed;
+		background-size: cover;
+	}
+	/* 
+	.section-catalogue .bg,
+	.home-sections:has(.section-catalogue:hover) .home-section .bg {
+		background: url("/images/ogreif.jpg");
+		background-size: cover;
+	}
+	.section-concerts .bg,
+	.home-sections:has(.section-concerts:hover) .home-section .bg {
+		background: url("/images/ogreif2.jpg");
+		background-size: cover;
+	}
+
+	.section-actualites .bg,
+	.home-sections:has(.section-actualites:hover) .home-section .bg {
+		background: url("/images/ogreif3.jpg");
+		background-size: cover;
+	}
+	.section-biographie .bg,
+	.home-sections:has(.section-biographie:hover) .home-section .bg {
+		background: url("/images/ogreif4.jpg");
+		background-size: cover;
+	}
+	.section-editeurs .bg,
+	.home-sections:has(.section-editeurs:hover) .home-section .bg {
+		background: url("/images/ogreif5.jpg");
+		background-size: cover;
+	}
+	.section-disques .bg,
+	.home-sections:has(.section-disques:hover) .home-section .bg {
+		background: url("/images/ogreif6.jpg");
+		background-size: cover;
+	}
+	.section-media .bg,
+	.home-sections:has(.section-media:hover) .home-section .bg {
+		background: url("/images/ogreif7.jpg");
+		background-size: cover;
+	}
+	.section-association .bg,
+	.home-sections:has(.section-association:hover) .home-section .bg {
+		background: url("/images/ogreif8.jpg");
+		background-size: cover;
+	}
+	.section-liens .bg,
+	.home-sections:has(.section-liens:hover) .home-section .bg {
+		background: url("/images/ogreif5.jpg");
+		background-size: cover;
+	}
+	.section-contact .bg,
+	.home-sections:has(.section-contact:hover) .home-section .bg {
+		background: url("/images/ogreif2.jpg");
+		background-size: cover;
+	} */
+
+	/* .section-catalogue .bg {
+		background: url("/images/ogreif.jpg");
+		background-size: cover;
+	}
+	.section-concerts .bg {
+		background: url("/images/ogreif2.jpg");
+		background-size: cover;
+	}
+
+	.section-actualites .bg {
+		background: url("/images/ogreif3.jpg");
+		background-size: cover;
+	}
+	.section-biographie .bg {
+		background: url("/images/ogreif4.jpg");
+		background-size: cover;
+	}
+	.section-editeurs .bg {
+		background: url("/images/ogreif5.jpg");
+		background-size: cover;
+	}
+	.section-disques .bg {
+		background: url("/images/ogreif6.jpg");
+		background-size: cover;
+	}
+	.section-media .bg {
+		background: url("/images/ogreif7.jpg");
+		background-size: cover;
+	}
+	.section-association .bg {
+		background: url("/images/ogreif8.jpg");
+		background-size: cover;
+	}
+	.section-liens .bg {
+		background: url("/images/ogreif5.jpg");
+		background-size: cover;
+	}
+	.section-contact .bg {
+		background: url("/images/ogreif2.jpg");
+		background-size: cover;
+	} */
 </style>

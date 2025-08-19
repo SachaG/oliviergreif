@@ -1,16 +1,38 @@
-<div class="page-layout">
-	<section class="heading"><slot name="page-heading" /></section>
-	<section class="grid">
+---
+import { getSection2 } from "../../helpers";
+import { getSectionPath, getSection } from "../../helpers";
+import T from "../T.astro";
+const { sectionId } = Astro.props;
+const section = getSection2(sectionId)!;
+---
+
+<section
+	class="section"
+	style={`view-transition-name: section-${sectionId}; background-color: ${section.color};`}
+>
+	<h2
+		class="section-heading"
+		style={`view-transition-name: heading-${sectionId}`}
+		slot="page-heading"
+	>
+		<a class="section-link" href={getSectionPath(getSection(sectionId))}
+			><T k={sectionId} /></a
+		>
+	</h2>
+	<div class="grid">
 		<main><slot name="page-content" /></main>
 		<div class="sidebar">
 			<div class="sidebar-contents">
 				<slot name="page-sidebar" />
 			</div>
 		</div>
-	</section>
-</div>
+	</div>
+</section>
 
 <style type="text/scss">
+	.section {
+		padding: var(--spacing);
+	}
 	.heading {
 		margin-bottom: var(--spacing);
 	}
@@ -28,5 +50,11 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing);
+	}
+
+	h2 {
+		a {
+			color: var(--textColor);
+		}
 	}
 </style>

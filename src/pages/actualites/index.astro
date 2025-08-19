@@ -7,8 +7,7 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Actualités">
-	<PageLayout>
-		<h2 slot="page-heading">Actualités</h2>
+	<PageLayout sectionId="actualites">
 		{
 			getActualites().map(({ id }) => (
 				<Actualite slot="page-content" id={id} />

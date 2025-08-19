@@ -1,9 +1,14 @@
-<div class="footer">&copy; Association Olivier Greif 2024</div>
+---
+const year = new Date().getFullYear();
+---
+
+<div class="section-footer footer">&copy; Association Olivier Greif {year}</div>
 
 <style type="text/scss">
 	.footer {
 		text-align: center;
-		margin-top: var(--spacing);
+		// margin-top: var(--spacing);
+		padding: var(--halfSpacing);
 		text-transform: uppercase;
 	}
 </style>

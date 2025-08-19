@@ -1,0 +1,64 @@
+---
+import { fade, slide } from "astro:transitions";
+import T from "../T.astro";
+import {
+	getSectionPath,
+	getSection,
+	customTransition,
+	getSectionComponent,
+} from "../../helpers";
+const { sectionId, color, inverted } = Astro.props;
+
+const SectionComponent = getSectionComponent(sectionId);
+---
+
+<section
+	class={`home-section section-${sectionId} section-${inverted ? "inverted" : "normal"}`}
+	style={`view-transition-name: section-${sectionId}`}
+>
+	<div class="bg"></div>
+	<div class="inner">
+		<h2
+			class="section-heading"
+			style={`view-transition-name: heading-${sectionId}`}
+		>
+			<a
+				class="section-link"
+				href={getSectionPath(getSection(sectionId))}
+			>
+				<T k={sectionId} />
+			</a>
+		</h2>
+		{SectionComponent ? <SectionComponent /> : null}
+	</div>
+</section>
+
+<style define:vars={{ sectionId, color, inverted }}>
+	.home-section {
+		view-transition-name: var(--sectionId);
+		grid-area: var(--sectionId);
+		background-color: var(--color);
+	}
+
+	h2 {
+		font-size: 2rem;
+		a {
+			color: var(--textColor);
+		}
+	}
+	.section-inverted {
+		a {
+			color: var(--invertedTextColor);
+		}
+		&:hover a {
+			color: var(--invertedHoverTextColor);
+		}
+	}
+	/* .home-section-concerts {
+		background: blue;
+		view-transition-name: concerts;
+		h3 {
+			view-transition-name: concerts-heading;
+		}
+	} */
+</style>

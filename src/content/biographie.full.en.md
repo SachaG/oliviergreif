@@ -1,0 +1,227 @@
+### 1950
+
+Born in Paris on January 3rd.
+
+His parents came from Poland. His father studied piano in the Lwów conservatory (today Lviv, in Ukraine), before emigrating to France with a letter of recommendation of Eduard Steuermann to further his studies with Afred Cortot. He changed his mind and became a doctor (neurologist and psychiatrist) in Paris. During the war, he joined the French Résistance and was deported to Auschwitz, where he spent a year.
+
+Olivier began to study the piano at age three in a musical kindergarten. When he was six or seven, his teacher, Mme Jamet, introduced him as a promising student to Lucette Descaves, who taught in the Paris Conservatory (Conservatoire National Supérieur de Musique de Paris, or CNSM). He started as a private pupil, attending monthly lessons with Mme Descaves. Mme Jamet was still his main teacher.
+
+### 1959
+
+Aged nine, he plays his first composition, Nausicaa, during a concert of Lucette Descaves’s private pupils. He passes an exam and enters CNSM. He studies piano with Lucette Descaves (and her assistant, Mme Clavius Marius) and solfeggio with Marcel Bitsch. Later, he will study chamber music with Jean Hubeau, composition with Tony Aubin, sight-reading with Geneviève Joy, orchestration with Marius Constant, orchestra directing with Robert Blot.
+
+### 1961
+
+Opus 1: Cinq chansons enfantines, for voice and piano, poems by himself. First performed by Jacques Loiseleur des Longchamps and Grigori Abramian in May, 2001 in Paris. This singer can be seen and heard singing these songs on YouTube.
+
+### 1964
+
+Piano Sonata n°1. Piano Sonata n°2. Performed in the CNSM by himself.
+
+### 1966
+
+Last year in the class of Mme Descaves. He gets a second prize in piano.
+
+Suite for string quartet (quartet n°1), written for the composition class. Performed in the CNSM by Quatuor de l’ORTF.
+
+### 1967
+
+Sonata for violin and piano n°1.
+
+Sonata for violin and piano n°2, for which he receives the composition prize in the CNSM. He plays it with Devy Erlih in the former Conservatoire and in Salle Gaveau, then with Jacques Israelievitch in the CNSM. The sonata is published by Leduc. He also receives the Chamber Music prize. He becomes a friend of Nadia Boulanger.
+
+He lives in London, in the home of one of his mother”s friends, to learn English.
+
+### 1969
+
+He studies composition in New York City with Luciano Berio, who teaches in Juilliard School. He meets Andy Warhol and Mick Jagger, becomes friends with Salvador Dali. An article in French about his relationship with Luciano Berio: Olivier Greif et Luciano Berio, une relation humaine et artistique, by Brigitte François-Sappey and Patricia Aubertin.
+
+Piano Sonatas n°5 to 9. He improvises at length in Juilliard School, by himself and with several instruments and the actress Isabelle Colin-Dufresne (alias Ultra-Violet, a friend of Salvador Dali and Andy Warhol), to celebrate the clarinet prize of his friend William Powell. A recording of this performance, called “In Paradisum” has been made.
+
+William Powell played Olivier’s “Ich Ruf zu Dir” in 2006 in Los Angeles. He displays a full page about Olivier in his Web site: http://www.williamepowell.com/greif.html
+
+### 1970
+
+He becomes Berio’s assistant in the Santa Fe Opera for the creation of a work gathering several of Berio’s existing pieces, called Opera (the plural of opus).
+
+He becomes interested in the composers of the West Coast, like Terry Riley and La Monte Young. He spends the summer vacations in San Francisco in the home of Gerta Wingerd, born Alper. A cousin in law of the Greif family, she grew up in Czernowitz (then in Rumania, today in Ukraine). She was close to the poet Paul Celan, her brother’s classmate.
+
+### 1971
+
+He comes back to Paris. He returns to the Conservatoire to study orchestration and orchestra direction. He composes many short pieces for piano, as well as twenty Études dedicated to Katya Labèque. The Labèque sisters were his classmates in the Conservatoire, as well as Brigitte Engerer, Georges Pludermacher, Pascal Rogé, etc.
+
+### 1972
+
+“Le triomphe de la tonalité,” for piano.
+
+### 1973
+
+Wiener Konzert, cycle of five lieder on poems by Heine, performed by Nell Froger and himself at the Société Nationale de Musique.
+
+He befriends Marc Cholodenko, a young poet and writer. He meets other young writers in a litterary salon in Montmartre.
+
+### 1974
+
+Piano Sonata n°14 “dans le goût ancien”, performed by Henri Barda at the Société Nationale de Musique. This pianist can be seen playing this piece on YouTube.
+
+### 1975
+
+Piano Sonata n°15 “de guerre”, performed by himself in Carnegie Hall in 1977 and in the abbaye de Royaumont in 1978. When Olivier began to work on it, around 1965, he called it “Battle Sonata.” He said he thought about Bruckner, Mahler and the American West Coast composers. Marc Cholodenko reproduced the first page of the fourth movement (Toccata) as an incipit for his novel “Les États du Désert,” which received one of the main literary prizes in 1976.
+
+Siao Ping Fan, one of his classmates, commissioned a work for the Ravel Festival in Monfort l’Amaury. He composed a “Tombeau de Ravel,” a piano piece for four hands, which he created with Henri Barda. “The virtuosity of the young Olivier is truly transcendant,” wrote Bernard Gavoty, the best-known critic for classical music at the time.
+
+His mother has surgery for colon cancer. A first cancer had been removed in 1956. As liver metastasis is found some time later.
+
+### 1976
+
+Olivier Greif begins a spiritual quest with an Indian master living in New York, Sri Chinmoy. In 1978, his master gives him a new first name: Haridas, which means “God’s servant”. During the next twenty years, Olivier-Haridas will compose two kinds of works: “classical” compositions (with a gap from 1983 to 1991); arrangements of songs (text and music) by Sri Chinmoy for a choir of disciples. Due to the uncertain status of these works’ copyright, they are not included in the catalog posted on this site.
+
+Bomben auf Engelland, for voice, saxophon and piano. Performed by Nell Froger, Ryo Noda and himself at the Société Nationale de Musique.
+
+Petite cantate de chambre “The Lord is my Shepherd”, for female voice and two pianos. Commissioned by Radio Suisse Romande. Performed in Lausanne by Evelyn Brunner, Henri Barda and himself.
+
+Sonata for violon and piano n°3 “The Meeting of the Waters”, performed in Paris by Gaëtane Prouvost and himself. Second performance in 1993 in Warsaw by Gottfried Schneider and himself.
+
+### 1977
+
+Nicolo prize of Académie des Beaux-Arts.
+
+Piano Sonata n°19 “Trois poèmes de Li T’ai Po”, performed in Hong Kong by Siao Ping Fan (or maybe Fan Xiaoping, in today’s spelling).
+
+Variations on “Galiarda Dolorosa” by Peter Philips, for violin and piano, performed by Gaëtane Prouvost and Michel Dalberto in Festival méditérranéen des jeunes interprètes.
+
+Three poems of Sri Chinmoy, for voice and piano, performed in 1979 in Paris by Nell Froger and himself. Second performance in Paris in 1980 by Meredith Parsons and himself.
+
+Na Pari Tomai, for viola and piano. Commissioned by CNSM for a viola class exam.
+
+### 1978
+
+Veni Creator, for cello and piano. Performed in Barcelone and other Spanish cities by Daniel Raclot and himself, then the same year in Annecy by Frédéric Lodéon and himself.
+
+On May 20th, he plays his Sonate de Guerre (as well as Bach, Mozart, Beethoven and Schumann) in Abbaye de Royaumont. This is his last concert attended by his mother. She dies three weeks later.
+
+### 1979
+
+Sonate de Requiem, for cello and piano. First version performed by Frédéric Lodéon and himself in Théâtre de la Cité Universitaire. This work is a memento to his mother. According to Olivier, it describes “the journey of the soul after death.”
+
+### 1980
+
+From 1975 to 1980, numerous concerts as pianist, with Michel Dalberto, Michel Portal, Régis and Bruno Pasquier, Augustin Dumay, Frédéric Lodéon. Concerts and interviews on radio stations: France Musique, France Culture, RAI, Radio Suisse Romande. Works performed in Paris, Lausanne, Madrid, New York, Tokyo.
+
+Le Livre du Pélerin, for female voice, violin, flute, oboe, clarinet, bassoon, horn and piano, on “The Tyger” by William Blake and extracts from the Psalms. Performed by Nell Froger, Raphaël Oleg, the Nielsen quintet and himself at Société Nationale de Musique. The Tyger is also the first song in the “Chants de l’Âme” cycle.
+
+### 1981
+
+Nô, chamber opera for baryton, tenor, soprano, clarinet, horn, electronic organ, piano and drums, book by Marc Cholodenko. Commissioned by the Paris Opera. Performed in the Centre Pompidou, with the help of IRCAM and Festival d’Automne, by Georges Pludermacher (piano), Sylvio Gualda (drums) and singers and musicians of the Paris Opera.While the music is as tense and moving as usual, the book is bungled. It doesn’t really evoke a Japanese Nô, even if four lines of a real Nô are quoted at the end. Olivier Messiaen, who knew and appreciated Olivier Greif, and Pierre Boulez, who didn’t know him, attended together. Olivier’s opera didn’t seem to convince them. The critics were ferocious. Olivier, disappointed and bitter, stopped composing—except the arrangements of Sri Chinmoy melodies for the disciples’ chorus and small piano pieces on the names of his friends. Leduc was ready to publish Nô, but Olivier never returned the proofs he was supposed to edit.
+
+### 1983
+
+From 1983 to 1986, Olivier Greif is one of the art directors of Académie-Festival des Arcs, where he had been teaching every summer for ten years or so.
+
+Oi Akashe, for cello and piano. Commissoned by the Paris Conservatory for a cello class exam.
+
+Premaloker, for double mixed choir, twelve male voices and instruments, on a poem by Sri Chinmoy. Commissioned by the French State and “Compositeur dans la ville”. Performed in Paris under the direction of Jean-Louis Petit.
+
+### 1985
+
+From 1980 to 1990, numerous concerts in Europe with cellist Christoph Henkel.
+
+Le Rêve du Monde, lieder cycle on poems by Hölderlin.
+
+Olivier, or rather Haridas, is a kind of stand-in for Sri Shinmoy in France. He gives conferences on meditation. He opens a book store on Boulevard Saint-Germain where he sells drawings and books by Sri Chinmoy, religious and mystical books, cushions for meditation, incense, etc.
+
+### 1991
+
+In 1991 and 92, concerts during the “Biennale de Musique française de Lyon” with composer and pianist Jean-François Zygel.
+
+He begins composing again: a cycle of lieder on poems by Hölderlin.
+
+### 1992
+
+He records the piano quartet “Hasards” by Florent Schmitt, with Régis and Bruno Pasquier and Roland Pidoux, for Valois-Auvidis. This record receives the Grand prix de la Nouvelle Académie du Disque.
+
+### 1993
+
+Sonata n°19 “Trois pièces sérieuses”, performed by Olivier in Freiburg (Germany), then on France Musique. Piano Sonata n°20 “Le Rêve du Monde”, performed in Warsaw by himself.
+
+Sonate de Requiem, final version, performed and recorded in the Kuhmo festival, in Finland, by Christoph Henkel and himself (Agon records).
+
+Lettres de Westerbork, for female voice and two violins, on texts by Etty Hillesum and extracts of the Psalms. Commissioned by Radio-France, performed by Doris Lamprecht in Maison de Radio-France in Paris. Etty Hillesum was a young Jewish Dutchwoman who describes in her letters a halfway camp in Holland. She died in Auschwitz
+
+Am Grabe Franz Liszts, for piano. Performed live by himself on France-Musique during a radio series about Liszt.
+
+### 1994
+
+Two songs on poems by Paul Bowles, performed in Théâtre du Rond-Point by Jo-Ann Pickens, Howard Haskin and himself, in presence of Paul Bowles.
+
+The Tailor of Gloucester, for horn, French horn, violin, harp, celesta and synthetizer. Commissioned by the city of Gloucester for a city clock.
+
+Piano Sonata n°21 “Codex Domini”.
+
+Olivier has emergency surgery for a colon cancer. The very same illness struck his grandmother and mother at age 40.
+
+### 1995
+
+Hymnes Spéculatifs, for voice, clarinet, horn, cello and piano, on extracts of the Vedas translated into English by Sri Aurobindo. Performed in Auditorium des Halles by Hanna Schaer and the Musique Oblique ensemble. Commissioned by Musique Nouvelle en Liberté.
+
+Sonata for two cellos “The Battle of Agincourt”, performed in Rencontres Musicales de La Prée by Anne Savouret and Valentin Scharff.
+
+### 1996
+
+Chants de l’âme, for voice and piano, on poems by William Blake, John Donne, George Herbert, Thomas Carew, Henry Vaughn and Henry King. Performed in Salle Gaveau by Jennifer Smith and himself. Second performance by the same team during Rencontres Musicales de La Prée in 1996.
+
+Quintet “A Tale of the World”, performed in the Kuhmo festival by Jean-François Heisser and the Sibelius Quartet—two years late, because of Olivier’s illness.
+
+Quartet n°2, with voice, on three Shakespeare sonnets, performed in Printemps musical du Prieuré de Saint-Cosme by Elsa Vacquin and Quatuor Danel.
+
+Les trottoirs de Paris, for soprano, tenor and piano, on a text by Yves Petit de Voize. Performed in Conservatoire d’art dramatique by Catherine Dubosc, Jean-Paul Fouchécourt and himself.
+
+Olivier Greif receives Prix Chartier de l’Académie des Beaux-Arts. France-Musique features him during a week in a “Musique Pluriel” series produced by David Herschel.
+
+Another emergency surgery for acute pancreatitis. He recovers slowly and remains somewhat frail.
+
+### 1997
+
+First symphony, for voice and orchestra, on poems by Paul Celan, performed in Salle Gaveau on February 1st, 1998 by Jacques Loiseleur des Longchamps and Orchestre de La Prée under the direction of Jérémie Rhorer. Olivier’s cousin in-law, Gerta Wingerd, whom he knew in San Francisco in 1970, now lives in Paris for a few months every year. She gave Olivier the complete poems of her childhood friend Paul Celan. He loved them at first sight.
+
+The book of Irish Saints, for voice and piano. Performed on April 11, 1998 in the Easter festival at Deauville by Stefan Genz and himself.
+
+RCF (Radio Chrétiennes de France) features him in a series of five thirty-minute programs.
+
+The foundation “Pour que l’Esprit Vive” invites him to become an artist-in-residence in Abbaye de La Prée, 200 miles south of Paris. He puts another Sri Chinmoy disciple in charge of the book store. He spends more time composing music and less time teachng meditation, but he stills arranges Sri Chinmoy songs for the disciples’ chorus.
+
+### 1998
+
+Office des Naufragés, for soprano, string quartet, clarinet and piano. Performed in Schauspielhaus in Berlin by the Vogler quartet, with clarinetist Eduard Brunner. First French performance in La Prée on June 3rd, 2000 by Quatuor Danel, with Françoise Kubler, Armand Angster and Michèle Renoul.
+
+Trio for piano, violin and cello, performed by Jérôme Ducros, Renaud Capuçon and Henri Demarquette in the Verquin church during the Rencontres Musicales en Artois. Second performance at the Rencontres de La Prée by Bruno Rigutto, Renaud Capuçon and Dominique de Williencourt.
+
+Quartet n°3 with voice “Todesfuge”, performed in Strasbourg, then in Maison de Radio-France by Stephan Genz and Quatuor Sine Nomine.
+
+Quadruple concerto “La Danse des Morts”, for piano, violin, viola, cello and orchestra, performed during the Festival de Cordes by the Festival orchestra, directed by Jérémie Rhorer, with Jérôme Ducros, Nicolas Dautricourt, Florent Brémond, Christophe Morin.
+
+Piano Sonata n°23 “Les plaisirs de Chérence”, performed by himself during the Rencontres de La Prée.
+
+After moving away gradually from his spiritual master, Olivier uses his original first name again.
+
+### 1999
+
+Cello concerto “Durch Adams Fall”, performed in Notre-Dame de Paris cathedral by Henri Demarquette and Musiciens de La Prée directed by Jérémie Rhorer. Second performance on November 26, 2000 in Salle Pleyel by Henri Demarquette and the Philharmonie de Chambre directed by Marc Minkowski.
+
+Portraits et apparitions, for piano. Performed by himself in Paris, then in March 2000 in La Prée.
+
+Trois chansons apocryphes, performed by Marie Devellereau and himself during Rencontres musicales de La Prée. A performance by Marie Devellereau and Alexandre Tharaud on June 3rd in Auditorium du Louvre was filmed by the Muzzik cable channel and recorded by France Musique.
+
+He composes a Requiem for double choir a cappella, commissioned by “Association Vocal Plus pour l’Académie Internatioale de chant Choral en Vallée du Thouet.” It will be performed after his death.
+
+His father dies in November, 1999.
+
+### 2000
+
+Ich ruf zu dir, sextet for piano, clarinet and string quartet. Commissioned by Festival Présences de Radio-France, performed by pianist Alice Ader and her ensemble on February 13, 2000 in Maison de Radio-France.
+
+Quartet n°4 “Ulysses”, performed on April 23, 2000 in La Prée by Quatuor Syntonia.
+
+Three settings of Musset, for voice and piano, on a poem by Alfred de Musset. Partial performance in Bibliothèque Nationale on May 9, 2000 by Françoise Destembert (soprano) and Jean-Louis Haguenauer. Performed on May, 31 in La Prée by Françoise Destembert and Isabelle Aubert. Commissioned by Bibliothèque Nationale de France
+
+Olivier Greif died suddenly on May 13, 2000 in his Paris apartment, 35 rue de Seine. The autopsy did not find the cause of his death. He is buried in Cimetière de Montparnasse.

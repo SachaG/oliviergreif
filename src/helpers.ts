@@ -48,11 +48,13 @@ export type Section<T> = {
 	component: any;
 };
 
-export type SectionIds =
+export type SectionId =
 	| "catalogue"
 	| "concerts"
 	| "disques"
 	| "editeurs"
+	| "biographie"
+	| "liens"
 	| "actualites";
 
 export const convertTitle = (title: string) =>
@@ -294,7 +296,7 @@ const allItems = {
 	},
 };
 
-export const getSection = <T>(sectionId: SectionIds) =>
+export const getSection = <T>(sectionId: SectionId) =>
 	({
 		id: sectionId,
 		...allItems[sectionId],
@@ -331,3 +333,86 @@ export const getItemsByYear = <
 	);
 	return itemsByYear;
 };
+
+const anim = {
+	old: {
+		name: "bump",
+		duration: "2s",
+		easing: "ease-in",
+		direction: "reverse",
+	},
+	new: {
+		name: "bump",
+		duration: "2s",
+		easing: "ease-in-out",
+	},
+};
+
+export const customTransition = {
+	forwards: anim,
+	backwards: anim,
+};
+
+// export const sections = [
+// 	{ id: "concerts", color: "#71a0e2" },
+// 	{ id: "catalogue", color: "#8bdacd" },
+// 	{ id: "disques", color: "#d6a2bf" },
+// 	{ id: "editeurs", color: "#c49c67" },
+// 	{ id: "actualites", color: "#aa90c1" },
+// 	{ id: "biographie", color: "#e7e082" },
+// 	{ id: "association", color: "#88ade5" },
+// 	{ id: "liens", color: "#df755d" },
+// 	{ id: "media", color: "#72e69e" },
+// 	{ id: "contact", color: "#d486b7" },
+// ];
+
+// export const sections = [
+// 	{ id: "concerts", color: "#1BB4D3" },
+// 	{ id: "catalogue", color: "#41AFC5" },
+// 	{ id: "disques", color: "#5CAFBF" },
+// 	{ id: "editeurs", color: "#79B5C0" },
+// 	{ id: "actualites", color: "#93B6BC" },
+// 	{ id: "biographie", color: "#72A4AC" },
+// 	{ id: "association", color: "#599EAA" },
+// 	{ id: "liens", color: "#4792A0" },
+// 	{ id: "media", color: "#3A8B9A" },
+// 	{ id: "contact", color: "#287B8A" },
+// ];
+
+type SectionDefinition = {
+	id: SectionId;
+	color: string;
+	inverted?: boolean;
+};
+
+export const sections: SectionDefinition[] = [
+	{ id: "concerts", color: "#C9E1E5" },
+	{ id: "catalogue", color: "#C9E1E5" },
+	{ id: "disques", color: "#C9E1E5" },
+	// { id: "editeurs", color: "rgba(33, 79, 89, 1)", inverted: true },
+	{ id: "actualites", color: "rgba(33, 79, 89, 1)", inverted: true },
+	{ id: "biographie", color: "#6d98a4ff" },
+	// { id: "association", color: "#C9E1E5" },
+	{ id: "liens", color: "#6d98a4ff" },
+	// { id: "media", color: "#6d98a4ff" },
+	// { id: "contact", color: "rgba(33, 79, 89, 1)", inverted: true },
+];
+export const getSection2 = (sectionId: SectionId) =>
+	sections.find((s) => s.id === sectionId);
+
+import CatalogueSection from "./components/catalogue/CatalogueSection.astro";
+import DisquesSection from "./components/disques/DisquesSection.astro";
+import ConcertsSection from "./components/concerts/ConcertsSection.astro";
+import ActualitesSection from "./components/actualites/ActualitesSection.astro";
+import BiographieSection from "./components/biographie/BiographieSection.astro";
+
+const sectionComponents = {
+	catalogue: CatalogueSection,
+	concerts: ConcertsSection,
+	disques: DisquesSection,
+	actualites: ActualitesSection,
+	biographie: BiographieSection,
+};
+
+export const getSectionComponent = (sectionId: SectionId) =>
+	sectionComponents[sectionId];

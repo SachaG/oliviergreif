@@ -1,6 +1,8 @@
 ---
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
+import { ClientRouter } from "astro:transitions";
+// import { fade } from "astro:transitions";
 
 interface Props {
 	title?: string;
@@ -19,22 +21,37 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{fullTitle}</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
+		<!-- <ClientRouter /> -->
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<div class="main-content">
-			<h1><a href="/">Olivier Greif</a></h1>
-			<Nav />
+			<!-- <h1><a href="/">Olivier Greif</a></h1>
+			<Nav /> -->
 			<slot />
 		</div>
-		<Footer />
+		<!-- <Footer /> -->
 	</body>
 </html>
+
+
+<script>
+	document.querySelectorAll(".section-link").forEach((item) => {
+		item.addEventListener("click", (e) => {
+			e.preventDefault();
+			const href = item.getAttribute("href");
+
+			document.startViewTransition(() => {
+				window.location.href = href || "";
+			});
+		});
+	});
+</script>
+
 <style is:global>
 	/* https://www.joshwcomeau.com/css/custom-css-reset/
 	*/
@@ -111,15 +128,17 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
-		--textColor: #2f2a24;
-		--linkColor: #e87c00;
-		--linkHoverColor: #925b1d;
+		--textColor: #1b1d1e;
+		--invertedTextColor: #C9E1E5;
+		--invertedHoverTextColor: #fff;
+		--linkColor: #37CBE9;
+		--linkHoverColor: #00d5ff;
 		--textSecondaryColor: #868686;
 		--borderColor: #d8d8d8;
-		--spacing: 60px;
-		--halfSpacing: 30px;
-		--quarterSpacing: 15px;
-		--eighthSpacing: 8px;
+		--spacing: 20px;
+		--halfSpacing: 10px;
+		--quarterSpacing: 5px;
+		--eighthSpacing: 2px;
 	}
 	html {
 		font-family: system-ui, sans-serif;
@@ -137,12 +156,13 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	}
 	body {
 		font-family: "Work Sans", sans-serif;
+		font-family: "Lexend", sans-serif;
 		font-optical-sizing: auto;
 		font-weight: normal;
 		font-style: normal;
 		line-height: 1.6;
-		border: var(--linkColor) 10px solid;
-		padding: 80px;
+		/* border: var(--linkColor) 10px solid; */
+		/* padding: 80px; */
 		margin: 0;
 		font-size: 18px;
 		min-height: 100vh;
@@ -155,7 +175,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	h4,
 	h5,
 	h6 {
-		font-family: "Playfair Display", serif;
+		/* font-family: "Playfair Display", serif; */
 		font-optical-sizing: auto;
 		font-weight: 700;
 		font-style: normal;
@@ -177,7 +197,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		}
 	}
 	h1 {
-		font-size: 3rem;
+		font-size: 5rem;
 		line-height: 1;
 		a,
 		a:link,
@@ -312,4 +332,23 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		/* font-weight: normal; */
 		font-size: 50%;
 	}
+
+	@view-transition {
+		navigation: auto;
+	}
+
+	/* Customize the default animation behavior */
+
+	/* ::view-transition-group(root) {
+		animation-duration: 0.5s;
+	} */
+	::view-transition-old(section-concerts),
+	::view-transition-new(section-concerts),
+	::view-transition-old(heading-concerts),
+	::view-transition-new(heading-concerts) {
+		/* animation: none; */
+	}
+
+
+
 </style>

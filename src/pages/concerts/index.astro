@@ -2,18 +2,26 @@
 import Concert from "../../components/concerts/Concert.compact.astro";
 import PageLayout from "../../components/layouts/PageLayout.astro";
 import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
-import { getConcerts, getItemsByYear } from "../../helpers";
+import {
+	getConcerts,
+	getItemsByYear,
+	customTransition,
+	getSection2,
+} from "../../helpers";
+import { fade, slide } from "astro:transitions";
+import { getSectionPath, getSection } from "../../helpers";
 
 import Layout from "../../layouts/Layout.astro";
 import type { ConcertWithId } from "../../types";
 
 const concerts = getConcerts();
 const concertsByYear = getItemsByYear<ConcertWithId>(concerts);
+const sectionId = "concerts";
+const section = getSection2(sectionId)!;
 ---
 
 <Layout title="Concerts">
-	<PageLayout
-		><h2 slot="page-heading">Concerts</h2>
+	<PageLayout sectionId={sectionId}>
 		{
 			concertsByYear.map((yearItem) => (
 				<SubgridLayout slot="page-content">
@@ -30,3 +38,9 @@ const concertsByYear = getItemsByYear<ConcertWithId>(concerts);
 		}
 	</PageLayout>
 </Layout>
+
+<style>
+	.section-concerts {
+		background: pink;
+	}
+</style>

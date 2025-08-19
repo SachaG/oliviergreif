@@ -22,6 +22,8 @@ strings:
       t: Liens
     - key: contact
       t: Contact
+    - key: media
+      t: Média
 
     # catalog info
     - key: opus

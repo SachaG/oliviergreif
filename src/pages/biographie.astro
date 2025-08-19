@@ -1,8 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Content as BioFr } from "../content/biographie.short.fr.md";
+import { Content as BioEn } from "../content/biographie.short.en.md";
+
+import { Content as FullBioFr } from "../content/biographie.full.fr.md";
+import { Content as FullBioEn } from "../content/biographie.full.en.md";
 ---
 
 <Layout title="Biographie">
 	<h2>Biographie</h2>
-	<p>A venir…</p>
+	<BioFr />
+	<hr />
+	<FullBioFr />
 </Layout>
