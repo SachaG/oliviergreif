@@ -1,0 +1,14 @@
+---
+import T from "../T.astro";
+import { getSectionPath, getSection } from "../../helpers";
+const { sectionId, color, inverted } = Astro.props;
+---
+
+<h2
+	class="section-heading"
+	style={`view-transition-name: heading-${sectionId}`}
+>
+	<a class="section-link" href={getSectionPath(getSection(sectionId))}>
+		<T k={sectionId} />
+	</a>
+</h2>

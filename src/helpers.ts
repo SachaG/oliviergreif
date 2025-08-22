@@ -48,15 +48,15 @@ export type Section<T> = {
 	component: any;
 };
 
-export type SectionId =
-	| "catalogue"
-	| "concerts"
-	| "disques"
-	| "editeurs"
-	| "biographie"
-	| "liens"
-	| "actualites";
-
+export enum SectionId {
+	CATALOGUE = "catalogue",
+	CONCERTS = "concerts",
+	DISQUES = "disques",
+	EDITEURS = "editeurs",
+	BIOGRAPHIE = "biographie",
+	LIENS = "liens",
+	ACTUALITES = "actualites",
+}
 export const convertTitle = (title: string) =>
 	slugify(title.replaceAll("/", ""), {
 		lower: true,

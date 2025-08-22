@@ -16,19 +16,7 @@ const SectionComponent = getSectionComponent(sectionId);
 	class={`home-section section-${sectionId} section-${inverted ? "inverted" : "normal"}`}
 	style={`view-transition-name: section-${sectionId}`}
 >
-	<div class="bg"></div>
 	<div class="inner">
-		<h2
-			class="section-heading"
-			style={`view-transition-name: heading-${sectionId}`}
-		>
-			<a
-				class="section-link"
-				href={getSectionPath(getSection(sectionId))}
-			>
-				<T k={sectionId} />
-			</a>
-		</h2>
 		{SectionComponent ? <SectionComponent /> : null}
 	</div>
 </section>

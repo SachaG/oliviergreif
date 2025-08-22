@@ -55,14 +55,17 @@ import Footer from "../components/Footer.astro";
 	}
 
 	.home-section {
-		padding: var(--spacing);
 		background: var(--mainColor);
 		/* border: 2px solid var(--borderColor); */
 		position: relative;
-		.bg {
+		.inner {
 			background: url("/images/ogreif-large.jpg") fixed;
 			background-size: cover;
 			filter: saturate(0.3) opacity(0.2);
+			padding: var(--spacing);
+			height: 100%;
+		}
+		.bg {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -156,54 +159,54 @@ import Footer from "../components/Footer.astro";
 		--mainColor: #5cafbf;
 	}
 
-	.section-catalogue .bg,
-	.home-sections:has(.section-catalogue:hover) .home-section .bg {
+	.section-catalogue,
+	.home-sections:has(.section-catalogue:hover) .home-section {
 		background: url("/images/ogreif.jpg") fixed;
 		background-size: cover;
 	}
-	.section-concerts .bg,
-	.home-sections:has(.section-concerts:hover) .home-section .bg {
+	.section-concerts,
+	.home-sections:has(.section-concerts:hover) .home-section {
 		background: url("/images/ogreif2.jpg") fixed;
 		background-size: cover;
 	}
 
-	.section-actualites .bg,
-	.home-sections:has(.section-actualites:hover) .home-section .bg {
+	.section-actualites,
+	.home-sections:has(.section-actualites:hover) .home-section {
 		background: url("/images/ogreif3.jpg") fixed;
 		background-size: cover;
 	}
-	.section-biographie .bg,
-	.home-sections:has(.section-biographie:hover) .home-section .bg {
+	.section-biographie,
+	.home-sections:has(.section-biographie:hover) .home-section {
 		background: url("/images/ogreif4.jpg") fixed;
 		background-size: cover;
 	}
-	.section-editeurs .bg,
-	.home-sections:has(.section-editeurs:hover) .home-section .bg {
+	.section-editeurs,
+	.home-sections:has(.section-editeurs:hover) .home-section {
 		background: url("/images/ogreif5.jpg") fixed;
 		background-size: cover;
 	}
-	.section-disques .bg,
-	.home-sections:has(.section-disques:hover) .home-section .bg {
+	.section-disques,
+	.home-sections:has(.section-disques:hover) .home-section {
 		background: url("/images/ogreif6.jpg") fixed;
 		background-size: cover;
 	}
-	.section-media .bg,
-	.home-sections:has(.section-media:hover) .home-section .bg {
+	.section-media,
+	.home-sections:has(.section-media:hover) .home-section {
 		background: url("/images/ogreif7.jpg") fixed;
 		background-size: cover;
 	}
-	.section-association .bg,
-	.home-sections:has(.section-association:hover) .home-section .bg {
+	.section-association,
+	.home-sections:has(.section-association:hover) .home-section {
 		background: url("/images/ogreif8.jpg") fixed;
 		background-size: cover;
 	}
-	.section-liens .bg,
-	.home-sections:has(.section-liens:hover) .home-section .bg {
+	.section-liens,
+	.home-sections:has(.section-liens:hover) .home-section {
 		background: url("/images/ogreif5.jpg") fixed;
 		background-size: cover;
 	}
-	.section-contact .bg,
-	.home-sections:has(.section-contact:hover) .home-section .bg {
+	.section-contact,
+	.home-sections:has(.section-contact:hover) .home-section {
 		background: url("/images/ogreif2.jpg") fixed;
 		background-size: cover;
 	}

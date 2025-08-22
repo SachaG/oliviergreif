@@ -1,7 +1,44 @@
 ---
+import {
+	getCatalogue,
+	getPath,
+	getSectionPath,
+	getSection,
+	SectionId,
+} from "../../helpers";
+import HomeSectionHeading from "../home/HomeSectionHeading.astro";
 
+const catalogue = getCatalogue();
 ---
 
-<div>catalogue section</div>
+<div class="catalogue-section">
+	<HomeSectionHeading sectionId={SectionId.CATALOGUE} />
 
-<style></style>
+	<div class="catalogue-section-oeuvres">
+		{
+			catalogue.slice(0, 10).map((oeuvre) => (
+				<span>
+					<a href={getPath(oeuvre)}>{oeuvre.titre}</a> .
+				</span>
+			))
+		}
+	</div>
+	<div class="home-section-link">
+		<a href={getSectionPath(getSection(SectionId.CATALOGUE))}>Voir plus…</a>
+	</div>
+</div>
+
+<style>
+	.catalogue-section {
+		display: grid;
+		grid-template-rows: min-content minmax(0, 1fr) min-content;
+	}
+	.catalogue-section-oeuvres {
+		overflow: hidden;
+		min-height: 0;
+		min-width: 0;
+		/* flex-shrink: 1;
+		text-overflow: ellipsis;
+		overflow: hidden; */
+	}
+</style>
