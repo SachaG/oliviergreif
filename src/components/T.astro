@@ -1,16 +1,8 @@
 ---
-import fr from "../locales/fr.yml";
-// import en from "../locales/en.yml";
+import { getString } from "../helpers";
 
 const { k, kPlural, count, fallback } = Astro.props;
-const strings: TranslationItem[] = fr.strings;
-type TranslationItem = {
-	key: string;
-	t: string;
-};
-const t = strings.find((s) => s.key === k)?.t;
-const tPlural =
-	kPlural && count > 1 && strings.find((s) => s.key === kPlural)?.t;
+const { t, tPlural } = getString(k, { kPlural, count, fallback });
 ---
 
 <span data-key={k}>{tPlural || t || fallback || k}</span>

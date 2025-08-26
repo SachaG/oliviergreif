@@ -19,7 +19,10 @@ const instrumentGroups = limit
 				const isCurrent = id === currentInstrumentId;
 				return (
 					<li class={isCurrent ? "instrument-current" : ""}>
-						<a href={getInstrumentGroupLink(id)}>
+						<a
+							class="link-heading"
+							href={getInstrumentGroupLink(id)}
+						>
 							<T k={id} fallback={capitalizeFirstLetter(id)} />
 							<span class="count">({count})</span>
 						</a>

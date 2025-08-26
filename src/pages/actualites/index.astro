@@ -1,12 +1,12 @@
 ---
 import Actualite from "../../components/actualites/Actualite.compact.astro";
 import PageLayout from "../../components/layouts/PageLayout.astro";
-import { getActualites } from "../../helpers";
+import { getActualites, getString } from "../../helpers";
 
 import Layout from "../../layouts/Layout.astro";
 ---
 
-<Layout title="Actualités">
+<Layout title={getString("actualites")?.t}>
 	<PageLayout sectionId="actualites">
 		{
 			getActualites().map(({ id }) => (

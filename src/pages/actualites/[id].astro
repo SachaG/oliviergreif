@@ -4,6 +4,7 @@ import {
 	getActualite,
 	getActualites,
 	getItemsStaticPaths,
+	getString,
 } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
@@ -16,6 +17,6 @@ const actualite = getActualite(id);
 const { titre } = actualite;
 ---
 
-<Layout title={titre}>
+<Layout title={getString("actualites")?.t}>
 	<Actualite id={id} />
 </Layout>

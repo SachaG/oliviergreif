@@ -132,6 +132,9 @@ export const getCatalogue = (options?: {
 export const getOeuvre = (id: string) =>
 	getter<OeuvreWithId>(id, getCatalogue());
 
+export const getOeuvreByTitre = (titre: string) =>
+	getCatalogue().find((oeuvre) => oeuvre.titre === titre);
+
 // Instruments
 
 export const instrumentGroups = {
@@ -235,11 +238,11 @@ export const getInstrumentGroupLink = (instrumentGroupId: string) =>
 	`/catalogue/instruments/${instrumentGroupId}`;
 
 export const getInstrumentLink = (instrumentId: string) => {
-	const instrumentGroupId = getInstrumentsGroups().find((id) => {
+	const instrumentGroup = getInstrumentsGroups().find(({ id }) => {
 		const instruments = instrumentGroups[id];
-		return instruments.includes(instrumentId);
+		return instruments?.includes(instrumentId);
 	});
-	return instrumentGroupId && getInstrumentGroupLink(instrumentGroupId);
+	return instrumentGroup && getInstrumentGroupLink(instrumentGroup.id);
 };
 
 // Concerts
@@ -471,3 +474,29 @@ const sectionComponents = {
 
 export const getSectionComponent = (sectionId: SectionId) =>
 	sectionComponents[sectionId];
+
+import fr from "./locales/fr.yml";
+
+export const strings: TranslationItem[] = fr.strings;
+
+export type TranslationItem = {
+	key: string;
+	t: string;
+};
+export const getString = (
+	k: string,
+	options: {
+		kPlural?: string;
+		count?: number;
+		fallback?: string;
+	} = {},
+) => {
+	const { kPlural, count, fallback } = options;
+	const t = strings.find((s) => s.key === k)?.t;
+	const tPlural =
+		kPlural &&
+		count &&
+		count > 1 &&
+		strings.find((s) => s.key === kPlural)?.t;
+	return { t, tPlural };
+};

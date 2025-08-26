@@ -5,6 +5,7 @@ import {
 	getCategories,
 	getInstrumentsGroups,
 	getItemsStaticPaths,
+	getString,
 	instrumentGroups,
 } from "../../../helpers";
 import { convertTitle } from "../../../helpers";
@@ -40,7 +41,7 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 	.filter(({ items }) => items.length > 0);
 ---
 
-<Layout title={`Catalogue (${title})`}>
+<Layout title={`${getString("catalogue")?.t} (${title})`}>
 	<PageLayout>
 		<div slot="page-heading">
 			<h2>

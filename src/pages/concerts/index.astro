@@ -7,6 +7,7 @@ import {
 	getItemsByYear,
 	customTransition,
 	getSection2,
+	getString,
 } from "../../helpers";
 import { fade, slide } from "astro:transitions";
 import { getSectionPath, getSection } from "../../helpers";
@@ -20,7 +21,7 @@ const sectionId = "concerts";
 const section = getSection2(sectionId)!;
 ---
 
-<Layout title="Concerts">
+<Layout title={getString("concerts")?.t}>
 	<PageLayout sectionId={sectionId}>
 		{
 			concertsByYear.map((yearItem) => (

@@ -1,6 +1,6 @@
 ---
 import Disque from "../../components/disques/Disque.compact.astro";
-import { getDisques, getItemsByYear } from "../../helpers";
+import { getDisques, getItemsByYear, getString } from "../../helpers";
 import PageLayout from "../../components/layouts/PageLayout.astro";
 import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
 import type { DisqueWithId } from "../../types";
@@ -9,7 +9,7 @@ import Layout from "../../layouts/Layout.astro";
 const disques = getDisques();
 ---
 
-<Layout title="Disques">
+<Layout title={getString("disques")?.t}>
 	<PageLayout sectionId="disques">
 		<div class="disques-grid" slot="page-content">
 			{disques.map((disque) => <Disque id={disque.id} />)}

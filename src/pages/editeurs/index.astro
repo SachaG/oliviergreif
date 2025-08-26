@@ -1,12 +1,12 @@
 ---
 import Editeur from "../../components/editeurs/Editeur.compact.astro";
 import PageLayout from "../../components/layouts/PageLayout.astro";
-import { getEditeurs } from "../../helpers";
+import { getEditeurs, getString } from "../../helpers";
 
 import Layout from "../../layouts/Layout.astro";
 ---
 
-<Layout title="Editeurs">
+<Layout title={getString("editeurs")?.t}>
 	<PageLayout sectionId="editeurs">
 		{
 			getEditeurs().map((editeur) => (

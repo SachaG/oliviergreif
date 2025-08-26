@@ -16,7 +16,7 @@ const categories = limit ? allCategories.slice(0, limit) : allCategories;
 				const isCurrent = id === currentCategoryId;
 				return (
 					<li class={isCurrent ? "category-current" : ""}>
-						<a href={getCategoryLink(id)}>
+						<a href={getCategoryLink(id)} class="link-heading">
 							<T k={id} fallback={capitalizeFirstLetter(id)} />
 							<span class="count">({count})</span>
 						</a>

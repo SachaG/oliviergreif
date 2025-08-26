@@ -1,6 +1,11 @@
 ---
 import Oeuvre from "../../components/catalogue/oeuvre/Oeuvre.compact.astro";
-import { getCatalogue, getItemsByYear, pluralize } from "../../helpers";
+import {
+	getCatalogue,
+	getItemsByYear,
+	getString,
+	pluralize,
+} from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 import Instruments from "../../components/catalogue/Instruments.astro";
 import Categories from "../../components/catalogue/Categories.astro";
@@ -12,8 +17,8 @@ const catalogue = getCatalogue();
 const catalogueByYear = getItemsByYear<OeuvreWithId>(catalogue);
 ---
 
-<Layout title="Catalogue">
-	<PageLayout sectionId="catalogue">
+<Layout title={getString("catalogue")?.t}>
+	<PageLayout sectionId="catalogue" hasSidebar={true}>
 		<span slot="page-heading">
 			<h2>
 				Catalogue

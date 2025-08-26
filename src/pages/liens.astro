@@ -1,10 +1,10 @@
 ---
-import { getLiens } from "../helpers";
+import { getLiens, getString } from "../helpers";
 
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Liens">
+<Layout title={getString("liens")?.t}>
 	<h2>Liens</h2>
 	<ul>
 		{

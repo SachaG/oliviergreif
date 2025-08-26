@@ -1,6 +1,12 @@
 id: fr
 name: Français
 strings:
+    # general
+    - key: lire_la_suite
+      t: Lire la suite…
+    - key: retour_accueil
+      t: Retour à l'accueil
+
     # nav
     - key: accueil
       t: Accueil
@@ -26,6 +32,12 @@ strings:
       t: Média
     - key: photos
       t: Photos
+    - key: a_propos
+      t: À Propos
+    - key: liens
+      t: Liens
+    - key: contact
+      t: Contact
 
     # catalog info
     - key: opus

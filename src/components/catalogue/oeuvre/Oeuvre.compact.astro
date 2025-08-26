@@ -20,8 +20,8 @@ const className = instruments
 
 <div class={`visible ${className}`}>
 	<div class="opus">Opus {opus}</div>
-	<h3 class="link-heading feed-heading">
-		<a href={getPath(oeuvre)}>{titre}</a>
+	<h3>
+		<a class="link-heading" href={getPath(oeuvre)}>{titre}</a>
 	</h3>
 	<main>
 		<Instruments oeuvre={oeuvre} />
@@ -40,5 +40,11 @@ const className = instruments
 	}
 	.hidden {
 		display: none;
+	}
+	h3 {
+		margin-bottom: var(--quarterSpacing);
+	}
+	a {
+		text-decoration: none;
 	}
 </style>

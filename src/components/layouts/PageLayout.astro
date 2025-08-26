@@ -2,26 +2,26 @@
 import { getSection2 } from "../../helpers";
 import { getSectionPath, getSection } from "../../helpers";
 import T from "../T.astro";
-const { sectionId } = Astro.props;
+const { sectionId, hasSidebar = false } = Astro.props;
 const section = getSection2(sectionId)!;
 ---
 
-<section
-	class="section"
-	style={`view-transition-name: section-${sectionId}; background-color: ${section.color};`}
->
-	<h2
-		class="section-heading"
-		style={`view-transition-name: heading-${sectionId}`}
-		slot="page-heading"
-	>
-		<a class="section-link" href={getSectionPath(getSection(sectionId))}
-			><T k={sectionId} /></a
-		>
-	</h2>
-	<div class="grid">
-		<main><slot name="page-content" /></main>
-		<div class="sidebar">
+<section class={`section section-${hasSidebar ? 'withSidebar' : 'noSidebar'}`} style={`view-transition-name: section-${sectionId}; `}>
+	<div class="page-heading">
+        <a class="home-link" href="/"><span class="arrow">←</span>
+        <span class="visually-hidden"><T k="retour_accueil"/></span></a>
+        <h2
+            class="section-heading"
+            style={`view-transition-name: heading-${sectionId}`}
+            slot="page-heading"
+        >
+            <T k={sectionId} />
+            
+        </h2>
+    </div>
+	<div class="page-content grid">
+		<main class="page-main"><slot name="page-content" /></main>
+		<div class="page-sidebar">
 			<div class="sidebar-contents">
 				<slot name="page-sidebar" />
 			</div>
@@ -30,42 +30,74 @@ const section = getSection2(sectionId)!;
 </section>
 
 <style type="text/scss">
-	.section {
-		padding: var(--spacing);
+    .page-heading {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+		border-bottom: var(--borderWidth) solid var(--borderColor);
+
+    }
+    .home-link {
+        display: grid;
+        place-items: center;
+        font-size: 10rem;
+        text-decoration: none;
+		border-right: var(--borderWidth) solid var(--borderColor);
+        vertical-align: middle;
+        aspect-ratio: 1/1;
+        &:hover {
+            background-color: var(--textColor);
+            color: var(--bgColor);
+        }
+        .arrow {
+            text-box-edge: cap alphabetic;
+            text-box-trim: trim-both;
+        }
+    }
+
+	.section-heading {
+		// position: sticky;
+		// top: 10px;
+		// background-color: var(--bgColor);
+		padding-bottom: var(--spacing);
+		z-index: 100;
+		padding: var(--doubleSpacing);
+		a {
+			color: var(--textColor);
+            text-decoration: none;
+		}
+	}
+	.page-content {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
 	}
 	.heading {
 		margin-bottom: var(--spacing);
 	}
-	.grid {
-		display: grid;
-		grid-template-columns: 3fr 1fr;
-		gap: var(--spacing);
-	}
-
-	.sidebar {
-		position: sticky;
-		top: 10px;
-	}
-	main {
+	.page-main {
+		padding: var(--doubleSpacing);
 		display: flex;
 		flex-direction: column;
 		gap: var(--doubleSpacing);
+        .section-withSidebar & {
+            border-right: var(--borderWidth) solid var(--borderColor);
+            padding-right: var(--doubleSpacing);
+        }
 		.subgrid-layout {
 			padding-bottom: var(--doubleSpacing);
 			border-bottom: var(--borderWidth) solid var(--borderColor);
 		}
 	}
 
-	.section-heading {
+	.page-sidebar {
+		padding: var(--doubleSpacing);
 		position: sticky;
 		top: 10px;
-		background-color: #aff3ffff;
-		padding-bottom: var(--spacing);
-		margin-bottom: var(--spacing);
-		border-bottom: var(--borderWidth) solid var(--borderColor);
-		z-index: 100;
-		a {
-			color: var(--textColor);
-		}
 	}
+
+    .sidebar-contents {
+        display: flex;
+        flex-direction: column;
+        gap: var(--doubleSpacing);
+    }
+
 </style>

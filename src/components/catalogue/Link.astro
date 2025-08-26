@@ -1,0 +1,14 @@
+---
+const { titre } = Astro.props;
+import { getOeuvreByTitre } from "../../helpers";
+
+const oeuvre = getOeuvreByTitre(titre);
+---
+
+{
+	oeuvre ? (
+		<a href={`/catalogue/${oeuvre.id}`}>{titre}</a>
+	) : (
+		<span>{titre}</span>
+	)
+}

@@ -1,8 +1,9 @@
 ---
+import { getString } from "../helpers";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Contact">
+<Layout title={getString("contact")?.t}>
 	<h2>Contact</h2>
 	<p>A venir…</p>
 </Layout>

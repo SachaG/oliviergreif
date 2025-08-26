@@ -1,7 +1,7 @@
 ---
 import { getSection, getSectionPath, SectionId } from "../../helpers";
-import { Content as BioFr } from "../../content/biographie.short.fr.md";
-import HomeSectionHeading from "../home/HomeSectionHeading.astro";
+import { Content as BioFr } from "../../content/biographie.excerpt.fr.md";
+import T from "../T.astro";
 ---
 
 <div>
@@ -10,14 +10,16 @@ import HomeSectionHeading from "../home/HomeSectionHeading.astro";
 	</div>
 
 	<div class="home-section-link">
-		<a href={getSectionPath(getSection(SectionId.BIOGRAPHIE))}>Voir plus…</a
+		<a
+			class="link-heading"
+			href={getSectionPath(getSection(SectionId.BIOGRAPHIE))}
+			><T k="lire_la_suite" /></a
 		>
 	</div>
 </div>
 
 <style>
 	.biographie-section-contents {
-		max-height: 100px;
-		overflow: hidden;
+		margin-bottom: var(--halfSpacing);
 	}
 </style>

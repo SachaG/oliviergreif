@@ -1,6 +1,12 @@
 id: en
 name: English
 strings:
+    # general
+    - key: lire_la_suite
+      t: Read more…
+    - key: retour_accueil
+      t: Back to home
+
     # nav
     - key: accueil
       t: Home
@@ -26,6 +32,12 @@ strings:
       t: Media
     - key: photos
       t: Photos
+    - key: a_propos
+      t: About
+    - key: liens
+      t: Links
+    - key: contact
+      t: Contact
 
     # catalog info
     - key: opus

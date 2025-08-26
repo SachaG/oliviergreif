@@ -19,11 +19,11 @@ const SectionComponent = getSectionComponent(sectionId);
 	<div class="bg"></div>
 	<div class="inner">
 		<h2
-			class="section-heading link-heading"
+			class="section-heading"
 			style={`view-transition-name: heading-${sectionId}`}
 		>
 			<a
-				class="section-link"
+				class="section-link link-heading"
 				href={getSectionPath(getSection(sectionId))}
 			>
 				<T k={sectionId} />
@@ -58,7 +58,7 @@ const SectionComponent = getSectionComponent(sectionId);
 			/* transition: all 600ms ease-in; */
 		}
 		&.home-section-active:hover {
-			background: var(--color, --bgColorSecondary);
+			background: var(--bgColorSecondary);
 		}
 
 		/* a,
@@ -68,17 +68,18 @@ const SectionComponent = getSectionComponent(sectionId);
 		} */
 	}
 	.section-heading {
-		font-size: 1.3rem;
-		margin-bottom: var(--spacing);
-		border-bottom: var(--borderWidth) solid var(--borderColor);
-		padding-bottom: var(--halfSpacing);
-		/* font-size: 4rem;
-		position: absolute;
-		top: -22px;
-		left: -8px;
-		opacity: 0.2; */
 		a {
-			color: var(--textColor);
+			font-size: 1.3rem;
+			margin-bottom: var(--spacing);
+			border-bottom: var(--borderWidth) solid var(--borderColor);
+			padding-bottom: var(--halfSpacing);
+			text-decoration: none;
+			&:hover {
+				border-color: var(--linkHoverColor);
+			}
+			&::after {
+				top: 40%;
+			}
 		}
 	}
 	.section-inverted {
