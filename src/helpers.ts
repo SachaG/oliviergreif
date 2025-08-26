@@ -431,16 +431,16 @@ type SectionDefinition = {
 };
 
 export const sections: SectionDefinition[] = [
-	{ id: "concerts", color: "#55a5bbff", showOnHome: false },
-	{ id: "catalogue", color: "#C9E1E5", showOnHome: true },
-	{ id: "disques", color: "#aff3ffff", showOnHome: true },
+	{ id: "concerts", color: "#FB4F4C", showOnHome: false },
+	{ id: "catalogue", color: "#7df665ff", showOnHome: true },
+	{ id: "disques", color: "#FB4F4C", showOnHome: true },
 	{ id: "editeurs", color: "#55a5bbff", showOnHome: false },
-	{ id: "actualites", color: "#17a5cdff", showOnHome: true },
-	{ id: "biographie", color: "#6697a5ff", showOnHome: true },
+	{ id: "actualites", color: "#5AF0F7", showOnHome: true },
+	{ id: "biographie", color: "#C27DFF", showOnHome: true },
 	{ id: "association", color: "#C9E1E5", showOnHome: false },
 	{ id: "liens", color: "#95bbc6ff", showOnHome: false },
 	{ id: "media", color: "#6d98a4ff", showOnHome: false },
-	{ id: "photos", color: "#6d98a4ff", showOnHome: true },
+	{ id: "photos", color: "#697BFE", showOnHome: true },
 	{ id: "contact", color: "rgba(33, 79, 89, 1)", showOnHome: false },
 ];
 export const getSection2 = (sectionId: SectionId) => {
