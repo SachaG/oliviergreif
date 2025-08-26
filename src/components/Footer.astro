@@ -7,13 +7,16 @@ console.log(footerLinks)
 
 <div class="home-section section-footer footer">
     <div class="bg"></div><div>
-<ul>
+<ul class="items-list">
     {footerLinks.map((link)=><li><a href={`/${link.id}`}><T k={link.id}/></a></li> )}
     </ul>
 <p>&copy; Association Olivier Greif {year}</p>
 </div></div>
 
 <style>
+    .footer {
+		font-family: var(--fontFamilySecondary);
+    }
     ul {
         list-style-type: none;
         padding: 0;

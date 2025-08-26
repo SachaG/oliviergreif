@@ -19,8 +19,8 @@ const catalogue = getCatalogue();
 		</ul>
 	</div>
 	<div class="catalogue-categories">
-		<Categories limit={8} />
-		<Instruments limit={8} />
+		<Categories limit={6} />
+		<Instruments limit={6} />
 	</div>
 	<!-- <div class="home-section-link">
 		<a href={getSectionPath(getSection(SectionId.CATALOGUE))}>Voir plus…</a>
@@ -36,7 +36,7 @@ const catalogue = getCatalogue();
 	.catalogue-categories {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: var(--spacing);
+		gap: var(--doubleSpacing);
 	}
 	.count {
 		font-weight: normal;

@@ -25,9 +25,13 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-	</head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    </head>
 	<body>
 		<div class="main-content">
 			<!-- <h1><a href="/">Olivier Greif</a></h1>
@@ -136,14 +140,18 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		--invertedTextColor: #C9E1E5;
 		--invertedHoverTextColor: #fff;
 		--linkColor: #0f3f46dd;
+		--linkColor: #25190b;
 		--linkHoverColor: #fff;
-		--borderColor: rgba(255,255,255,1);
-		--borderWidth: 2px;
+		--borderColor: #25190b;
+		--borderWidth: 1px;
 		--doubleSpacing: 40px;
 		--spacing: 20px;
 		--halfSpacing: 10px;
 		--quarterSpacing: 5px;
 		--eighthSpacing: 2px;
+        --fontFamilyPrimary: "STIX Two Text", serif;
+        --fontFamilySecondary: "Lexend", sans-serif;
+        --fontFamilySecondary: "DM Sans", sans-serif;
 	}
 	html {
 		font-family: system-ui, sans-serif;
@@ -162,16 +170,20 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	body {
 		font-family: "Work Sans", sans-serif;
 		font-family: "Lexend", sans-serif;
+        font-family: "Newsreader", serif;
+          font-family: var(--fontFamilyPrimary);
+
 		font-optical-sizing: auto;
-		font-weight: normal;
+		font-weight: 500;
 		font-style: normal;
 		line-height: 1.6;
 		/* border: var(--linkColor) 10px solid; */
 		/* padding: 80px; */
 		margin: 0;
-		font-size: 18px;
+		font-size: 20px;
 		min-height: 100vh;
 		color: var(--textColor);
+        background: var(--textColor);
 	}
 
 	h1,
@@ -180,6 +192,8 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	h4,
 	h5,
 	h6 {
+        /* text-transform: uppercase; */
+		font-family: var(--fontFamilySecondary);
 		/* font-family: "Playfair Display", serif; */
 		font-optical-sizing: auto;
 		font-weight: 700;
@@ -192,7 +206,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		margin-bottom: var(--quarterSpacing);
 	}
 	a {
-		text-decoration: none;
+		/* text-decoration: none; */
         font-weight: bold;
 		&:link,
 		&:visited {
@@ -294,6 +308,9 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		tr {
 		}
 	}
+    .items-list-heading {
+        margin-bottom: var(--halfSpacing);
+    }
 	ul.items-list {
 		list-style-type: none;
 		margin: 0;
@@ -301,6 +318,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		display: flex;
 		flex-direction: column;
 		gap: var(--quarterSpacing);
+		font-family: var(--fontFamilySecondary);
 		li {
 			/* border-bottom: var(--borderWidth) solid var(--borderColor); */
 			margin: 0;
@@ -309,6 +327,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 				border: none;
 				padding-bottom: 0;
 			}
+            font-size: 1.1rem;
 		}
 	}
 

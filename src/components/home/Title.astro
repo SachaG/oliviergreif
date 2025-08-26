@@ -2,7 +2,8 @@
 	<div class="inner section-title-inner">
 		<div class="section-title-sub section-title-1">
 			<h1>Olivier Greif</h1>
-			<h2>Pianiste et Compositeur <br />1950-2000</h2>
+			<h2>Pianiste et Compositeur</h2>
+			<h3>1950-2000</h3>
 		</div>
 		<div class="section-title-sub section-title-2">
 			<cite>
@@ -20,18 +21,19 @@
 	}
 	.section-title-sub {
 		display: flex;
-
 		flex-direction: column;
-		gap: var(--spacing);
+		gap: var(--halfSpacing);
 		justify-content: center;
 	}
 	.section-title-1 {
 		text-align: right;
+		border-right: var(--borderWidth) solid var(--borderColor);
+		padding-right: var(--spacing);
 	}
 	.section-title-inner {
 		display: grid;
 		grid-template-columns: min-content 1fr;
-		gap: var(--doubleSpacing);
+		gap: var(--spacing);
 		height: 100%;
 	}
 	h1 {
@@ -41,10 +43,14 @@
 	h2 {
 		font-size: 1.1rem;
 		margin: 0;
+	}
+	h3 {
+		font-size: 1rem;
+		margin: 0;
 		font-weight: normal;
 	}
 	cite {
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		margin: 0;
 	}
 </style>
