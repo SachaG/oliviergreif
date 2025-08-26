@@ -1,7 +1,18 @@
 ---
+import { getActualites } from "../../helpers";
+import Actualite from "./Actualite.compact.astro";
 
+const actus = getActualites();
+const lastActu = actus.at(0);
 ---
 
-<div>actualites section</div>
+<div class="contents">
+	<Actualite id={lastActu.id} />
+</div>
 
-<style></style>
+<style>
+	.contents {
+		max-height: 150px;
+		overflow: hidden;
+	}
+</style>

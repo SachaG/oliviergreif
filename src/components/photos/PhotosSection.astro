@@ -1,0 +1,18 @@
+---
+import { getPhotos } from "../../helpers";
+import Photo from "./Photo.astro";
+
+const photos = getPhotos();
+---
+
+<div class="photos-section">
+	{photos.slice(0, 9).map(({ id }) => <Photo id={id} />)}
+</div>
+
+<style>
+	.photos-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--spacing);
+	}
+</style>

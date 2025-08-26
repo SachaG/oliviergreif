@@ -9,7 +9,7 @@ const { titre, texte, date } = actualite;
 
 <div>
 	<Date date={date} />
-	<h3 class="feed-heading">
+	<h3 class="link-heading feed-heading">
 		<a href={getPath(actualite)}>{titre}</a>
 	</h3>
 	<div set:html={texte} />

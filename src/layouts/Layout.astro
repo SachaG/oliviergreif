@@ -128,13 +128,18 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
-		--textColor: #1b1d1e;
+		/* --bgColor: rgb(132, 214, 223); */
+        --bgColor: #ffa73c;
+        --bgColorSecondary: #69d8e9;
+		--textColor: #25190b;
+		--textColorSecondary: #25190b;
 		--invertedTextColor: #C9E1E5;
 		--invertedHoverTextColor: #fff;
-		--linkColor: #37CBE9;
-		--linkHoverColor: #00d5ff;
-		--textSecondaryColor: #868686;
-		--borderColor: #d8d8d8;
+		--linkColor: #0f3f46dd;
+		--linkHoverColor: #fff;
+		--borderColor: rgba(255,255,255,1);
+		--borderWidth: 2px;
+		--doubleSpacing: 40px;
 		--spacing: 20px;
 		--halfSpacing: 10px;
 		--quarterSpacing: 5px;
@@ -188,6 +193,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	}
 	a {
 		text-decoration: none;
+        font-weight: bold;
 		&:link,
 		&:visited {
 			color: var(--linkColor);
@@ -209,10 +215,12 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		font-size: 4rem;
 	}
 	h3 {
-		font-size: 2rem;
+		font-size: 1.6rem;
 	}
 	h4 {
 		font-size: 1.5rem;
+        color: var(--textColorSecondary);
+        font-weight: normal;
 		&.block-heading {
 			border-bottom: 1px solid #c3af98;
 			padding-bottom: 10px;
@@ -240,7 +248,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	.feed-items {
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing);
+		gap: var(--doubleSpacing);
 	}
 	main {
 		display: flex;
@@ -294,7 +302,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		flex-direction: column;
 		gap: var(--quarterSpacing);
 		li {
-			border-bottom: 1px solid var(--borderColor);
+			/* border-bottom: var(--borderWidth) solid var(--borderColor); */
 			margin: 0;
 			padding-bottom: var(--quarterSpacing);
 			&:last-child {
@@ -304,17 +312,18 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		}
 	}
 
-	.feed-heading {
+	.link-heading {
 		a {
 			color: var(--textColor);
 			display: flex;
-			justify-content: space-between;
+			/* justify-content: space-between; */
+            gap: var(--quarterSpacing);
 			align-items: center;
 			&:hover {
 				&::after {
 					content: "→";
 					display: inline-block;
-					color: var(--textSecondaryColor);
+					color: var(--textColor);
 				}
 			}
 		}
@@ -323,12 +332,12 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		font-family: "Work Sans", sans-serif;
 		font-weight: normal;
 		text-transform: uppercase;
-		color: var(--textSecondaryColor);
+		color: var(--textColorSecondary);
 		margin-bottom: var(--quarterSpacing);
 		font-size: 1.2rem;
 	}
 	.heading-metadata {
-		color: var(--textSecondaryColor);
+		color: var(--textColorSecondary);
 		/* font-weight: normal; */
 		font-size: 50%;
 	}
@@ -350,5 +359,14 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	}
 
 
-
+    .thumbnail {
+		border: var(--borderWidth) solid #00000066;
+        filter: grayscale(0.8);
+        transition: all 300ms ease-out;
+        &:hover {
+            filter: grayscale(0);
+            border: var(--borderWidth) solid var(--borderColor);
+        }
+    }
+   
 </style>

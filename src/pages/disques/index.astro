@@ -7,24 +7,20 @@ import type { DisqueWithId } from "../../types";
 import Layout from "../../layouts/Layout.astro";
 
 const disques = getDisques();
-const disquesByYear = getItemsByYear<DisqueWithId>(disques);
 ---
 
 <Layout title="Disques">
 	<PageLayout sectionId="disques">
-		{
-			disquesByYear.map((yearItem) => (
-				<SubgridLayout slot="page-content">
-					<div slot="col1">
-						<h4>{yearItem.year}</h4>
-					</div>
-					<div class="feed-items" slot="main">
-						{yearItem.items.map((disque) => (
-							<Disque id={disque.id} />
-						))}
-					</div>
-				</SubgridLayout>
-			))
-		}
+		<div class="disques-grid" slot="page-content">
+			{disques.map((disque) => <Disque id={disque.id} />)}
+		</div>
 	</PageLayout>
 </Layout>
+
+<style>
+	.disques-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: var(--doubleSpacing);
+	}
+</style>

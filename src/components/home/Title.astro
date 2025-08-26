@@ -1,0 +1,50 @@
+<div class="home-section section-title">
+	<div class="inner section-title-inner">
+		<div class="section-title-sub section-title-1">
+			<h1>Olivier Greif</h1>
+			<h2>Pianiste et Compositeur <br />1950-2000</h2>
+		</div>
+		<div class="section-title-sub section-title-2">
+			<cite>
+				“Un jour viendra – je ne serai plus de ce monde – où ma musique
+				vous submergera de son évidence.”
+			</cite>
+		</div>
+	</div>
+</div>
+
+<style>
+	.section-title {
+		view-transition-name: title;
+		grid-area: title;
+	}
+	.section-title-sub {
+		display: flex;
+
+		flex-direction: column;
+		gap: var(--spacing);
+		justify-content: center;
+	}
+	.section-title-1 {
+		text-align: right;
+	}
+	.section-title-inner {
+		display: grid;
+		grid-template-columns: min-content 1fr;
+		gap: var(--doubleSpacing);
+		height: 100%;
+	}
+	h1 {
+		font-size: 4rem;
+		margin: 0;
+	}
+	h2 {
+		font-size: 1.1rem;
+		margin: 0;
+		font-weight: normal;
+	}
+	cite {
+		font-size: 1.6rem;
+		margin: 0;
+	}
+</style>

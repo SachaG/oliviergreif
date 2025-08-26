@@ -1,44 +1,44 @@
 ---
-import {
-	getCatalogue,
-	getPath,
-	getSectionPath,
-	getSection,
-	SectionId,
-} from "../../helpers";
-import HomeSectionHeading from "../home/HomeSectionHeading.astro";
+import { getCatalogue } from "../../helpers";
+import Categories from "./Categories.astro";
+import Instruments from "./Instruments.astro";
 
 const catalogue = getCatalogue();
 ---
 
 <div class="catalogue-section">
-	<HomeSectionHeading sectionId={SectionId.CATALOGUE} />
-
-	<div class="catalogue-section-oeuvres">
-		{
-			catalogue.slice(0, 10).map((oeuvre) => (
-				<span>
-					<a href={getPath(oeuvre)}>{oeuvre.titre}</a> .
-				</span>
-			))
-		}
+	<div class="catalogue-all">
+		<ul class="items-list">
+			<li>
+				<a href="/catalogue"
+					>Toutes les oeuvres <span class="count"
+						>({catalogue.length})</span
+					></a
+				>
+			</li>
+		</ul>
 	</div>
-	<div class="home-section-link">
+	<div class="catalogue-categories">
+		<Categories limit={8} />
+		<Instruments limit={8} />
+	</div>
+	<!-- <div class="home-section-link">
 		<a href={getSectionPath(getSection(SectionId.CATALOGUE))}>Voir plus…</a>
-	</div>
+	</div> -->
 </div>
 
 <style>
 	.catalogue-section {
-		display: grid;
-		grid-template-rows: min-content minmax(0, 1fr) min-content;
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing);
 	}
-	.catalogue-section-oeuvres {
-		overflow: hidden;
-		min-height: 0;
-		min-width: 0;
-		/* flex-shrink: 1;
-		text-overflow: ellipsis;
-		overflow: hidden; */
+	.catalogue-categories {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--spacing);
+	}
+	.count {
+		font-weight: normal;
 	}
 </style>

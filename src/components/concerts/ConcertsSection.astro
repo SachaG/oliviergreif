@@ -1,7 +1,16 @@
 ---
+import { getConcerts, SectionId } from "../../helpers";
+import HomeSectionHeading from "../home/HomeSectionHeading.astro";
+import Concert from "./Concert.compact.astro";
 
+const concerts = getConcerts();
+const lastConcert = concerts.at(0);
 ---
 
-<div>concerts section</div>
+<div>
+	<div class="concerts-section-contents">
+		<Concert id={lastConcert.id} />
+	</div>
+</div>
 
 <style></style>

@@ -5,6 +5,9 @@ import disques_ from "./data/disques.yml";
 import editeurs_ from "./data/editeurs.yml";
 import liens_ from "./data/liens.yml";
 import actualites_ from "./data/actualites.yml";
+import photos_ from "./data/photos.yml";
+
+import sortBy from "lodash/sortBy";
 
 import type {
 	WithId,
@@ -19,6 +22,8 @@ import type {
 	EditeurWithId,
 	ActualiteWithId,
 	Lien,
+	Photo,
+	PhotoWithId,
 } from "./types";
 // import OeuvreComponent from "./components/catalogue/oeuvre/Oeuvre.astro";
 // import DisqueComponent from "./components/disques/Disque.astro";
@@ -32,6 +37,7 @@ const disques = disques_ as Disque[];
 const editeurs = editeurs_ as Editeur[];
 const liens = liens_ as Lien[];
 const actualites = actualites_ as Actualite[];
+const photos = photos_ as Photo[];
 
 export type ItemWithId =
 	| OeuvreWithId
@@ -72,7 +78,9 @@ const getter = <T extends WithId>(id: string, items: T[]) => {
 	}
 };
 
-const decorate = <T extends Oeuvre | Concert | Disque | Editeur | Actualite>(
+const decorate = <
+	T extends Oeuvre | Concert | Disque | Editeur | Actualite | Photo,
+>(
 	items: T[],
 	parentSlug: string,
 ) =>
@@ -172,12 +180,20 @@ export const getFormations = () =>
 			),
 	).toSorted() as string[];
 
-export const getCategories = () =>
-	uniq(
-		getCatalogue()
-			.filter((o) => !!o.categorie)
-			.map((oeuvre: Oeuvre) => oeuvre.categorie),
-	).toSorted() as string[];
+type Category = {
+	id: string;
+	count: number;
+};
+export const getCategories = () => {
+	const categoryIds = compact(
+		uniq(getCatalogue().map((oeuvre) => oeuvre.categorie)),
+	);
+	const categories = categoryIds.map((id) => ({
+		id,
+		count: getCatalogue({ categoryId: id }).length,
+	}));
+	return sortBy<Category>(categories, "count").toReversed();
+};
 
 export const getCategoryLink = (categoryId: string) =>
 	`/catalogue/categorie/${categoryId}`;
@@ -194,8 +210,23 @@ export const getInstruments = () => {
 	return instruments;
 };
 
+type InstrumentGroup = {
+	id: keyof typeof instrumentGroups;
+	count: number;
+};
+
 export const getInstrumentsGroups = () =>
-	Object.keys(instrumentGroups) as Array<keyof typeof instrumentGroups>;
+	sortBy<InstrumentGroup>(
+		(
+			Object.keys(instrumentGroups) as Array<
+				keyof typeof instrumentGroups
+			>
+		).map((id) => ({
+			id,
+			count: getCatalogue({ instrumentGroupId: id }).length,
+		})),
+		"count",
+	).toReversed();
 
 export const isInstrumentGroup = (instrument: string) =>
 	Object.keys(instrumentGroups).includes(instrument);
@@ -230,7 +261,11 @@ export const getConcert = (id: string) =>
 
 // Disques
 
-export const getDisques = () => decorate<Disque>(disques, "disques");
+export const getDisques = () =>
+	sortBy<DisqueWithId>(
+		decorate<Disque>(disques, "disques"),
+		"annee",
+	).toReversed();
 export const getDisque = (id: string) => getter<DisqueWithId>(id, getDisques());
 
 // Editeurs
@@ -260,6 +295,12 @@ export const getActualite = (id: string) =>
 // Liens
 
 export const getLiens = () => liens as Lien[];
+
+// Photos
+
+export const getPhotos = () => decorate<Photo>(photos, "photos");
+
+export const getPhoto = (id: string) => getter<PhotoWithId>(id, getPhotos());
 
 // Items
 
@@ -311,7 +352,11 @@ export function capitalizeFirstLetter(s: string) {
 export const pluralize = (s: string, n: number) => (n > 1 ? `${s}s` : s);
 
 // see https://youmightnotneed.com/lodash#uniq
-export const uniq = (a: any) => [...new Set(a)];
+export const uniq = <T>(a: T[]) => [...new Set(a)];
+
+// see https://youmightnotneed.com/lodash#uniq
+export const compact = <T>(a: T[]) =>
+	a.filter((item) => item !== undefined && item !== null);
 
 // see https://youmightnotneed.com/lodash#intersection
 export const intersection = (arr: any[], ...args: any[]) =>
@@ -382,29 +427,37 @@ export const customTransition = {
 type SectionDefinition = {
 	id: SectionId;
 	color: string;
-	inverted?: boolean;
+	showOnHome?: boolean;
 };
 
 export const sections: SectionDefinition[] = [
-	{ id: "concerts", color: "#C9E1E5" },
-	{ id: "catalogue", color: "#C9E1E5" },
-	{ id: "disques", color: "#C9E1E5" },
-	// { id: "editeurs", color: "rgba(33, 79, 89, 1)", inverted: true },
-	{ id: "actualites", color: "rgba(33, 79, 89, 1)", inverted: true },
-	{ id: "biographie", color: "#6d98a4ff" },
-	// { id: "association", color: "#C9E1E5" },
-	{ id: "liens", color: "#6d98a4ff" },
-	// { id: "media", color: "#6d98a4ff" },
-	// { id: "contact", color: "rgba(33, 79, 89, 1)", inverted: true },
+	{ id: "concerts", color: "#55a5bbff", showOnHome: false },
+	{ id: "catalogue", color: "#C9E1E5", showOnHome: true },
+	{ id: "disques", color: "#aff3ffff", showOnHome: true },
+	{ id: "editeurs", color: "#55a5bbff", showOnHome: false },
+	{ id: "actualites", color: "#17a5cdff", showOnHome: true },
+	{ id: "biographie", color: "#6697a5ff", showOnHome: true },
+	{ id: "association", color: "#C9E1E5", showOnHome: false },
+	{ id: "liens", color: "#95bbc6ff", showOnHome: false },
+	{ id: "media", color: "#6d98a4ff", showOnHome: false },
+	{ id: "photos", color: "#6d98a4ff", showOnHome: true },
+	{ id: "contact", color: "rgba(33, 79, 89, 1)", showOnHome: false },
 ];
-export const getSection2 = (sectionId: SectionId) =>
-	sections.find((s) => s.id === sectionId);
+export const getSection2 = (sectionId: SectionId) => {
+	const section = sections.find((s) => s.id === sectionId);
+	if (!section) {
+		throw new Error(`Could not find section ${sectionId}`);
+	}
+	return section;
+};
 
 import CatalogueSection from "./components/catalogue/CatalogueSection.astro";
 import DisquesSection from "./components/disques/DisquesSection.astro";
 import ConcertsSection from "./components/concerts/ConcertsSection.astro";
 import ActualitesSection from "./components/actualites/ActualitesSection.astro";
 import BiographieSection from "./components/biographie/BiographieSection.astro";
+import MediaSection from "./components/media/MediaSection.astro";
+import PhotosSection from "./components/photos/PhotosSection.astro";
 
 const sectionComponents = {
 	catalogue: CatalogueSection,
@@ -412,6 +465,8 @@ const sectionComponents = {
 	disques: DisquesSection,
 	actualites: ActualitesSection,
 	biographie: BiographieSection,
+	media: MediaSection,
+	photos: PhotosSection,
 };
 
 export const getSectionComponent = (sectionId: SectionId) =>

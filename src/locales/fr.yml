@@ -24,6 +24,8 @@ strings:
       t: Contact
     - key: media
       t: Média
+    - key: photos
+      t: Photos
 
     # catalog info
     - key: opus

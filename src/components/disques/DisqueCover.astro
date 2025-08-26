@@ -1,0 +1,12 @@
+---
+import { getDisque, getPath } from "../../helpers";
+const { id } = Astro.props;
+const disque = getDisque(id);
+const { titre, image } = disque;
+---
+
+<a href={getPath(disque)} class="disque-compact-image thumbnail">
+	<img alt={titre} src={`/images/disques/${image}`} />
+</a>
+
+<style></style>

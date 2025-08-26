@@ -1,20 +1,50 @@
+- titre: Three Piano Sonatas
+  annee: 2025
+  interpretes_disque: >
+      Jonathan Benichou
+  maison: >
+      Arion Music
+  oeuvres:
+      - "Sonate n°14 pour piano “Dans le Goût Ancien”"
+      - "Le Rêve du Monde"
+      - "Sonate n°9 pour Piano “Suite Paradisiac Memories”"
+  image: three_piano_sonatas.webp
+  liens:
+      - label: https://arion-music.com/product/42411/
+      - apple_music: https://classical.music.apple.com/us/album/1818549425
+
+- titre: Les Chants de l'âme (Live in Deauville)
+  annee: 2020
+  interpretes_disque: >
+      Yan Levionnois, Paco Garcia, Marie-Laure Garnier, Philippe Hattat
+  maison: >
+      B Records
+  oeuvres:
+      - "Chants de l’Âme (les)"
+  image: les_chants_de_l_ame_deauville.webp
+  liens:
+      - label: https://arion-music.com/product/42411/
+      - apple_music: https://classical.music.apple.com/pl/album/1571685862
+
 - titre: "Office des Naufragés par l’ensemble Accroche Note"
   annee: 2005
   interpretes_disque: >
       Ensemble Accroche Note : Françoise Kubler, soprano, Armand Angster, clarinettes, Stéphanie-Marie Degand, violon, Nathanëlle Marie, violon, Pierre Franck, alto, Christophe Beau, violoncelle, Alexandre Gasparov, piano, Nita Klein, récitante
-  maison: >
-      TRI 331142 Triton,  214, place de l’Église 45320 Courtemaux 02 38 895 895 <a href="http://www.disques-triton.com">http://www.disques-triton.com</a>
+  maison: Triton
   oeuvres:
       - Office des Naufragés (l’)
+  image: office_des_naufrages.webp
+  ref: TRI 331142
 
 - titre: "Quatuor n°4 “Ulysses” par Syntonia"
   annee: 2002
   interpretes_disque: >
       Ensemble Syntonia
-  maison: >
-      TRI 331122 Triton,  214, place de l’Église 45320 Courtemaux 02 38 895 895 <a href="http://www.disques-triton.com">http://www.disques-triton.com</a>
+  maison: Triton
   oeuvres:
       - Quatuor n°4 “Ulysses”
+  image: ulysses.webp
+  ref: TRI 331122
 
 - titre: "Sonate Codex Domini, Sonate n°2 pour violon et Piano, Tombeau de Ravel, Wiener Konzert"
   annee: 2007
@@ -23,8 +53,7 @@
       Sonate pour piano n°21 “Codex Domini”:  Jong Hwa Park, piano<br />
       Wiener Konzert: Hjördis Thébault, soprano, Charles Bouisset, piano<br />
       Le Tombeau de Ravel, Jong Hwa Park et Henri Barda, piano
-  maison: >
-      Saphir Productions 01 48 00 01 20 <a href="http://www.saphirproductions.net">http://www.saphirproductions.net</a>
+  maison: Saphir Productions
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
       - Sonate n°2 pour Violon et Piano
@@ -35,32 +64,35 @@
   annee: 2003
   interpretes_disque: >
       Jan Orawiec, violon, Dimitri Maslennikov, violoncelle, Jonathan Benichou, piano
-  maison: >
-      TRI 331128 Triton,  214, place de l’Église 45320 Courtemaux 02 38 895 895 <a href="http://www.disques-triton.com">http://www.disques-triton.com</a>
+  maison: Triton
   oeuvres:
       - Trio
+  image: trio.webp
+  ref: TRI 331128
 
-- titre: "Requiem par les BBC Singers, Trois portraits et apparitions par O. Greif"
+- titre: "Requiem par les BBC Singers, Trois portraits et apparitions"
   annee: 2005
   interpretes_disque: >
-      Requiem: BBC Singers, direction John Poole<br />
+      Requiem: BBC Singers, direction John Poole. 
       Portraits et Apparitions 4, 8 et 1: Olivier Greif
-  maison: >
-      TRI 331150 Triton,  214, place de l’Église 45320 Courtemaux 02 38 895 895 <a href="http://www.disques-triton.com">http://www.disques-triton.com</a>
+  maison: Triton
   oeuvres:
       - Requiem
       - Portraits et Apparitions
+  image: requiem.webp
+  ref: TRI 331150
 
 - titre: "Chants de l’Âme par Jennifer Smith et Olivier Greif, Lettres de Westerbork par Doris Lamprecht"
   annee: 1999
   interpretes_disque: >
-      Chant de l’Âme: Jennifer Smith, soprano et Oloivier Greif<br />
-      Lettres de Westerbork: Doris Lamprecht, mezzo, Alexis Galpérine et Éric Crambes, violons
-  maison: >
-      TRI 331101 Triton,  214, place de l’Église 45320 Courtemaux 02 38 895 895 <a href="http://www.disques-triton.com">http://www.disques-triton.com</a>
+      Chant de l’Âme: Jennifer Smith, soprano et Oloivier Greif. 
+      Lettres de Westerbork: Doris Lamprecht, mezzo, Alexis Galpérine et Éric Crambes, violons.
+  maison: Triton
   oeuvres:
       - Chants de l’Âme (les)
       - Lettres de Westerbork
+  image: lettres_de_westerbork.webp
+  ref: TRI 331101
 
 - titre: "Hommage à Olivier Greif: Sonate de requiem, Trois chansons apocryphes, Tombeau de Ravel, Quatuor n°3"
   annee: 2001
@@ -69,30 +101,29 @@
       Trois chansons apocryphes: Marie Devellereau, soprano, Olivier Greif, piano (Création, La Prée, 1999)<br />
       Le Tombeau de Ravel: Henri Barda & Olivier Greif, piano à 4 mains (Création, Montfort-Lamaury, 1975)<br />
       Quatuor à cordes n°3 avec voix Todesfuge : Quatuor Sine Nomine, Stephan Genz, baryton (Création, concert dl’ouverture du Musée d’Art moderne de Strasbourg, 1998)
-  maison: >
-      TRI 331119  Triton,  214, place de l’Église 45320 Courtemaux 02 38 895 895 <a href="http://www.disques-triton.com">http://www.disques-triton.com</a>
+  maison: Triton
   oeuvres:
       - Quatuor n°3 “Todesfuge”
       - Sonate de Requiem
       - Tombeau de Ravel (le)
       - Trois chansons apocryphes
+  image: hommage.webp
+  ref: TRI 331119
 
 - titre: "Sonate de guerre par P. Amoyel"
   annee: 2000
   interpretes_disque: >
       Pascal Amoyel
-  maison: >
-      Pianovox
+  maison: Pianovox
   oeuvres:
       - Sonate n°15 “de Guerre”
 
-- titre: "Sonate de Requiem par O. Greif et C. Henkel"
+- titre: "Sonate de Requiem"
   annee: 1996
   interpretes_disque: >
       Christoph Henkel, violoncelle, Olivier Greif, piano
   maison: >
       Agon
-
   oeuvres:
       - Sonate de Requiem
 
@@ -117,28 +148,28 @@
   annee: 2006
   interpretes_disque: >
       Emmanuelle Bertrand, violoncelle, Antje Weithaas, violon, Pascal Amoyel, piano
-  maison: >
-      Harmonia Mundi, <a href="http://www.harmoniamundi.com">http://www.harmoniamundi.com</a>
+  maison: Harmonia Mundi
   oeuvres:
       - Sonate de Requiem
       - Trio
+  image: sonate_de_requiem.webp
 
 - titre: "Quatuor n°2 et The Battle of Agincourt par l’ensemble Syntonia"
   annee: 2010
   interpretes_disque: >
       Ensemble Syntonia et Alain Buet, baryton (pour le quatuor n°2), Patrick Langot et Agnès Vestermann (pour The Battle of Agincourt).
-  maison: >
-      Zig-Zag Territoires ZZT100401
+  maison: Zig-Zag Territoires
   oeuvres:
       - Quatuor à Cordes n°2 avec Voix
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
+  image: the_battle_of_agincourt.webp
+  ref: ZZT100401
 
 - titre: "Meeting of the Waters: Intégrale de l’œuvre pour violon et piano, Stéphanie Moraly et Romain David"
   annee: 2010
   interpretes_disque: >
       Stéphanie Moraly, violon et Romain David, piano.
-  maison: >
-      Triton TRI 33165
+  maison: Triton
   oeuvres:
       - Pièces pour Violon et Piano (2) – 1
       - Pièces pour Violon et Piano (2) – 2
@@ -148,23 +179,25 @@
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
       - Variations on Peter Philips “Galiarda Dolorosa”
       - Adagio
+  image: meeting_of_the_waters.webp
+  ref: 33165
 
 - titre: "Pascal Amoyel plays Greif: Sonate de Guerre et Plaisirs de Chérence"
   annee: 2010
   interpretes_disque: >
       Pascal Amoyel, piano. Emmanuelle Bertrand, violoncelle.
-  maison: >
-      Triton TRI 331160
+  maison: Triton
   oeuvres:
       - Sonate n°15 “de Guerre”
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
+  image: les_plaisirs_de_cherence.webp
+  ref: TRI 331160
 
-- titre: "Le Rêve du Monde: sonates pour piano et violon et piano, cantates, par O. Greif et al."
+- titre: "Le Rêve du Monde: sonates pour piano et violon et piano, cantates"
   annee: 2010
   interpretes_disque: >
       Olivier Greif et Devy Erlih, Evelyn Brunner, Henri Barda, Nell Froger, Ryo Noda, Gottfried Schneider, Howaqrd Haskin, Jo-Ann Pickens, Catherine Dubosc, Jean-Paul Fouchécourt.
-  maison: >
-      INA mémoire vive IMV084
+  maison: INA Mémoire Vive
   oeuvres:
       - Sonate n°15 “de Guerre”
       - Sonate n°2 pour Violon et Piano
@@ -176,12 +209,13 @@
       - Once a Lady was Here
       - Night without Sleep
       - Les Trottoirs de Paris
+  ref: IMV084
 
 - titre: "Musique de chambre: Veni Creator, Galiarda dolorosa, 42nd Street, Adieu New York, etc."
   annee: 2010
   interpretes_disque: >
       Delphine Biron, violoncelle. Bertrand Giraud, piano. Mathieu Godefroy, violon. Frédéric Chatoux, flûte. Alexandre Chabod, clarinette.
-  maison: >
+  # maison:
   oeuvres:
       - Oi Akashe
       - Pièces pour Violoncelle et piano (2) pour un concours – 1
@@ -195,12 +229,13 @@
       - Variations on Peter Philips “Galiarda Dolorosa”
       - Rondo pour Piano “42nd Street”
       - Adieu New York
+  image: musique_de_chambre.webp
 
 - titre: "Concerto pour violoncelle et Sonate de Requiem par Demarquette"
   annee: 2010
   interpretes_disque: >
       Henri Demarquette, violoncelle. Giovanni Bellucci, piano. Orchestre national de France, direction Jean-Claude Casadesus.
-  maison: >
+  # maison: >
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
       - Sonate de Requiem
@@ -209,8 +244,7 @@
   annee: 2011
   interpretes_disque: >
       L’oiseleur des Longchamps et Mary Olivon
-  maison: >
-      <a href="http://www.hybrid'music.com">http://www.hybrid’music.com</a>
+  maison: Hybrid Music
   oeuvres:
       - Cinq Chansons Enfantines
 
@@ -218,25 +252,26 @@
   annee: 2014
   interpretes_disque: >
       Nicolas Horvath
-  maison:
+  # maison:
   oeuvres:
       - Second Hommage à Raymond Roussel
 
-- titre: "Portraits et Apparitions, Les plaisirs de Chérence, par O. Greif"
+- titre: "Portraits et Apparitions, Les plaisirs de Chérence"
   annee: 2014
   interpretes_disque: >
       Olivier Greif, piano
-  maison:
+  # maison:
   oeuvres:
       - Portraits et Apparitions
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
+  image: portraits_et_apparitions.webp
 
 - titre: "Le Quintette"
   #   annee: Enregistré du 19 au 23 février 2020. Parution le 1er octobre 2020."
   annee: 2020
   interpretes_disque: >
       Quintette Syntonia: Stéphanie Moraly et Thibault Noally, violons; Hélène Desaint, alto; Patrick Langot, violoncelle; Romain David, piano.
-  maison:
+  # maison:
   oeuvres:
       - Quintette pour Piano et cordes “A tale of the world”
 
@@ -244,7 +279,7 @@
   annee: 2020
   interpretes_disque: >
       Chants de l’âme: Marie-Laure Granier, Soprano et Philippe Hattat, piano. Les Trottoirs de Paris: Clémentine Decouture, soprano et Paco Garcia, ténor. D’une douleur muette, de Thierry Escaich: Marie-Laure Granier, Soprano; Yan Levionnois, violoncelle; Philippe Hattat, piano.
-  maison:
+  # maison:
   oeuvres:
       - Chants de l’Âme (les)
       - Les Trottoirs de Paris

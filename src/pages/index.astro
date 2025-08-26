@@ -1,32 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
 // import HomeBlock from "../components/HomeBlock.astro";
-import { getSectionPath, getSection, sections } from "../helpers";
+import { getSectionPath, getSection, sections, SectionId } from "../helpers";
 import ConcertComponent from "../components/concerts/Concert.compact.astro";
 import type { ConcertWithId } from "../types";
-const concertsSection = getSection<ConcertWithId>("concerts");
+const concertsSection = getSection<ConcertWithId>(SectionId.CONCERTS);
 const { items: concerts } = concertsSection;
 import HomeSection from "../components/home/HomeSection.astro";
 import Footer from "../components/Footer.astro";
+import Title from "../components/home/Title.astro";
 ---
 
 <Layout>
 	<div class="home-sections">
-		<div class="home-section section-title">
-			<div class="bg"></div>
-			<div class="inner">
-				<h1>Olivier Greif</h1>
-				<h2>Pianiste et Compositeur (1950-2000)</h2>
-				<cite>
-					“Un jour viendra – je ne serai plus de ce monde – où ma
-					musique vous submergera de son évidence.”
-				</cite>
-			</div>
-		</div>
+		<Title />
 		{
-			sections.map((section) => (
-				<HomeSection sectionId={section.id} {...section} />
-			))
+			sections
+				.filter((s) => s.showOnHome)
+				.map((section) => (
+					<HomeSection sectionId={section.id} {...section} />
+				))
 		}
 		<Footer />
 	</div>
@@ -34,66 +27,28 @@ import Footer from "../components/Footer.astro";
 
 <style is:global>
 	.home-sections {
-		--borderColor: white;
-		border: 2px solid var(--borderColor);
+		border: var(--borderWidth) solid var(--borderColor);
 		height: 100vh;
 		width: 100vw;
 		display: grid;
 		gap: 2px;
 		/* gap: 0px; */
 		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: 1fr 1fr 1fr min-content;
+		grid-template-rows: 1fr 1fr 1fr;
 		/* grid-template-areas:
 			"title title title concerts concerts actualites "
 			"catalogue catalogue biographie biographie disques media"
 			"catalogue catalogue editeurs association liens contact"
 			"footer footer footer footer footer footer"; */
 		grid-template-areas:
-			"title title title concerts concerts actualites "
-			"catalogue catalogue biographie biographie disques actualites"
-			"catalogue catalogue liens liens disques footer";
+			"title title title biographie biographie photos "
+			"catalogue catalogue disques disques actualites photos"
+			" catalogue catalogue disques disques actualites footer";
 	}
 
-	.home-section {
-		background: var(--mainColor);
-		/* border: 2px solid var(--borderColor); */
-		position: relative;
-		.inner {
-			background: url("/images/ogreif-large.jpg") fixed;
-			background-size: cover;
-			filter: saturate(0.3) opacity(0.2);
-			padding: var(--spacing);
-			height: 100%;
-		}
-		.bg {
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			/* transition: all 600ms ease-in; */
-		}
-		&:hover {
-			background: rgb(132, 214, 223);
-			.bg {
-			}
-		}
-	}
-	.section-title {
-		view-transition-name: title;
-		grid-area: title;
-		h1 {
-			font-size: 6rem;
-		}
-		h2 {
-			font-size: 1.5rem;
-		}
-		background: rgb(132, 214, 223);
-	}
 	.section-footer {
 		view-transition-name: footer;
 		grid-area: footer;
-		background: rgb(255, 255, 255);
 		padding: 0;
 	}
 	.section-concerts {
@@ -159,54 +114,54 @@ import Footer from "../components/Footer.astro";
 		--mainColor: #5cafbf;
 	}
 
-	.section-catalogue,
-	.home-sections:has(.section-catalogue:hover) .home-section {
+	.section-catalogue .bg,
+	.home-sections:has(.section-catalogue:hover) .home-section .bg {
 		background: url("/images/ogreif.jpg") fixed;
 		background-size: cover;
 	}
-	.section-concerts,
-	.home-sections:has(.section-concerts:hover) .home-section {
+	.section-concerts .bg,
+	.home-sections:has(.section-concerts:hover) .home-section .bg {
 		background: url("/images/ogreif2.jpg") fixed;
 		background-size: cover;
 	}
 
-	.section-actualites,
-	.home-sections:has(.section-actualites:hover) .home-section {
+	.section-actualites .bg,
+	.home-sections:has(.section-actualites:hover) .home-section .bg {
 		background: url("/images/ogreif3.jpg") fixed;
 		background-size: cover;
 	}
-	.section-biographie,
-	.home-sections:has(.section-biographie:hover) .home-section {
+	.section-biographie .bg,
+	.home-sections:has(.section-biographie:hover) .home-section .bg {
 		background: url("/images/ogreif4.jpg") fixed;
 		background-size: cover;
 	}
-	.section-editeurs,
-	.home-sections:has(.section-editeurs:hover) .home-section {
+	.section-editeurs .bg,
+	.home-sections:has(.section-editeurs:hover) .home-section .bg {
 		background: url("/images/ogreif5.jpg") fixed;
 		background-size: cover;
 	}
-	.section-disques,
-	.home-sections:has(.section-disques:hover) .home-section {
+	.section-disques .bg,
+	.home-sections:has(.section-disques:hover) .home-section .bg {
 		background: url("/images/ogreif6.jpg") fixed;
 		background-size: cover;
 	}
-	.section-media,
-	.home-sections:has(.section-media:hover) .home-section {
+	.section-media .bg,
+	.home-sections:has(.section-media:hover) .home-section .bg {
 		background: url("/images/ogreif7.jpg") fixed;
 		background-size: cover;
 	}
-	.section-association,
-	.home-sections:has(.section-association:hover) .home-section {
+	.section-association .bg,
+	.home-sections:has(.section-association:hover) .home-section .bg {
 		background: url("/images/ogreif8.jpg") fixed;
 		background-size: cover;
 	}
-	.section-liens,
-	.home-sections:has(.section-liens:hover) .home-section {
+	.section-liens .bg,
+	.home-sections:has(.section-liens:hover) .home-section .bg {
 		background: url("/images/ogreif5.jpg") fixed;
 		background-size: cover;
 	}
-	.section-contact,
-	.home-sections:has(.section-contact:hover) .home-section {
+	.section-contact .bg,
+	.home-sections:has(.section-contact:hover) .home-section .bg {
 		background: url("/images/ogreif2.jpg") fixed;
 		background-size: cover;
 	}

@@ -39,6 +39,8 @@ export type Disque = {
 	interpretes_disque?: string;
 	commentaire?: string;
 	maison?: string;
+	image?: string;
+	ref?: string;
 };
 export type DisqueWithId = Disque & WithId;
 
@@ -62,3 +64,10 @@ export type ActualiteWithId = Actualite & WithId;
 export type Lien = {
 	texte: string;
 };
+
+export type Photo = {
+	titre: string;
+	image: string;
+};
+
+export type PhotoWithId = Photo & WithId;

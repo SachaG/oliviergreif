@@ -1,21 +1,50 @@
 ---
 import { getDisque, getPath } from "../../helpers";
 import CatalogueRelated from "../catalogue/CatalogueRelated.compact.astro";
+import DisqueCover from "./DisqueCover.astro";
 const { id } = Astro.props;
 const disque = getDisque(id);
 const {
 	titre,
 	oeuvres,
+	image,
 	// commentaire,
-	// annee,
+	annee,
 	// interpretes_disque,
 	// maison,
 } = disque;
 ---
 
-<div>
-	<h3 class="feed-heading">
-		<a href={getPath(disque)}>{titre}</a>
-	</h3>
-	{oeuvres && <CatalogueRelated oeuvres={oeuvres} />}
+<div class="disque-compact">
+	{image ? <DisqueCover id={id} /> : <div class="disque-image-placeholder" />}
+	<div class="disque-compact-content">
+		<h4>{annee}</h4>
+
+		<h3 class="link-heading feed-heading">
+			<a href={getPath(disque)}>{titre}</a>
+		</h3>
+		<!-- {oeuvres && <CatalogueRelated oeuvres={oeuvres} />} -->
+	</div>
 </div>
+
+<style>
+	.disque-compact {
+		/* display: grid;
+		grid-template-columns: 1fr 200px;
+		gap: var(--spacing); */
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing);
+	}
+	.disque-compact-image {
+		&,
+		& img {
+			display: block;
+		}
+	}
+	.disque-image-placeholder {
+		background: #00000033;
+		width: 100%;
+		aspect-ratio: 1/1;
+	}
+</style>

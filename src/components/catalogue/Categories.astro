@@ -1,24 +1,23 @@
 ---
-const { currentCategoryId } = Astro.props;
+const { currentCategoryId, limit } = Astro.props;
 import { capitalizeFirstLetter } from "../../helpers";
 import { getCategories, getCategoryLink, getCatalogue } from "../../helpers";
 import T from "../T.astro";
+
+const allCategories = getCategories();
+const categories = limit ? allCategories.slice(0, limit) : allCategories;
 ---
 
 <div class="categories">
 	<h3>Catégories</h3>
 	<ul class="items-list">
 		{
-			getCategories().map((categoryId) => {
-				const isCurrent = categoryId === currentCategoryId;
-				const count = getCatalogue({ categoryId }).length;
+			categories.map(({ id, count }) => {
+				const isCurrent = id === currentCategoryId;
 				return (
 					<li class={isCurrent ? "category-current" : ""}>
-						<a href={getCategoryLink(categoryId)}>
-							<T
-								k={categoryId}
-								fallback={capitalizeFirstLetter(categoryId)}
-							/>
+						<a href={getCategoryLink(id)}>
+							<T k={id} fallback={capitalizeFirstLetter(id)} />
 							<span class="count">({count})</span>
 						</a>
 					</li>
@@ -35,7 +34,7 @@ import T from "../T.astro";
 		overscroll-behavior: contain;
 	}
 	a {
-		font-weight: normal;
+		// font-weight: normal;
 	}
 	.category-current {
 		a {
@@ -44,9 +43,5 @@ import T from "../T.astro";
 	}
 	.count {
 		font-weight: normal;
-	}
-	p {
-		margin-bottom: 0;
-		font-size: 1rem;
 	}
 </style>

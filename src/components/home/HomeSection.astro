@@ -13,23 +13,68 @@ const SectionComponent = getSectionComponent(sectionId);
 ---
 
 <section
-	class={`home-section section-${sectionId} section-${inverted ? "inverted" : "normal"}`}
+	class={`home-section home-section-active section-${sectionId} section-${inverted ? "inverted" : "normal"}`}
 	style={`view-transition-name: section-${sectionId}`}
 >
+	<div class="bg"></div>
 	<div class="inner">
+		<h2
+			class="section-heading link-heading"
+			style={`view-transition-name: heading-${sectionId}`}
+		>
+			<a
+				class="section-link"
+				href={getSectionPath(getSection(sectionId))}
+			>
+				<T k={sectionId} />
+			</a>
+		</h2>
 		{SectionComponent ? <SectionComponent /> : null}
 	</div>
 </section>
 
-<style define:vars={{ sectionId, color, inverted }}>
+<style is:global define:vars={{ sectionId, color, inverted }}>
 	.home-section {
 		view-transition-name: var(--sectionId);
 		grid-area: var(--sectionId);
 		background-color: var(--color);
-	}
+		background-color: var(--bgColor);
 
-	h2 {
+		padding: var(--spacing);
+		/* border: 2px solid var(--borderColor); */
+		position: relative;
+		background: var(--bgColor);
+
+		.bg {
+			pointer-events: none;
+			background: url("/images/ogreif-large.jpg") fixed;
+			background-size: cover;
+			filter: saturate(0.3) opacity(0.2);
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			/* transition: all 600ms ease-in; */
+		}
+		&.home-section-active:hover {
+			background: var(--bgColorSecondary);
+		}
+
+		/* a,
+		a:link,
+		a:visited {
+			color: var(--textColor);
+		} */
+	}
+	.section-heading {
 		font-size: 2rem;
+		margin-bottom: var(--halfSpacing);
+		/* font-size: 4rem;
+		position: absolute;
+		top: -22px;
+		left: -8px;
+		opacity: 0.2; */
 		a {
 			color: var(--textColor);
 		}
@@ -42,11 +87,4 @@ const SectionComponent = getSectionComponent(sectionId);
 			color: var(--invertedHoverTextColor);
 		}
 	}
-	/* .home-section-concerts {
-		background: blue;
-		view-transition-name: concerts;
-		h3 {
-			view-transition-name: concerts-heading;
-		}
-	} */
 </style>

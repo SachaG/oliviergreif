@@ -5,8 +5,6 @@ import HomeSectionHeading from "../home/HomeSectionHeading.astro";
 ---
 
 <div>
-	<HomeSectionHeading sectionId={SectionId.BIOGRAPHIE} />
-
 	<div class="biographie-section-contents">
 		<BioFr />
 	</div>
@@ -19,6 +17,7 @@ import HomeSectionHeading from "../home/HomeSectionHeading.astro";
 
 <style>
 	.biographie-section-contents {
-		max-height: 200px;
+		max-height: 100px;
+		overflow: hidden;
 	}
 </style>

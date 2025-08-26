@@ -49,10 +49,21 @@ const section = getSection2(sectionId)!;
 	main {
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing);
+		gap: var(--doubleSpacing);
+		.subgrid-layout {
+			padding-bottom: var(--doubleSpacing);
+			border-bottom: var(--borderWidth) solid var(--borderColor);
+		}
 	}
 
-	h2 {
+	.section-heading {
+		position: sticky;
+		top: 10px;
+		background-color: #aff3ffff;
+		padding-bottom: var(--spacing);
+		margin-bottom: var(--spacing);
+		border-bottom: var(--borderWidth) solid var(--borderColor);
+		z-index: 100;
 		a {
 			color: var(--textColor);
 		}

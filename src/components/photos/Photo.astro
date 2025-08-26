@@ -1,0 +1,19 @@
+---
+import { getPhoto } from "../../helpers";
+
+const { id } = Astro.props;
+
+const photo = getPhoto(id);
+const { image, titre } = photo;
+---
+
+<a class="thumbnail" href={`/images/photos/fullsize/${image}`} target="_blank"
+	><img alt={titre} src={`/images/photos/thumbnails/${image}`} /></a
+>
+
+<style>
+	img {
+		aspect-ratio: 1/1;
+		object-fit: cover;
+	}
+</style>

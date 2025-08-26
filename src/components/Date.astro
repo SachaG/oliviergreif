@@ -13,7 +13,7 @@ const options: Intl.DateTimeFormatOptions = {
 };
 
 const formattedDate = capitalizeFirstLetter(
-	Astro.props.date.toLocaleDateString("fr-FR", options),
+	Astro.props.date.toLocaleDateString("fr-FR", options)
 );
 ---
 
@@ -21,7 +21,7 @@ const formattedDate = capitalizeFirstLetter(
 
 <style>
 	.date {
-		color: var(--textSecondaryColor);
+		color: var(--textColorSecondary);
 		line-height: 1;
 		margin-bottom: var(--eighthSpacing);
 	}

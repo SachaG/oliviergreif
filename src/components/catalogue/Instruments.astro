@@ -1,27 +1,26 @@
 ---
 import { getInstrumentsGroups } from "../../helpers";
-const { currentInstrumentId } = Astro.props;
+const { currentInstrumentId, limit } = Astro.props;
 import { capitalizeFirstLetter } from "../../helpers";
 import { getInstrumentGroupLink, getCatalogue } from "../../helpers";
 import T from "../T.astro";
+
+const allInstrumentGroups = getInstrumentsGroups();
+const instrumentGroups = limit
+	? allInstrumentGroups.slice(0, limit)
+	: allInstrumentGroups;
 ---
 
 <div class="instruments">
 	<h3>Instruments</h3>
 	<ul class="items-list">
 		{
-			getInstrumentsGroups().map((instrumentGroupId) => {
-				const isCurrent = instrumentGroupId === currentInstrumentId;
-				const count = getCatalogue({ instrumentGroupId }).length;
+			instrumentGroups.map(({ id, count }) => {
+				const isCurrent = id === currentInstrumentId;
 				return (
 					<li class={isCurrent ? "instrument-current" : ""}>
-						<a href={getInstrumentGroupLink(instrumentGroupId)}>
-							<T
-								k={instrumentGroupId}
-								fallback={capitalizeFirstLetter(
-									instrumentGroupId
-								)}
-							/>
+						<a href={getInstrumentGroupLink(id)}>
+							<T k={id} fallback={capitalizeFirstLetter(id)} />
 							<span class="count">({count})</span>
 						</a>
 						{/* {instruments.length > 1 && (

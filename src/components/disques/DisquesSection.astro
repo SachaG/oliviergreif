@@ -1,7 +1,28 @@
 ---
+import { getDisques, getPath } from "../../helpers";
+import DisqueCover from "./DisqueCover.astro";
 
+const disques = getDisques();
 ---
 
-<div>disques section</div>
+<div class="disques-section contents">
+	{
+		disques
+			.filter((disque) => disque.image)
+			.slice(0, 9)
+			.map((disque) => <DisqueCover id={disque.id} />)
+	}
+</div>
 
-<style></style>
+<style>
+	.contents {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: var(--spacing);
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+</style>

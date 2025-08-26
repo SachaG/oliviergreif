@@ -4,8 +4,16 @@ import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
 import Field from "../Field.astro";
 const { id } = Astro.props;
 const disque = getDisque(id);
-const { titre, commentaire, oeuvres, annee, interpretes_disque, maison } =
-	disque;
+const {
+	titre,
+	commentaire,
+	oeuvres,
+	annee,
+	interpretes_disque,
+	maison,
+	image,
+	ref,
+} = disque;
 ---
 
 <div>
@@ -13,6 +21,7 @@ const { titre, commentaire, oeuvres, annee, interpretes_disque, maison } =
 		{titre}
 	</h2>
 
+	{image && <img src={`/images/disques/${image}`} />}
 	<table>
 		<tbody>
 			<Field label="Année">{annee}</Field>
@@ -23,6 +32,7 @@ const { titre, commentaire, oeuvres, annee, interpretes_disque, maison } =
 			<Field label="Oeuvres">
 				<CatalogueRelated titres={oeuvres} />
 			</Field>
+			{ref && <Field label="Ref">{ref}</Field>}
 			{commentaire && <Field>{commentaire}</Field>}
 		</tbody>
 	</table>
