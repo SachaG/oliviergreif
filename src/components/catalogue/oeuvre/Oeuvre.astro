@@ -10,11 +10,21 @@ import {
 } from "../../../helpers";
 import Field from "../../Field.astro";
 import PageLayout from "../../layouts/PageLayout.astro";
+import T from "../../T.astro";
 import Instruments from "./Instruments.astro";
 const { id } = Astro.props;
 const oeuvre = getOeuvre(id);
-const { annee, opus, titre, editeur, commentaire, texte, creation, duree } =
-	oeuvre;
+const {
+	annee,
+	opus,
+	titre,
+	editeur,
+	commentaire,
+	texte,
+	creation,
+	duree,
+	ecouter,
+} = oeuvre;
 
 const concerts = getConcerts().filter((concert) =>
 	concert.oeuvres?.includes(titre)
@@ -28,7 +38,7 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 ---
 
 <PageLayout sectionId={SectionId.CATALOGUE} hasSidebar={true}>
-	<div slot="page-subheading">
+	<div slot="page-heading">
 		<h3 class="subheading opus">Opus {opus}</h3>
 		<h2 class="title">
 			{titre}
@@ -65,44 +75,69 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 			</tbody>
 		</table>
 	</main>
-	<nav class="sidebar" slot="page-sidebar">
-		<div class="sidebar-contents">
-			{
-				disques && disques.length > 0 && (
-					<div>
-						<h4>Disques</h4>
-						<ul class="items-list">
-							{disques.map((disque) => {
-								return (
-									<li>
-										<a href={getPath(disque)}>
-											{disque.titre}
-										</a>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-				)
-			}
-			{
-				concerts && concerts.length > 0 && (
-					<div>
-						<h4>Concerts</h4>
-						<ul class="items-list">
-							{concerts.map((concert) => {
-								return (
-									<li>
-										<a href={getPath(concert)}>
-											{concert.titre}
-										</a>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-				)
-			}
-		</div>
-	</nav>
+
+	{
+		ecouter && ecouter.length > 0 && (
+			<div slot="page-sidebar">
+				<h4>
+					<T k="ecouter" />
+				</h4>
+				<ul class="items-list">
+					{ecouter.map((service) => (
+						<li>
+							<a
+								href={service.url}
+								target="_blank"
+								class="link-heading"
+							>
+								<T k={service.id} />
+							</a>
+						</li>
+					))}
+				</ul>
+			</div>
+		)
+	}
+	{
+		disques && disques.length > 0 && (
+			<div slot="page-sidebar">
+				<h4>
+					<T k="disques" />
+				</h4>
+				<ul class="items-list">
+					{disques.map((disque) => {
+						return (
+							<li>
+								<a class="link-heading" href={getPath(disque)}>
+									{disque.titre}
+								</a>
+							</li>
+						);
+					})}
+				</ul>
+			</div>
+		)
+	}
+	{
+		concerts && concerts.length > 0 && (
+			<div slot="page-sidebar">
+				<h4>
+					<T k="concerts" />
+				</h4>
+				<ul class="items-list">
+					{concerts.map((concert) => {
+						return (
+							<li>
+								<a class="link-heading" href={getPath(concert)}>
+									{concert.titre}
+								</a>
+							</li>
+						);
+					})}
+				</ul>
+			</div>
+		)
+	}
 </PageLayout>
+
+<style></style>

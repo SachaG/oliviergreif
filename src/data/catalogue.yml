@@ -473,6 +473,9 @@
   creation:
   commentaire: >
       <p>Quatre mouvements: A mourning Brew, The Aegyptian Mathematician, Stars! Stars! (To the memory of Marilyn Monroe”), 42nd Street (“To the memory of Busby Berkeley”). Indication sur la première page: “New York, February-June 1970”. Manuscrit d’origine très lisible.<br />42nd Street a été repris et publié en 1980 (voir opus 33a).<br />La partition est publiée par Donemus dans le recueil Piano Book III.</p>
+  ecouter:
+      - id: apple_music
+        url: https://classical.music.apple.com/fr/album/1045688339?i=1045688636
 
 - opus: "033a"
   titre: "Rondo pour Piano “42nd Street”"

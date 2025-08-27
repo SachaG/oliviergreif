@@ -20,6 +20,9 @@ const { titre } = oeuvre;
 
 <Layout title={titre}>
 	<PageLayout sectionId={SectionId.DISQUES}>
+		<h2 slot="page-heading">
+			{titre}
+		</h2>
 		<div slot="page-content"><Disque id={id} /></div></PageLayout
 	>
 </Layout>

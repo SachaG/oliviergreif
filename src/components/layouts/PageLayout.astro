@@ -11,13 +11,14 @@ const hasContent = defaultSlotContent.trim().length > 0;
 	<div class="page-heading">
         <a class="home-link" href="/"><span class="arrow">←</span>
         <span class="visually-hidden"><T k="retour_accueil"/></span></a>
+        <div class="page-heading-content">
         {hasContent ? <slot name="page-heading"/>:<h2
-            class="section-heading"
             style={`view-transition-name: heading-${sectionId}`}
         >
             <T k={sectionId} />
             
         </h2>}
+        </div>
     </div>
 	<div class="page-content grid">
 		<main class="page-main">
@@ -56,17 +57,22 @@ const hasContent = defaultSlotContent.trim().length > 0;
         }
     }
 
-	.section-heading {
+	.page-heading-content {
 		// position: sticky;
 		// top: 10px;
 		// background-color: var(--bgColor);
-		padding-bottom: var(--spacing);
 		z-index: 100;
 		padding: var(--doubleSpacing);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 		a {
 			color: var(--textColor);
             text-decoration: none;
 		}
+        h2 {
+            font-size: 2rem;
+        }
 	}
 	.page-content {
 		display: grid;

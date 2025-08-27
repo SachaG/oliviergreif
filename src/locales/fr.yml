@@ -58,6 +58,14 @@ strings:
       t: Création
     - key: duree
       t: Durée
+    - key: ecouter
+      t: Écouter
+    - key: apple_music
+      t: Apple Music
+    - key: spotify
+      t: Spotify
+    - key: youtube
+      t: YouTube
 
     # instruments
     - key: oeuvre

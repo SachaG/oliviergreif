@@ -25,13 +25,17 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		<title>{fullTitle}</title>
 		<!-- <ClientRouter /> -->
 
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-
-    </head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 	<body>
 		<div class="main-content">
 			<!-- <h1><a href="/">Olivier Greif</a></h1>
@@ -41,7 +45,6 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		<!-- <Footer /> -->
 	</body>
 </html>
-
 
 <script>
 	document.querySelectorAll(".section-link").forEach((item) => {
@@ -133,27 +136,27 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 			white 60%
 		);
 		/* --bgColor: rgb(132, 214, 223); */
-        --bgColor: #ffad49;
-        --bgColorSecondary: #69d8e9;
-        --bgColorSecondary: #ffa73c;
+		--bgColor: #ffad49;
+		--bgColorSecondary: #69d8e9;
+		--bgColorSecondary: #ffad49;
 		--textColor: #25190b;
 		--textColorSecondary: #25190b;
-		--invertedTextColor: #C9E1E5;
+		--invertedTextColor: #c9e1e5;
 		--invertedHoverTextColor: #fff;
 		--linkColor: #0f3f46dd;
 		--linkColor: #25190b;
 		--linkHoverColor: #fff;
 		--borderColor: #25190b;
 		--borderWidth: 1px;
-        --border: var(--borderWidth) solid var(--borderColor);
+		--border: var(--borderWidth) solid var(--borderColor);
 		--doubleSpacing: 40px;
 		--spacing: 20px;
 		--halfSpacing: 10px;
 		--quarterSpacing: 5px;
 		--eighthSpacing: 2px;
-        --fontFamilyPrimary: "STIX Two Text", serif;
-        --fontFamilySecondary: "Lexend", sans-serif;
-        --fontFamilySecondary: "DM Sans", sans-serif;
+		--fontFamilyPrimary: "STIX Two Text", serif;
+		--fontFamilySecondary: "Lexend", sans-serif;
+		--fontFamilySecondary: "DM Sans", sans-serif;
 	}
 	html {
 		font-family: system-ui, sans-serif;
@@ -173,8 +176,8 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	body {
 		font-family: "Work Sans", sans-serif;
 		font-family: "Lexend", sans-serif;
-        font-family: "Newsreader", serif;
-          font-family: var(--fontFamilyPrimary);
+		font-family: "Newsreader", serif;
+		font-family: var(--fontFamilyPrimary);
 
 		font-optical-sizing: auto;
 		font-weight: 500;
@@ -185,21 +188,21 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		margin: 0;
 		min-height: 100vh;
 		color: var(--textColor);
-        background: var(--bgColor);
+		background: var(--bgColor);
 	}
 
-    hr {
-        border: none;
-        border-bottom: var(--border);
-    }
+	hr {
+		border: none;
+		border-bottom: var(--border);
+	}
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6 {
-        text-wrap: balance;
-        /* text-transform: uppercase; */
+		text-wrap: balance;
+		/* text-transform: uppercase; */
 		font-family: var(--fontFamilySecondary);
 		/* font-family: "Playfair Display", serif; */
 		font-optical-sizing: auto;
@@ -213,7 +216,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	}
 	a {
 		/* text-decoration: none; */
-        font-weight: bold;
+		font-weight: bold;
 		&:link,
 		&:visited {
 			color: var(--linkColor);
@@ -232,15 +235,15 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		}
 	}
 	h2 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 	h3 {
 		font-size: 1.25rem;
 	}
 	h4 {
 		font-size: 1.1rem;
-        color: var(--textColorSecondary);
-        font-weight: normal;
+		color: var(--textColorSecondary);
+		font-weight: normal;
 		&.block-heading {
 			border-bottom: 1px solid #c3af98;
 			padding-bottom: 10px;
@@ -270,10 +273,14 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		flex-direction: column;
 		gap: var(--spacing);
 		max-width: 1000px;
-        h3, h4, h5, h6, p, hr {
-            margin-bottom: var(--spacing);
-
-        }
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		hr {
+			margin-bottom: var(--spacing);
+		}
 	}
 
 	.grid {
@@ -283,20 +290,12 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	}
 	.sidebar {
 	}
-	.sidebar-contents {
-		// position: sticky;
-		// top: 10px;
-		display: flex;
-		flex-direction: column;
-		gap: var(--halfSpacing);
-	}
 
 	table {
 		width: 100%;
 		border-collapse: collapse;
 		border-spacing: 0;
 		text-indent: 0;
-		border-top: var(--border);
 
 		th,
 		td {
@@ -306,19 +305,27 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 			padding-bottom: var(--halfSpacing);
 			padding-top: var(--halfSpacing);
 			border-bottom: var(--border);
-            p:last-child {
-                margin-bottom: 0;
-            }
+
+			p:last-child {
+				margin-bottom: 0;
+			}
 		}
+
 		th {
 			width: 200px;
 		}
 		tr {
+			&:last-child {
+				td,
+				th {
+					border-bottom: none;
+				}
+			}
 		}
 	}
-    .items-list-heading {
-        margin-bottom: var(--halfSpacing);
-    }
+	.items-list-heading {
+		margin-bottom: var(--halfSpacing);
+	}
 	ul.items-list {
 		list-style-type: none;
 		margin: 0;
@@ -339,25 +346,24 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	}
 
 	a.link-heading {
-        font-family: var(--fontFamilySecondary);
-        position: relative;
-        display: block;
-            &::after {
-                color: var(--linkHoverColor);
-                content: "→";
-                display: block;
-                position: absolute;
-                right: 0px;
-                top: 60%;
-                transform: translateY(-50%);
-                display: none;
-            }
-        &:hover {
-             &::after {
-                display: block;
-            }
-
-        }
+		font-family: var(--fontFamilySecondary);
+		position: relative;
+		display: block;
+		&::after {
+			color: var(--linkHoverColor);
+			content: "→";
+			display: block;
+			position: absolute;
+			right: 0px;
+			top: 60%;
+			transform: translateY(-50%);
+			display: none;
+		}
+		&:hover {
+			&::after {
+				display: block;
+			}
+		}
 	}
 	.heading-metadata {
 		color: var(--textColorSecondary);
@@ -381,24 +387,23 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		/* animation: none; */
 	}
 
-
-    .thumbnail {
+	.thumbnail {
 		border: 2px solid #00000066;
-        filter: grayscale(0.8);
-        transition: all 300ms ease-out;
-        &:hover {
-            filter: grayscale(0);
-            border: 2px solid var(--linkHoverColor);
-        }
-    }
-   
-    .visually-hidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0); /* Legacy property for Internet Explorer */
-    clip-path: inset(50%);
-    white-space: nowrap;
-    }
+		filter: grayscale(0.8);
+		transition: all 300ms ease-out;
+		&:hover {
+			filter: grayscale(0);
+			border: 2px solid var(--linkHoverColor);
+		}
+	}
+
+	.visually-hidden:not(:focus):not(:active) {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0); /* Legacy property for Internet Explorer */
+		clip-path: inset(50%);
+		white-space: nowrap;
+	}
 </style>

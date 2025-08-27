@@ -3,6 +3,17 @@ export type WithId = {
 	parentSlug: string;
 };
 
+export enum MusicServiceId {
+	APPLE_MUSIC = "apple_music",
+	SPOTIFY = "spotify",
+	YOUTUBE = "youtube",
+}
+
+export type MusicService = {
+	id: MusicServiceId;
+	url: string;
+};
+
 export type Oeuvre = {
 	opus: string;
 	titre: string;
@@ -16,6 +27,7 @@ export type Oeuvre = {
 	formation?: string;
 	instruments?: string[];
 	categorie?: string;
+	ecouter?: MusicService[];
 };
 export type OeuvreWithId = Oeuvre & WithId;
 
