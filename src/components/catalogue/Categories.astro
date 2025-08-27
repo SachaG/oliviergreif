@@ -7,7 +7,7 @@ import T from "../T.astro";
 const allCategories = getCategories();
 const categories = limit ? allCategories.slice(0, limit) : allCategories;
 
-const showMore = limit && limit < allCategories.length
+const showMore = limit && limit < allCategories.length;
 ---
 
 <div class="categories">
@@ -27,8 +27,15 @@ const showMore = limit && limit < allCategories.length
 			})
 		}
 
-    {showMore && <li><a href="/catalogue" class="link-heading"
-					><T k="voir_plus"/></a></li>}
+		{
+			showMore && (
+				<li>
+					<a href="/catalogue" class="link-heading">
+						<T k="voir_plus" />
+					</a>
+				</li>
+			)
+		}
 	</ul>
 </div>
 
@@ -39,7 +46,7 @@ const showMore = limit && limit < allCategories.length
 		overscroll-behavior: contain;
 	}
 	a {
-		// font-weight: normal;
+		/* font-weight: normal; */
 	}
 	.category-current {
 		a {

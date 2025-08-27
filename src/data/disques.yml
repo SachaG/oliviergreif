@@ -20,7 +20,7 @@
   maison: >
       B Records
   oeuvres:
-      - "Chants de l’Âme (les)"
+      - "Les Chants de l’Âme"
   image: les_chants_de_l_ame_deauville.webp
   liens:
       - label: https://arion-music.com/product/42411/
@@ -32,7 +32,7 @@
       Ensemble Accroche Note : Françoise Kubler, soprano, Armand Angster, clarinettes, Stéphanie-Marie Degand, violon, Nathanëlle Marie, violon, Pierre Franck, alto, Christophe Beau, violoncelle, Alexandre Gasparov, piano, Nita Klein, récitante
   maison: Triton
   oeuvres:
-      - Office des Naufragés (l’)
+      - L'Office des Naufragés
   image: office_des_naufrages.webp
   ref: TRI 331142
 
@@ -57,7 +57,7 @@
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
       - Sonate n°2 pour Violon et Piano
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Wiener Konzert
 
 - titre: "Trios Greif & Chostakovitch"
@@ -89,7 +89,7 @@
       Lettres de Westerbork: Doris Lamprecht, mezzo, Alexis Galpérine et Éric Crambes, violons.
   maison: Triton
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Lettres de Westerbork
   image: lettres_de_westerbork.webp
   ref: TRI 331101
@@ -105,7 +105,7 @@
   oeuvres:
       - Quatuor n°3 “Todesfuge”
       - Sonate de Requiem
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Trois chansons apocryphes
   image: hommage.webp
   ref: TRI 331119
@@ -281,5 +281,5 @@
       Chants de l’âme: Marie-Laure Granier, Soprano et Philippe Hattat, piano. Les Trottoirs de Paris: Clémentine Decouture, soprano et Paco Garcia, ténor. D’une douleur muette, de Thierry Escaich: Marie-Laure Granier, Soprano; Yan Levionnois, violoncelle; Philippe Hattat, piano.
   # maison:
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Les Trottoirs de Paris

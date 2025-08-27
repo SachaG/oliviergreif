@@ -265,7 +265,7 @@
       <p>Manuscrit recopié par Olivier à une date ultérieure.<br />Cette partition est publiée chez Donemus dans le recueil Piano Book II.</p>
 
 - opus: "019"
-  titre: "Little and the Fat (the)"
+  titre: "The Little and the Fat"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -405,7 +405,7 @@
       <p>Manuscrit recopié par Olivier à une date ultérieure, portant le titre “Cinq Pièces pour piano”. Trois pièces à peu près achevées sur cinq. N°3 dédiée à Glenn Gould.<br />La partition est publiée par Donemus dans le recueil Piano Book III.</p>
 
 - opus: "029"
-  titre: "Ile du Docteur Moreau (l’)"
+  titre: "L'Île du Docteur Moreau"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -849,7 +849,7 @@
       <p>Pièce inachevée, portant l’indication: “3 - Menuet”. Manuscrit au crayon lisible.</p>
 
 - opus: "058"
-  titre: "Spirit’s Song (the)"
+  titre: "The Spirit’s Song"
   categorie: melodies
   formation: "Piano et voix"
   instruments: [voix, piano]
@@ -988,7 +988,7 @@
       <p>Manuscrit au crayon, plus ou moins lisible.<br />La partition est publiée par Donemus dans le recueil Piano Book III.</p>
 
 - opus: "068"
-  titre: "Bells (the)"
+  titre: "The Bells"
   categorie: cantate
   formation: "Chœur et orchestre"
   instruments: [piano, piano, guitare, batterie, chœur]
