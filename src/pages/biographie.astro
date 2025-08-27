@@ -11,10 +11,7 @@ import { getString } from "../helpers";
 
 <Layout title={getString("actualites")?.t} }>
 	<PageLayout sectionId="biographie" hasSidebar={false}>
-		<div slot="page-heading">
-			<h2>Biographie</h2>
-		</div>
-		<div slot="page-content">
+		<div class="page-content" slot="page-content">
 			<BioFr />
 			<hr />
 			<FullBioFr />

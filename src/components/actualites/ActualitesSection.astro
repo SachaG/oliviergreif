@@ -1,16 +1,37 @@
 ---
-import { getActualites } from "../../helpers";
+import {
+	getActualites,
+	getPath,
+	getSectionPath,
+	SectionId,
+	truncateWords,
+} from "../../helpers";
+import Date from "../Date.astro";
+import T from "../T.astro";
 import Actualite from "./Actualite.compact.astro";
 
 const actus = getActualites();
-const lastActu = actus.at(0);
+const actualite = actus.at(0)!;
+const { titre, texte, date } = actualite;
+
+const texte_ = truncateWords(texte, 10) + "…";
 ---
 
-<div class="contents">
-	<Actualite id={lastActu.id} />
-</div>
+<section>
+	<div class="contents">
+		<Date date={date} format="short" />
+		<h3 class="link-heading feed-heading">
+			<a href={getPath(actualite)}>{titre}</a>
+		</h3>
+	</div>
+	<a
+		class="home-section-link link-heading"
+		href={getSectionPath(SectionId.ACTUALITES)}><T k="voir_plus" /></a
+	>
+</section>
 
 <style>
-	.contents {
+	h3 {
+		font-size: 1.1rem;
 	}
 </style>

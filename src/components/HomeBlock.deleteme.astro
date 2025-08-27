@@ -22,7 +22,7 @@ const { items, label, moreLabel, component: ItemComponent } = section;
 				.map((item) => <ItemComponent id={item.id} variant="short" />)
 		}
 	</div>
-	<a href={getSectionPath(section)}>{moreLabel}</a>
+	<a href={getSectionPath(sectionId)}>{moreLabel}</a>
 </section>
 
 <style>

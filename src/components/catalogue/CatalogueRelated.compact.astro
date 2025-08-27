@@ -14,10 +14,14 @@ const { oeuvres } = Astro.props;
 				const oeuvre = getOeuvre(convertTitle(oeuvreName));
 				return (
 					<li>
-						<a href={getPath(oeuvre)}>{oeuvreName}</a>
+						<a class="link-heading" href={getPath(oeuvre)}>
+							{oeuvreName}
+						</a>
 					</li>
 				);
 			})
 		}
 	</ul>
 </div>
+
+<style></style>

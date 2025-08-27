@@ -9,6 +9,8 @@ const allInstrumentGroups = getInstrumentsGroups();
 const instrumentGroups = limit
 	? allInstrumentGroups.slice(0, limit)
 	: allInstrumentGroups;
+
+const showMore = limit && limit <= instrumentGroups.length;
 ---
 
 <div class="instruments">
@@ -40,6 +42,15 @@ const instrumentGroups = limit
 				);
 			})
 		}
+		{
+			showMore && (
+				<li>
+					<a href="/catalogue" class="link-heading">
+						<T k="voir_plus" />
+					</a>
+				</li>
+			)
+		}
 	</ul>
 </div>
 
@@ -61,6 +72,5 @@ const instrumentGroups = limit
 	}
 	p {
 		margin-bottom: 0;
-		font-size: 1rem;
 	}
 </style>

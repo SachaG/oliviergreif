@@ -62,8 +62,9 @@ export enum SectionId {
 	BIOGRAPHIE = "biographie",
 	LIENS = "liens",
 	ACTUALITES = "actualites",
+	PHOTOS = "photos",
 }
-export const convertTitle = (title: string) =>
+export const convertTitle = (title: string = "") =>
 	slugify(title.replaceAll("/", ""), {
 		lower: true,
 		remove: /[*+~.()'"!:@]/g,
@@ -346,7 +347,7 @@ export const getSection = <T>(sectionId: SectionId) =>
 		...allItems[sectionId],
 	}) as Section<T>;
 
-export const getSectionPath = <T>(section: Section<T>) => `/${section.id}`;
+export const getSectionPath = <T>(sectionId: SectionId) => `/${sectionId}`;
 
 export function capitalizeFirstLetter(s: string) {
 	return s.charAt(0).toUpperCase() + s.slice(1);
@@ -434,7 +435,7 @@ type SectionDefinition = {
 };
 
 export const sections: SectionDefinition[] = [
-	{ id: "concerts", color: "#FB4F4C", showOnHome: false },
+	{ id: "concerts", color: "#FB4F4C", showOnHome: true },
 	{ id: "catalogue", color: "#7df665ff", showOnHome: true },
 	{ id: "disques", color: "#FB4F4C", showOnHome: true },
 	{ id: "editeurs", color: "#55a5bbff", showOnHome: false },
@@ -483,6 +484,7 @@ export type TranslationItem = {
 	key: string;
 	t: string;
 };
+export const getCurrentLocale = () => "fr-FR";
 export const getString = (
 	k: string,
 	options: {
@@ -500,3 +502,19 @@ export const getString = (
 		strings.find((s) => s.key === kPlural)?.t;
 	return { t, tPlural };
 };
+
+export function truncateWords(text: string, maxWords: number) {
+	// Trim leading/trailing whitespace and split the text into an array of words
+	const words = text.trim().split(/\s+/);
+
+	// If the number of words is already less than or equal to maxWords, return the original text
+	if (words.length <= maxWords) {
+		return text;
+	}
+
+	// Take the first 'maxWords' and join them back with a space
+	const truncatedText = words.slice(0, maxWords).join(" ");
+
+	// Add the ellipsis if truncation occurred
+	return `${truncatedText}…`;
+}

@@ -2,6 +2,7 @@
 import { getConcert, getPath } from "../../helpers";
 import CatalogueRelated from "../catalogue/CatalogueRelated.compact.astro";
 import Date from "../Date.astro";
+import T from "../T.astro";
 
 const { id } = Astro.props;
 const concert = getConcert(id);
@@ -19,7 +20,25 @@ const {
 <div class="concert concert-compact">
 	<Date date={date} />
 	<h3 class="link-heading feed-heading">
-		<a href={getPath(concert)}>{titre}</a>
+		<a class="link-heading" href={getPath(concert)}>{titre}</a>
 	</h3>
-	{oeuvres && <CatalogueRelated oeuvres={oeuvres} />}
+	{
+		oeuvres && (
+			<div class="concert-compact-oeuvres">
+				<CatalogueRelated oeuvres={oeuvres} />
+			</div>
+		)
+	}
 </div>
+
+<style>
+	h3 {
+		a {
+			text-decoration: none;
+		}
+	}
+	.concert-compact-oeuvres {
+		border-left: var(--border);
+		padding-left: var(--spacing);
+	}
+</style>

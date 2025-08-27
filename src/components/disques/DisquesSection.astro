@@ -1,18 +1,25 @@
 ---
-import { getDisques, getPath } from "../../helpers";
+import { getDisques, getPath, getSectionPath, SectionId } from "../../helpers";
+import T from "../T.astro";
 import DisqueCover from "./DisqueCover.astro";
 
 const disques = getDisques();
 ---
 
-<div class="disques-section contents">
-	{
-		disques
-			.filter((disque) => disque.image)
-			.slice(0, 9)
-			.map((disque) => <DisqueCover id={disque.id} />)
-	}
-</div>
+<section>
+	<div class="disques-section contents">
+		{
+			disques
+				.filter((disque) => disque.image)
+				.slice(0, 6)
+				.map((disque) => <DisqueCover id={disque.id} />)
+		}
+	</div>
+	<a
+		class="home-section-link link-heading"
+		href={getSectionPath(SectionId.DISQUES)}><T k="voir_plus" /></a
+	>
+</section>
 
 <style>
 	.contents {

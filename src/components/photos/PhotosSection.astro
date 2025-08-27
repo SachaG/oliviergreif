@@ -1,13 +1,23 @@
 ---
-import { getPhotos } from "../../helpers";
+import { getSection } from "../../helpers";
+import { getSectionPath } from "../../helpers";
+import { getPhotos, SectionId } from "../../helpers";
+import T from "../T.astro";
 import Photo from "./Photo.astro";
 
 const photos = getPhotos();
 ---
 
-<div class="photos-section">
-	{photos.slice(0, 9).map(({ id }) => <Photo id={id} />)}
-</div>
+<section>
+	<div class="photos-section">
+		{photos.slice(0, 6).map(({ id }) => <Photo id={id} />)}
+	</div>
+
+	<a
+		class="home-section-link link-heading"
+		href={getSectionPath(SectionId.PHOTOS)}><T k="voir_plus" /></a
+	>
+</section>
 
 <style>
 	.photos-section {

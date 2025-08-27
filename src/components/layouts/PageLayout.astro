@@ -1,26 +1,28 @@
 ---
 import { getSection2 } from "../../helpers";
-import { getSectionPath, getSection } from "../../helpers";
 import T from "../T.astro";
 const { sectionId, hasSidebar = false } = Astro.props;
-const section = getSection2(sectionId)!;
+
+const defaultSlotContent = await Astro.slots.render('page-heading') || '';
+const hasContent = defaultSlotContent.trim().length > 0;
 ---
 
 <section class={`section section-${hasSidebar ? 'withSidebar' : 'noSidebar'}`} style={`view-transition-name: section-${sectionId}; `}>
 	<div class="page-heading">
         <a class="home-link" href="/"><span class="arrow">←</span>
         <span class="visually-hidden"><T k="retour_accueil"/></span></a>
-        <h2
+        {hasContent ? <slot name="page-heading"/>:<h2
             class="section-heading"
             style={`view-transition-name: heading-${sectionId}`}
-            slot="page-heading"
         >
             <T k={sectionId} />
             
-        </h2>
+        </h2>}
     </div>
 	<div class="page-content grid">
-		<main class="page-main"><slot name="page-content" /></main>
+		<main class="page-main">
+    <slot name="page-subheading" />
+            <slot name="page-content" /></main>
 		<div class="page-sidebar">
 			<div class="sidebar-contents">
 				<slot name="page-sidebar" />
@@ -29,19 +31,19 @@ const section = getSection2(sectionId)!;
 	</div>
 </section>
 
-<style type="text/scss">
+<style type="text/scss" is:global>
     .page-heading {
         display: grid;
         grid-template-columns: min-content 1fr;
-		border-bottom: var(--borderWidth) solid var(--borderColor);
+		border-bottom: var(--border);
 
     }
     .home-link {
         display: grid;
         place-items: center;
-        font-size: 10rem;
+        font-size: 8rem;
         text-decoration: none;
-		border-right: var(--borderWidth) solid var(--borderColor);
+		border-right: var(--border);
         vertical-align: middle;
         aspect-ratio: 1/1;
         &:hover {
@@ -79,12 +81,12 @@ const section = getSection2(sectionId)!;
 		flex-direction: column;
 		gap: var(--doubleSpacing);
         .section-withSidebar & {
-            border-right: var(--borderWidth) solid var(--borderColor);
+            border-right: var(--border);
             padding-right: var(--doubleSpacing);
         }
 		.subgrid-layout {
 			padding-bottom: var(--doubleSpacing);
-			border-bottom: var(--borderWidth) solid var(--borderColor);
+			border-bottom: var(--border);
 		}
 	}
 

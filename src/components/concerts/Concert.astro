@@ -1,5 +1,5 @@
 ---
-import { getConcert } from "../../helpers";
+import { getConcert, SectionId } from "../../helpers";
 import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
 import Date from "../Date.astro";
 import Field from "../Field.astro";
@@ -12,8 +12,8 @@ const { interpretes, adresse, date, titre, commentaire, oeuvres } = concert;
 const showFull = variant === "full";
 ---
 
-<PageLayout>
-	<div slot="page-heading">
+<PageLayout sectionId={SectionId.CONCERTS}>
+	<div slot="page-subheading">
 		<h3 class="subheading"><Date date={date} /></h3>
 
 		<h2>

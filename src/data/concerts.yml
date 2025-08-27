@@ -1,11 +1,11 @@
-- rawDate: "04/06/25"
-  titre: "Test Concert Futur"
-  oeuvres:
-      - Sonate n°9 pour Piano “Suite Paradisiac Memories”
-  interpretes: "Jonathan Benichou, piano."
-  adresse: "Conservatoire Marcel Dupré,  7 Bd des Nations Unies, 92190 Meudon."
-  commentaire: >
-      <p>Œuvres de Liszt, Scriabine, Grieg, Bizet.</p>
+# - rawDate: "04/06/25"
+#   titre: "Test Concert Futur"
+#   oeuvres:
+#       - Sonate n°9 pour Piano “Suite Paradisiac Memories”
+#   interpretes: "Jonathan Benichou, piano."
+#   adresse: "Conservatoire Marcel Dupré,  7 Bd des Nations Unies, 92190 Meudon."
+#   commentaire: >
+#       <p>Œuvres de Liszt, Scriabine, Grieg, Bizet.</p>
 
 - rawDate: "04/06/24"
   titre: "Paradisiac Memories à Meudon"
@@ -91,7 +91,7 @@
 - rawDate: "11/02/24"
   titre: "Tombeau de Ravel à Grenoble"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Laurence Garcin et Sandra Chamoux, piano 4 mains."
   adresse: "Musée de Grenoble, 5 place Lavalette - 38000 Grenoble"
   commentaire: >
@@ -305,7 +305,7 @@
 - rawDate: "15/03/23"
   titre: "Journée Greif à Montpellier"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Sonate de Requiem
   interpretes: "Estelle Lefort, soprano, Pierre Sutra, violoncelle, Lucie Roques, piano."
   adresse: "Auditorium du Conservatoire à rayonnement régional, 13 Av. du Professeur Grasset, 34090 Montpellier"
@@ -364,7 +364,7 @@
 - rawDate: "24/07/22"
   titre: "Chants de l’âme à la Chartreuse du Liget"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Marie-Laure Garnier, soprano, et Célia Oneto Bensaid, piano."
   adresse: "Chartreuse du Liget, 37460 Chemillé-sur-Indrois"
   commentaire: >
@@ -390,7 +390,7 @@
 - rawDate: "21/04/22"
   titre: "Tombeau de Ravel chez Chostakovitch"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Flore Dupuy et Florence Ribot, piano."
   adresse: "19 bis rue des Saints Pères 75006 Paris"
   commentaire: >
@@ -475,11 +475,11 @@
 - rawDate: "14/10/21"
   titre: "Hommage à Olivier Greif au Conservatoire National"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Light Music
       - Rondo pour Piano “42nd Street”
       - Sonate n°15 “de Guerre”
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Trio
   interpretes: "Philippe Hattat, Adrienne Dubois, Géraldine Dutroncy, Lucas Belkhiri, Héloïse Bertrand-Oleari, Ionah Maïatsky, piano.Solène Laurent, mezzo-soprano – Olivier Cesarini, baryton.Aï Nakano violon – Clara Dietlin, violoncelle."
   adresse: "CNSMDP, 209 av. Jean-Jaurès, 75019 Paris"
@@ -489,7 +489,7 @@
 - rawDate: "02/10/21"
   titre: "Journée Greif rue de Madrid"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Quintette pour Piano et cordes “A tale of the world”
   interpretes: "Myrianne Fleur, soprano, et Liam Dugelay, piano pour les Chants de l’âme.Le quintette Syntonia (Stéphanie Moraly et Thibault Noally, violons – Hélène Desaint, alto – Patrick Langot, violoncelle – Romain David, piano) pour le Quintette."
   adresse: "CRR, 14 rue de Madrid, 75008 Paris"
@@ -499,7 +499,7 @@
 - rawDate: "02/10/21"
   titre: "Tombeau de Ravel chez Ravel"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Flore Dupuy et Florence Ribot, piano."
   adresse: "Maison Thioly, 55 rue de Paris, 78490 Montfort-l'Amaury."
   commentaire: >
@@ -508,7 +508,7 @@
 - rawDate: "01/10/21"
   titre: "Greif à la bibliothèque musicale La Grange Fleuret"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - In Memoriam
   interpretes: "Marie Laure Garnier, soprano - Philippe Hattat, piano."
   adresse: "Bibliothèque musicale La Grange-Fleuret (anciennement Médiathèque Musicale Mahler) 11bis rue de Vézelay 75008 Paris"
@@ -554,7 +554,7 @@
 - rawDate: "02/07/21"
   titre: "Concert Greif à Lyon"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Sonate de Requiem
   interpretes: "Lucie Roques, piano. Estelle Lefort, soprano. Pierre Sutra, violoncelle."
   adresse: "Maison de Lorette, 42bis Montée Saint-Barthélémy, 69005 Lyon"
@@ -628,7 +628,7 @@
   titre: "Journée Greif au Conservatoire National/Reporté"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Sonate de Requiem
       - Petite Cantate de Chambre
   interpretes: "Alexis Galpérine, violon; Paul-Marie Kuzma, violoncelle;  Michel Dayez, Géraldine Dutroncy, Lucas Belkhiri, Ionah Maïatsky, Philippe Hattat, piano."
@@ -658,7 +658,7 @@
   titre: "Table-ronde et concert Greif à Lyon/Reporté"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Trio
   interpretes: "Dana Ciocarlie, piano; Marianne Piketty, violon; et divers élèves du conservatoire."
   adresse: "Conservatoire National Supérieur Musique et Danse de Lyon, 3 quai Chauveau, 69266 Lyon"
@@ -702,7 +702,7 @@
 - rawDate: "03/10/20"
   titre: "Tombeau de Ravel chez Ravel – Annulé"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Florence Jacquin-Ribot et Laurence Rigault, piano."
   adresse: "Montfort l'Amaury, 78490."
   commentaire: >
@@ -819,7 +819,7 @@
 - rawDate: "27/06/20"
   titre: "Concert et lecture à Lyon/Annulé"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Sonate de Requiem
       - Trio
   interpretes: "Lucie Roques, piano, Estelle Lefort, soprano, Pierre Sutra, violoncelle et le Trio des Lumières: Tianren Xie, violon, Florent Dartinet, violoncelle, Hugo Philippeau, piano."
@@ -879,8 +879,8 @@
 - rawDate: "23/01/20"
   titre: "Chants de l’âme à Singer-Polignac"
   oeuvres:
-      - Chants de l’Âme (les)
-      - Tombeau de Ravel (le)
+      - Les Chants de l’Âme
+      - Le Tombeau de Ravel
   interpretes: "Marie-Laure Garnier, mezzo-soprano; Philippe Hattat et Théo Fouchenneret, piano. "
   adresse: "Fondation Singer-Polignac, 43 avenue Georeges Mandel, 75116 Paris"
   commentaire: >
@@ -889,7 +889,7 @@
 - rawDate: "21/12/19"
   titre: "Petite Cantate de Chambre au CRR"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Petite Cantate de Chambre
   interpretes: "Marie-Laure Garnier, soprano; Mary Olivon et Philippe Hattat, piano."
   adresse: "CRR, 14 rue de Madrid, 75008 Paris"
@@ -944,7 +944,7 @@
 - rawDate: "31/07/19"
   titre: "Chants de l’âme à Deauville"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Marie-Laure Garnier, mezzo-soprano; Philippe Hattat, piano."
   adresse: "Salle Elie de Brignac, 32 av. Hocquart de Turtot, 14800 Deauville"
   commentaire: >
@@ -1095,7 +1095,7 @@
 - rawDate: "03/05/18"
   titre: "Chants de l’âme à Grenoble"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Chrystèle Chovelon, chant et Florence Cioccolani, piano."
   adresse: "Salle Olivier Messiaen,  1 Rue du Vieux Temple 38000 Grenoble,  04 76 42 95 48"
   commentaire: >
@@ -1122,9 +1122,9 @@
   titre: "Olivier au Conservatoire"
   oeuvres:
       - In Memoriam
-      - Livre des Saints Irlandais (le)
+      - Le Livre des Saints Irlandais
       - Portraits et Apparitions
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Trio
   interpretes: "Michel Dalberto, piano. Thomas Dupont, Hélène Fouquart, Diana Cooper, Eve-Melody Salom, élèves de piano. Nikolaus Fluck, baryton. Trio Metral: Joseph Metral, violon, Justine Metral violoncelle, Victor Metral, piano."
   adresse: "Salle d'orgue du Conservatoire National Supérieur de Musique, 229 avenue Jean Jaurès, 75019 Paris"
@@ -1292,7 +1292,7 @@
 - rawDate: "29/10/16"
   titre: "Saints irlandais en Normandie"
   oeuvres:
-      - Livre des Saints Irlandais (le)
+      - Le Livre des Saints Irlandais
   interpretes: "Mathieu Lecroart, baryton et Denis Contet, orgue"
   adresse: "Église de Villers-sur-Mer, 14640"
   commentaire: >
@@ -1485,7 +1485,7 @@
       - Trio
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
       - Sonate n°15 “de Guerre”
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Ensemble Olivier Greif de Groningen (autour de Anne-Élise Thouvenin, violoncelle). Aline Piboule, Géraldine Dutroncy et Fuminori Tanada, piano."
   adresse: "CRR,  14 rue de Madrid 75008 Paris, salle d’orgue."
   commentaire: >
@@ -1611,7 +1611,7 @@
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Quatuor n°4 “Ulysses”
       - Lettres de Westerbork
       - Quadruple Concerto “La Danse des morts”
@@ -1816,7 +1816,7 @@
 - rawDate: "30/07/13"
   titre: "Tombeau de Ravel dans les Hautes-Alpes"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Marina Friedman et Gabriella Talrose"
   adresse: "Église Saint Apollinaire, 05120 L'Argentière La Bessée"
   commentaire: >
@@ -1879,7 +1879,7 @@
 - rawDate: "14/05/13"
   titre: "Tombeau de Ravel à la fondation Singer-Polignac"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Ismaël Margain et Guillaume Bellom , piano."
   adresse: "43 avenue Georges-Mandel, 75116 Paris"
   commentaire: >
@@ -1950,7 +1950,7 @@
 - rawDate: "07/03/13"
   titre: "Hommage à Ravel"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Henri Barda et Olivier Mazal, pianos."
   adresse: "Direction Générale Wallonie-Bruxelles, 274 bd St-Germain, 75007 Paris"
   commentaire: >
@@ -2020,7 +2020,7 @@
 - rawDate: "28/07/12"
   titre: "Tombeau de Ravel en Alsace"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Jonas Vitaud et Olivier Triendl, piano"
   adresse: "Salle des Fêtes, 67210 Obernai"
   commentaire: >
@@ -2130,7 +2130,7 @@
 - rawDate: "07/01/12"
   titre: "Créations à Cantus Formus"
   oeuvres:
-      - Mort Joyeux (le)
+      - Le Mort Joyeux
       - Light Music
       - Easter Wings, Discipline
   interpretes: "Loiseleur des Longchamps, baryton, Sophie Angebault, soprano, Mary Olivon, piano"
@@ -2536,7 +2536,7 @@
 - rawDate: "27/10/10"
   titre: "Chants de l’Âme galerie Colbert"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Julie Fuchs, soprano - François Lambret, piano"
   adresse: "Auditorium de la galerie Colbert ,  2 rue Vivienne 75002 Paris  Accès : 6 rue des Petits-Champs"
   commentaire: >
@@ -2563,7 +2563,7 @@
 - rawDate: "02/10/10"
   titre: "Chants de l’Âme aux journées Ravel"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Guillemette Laurens, chant et Maria Belooussova, piano."
   adresse: "Orangerie du château des Mesnuls à Montfort l’Amaury (78) 01 34 86 96 10"
   commentaire: >
@@ -2581,7 +2581,7 @@
   titre: "Agincourt à Dijon"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Agnès Vesterman et Patrick Langot, violoncelles. Pierrette Grant, chant et Bruce Grant, piano. Stéphanie Moraly, violon et Romain David, piano."
   adresse: "Hôtel Maleteste , 7 rue Hernoux, 21000 Dijon, 03 80 30 47 11."
   commentaire: >
@@ -2627,7 +2627,7 @@
 - rawDate: "28/07/10"
   titre: "Chants de l’âme à Cordes sur Ciel"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Julie Fuchs, soprano et Alphonce Cemin, piano"
   adresse: "Cordes sur Ciel (Tarn)"
   commentaire: >
@@ -2645,7 +2645,7 @@
 - rawDate: "21/07/10"
   titre: "Naufragés à Belle-Ile"
   oeuvres:
-      - Office des Naufragés (l’)
+      - L'Office des Naufragés
   interpretes: "Ensemble Accroche Note"
   adresse: "Église de Bangor"
   commentaire: >
@@ -2654,7 +2654,7 @@
 - rawDate: "23/06/10"
   titre: "Olivier Greif, l’art de la mélodie"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Trois chansons apocryphes
       - Wiener Konzert
   interpretes: "Étudiants de “L’art du récital” de Françoise Tillard."
@@ -2714,7 +2714,7 @@
   titre: "Soirée hommage sur Mezzo"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Lettres de Westerbork
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
       - Quadruple Concerto “La Danse des morts”
@@ -2856,7 +2856,7 @@
 - rawDate: "06/04/10"
   titre: "Hommage à Olivier Greif sur France Musique"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Orchestre Colonne, sous la direction de Laurent Petitgirard."
   adresse: "France Musique"
   commentaire: >
@@ -2874,7 +2874,7 @@
 - rawDate: "20/03/10"
   titre: "Les chants du cygne"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "L’Oiseleur des Longchamps, baryton et Mary Olivon, piano"
   adresse: "Le regard du Cygne, 210 rue de Belleville 75019 Paris"
   commentaire: >
@@ -2891,7 +2891,7 @@
 - rawDate: "17/02/10"
   titre: "Valse pour Godino"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Valse sur le nom de Godino
   interpretes: "Jean-François Heisser et Henri Barda"
   adresse: "Salle Cortot, Paris"
@@ -3026,7 +3026,7 @@
 - rawDate: "20/09/09"
   titre: "Le Tombeau de Ravel orchestré"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Orchestre Colonne, dir. Laurent Petitgirard."
   adresse: "Maison de Radio France, Salle Olivier Messiaen, rens. 01 56 40 22 22"
   commentaire: >
@@ -3036,7 +3036,7 @@
   titre: "Les Lettres de Westerbork au festival Présences"
   oeuvres:
       - Lettres de Westerbork
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Andrea Hill, mezzo-soprano, Hélène Collerette, violon et Florent Brannens, violon.Géraldine Dutroncy et Fumimori Tanada, piano, pour Le Tombeau de Ravel.Diffusion du concert sur France Musique le lundi 5 octobre à 20h."
   adresse: "Maison de Radio France, Studio 106, rens. 01 56 40 22 22"
   commentaire: >
@@ -3142,7 +3142,7 @@
 - rawDate: "16/10/08"
   titre: "Le Tombeau de Ravel à l’Archipel"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Philippa Neuteboom et Zachary Deak."
   adresse: "L’Archipel, 17 boulevard de Strasbourg, 75010 Paris"
   commentaire: >
@@ -3182,7 +3182,7 @@
 - rawDate: "29/04/08"
   titre: "Le Tombeau de Ravel au CNR"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Philippa Neuteboom et Zachary Deak."
   adresse: "Cantus Formus, CNR Paris, 14 rue de Madrid 75008 Paris."
   commentaire: >
@@ -3192,7 +3192,7 @@
 - rawDate: "11/04/08"
   titre: "Le Tombeau de Ravel au conservatoire du 17ème"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Philippa Neuteboom et Zachary Deak."
   adresse: "Conservatoire du 17ème, Salle Maréchal, 29 avenue de Villiers, 75017 Paris."
   commentaire: >
@@ -3302,7 +3302,7 @@
 - rawDate: "25/08/07"
   titre: "Les Chants de l’Âme à Giverny"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Marie Gautrot, mezzo-soprano, et Maria Belooussova, piano."
   adresse: "Église de Giverny."
   commentaire: >
@@ -3363,7 +3363,7 @@
 - rawDate: "01/04/07"
   titre: "Les Chants de l’Âme au château"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Barbara Marcus et Maria Belooussova."
   adresse: "Chapelle du château du Thil, Chenôves, Saône et Loire."
   commentaire: >
@@ -3407,7 +3407,7 @@
 - rawDate: "30/07/06"
   titre: "Les Chants de l’Âme au pays de la Meije"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Gweneth-Ann Jeffers, soprano et Cédric Tiberghien, piano ."
   adresse: "Église de la Grave (Hautes-Alpes)."
   commentaire: >
@@ -3417,7 +3417,7 @@
 - rawDate: "07/07/06"
   titre: "L’Office des Naufragés à Strasbourg"
   oeuvres:
-      - Office des Naufragés (l’)
+      - L'Office des Naufragés
   interpretes: "Ensemble Accroche Note : Françoise Kubler, soprano, Armand Angster, clarinette, Alexandre Gasparov, piano, Stéphanie Degand et Nathanaëlle Marie, violons, Pierre Franck, alto et Christophe Beau, violoncelle. Nina Klein, récitante."
   adresse: "Strasbourg"
   commentaire: >
@@ -3466,7 +3466,7 @@
       - Sonate n°2 pour Violon et Piano
       - Sonate pour Piano n°21 “Codex Domini”
       - Wiener Konzert
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Geneviève Laurenceau, violon et Lorène de Ratuld, piano. Jong Hwa Park, piano. Hjördis Thébault, soprano et Charles Bouisset, piano. Henri Barda et Jong Hwa Park, piano à quatre mains."
   adresse: "L'Archipel, 75010 Paris."
   commentaire: >
@@ -3567,7 +3567,7 @@
 - rawDate: "13/05/05"
   titre: "Concert anniversaire à Vincennes"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Sonate pour Piano n°20 “Le Rêve du Monde”
       - Trio
       - Bomben auf Engelland
@@ -3672,7 +3672,7 @@
 - rawDate: "23/01/05"
   titre: "L’Office des Naufragés au MAHJ"
   oeuvres:
-      - Office des Naufragés (l’)
+      - L'Office des Naufragés
   interpretes: "Ensemble Accroche Note : Françoise Kubler, soprano, Armand Angster, clarinette, Alexandre Gasparov, piano, Stéphanie Degand et Nathanaëlle Marie, violons, Pierre Franck, alto et Christophe Beau, violoncelle. Nina Klein, récitante."
   adresse: "Musée d'art et d'histoire du judaïsme, 71 rue du Temple, 75003 Paris."
   commentaire: >
@@ -3756,7 +3756,7 @@
 - rawDate: "18/09/04"
   titre: "Le Tombeau de Ravel à Urrugne"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Xavier Bouchaud et Romain Descharmes, piano à quatre mains."
   adresse: "Église d'Urrugne (64)."
   commentaire: >
@@ -3766,7 +3766,7 @@
 - rawDate: "17/08/04"
   titre: "Office des Naufragés au festival des Écrins"
   oeuvres:
-      - Office des Naufragés (l’)
+      - L'Office des Naufragés
   interpretes: "Françoise Kubler, soprano – Armand Angster, clarinette – Alexandre Gasparov, piano – Stéphanie Degand et Nathanaëlle Marie, violons – Pierre Franck, alto – Christophe Beau, violoncelle."
   adresse: "Festival des Écrins, Église de Vallouise (Hautes Alpes)."
   commentaire: >
@@ -3918,7 +3918,7 @@
 - rawDate: "27/07/03"
   titre: "Le Livre des Saints Irlandais en Pays d’Auge"
   oeuvres:
-      - Livre des Saints Irlandais (le)
+      - Le Livre des Saints Irlandais
   interpretes: "Matthieu Lécroart, baryton et Grégory Ballesteros, piano."
   adresse: "Le Pré d'Auge (Calvados). "
   commentaire: >
@@ -4008,7 +4008,7 @@
 - rawDate: "02/06/02"
   titre: "Concert anniversaire au Conservatoire du 9ème"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Sonate n°14 pour piano “Dans le Goût Ancien”
       - Quatuor n°4 “Ulysses”
   interpretes: "Jennifer Smith et Henri Barda, Henri Barda.Quatuor Syntonia."
@@ -4037,7 +4037,7 @@
 - rawDate: "11/03/02"
   titre: "Les Chants de l’Âme à la Péniche Opéra"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Guillemette Laurens, mezzo-soprano et Maria Beloussova, piano."
   adresse: "Péniche Opéra, 42 quai de la Loire, 75019 Paris. "
   commentaire: >
@@ -4119,10 +4119,10 @@
       - Quadruple Concerto “La Danse des morts”
       - Trio
       - Quatuor n°4 “Ulysses”
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Sonate de Requiem
       - Sonate n°14 pour piano “Dans le Goût Ancien”
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Ich Ruf zu Dir
       - Requiem
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
@@ -4156,7 +4156,7 @@
 - rawDate: "13/05/01"
   titre: "Concert anniversaire à Saint-Cloud"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
       - Three Settings of Musset
   interpretes: "Elizabeth Laurence, mezzo-soprano et Maria Belooussova, piano pour des extraits des Chants de l’Âme.Patrck Langot et Anthony Leroy pour des extraits de la sonate “The Battle of Agincourt”.Françoise Destembert, soprano et jean-François Zygel, piano, pour des extraits des Three Settings of Musset."
@@ -4177,7 +4177,7 @@
 - rawDate: "03/05/01"
   titre: "Chants de l’Âme salle Cortot"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Elizabeth Laurence, mezzo-soprano et Maria Belooussova, piano. "
   adresse: "Salle Cortot, 78 rue Cardinet, Paris."
   commentaire: >
@@ -4235,7 +4235,7 @@
 - rawDate: "04/06/00"
   titre: "L’Office des Naufragés à La Prée"
   oeuvres:
-      - Office des Naufragés (l’)
+      - L'Office des Naufragés
   interpretes: "Françoise Kubler, soprano – Armand Angster, clarinette – Michèle Renoul, piano – Quatuor Arpeggione – Michael Lonsdale, récitant."
   adresse: "Abbaye de La Prée, 36100 Ségry"
   commentaire: >
@@ -4525,7 +4525,7 @@
 - rawDate: "23/05/98"
   titre: "L’Office des Naufragés à Berlin"
   oeuvres:
-      - Office des Naufragés (l’)
+      - L'Office des Naufragés
   interpretes: "Maria Husmann, soprano – Eduard Brunner, clarinette – Frank-Immo Zichner, piano – Quatuor Vogler."
   adresse: "Konzerthaus Berlin, Kleiner Saal."
   commentaire: >
@@ -4557,7 +4557,7 @@
 - rawDate: "11/04/98"
   titre: "Les Saints Irlandais à Deauville"
   oeuvres:
-      - Livre des Saints Irlandais (le)
+      - Le Livre des Saints Irlandais
   interpretes: "Stephan Genz, baryton et Olivier Greif, piano."
   adresse: "Salle Élie de Brignac, 14800 Deauville"
   commentaire: >
@@ -4700,7 +4700,7 @@
   titre: "Violoncelle seul et Chants de l’Âme à La Prée"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Dominique de Williencourt, violoncelle.Jennifer Smith, soprano et Olivier Greif, piano."
   adresse: "Abbaye de La Prée, 36100 Ségry"
   commentaire: >
@@ -4715,7 +4715,7 @@
       - Sonate n°15 “de Guerre”
       - Nô, Opéra de Chambre en 10 Scènes
       - Sonate de Requiem
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Nell Froger et Olivier GreifOlivier GreifInerprètes de la création pour NôChristoph Henkel et Olivier GreifJennifer Smith et Olivier Greif"
   adresse: "France Musique"
   commentaire: >
@@ -4736,7 +4736,7 @@
 - rawDate: "22/02/96"
   titre: "Chants de l’Âme à Gaveau"
   oeuvres:
-      - Chants de l’Âme (les)
+      - Les Chants de l’Âme
   interpretes: "Jeniifer Smith, soprano et Olivier Greif, piano."
   adresse: "Salle Gaveau, 75008 Paris"
   commentaire: >
@@ -4747,7 +4747,7 @@
 - rawDate: "28/10/94"
   titre: "Un tailleur à Gloucester"
   oeuvres:
-      - Tailor of Gloucester (the)
+      - The Tailor of Gloucester
   interpretes: ""
   adresse: "Eastgate Shopping Center, Gloucester, U.K."
   commentaire: >
@@ -4871,7 +4871,7 @@
   titre: "Carte blanche à Olivier Greif"
   oeuvres:
       - Songs (four)
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Bomben auf Engelland
       - Wiener Konzert
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
@@ -4921,7 +4921,7 @@
 - rawDate: "27/05/80"
   titre: "Le Llivre du Pélerin salle Cortot"
   oeuvres:
-      - Livre du Pélerin (le)
+      - Le Livre du Pélerin
   interpretes: "Nell Froger, soprano – Raphaël Oleg, violon – Olivier Greif, piano – Quintette à vent Nielsen."
   adresse: "Salle Cortot, 75017 Paris."
   commentaire: >
@@ -4968,7 +4968,7 @@
   titre: "Soirée Greif au Théâtre de la Plaine"
   oeuvres:
       - Taking Leave of a Friend
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Veni Creator
       - Three Poems of Sri Chinmoy
   interpretes: "Nell Froger, soprano – Daniel Raclot, violoncelle – Daniel Oudar et Olivier Greif, pianos."
@@ -4979,7 +4979,7 @@
 - rawDate: "30/01/79"
   titre: "Three Poems of Sri Chinmoy salle Rossini"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Veni Creator
       - Three Poems of Sri Chinmoy
   interpretes: "Michel Oudar et Olivier Greif, pianos.Daniel Raclot, violoncelle et Olivier Greif, piano.Nell Froger, soprano et Olivier Greif, piano."
@@ -4990,7 +4990,7 @@
 - rawDate: "15/11/78"
   titre: "Tombeau de Ravel au Vésinet"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Michel Dalberto et Olivier Greif"
   adresse: "Centre des Arts et Loisirs, Le Vésinet"
   commentaire: >
@@ -5041,7 +5041,7 @@
       - Bomben auf Engelland
       - Sonate n°15 “de Guerre”
       - Wiener Konzert
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Nell Froger, soprano – Gaëtane Prouvost, violon – Ryo Noda, saxophone – Henri Barda et Olivier Greif, pianos."
   adresse: "France Culture"
@@ -5080,7 +5080,7 @@
 - rawDate: "10/10/77"
   titre: "Concert Greif au théâtre 13"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Bomben auf Engelland
       - Variations on Peter Philips “Galiarda Dolorosa”
       - Sonate n°15 “de Guerre”
@@ -5120,7 +5120,7 @@
   titre: "Carte blanche à Olivier Greif au théâtre Essaïon"
   oeuvres:
       - Songs (four)
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Bomben auf Engelland
       - Wiener Konzert
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
@@ -5140,7 +5140,7 @@
 - rawDate: "26/04/76"
   titre: "Le tombeau de Ravel salle Cortot"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Henri Barda et Olivier Greif"
   adresse: "Salle Cortot, 75017 Paris"
   commentaire: >
@@ -5149,7 +5149,7 @@
 - rawDate: "18/03/76"
   titre: "Soirée Greif chez Mme Louis Jacquinot"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
       - Songs (four)
       - In Memoriam
       - Wiener Konzert
@@ -5160,7 +5160,7 @@
 - rawDate: "24/05/75"
   titre: "Le Tombeau de Ravel à Montfort L’Amaury"
   oeuvres:
-      - Tombeau de Ravel (le)
+      - Le Tombeau de Ravel
   interpretes: "Henri Barda et Olivier Greif"
   adresse: "Centre des Loisirs de Montfort L’Amaury"
   commentaire: >

@@ -1,5 +1,6 @@
 ---
 import { getCatalogue } from "../../helpers";
+import T from "../T.astro";
 import Categories from "./Categories.astro";
 import Instruments from "./Instruments.astro";
 
@@ -11,23 +12,22 @@ const catalogue = getCatalogue();
 		<ul class="items-list">
 			<li>
 				<a href="/catalogue" class="link-heading"
-					>Toutes les oeuvres <span class="count"
-						>({catalogue.length})</span
-					></a
+					><T k="toutes_les_oeuvres" />
+					<span class="count">({catalogue.length})</span></a
 				>
 			</li>
 		</ul>
 	</div>
 	<div class="catalogue-categories">
-		<Categories limit={6} />
-		<Instruments limit={6} />
+		<Categories limit={5} />
+		<Instruments limit={5} />
 	</div>
 	<!-- <div class="home-section-link">
-		<a href={getSectionPath(getSection(SectionId.CATALOGUE))}>Voir plus…</a>
+		<a href={getSectionPath((SectionId.CATALOGUE))}>Voir plus…</a>
 	</div> -->
 </div>
 
-<style>
+<style is:global>
 	.catalogue-section {
 		display: flex;
 		flex-direction: column;
@@ -40,5 +40,10 @@ const catalogue = getCatalogue();
 	}
 	.count {
 		font-weight: normal;
+	}
+	ul.items-list {
+		.link-heading {
+			font-size: 0.9rem;
+		}
 	}
 </style>

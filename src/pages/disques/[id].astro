@@ -1,6 +1,12 @@
 ---
 import Disque from "../../components/disques/Disque.astro";
-import { getDisque, getDisques, getItemsStaticPaths } from "../../helpers";
+import PageLayout from "../../components/layouts/PageLayout.astro";
+import {
+	getDisque,
+	getDisques,
+	getItemsStaticPaths,
+	SectionId,
+} from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
 export function getStaticPaths() {
@@ -13,5 +19,7 @@ const { titre } = oeuvre;
 ---
 
 <Layout title={titre}>
-	<Disque id={id} />
+	<PageLayout sectionId={SectionId.DISQUES}>
+		<div slot="page-content"><Disque id={id} /></div></PageLayout
+	>
 </Layout>

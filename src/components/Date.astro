@@ -1,19 +1,29 @@
 ---
-import { capitalizeFirstLetter } from "../helpers";
+import { capitalizeFirstLetter, getCurrentLocale } from "../helpers";
 
 interface Props {
 	date: Date;
+	format?: "long" | "short";
 }
 
-const options: Intl.DateTimeFormatOptions = {
-	weekday: "long",
-	year: "numeric",
-	month: "long",
-	day: "numeric",
-};
+const { date, format = "long" } = Astro.props;
+
+const options: Intl.DateTimeFormatOptions =
+	format === "long"
+		? {
+				weekday: "long",
+				year: "numeric",
+				month: "long",
+				day: "numeric",
+			}
+		: {
+				year: "numeric",
+				month: "numeric",
+				day: "numeric",
+			};
 
 const formattedDate = capitalizeFirstLetter(
-	Astro.props.date.toLocaleDateString("fr-FR", options)
+	date.toLocaleDateString(getCurrentLocale(), options)
 );
 ---
 
@@ -21,8 +31,8 @@ const formattedDate = capitalizeFirstLetter(
 
 <style>
 	.date {
+		/* font-family: var(--fontFamilySecondary); */
 		color: var(--textColorSecondary);
-		line-height: 1;
-		margin-bottom: var(--eighthSpacing);
+		margin-bottom: var(--quarterSpacing);
 	}
 </style>

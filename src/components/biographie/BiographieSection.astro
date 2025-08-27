@@ -4,19 +4,16 @@ import { Content as BioFr } from "../../content/biographie.excerpt.fr.md";
 import T from "../T.astro";
 ---
 
-<div>
+<section>
 	<div class="biographie-section-contents">
 		<BioFr />
 	</div>
 
-	<div class="home-section-link">
-		<a
-			class="link-heading"
-			href={getSectionPath(getSection(SectionId.BIOGRAPHIE))}
-			><T k="lire_la_suite" /></a
-		>
-	</div>
-</div>
+	<a
+		class="home-section-link link-heading"
+		href={getSectionPath(SectionId.BIOGRAPHIE)}><T k="lire_la_suite" /></a
+	>
+</section>
 
 <style>
 	.biographie-section-contents {

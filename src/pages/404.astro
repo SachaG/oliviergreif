@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageLayout from "../components/layouts/PageLayout.astro";
+import { getString } from "../helpers";
+import T from "../components/T.astro";
+---
+
+<Layout title={getString("error_404")?.t} }>
+	<PageLayout sectionId="error_404" hasSidebar={false}>
+		<div class="page-content" slot="page-content">
+			<T k="error_404_description" />
+		</div>
+	</PageLayout></Layout
+>

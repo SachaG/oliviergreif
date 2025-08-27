@@ -1,5 +1,5 @@
 ---
-import { getActualite } from "../../helpers";
+import { getActualite, SectionId } from "../../helpers";
 import Date from "../Date.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 
@@ -8,8 +8,8 @@ const actualite = getActualite(id);
 const { titre, texte, date } = actualite;
 ---
 
-<PageLayout>
-	<span slot="page-heading">
+<PageLayout sectionId={SectionId.ACTUALITES}>
+	<span slot="page-subheading">
 		<Date date={date} />
 		<h2 class="title">
 			{titre}

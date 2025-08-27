@@ -7,6 +7,7 @@ import {
 	getItemsStaticPaths,
 	getString,
 	instrumentGroups,
+	SectionId,
 } from "../../../helpers";
 import { convertTitle } from "../../../helpers";
 import { getCatalogue } from "../../../helpers";
@@ -24,7 +25,7 @@ const instrumentGroupId = id as keyof typeof instrumentGroups;
 export function getStaticPaths() {
 	return getItemsStaticPaths(
 		getInstrumentsGroups().map(
-			(instrument) => ({ id: convertTitle(instrument) }) as WithId
+			({ id }) => ({ id: convertTitle(id) }) as WithId
 		)
 	);
 }
@@ -76,15 +77,19 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 </script>
 
 <Layout title={`${getString("catalogue")?.t} (${title})`}>
-	<PageLayout>
-		<div slot="page-heading">
-			<h2>
-				Catalogue: <T
-					k={instrumentGroupId}
-					fallback={capitalizeFirstLetter(title)}
-				/> ({catalogue.length}
-				<T k="oeuvre" kPlural="oeuvres" count={catalogue.length} />)
-			</h2>
+	<PageLayout sectionId={SectionId.CATALOGUE}>
+		<h2
+			slot="page-heading"
+			class="section-heading"
+			style={`view-transition-name: heading-catalogue`}
+		>
+			<T k="catalogue" />: <T
+				k={instrumentGroupId}
+				fallback={capitalizeFirstLetter(title)}
+			/> ({catalogue.length}
+			<T k="oeuvre" kPlural="oeuvres" count={catalogue.length} />)
+		</h2>
+		<div slot="page-subheading">
 			{
 				instruments.length > 1 && (
 					<div class="instruments-list">

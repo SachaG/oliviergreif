@@ -1,17 +1,22 @@
 ---
+import PageLayout from "../components/layouts/PageLayout.astro";
 import { getLiens, getString } from "../helpers";
 
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title={getString("liens")?.t}>
-	<h2>Liens</h2>
-	<ul>
-		{
-			getLiens().map((lien) => {
-				const { texte } = lien;
-				return <li set:html={texte} />;
-			})
-		}
-	</ul>
+	<PageLayout>
+		<div slot="page-content">
+			<h2>Liens</h2>
+			<ul>
+				{
+					getLiens().map((lien) => {
+						const { texte } = lien;
+						return <li set:html={texte} />;
+					})
+				}
+			</ul>
+		</div>
+	</PageLayout>
 </Layout>

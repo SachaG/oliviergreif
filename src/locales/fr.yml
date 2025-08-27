@@ -4,8 +4,16 @@ strings:
     # general
     - key: lire_la_suite
       t: Lire la suite…
+    - key: voir_plus
+      t: Voir plus…
     - key: retour_accueil
       t: Retour à l'accueil
+    - key: toutes_les_oeuvres
+      t: Toutes les oeuvres
+    - key: error_404
+      t: Erreur 404
+    - key: error_404_description
+      t: La page demandée n'a pas pu être trouvée.
 
     # nav
     - key: accueil

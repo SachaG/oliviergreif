@@ -2,6 +2,7 @@
 import { getDisque } from "../../helpers";
 import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
 import Field from "../Field.astro";
+import DisqueCover from "./DisqueCover.astro";
 const { id } = Astro.props;
 const disque = getDisque(id);
 const {
@@ -21,7 +22,7 @@ const {
 		{titre}
 	</h2>
 
-	{image && <img src={`/images/disques/${image}`} />}
+	{image && <img alt={titre} src={`/images/disques/${image}`} />}
 	<table>
 		<tbody>
 			<Field label="Année">{annee}</Field>
@@ -37,3 +38,10 @@ const {
 		</tbody>
 	</table>
 </div>
+
+<style>
+	img {
+		max-width: 350px;
+		margin-bottom: var(--spacing);
+	}
+</style>

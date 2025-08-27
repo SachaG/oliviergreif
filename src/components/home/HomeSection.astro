@@ -24,7 +24,7 @@ const SectionComponent = getSectionComponent(sectionId);
 		>
 			<a
 				class="section-link link-heading"
-				href={getSectionPath(getSection(sectionId))}
+				href={getSectionPath(sectionId)}
 			>
 				<T k={sectionId} />
 			</a>
@@ -57,6 +57,11 @@ const SectionComponent = getSectionComponent(sectionId);
 			right: 0;
 			/* transition: all 600ms ease-in; */
 		}
+		.inner {
+			display: grid;
+			grid-template-rows: min-content 1fr;
+			height: 100%;
+		}
 		&.home-section-active:hover {
 			background: var(--bgColorSecondary);
 		}
@@ -66,12 +71,19 @@ const SectionComponent = getSectionComponent(sectionId);
 		a:visited {
 			color: var(--textColor);
 		} */
+		section {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: var(--spacing);
+		}
 	}
 	.section-heading {
 		a {
-			font-size: 1.3rem;
+			text-transform: uppercase;
+			font-size: 1rem;
 			margin-bottom: var(--spacing);
-			border-bottom: var(--borderWidth) solid var(--borderColor);
+			border-bottom: var(--border);
 			padding-bottom: var(--halfSpacing);
 			text-decoration: none;
 			&:hover {
@@ -89,5 +101,8 @@ const SectionComponent = getSectionComponent(sectionId);
 		&:hover a {
 			color: var(--invertedHoverTextColor);
 		}
+	}
+	.home-section-link {
+		font-size: 0.9rem;
 	}
 </style>

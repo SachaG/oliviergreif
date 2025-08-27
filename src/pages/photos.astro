@@ -1,0 +1,25 @@
+---
+import PageLayout from "../components/layouts/PageLayout.astro";
+import Photo from "../components/photos/Photo.astro";
+import { getPhotos, SectionId } from "../helpers";
+import { getString } from "../helpers";
+import Layout from "../layouts/Layout.astro";
+
+const photos = getPhotos();
+---
+
+<Layout title={getString("photos")?.t}>
+	<PageLayout sectionId={SectionId.PHOTOS}>
+		<div class="photos-section" slot="page-content">
+			{photos.map(({ id }) => <Photo id={id} />)}
+		</div>
+	</PageLayout>
+</Layout>
+
+<style>
+	.photos-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: var(--spacing);
+	}
+</style>

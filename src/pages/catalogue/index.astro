@@ -19,15 +19,17 @@ const catalogueByYear = getItemsByYear<OeuvreWithId>(catalogue);
 
 <Layout title={getString("catalogue")?.t}>
 	<PageLayout sectionId="catalogue" hasSidebar={true}>
-		<span slot="page-heading">
-			<h2>
-				Catalogue
-				<span class="heading-metadata"
-					>({catalogue.length}
-					{pluralize("oeuvre", catalogue.length)})</span
-				>
-			</h2>
-		</span>
+		<h2
+			slot="page-heading"
+			class="section-heading"
+			style={`view-transition-name: heading-catalogue`}
+		>
+			Catalogue
+			<span class="heading-metadata"
+				>({catalogue.length}
+				{pluralize("oeuvre", catalogue.length)})</span
+			>
+		</h2>
 		{
 			catalogueByYear.map(({ year, items }) => {
 				return (
