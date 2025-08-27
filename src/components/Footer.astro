@@ -1,5 +1,6 @@
 ---
-import footerLinks from '../data/footer_links.yml'
+
+import { getFooterLinks } from '../helpers';
 import T from './T.astro';
 const year = new Date().getFullYear();
 
@@ -9,7 +10,7 @@ const year = new Date().getFullYear();
     <div class="bg"></div>
     <div class="content">
 <ul class="items-list">
-    {footerLinks.map((link)=><li><a href={`/${link.id}`}><T k={link.id}/></a></li> )}
+    {getFooterLinks().map((link)=><li><a href={`/${link.id}`}><T k={link.id}/></a></li> )}
     </ul>
 <p>&copy; Association Olivier Greif {year}</p>
 </div>

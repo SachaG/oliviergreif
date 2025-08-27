@@ -8,6 +8,7 @@ import {
 	customTransition,
 	getSection2,
 	getString,
+	SectionId,
 } from "../../helpers";
 import { fade, slide } from "astro:transitions";
 
@@ -16,7 +17,7 @@ import type { ConcertWithId } from "../../types";
 
 const concerts = getConcerts();
 const concertsByYear = getItemsByYear<ConcertWithId>(concerts);
-const sectionId = "concerts";
+const sectionId = SectionId.CONCERTS;
 const section = getSection2(sectionId)!;
 ---
 

@@ -7,9 +7,7 @@ import {
 	getString,
 	SectionId,
 } from "../../helpers";
-import sortBy from "lodash/sortBy";
 import Layout from "../../layouts/Layout.astro";
-import Concert from "../../components/concerts/Concert.compact.astro";
 
 const actualites = getActualites();
 ---
@@ -17,7 +15,7 @@ const actualites = getActualites();
 <Layout title={getString("actualites")?.t}>
 	<PageLayout sectionId="actualites">
 		{
-			actualites.map(({ id, sectionId }) => (
+			actualites.map(({ id }) => (
 				<div slot="page-content">
 					<Actualite id={id} />
 				</div>

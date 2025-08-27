@@ -306,52 +306,22 @@ export const getPhotos = () => decorate<Photo>(photos, "photos");
 
 export const getPhoto = (id: string) => getter<PhotoWithId>(id, getPhotos());
 
-// Items
-
-const allItems = {
-	catalogue: {
-		label: "Catalogue",
-		items: getCatalogue(),
-		moreLabel: "Voir toutes les oeuvres",
-		// component: OeuvreComponent,
-	},
-	concerts: {
-		label: "Concerts",
-		items: getConcerts(),
-		moreLabel: "Voir tous les concerts",
-		// component: ConcertComponent,
-	},
-	disques: {
-		label: "Disques",
-		items: getDisques(),
-		moreLabel: "Voir tous les disques",
-		// component: DisqueComponent,
-	},
-	editeurs: {
-		label: "Éditeurs",
-		items: getEditeurs(),
-		moreLabel: "Voir tous les éditeurs",
-		// component: EditeurComponent,
-	},
-	actualites: {
-		label: "Actualités",
-		items: getActualites(),
-		moreLabel: "Voir toutes les actualités",
-		// component: ActualiteComponent,
-	},
-};
-
-export const getSection = <T>(sectionId: SectionId) =>
-	({
-		id: sectionId,
-		...allItems[sectionId],
-	}) as Section<T>;
+// Sections
 
 export const getSectionPath = <T>(sectionId: SectionId) => `/${sectionId}`;
 
 export function capitalizeFirstLetter(s: string) {
 	return s.charAt(0).toUpperCase() + s.slice(1);
 }
+
+// FooterLinks
+
+import footerLinks from "./data/footer_links.yml";
+
+type FooterLinks = {
+	id: string;
+};
+export const getFooterLinks = () => footerLinks as FooterLinks[];
 
 export const pluralize = (s: string, n: number) => (n > 1 ? `${s}s` : s);
 
@@ -435,17 +405,13 @@ type SectionDefinition = {
 };
 
 export const sections: SectionDefinition[] = [
-	{ id: "concerts", color: "#FB4F4C", showOnHome: true },
-	{ id: "catalogue", color: "#7df665ff", showOnHome: true },
-	{ id: "disques", color: "#FB4F4C", showOnHome: true },
-	{ id: "editeurs", color: "#55a5bbff", showOnHome: false },
-	{ id: "actualites", color: "#5AF0F7", showOnHome: true },
-	{ id: "biographie", color: "#C27DFF", showOnHome: true },
-	{ id: "association", color: "#C9E1E5", showOnHome: false },
-	{ id: "liens", color: "#95bbc6ff", showOnHome: false },
-	{ id: "media", color: "#6d98a4ff", showOnHome: false },
-	{ id: "photos", color: "#697BFE", showOnHome: true },
-	{ id: "contact", color: "rgba(33, 79, 89, 1)", showOnHome: false },
+	{ id: SectionId.CONCERTS, color: "#FB4F4C", showOnHome: true },
+	{ id: SectionId.CATALOGUE, color: "#7df665ff", showOnHome: true },
+	{ id: SectionId.DISQUES, color: "#FB4F4C", showOnHome: true },
+	{ id: SectionId.EDITEURS, color: "#55a5bbff", showOnHome: false },
+	{ id: SectionId.ACTUALITES, color: "#5AF0F7", showOnHome: true },
+	{ id: SectionId.BIOGRAPHIE, color: "#C27DFF", showOnHome: true },
+	{ id: SectionId.PHOTOS, color: "#697BFE", showOnHome: true },
 ];
 export const getSection2 = (sectionId: SectionId) => {
 	const section = sections.find((s) => s.id === sectionId);
@@ -463,14 +429,13 @@ import BiographieSection from "./components/biographie/BiographieSection.astro";
 import MediaSection from "./components/media/MediaSection.astro";
 import PhotosSection from "./components/photos/PhotosSection.astro";
 
-const sectionComponents = {
-	catalogue: CatalogueSection,
-	concerts: ConcertsSection,
-	disques: DisquesSection,
-	actualites: ActualitesSection,
-	biographie: BiographieSection,
-	media: MediaSection,
-	photos: PhotosSection,
+const sectionComponents: { [key in SectionId]?: any } = {
+	[SectionId.CATALOGUE]: CatalogueSection,
+	[SectionId.CONCERTS]: ConcertsSection,
+	[SectionId.DISQUES]: DisquesSection,
+	[SectionId.ACTUALITES]: ActualitesSection,
+	[SectionId.BIOGRAPHIE]: BiographieSection,
+	[SectionId.PHOTOS]: PhotosSection,
 };
 
 export const getSectionComponent = (sectionId: SectionId) =>

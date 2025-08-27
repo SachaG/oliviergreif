@@ -1,11 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 // import HomeBlock from "../components/HomeBlock.astro";
-import { getSection, sections, SectionId } from "../helpers";
-import ConcertComponent from "../components/concerts/Concert.compact.astro";
-import type { ConcertWithId } from "../types";
-const concertsSection = getSection<ConcertWithId>(SectionId.CONCERTS);
-const { items: concerts } = concertsSection;
+import { sections } from "../helpers";
 import HomeSection from "../components/home/HomeSection.astro";
 import Footer from "../components/Footer.astro";
 import Title from "../components/home/Title.astro";
