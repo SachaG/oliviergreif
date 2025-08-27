@@ -7,7 +7,7 @@ const defaultSlotContent = await Astro.slots.render('page-heading') || '';
 const hasContent = defaultSlotContent.trim().length > 0;
 ---
 
-<section class={`section section-${hasSidebar ? 'withSidebar' : 'noSidebar'}`} style={`view-transition-name: section-${sectionId}; `}>
+<div class={`page page-${hasSidebar ? 'withSidebar' : 'noSidebar'}`} style={`view-transition-name: section-${sectionId}; `}>
 	<div class="page-heading">
         <a class="home-link" href="/"><span class="arrow">←</span>
         <span class="visually-hidden"><T k="retour_accueil"/></span></a>
@@ -22,17 +22,22 @@ const hasContent = defaultSlotContent.trim().length > 0;
     </div>
 	<div class="page-content grid">
 		<main class="page-main">
-    <slot name="page-subheading" />
-            <slot name="page-content" /></main>
+            <slot name="page-content" />
+        </main>
 		<div class="page-sidebar">
 			<div class="sidebar-contents">
 				<slot name="page-sidebar" />
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 
 <style type="text/scss" is:global>
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
     .page-heading {
         display: grid;
         grid-template-columns: min-content 1fr;
@@ -86,7 +91,7 @@ const hasContent = defaultSlotContent.trim().length > 0;
 		display: flex;
 		flex-direction: column;
 		gap: var(--doubleSpacing);
-        .section-withSidebar & {
+        .page-withSidebar & {
             border-right: var(--border);
             padding-right: var(--doubleSpacing);
         }

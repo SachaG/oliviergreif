@@ -88,7 +88,7 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 			/> ({catalogue.length}
 			<T k="oeuvre" kPlural="oeuvres" count={catalogue.length} />)
 		</h2>
-		<div slot="page-subheading">
+		<div slot="page-content">
 			{
 				instruments.length > 1 && (
 					<div class="instruments-list">
@@ -147,11 +147,11 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 	</PageLayout>
 
 	<style type="text/scss">
-		.count-title {
-			position: sticky;
-			top: 0px;
-			font-size: 1.6rem;
-		}
+		// .count-title {
+		// 	position: sticky;
+		// 	top: 0px;
+		// 	font-size: 1.6rem;
+		// }
 		@supports (selector(:has(*))) {
 			.subcontainer:not(:has(.visible)) {
 				display: none;

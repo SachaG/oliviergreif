@@ -1,5 +1,7 @@
 <section class="subgrid-layout">
-	<div class="col1"><div class="heading"><slot name="col1" /></div></div>
+	<div class="col1">
+		<div class="subgrid-heading"><slot name="col1" /></div>
+	</div>
 	<div class="main"><slot name="main" /></div>
 </section>
 
@@ -10,12 +12,9 @@
 		gap: var(--spacing);
 	}
 
-	.heading {
+	.subgrid-heading {
 		position: sticky;
 		top: 10px;
-		h4 {
-			font-size: 2rem;
-		}
 	}
 
 	.main {
