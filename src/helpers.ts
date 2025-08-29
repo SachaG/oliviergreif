@@ -1,7 +1,7 @@
 import { getCollection, getEntry } from "astro:content";
 
 import slugify from "slugify";
-import catalogue_ from "./data/catalogue.yml";
+// import catalogue_ from "./data/catalogue.yml";
 import concerts_ from "./data/concerts.yml";
 import disques_ from "./data/disques.yml";
 import editeurs_ from "./data/editeurs.yml";
@@ -10,6 +10,9 @@ import actualites_ from "./data/actualites.yml";
 import photos_ from "./data/photos.yml";
 
 import sortBy from "lodash/sortBy";
+
+import fr from "./locales/fr.yml";
+import { decorate, getCatalogue, getter } from "./content";
 
 import type {
 	WithId,
@@ -34,119 +37,6 @@ import type {
 // import EditeurComponent from "./components/editeurs/Editeur.astro";
 // import ActualiteComponent from "./components/actualites/Actualite.astro";
 // import ConcertComponent from "./components/concerts/Concert.astro";
-
-const catalogue = await getCollection("catalogue");
-const concerts = concerts_ as Concert[];
-const disques = disques_ as Disque[];
-const editeurs = editeurs_ as Editeur[];
-const liens = liens_ as LienExterne[];
-const actualites = actualites_ as Actualite[];
-const photos = photos_ as Photo[];
-
-export type ItemWithId =
-	| OeuvreWithId
-	| ConcertWithId
-	| DisqueWithId
-	| EditeurWithId
-	| ActualiteWithId;
-
-export type Section<T> = {
-	id: string;
-	label: string;
-	moreLabel: string;
-	items: Array<T>;
-	component: any;
-};
-
-export enum SectionId {
-	CATALOGUE = "catalogue",
-	CONCERTS = "concerts",
-	DISQUES = "disques",
-	EDITEURS = "editeurs",
-	BIOGRAPHIE = "biographie",
-	LIENS = "liens",
-	ACTUALITES = "actualites",
-	PHOTOS = "photos",
-}
-export const convertTitle = (title: string = "") =>
-	slugify(title.replaceAll("/", ""), {
-		lower: true,
-		remove: /[*+~.()'"!:@]/g,
-	});
-
-const getter = <T extends WithId>(id: string, items: T[]) => {
-	const item = items.find((item) => item.id === id);
-	if (item) {
-		return item;
-	} else {
-		throw new Error(`Could not find item ${id}`);
-	}
-};
-
-const decorate = <
-	T extends Oeuvre | Concert | Disque | Editeur | Actualite | Photo,
->(
-	items: T[],
-	parentSlug: string,
-) =>
-	items.map((item) => ({
-		...item,
-		parentSlug,
-		id: convertTitle(item.titre),
-	})) as Array<T & WithId>;
-
-// paths helpers
-export const getItemsStaticPaths = (items: WithId[]) =>
-	items.map((item) => ({ params: { id: item.id } }));
-
-export const getPath = (item: ItemWithId) => `/${item.parentSlug}/${item.id}`;
-
-// Catalogue
-
-export const sortByOpus = (catalogue: OeuvreWithId[]) =>
-	catalogue.toSorted(
-		(a: OeuvreWithId, b: OeuvreWithId) => Number(a.opus) - Number(b.opus),
-	);
-
-export const getCatalogue = (options?: {
-	instrumentId?: string;
-	editeurId?: string;
-	instrumentGroupId?: keyof typeof instrumentGroups;
-	categoryId?: string;
-}) => {
-	const rawCatalog = catalogue.map((c) => c.data as Oeuvre);
-	const allItems = sortByOpus(decorate<Oeuvre>(rawCatalog, "catalogue"));
-	const { instrumentId, instrumentGroupId, categoryId, editeurId } =
-		options || {};
-	if (instrumentGroupId) {
-		return allItems.filter(
-			(oeuvre) =>
-				oeuvre.instruments &&
-				intersection(
-					oeuvre.instruments,
-					instrumentGroups[instrumentGroupId],
-				).length > 0,
-		);
-	} else if (instrumentId) {
-		return allItems.filter((oeuvre) =>
-			oeuvre.instruments?.map(convertTitle).includes(instrumentId),
-		);
-	} else if (categoryId) {
-		return allItems.filter((oeuvre) => oeuvre.categorie === categoryId);
-	} else if (editeurId) {
-		return allItems.filter((oeuvre) => oeuvre.editeur === editeurId);
-	} else {
-		return allItems;
-	}
-};
-
-export const getOeuvre = (id: string) =>
-	getter<OeuvreWithId>(id, getCatalogue());
-
-export const getOeuvreByTitre = (titre: string) =>
-	getCatalogue().find((oeuvre) => oeuvre.titre === titre);
-
-// Instruments
 
 export const instrumentGroups = {
 	violon: ["violon"],
@@ -185,6 +75,54 @@ export const instrumentGroups = {
 		"orchestre",
 	],
 };
+
+const concerts = concerts_ as Concert[];
+const disques = disques_ as Disque[];
+const editeurs = editeurs_ as Editeur[];
+const liens = liens_ as LienExterne[];
+const actualites = actualites_ as Actualite[];
+const photos = photos_ as Photo[];
+
+export type ItemWithId =
+	| OeuvreWithId
+	| ConcertWithId
+	| DisqueWithId
+	| EditeurWithId
+	| ActualiteWithId;
+
+export type Section<T> = {
+	id: string;
+	label: string;
+	moreLabel: string;
+	items: Array<T>;
+	component: any;
+};
+
+export enum SectionId {
+	CATALOGUE = "catalogue",
+	CONCERTS = "concerts",
+	DISQUES = "disques",
+	EDITEURS = "editeurs",
+	BIOGRAPHIE = "biographie",
+	LIENS = "liens",
+	ACTUALITES = "actualites",
+	PHOTOS = "photos",
+}
+
+export const convertTitle = (title: string = "") =>
+	slugify(title.replaceAll("/", ""), {
+		lower: true,
+		remove: /[*+~.()'"!:@]/g,
+	});
+
+// paths helpers
+export const getItemsStaticPaths = (items: WithId[]) =>
+	items.map((item) => ({ params: { id: item.id } }));
+
+export const getPath = (item: ItemWithId) => `/${item.parentSlug}/${item.id}`;
+
+// Instruments
+
 export const getFormations = () =>
 	uniq(
 		getCatalogue()
@@ -355,10 +293,6 @@ export const uniq = <T>(a: T[]) => [...new Set(a)];
 export const compact = <T>(a: T[]) =>
 	a.filter((item) => item !== undefined && item !== null);
 
-// see https://youmightnotneed.com/lodash#intersection
-export const intersection = (arr: any[], ...args: any[]) =>
-	arr.filter((item) => args.every((arr) => arr.includes(item)));
-
 export const getItemsByYear = <
 	X extends OeuvreWithId | ConcertWithId | DisqueWithId | ActualiteWithId,
 >(
@@ -467,8 +401,6 @@ const sectionComponents: { [key in SectionId]?: any } = {
 
 export const getSectionComponent = (sectionId: SectionId) =>
 	sectionComponents[sectionId];
-
-import fr from "./locales/fr.yml";
 
 export const strings: TranslationItem[] = fr.strings;
 

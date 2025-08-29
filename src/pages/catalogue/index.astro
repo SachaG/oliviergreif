@@ -1,11 +1,6 @@
 ---
 import Oeuvre from "../../components/catalogue/oeuvre/Oeuvre.compact.astro";
-import {
-	getCatalogue,
-	getItemsByYear,
-	getString,
-	pluralize,
-} from "../../helpers";
+import { getItemsByYear, getString, pluralize } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 import Instruments from "../../components/catalogue/Instruments.astro";
 import Categories from "../../components/catalogue/Categories.astro";
@@ -14,6 +9,7 @@ import PageLayout from "../../components/layouts/PageLayout.astro";
 import type { OeuvreWithId } from "../../types";
 import Editeurs from "../../components/catalogue/Editeurs.astro";
 import Search from "../../components/catalogue/Search.astro";
+import { getCatalogue } from "../../content";
 
 const catalogue = getCatalogue();
 const catalogueByYear = getItemsByYear<OeuvreWithId>(catalogue);

@@ -1,6 +1,7 @@
 ---
+import { getOeuvreByTitre } from "../../content";
+
 const { titre } = Astro.props;
-import { getOeuvreByTitre } from "../../helpers";
 
 const oeuvre = getOeuvreByTitre(titre);
 ---
