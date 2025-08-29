@@ -1,4 +1,5 @@
 - titre: Three Piano Sonatas
+  id: "three_piano_sonatas"
   annee: 2025
   interpretes_disque: >
       Jonathan Benichou
@@ -16,8 +17,13 @@
   ecouter:
       - id: apple_music
         url: https://classical.music.apple.com/us/album/1818549425
+      - id: spotify
+        url: https://open.spotify.com/album/0LFSxkAZxDZpEfpJ7VJBtp
+      - id: amazon_music
+        url: https://www.amazon.com/Greif-3-Sonates-pour-piano/dp/B0FB5FSHY5
 
 - titre: Les Chants de l'âme (Live in Deauville)
+  id: "les_chants_de_l_ame_live_in_deauville"
   annee: 2020
   interpretes_disque: >
       Yan Levionnois, Paco Garcia, Marie-Laure Garnier, Philippe Hattat
@@ -31,10 +37,16 @@
         url: https://arion-music.com/product/42411/
         titre: Arion Music
   ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/52mAUQgDAr2hlc1YP2E5p9
       - id: apple_music
         url: https://classical.music.apple.com/pl/album/1571685862
+  acheter:
+      - id: amazon
+        url: https://www.amazon.com/Grief-Chants-l%C3%A2me-Live-Deauville/dp/B09744FV52
 
 - titre: "Office des Naufragés par l’ensemble Accroche Note"
+  id: "office_des_naufrages_par_l_ensemble_accroche_note"
   annee: 2005
   interpretes_disque: >
       Ensemble Accroche Note : Françoise Kubler, soprano, Armand Angster, clarinettes, Stéphanie-Marie Degand, violon, Nathanëlle Marie, violon, Pierre Franck, alto, Christophe Beau, violoncelle, Alexandre Gasparov, piano, Nita Klein, récitante
@@ -43,8 +55,21 @@
       - L'Office des Naufragés
   image: office_des_naufrages.webp
   ref: TRI 331142
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/5eagJK3XBLFMr4X6zsCJ7j
+      - id: youtube
+        url: https://www.youtube.com/watch?v=B-Zd_CVW2iU&list=OLAK5uy_lYGKskNShO61xTYHAUEgl9dR_TOyAc6FI
+      - id: apple_music
+        url: https://music.apple.com/us/album/olivier-greif-loffice-des-naufrag%C3%A9s/971307558
+      - id: amazon_music
+        url: https://www.amazon.com/music/player/albums/B00U0VIS5I
+  acheter:
+      - id: amazon
+        url: https://www.amazon.fr/LOFFICE-NAUFRAG%C3%89S-Olivier-Greif/dp/B000EQ4G8M
 
 - titre: "Quatuor n°4 “Ulysses” par Syntonia"
+  id: "quatuor_n_4_ulysses_par_syntonia"
   annee: 2002
   interpretes_disque: >
       Ensemble Syntonia
@@ -53,8 +78,20 @@
       - Quatuor n°4 “Ulysses”
   image: ulysses.webp
   ref: TRI 331122
+  liens:
+      - id: review
+        url: https://www.talkclassical.com/threads/weekly-quartet-just-a-music-lover-perspective.64793/page-468
+        titre: Talk Classical
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/6zXOC8aokAAal1ifY4rqDT
+      - id: apple_music
+        url: https://music.apple.com/fr/album/olivier-greif-quatuor-%C3%A0-cordes-no-4-ulysses/973213944
+      - id: youtube_music
+        url: https://music.youtube.com/playlist?list=OLAK5uy_lPT8f4d8xCiaSe1wBlpR6Xvm9QM8iFniA
 
 - titre: "Sonate Codex Domini, Sonate n°2 pour violon et Piano, Tombeau de Ravel, Wiener Konzert"
+  id: "sonate_codex_domini_sonate_n_2_pour_violon_et_piano_tombeau_de_ravel_wiener_konzert"
   annee: 2007
   interpretes_disque: >
       Sonate n°2 pour Violon et Piano: Geneviève Laurenceau, violon, Lorène de Ratuld, piano<br />
@@ -67,8 +104,14 @@
       - Sonate n°2 pour Violon et Piano
       - Le Tombeau de Ravel
       - Wiener Konzert
+  ecouter:
+      - id: apple_music
+        url: https://music.apple.com/us/album/olivier-greif-sonate-pour-violon-et-piano-codex-domini/283295625
+      - id: youtube
+        url: https://www.youtube.com/playlist?list=OLAK5uy_nVQaXmAwTvYa4eVJg3bYHr1jW4eSFyKPc
 
 - titre: "Trios Greif & Chostakovitch"
+  id: "trios_greif_chostakovitch"
   annee: 2003
   interpretes_disque: >
       Jan Orawiec, violon, Dimitri Maslennikov, violoncelle, Jonathan Benichou, piano
@@ -77,8 +120,16 @@
       - Trio
   image: trio.webp
   ref: TRI 331128
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/0xS4NFMaZP0hiwZXr7ojVm
+      - id: apple_music
+        url: https://classical.music.apple.com/es/album/973125649
+      - id: amazon_music
+        url: https://www.amazon.com/Shostakovich-Trio-No-Olivier-Greif/dp/B00U9RV6NE
 
 - titre: "Requiem par les BBC Singers, Trois portraits et apparitions"
+  id: "requiem_par_les_bbc_singers_trois_portraits_et_apparitions"
   annee: 2005
   interpretes_disque: >
       Requiem: BBC Singers, direction John Poole. 
@@ -89,8 +140,18 @@
       - Portraits et Apparitions
   image: requiem.webp
   ref: TRI 331150
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/1JhsD4DQpsZepXvyU09R3h
+      - id: apple_music
+        url: https://music.apple.com/us/album/olivier-greif-requiem/971304708
+      - id: youtube
+        url: https://www.youtube.com/watch?v=hQqX6zCLhpI&list=OLAK5uy_lxuUcb8kt-AuTLXs-t1kovsFlwQna0yTs&index=2
+      - id: deezer
+        url: https://www.deezer.com/fr/album/9763146
 
 - titre: "Chants de l’Âme par Jennifer Smith et Olivier Greif, Lettres de Westerbork par Doris Lamprecht"
+  id: "chants_de_l_ame_par_jennifer_smith_et_olivier_greif_lettres_de_westerbork_par_doris_lamprecht"
   annee: 1999
   interpretes_disque: >
       Chant de l’Âme: Jennifer Smith, soprano et Oloivier Greif. 
@@ -101,8 +162,21 @@
       - Lettres de Westerbork
   image: lettres_de_westerbork.webp
   ref: TRI 331101
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/3Inz0ZtPnUghAg1dXZnVrm
+      - id: apple_music
+        url: https://classical.music.apple.com/fr/album/974208789
+      - id: youtube
+        url: https://www.youtube.com/playlist?list=OLAK5uy_lNNZ-9eHNceoFCSrVY6mkV_k1Hyij-GL0
+      - id: amazon_music
+        url: https://www.amazon.com/Olivier-Greif-Lettres-Westerbork-Chants/dp/B00UC0L98K
+  acheter:
+      - id: amazon
+        url: https://www.amazon.fr/Greif-Chants-l%C3%A2me/dp/B00003L2TO
 
 - titre: "Hommage à Olivier Greif: Sonate de requiem, Trois chansons apocryphes, Tombeau de Ravel, Quatuor n°3"
+  id: "hommage_a_olivier_greif_sonate_de_requiem_trois_chansons_apocryphes_tombeau_de_ravel_quatuor_n_3"
   annee: 2001
   interpretes_disque: >
       Sonate de Requiem: Christoph Henkel, violoncelle, Olivier Greif, piano (Création, Festival de Kuhmo, Finlande, 1993)<br />
@@ -117,16 +191,30 @@
       - Trois chansons apocryphes
   image: hommage.webp
   ref: TRI 331119
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/3rtVqFD0y7LYYIB8FJ7Us5
+      - id: apple_music
+        url: https://classical.music.apple.com/us/album/973214379
+      - id: amazon_music
+        url: https://www.amazon.com/Olivier-Greif-Christoph-Henkel-Devellereau/dp/B00U9S0JAE
+      - id: youtube
+        url: https://www.youtube.com/playlist?list=OLAK5uy_nxVKKqbO0f9HuaEF6kWhYNAqOYWSZj5Ac
 
 - titre: "Sonate de guerre par P. Amoyel"
+  id: "sonate_de_guerre_par_p_amoyel"
   annee: 2000
   interpretes_disque: >
       Pascal Amoyel
   maison: Pianovox
   oeuvres:
       - Sonate n°15 “de Guerre”
+  acheter:
+      - id: eBay
+        url: https://www.ebay.fr/itm/277285867548
 
 - titre: "Sonate de Requiem"
+  id: "sonate_de_requiem"
   annee: 1996
   interpretes_disque: >
       Christoph Henkel, violoncelle, Olivier Greif, piano
@@ -136,6 +224,7 @@
       - Sonate de Requiem
 
 - titre: "Benjamin Britten par O. Greif"
+  id: "benjamin_britten_par_o_greif"
   annee: 1998
   interpretes_disque: >
       Olivier Greif, piano
@@ -144,6 +233,7 @@
   oeuvres:
 
 - titre: "Francis Poulenc par O. Greif"
+  id: "francis_poulenc_par_o_greif"
   annee: 1999
   interpretes_disque: >
       Olivier Greif, piano
@@ -153,6 +243,7 @@
   oeuvres:
 
 - titre: "Sonate de Requiem et Trio par P. Amoyel et E. Bertrand"
+  id: "sonate_de_requiem_et_trio_par_p_amoyel_et_e_bertrand"
   annee: 2006
   interpretes_disque: >
       Emmanuelle Bertrand, violoncelle, Antje Weithaas, violon, Pascal Amoyel, piano
@@ -161,8 +252,23 @@
       - Sonate de Requiem
       - Trio
   image: sonate_de_requiem.webp
+  liens:
+      - id: review
+        url: https://expeditionaudio.com/olivier-greif-sonate-de-requiem/
+        titre: Expedition Audio
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/25g2KBz7MFzQ8Fd0eqCogJ
+      - id: apple_music
+        url: https://music.apple.com/ca/album/greif-sonate-de-requiem-trio-avec-piano/208401727
+      - id: amazon_music
+        url: https://www.amazon.com/Sonate-Requiem-Op-283-Presto/dp/B09LZ1WGWF
+  acheter:
+      - id: amazon
+        url: https://www.amazon.com/Sonate-Requiem-Piano-Trio-Greif/dp/B000E97X8Y
 
 - titre: "Quatuor n°2 et The Battle of Agincourt par l’ensemble Syntonia"
+  id: "quatuor_n_2_et_the_battle_of_agincourt_par_l_ensemble_syntonia"
   annee: 2010
   interpretes_disque: >
       Ensemble Syntonia et Alain Buet, baryton (pour le quatuor n°2), Patrick Langot et Agnès Vestermann (pour The Battle of Agincourt).
@@ -172,8 +278,19 @@
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   image: the_battle_of_agincourt.webp
   ref: ZZT100401
+  ecouter:
+      - id: apple_music
+        url: https://classical.music.apple.com/fr/album/1572071339
+      - id: amazon_music
+        url: https://www.amazon.fr/Quatuor-cordes-No-Op-312/dp/B0972L1SGD
+      - id: youtube_music
+        url: https://music.youtube.com/playlist?list=OLAK5uy_nelc-39YDTQuHtLGOx9Rjt3OmAIwy093w
+  acheter:
+      - id: amazon
+        url: https://www.amazon.com/Battle-Agincourt-GREIF/dp/B003AYPMO2
 
 - titre: "Meeting of the Waters: Intégrale de l’œuvre pour violon et piano, Stéphanie Moraly et Romain David"
+  id: "meeting_of_the_waters_integrale_de_l_oeuvre_pour_violon_et_piano_stephanie_moraly_et_romain_david"
   annee: 2010
   interpretes_disque: >
       Stéphanie Moraly, violon et Romain David, piano.
@@ -189,8 +306,19 @@
       - Adagio
   image: meeting_of_the_waters.webp
   ref: 33165
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/0FG3rMbLOxiDfWgAJQrzbd
+      - id: apple_music
+        url: https://classical.music.apple.com/us/album/971293644
+      - id: amazon_music
+        url: https://www.amazon.com/Olivier-Greif-St%C3%A9phanie-Moraly-Romain/dp/B00U0VGX8M
+  acheter:
+      - id: amazon
+        url: https://www.amazon.fr/Grief-meeting-waters-Moraly-David/dp/B0038R13N0
 
 - titre: "Pascal Amoyel plays Greif: Sonate de Guerre et Plaisirs de Chérence"
+  id: "pascal_amoyel_plays_greif_sonate_de_guerre_et_plaisirs_de_cherence"
   annee: 2010
   interpretes_disque: >
       Pascal Amoyel, piano. Emmanuelle Bertrand, violoncelle.
@@ -200,8 +328,17 @@
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   image: les_plaisirs_de_cherence.webp
   ref: TRI 331160
+  ecouter:
+      - id: apple_music
+        url: https://music.apple.com/fr/album/olivier-greif-les-plaisirs-de-ch%C3%A9rence-sonate-de/971289038
+      - id: spotify
+        url: https://open.spotify.com/album/2aWZBeZrVCPCEKWj6f5Hks
+  acheter:
+      - id: amazon
+        url: https://www.amazon.com.be/-/en/Pascal-Amoyel/dp/B003CTIU9E
 
 - titre: "Le Rêve du Monde: sonates pour piano et violon et piano, cantates"
+  id: "le_reve_du_monde_sonates_pour_piano_et_violon_et_piano_cantates"
   annee: 2010
   interpretes_disque: >
       Olivier Greif et Devy Erlih, Evelyn Brunner, Henri Barda, Nell Froger, Ryo Noda, Gottfried Schneider, Howaqrd Haskin, Jo-Ann Pickens, Catherine Dubosc, Jean-Paul Fouchécourt.
@@ -222,8 +359,11 @@
   ecouter:
       - id: spotify
         url: https://open.spotify.com/album/2LuX6yqQM94uslUdcGIn5U
+      - id: amazon_music
+        url: https://www.amazon.com/R%C3%AAve-du-monde-Olivier-Greif/dp/B014044O30
 
 - titre: "Musique de chambre: Veni Creator, Galiarda dolorosa, 42nd Street, Adieu New York, etc."
+  id: "musique_de_chambre_veni_creator_galiarda_dolorosa_42nd_street_adieu_new_york_etc"
   annee: 2010
   interpretes_disque: >
       Delphine Biron, violoncelle. Bertrand Giraud, piano. Mathieu Godefroy, violon. Frédéric Chatoux, flûte. Alexandre Chabod, clarinette.
@@ -242,8 +382,21 @@
       - Rondo pour Piano “42nd Street”
       - Adieu New York
   image: musique_de_chambre.webp
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/3ipnYXifm1ExHnnAZ9Hfoe
+      - id: apple_music
+        url: https://music.apple.com/us/album/olivier-greif-musique-de-chambre/1045688339
+      - id: youtube
+        url: https://www.youtube.com/channel/UCQMDJIcfkUm2HfNNH1RD7mQ
+      - id: amazon_music
+        url: https://www.amazon.com/-/es/dp/B01FK6YVQM
+  acheter:
+      - id: amazon
+        url: https://www.amazon.com/Chamber-Music-Olivier-Bertrand-Giraud/dp/B003VEBZKQ
 
 - titre: "Concerto pour violoncelle et Sonate de Requiem par Demarquette"
+  id: "concerto_pour_violoncelle_et_sonate_de_requiem_par_demarquette"
   annee: 2010
   interpretes_disque: >
       Henri Demarquette, violoncelle. Giovanni Bellucci, piano. Orchestre national de France, direction Jean-Claude Casadesus.
@@ -253,6 +406,7 @@
       - Sonate de Requiem
 
 - titre: "Chevauchées lyriques (deuxième chanson enfantine) par Loiseleur des Longchamps"
+  id: "chevauchees_lyriques_deuxieme_chanson_enfantine_par_loiseleur_des_longchamps"
   annee: 2011
   interpretes_disque: >
       L’oiseleur des Longchamps et Mary Olivon
@@ -261,14 +415,22 @@
       - Cinq Chansons Enfantines
 
 - titre: "The French Avant-garde in the 20th Century"
+  id: "the_french_avant_garde_in_the_20th_century"
   annee: 2014
   interpretes_disque: >
       Nicolas Horvath
   # maison:
   oeuvres:
       - Second Hommage à Raymond Roussel
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/7bwmOoEpj4IhcviXUeRShT
+  acheter:
+      - id: amazon
+        url: https://www.amazon.co.uk/French-Avant-Garde-20th-Century/dp/B00MGS21JM
 
 - titre: "Portraits et Apparitions, Les plaisirs de Chérence"
+  id: "portraits_et_apparitions_les_plaisirs_de_cherence"
   annee: 2014
   interpretes_disque: >
       Olivier Greif, piano
@@ -277,8 +439,19 @@
       - Portraits et Apparitions
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   image: portraits_et_apparitions.webp
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/2bhSDQuKjfrZXoVL8p7MCd
+      - id: apple_music
+        url: https://classical.music.apple.com/us/album/968401552
+      - id: youtube
+        url: https://www.youtube.com/watch?v=h9UwmCIfxYg&list=OLAK5uy_lQlldJhFv0nwTeqMWNfqRAHRfWJYaB1k4
+  acheter:
+      - id: amazon
+        url: https://www.amazon.de/-/en/Plaisirs-Cherence-Portraits-Oliver-Greif/dp/B00QKYTSOE
 
 - titre: "Le Quintette"
+  id: "le_quintette"
   #   annee: Enregistré du 19 au 23 février 2020. Parution le 1er octobre 2020."
   annee: 2020
   interpretes_disque: >
@@ -286,8 +459,17 @@
   # maison:
   oeuvres:
       - Quintette pour Piano et cordes “A tale of the world”
+  ecouter:
+      - id: spotify
+        url: http://open.spotify.com/album/5ghbClEXLjs9ciitIimuMk
+      - id: apple_music
+        url: https://music.youtube.com/playlist?list=OLAK5uy_mYbVrodycfR7gSVRJ_Sys4fUYvR754L6E
+  acheter:
+      - id: amazon
+        url: https://www.amazon.fr/World-Piano-Quintet-Quintette-Syntonia/dp/B08JZCMJ9R/
 
 - titre: "Chants de l’âme et Trottoirs de Paris"
+  id: "chants_de_l_ame_et_trottoirs_de_paris"
   annee: 2020
   interpretes_disque: >
       Chants de l’âme: Marie-Laure Granier, Soprano et Philippe Hattat, piano. Les Trottoirs de Paris: Clémentine Decouture, soprano et Paco Garcia, ténor. D’une douleur muette, de Thierry Escaich: Marie-Laure Granier, Soprano; Yan Levionnois, violoncelle; Philippe Hattat, piano.

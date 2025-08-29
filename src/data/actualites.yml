@@ -1,193 +1,230 @@
 - rawDate: "1225536360"
   titre: "Greif par Minkowski"
+  id: "greif_par_minkowski"
   texte: >
       <p>Marc Minkowski, qui connaissait bien Olivier, a donné le concerto pour violoncelle en février à Mannheim et Freiburg avec Jean-Guilhem Queyras et l’orchestre de la SWR de Baden-Baden.</p>
        <p>Il a programmé le quadruple concerto pour une série de concerts en décembre à Varsovie, Cracovie et Paris (le 22 au Châtelet) avec l’orchestre Sinfonia Varsovia.</p>
 
 - rawDate: "1230412921"
   titre: "Concert au Châtelet"
+  id: "concert_au_chatelet"
   texte: >
       <p>Alors que le public parisien a déjà pu entendre plusieurs fois la Symphonie et le Concerto pour Violoncelle, la troisième œuvre orchestrale d’Olivier Greif, son Quadruple Concerto “La Danse des Morts”, n’avait jamais été donnée dans la capitale.</p>
        <p>Le concerto a enfin été joué le 22 décembre au cours d’une “Fête Polonaise” solennelle (l’ambassadeur de Pologne et la ministre française de la Culture y assistaient) et joyeuse. La salle était pleine. Le public, qui découvrait le concerto, l’a apprécié et applaudi. Marc Minkowski nous a déclaré qu’il aimerait bien l’enregistrer.</p>
 
 - rawDate: "1236189420"
   titre: "Retour chez Salabert"
+  id: "retour_chez_salabert"
   texte: >
       <p>L’éditeur Salabert, qui appartient au groupe Universal, a déjà publié deux œuvres d’Olivier Greif: Les Lettres de Westerbork (en 1993) et Le Livre des Saints Irlandais (en 1998). Deux nouvelles publications sont prévues chez Salabert en 2009: le Concerto pour Violoncelle “Durch Adams Fall” et le Quadruple Concerto “La Danse des Morts”.</p>
 
 - rawDate: "1239506461"
   titre: "Fête polonaise sur France Musique"
+  id: "fete_polonaise_sur_france_musique"
   texte: >
       <p>Le 22 décembre 2008, Marc Minkowski et l’orchestre Sinfonia Varsovia ont donné une “fête polonaise” au Châtelet à l’occasion de la fin de la présidence française de l’Union Européenne. Une salle pleine a découvert et applaudi le Quadruple Concerto d’Olivier Greif. France Musique avait annoncé que ce concert serait diffusé le 31 décembre à 22h30, mais la diffusion a été annulée sans explication à la dernière minute. Il ne s’agissait pas d’une annulation définitive, mais d’un report. Le fête polonaise est passée sur France Musique le jeudi 9 avril à 20h. La chaîne ne nous ayant pas avertis, nous n’avons pas pu annoncer la diffusion sur ce site. On pouvait réécouter l’émission pendant vingt-quatre heures. Elle n’est pas proposée en téléchargement.</p>
 
 - rawDate: "1239937200"
   titre: "Site mode d’emploi"
+  id: "site_mode_d_emploi"
   texte: >
       <p>Le calendrier des concerts affiché sur cette page d’accueil se limite au passé et à l’avenir immédiats. Pour un calendrier complet de 1957 à 2057, cliquez sur “Concerts” en haut de cette page. <br />Le catalogue qui s’affiche si vous cliquez sur “Catalogue” donne la liste des œuvres. Cliquez sur le titre d’une œuvre pour accéder à une fiche détaillée. <br />Un lien sur la page “Biographie” donne accès à une biographie en anglais.</p>
 
 - rawDate: "1253048880"
   titre: "Dix ans déjà"
+  id: "dix_ans_deja"
   texte: >
       <p>Olivier Greif est mort le 13 mai 2000. <br />Le festival Présences de Radio France lui rend hommage au cours de sa saison 2010, qui commence le 18 septembre 2009 par trois concerts successifs. <br />Les Rencontres musicales de l'abbaye de La Prée lui consacrent huit concerts différents, du 12 au 15 mai 2010. <br />Plusieurs nouveaux disques sont en préparation.</p>
 
 - rawDate: "1253891521"
   titre: "Lancement de l’année Olivier Greif"
+  id: "lancement_de_l_annee_olivier_greif"
   texte: >
       <p>Les trois premiers concerts de la saison 2009-2010 du Festival Présences, les 18, 19 et 20 septembre à la Maison de Radio France, étaient intitulés “Hommage à Olivier Greif”. Le public est venu au rendez-vous. Le deuxième soir, on a refusé du monde. Les œuvres ont été accueillies avec enthousiasme. Le Tombeau de Ravel, dans sa version originalre à quatre mains, a été bissé. Les interprètes qui découvraient Olivier Greif ont manifesté l’intention d’explorer son œuvre.</p>
 
 - rawDate: "1256184181"
   titre: "Association Olivier Greif"
+  id: "association_olivier_greif"
   texte: >
       <p>L’assemblée générale de l’association Olivier Greif s’est tenue le 17 octobre et a élu le conseil d’administration suivant:<br />Gérard Condé (président), Brigitte François-Sappey et Jean-Michel Nectoux (vice-présidents), Patricia Aubertin (secrétaire), Michel Greif (trésorier), Philippe Hersant, Anthony Girard, Benoît Menut, Jean-Jacques Greif.</p>
 
 - rawDate: "1264963260"
   titre: "Année anniversaire"
+  id: "annee_anniversaire"
   texte: >
       <p>Plus de vingt concerts sont déjà annoncés pour célébrer le dixième anniversaire de la mort d’Olivier. Quatre disques sont enregistrés ou en cours d'enregistrement. Des conférences et des émissions de radio auront lieu. Un film sera montré à La Prée et sur Mezzo. Olivier aurait eu soixante ans le 3 janvier 2010.</p>
 
 - rawDate: "1270072320"
   titre: "Orgues Nouvelles célèbre Olivier"
+  id: "orgues_nouvelles_celebre_olivier"
   texte: >
       <p>Le magazine Orgues Nouvelles consacre un magnifique dossier à Olivier Greif dans son numéro du printemps 2010. <br />Article de Brigitte François-Sappey; témoignages de Jacques Taddei, Gilles Cantagrel, André Thiébault, Pascal Amoyel, Patrick Langot; extrait de la transcription pour orgue de la Symphonie par Olivier Dekeister, organiste de Saint-Lambert de Vaugirard. <br />Le CD propose un Chant de l'Âme, un mouvement du quatuor “Ulysses", la présentation par Olivier de ce quatuor, la lecture par Mildred Clary de sa “Lettre à Olivier”.</p>
 
 - rawDate: "1271211360"
   titre: "Nouveaux disques"
+  id: "nouveaux_disques"
   texte: >
       <p>Deux disques tout neufs.<br />Chez Zig-Zag Territoires: Patrick Langot et Agnès Vesterman, violoncelles, jouent The Battle of Agincourt, puis l'Ensemble Syntonia et la baryton Alain Buet interprètent le quatuor n°2 avec voix sur trois sonnets de Shakespeare.<br />Chez Triton: Stéphanie Moraly, violon, et Romain David, piano, donnent l'intégrale de l’œuvre pour violon et piano, y compris la première sonate, composée en 1967, qui n’a jamais été jouée.</p>
 
 - rawDate: "1274307780"
   titre: "Dans la presse"
+  id: "dans_la_presse"
   texte: >
       <p>Un dossier de six pages dans Diapason en mai. “Olivier Greif, génie du XXème siècle”, dit la couverture. Quatre belles pages dans Orgues Nouvelles printemps 2010. Une page et “choc Classica” pour le disque de Henri Demarquette dans Classica en mai. Une demi-page dans La lettre du musicien en avril.<br />Le disque de l’intégrale violon et piano par Moraly et David recueille cinq diapasons. De même le disque Shakespeare et Agincourt.<br />Une demi-page sympathique dans L’Express du 26 mai. Voir aussi lexpress.fr.</p>
 
 - rawDate: "1277842260"
   titre: "Olivier par Olivier"
+  id: "olivier_par_olivier"
   texte: >
       <p>Le double album “Olivier Greif, le Rêve du Monde”, publié par INA mémoire vive, a obtenu un diapason d’or.<br />Il s’agit d’enregistrements dans lesquels Olivier joue ses propres œuvres, seul ou avec d’autres interprètes.<br />Huit œuvres ont été enregistrées par Radio-France, deux (la sonate pour piano “Le Rêve du Monde” et la sonate pour piano et violon “Meeting of the Waters”) par la Radio Polonaise à Varsovie en 1993.<br />Un enregistrement émouvant, celui d’une “suite pour piano”, date de 1962: Olivier avait douze ans. L’œuvre ne figure pas au catalogue car la partition est perdue.</p>
 
 - rawDate: "1285087440"
   titre: "Dijon on line"
+  id: "dijon_on_line"
   texte: >
       <p>Une journée d’hommage à Olivier Greif a eu lieu à Dijon le samedi 18 septembre. Le programme figure sur le site <a href="http://www.selfworld.net/room_events/28">http://www.selfworld.net/room_events/28</a>. <br />En naviguant à l’intérieur du site, ou en allant directement sur <a href="http://www.selfworld.net/event_show/213">http://www.selfworld.net/event_show/213</a>, on peut assister à plusieurs concerts: sonate pour deux violoncelles, adagio et première sonate violon et piano, trois Chants de l'âme, hommage d'Alexandre Gasparov à Olivier.<br />La liaison prévue avec Los Angeles et New York a mal fonctionné. L’exécution de Ich ruf zu dir par Bill Powell et ses amis a néanmoins remporté un très grand succès sur place (dans  l’auditorium de l’école Cal Arts).</p>
 
 - rawDate: "1290280980"
   titre: "Une amie est partie"
+  id: "une_amie_est_partie"
   texte: >
       <p>Mildred Clary, qui nous a quittés le 18 novembre, était une amie proche d’Olivier et un membre éminent de l’association Olivier Greif.<br />Elle avait contribué à la réalisation du disque de l’INA “Olivier Greif, le Rêve du Monde”, qui a reçu le Diapason d’or de l’année dans la catégorie “Archives”.<br />Voici une phrase extraite du journal d’Olivier (23 avril 1999): “Merveilleuse Mildred, dont la foi en la qualité de mon travail me touche tant! Il est peu de personnes dans le milieu musical qui, non seulement aiment et défendent autant ma musique, mais aussi la comprennent si bien de l’intérieur.”</p>
 
 - rawDate: "1299364680"
   titre: "Concours"
+  id: "concours"
   texte: >
       <p>Le 7ème concours international de musique de chambre de Lyon se déroule du 18 au 22 avril 2011. Les candidats admis en demi-finale devront jouer les 3ème et 4ème mouvements du Trio d’Olivier Greif. Un prix d’interprétation Sacem de 4500 euros couronnera la meilleure interprétation du Trio. Brigitte François-Sappey et Benoît Menut parleront d’Olivier Greif au cours d’un colloque le 21 avril. Voir <a href="http://www.cimcl.fr">http://www.cimcl.fr</a><br />Le 10ème concours international de piano d’Orléans, qui se déroule du 23 février au 4 mars 2012, comporte un “prix mention spéciale” Olivier Greif. Les candidats peuvent choisir les partitions qu’ils veulent dans le catalogue d’Olivier Greif.<br />PS. Certains e-mails récents ont disparu mystérieusement. Si vous nous avez écrit en février ou mars 2011 et n’avez pas reçu de réponse, veuillez nous renvoyer votre e-mail.</p>
 
 - rawDate: "1303601400"
   titre: "Trios à Lyon"
+  id: "trios_a_lyon"
   texte: >
       <p>Le 7ème concours international de musique de chambre de Lyon s’est déroulé  du 18 au 22 avril 2011. Les candidats admis en demi-finale devaient jouer  les 3ème et 4ème mouvements du Trio d’Olivier Greif. Vingt-six trios ont étudié la partition. <br />Le trio Van Baerle (Pays-Bas) a remporté le premier prix, ainsi que le prix décerné par la Sacem pour la meilleure  interprétation du trio de Greif (à l’unanimité du jury), le prix du public et le “Coup de cœur Bayer”. Le prix a été remis le 22 avril par Frédéric Lodéon, qui a parlé de manière émouvante d’Olivier, avec lequel il a créé la première version de la Sonate de Requiem en 1979. Le trio Van Baerle a commencé le concert des lauréats par les deux mouvements du trio d‘Olivier. Le public a longuement applaudi à la fois l’œuvre et les interprètes.<br />PS. Certains e-mails récents ont  disparu mystérieusement. Si vous nous avez écrit en février ou mars 2011  et n’avez pas reçu de réponse, veuillez nous renvoyer votre e-mail.</p>
 
 - rawDate: "1304301000"
   titre: "Concours de Lyon"
+  id: "concours_de_lyon"
   texte: >
       <p>Le 7ème concours international de musique de chambre de Lyon s’est   déroulé  du 18 au 22 avril 2011. Les candidats admis en demi-finale   devaient jouer  les 3ème et 4ème mouvements du Trio d’Olivier Greif.  Le  trio Van Baerle  (Pays-Bas) a remporté le premier prix, ainsi que le  prix décerné par la  Sacem pour la meilleure  interprétation du trio de  Greif (à l’unanimité  du jury) et le prix du public. <br />Par ailleurs,  le département Musique et Musicologie de l’université Lumière-Lyon 2  vient de publier, sous la direction de Gérard Streletski, les actes de  4ème concours, consacré aux duos violon piano. Le livre contient une  belle contribution de Brigitte François-Sappey sur la sonate Meeting of  the Waters et les autres œuvres pour violon et piano d’Olivier Greif.<br />PS.  Certains e-mails  récents ont  disparu mystérieusement. Si vous nous  avez écrit en février  ou mars 2011  et n’avez pas reçu de réponse,  veuillez nous renvoyer  votre e-mai</p>
 
 - rawDate: "1317746881"
   titre: "Concours d’Orléans"
+  id: "concours_d_orleans"
   texte: >
       <p>Le concours de piano d’Orléans, qui se déroule du 23 février au 4 mars, comporte un prix Olivier Greif. Les partitions éditées, le rondo 42nd Street et la sonate n°20, peuvent être achetés dans les librairies musicales ou sur internet. L’association Olivier Greif peut envoyer les fichiers PDF de quatre Sonates gravées et corrigées: n°12, 14, 21 et 22. Les gravures de certaines autres partitions sont en cours. Nous consulter.<br />Scores by Olivier Greif available for the Orléans piano competition. The 42nd Street rondo and 20th sonata have been published and can be purchased online. Sonatas #12, 14, 21 and 22 have been engraved and are sent as PDF by Association Olivier Greif. Other scores are being engraved. If you are interested in a specific score, please send us its opus number and we’ll tell you whether it is available.</p>
 
 - rawDate: "1321226160"
   titre: "Concours d’Orléans"
+  id: "concours_d_orleans"
   texte: >
       <p>Le concours de piano d’Orléans, qui se déroule du 23 février au 4 mars,  comporte un prix Olivier Greif. Les partitions éditées, le rondo 42nd  Street et la sonate n°20, peuvent être achetés dans les librairies  musicales ou sur internet. L’association Olivier Greif peut envoyer les  fichiers PDF de cinq Sonates gravées et corrigées: n°12, 14, 15, 21 et 22.  Les gravures de certaines autres partitions sont en cours. Nous  consulter.<br />Scores by Olivier Greif available for the Orléans piano  competition. The 42nd Street rondo and 20th sonata have been published  and can be purchased online. Sonatas #12, 14, 15, 21 and 22 have been  engraved and are sent as PDF by Association Olivier Greif. Other scores  are being engraved. If you are interested in a specific score, please  send us its opus number and we’ll tell you whether it is available.</p>
 
 - rawDate: "1322333520"
   titre: "Promotion de Noël"
+  id: "promotion_de_noel"
   texte: >
       <p>Saphir Productions propose le disque “Olivier Greif” pour 9,99 euros à l’accasion des fêtes de fin d’année. Cliquez <a href="http://www.saphirproductions.net/boutique/sonate-pour-violon-et-piano-codex-domini-cr%C3%A9ation-mondiale-wiener-konzert-le-tombeau-de-rav" title="ici" >ici</a> pour accéder à la page du site Saphir Productions où le disque est présenté et vendu.</p>
        <p>Le spectacle de Pascal Amoyel, "Le pianiste aux cinquante doigts", dans lequel il parle de György Cziffra, joue du Lizst et un mouvement de la sonate "Plaisirs de Chérence", est donné au théâtre du Ranelagh du mercredi au samedi à 21h et le dimanche à 17h30 jusqu'au 15 janvier.</p>
 
 - rawDate: "1331061960"
   titre: "Concours de piano d’Orléans"
+  id: "concours_de_piano_d_orleans"
 
   texte: >
       <p>Le pianiste américain Christopher Guzman a remporté le premier prix du dixième concours international de piano d’Orléans, décerné le 4 mars 2012. <br />Un autre pianiste américain, Andrew Zhou, a remporté le prix Olivier Greif (instauré en collaboration avec l’association Olivier Greif), pour son interprétation de <em>Am Grabe Franz Liszts</em>.<br />Sur une dizaine de candidats ayant étudié des œuvres d’Olivier, seuls Andrew Zhou et une pianiste russe, Ilona Timchenko, sont parvenus en demi-finale et ont effectivement joué du Greif. Ilona Timchenko a joué, très bien, les 4ème et 5ème mouvements de la sonate <em>Plaisirs de Chérence</em>.</p>
 
 - rawDate: "1338518881"
   titre: "Bertrand & Amoyel"
+  id: "bertrand_amoyel"
   texte: >
       <p>Emmanuelle Bertrand (violoncelle) et Pascal Amoyel (piano) aiment beaucoup la musique d’Olivier Greif. Du 3 au 9 mai 2012, ils ont joué <em>Block 15</em>, qui comporte des extraits de la Sonate de Requiem, en Corée. Le 21 mai, ils ont assuré la création de la Sonate de Requiem et de la sonate Plaisirs de Chérence à Londres (où, par ailleurs le Sanctus du Requiem a été chanté à l’occasion du jubilé de la reine). Pascal donnera son spectacle <em>Le pianiste aux 50 doigts</em>, au cours duquel il joue Le carillon de Chérence, le 5 juin à Riom (Puy de Dôme), le 9 juin à Soyons (Ardèche), puis du 7 au 28 juillet à 11h50 au Théâtre des 3 soleils à Avignon, dans le cadre du festival d’Avignon. Auparavant, Pascal et Emmannuelle auront joué <em>Block 15</em> le 2 juillet aux Invalides. <br />Voir <a href="http://www.pascal-amoyel.com" title="pascal-amoyel.com" >pascal-amoyel.com</a></p>
 
 - rawDate: "1348715940"
   titre: "Pascal Amoyel"
+  id: "pascal_amoyel"
   texte: >
       <p>Pascal donne son spectacle <em>Le pianiste aux 50 doigts</em>, au  cours duquel il joue Le carillon de Chérence, le 10 Octobre à Franconville (95), le 24 novembre à Gradignan (33), le 15 décembre à Beynes (78), le 19 décembre à Sèvres (92), le 10 janvier 2013 à Saint-Cloud (92), le 26 janvier à Ancenis (44), le 8 février à Boulogne-sur-mer (62), le 12 février à Lillebonne (76), le 10 mars à Aubagne (13), le 24 mars à Unieux (42).<br />Voir <a href="http://www.pascal-amoyel.com" title="pascal-amoyel.com" >pascal-amoyel.com</a></p>
 
 - rawDate: "1359432480"
   titre: "Un nouvel éditeur"
+  id: "un_nouvel_editeur"
   texte: >
       <p>Les Éditions Musicales Artchipel, fondées par Jean-Paul Secher, viennent de publier la Sonate de Requiem. L’association Olivier Greif a apporté son soutien à cette publication, première d’une série que nous espérons longue.<br /><a href="http://www.artchipel.net" >www.artchipel.net</a></p>
        <p>Rappel: Pascal Amoyel donne son spectacle <em>Le pianiste aux 50 doigts</em>, au  cours  duquel il joue Le carillon de Chérence, le 10 mars à Aubagne (13), le 24 mars à  Unieux (42), le 5 avril à Savigny sur Orge (91), le 26 avril à Essaouira (Maroc), le 3 mai à Pamiers (09). <br /><a href="http://youtu.be/OvLuUG0_v68"  >http://youtu.be/OvLuUG0_v68</a></p>
 
 - rawDate: "1365438481"
   titre: "Les incontournables"
+  id: "les_incontournables"
   texte: >
       <p>ABB Reportages a publié en mai 2013 une série de 12 DVD, intiitulée “Les Incontournables d'Olivier Greif”, comportant entretiens, témoignages et concerts. L’ampleur et la qualité de ce travail lui ont valu un diapason d’or. Le coffret est en vente dans les boutiques Fnac et Harmonia Mundi. On peut aussi acheter les DVD un par un, ou par six au choix. <br />Voir <a href="/system/www.abbreportages.com" >www.abbreportages.com</a> <br />Écouter France Musique le 5 juillet de 19h à 20h, Les traverses du temps.<a href="/system/www.abbreportages.com" ></a></p>
       <p>Rappel: Pascal Amoyel donne son spectacle <em>Le pianiste aux 50 doigts</em>,  au  cours  duquel il joue Le carillon de Chérence, au festival de la Vezère à Brive le 7 juillet, puis en Corée, en Haute-Savoie, etc. Il donne <em>Le Block 15</em> avec Emmanuelle Bertrand le 15 juillet en Espagne, le 22 juillet au festival du Tricastin à Saint-Paul Trois Châteaux, etc. Voir<a href="http://www.pascal-amoyel.com/fr/news/"  >http://www.pascal-amoyel.com/fr/news/</a></p>
 
 - rawDate: "1374610261"
   titre: "Livre"
+  id: "livre"
   texte: >
       <p><em>Olivier Greif, Le rêve du monde</em>. Éditeur: Aedam Musicae. 350 pages consacrées à Olivier: biographie, analyse de sa musique, témoignages, extraits de son journal, photographies, reproductions de partitions et de pages du journal, ainsi qu’un CD. L'ouvrage est dirigé par Brigitte François-Sappey et Jean-Michel Nectoux. Voir <a href="http://www.musicae.fr/livre-Olivier-Greif---Le-reve-du-monde-de-Brigitte-Francois-Sappey--Jean-Michel-Nectoux--Jean-Jacques-Greif--Benoit-Menut-128-83,82,84,71.html" title="http://www.musicae.fr/livre-Olivier-Greif" >http://www.musicae.fr/livre-Olivier-Greif</a> <br />Le CD contient des entretiens d’Olivier avec des journalistes de France Musique, l’enregistrement de la création de <em>Ich ruf zu dir</em> en 2000, une des <em>Trois pièces sérieuses</em> par Olivier, et la <em>Sonate dans le goût ancien</em> par Henri Barda (que l’on peut voir jouer cette sonate sur <a href="https://www.youtube.com/watch?v=-59ieq9wGl0" title="YouTube" >YouTube</a>).</p>
        <p>Rappel. Anne Bramard-Blagny vient de publier douze DVD consacrés à Olivier.  Voir <a href="http://www.abbreportages.com" >www.abbreportages.com</a> <br />Les entretiens avec des interprètes, compositeurs et autres amis d’Olivier figurant sur le dernier DVD ont été adaptés et publiés par Delatour sous le titre <em>We are the words</em>. Une version numérique du  livre est disponible: <a href="http://www.editions-delatour.com/fr/e-book-pdf/2106-we-are-the-words-olivier-greif-compositeur-e-book-pdf-9782752103154.html" >http://www.editions-delatour.com/fr/e-book-pdf/2106-we-are-the-words-olivier-greif-compositeur-e-book-pdf-9782752103154.html</a><br />Pour écouter une heure de présentation des DVD par Anne Bramard-Blagny dans l’émission <em>Les traverses du temps du</em> 5 juillet: <a href="http://www.francemusique.fr/emission/les-traverses-du-temps/2012-2013/les-incontournables-d-olivier-greif-compositeur-1950-2000-07-05-2013-00-00" title="http://www.francemusique.fr/emission/les-traverses-du-temps" >http://www.francemusique.fr/emission/les-traverses-du-temps</a></p>
 
 - rawDate: "1383616260"
   titre: "Olivier online"
+  id: "olivier_online"
   texte: >
       <p>Il est de plus en plus facile de découvrir la musique d’Olivier Greif sur internet. YouTube propose plusieurs dizaines de séquences son ou vidéo, du pionnier Henri Barda jouant la Sonate dans le goût ancien à Tokyo, présent sur YouTube depuis cinq ans, à de nombreux extraits (musique et interviews) des douze DVD de ABB productions. On peut écouter intégralement le Trio (enregistrement Harmonia Mundi), le Tombeau de Ravel (ABB), Cinq chansons enfantines et Quatre poèmes de Prévert (Loiseleur des Longchamps), diverses pièces de jeunesse inédites pour piano (Nicolas Horvath). Lucas Perus, un jeune pianiste (et patineur) de Montréal joue 42nd Street. Les autres séquences sont des mouvements isolés des sonates pour piano et violon/piano et des quatuors.<br />Spotify et Deezer diffusent uniquement des œuvres complètes. Des deux côtés, on trouve les disques Harmonia Mundi et Universal que l’on peut écouter intégralement. Deezer permet aussi d'écouter le disque Saphir Productions et le double disque INA. La diffusion est gratuite, mais des publicités irritantes se glissent entre les mouvements. Un abonnement mensuel de cinq ou dix euros élimine les publicités. On accède ainsi à une discothèque à peu près infinie.</p>
 
 - rawDate: "1395459118"
   titre: "Prix Greif à Orléans"
+  id: "prix_greif_a_orleans"
   texte: >
       <p>Le onzième Concours International de Piano d’Orléans s’est déroulé du 5 au 15 mars.<br />Le prix Olivier Greif a été décerné à deux pianistes, Le Liu et Aline Piboule. Toutes les deux ont joué le premier mouvement de la Sonate de guerre.<br />Le Liu a étudié au conservatoire de Shanghai, puis à Eisenstadt et à Vienne, où elle réside actuellement. Elle a obtenu le Grand Prix de la Ville de Paris au concours Olivier Messiaen 2007. Voir <a href="http://www.leliu-pianist.net/acticle4.html">http://www.leliu-pianist.net/acticle4.html</a><br />Aline Piboule a étudié aux CNSM de Lyon et de Paris, puis à Montréal. Elle est lauréate du Concours International de la Ville de Padoue. Voir <a href="http://www.alinepiboule.wix.com/piano#">http://www.alinepiboule.wix.com/piano#!</a></p>
 
 - rawDate: "1396812092"
   titre: "Prix"
+  id: "prix"
   texte: >
       <p>Le Prix des Muses Singer-Polignac récompense des ouvrages consacrés à la musique classique, au jazz et aux musiques traditionnelles (études musicologiques, biographies, romans etc...) publiés en langue française au cours de l'année précédente. Il a été décerné le 3 avril, dans la catégorie Témoignages, au livre “Olivier Greif, Le Rêve du monde” -  sous la direction de Brigitte François-Sappey et Jean-Michel Nectoux (Editions Aedam Musicae). Le jury était présidé par Claude Samuel.<br />Le onzième Concours International de Piano d’Orléans s'est déroulé du 5 au 15 mars.<br />Le prix Olivier Greif a été décerné à deux pianistes, Le Liu et Aline Piboule. Toutes les deux ont joué le premier mouvement de la Sonate de guerre.<br />Le Liu a étudié à Shanghai et à Vienne, où elle réside actuellement. Voir <a href="http://www.leliu-pianist.net/acticle4.html">http://www.leliu-pianist.net/acticle4.html</a><br />Aline Piboule a étudié aux CNSM de Lyon et de Paris, puis à Montréal. Voir <a href="http://www.alinepiboule.wix.com/piano#">http://www.alinepiboule.wix.com/piano#!</a></p>
 
 - rawDate: "1404492821"
   titre: "Prix"
+  id: "prix"
   texte: >
       <p>Le onzième Concours International de Piano d’Orléans s’est déroulé du 5 au 15 mars.<br />Le  prix Olivier Greif a été décerné à deux pianistes, Le Liu et Aline  Piboule. Toutes les deux ont joué le premier mouvement de la Sonate de  guerre.<br />Le Liu a étudié à Shanghai et à Vienne, où elle réside actuellement. Voir <a href="http://www.leliu-pianist.net/acticle4.html">http://www.leliu-pianist.net/acticle4.html</a><br />Aline Piboule a étudié aux CNSM de Lyon et de Paris, puis à Montréal. Voir <a href="http://www.alinepiboule.wix.com/piano#">http://www.alinepiboule.wix.com/piano#!<br /></a>Le livre “Olivier Greif, Le Rêve du monde” -   réalisé sous la direction de Brigitte François-Sappey et Jean-Michel Nectoux  (Editions Aedam Musicae) a reçu deux prix. Le 3 avril, Le Prix des Muses Singer-Polignac dans la  catégorie Témoignages. Le 16 juin, le “Prix de la monographie” décerné par le Syndicat Professionnel de la Critique Théâtre Musique et danse pour l’année 2013/2014.<br /><a href="http://www.alinepiboule.wix.com/piano#"></a></p>
 
 - rawDate: "1406676752"
   titre: "Greif à Groningen"
+  id: "greif_a_groningen"
   texte: >
       <p>Anne-Elise Thouvenin, une violoncelliste française qui étudie la musique à Groningen, en Hollande, vient de consacrer son projet final de Master à l’analyse de la Sonate de Requiem. Elle a reçu une mention Très Bien.<br />À cette occasion, elle a fondé un “ensemble Olivier Greif de Groningen” qui a donné trois concerts (et en donnera beaucoup d’autres, promet-elle). Le 25 juin, la Sonate de Requiem. Le 26, la Bataille d’Agincourt et le Trio. Le 23 juillet, la Sonate de Requiem, les Lettres de Westerbork et le Trio.<br />Des membres de l’association Olivier Greif ont assisté au dernier concert, donné dans le cadre du festival Peter de Grote. Les jeunes interprètes ont joué avec une vigueur et une passion qui nous rappelaient la fougue d’Olivier lui-même. La salle était pleine. Le public, qui n’avait jamais entendu parler d’Olivier, était visiblement bouleversé. Note historique: Peter de Grote, c’est le tsar Pierre le Grand, qui a séjourné en Hollande et a fait bâtir Saint-Pétersbourg sur le modèle des villes hollandaises.</p>
 
 - rawDate: "1407194779"
   titre: "Diapason en deuil"
+  id: "diapason_en_deuil"
   texte: >
       <p>Nous venons d’apprendre la disparition tragiquement prématurée, le 1er août, de Nicolas Baron (42 ans!). Il n'était pas seulement, au sein de la rédaction de la revue <em>Diapason</em>, le chef de rubrique “actualité” hautement apprécié de tous pour ses qualités de gentillesse et d’humour, mais encore il avait une plume avertie, alerte et sensible qu’il mettait au service de ses prédilections, parmi lesquelles la musique d’Olivier occupait une place très centrale. Il a écrit sur ses compositions, sur nos publications et sur les DVD, des lignes que nous aurions tous aimé signer tant elles témoignaient d’une compréhension profonde et d'une empathie rare.</p>
 
 - rawDate: "1407505228"
   titre: "Greif à Groningen"
+  id: "greif_a_groningen"
   texte: >
       <p>Anne-Elise  Thouvenin, une violoncelliste française qui étudie la musique à  Groningen, en Hollande, vient de consacrer son projet final de Master à  l’analyse de la Sonate de Requiem. Elle a reçu une mention Très Bien.<br />À  cette occasion, elle a fondé un “ensemble Olivier Greif de Groningen”  qui a donné trois concerts (et en donnera beaucoup d’autres,  promet-elle). Le 25 juin, la Sonate de Requiem. Le 26, la Bataille  d’Agincourt et le Trio. Le 23 juillet, la Sonate de Requiem, les Lettres  de Westerbork et le Trio.<br />Des membres de l’association Olivier Greif  ont assisté au dernier concert, donné dans le cadre du festival Peter  de Grote. Les jeunes interprètes ont joué avec une vigueur et une  passion qui nous rappelaient la fougue d’Olivier lui-même. La salle  était pleine. Le public, qui n’avait jamais entendu parler d’Olivier,  était visiblement bouleversé. Note historique: Peter de Grote, c’est le  tsar Pierre le Grand, qui a séjourné en Hollande et a fait bâtir  Saint-Pétersbourg sur le modèle des villes hollandaises.</p>
        <p>Nous sommes très tristes d’avoir perdu un ami, Nicolas Baron, journaliste à Diapason, disparu le 1er août à 42 ans.</p>
 
 - rawDate: "1414367432"
   titre: "Nouveaux disques"
+  id: "nouveaux_disques"
   texte: >
       <div>Triton vient de publier un double CD proposant deux œuvres majeures pour piano, interprétées par Olivier lui-même: la sonate <em>Les Plaisirs de Chérence</em>, donnée à l’occasion des cinquièmes rencontres musicales de La Prée le 21 mai 1998; <em>Portraits et apparitions</em>, interprétés à La Prée le 23 avril 2000 au cour d’un concert privé, vingt jours avant la mort du compositeur. Le premier CD comporte aussi une présentation par Olivier de neuf des onze <em>Portraits et apparitions</em> lors de la création le 31 mai 1999 à l’espace Kiron.<br />C’est le neuvième disque consacré par Triton à la musique d’Olivier Greif.<br />Une pièce pour piano de jeunesse, <em>Second hommage à Raymond Roussel</em>, figure dans un autre coffret de deux disques, <em>The French avant-garde in the 20th century</em>, publié en Angleterre par LTM. L’avant-garde dont il est question est à la fois celle des compositeurs et celle des peintres et poètes, d’où la présence de Raymond Roussel. Le pianiste, Nicolas Horvath, interprète plusieurs œuvres d’Olivier sur YouTube, dont celle-ci.</div>
 
 - rawDate: "1426638171"
   titre: "Quinze ans"
+  id: "quinze_ans"
   texte: >
       <p>Olivier Greif est mort en mai 2000. À l’occasion du quinzième anniversaire de sa disparition, et pour marquer l’intérêt que des jeunes interprètes portent à sa musique, l’association Olivier Greif organise un concert de ses œuvres le 21 mai au CRR de la rue de Madrid. Voir ci-contre.<br />Réservation conseillée: , 06 03 35 93 53.<br />Le 13 mai, rediffusion du concert <em>Hommage à Olivier Greif</em> sur Mezzo SD à 11h15.<br />Le 15 mai, dans le cadre du festival de La Prée, la <em>Symphonie</em> sera donnée dans l’église de Châteauneuf-sur-Cher dans sa version pour chant et orgue.<br />Promotion spéciale sur le coffret de douze DVD Olivier Greif : 50 euros au lieu de 100. Voir <a href="http://www.abbreportages.com" >www.abbreportages.com</a>.</p>
 
 - rawDate: "1435005981"
   titre: "Soirée Greif au CRR"
+  id: "soiree_greif_au_crr"
   texte: >
       <p>Le Conservatoire à Rayonnement Régional de la rue de Madrid a accueilli six interprètes vigoureux et enthousiastes le 21 mai pour une soirée d’hommage à Olivier Greif à l’occasion du quinzième annivesaire de sa disparition. L’ensemble Olivier Greif de Groningen a mis en ligne sur You Tube des enregistrements vidéo du concert.
       </p>
@@ -199,68 +236,81 @@
 
 - rawDate: "1448320354"
   titre: "Concert reporté"
+  id: "concert_reporte"
   texte: >
       <p>
       Le quatuor n°4 “Ulysses” devait être donné le 15 novembre à la Synagogue Copernic. Ce concert a dû être annulé en raison des attentats du 13 novembre. Il est reporté au mercredi 17 février 2016 à 20h00.Les personnes ayant réservé des places pour le 15 novembre 2015 peuvent conserver leurs billets, qui seront valables le 17 février 2016, ou obtenir le remboursement auprès de l'ULIF : 01 47 04 37 27.</p>
 
 - rawDate: "1456362226"
   titre: "Œuvre inédite"
+  id: "oeuvre_inedite"
   texte: >
       <p>Comme l’année dernière, l’association Olivier Greif organise un concert commémoratif au mois de mai (voir ci-contre). La version pour orgue et chant de la <em>Symphonie</em> sera donnée pour la première fois à Paris par Loiseleur des Longchamps et Olivier Dekeister, les interprètes qui ont créé l’œuvre à Deauville en 2011. Loiseleur des Longchamps créera <em>Imago Mundi</em>, un cycle de Lieder composé en 1998 sur des poèmes de Dylan Thomas, William Blake, Paul Celan, Walt Whitman et Sylvia Plath. Le concert aura lieu en l’Église Saint-Lambert de Vaugirard, dont Olivier Keister est l’organiste.</p>
 
 - rawDate: "1458342745"
   titre: "Concours d’Orléans"
+  id: "concours_d_orleans"
   texte: >
       <p>Le pianiste japonais Takuya Otaki, qui étudie la musique contemporaine à Stuttgart, a remporté le premier prix du douzième concours international de piano d’Orléans, ainsi que le prix Olivier Greif. <br />Plusieurs candidats ont joué des mouvements de la <em>Sonate de guerre</em> ou des <em>Portraits et apparitions</em>. <br />Le Coréen Tae Kim est arrivé en demi-finale. Il envisage de jouer des œuvres d’Olivier à Boston, où il réside. <br />Philippe Hattat, qui va créer le cycle de lieder <em>Imago Mundi</em> avec Loiseleur des Longchamps le 18 mai (voir ci-contre), a participé à la finale avec Takuya Otaki et la pianiste arménienne Marianna Abrahamyan.</p>
 
 - rawDate: "1463070459"
   titre: "Hommage en mai"
+  id: "hommage_en_mai"
   texte: >
       <p>Comme l’année dernière, l’association Olivier Greif a organisé un concert en mai en hommage à Olivier, disparu le 13 mai 2000.<br />Le concert a eu lieu en l’église Saint-Lambert de Vaugirard, dont l’organiste titulaire, Olivier Dekeister, a donné – pour la première fois à Paris, avec le baryton Loiseleur des Longchamps – l’adaptation pour orgue et chant qu’il a réalisée de la <em>Symphonie</em> d’Olivier.<br />Loiseleur des Longchamps et le pianiste Philippe Hattat ont assuré la création mondiale partielle du cycle <em>Imago Mundi</em>, composé en 1998. Six des huit Lieder du cycle, sur des poèmes de Dylan Thomas, William Blake, Paul Celan, Walt Whitman, sont déjà gravés et ont été donnés. La gravure des deux derniers Lieder est prévue pour bientôt.<br />Phlippe Hattat a joué une œuvre virtuose et joyeuse composée à New York en 1970, <em>42nd Street</em>.<br />À écouter: <a href="http://www.judaiquesfm.com/emissions/30/presentation.html" title="Brigitte François)Sappey a parlé d’Olivier et présenté le concert le 11 mai sur JudaIques FM.">Le 11 mai, Brigitte François-Sappey parle d’Olivier et présente le concert sur Judaïques FM</a>.</p>
 
 - rawDate: "1467669009"
   titre: "Écrits d’Olivier"
+  id: "ecrits_d_olivier"
   texte: >
       <p>Divers extraits du journal d’Olivier Greif ont été incorporés à ce site.<br />1) Les présentations des œuvres données en concert et les commentaires sur ses œuvres rédigés dans son journal (en général, dans sa correspondance). Ces textes apparaissent dans les fiches des œuvres (rubrique <em>Catalogue</em>).<br />2) Divers textes consacrés à des compositeurs (dont un long texte sur Schubert écrit pour préparer une conférence), ainsi que des considérations sur la musique. Ces textes sont regroupés en un article intitulé <em>Écrits sur la musique et les musiciens</em>que l'on peut télécharger dans la rubrique <em>Liens</em>.<br />La rubrique <em>Liens</em> s’enrichit par ailleurs d’un accès à une fiche Olivier Greif très complète sur la base de données B.R.A.H.M.S de l’Ircam: <a href="http://brahms.ircam.fr/olivier-greif" title="brahms.ircam.fr/olivier-greif">brahms.ircam.fr/olivier-greif</a></p>
       </p>
 
 - rawDate: "1480982766"
   titre: "Chants de l’Âme"
+  id: "chants_de_l_ame"
   texte: >
       <p>La partition des <em>Chants de l’Âme</em> opus 310 est disponible chez Salabert. <br />On peut commander la partition dans les magasins de musique ou bien (pour 24,70 euros) dans la boutique en ligne musicshopeurope.com: <a href="https://www.musicshopeurope.com/fr-fr/product/slb%2000592600/chants-de-l-%C3%A2me-op-310.aspx" title="https://www.musicshopeurope.com/fr-fr/product/slb%2000592600/chants-de-l-%C3%A2me-op-310.aspx">https://www.musicshopeurope.com/fr-fr/product/slb%2000592600/chants-de-l-%C3%A2me-op-310.aspx</a>.</p>
 
 - rawDate: "1494102486"
   titre: "Hölderlin Lieder"
+  id: "holderlin_lieder"
   texte: >
       <p>Journal d’Olivier, 9 mai 94<br />Je me suis rejoué ce matin, un peu par hasard - ils dormaient dans un tiroir depuis presque un an -, mes Lieder sur Hölderlin. Je dois avouer que j'ai été fort impressionné - bouleversé, même - par la force et par la beauté de cette pièce.<br />Une chose me frappe. C'est qu'ici la musique ne fait pas qu'accompagner, commenter le texte - ce qu'elle fait plutôt bien, d'ailleurs, selon moi - mais elle incarne une sorte de plongée spéléologique dans la personne même d'Hölderlin, sa vie, son œuvre, sa « folie », son isolement extrême. (...) Les premiers lieder du cycle sont sur Hölderlin, sur ses poèmes, mais ceux qui suivent sont Hölderlin lui-même. <br /><em>Création de l’œuvre le 13 mai 2017.</em></p>
 
 - rawDate: "1504647349"
   titre: "Danse des Araucans"
+  id: "danse_des_araucans"
   texte: >
       <p>L’ensemble Olivier Greif de Groningen projette d’enregistrer un CD d’œuvres de jeunesse d’Olivier. On peut voir et entendre sur YouTube l’une de ces œuvres, la <em>Danse des Araucans</em> op. 89 pour deux pianos et percussions, composée en 1977 et dédiée à Michel Tournier: <a href="https://www.youtube.com/watch?v=J_Y2tDQnatc" title="Danse des Araucans" >https://www.youtube.com/watch?v=J_Y2tDQnatc</a><br />Les Araucans sont des Indiens du Chili.<br />On peut s’abonner à la chaîne de l’ensemble Olivier Greif sur YouTube, ce qui permet d’être averti quand une nouvelle vidéo est mise en ligne. Dix vidéos sont proposées actuellement. <br />Quand on demande “Olivier Greif” à YouTube, le programme annonce <em>environ 1900 résultats</em>. De nombreuses vidéos n’ont pas de rapport évident avec Olivier, mais on peut tout de même voir et entendre une quinzaine d’œuvres intégrales (dont trois versions différentes du Trio), ainsi que des centaines d’extraits, des entretiens avec Olivier ou avec ses proches, etc.</p>
 
 - rawDate: "1520557722"
   titre: "Donemus"
+  id: "donemus"
   texte: >
       <p>L’ensemble Olivier Greif de Groningen a commencé à travailler avec Donemus, un important éditeur hollandais, pour publier la musique d’Olivier Greif. <br />Voir <a href="http://donemus.nl/olivier-greif/" >http://donemus.nl/olivier-greif/</a></p>
 
 - rawDate: "1527903361"
   titre: "Greif à Grenoble"
+  id: "greif_a_grenoble"
   texte: >
       <p>Le Conservatoire de Grenoble a consacré l’après-midi et la soirée du 3 mai à Olivier Greif, à l’initiative de François-Gildas Tual, professeur d’histoire de la musique et d’analyse.<br />Une  “Rencontre musicale avec  Brigitte François-Sappey” s'est déroulée de  14h30 à 18h. Musicologue, amie proche d’Olivier Greif,  dédicataire des <em>Chants de l'âme</em>,  Brigitte François-Sappey a parlé  de la vie et de l’œuvre d’Olivier  Greif. Des élèves du Conservatoire ont proposé des illustrations   musicales – tirées du <em>Piano Book</em> op. 78 et du cycle de Lieder <em>Wiener Konzert</em> – et donné des exposés sur les <em>Quatre chansons de Prévert</em>, les <em>Lettres de Westerbork</em>, le <em>Requiem</em>, ainsi que “Olivier Greif en ses manuscrits” et “Les harmonies de l’âme”.  <br />À 19h30,  Chrystèle Chovelon et Forence Cioccolani, professeurs au  Conservatoire, ont interprété les <em>Chants de l'âme</em>.<em><br />Les affiches de Grenoble et du Dauphiné</em> ont consacré une belle page à l’événement dans leur numéro du 11 mai (que l’on peut consulter sur internet pour deux euros).</p>
 
 - rawDate: "1549059253"
   titre: "Greif à Newcastle"
+  id: "greif_a_newcastle"
   texte: >
       <p>La violoniste Alexandra Raikhlina est née à Moscou, a grandi en Belgique, vit à Newcastle. Elle y a fondé en 2016 le Brundibár Arts Festival. Brundibár est le titre d'un opéra de Hans Kráza donné dans le camp de concentration de Theresienstadt par les enfants déportés.<br />La soirée d'inauguration du festival 2019, le 24 janvier, était consacrée à Olivier Greif, et à l'influence de la Shoah sur les enfants des rescapés des camps.<br />Avant le concert, j'ai parlé un peu du rôle que le séjour d'un an de notre père à Auschwitz a pu jouer dans la vie d'Olivier et dans la mienne. Un Auschwitz symbolique était enfoui tout au fond de nos mémoires. Nous y pensions rarement. Jusqu'au jour où, vers l'âge de quarante ans, nous avons compris chacun de notre côté que c'était une chance de posséder en soi une telle source d'inspiration. J'ai écrit plusieurs romans qui se passent en partie dans le camp. Olivier a mis la Shoah dans sa musique, en particulier dans les trois œuvres interprétées magnifiquement par Alexandra et ses amis à Newcastle: la sonate pour deux violoncelles <em>Battle of Agincourt</em>, les <em>Lettres de Westerbork</em> et le Quatuor n°3 <em>Todesfuge</em>.<br />Jean-Jacques Greif</p>
 
 - rawDate: "1553988033"
   titre: "Le Journal"
+  id: "le_journal"
   texte: >
       <p>Olivier Greif a tenu “une sorte de carnet de bord” du 11 janvier 1971 au  12 mai 2000, veille de sa mort. Il y raconte des événements de sa vie, y  note des réflexions sur la musique et d’autres sujets, y recopie toutes  les lettres qu'il envoie. Les éditions Aedam Musicae viennent de publier un livre  proposant entre le cinquième et le quart du journal. Sa lecture permet de  mieux comprendre l'étrange parcours du compositeur entre musique et  spiritualité, et d'entrevoir les idées qui ont inspiré ses œuvres. Par  ailleurs, c'est souvent très drôle.<a href="http://www.musicae.fr/livre-Olivier-Greif---Journal-Edite-par-Jean-Jacques-Greif-185-84.html" title="Olivier Greif — Journal" ><br />http://www.musicae.fr/livre-Olivier-Greif---Journal-Edite-par-Jean-Jacques-Greif-185-84.html</a></p>
 
 - rawDate: "1568165798"
   titre: "À propos du Journal"
+  id: "a_propos_du_journal"
   texte: >
       <p>Après la publication du Journal d’Olivier Greif par les éditions Aedam Musicae (voir <a href="http://www.musicae.fr/livre-Olivier-Greif---Journal-Edite-par-Jean-Jacques-Greif-185-84.html" >http://www.musicae.fr/livre-Olivier-Greif—-Journal-Edite-par-Jean-Jacques-Greif-185-84.html</a> ) Anne Ibos-Augé, musicologue, chercheuse à l'Institut de Recherche en Musicologie, a écrit deux articles dans la revue culinaire et musicale <em>Le ventre et l’oreille</em>:</p>
       <ul>
@@ -272,31 +322,37 @@
 
 - rawDate: "1585322780"
   titre: "Olivier en ligne"
+  id: "olivier_en_ligne"
   texte: >
       <p>Comme on peut le voir ci-contre, les concerts du printemps ont été supprimés pour cause de confinement et, espérons-le, reportés – peut-être à la Toussaint pour Deauville. On peut se consoler en écoutant, et en regardant parfois, Olivier sur internet. La rubrique <em>Liens</em> de ce site propose des liens directs vers les principales plateformes de Streaming et de vente: Youtube, Spotify, Deezer, Qobuz. On trouve aussi la musique d’Olivier sur Amazon music, Apple music, etc.<br />De nouvelles séquences d’entretiens avec Olivier ont été mises en ligne récemment sur Youtube: <br /><a href="https://www.youtube.com/watch?v=P9M5qt6_hd4&feature=youtu.be" >https://www.youtube.com/watch?v=P9M5qt6_hd4&feature=youtu.be<br /></a><a href="https://www.youtube.com/watch?v=BWYhcS0tSqk&feature=youtu.be" >https://www.youtube.com/watch?v=BWYhcS0tSqk&feature=youtu.be<br /></a><a href="https://www.youtube.com/watch?v=cdqCq84mJ3g" >https://www.youtube.com/watch?v=cdqCq84mJ3g</a></p>
 
 - rawDate: "1599957497"
   titre: "Agincourt online"
+  id: "agincourt_online"
   texte: >
       <p>Le “concert à la maison” du 29 août en Allemagne a été donné devant un public très restreint, car il était destiné à une diffusion online. Valentin Scharff, créateur de la version pour deux violoncelles de la <em>Sonate d’Agincourt</em> avec Emma Savouret en 1998 à Freiburg im Brisgau, a joué l’œuvre avec son épouse, Daniela Shemer, en deuxième partie d’un concert comportant des duos de Jean-Baptiste Barrière, David Popper et Paganini. Le lien You Tube ci-dessous mène à la présentation de la soirée (en allemand) par ses organisateurs, Esther et Ralf Groh. La sonate commence à 43 minutes et 18 secondes. <br /><a href="https://www.youtube.com/watch?v=mXei5HV5g48&feature=youtu.be">https://www.youtube.com/watch?v=mXei5HV5g48&feature=youtu.be<br /></a>Pour en savoir plus sur les concerts à la maison, les interprètes, les autres compositeurs:<br /><a href="https://www.hauskonzert-feldberg.de/">https://www.hauskonzert-feldberg.de/<br /></a></p>
 
 - rawDate: "1601498559"
   titre: "Greif à la radio et au disque"
+  id: "greif_a_la_radio_et_au_disque"
   texte: >
       <p>Le <em>Carrefour de la Création</em>, une série d’émissions consacrées à la musique contemporaine le dimanche soir sur France Musique, a rendu hommage à Olivier le 27 septembre pour le vingtième anniversaire de sa mort. Brigitte François-Sappey a présenté des enregistrements inédits de la <em>Sonate de guerre</em>, de la <em>Petite cantate de chambre</em> et du <em>Quadruple concerto</em>. Alexis Galpérine, Benoît Menut et Patrick Langot ont parlé d’Olivier et de sa musique. <br /><a href="https://www.francemusique.fr/emissions/carrefour-de-la-creation-l-integrale/carrefour-de-la-creation-autour-d-olivier-greif-86926">https://www.francemusique.fr/emissions/carrefour-de-la-creation-l-integrale/carrefour-de-la-creation-autour-d-olivier-greif-86926<br /></a>Une autre heure à la radio avec Brigitte François-Sappey:<br /><a href="https://frequenceprotestante.com/diffusion/la-malle-a-musiques-du-03-10-2020-2/">https://frequenceprotestante.com/diffusion/la-malle-a-musiques-du-03-10-2020-2/<br /></a>Et un disque tout neuf: le Quintette <em>A Tale of the World</em> par le Quintette Syntonia, chez CIAR classics (voir la page Disques sur ce site).</p>
 
 - rawDate: "1614298394"
   titre: "Victoires"
+  id: "victoires"
   texte: >
       <p>Les Victoires de la musique classiques ont été décernées le 24 février. Trois des lauréates et lauréats sont mentionnés sur ce site. Marie-Laure Garnier, soprano, qui interprète les Chants de l'âme avec le pianiste Philippe Hattat sur le disque paru en 2020 aux éditions B Records, remporte la Victoire 2021 dans la catégorie Révélation, artiste lyrique. Betsy Jolas, qui fait partie du comité de parrainage de l'association Olivier Greif, remporte la Victoire dans la catégorie Compositeur. Le pianiste Alexandre Tharaud, qui a interprété la Sonate dans le goût ancien en juillet 2001 au cours de l'hommage à Olivier Greif au festival de Cordes sur Ciel, remporte la Victoire dans la catégorie Soliste instrumental. L'un des trois nominés dans la catégorie Compositeur, Benoît Menut, est membre du conseil d'administration de l'association Olivier Greif. Il a composé des œuvres en hommage à Olivier et prépare une édition des quatuors.<br />Une autre bonne nouvelle: la page Wikipédia d’Olivier Greif a été rénovée: <br /><a href="https://fr.wikipedia.org/wiki/Olivier_Greif" title="https://fr.wikipedia.org/wiki/Olivier_Greif" >https://fr.wikipedia.org/wiki/Olivier_Greif</a></p>
 
 - rawDate: "1618864883"
   titre: "Deauville"
+  id: "deauville"
   texte: >
       <p> La <em>Symphonie</em> avec baryton et le Quadruple Concerto  <em>La Danse des Morts </em>seront donnés le samedi <br />1er mai à 20h30 dans le cadre du Festival de Pâques de Deauville. <br />Il s’agit d’un concert sans public, comportant aussi des œuvres de Mahler et Schubert, diffusé gratuitement et en direct sur<br /><a href="http://www.facebook.com/musiqueadeauville/" title="facebook.com/musiqueadeauville" >facebook.com/musiqueadeauville/<br /></a>et <a href="/system/recithall.com/events/329" title="recithall.com/events/329" >recithall.com<br /></a>La qualité vidéo et audio devrait être meilleure sur RecitHall, et le concert sera suivi d’une rencontre avec les musiciens.<br />B Records enregistrera les œuvres d’Olivier pour une publication dans la collection de CD Deauville Live.</p>
 
 - rawDate: "1635215877"
   titre: "Journées Olivier Greif"
+  id: "journees_olivier_greif"
   texte: >
       <p>Trois journées de colloques et de concerts prévues en 2020 ont eu lieu en octobre 2021.</p>
 
@@ -327,6 +383,7 @@
 
 - rawDate: "1679608324"
   titre: "D’éclat et de douleur"
+  id: "d_eclat_et_de_douleur"
   texte: >
       <p><em>Olivier Greif / d’éclat et de douleur</em> est le titre d'un numéro double consacré à Olivier Greif par la revue Euterpe, publiée par Les Amis de la Musique Française.</p> 
 
@@ -336,6 +393,7 @@
 
 - rawDate: "1695141633"
   titre: "Cinquante doigts"
+  id: "cinquante_doigts"
   texte: >
       <p>Après un concert Greif en compagnie de la violoncelliste Emmanuelle Bertrand au festival Musica de Strasbourg, le pianiste Pascal Amoyel donne son formidable spectacle <a href="https://www.theatremontparnasse.com/le-pianiste-aux-50-doigts/">Le pianiste aux cinquante doigts</a> au Théâtre Montparnasse, 31 rue de la Gaîté, 75014 Paris, du 28 septembre au 31 décembre. </p>
 

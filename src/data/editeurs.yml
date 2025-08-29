@@ -1,42 +1,50 @@
 - titre: Tamino Productions
+  id: "tamino_productions"
   url: https://tamino-productions.com/
   commentaire:
 
 - titre: Donemus
+  id: "donemus"
   url: https://donemus.nl
   adresse: Donemus (Foundation/Publishing), Rijswijkseplein 786, 2516 LX Den Haag
   commentaire: >
       Tel: 31(0)70 2500 786, e-mail: info@donemus.nl
 
 - titre: Éditions musicales Artchipel
+  id: "editions_musicales_artchipel"
   url: https://www.artchipel.net
   adresse: 13 rue Huntziger, 92110 Clichy
   commentaire: >
 
 - titre: Leduc
+  id: "leduc"
   url:
   commentaire: >
       Les partitions Leduc sont en vente en ligne à https://www.musicshopeurope.com/
 
 - titre: Heugel
+  id: "heugel"
   url:
   adresse: Heugel & Cie / Alphonse Leduc 175 rue Saint-Honoré 75040 Paris Cedex 01
   commentaire: >
       Les partitions Heugel sont en vente en ligne à https://www.musicshopeurope.com/
 
 - titre: Max Eschig
+  id: "max_eschig"
   url:
   adresse: 48 rue de Rome 75008 Paris
   commentaire: >
       Les partitions Max Eschig sont en vente en ligne à https://www.musicshopeurope.com/
 
 - titre: Salabert
+  id: "salabert"
   url:
   adresse: Salabert - Universal 16 rue des Fossés Saint-Jacques 75005 Paris.
   commentaire: >
       Les partitions Salabertsont en vente en ligne à https://www.musicshopeurope.com/
 
 - titre: Symétrie
+  id: "symetrie"
   url: http://www.symetrie.com/
   adresse: 30 rue Jean-Baptiste Say 69001 Lyon
   commentaire: >
@@ -44,11 +52,13 @@
       Tel 04 78 29 52 14 Fax 04 78 300 111
 
 - titre: Hapax
+  id: "hapax"
   url:
   commentaire: >
       Les contrats des œuvres publiées par Hapax ont été résiliés en 2007. Jean-Jacques Greif a racheté les stocks existants. Pour obtenir des fichiers PDF des œuvres ci-dessous, adressez-vous à l’association Olivier Greif.
 
 - titre: Association Olivier Greif
+  id: "association_olivier_greif"
   url:
   commentaire: >
       L’Association a entrepris de faire graver des œuvres pour piano ou pour petites formations afin de satisfaire les demandes des interprètes pour des concerts. Les partitions sont disponibles sous la forme de fichiers PDF, sans préface ni appareil critique, en attendant qu’un éditeur les reprenne.

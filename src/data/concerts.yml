@@ -9,6 +9,7 @@
 
 - rawDate: "04/06/24"
   titre: "Paradisiac Memories à Meudon"
+  id: "paradisiac_memories_a_meudon"
   oeuvres:
       - Sonate n°9 pour Piano “Suite Paradisiac Memories”
   interpretes: "Jonathan Benichou, piano."
@@ -18,6 +19,7 @@
 
 - rawDate: "22/05/24"
   titre: "Ruines à Barcelone"
+  id: "ruines_a_barcelone"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano et Pascal Quignard, écrivain."
@@ -29,6 +31,7 @@
 
 - rawDate: "09/04/24"
   titre: "Codex Domini à Reims"
+  id: "codex_domini_a_reims"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Aline Piboule, piano"
@@ -37,6 +40,7 @@
 
 - rawDate: "06/04/24"
   titre: "Ich ruf zu dir à Deauville"
+  id: "ich_ruf_zu_dir_a_deauville"
   oeuvres:
       - Ich Ruf zu Dir
   interpretes: "Raphaël Sévère, clarinette; Emmanuel Coppey et Vassily Chmykov, violon; Lise Berthaud, alto; Maxime Quennesson, violoncelle; Yann Dubost, contrebasse; Arthur Hinnewinkel et Gabriel Durliat, piano."
@@ -46,6 +50,7 @@
 
 - rawDate: "05/04/24"
   titre: "Goût ancien à Bruxelles"
+  id: "gout_ancien_a_bruxelles"
   oeuvres:
       - Sonate n°14 pour piano “Dans le Goût Ancien”
   interpretes: "Jonathan Benichou, piano."
@@ -54,6 +59,7 @@
 
 - rawDate: "27/03/24"
   titre: "Codex Domini à Montpellier"
+  id: "codex_domini_a_montpellier"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Aline Piboule, piano."
@@ -62,6 +68,7 @@
 
 - rawDate: "25/03/24"
   titre: "Agincourt aux Invalides"
+  id: "agincourt_aux_invalides"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "François Salque et Aurélien Pascal, violoncelles ; Samuel Strouk, guitare ; Jérémie Arranger, contrebasse."
@@ -71,6 +78,7 @@
 
 - rawDate: "19/03/24"
   titre: "Codex Domini à Metz"
+  id: "codex_domini_a_metz"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Aline Piboule, piano"
@@ -79,6 +87,7 @@
 
 - rawDate: "15/03/24"
   titre: "Olivier Greif à Saint-Maur"
+  id: "olivier_greif_a_saint_maur"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
@@ -90,6 +99,7 @@
 
 - rawDate: "11/02/24"
   titre: "Tombeau de Ravel à Grenoble"
+  id: "tombeau_de_ravel_a_grenoble"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Laurence Garcin et Sandra Chamoux, piano 4 mains."
@@ -99,6 +109,7 @@
 
 - rawDate: "11/02/24"
   titre: "Le rêve du monde à Versailles"
+  id: "le_reve_du_monde_a_versailles"
   oeuvres:
       - Sonate pour Piano n°20 “Le Rêve du Monde”
   interpretes: "Mariam Sarkissian, mezzo-soprano; Jessica Naïm, soprano; Jonathan Benichou, piano."
@@ -108,6 +119,7 @@
 
 - rawDate: "05/02/24"
   titre: "Greif sur Metaclassique"
+  id: "greif_sur_metaclassique"
   oeuvres:
   interpretes: "Félix Bénati, Sarah Léon, Anne-Élise Thouvenin"
   adresse: "BLGF, 11 bis rue de Vézelay, 75008 Paris"
@@ -116,6 +128,7 @@
 
 - rawDate: "03/02/24"
   titre: "Le Rêve du Monde à Malakoff"
+  id: "le_reve_du_monde_a_malakoff"
   oeuvres:
       - Sonate n°14 pour piano “Dans le Goût Ancien”
       - Sonate pour Piano n°20 “Le Rêve du Monde”
@@ -126,6 +139,7 @@
 
 - rawDate: "30/12/23"
   titre: "Ruines à Verdun"
+  id: "ruines_a_verdun"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano et Pascal Quignard, écrivain."
@@ -137,6 +151,7 @@
 
 - rawDate: "28/12/23"
   titre: "Goût ancien à Nice"
+  id: "gout_ancien_a_nice"
   oeuvres:
       - Sonate n°14 pour piano “Dans le Goût Ancien”
   interpretes: "Jonathan Benichou, piano."
@@ -146,6 +161,7 @@
 
 - rawDate: "07/12/23"
   titre: "Chérence à Montparnasse"
+  id: "cherence_a_montparnasse"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Pascal Amoyel, piano"
@@ -155,6 +171,7 @@
 
 - rawDate: "09/11/23"
   titre: "Codex Domini à Sault (bis)"
+  id: "codex_domini_a_sault_bis"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Aline Piboule, piano"
@@ -164,6 +181,7 @@
 
 - rawDate: "08/11/23"
   titre: "Codex Domini à Sault"
+  id: "codex_domini_a_sault"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Aline Piboule, piano"
@@ -173,6 +191,7 @@
 
 - rawDate: "03/11/23"
   titre: "Ruines à Strasbourg"
+  id: "ruines_a_strasbourg"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano et Pascal Quignard, écrivain."
@@ -184,6 +203,7 @@
 
 - rawDate: "29/10/23"
   titre: "Goût ancien à Nice"
+  id: "gout_ancien_a_nice"
   oeuvres:
       - Sonate n°14 pour piano “Dans le Goût Ancien”
   interpretes: "Jonathan Benichou, piano et Jessica Naïm, chant."
@@ -193,6 +213,7 @@
 
 - rawDate: "28/10/23"
   titre: "Rêve du monde à Nice"
+  id: "reve_du_monde_a_nice"
   oeuvres:
       - Sonate pour Piano n°20 “Le Rêve du Monde”
   interpretes: "Jonathan Benichou, piano et Jessica Naïm, chant."
@@ -202,6 +223,7 @@
 
 - rawDate: "15/10/23"
   titre: "Codex Domini à Gradignan"
+  id: "codex_domini_a_gradignan"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Aline Piboule, piano"
@@ -211,6 +233,7 @@
 
 - rawDate: "04/10/23"
   titre: "Adieu New-York à Rotterdam"
+  id: "adieu_new_york_a_rotterdam"
   oeuvres:
       - Adieu New York
   interpretes: "Ensemble Essenza: Luca Roncato flûte | Simon Redshaw clarinette | Ana Enriqueta Sánchez violon | Lluïsa Paredes violoncelle | Nadia Tumiwa piano"
@@ -220,6 +243,7 @@
 
 - rawDate: "17/09/23"
   titre: "Violoncelle et piano à Strasbourg"
+  id: "violoncelle_et_piano_a_strasbourg"
   oeuvres:
       - Oi Akashe
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
@@ -231,6 +255,7 @@
 
 - rawDate: "02/09/23"
   titre: "Ruines à La Côte Saint-André"
+  id: "ruines_a_la_cote_saint_andre"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano et Pascal Quignard, écrivain."
@@ -242,6 +267,7 @@
 
 - rawDate: "24/06/23"
   titre: "Ruines à Faise"
+  id: "ruines_a_faise"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano et Pascal Quignard, écrivain."
@@ -253,6 +279,7 @@
 
 - rawDate: "27/05/23"
   titre: "Codex Domini à Orbec"
+  id: "codex_domini_a_orbec"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Aline Piboule, piano."
@@ -262,6 +289,7 @@
 
 - rawDate: "27/05/23"
   titre: "Ruines à Montpellier"
+  id: "ruines_a_montpellier"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano et Pascal Quignard, écrivain."
@@ -273,6 +301,7 @@
 
 - rawDate: "20/05/23"
   titre: "Ruines à Angers"
+  id: "ruines_a_angers"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano et Pascal Quignard, écrivain."
@@ -284,6 +313,7 @@
 
 - rawDate: "12/04/23"
   titre: "Greif, Beethoven, Prokofiev à la BLGF"
+  id: "greif_beethoven_prokofiev_a_la_blgf"
   oeuvres:
       - Ostinato pour Piano
       - Sonate n°14 pour piano “Dans le Goût Ancien”
@@ -295,6 +325,7 @@
 
 - rawDate: "01/04/23"
   titre: "Sonate de Requiem à Bruxelles"
+  id: "sonate_de_requiem_a_bruxelles"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Pierre Sutra, violoncelle et Lucie Roques, piano."
@@ -304,6 +335,7 @@
 
 - rawDate: "15/03/23"
   titre: "Journée Greif à Montpellier"
+  id: "journee_greif_a_montpellier"
   oeuvres:
       - Les Chants de l’Âme
       - Sonate de Requiem
@@ -314,6 +346,7 @@
 
 - rawDate: "11/03/23"
   titre: "Ruines à Nice"
+  id: "ruines_a_nice"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano et Pascal Quignard, écrivain."
@@ -325,6 +358,7 @@
 
 - rawDate: "02/03/23"
   titre: "Ruines à Carthage"
+  id: "ruines_a_carthage"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano et Pascal Quignard, écrivain."
@@ -336,6 +370,7 @@
 
 - rawDate: "30/11/22"
   titre: "42ème rue à Paris"
+  id: "42eme_rue_a_paris"
   oeuvres:
       - Sonate n°9 pour Piano “Suite Paradisiac Memories”
   interpretes: "Jonathan Benichou, piano."
@@ -345,6 +380,7 @@
 
 - rawDate: "04/11/22"
   titre: "Sonate dans le goût ancien à Bruxelles"
+  id: "sonate_dans_le_gout_ancien_a_bruxelles"
   oeuvres:
       - Sonate n°14 pour piano “Dans le Goût Ancien”
   interpretes: "Jonathan Benichou, piano."
@@ -354,6 +390,7 @@
 
 - rawDate: "30/10/22"
   titre: "42th street à Nice"
+  id: "42th_street_a_nice"
   oeuvres:
       - Sonate n°9 pour Piano “Suite Paradisiac Memories”
   interpretes: "Jonathan Benichou, piano."
@@ -363,6 +400,7 @@
 
 - rawDate: "24/07/22"
   titre: "Chants de l’âme à la Chartreuse du Liget"
+  id: "chants_de_l_ame_a_la_chartreuse_du_liget"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Marie-Laure Garnier, soprano, et Célia Oneto Bensaid, piano."
@@ -371,6 +409,7 @@
 
 - rawDate: "31/05/22"
   titre: "Ulysses à Vincennes"
+  id: "ulysses_a_vincennes"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "André Rebacz et Tsvétélina Tomova-Aladjem : violons, Judith Daude : alto, Virginie Constant : violoncelle."
@@ -380,6 +419,7 @@
 
 - rawDate: "08/05/22"
   titre: "Codex Domini à Grenoble"
+  id: "codex_domini_a_grenoble"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Laurence Garcin et Florence Cioccolani, piano."
@@ -389,6 +429,7 @@
 
 - rawDate: "21/04/22"
   titre: "Tombeau de Ravel chez Chostakovitch"
+  id: "tombeau_de_ravel_chez_chostakovitch"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Flore Dupuy et Florence Ribot, piano."
@@ -398,6 +439,7 @@
 
 - rawDate: "21/03/22"
   titre: "Meeting of the waters à Nice"
+  id: "meeting_of_the_waters_a_nice"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
       - Rondo pour Piano “42nd Street”
@@ -408,6 +450,7 @@
 
 - rawDate: "11/03/22"
   titre: "Soirée Greif à Grenoble"
+  id: "soiree_greif_a_grenoble"
   oeuvres:
       - Cinq Chansons Enfantines
       - Lettres de Westerbork
@@ -421,6 +464,7 @@
 
 - rawDate: "04/02/22"
   titre: "Berceuses à Grenoble"
+  id: "berceuses_a_grenoble"
   oeuvres:
   interpretes: "Anne Ibos-Augé, docteure en musicologie, chercheuse à l’IReMus."
   adresse: "Université Grenoble Alpes, Grande salle des colloques Stendhal 4e étage bâtiment G. 1180 Avenue Central-Domaine universitaire"
@@ -429,6 +473,7 @@
 
 - rawDate: "12/12/21"
   titre: "Requiem à Vieux-Moulin"
+  id: "requiem_a_vieux_moulin"
   oeuvres:
       - Requiem
   interpretes: "Compagnie vocale et instrumentale La Tempête Simon-Pierre Bestion"
@@ -438,6 +483,7 @@
 
 - rawDate: "11/12/21"
   titre: "Requiem à Braine"
+  id: "requiem_a_braine"
   oeuvres:
       - Requiem
   interpretes: "Compagnie vocale et instrumentale La Tempête Simon-Pierre Bestion"
@@ -447,6 +493,7 @@
 
 - rawDate: "10/12/21"
   titre: "Requiem à Mézières-sur-Oise"
+  id: "requiem_a_mezieres_sur_oise"
   oeuvres:
       - Requiem
   interpretes: "Compagnie vocale et instrumentale La Tempête Simon-Pierre Bestion"
@@ -456,6 +503,7 @@
 
 - rawDate: "14/11/21"
   titre: "Requiem à St Cloud"
+  id: "requiem_a_st_cloud"
   oeuvres:
       - Requiem
   interpretes: "Chœur de chambre Les Temperamens Variations, direction Thibault Lam Quang."
@@ -465,6 +513,7 @@
 
 - rawDate: "12/11/21"
   titre: "Requiem"
+  id: "requiem"
   oeuvres:
       - Requiem
   interpretes: "Chœur de chambre Les Temperamens Variations, direction Thibault Lam Quang."
@@ -474,6 +523,7 @@
 
 - rawDate: "14/10/21"
   titre: "Hommage à Olivier Greif au Conservatoire National"
+  id: "hommage_a_olivier_greif_au_conservatoire_national"
   oeuvres:
       - Les Chants de l’Âme
       - Light Music
@@ -488,6 +538,7 @@
 
 - rawDate: "02/10/21"
   titre: "Journée Greif rue de Madrid"
+  id: "journee_greif_rue_de_madrid"
   oeuvres:
       - Les Chants de l’Âme
       - Quintette pour Piano et cordes “A tale of the world”
@@ -498,6 +549,7 @@
 
 - rawDate: "02/10/21"
   titre: "Tombeau de Ravel chez Ravel"
+  id: "tombeau_de_ravel_chez_ravel"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Flore Dupuy et Florence Ribot, piano."
@@ -507,6 +559,7 @@
 
 - rawDate: "01/10/21"
   titre: "Greif à la bibliothèque musicale La Grange Fleuret"
+  id: "greif_a_la_bibliotheque_musicale_la_grange_fleuret"
   oeuvres:
       - Les Chants de l’Âme
       - In Memoriam
@@ -517,6 +570,7 @@
 
 - rawDate: "14/08/21"
   titre: "Shylock funèbre à Chiré-en-Montreuil"
+  id: "shylock_funebre_a_chire_en_montreuil"
   oeuvres:
       - Shylock Funèbre
   interpretes: "Antoine Payen, violoncelle, et Nicolas Hourt, piano."
@@ -526,6 +580,7 @@
 
 - rawDate: "10/08/21"
   titre: "Adieu New York en Poitou"
+  id: "adieu_new_york_en_poitou"
   oeuvres:
       - Adieu New York
   interpretes: "Eric Robberecht, violon – Antoine Payen, violoncelle — Apolline Degoutte, flûte – Léolun Planchon, clarinette — Alan Kenneth, piano."
@@ -535,6 +590,7 @@
 
 - rawDate: "07/08/21"
   titre: "Shylock funèbre à Cissé"
+  id: "shylock_funebre_a_cisse"
   oeuvres:
       - Shylock Funèbre
   interpretes: "Antoine Payen, violoncelle et Nicolas Hourt, piano."
@@ -544,6 +600,7 @@
 
 - rawDate: "23/07/21"
   titre: "Sonate de Requiem à la Chartreuse du Liget"
+  id: "sonate_de_requiem_a_la_chartreuse_du_liget"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Duo Luperca: Aurélienne Brauner violoncelle – Lorène de Ratuld piano"
@@ -553,6 +610,7 @@
 
 - rawDate: "02/07/21"
   titre: "Concert Greif à Lyon"
+  id: "concert_greif_a_lyon"
   oeuvres:
       - Les Chants de l’Âme
       - Sonate de Requiem
@@ -563,6 +621,7 @@
 
 - rawDate: "06/05/21"
   titre: "Lettres de W. et Bomben auf E. dans le IXème/Reporté"
+  id: "lettres_de_w_et_bomben_auf_e_dans_le_ixeme_reporte"
   oeuvres:
       - Lettres de Westerbork
       - Bomben auf Engelland
@@ -573,6 +632,7 @@
 
 - rawDate: "01/05/21"
   titre: "Concert symphonique à Deauville"
+  id: "concert_symphonique_a_deauville"
   oeuvres:
       - Symphonie
       - Quadruple Concerto “La Danse des morts”
@@ -583,6 +643,7 @@
 
 - rawDate: "13/12/20"
   titre: "Ich ruf zu dir à la Scala/Reporté"
+  id: "ich_ruf_zu_dir_a_la_scala_reporte"
   oeuvres:
       - Ich Ruf zu Dir
   interpretes: "Alice Ader, piano; Jérôme Conte, clarinette; Quatuor Hanson."
@@ -592,6 +653,7 @@
 
 - rawDate: "12/12/20"
   titre: "Quintette au CRR/Reporté Oct. 2021"
+  id: "quintette_au_crr_reporte_oct_2021"
   oeuvres:
       - Quintette pour Piano et cordes “A tale of the world”
   interpretes: "Ensemble Syntonia"
@@ -600,6 +662,7 @@
 
 - rawDate: "07/12/20"
   titre: "Raga à Nice (Annulé)"
+  id: "raga_a_nice_annule"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Hristiana Gueorguieva, violon et Jonathan Benichou, piano (ainsi que Aline Cousy, alto et Anne Bonifas, violoncelle, pour Enesco, Schumann et Brahms)."
@@ -609,6 +672,7 @@
 
 - rawDate: "06/12/20"
   titre: "Meeting of the Waters à La Prée"
+  id: "meeting_of_the_waters_a_la_pree"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Alexis Galpérine, violon ; Jean-Michel Dayez, piano"
@@ -618,6 +682,7 @@
 
 - rawDate: "06/12/20"
   titre: "Trio à l’espace Ararat/Reporté"
+  id: "trio_a_l_espace_ararat_reporte"
   oeuvres:
       - Trio
   interpretes: "Françoise Tillard, piano ; Bertrand Aimar, violon ; Soizic Chevrant, violoncelle"
@@ -626,6 +691,7 @@
 
 - rawDate: "02/12/20"
   titre: "Journée Greif au Conservatoire National/Reporté"
+  id: "journee_greif_au_conservatoire_national_reporte"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
       - Le Tombeau de Ravel
@@ -638,6 +704,7 @@
 
 - rawDate: "01/12/20"
   titre: "Concert vidéo"
+  id: "concert_video"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
       - Quadruple Concerto “La Danse des morts”
@@ -648,6 +715,7 @@
 
 - rawDate: "14/11/20"
   titre: "Codex Domini à Orbec/Reporté"
+  id: "codex_domini_a_orbec_reporte"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Aline Piboule"
@@ -656,6 +724,7 @@
 
 - rawDate: "06/11/20"
   titre: "Table-ronde et concert Greif à Lyon/Reporté"
+  id: "table_ronde_et_concert_greif_a_lyon_reporte"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
       - Le Tombeau de Ravel
@@ -667,6 +736,7 @@
 
 - rawDate: "03/11/20"
   titre: "Codex Domini à Albertville/Annulé"
+  id: "codex_domini_a_albertville_annule"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Aline Piboule, piano."
@@ -675,6 +745,7 @@
 
 - rawDate: "18/10/20"
   titre: "Sonate de guerre à Châteauroux"
+  id: "sonate_de_guerre_a_chateauroux"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano."
@@ -684,6 +755,7 @@
 
 - rawDate: "13/10/20"
   titre: "Trio à Caen"
+  id: "trio_a_caen"
   oeuvres:
       - Trio
   interpretes: "Marie-Pascale Talbot, piano, Jasmine Eudeline, violon, Stéphane André, violoncelle."
@@ -693,6 +765,7 @@
 
 - rawDate: "06/10/20"
   titre: "42ème rue salle Cortot"
+  id: "42eme_rue_salle_cortot"
   oeuvres:
   interpretes: "Victor Metral, piano"
   adresse: "Salle Cortot, 78 rue Cardinet, 75017 Paris"
@@ -701,6 +774,7 @@
 
 - rawDate: "03/10/20"
   titre: "Tombeau de Ravel chez Ravel – Annulé"
+  id: "tombeau_de_ravel_chez_ravel_annule"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Florence Jacquin-Ribot et Laurence Rigault, piano."
@@ -710,6 +784,7 @@
 
 - rawDate: "29/08/20"
   titre: "Agincourt près de Francfort"
+  id: "agincourt_pres_de_francfort"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Daniela Shemer et Valentin Scharff, Violoncelles."
@@ -719,6 +794,7 @@
 
 - rawDate: "23/08/20"
   titre: "Schibboleth à Chiré-en-Montreuil"
+  id: "schibboleth_a_chire_en_montreuil"
   oeuvres:
       - Portraits et Apparitions
   interpretes: "Orlando Bass, piano."
@@ -728,6 +804,7 @@
 
 - rawDate: "22/08/20"
   titre: "Sonate violon et piano n°2 à Chiré-en-Montreuil"
+  id: "sonate_violon_et_piano_n_2_a_chire_en_montreuil"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
   interpretes: "Antigone Hourt, violon et Nicolas Hourt, piano."
@@ -737,6 +814,7 @@
 
 - rawDate: "09/08/20"
   titre: "Sonate violon et piano n°2 à Frozes"
+  id: "sonate_violon_et_piano_n_2_a_frozes"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
   interpretes: "Antigone Hourt, violon et Nicolas Hourt, piano."
@@ -746,6 +824,7 @@
 
 - rawDate: "07/08/20"
   titre: "Solo from Nô à Bréhat"
+  id: "solo_from_no_a_brehat"
   oeuvres:
       - Solo from “Nô”
   interpretes: "Marceau Maréchal, violoncelle."
@@ -755,6 +834,7 @@
 
 - rawDate: "05/08/20"
   titre: "Agincourt à Chaillol/Annulé"
+  id: "agincourt_a_chaillol_annule"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Patrick Langot et Louis Rodde, violoncelles"
@@ -763,6 +843,7 @@
 
 - rawDate: "05/08/20"
   titre: "Todesfugue à Chaillol/Annulé"
+  id: "todesfugue_a_chaillol_annule"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Quintette Syntonia et Marie-Laure Garnier, chant."
@@ -772,6 +853,7 @@
 
 - rawDate: "04/08/20"
   titre: "Codex Domini à Chaillol/Annulé"
+  id: "codex_domini_a_chaillol_annule"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Aline Piboule, piano"
@@ -781,6 +863,7 @@
 
 - rawDate: "04/08/20"
   titre: "Quintette à Chaillol/Annulé"
+  id: "quintette_a_chaillol_annule"
   oeuvres:
       - Quintette pour Piano et cordes “A tale of the world”
   interpretes: "Ensemble Syntonia"
@@ -790,6 +873,7 @@
 
 - rawDate: "03/08/20"
   titre: "Trio à Chaillol/Annulé"
+  id: "trio_a_chaillol_annule"
   oeuvres:
       - Trio
   interpretes: "Trio Karenine: Fanny Robilliard, violon, Louis Rodde, violoncelle, Paloma Kouider, piano."
@@ -799,6 +883,7 @@
 
 - rawDate: "01/08/20"
   titre: "Solo from Nô au Plateau d’Assy"
+  id: "solo_from_no_au_plateau_d_assy"
   oeuvres:
       - Solo from “Nô”
   interpretes: "Alexis Galpérine, alto."
@@ -808,6 +893,7 @@
 
 - rawDate: "26/07/20"
   titre: "Trio et valse aux Arcs"
+  id: "trio_et_valse_aux_arcs"
   oeuvres:
       - Trio
       - Valse sur le nom de Godino
@@ -818,6 +904,7 @@
 
 - rawDate: "27/06/20"
   titre: "Concert et lecture à Lyon/Annulé"
+  id: "concert_et_lecture_a_lyon_annule"
   oeuvres:
       - Les Chants de l’Âme
       - Sonate de Requiem
@@ -829,6 +916,7 @@
 
 - rawDate: "25/05/20"
   titre: "Trio sur le Douro/Reporté"
+  id: "trio_sur_le_douro_reporte"
   oeuvres:
       - Trio
   interpretes: "Nicolas Dautricourt, violon ; Dominique de Williencourt, violoncelle ; Laure Favre-Kahn, piano."
@@ -838,6 +926,7 @@
 
 - rawDate: "04/04/20"
   titre: "Hölderlin dans le Quatrième / Reporté"
+  id: "holderlin_dans_le_quatrieme_reporte"
   oeuvres:
       - Hölderlin Lieder
       - Sonate n°15 “de Guerre”
@@ -851,6 +940,7 @@
 
 - rawDate: "13/03/20"
   titre: "Danse des morts à Riga"
+  id: "danse_des_morts_a_riga"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Piano Quartet RIX: Sandis Šteinbergs (violon), Ilze Kļava (alto), Reinis Birznieks (violoncelle), Jānis Maļeckis (piano). Orchestre National Symphonique de Lettonie, direction Andris Poga."
@@ -860,6 +950,7 @@
 
 - rawDate: "01/03/20"
   titre: "Carillon de Chérence à Copernic"
+  id: "carillon_de_cherence_a_copernic"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Célia Oneto-Bensaïd"
@@ -869,6 +960,7 @@
 
 - rawDate: "26/01/20"
   titre: "Meeting of the Waters à Copernic"
+  id: "meeting_of_the_waters_a_copernic"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Caroline Sageman, piano et Sarah Jegou, violon."
@@ -878,6 +970,7 @@
 
 - rawDate: "23/01/20"
   titre: "Chants de l’âme à Singer-Polignac"
+  id: "chants_de_l_ame_a_singer_polignac"
   oeuvres:
       - Les Chants de l’Âme
       - Le Tombeau de Ravel
@@ -888,6 +981,7 @@
 
 - rawDate: "21/12/19"
   titre: "Petite Cantate de Chambre au CRR"
+  id: "petite_cantate_de_chambre_au_crr"
   oeuvres:
       - Les Chants de l’Âme
       - Petite Cantate de Chambre
@@ -898,6 +992,7 @@
 
 - rawDate: "21/11/19"
   titre: "Trio à Namur"
+  id: "trio_a_namur"
   oeuvres:
       - Trio
   interpretes: "Thierry Bouillet (piano), Thomas Engelen (violoncelle) et Gilles Millet (violon)"
@@ -908,6 +1003,7 @@
 
 - rawDate: "18/11/19"
   titre: "Oi Akashe à L’association Chostakovitch"
+  id: "oi_akashe_a_l_association_chostakovitch"
   oeuvres:
       - Oi Akashe
   interpretes: "Anne-Elise Thouvenin, violoncelle et Amélie Pône, piano. "
@@ -916,6 +1012,7 @@
 
 - rawDate: "29/09/19"
   titre: "Premier Quatuor à Nancy"
+  id: "premier_quatuor_a_nancy"
   oeuvres:
       - Premier Quatuor à Cordes
   interpretes: "Bertrand Menut et Misa Hasegawa, violon, Paul Fenton, alto, François Oechslin, violoncelle."
@@ -925,6 +1022,7 @@
 
 - rawDate: "10/08/19"
   titre: "Solo from No à Bréhat"
+  id: "solo_from_no_a_brehat"
   oeuvres:
       - Solo from “Nô”
   interpretes: "Marceau Maréchal, violoncelle."
@@ -934,6 +1032,7 @@
 
 - rawDate: "07/08/19"
   titre: "Trottoirs de Paris à Deauville"
+  id: "trottoirs_de_paris_a_deauville"
   oeuvres:
       - Les Trottoirs de Paris
   interpretes: "Clémentine Decouture, soprano; Paco Garcia, ténor; Philippe Hattat, piano."
@@ -943,6 +1042,7 @@
 
 - rawDate: "31/07/19"
   titre: "Chants de l’âme à Deauville"
+  id: "chants_de_l_ame_a_deauville"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Marie-Laure Garnier, mezzo-soprano; Philippe Hattat, piano."
@@ -952,6 +1052,7 @@
 
 - rawDate: "20/07/19"
   titre: "Solo from Nô dans l’Yonne"
+  id: "solo_from_no_dans_l_yonne"
   oeuvres:
       - Caprice pour Colette
       - Solo from “Nô”
@@ -962,6 +1063,7 @@
 
 - rawDate: "12/07/19"
   titre: "Requiem en Bretagne"
+  id: "requiem_en_bretagne"
   oeuvres:
       - Requiem
   interpretes: "Ensemble vocal les Temps Dérobés, direction Félix Benati."
@@ -971,6 +1073,7 @@
 
 - rawDate: "28/06/19"
   titre: "Requiem à Sceaux"
+  id: "requiem_a_sceaux"
   oeuvres:
       - Requiem
   interpretes: "Ensemble vocal les Temps Dérobés, direction Félix Benati "
@@ -980,6 +1083,7 @@
 
 - rawDate: "26/05/19"
   titre: "Quadruple Concerto à Beauvais"
+  id: "quadruple_concerto_a_beauvais"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Pascal Amoyel, piano; Gaëtane Prouvost, violon; Su Zhen, alto; Emmanuelle Bertrand, violoncelle. Orchestre de Douai sous la direction de Jean-Jacques Kantorow."
@@ -989,6 +1093,7 @@
 
 - rawDate: "25/05/19"
   titre: "Greif rue de Madrid"
+  id: "greif_rue_de_madrid"
   oeuvres:
       - In Memoriam
       - Rondo pour Piano “42nd Street”
@@ -999,6 +1104,7 @@
 
 - rawDate: "10/05/19"
   titre: "Concert anniversaire"
+  id: "concert_anniversaire"
   oeuvres:
       - Little Black Mass
       - Sonate n°18 pour Piano “Three Poems of Li T’ai Po”
@@ -1012,6 +1118,7 @@
 
 - rawDate: "24/03/19"
   titre: "Quadruple Concerto à Douai"
+  id: "quadruple_concerto_a_douai"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Pascal Amoyel, piano; Gaëtane Prouvost, violon; Su Zhen, alto; Emmanuelle Bertrand, violoncelle. Orchestre de Douai sous la direction de Jean-Jacques Kantorow."
@@ -1021,6 +1128,7 @@
 
 - rawDate: "24/01/19"
   titre: "Concert Greif à Newcastle"
+  id: "concert_greif_a_newcastle"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
       - Quatuor n°3 “Todesfuge”
@@ -1032,6 +1140,7 @@
 
 - rawDate: "13/01/19"
   titre: "Ulysses au Pan Piper"
+  id: "ulysses_au_pan_piper"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Yaïr BenaÏm, violoniste et chef d’orchestre; Open chamber orchestra."
@@ -1041,6 +1150,7 @@
 
 - rawDate: "25/11/18"
   titre: "Trio à Eelde"
+  id: "trio_a_eelde"
   oeuvres:
       - Trio
   interpretes: "Membres de l’ensemble Olivier Greif: Victoria Dmitrieva, piano; Jesus Jimenez Abril, violon; Anne-Élise Thouvenin, violoncelle."
@@ -1049,6 +1159,7 @@
 
 - rawDate: "12/11/18"
   titre: "Adagio à Newcastle"
+  id: "adagio_a_newcastle"
   oeuvres:
       - Adagio
   interpretes: "Iona Brown et Alexandra Raikhlina, violon; Yoshie Kawamura, piano."
@@ -1058,6 +1169,7 @@
 
 - rawDate: "11/11/18"
   titre: "Sonate de Requiem à Hellevoestluis"
+  id: "sonate_de_requiem_a_hellevoestluis"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Victoria Dmitrieva, piano; Anne-Élise Thouvenin, violoncelle."
@@ -1066,6 +1178,7 @@
 
 - rawDate: "25/05/18"
   titre: "Trio à La Haye"
+  id: "trio_a_la_haye"
   oeuvres:
       - Trio
   interpretes: "Membres de l’ensemble Olivier Greif: Victoria Dmitrieva, piano; Jesus Jimenez Abril, violon; Anne-Élise Thouvenin, violoncelle."
@@ -1074,6 +1187,7 @@
 
 - rawDate: "03/05/18"
   titre: "Journée Greif à Grenoble"
+  id: "journee_greif_a_grenoble"
   oeuvres:
       - Cinq Chansons Enfantines
       - Piano Book
@@ -1085,6 +1199,7 @@
 
 - rawDate: "03/05/18"
   titre: "Rêve du monde à Copernic"
+  id: "reve_du_monde_a_copernic"
   oeuvres:
       - Sonate pour Piano n°20 “Le Rêve du Monde”
   interpretes: "Jonathan Bénichou, piano"
@@ -1094,6 +1209,7 @@
 
 - rawDate: "03/05/18"
   titre: "Chants de l’âme à Grenoble"
+  id: "chants_de_l_ame_a_grenoble"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Chrystèle Chovelon, chant et Florence Cioccolani, piano."
@@ -1103,6 +1219,7 @@
 
 - rawDate: "22/04/18"
   titre: "Plaisirs de Chérence dans le Vermont"
+  id: "plaisirs_de_cherence_dans_le_vermont"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Tae Kim, piano"
@@ -1112,6 +1229,7 @@
 
 - rawDate: "22/03/18"
   titre: "Trio à Kortenhoef"
+  id: "trio_a_kortenhoef"
   oeuvres:
       - Trio
   interpretes: "Membres de l’ensemble Olivier Greif: Victoria Dmitrieva, piano; Jesus Jimenez Abril, violon; Anne-Élise Thouvenin, violoncelle."
@@ -1120,6 +1238,7 @@
 
 - rawDate: "08/03/18"
   titre: "Olivier au Conservatoire"
+  id: "olivier_au_conservatoire"
   oeuvres:
       - In Memoriam
       - Le Livre des Saints Irlandais
@@ -1133,6 +1252,7 @@
 
 - rawDate: "28/01/18"
   titre: "Trio à Eelde"
+  id: "trio_a_eelde"
   oeuvres:
       - Trio
   interpretes: "Membres de l’ensemble Olivier Greif: Victoria Dmitrieva, piano; Jesus Jimenez Abril, violon; Anne-Élise Thouvenin, violoncelle."
@@ -1141,6 +1261,7 @@
 
 - rawDate: "16/12/17"
   titre: "Trio à Marseille"
+  id: "trio_a_marseille"
   oeuvres:
   interpretes: "Trio Arcadis: Amandine Ley, violon; Anne-Claire Lantenois, piano; Nicolas Saint Yves, violoncelle."
   adresse: "Alcazar, 58 cours Belsunce, 13001 Marseille"
@@ -1149,6 +1270,7 @@
 
 - rawDate: "10/12/17"
   titre: "Trio à Bourges"
+  id: "trio_a_bourges"
   oeuvres:
       - Trio
   interpretes: "Trio Ranganathan: Ajay, Ravi et Théo Ranganathan"
@@ -1157,6 +1279,7 @@
 
 - rawDate: "20/10/17"
   titre: "Trio à Aduard"
+  id: "trio_a_aduard"
   oeuvres:
       - Trio
   interpretes: "Membres de l’ensemble Olivier Greif: Victoria Dmitrieva, piano; Jesus Jimenez Abril, violon; Anne-Élise Thouvenin, violoncelle."
@@ -1165,6 +1288,7 @@
 
 - rawDate: "12/10/17"
   titre: "Chérence à Boston"
+  id: "cherence_a_boston"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Tae Kim, piano"
@@ -1174,6 +1298,7 @@
 
 - rawDate: "07/10/17"
   titre: "Trio à Valthermond"
+  id: "trio_a_valthermond"
   oeuvres:
       - Trio
   interpretes: "Membres de l’ensemble Olivier Greif: Victoria Dmitrieva, piano; Jesus Jimenez Abril, violon; Anne-Élise Thouvenin, violoncelle."
@@ -1182,6 +1307,7 @@
 
 - rawDate: "26/08/17"
   titre: "Westerbork dans le Var"
+  id: "westerbork_dans_le_var"
   oeuvres:
       - Lettres de Westerbork
   interpretes: "Fiona McGown, mezzo-soprano; Hélène Maréchaux et Olivia Hugues, violon."
@@ -1191,6 +1317,7 @@
 
 - rawDate: "18/08/17"
   titre: "Goût ancien à Sceaux"
+  id: "gout_ancien_a_sceaux"
   oeuvres:
   interpretes: "Takuya Otaki, piano."
   adresse: "Orangerie du Parc de Sceaux"
@@ -1199,6 +1326,7 @@
 
 - rawDate: "13/05/17"
   titre: "Concert anniversaire"
+  id: "concert_anniversaire"
   oeuvres:
       - Hölderlin Lieder
       - Rondo pour Piano “42nd Street”
@@ -1210,6 +1338,7 @@
 
 - rawDate: "23/04/17"
   titre: "Trio à Anvers"
+  id: "trio_a_anvers"
   oeuvres:
       - Trio
   interpretes: "Membres de l’ensemble Olivier Greif: Victoria Dmitrieva, piano; Jesus Jimenez Abril, violon; Anne-Élise Thouvenin, violoncelle."
@@ -1218,6 +1347,7 @@
 
 - rawDate: "09/04/17"
   titre: "A Tragic Football Game en Normandie"
+  id: "a_tragic_football_game_en_normandie"
   oeuvres:
       - A Tragic Football Game
   interpretes: "Philippe Hattat, piano."
@@ -1227,6 +1357,7 @@
 
 - rawDate: "23/03/17"
   titre: "Plaisirs de Chérence à Orléans"
+  id: "plaisirs_de_cherence_a_orleans"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Tae Kim, piano, lauréat du dernier concours international de piano d’Orléans."
@@ -1236,6 +1367,7 @@
 
 - rawDate: "21/03/17"
   titre: "Portraits et Apparitions au CRR"
+  id: "portraits_et_apparitions_au_crr"
   oeuvres:
       - Portraits et Apparitions
   interpretes: "Tae Kim, piano"
@@ -1245,6 +1377,7 @@
 
 - rawDate: "04/02/17"
   titre: "Danse des morts à la Folle Journée"
+  id: "danse_des_morts_a_la_folle_journee"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Marie-Josèphe Jude, piano; Olivier Charlier, violon; Gérard Caussé, alto; Henri Demarquette, violoncelle. Orchestre Poitou-Charentes, direction Jean-François Heisser."
@@ -1254,6 +1387,7 @@
 
 - rawDate: "25/01/17"
   titre: "Sonate de Requiem à Montréal"
+  id: "sonate_de_requiem_a_montreal"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano"
@@ -1263,6 +1397,7 @@
 
 - rawDate: "25/01/17"
   titre: "Quadruple concerto en Hollande"
+  id: "quadruple_concerto_en_hollande"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Victoria Dmitrieva, piano; Jesus Jimenez Abril, violon; Luca Altdorfer, alto; Anne-Élise Thouvenin, violoncelle. Orchestre: professeurs et élèves du conservatoire. "
@@ -1272,6 +1407,7 @@
 
 - rawDate: "13/01/17"
   titre: "Bataille d’Agincourt à Vienne"
+  id: "bataille_d_agincourt_a_vienne"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
       - Oi Akashe
@@ -1283,6 +1419,7 @@
 
 - rawDate: "15/12/16"
   titre: "Trio à Amsterdam"
+  id: "trio_a_amsterdam"
   oeuvres:
   interpretes: "Membres de l’ensemble Olivier Greif: Victoria Dmitrieva, piano; Jesus Jimenez Abril, violon; Anne-Élise Thouvenin, violoncelle."
   adresse: "Synagogue Portugaise, Mr. Visserplein, Amsterdam"
@@ -1291,6 +1428,7 @@
 
 - rawDate: "29/10/16"
   titre: "Saints irlandais en Normandie"
+  id: "saints_irlandais_en_normandie"
   oeuvres:
       - Le Livre des Saints Irlandais
   interpretes: "Mathieu Lecroart, baryton et Denis Contet, orgue"
@@ -1300,6 +1438,7 @@
 
 - rawDate: "19/10/16"
   titre: "Trio à Groningen"
+  id: "trio_a_groningen"
   oeuvres:
       - Trio
   interpretes: "Membres de l’Ensemble Olivier Greif : Victoria Dmitrieva, piano; Jesus Jimenez Abril, violon; Anne-Élise Thouvenin, violoncelle."
@@ -1309,6 +1448,7 @@
 
 - rawDate: "26/09/16"
   titre: "Ulysses à la radio"
+  id: "ulysses_a_la_radio"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Ensemble Syntonia: Stéphanie Moraly, Thibault Noally, Caroline Donin, Patrick Langot."
@@ -1318,6 +1458,7 @@
 
 - rawDate: "18/09/16"
   titre: "Tragic football game à Orléans"
+  id: "tragic_football_game_a_orleans"
   oeuvres:
       - A Tragic Football Game
   interpretes: "Philippe Hattat, piano"
@@ -1327,6 +1468,7 @@
 
 - rawDate: "15/09/16"
   titre: "Bataille d’Agincourt à Vienne"
+  id: "bataille_d_agincourt_a_vienne"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Ura Korff et Christophe Pantillon, violoncelles."
@@ -1336,6 +1478,7 @@
 
 - rawDate: "13/09/16"
   titre: "Lettres de Westerbork en Hollande"
+  id: "lettres_de_westerbork_en_hollande"
   oeuvres:
       - Lettres de Westerbork
   interpretes: "Ekaterina Levental, mezzo-soprano, Emmy Verhey et Giles Francis, violons."
@@ -1344,6 +1487,7 @@
 
 - rawDate: "27/07/16"
   titre: "Ulysses à Risoul"
+  id: "ulysses_a_risoul"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Quatuor Syntonia (Stéphanie Moraly, Thibault Noally, Caroline Donin, Patrick Langot)"
@@ -1353,6 +1497,7 @@
 
 - rawDate: "25/07/16"
   titre: "Meeting of the waters à Eygliers"
+  id: "meeting_of_the_waters_a_eygliers"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Stéphanie Moraly, violon et Romain David, piano."
@@ -1362,6 +1507,7 @@
 
 - rawDate: "18/05/16"
   titre: "Imago Mundi, création"
+  id: "imago_mundi_creation"
   oeuvres:
       - Imago Mundi
       - Symphonie version voix et orgue
@@ -1372,6 +1518,7 @@
 
 - rawDate: "11/05/16"
   titre: "Berceuses rue Madame"
+  id: "berceuses_rue_madame"
   oeuvres:
       - Cinq Chansons Enfantines
   interpretes: "L’oiseleur des Longchamps, baryton; Clémentine Decouture, soprano; Nicolas Chevereau, pianiste."
@@ -1381,6 +1528,7 @@
 
 - rawDate: "15/04/16"
   titre: "Alouette au temple du Luxembourg"
+  id: "alouette_au_temple_du_luxembourg"
   oeuvres:
       - Quatre Poèmes de J. Prévert
   interpretes: "L’oiseleur des Longchamps, baryton et Laurianne Corneille, piano."
@@ -1390,6 +1538,7 @@
 
 - rawDate: "17/02/16"
   titre: "Ulysses à la synagogue Copernic"
+  id: "ulysses_a_la_synagogue_copernic"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Quatuor Copernic: Amaury Coeytaux, violon, Maud Lovett, violon, Marie Chilemme, alto, Victor Julien-Laferrière, violoncelle."
@@ -1399,6 +1548,7 @@
 
 - rawDate: "07/02/16"
   titre: "Danses rue Copernic"
+  id: "danses_rue_copernic"
   oeuvres:
       - Piano Book
   interpretes: "Laure Favre-Kahn, piano"
@@ -1408,6 +1558,7 @@
 
 - rawDate: "15/11/15"
   titre: "Ulysses à la synagogue Copernic"
+  id: "ulysses_a_la_synagogue_copernic"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Concert reporté en raison des attentats du 13 novembre"
@@ -1417,6 +1568,7 @@
 
 - rawDate: "03/11/15"
   titre: "Agincourt aux Invalides"
+  id: "agincourt_aux_invalides"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Henri Demarquette et Raphaël Pidoux, violoncelles."
@@ -1426,6 +1578,7 @@
 
 - rawDate: "13/08/15"
   titre: "Notturno à Guillestre"
+  id: "notturno_a_guillestre"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Ensemble Syntonia"
@@ -1435,6 +1588,7 @@
 
 - rawDate: "29/07/15"
   titre: "Veni Creator à Montepulciano"
+  id: "veni_creator_a_montepulciano"
   oeuvres:
   interpretes: "Markus Bellheim, piano et Justus Grimm, violoncelle."
   adresse: "Palazzo Ricci - Salone, Montepulciano, province de Sienne, Italie"
@@ -1443,6 +1597,7 @@
 
 - rawDate: "22/07/15"
   titre: "Sonate de guerre en Toscane"
+  id: "sonate_de_guerre_en_toscane"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Markus Bellheim, piano"
@@ -1452,6 +1607,7 @@
 
 - rawDate: "13/06/15"
   titre: "Concert Greif à Vézénobres"
+  id: "concert_greif_a_vezenobres"
   oeuvres:
       - Sonate de Requiem
       - Trio
@@ -1463,6 +1619,7 @@
 
 - rawDate: "25/05/15"
   titre: "Requiem à Rueil"
+  id: "requiem_a_rueil"
   oeuvres:
       - Requiem
   interpretes: "Chœur français des jeunes, direction Philippe Forget"
@@ -1472,6 +1629,7 @@
 
 - rawDate: "24/05/15"
   titre: "Requiem à Montrouge"
+  id: "requiem_a_montrouge"
   oeuvres:
       - Requiem
   interpretes: "Chœur National des Jeunes, Philippe Forget."
@@ -1481,6 +1639,7 @@
 
 - rawDate: "21/05/15"
   titre: "Concert anniversaire"
+  id: "concert_anniversaire"
   oeuvres:
       - Trio
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
@@ -1493,6 +1652,7 @@
 
 - rawDate: "15/05/15"
   titre: "Symphonie à Châteauneuf-sur-Cher"
+  id: "symphonie_a_chateauneuf_sur_cher"
   oeuvres:
       - Symphonie version voix et orgue
   interpretes: "Louis-Pierre Patron, baryton et Augustin Belliot, orgue."
@@ -1502,6 +1662,7 @@
 
 - rawDate: "27/03/15"
   titre: "Sonate de guerre au château du Rivau"
+  id: "sonate_de_guerre_au_chateau_du_rivau"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Le Liu, piano."
@@ -1511,6 +1672,7 @@
 
 - rawDate: "05/03/15"
   titre: "Bourbonnais en Savoie et Haute-Savoie"
+  id: "bourbonnais_en_savoie_et_haute_savoie"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Quatuor à cordes de l’Orchestre des Pays de Savoie"
@@ -1520,6 +1682,7 @@
 
 - rawDate: "05/02/15"
   titre: "Sonate de guerre au CRR"
+  id: "sonate_de_guerre_au_crr"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano"
@@ -1529,6 +1692,7 @@
 
 - rawDate: "13/12/14"
   titre: "Sonate de guerre à Grenoble"
+  id: "sonate_de_guerre_a_grenoble"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule, piano"
@@ -1538,6 +1702,7 @@
 
 - rawDate: "09/12/14"
   titre: "Sonate de Guerre à Metz"
+  id: "sonate_de_guerre_a_metz"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule"
@@ -1547,6 +1712,7 @@
 
 - rawDate: "01/12/14"
   titre: "Hommage à Raymond Roussel à Minsk"
+  id: "hommage_a_raymond_roussel_a_minsk"
   oeuvres:
       - Second Hommage à Raymond Roussel
   interpretes: "Nicolas Horvath"
@@ -1556,6 +1722,7 @@
 
 - rawDate: "18/11/14"
   titre: "Sonate de Requiem à Lodz"
+  id: "sonate_de_requiem_a_lodz"
   oeuvres:
       - Sonate de Requiem
       - Veni Creator
@@ -1566,6 +1733,7 @@
 
 - rawDate: "15/11/14"
   titre: "Sonate de Requiem au Japon"
+  id: "sonate_de_requiem_au_japon"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Mari Ishihara, violoncelle et Yulia Lev, piano."
@@ -1575,6 +1743,7 @@
 
 - rawDate: "16/09/14"
   titre: "Requiem à la Cité de la Musique"
+  id: "requiem_a_la_cite_de_la_musique"
   oeuvres:
       - Requiem
   interpretes: "Chœur national des jeunes, dir. Philippe Forget."
@@ -1584,6 +1753,7 @@
 
 - rawDate: "10/09/14"
   titre: "Le Mort Joyeux"
+  id: "le_mort_joyeux"
   oeuvres:
   interpretes: "Même concert que la veille."
   adresse: ""
@@ -1591,6 +1761,7 @@
 
 - rawDate: "09/09/14"
   titre: "Le Mort Joyeux"
+  id: "le_mort_joyeux"
   oeuvres:
   interpretes: "Loiseleur des Longchamps, baryton et François Henry, piano."
   adresse: "Théâtre de l’Île Saint-Louis, 39 quai d’Anjou, 75004 Paris"
@@ -1599,6 +1770,7 @@
 
 - rawDate: "17/08/14"
   titre: "Symphonie avec orgue à Blois"
+  id: "symphonie_avec_orgue_a_blois"
   oeuvres:
       - Symphonie version voix et orgue
   interpretes: "Loiseleur des Longchamps, voix, et Vincent Grappy, orgue."
@@ -1608,6 +1780,7 @@
 
 - rawDate: "30/07/14"
   titre: "Greif sur Mezzo"
+  id: "greif_sur_mezzo"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
@@ -1622,6 +1795,7 @@
 
 - rawDate: "23/07/14"
   titre: "Soirée Greif à Groningen"
+  id: "soiree_greif_a_groningen"
   oeuvres:
       - Sonate de Requiem
       - Trio
@@ -1633,6 +1807,7 @@
 
 - rawDate: "26/06/14"
   titre: "Greif à Groningen"
+  id: "greif_a_groningen"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
       - Trio
@@ -1643,6 +1818,7 @@
 
 - rawDate: "25/06/14"
   titre: "Sonate de Requiem en Hollande"
+  id: "sonate_de_requiem_en_hollande"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Anne-Elise Thouvenin, violoncelle et Victoria Dmitrieva, piano."
@@ -1652,6 +1828,7 @@
 
 - rawDate: "15/06/14"
   titre: "Sonate de guerre à Lille"
+  id: "sonate_de_guerre_a_lille"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Aline Piboule"
@@ -1661,6 +1838,7 @@
 
 - rawDate: "04/06/14"
   titre: "Musset par L’Oiseleur"
+  id: "musset_par_l_oiseleur"
   oeuvres:
       - Three Settings of Musset
   interpretes: "Chloé Chaume, soprano; Emilien Marion, ténor; l’Oiseleur des Longchamps , baryton; Stéphanie Humeau, pianiste."
@@ -1670,6 +1848,7 @@
 
 - rawDate: "31/05/14"
   titre: "Symphonie pour voix et orgue à Honfleur"
+  id: "symphonie_pour_voix_et_orgue_a_honfleur"
   oeuvres:
       - Symphonie version voix et orgue
   interpretes: "Catherine Gouillard, organiste, et Loiseleur des Longchamps, baryton."
@@ -1679,6 +1858,7 @@
 
 - rawDate: "31/05/14"
   titre: "Meeting of the waters à La Prée"
+  id: "meeting_of_the_waters_a_la_pree"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Alexis Galpérine, violon; J-M. Dayez, piano."
@@ -1688,6 +1868,7 @@
 
 - rawDate: "31/05/14"
   titre: "Solo from Nô à Saint-Ambroix"
+  id: "solo_from_no_a_saint_ambroix"
   oeuvres:
       - Solo from “Nô”
   interpretes: "Alexis Galpérine, alto."
@@ -1697,6 +1878,7 @@
 
 - rawDate: "11/05/14"
   titre: "Greif à La Roche-Guyon"
+  id: "greif_a_la_roche_guyon"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
       - Shylock Funèbre
@@ -1707,6 +1889,7 @@
 
 - rawDate: "03/05/14"
   titre: "Symphonie pour voix et orgue à Villers-sur-mer"
+  id: "symphonie_pour_voix_et_orgue_a_villers_sur_mer"
   oeuvres:
       - Symphonie version voix et orgue
   interpretes: "Catherine Gouillard, organiste, et Loiseleur des Longchamps, baryton"
@@ -1716,6 +1899,7 @@
 
 - rawDate: "19/04/14"
   titre: "Danse des morts à Deauville"
+  id: "danse_des_morts_a_deauville"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Pierre Fouchenneret, violon; Adrien Boisseau, alto; Jérôme Pernoo, violoncelle; Jérôme Ducros, piano; l’Atelier de musique moderne; Maxime Pascal, direction."
@@ -1725,6 +1909,7 @@
 
 - rawDate: "03/04/14"
   titre: "Sonate de guerre à Vienne"
+  id: "sonate_de_guerre_a_vienne"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Le Liu, piano"
@@ -1734,6 +1919,7 @@
 
 - rawDate: "01/02/14"
   titre: "Sonate de guerre au Conservatoire Frédéric Chopin"
+  id: "sonate_de_guerre_au_conservatoire_frederic_chopin"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Yoko Yamada"
@@ -1743,6 +1929,7 @@
 
 - rawDate: "10/01/14"
   titre: "Trio dans le treizième"
+  id: "trio_dans_le_treizieme"
   oeuvres:
       - Trio
   interpretes: "Gaëtane Prouvost, violon; Valérie Aimard, violoncelle; Alexandre Gasparov, piano"
@@ -1752,6 +1939,7 @@
 
 - rawDate: "05/12/13"
   titre: "Portraits & apparitions à La Prée"
+  id: "portraits_apparitions_a_la_pree"
   oeuvres:
       - Portraits et Apparitions
   interpretes: "Andrew Zhou, piano"
@@ -1761,6 +1949,7 @@
 
 - rawDate: "05/11/13"
   titre: "Trio à Singer-Polignac"
+  id: "trio_a_singer_polignac"
   oeuvres:
       - Trio
   interpretes: "Trio Dali: Jack Leibeck, violon, Christian-Pierre La Marca, violoncelle, Amandine Savary, piano."
@@ -1770,6 +1959,7 @@
 
 - rawDate: "28/10/13"
   titre: "Ulysses à la maison de Radio France"
+  id: "ulysses_a_la_maison_de_radio_france"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Ensemble Syntonia"
@@ -1779,6 +1969,7 @@
 
 - rawDate: "03/10/13"
   titre: "Portraits et Apparitions à Singer-Polignac"
+  id: "portraits_et_apparitions_a_singer_polignac"
   oeuvres:
       - Portraits et Apparitions
   interpretes: "Andrew Zhou, piano"
@@ -1788,6 +1979,7 @@
 
 - rawDate: "29/09/13"
   titre: "Agincourt à Rennes"
+  id: "agincourt_a_rennes"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Maëlle Maillard et Patrick Langot, violoncelles"
@@ -1797,6 +1989,7 @@
 
 - rawDate: "29/09/13"
   titre: "Lettres de Westerbork à Ivry"
+  id: "lettres_de_westerbork_a_ivry"
   oeuvres:
       - Lettres de Westerbork
   interpretes: "Donatienne Michel-Dansac, chant; Jeanne Marie Conquer et André Pons-Valdes, violons."
@@ -1806,6 +1999,7 @@
 
 - rawDate: "01/09/13"
   titre: "Sonate de Requiem à Ravignan"
+  id: "sonate_de_requiem_a_ravignan"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Duo Parhélies: Maitane Sebastian, violoncelle, et Julien Le Pape, piano. "
@@ -1815,6 +2009,7 @@
 
 - rawDate: "30/07/13"
   titre: "Tombeau de Ravel dans les Hautes-Alpes"
+  id: "tombeau_de_ravel_dans_les_hautes_alpes"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Marina Friedman et Gabriella Talrose"
@@ -1824,6 +2019,7 @@
 
 - rawDate: "29/07/13"
   titre: "Violon et piano aux Arcs"
+  id: "violon_et_piano_aux_arcs"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Alexis Galpérine, violon et Jean-Michel Dayez, piano"
@@ -1833,6 +2029,7 @@
 
 - rawDate: "28/07/13"
   titre: "Trio à l’Oratoire du Louvre"
+  id: "trio_a_l_oratoire_du_louvre"
   oeuvres:
       - Trio
   interpretes: "Rachel Koblyakov violon, Khari Joyner violoncelle, Jules Matton piano"
@@ -1842,6 +2039,7 @@
 
 - rawDate: "25/07/13"
   titre: "Ich ruf zu dir à Belle-Ile"
+  id: "ich_ruf_zu_dir_a_belle_ile"
   oeuvres:
       - Ich Ruf zu Dir
   interpretes: "Armand Angster, clarinette; Alexandre Gasparov, piano; Nathanaëlle Marie et Isabelle Lesage, violons; Laurent Camatte, alto; Christophe Beau, violoncelle."
@@ -1851,6 +2049,7 @@
 
 - rawDate: "16/07/13"
   titre: "Sonate de Requiem en Dordogne"
+  id: "sonate_de_requiem_en_dordogne"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Duo Parhélies: Maitane Sebastian, violoncelle, et Julien Le Pape, piano. "
@@ -1860,6 +2059,7 @@
 
 - rawDate: "06/07/13"
   titre: "Sonate de Requiem à St Pierre de Jards"
+  id: "sonate_de_requiem_a_st_pierre_de_jards"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Duo Parhélies: Maitane Sebastian, violoncelle, et  Julien Le Pape, piano."
@@ -1869,6 +2069,7 @@
 
 - rawDate: "15/05/13"
   titre: "Solo from Nô"
+  id: "solo_from_no"
   oeuvres:
       - Solo from “Nô”
   interpretes: "Patrick Langot, violoncelle."
@@ -1878,6 +2079,7 @@
 
 - rawDate: "14/05/13"
   titre: "Tombeau de Ravel à la fondation Singer-Polignac"
+  id: "tombeau_de_ravel_a_la_fondation_singer_polignac"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Ismaël Margain et Guillaume Bellom , piano."
@@ -1886,6 +2088,7 @@
 
 - rawDate: "11/05/13"
   titre: "Portrait de l’artiste à La Prée"
+  id: "portrait_de_l_artiste_a_la_pree"
   oeuvres:
       - Portraits et Apparitions
   interpretes: "Dana Ciocarlie, piano."
@@ -1895,6 +2098,7 @@
 
 - rawDate: "11/05/13"
   titre: "Trio à La Prée"
+  id: "trio_a_la_pree"
   oeuvres:
       - Trio
   interpretes: "Trio Dali: Amandine Savary, pinao; Jack Liebeck, violon; Christian-Pierre La Marca, violoncelle."
@@ -1904,6 +2108,7 @@
 
 - rawDate: "24/04/13"
   titre: "Lettres de Westerbork à Londres"
+  id: "lettres_de_westerbork_a_londres"
   oeuvres:
       - Lettres de Westerbork
   interpretes: "Céline Laly, soprano; Yu Zhuang et Manuel Oswald, violon."
@@ -1913,6 +2118,7 @@
 
 - rawDate: "10/04/13"
   titre: "Lettres de Westerbork au Goethe Institut"
+  id: "lettres_de_westerbork_au_goethe_institut"
   oeuvres:
       - Lettres de Westerbork
   interpretes: "Céline Laly, soprano; Yu Zhuang et Manuel Oswald, violon"
@@ -1922,6 +2128,7 @@
 
 - rawDate: "10/04/13"
   titre: "Je voudrais aller sur la lune"
+  id: "je_voudrais_aller_sur_la_lune"
   oeuvres:
       - Cinq Chansons Enfantines
   interpretes: "Evelyn Vergara, soprano; Emilien Marion, ténor; L’oiseleur, baryton; Christophe Maynard, pianiste."
@@ -1931,6 +2138,7 @@
 
 - rawDate: "23/03/13"
   titre: "Battle of Agincourt à Villiers-Saint-Frédéric"
+  id: "battle_of_agincourt_a_villiers_saint_frederic"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Bertrand Malmasson et Johannes le Pennec, violoncelles."
@@ -1940,6 +2148,7 @@
 
 - rawDate: "17/03/13"
   titre: "Symphonie version voix et orgue à Niort"
+  id: "symphonie_version_voix_et_orgue_a_niort"
   oeuvres:
       - Symphonie
   interpretes: "L’oiseleur des Longchamps, baryton, et Arnaud de Beauregard, organiste titulaire de la cathédrale de Niort."
@@ -1949,6 +2158,7 @@
 
 - rawDate: "07/03/13"
   titre: "Hommage à Ravel"
+  id: "hommage_a_ravel"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Henri Barda et Olivier Mazal, pianos."
@@ -1958,6 +2168,7 @@
 
 - rawDate: "19/02/13"
   titre: "Sonate n°5 à Kiev"
+  id: "sonate_n_5_a_kiev"
   oeuvres:
       - Sonate n°5 pour Piano “Trois pièces”
   interpretes: "Nicolas Horvath, piano"
@@ -1966,6 +2177,7 @@
 
 - rawDate: "17/02/13"
   titre: "Agincourt à Macon"
+  id: "agincourt_a_macon"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Agnès Vesterman et Patrick Langot, violoncelles."
@@ -1974,6 +2186,7 @@
 
 - rawDate: "13/01/13"
   titre: "Chevauchée à Dijon"
+  id: "chevauchee_a_dijon"
   oeuvres:
       - Cinq Chansons Enfantines
   interpretes: "Catherine Dune, soprano; L’oiseleur, baryton; Mary Olivon, pianiste."
@@ -1983,6 +2196,7 @@
 
 - rawDate: "25/11/12"
   titre: "Sonate n°5 à l’Église Américaine"
+  id: "sonate_n_5_a_l_eglise_americaine"
   oeuvres:
       - Sonate n°5 pour Piano “Trois pièces”
   interpretes: "Nicolas Horvath, piano."
@@ -1992,6 +2206,7 @@
 
 - rawDate: "25/10/12"
   titre: "Bataille d’Agincourt salle Cortot"
+  id: "bataille_d_agincourt_salle_cortot"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Bertrand Malmasson et Johannes le Pennec, violoncelles."
@@ -2001,6 +2216,7 @@
 
 - rawDate: "06/10/12"
   titre: "Cinquante doigts à Franconville"
+  id: "cinquante_doigts_a_franconville"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Pascal Amoyel – voir ci-contre."
@@ -2010,6 +2226,7 @@
 
 - rawDate: "29/07/12"
   titre: "Sonate de Requiem à Sceaux"
+  id: "sonate_de_requiem_a_sceaux"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Henri Demarquette, violoncelle et Giovanni Belluci, piano."
@@ -2019,6 +2236,7 @@
 
 - rawDate: "28/07/12"
   titre: "Tombeau de Ravel en Alsace"
+  id: "tombeau_de_ravel_en_alsace"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Jonas Vitaud et Olivier Triendl, piano"
@@ -2028,6 +2246,7 @@
 
 - rawDate: "23/07/12"
   titre: "Sonate de Requiem dans la Somme"
+  id: "sonate_de_requiem_dans_la_somme"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Duo Parhélies: Maitane Sebastian, violoncelle et Julien Le Pape, piano."
@@ -2037,6 +2256,7 @@
 
 - rawDate: "12/06/12"
   titre: "Sonate de Requiem à Genève"
+  id: "sonate_de_requiem_a_geneve"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Marylise Ballot, violoncelle et Saya Hashino, piano"
@@ -2046,6 +2266,7 @@
 
 - rawDate: "03/06/12"
   titre: "Requiem à Londres"
+  id: "requiem_a_londres"
   oeuvres:
       - Requiem
   interpretes: "St James choir."
@@ -2055,6 +2276,7 @@
 
 - rawDate: "22/05/12"
   titre: "Ulysses à Gaveau"
+  id: "ulysses_a_gaveau"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Quatuor Benaïm"
@@ -2064,6 +2286,7 @@
 
 - rawDate: "21/05/12"
   titre: "Sonates à Londres"
+  id: "sonates_a_londres"
   oeuvres:
       - Sonate de Requiem
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
@@ -2074,6 +2297,7 @@
 
 - rawDate: "26/04/12"
   titre: "Soirée Greif à Namur"
+  id: "soiree_greif_a_namur"
   oeuvres:
       - Sonate de Requiem
       - Trio
@@ -2084,6 +2308,7 @@
 
 - rawDate: "18/03/12"
   titre: "Orléans sur France-Musique"
+  id: "orleans_sur_france_musique"
   oeuvres:
       - Am Grabe Franz Liszts
   interpretes: "Concert des lauréats du concours d’Orléans. Andrew Zhou, prix Olivier Greif, joue Am Grabe Franz Liszts."
@@ -2093,6 +2318,7 @@
 
 - rawDate: "05/03/12"
   titre: "Am Grabe Franz Liszts"
+  id: "am_grabe_franz_liszts"
   oeuvres:
       - Am Grabe Franz Liszts
   interpretes: "Andrew Zhou, piano"
@@ -2102,6 +2328,7 @@
 
 - rawDate: "24/02/12"
   titre: "Brève sonate en Floride"
+  id: "breve_sonate_en_floride"
   oeuvres:
       - Sonate n°5 pour Piano “Trois pièces”
   interpretes: "Nicolas Horvath, piano "
@@ -2111,6 +2338,7 @@
 
 - rawDate: "20/02/12"
   titre: "Sonate de Requiem à Vienne"
+  id: "sonate_de_requiem_a_vienne"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Alexander Gebert, violoncelle et Anna Magdalena Kokits, piano"
@@ -2120,6 +2348,7 @@
 
 - rawDate: "16/02/12"
   titre: "Concerto à Gaveau"
+  id: "concerto_a_gaveau"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Emmanuelle Bertrand, violoncelle et l’Orchestre National d’Île de France, dirigé par Marc Minkowski"
@@ -2129,6 +2358,7 @@
 
 - rawDate: "07/01/12"
   titre: "Créations à Cantus Formus"
+  id: "creations_a_cantus_formus"
   oeuvres:
       - Le Mort Joyeux
       - Light Music
@@ -2140,6 +2370,7 @@
 
 - rawDate: "18/12/11"
   titre: "Chérence au Ranelagh"
+  id: "cherence_au_ranelagh"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Pascal Amoyel, piano"
@@ -2149,6 +2380,7 @@
 
 - rawDate: "27/11/11"
   titre: "Kaddish à Copernic"
+  id: "kaddish_a_copernic"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Membres du Quintette Copernic."
@@ -2158,6 +2390,7 @@
 
 - rawDate: "23/11/11"
   titre: "Chérence au Ranelagh"
+  id: "cherence_au_ranelagh"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Pascal Amoyel, piano"
@@ -2167,6 +2400,7 @@
 
 - rawDate: "06/11/11"
   titre: "Ritournelle en Bavière"
+  id: "ritournelle_en_baviere"
   oeuvres:
       - Ritournelle pour Quintette à Vent
   interpretes: "Quintette Faust."
@@ -2175,6 +2409,7 @@
 
 - rawDate: "18/10/11"
   titre: "Trio à Caen"
+  id: "trio_a_caen"
   oeuvres:
       - Trio
   interpretes: "Marie-Pascale Talbot, piano, Guillaume Cubero, violon, et Sylvie Basset, violoncelle"
@@ -2184,6 +2419,7 @@
 
 - rawDate: "17/10/11"
   titre: "Todesfuge à Dijon"
+  id: "todesfuge_a_dijon"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Jean-Christophe Jacques, baryton, et quatuor Manfred"
@@ -2192,6 +2428,7 @@
 
 - rawDate: "25/09/11"
   titre: "Quatuor n°2 à Carnavalet"
+  id: "quatuor_n_2_a_carnavalet"
   oeuvres:
       - Quatuor à Cordes n°2 avec Voix
   interpretes: "Ensemble Syntonia et Alain Buet, baryton."
@@ -2201,6 +2438,7 @@
 
 - rawDate: "04/09/11"
   titre: "Todesfuge à Vic-de-Chassenay"
+  id: "todesfuge_a_vic_de_chassenay"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Quatuor Manfred et Jean-Christophe Jacques, baryton."
@@ -2210,6 +2448,7 @@
 
 - rawDate: "03/09/11"
   titre: "Todesfuge à Michery"
+  id: "todesfuge_a_michery"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Quatuor Manfred et Jean-Christophe Jacques, baryton."
@@ -2219,6 +2458,7 @@
 
 - rawDate: "25/08/11"
   titre: "Todesfuge à Asquins"
+  id: "todesfuge_a_asquins"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Quatuor Manfred et Jean-Christophe Jacques, baryton."
@@ -2228,6 +2468,7 @@
 
 - rawDate: "19/08/11"
   titre: "Quatuor n°2 à Entrecasteaux"
+  id: "quatuor_n_2_a_entrecasteaux"
   oeuvres:
       - Quatuor à Cordes n°2 avec Voix
   interpretes: "Quaruor Ardéo et Andrea Hill, soprano."
@@ -2237,6 +2478,7 @@
 
 - rawDate: "15/08/11"
   titre: "Meeting of the Waters in Dinard"
+  id: "meeting_of_the_waters_in_dinard"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Stéphanie Moraly, violon et Romain David, piano."
@@ -2246,6 +2488,7 @@
 
 - rawDate: "12/08/11"
   titre: "Orgue à Deauville"
+  id: "orgue_a_deauville"
   oeuvres:
       - Symphonie
   interpretes: "L’oiseleur des Longchamps, baryton et Olivier Dekeister, orgue."
@@ -2255,6 +2498,7 @@
 
 - rawDate: "21/07/11"
   titre: "Agincourt à Cordes"
+  id: "agincourt_a_cordes"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Jérome Pernoo et Bruno Philippe, violoncelles."
@@ -2264,6 +2508,7 @@
 
 - rawDate: "16/07/11"
   titre: "Sonate de Requiem à Bourgueil"
+  id: "sonate_de_requiem_a_bourgueil"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Julien Le Pape, piano et Maitane Sebastian, violoncelle."
@@ -2273,6 +2518,7 @@
 
 - rawDate: "13/07/11"
   titre: "Agincourt dans le Var"
+  id: "agincourt_dans_le_var"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Natacha Sedkaoui et Manuel Cartigny"
@@ -2282,6 +2528,7 @@
 
 - rawDate: "01/07/11"
   titre: "Todesfuge à Aix"
+  id: "todesfuge_a_aix"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Quatuor Voce et Ivan Geissler, baryton"
@@ -2291,6 +2538,7 @@
 
 - rawDate: "10/06/11"
   titre: "Agincourt à Versailles"
+  id: "agincourt_a_versailles"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Johannes Le Pennec et Bertrand Malmasson, violoncelles. "
@@ -2300,6 +2548,7 @@
 
 - rawDate: "05/06/11"
   titre: "Piano à Prague"
+  id: "piano_a_prague"
   oeuvres:
       - Sonate n°5 pour Piano “Trois pièces”
       - Sonate n°8 pour Piano “Nocturne”
@@ -2311,6 +2560,7 @@
 
 - rawDate: "14/05/11"
   titre: "Le trio vainqueur"
+  id: "le_trio_vainqueur"
   oeuvres:
       - Trio
   interpretes: "Trio Van Baerle"
@@ -2320,6 +2570,7 @@
 
 - rawDate: "07/05/11"
   titre: "Trio à Trappes"
+  id: "trio_a_trappes"
   oeuvres:
       - Trio
   interpretes: "Emmanuelle Bertrand, violoncelle, Pascal Amoyel, piano et Marianne Piketty, violon."
@@ -2328,6 +2579,7 @@
 
 - rawDate: "22/04/11"
   titre: "Concert des lauréats"
+  id: "concert_des_laureats"
   oeuvres:
       - Trio
   interpretes: "Trio Van Baerle."
@@ -2337,6 +2589,7 @@
 
 - rawDate: "21/04/11"
   titre: "Concours de trio à Lyon"
+  id: "concours_de_trio_a_lyon"
   oeuvres:
   interpretes: "Divers trios"
   adresse: "Salle Molière, 18 quai de Bondy, 69005 Lyon"
@@ -2345,6 +2598,7 @@
 
 - rawDate: "15/04/11"
   titre: "Sonate de requiem à Lisieux"
+  id: "sonate_de_requiem_a_lisieux"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano."
@@ -2354,6 +2608,7 @@
 
 - rawDate: "26/03/11"
   titre: "Trio Cité de la Musique"
+  id: "trio_cite_de_la_musique"
   oeuvres:
       - Trio
   interpretes: "Trio Atanassov: Gilles Perceval, violon; Sarah Sultan, violoncelle; Pierre-Kaloyann Atanassov, piano"
@@ -2363,6 +2618,7 @@
 
 - rawDate: "22/03/11"
   titre: "Le Trio à Vienne"
+  id: "le_trio_a_vienne"
   oeuvres:
       - Trio
   interpretes: "Trio Altenberg: Claus-Christian Schuster, piano, Amiram Ganz, violon, Alexander Gebert, violoncelle"
@@ -2372,6 +2628,7 @@
 
 - rawDate: "20/03/11"
   titre: "Le Trio en Autriche"
+  id: "le_trio_en_autriche"
   oeuvres:
       - Trio
   interpretes: "Trio Altenberg: Claus-Christian Schuster, piano, Amiram Ganz, violon, Alexander Gebert, violoncelle."
@@ -2381,6 +2638,7 @@
 
 - rawDate: "03/03/11"
   titre: "Colloque à Lyon"
+  id: "colloque_a_lyon"
   oeuvres:
       - Trio
   interpretes: "Trio L: Lyuba Zhecheva, piano; Louis-Jean Perreau, violon; Louison Crès, violoncelle."
@@ -2390,6 +2648,7 @@
 
 - rawDate: "08/02/11"
   titre: "Bourbonnais à Copernic"
+  id: "bourbonnais_a_copernic"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Amaury Coeytaux et Maud Lovett, violons. Anne-Aurore Anstett, alto. Clara Strauss, violoncelle."
@@ -2399,6 +2658,7 @@
 
 - rawDate: "05/02/11"
   titre: "Trio à l’Hôtel de Soubise"
+  id: "trio_a_l_hotel_de_soubise"
   oeuvres:
       - Trio
   interpretes: "Trio Paul Klee: Jae-Won Lee, violon; Tristan Cornut, violoncelle; François Lambret, piano."
@@ -2408,6 +2668,7 @@
 
 - rawDate: "27/01/11"
   titre: "Westerbork à Milan"
+  id: "westerbork_a_milan"
   oeuvres:
       - Lettres de Westerbork
   interpretes: "Ljuba Bergamelli, soprano. Pierangelo Negri et Gianluca Scandola, violons (musiciens de l’orchestre de la Scala)."
@@ -2417,6 +2678,7 @@
 
 - rawDate: "25/01/11"
   titre: "Hommage à Mildred Clary"
+  id: "hommage_a_mildred_clary"
   oeuvres:
       - Quatuor à Cordes n°2 avec Voix
   interpretes: "Alain Buet, baryton et Quatuor Ardeo"
@@ -2426,6 +2688,7 @@
 
 - rawDate: "03/01/11"
   titre: "42nd Street à Heidelberg"
+  id: "42nd_street_a_heidelberg"
   oeuvres:
       - Rondo pour Piano “42nd Street”
   interpretes: "Bertrand Giraud, piano."
@@ -2435,6 +2698,7 @@
 
 - rawDate: "21/12/10"
   titre: "Mildred et Olivier"
+  id: "mildred_et_olivier"
   oeuvres:
       - Portraits et Apparitions
   interpretes: "Olivier Greif, piano."
@@ -2444,6 +2708,7 @@
 
 - rawDate: "18/12/10"
   titre: "Petite sonate à la Cité Universitaire"
+  id: "petite_sonate_a_la_cite_universitaire"
   oeuvres:
       - Sonate n°8 pour Piano “Nocturne”
   interpretes: "Nicolas Horvath, piano."
@@ -2453,6 +2718,7 @@
 
 - rawDate: "11/12/10"
   titre: "Galiarda dolorosa à Sens"
+  id: "galiarda_dolorosa_a_sens"
   oeuvres:
       - Variations on Peter Philips “Galiarda Dolorosa”
   interpretes: "Trio Klein"
@@ -2462,6 +2728,7 @@
 
 - rawDate: "01/12/10"
   titre: "Quadruple Concerto sur F. Musique"
+  id: "quadruple_concerto_sur_f_musique"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Luc-Marie Aguera, violon / Michel Michalakakos, alto / Hélène Dautry, violoncelle / Anne-Lise Gastaldi, pianoOrchestre symphonique du conservatoire / Pierre-Michel Durand, direction "
@@ -2471,6 +2738,7 @@
 
 - rawDate: "20/11/10"
   titre: "Violon et piano à Cantus Formus"
+  id: "violon_et_piano_a_cantus_formus"
   oeuvres:
       - Sonate n°1 pour Violon et Piano
   interpretes: "Stéphanie Moraly, violon et Romain David, piano."
@@ -2480,6 +2748,7 @@
 
 - rawDate: "18/11/10"
   titre: "Le Block 15 au Perreux"
+  id: "le_block_15_au_perreux"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano."
@@ -2489,6 +2758,7 @@
 
 - rawDate: "17/11/10"
   titre: "Quadruple Concerto bis"
+  id: "quadruple_concerto_bis"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Même lieu et mêmes interprètes que la veille."
@@ -2497,6 +2767,7 @@
 
 - rawDate: "16/11/10"
   titre: "Quadruple concerto rue de Madrid"
+  id: "quadruple_concerto_rue_de_madrid"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Luc-Marie Aguera, violon / Michel Michalakakos, alto / Hélène Dautry, violoncelle / Anne-Lise Gastaldi, pianoOrchestre symphonique du conservatoire / Pierre-Michel Durand, direction"
@@ -2506,6 +2777,7 @@
 
 - rawDate: "12/11/10"
   titre: "Sonatine dans l’Yonne"
+  id: "sonatine_dans_l_yonne"
   oeuvres:
       - Sonate n°12 pour Piano “Sonatine”
   interpretes: "Anastasya Terenkova, piano"
@@ -2515,6 +2787,7 @@
 
 - rawDate: "06/11/10"
   titre: "Œuvres de jeunesse en Italie"
+  id: "oeuvres_de_jeunesse_en_italie"
   oeuvres:
       - Sonate n°5 pour Piano “Trois pièces”
       - Second Hommage à Raymond Roussel
@@ -2525,6 +2798,7 @@
 
 - rawDate: "03/11/10"
   titre: "Œuvres de jeunesse à l’Entrepôt"
+  id: "oeuvres_de_jeunesse_a_l_entrepot"
   oeuvres:
       - Sonate n°5 pour Piano “Trois pièces”
       - Second Hommage à Raymond Roussel
@@ -2535,6 +2809,7 @@
 
 - rawDate: "27/10/10"
   titre: "Chants de l’Âme galerie Colbert"
+  id: "chants_de_l_ame_galerie_colbert"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Julie Fuchs, soprano - François Lambret, piano"
@@ -2544,6 +2819,7 @@
 
 - rawDate: "18/10/10"
   titre: "Deuxième quatuor aux Invalides"
+  id: "deuxieme_quatuor_aux_invalides"
   oeuvres:
       - Quatuor à Cordes n°2 avec Voix
   interpretes: "Quatuor à cordes Ardeo et Andrea Hill, mezzo-soprano."
@@ -2553,6 +2829,7 @@
 
 - rawDate: "13/10/10"
   titre: "Wiener Konzert au MAHJ"
+  id: "wiener_konzert_au_mahj"
   oeuvres:
       - Wiener Konzert
   interpretes: "Fançoise Kubler, soprano et Alexandre Gasparov, piano."
@@ -2562,6 +2839,7 @@
 
 - rawDate: "02/10/10"
   titre: "Chants de l’Âme aux journées Ravel"
+  id: "chants_de_l_ame_aux_journees_ravel"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Guillemette Laurens, chant et Maria Belooussova, piano."
@@ -2570,6 +2848,7 @@
 
 - rawDate: "18/09/10"
   titre: "Ich ruf zu dir sur internet"
+  id: "ich_ruf_zu_dir_sur_internet"
   oeuvres:
       - Ich Ruf zu Dir
   interpretes: "Lorna Eder, piano; William Powell, clarinette; Mark Menzies, violon I; Mona Jeon Tian, violon II; Andrew MacIntosh, alto; Erika Duke-Kirkpatrick, violoncelle."
@@ -2579,6 +2858,7 @@
 
 - rawDate: "18/09/10"
   titre: "Agincourt à Dijon"
+  id: "agincourt_a_dijon"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
       - Les Chants de l’Âme
@@ -2589,6 +2869,7 @@
 
 - rawDate: "13/09/10"
   titre: "Violon et piano à l’Athénée"
+  id: "violon_et_piano_a_l_athenee"
   oeuvres:
       - Sonate n°1 pour Violon et Piano
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
@@ -2599,6 +2880,7 @@
 
 - rawDate: "25/08/10"
   titre: "Requiem à Brioude"
+  id: "requiem_a_brioude"
   oeuvres:
       - Requiem
   interpretes: "Solistes de Lyon-Bernard Tétu."
@@ -2608,6 +2890,7 @@
 
 - rawDate: "04/08/10"
   titre: "Quatuors en pays d’Auge"
+  id: "quatuors_en_pays_d_auge"
   oeuvres:
       - Quatuor à Cordes n°2 avec Voix
   interpretes: "Ensemble Syntonia et Alain Buet (baryton)."
@@ -2617,6 +2900,7 @@
 
 - rawDate: "29/07/10"
   titre: "Quadruple concerto à Cordes"
+  id: "quadruple_concerto_a_cordes"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Orchestre national de chambre de Toulouse. Gilles Colliard, direction, Marc Bouchkov, violon, Sarah Chenaf, alto, Ashkar Ishangaliyev, violoncelle, Alphonce Cemin, piano."
@@ -2626,6 +2910,7 @@
 
 - rawDate: "28/07/10"
   titre: "Chants de l’âme à Cordes sur Ciel"
+  id: "chants_de_l_ame_a_cordes_sur_ciel"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Julie Fuchs, soprano et Alphonce Cemin, piano"
@@ -2635,6 +2920,7 @@
 
 - rawDate: "21/07/10"
   titre: "Sous la coupole des Arcs"
+  id: "sous_la_coupole_des_arcs"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Michel Dalberto (piano), Henri Demarquette (violoncelle)."
@@ -2644,6 +2930,7 @@
 
 - rawDate: "21/07/10"
   titre: "Naufragés à Belle-Ile"
+  id: "naufrages_a_belle_ile"
   oeuvres:
       - L'Office des Naufragés
   interpretes: "Ensemble Accroche Note"
@@ -2653,6 +2940,7 @@
 
 - rawDate: "23/06/10"
   titre: "Olivier Greif, l’art de la mélodie"
+  id: "olivier_greif_l_art_de_la_melodie"
   oeuvres:
       - Les Chants de l’Âme
       - Trois chansons apocryphes
@@ -2664,6 +2952,7 @@
 
 - rawDate: "11/06/10"
   titre: "Une heure Greif sur France-Culture"
+  id: "une_heure_greif_sur_france_culture"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
@@ -2674,6 +2963,7 @@
 
 - rawDate: "05/06/10"
   titre: "Quatuors à Fontainebleau"
+  id: "quatuors_a_fontainebleau"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
       - Quatuor à Cordes n°2 avec Voix
@@ -2685,6 +2975,7 @@
 
 - rawDate: "03/06/10"
   titre: "Agincourt rue Chappe"
+  id: "agincourt_rue_chappe"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Agnès Vesterman et Patrick Langot"
@@ -2694,6 +2985,7 @@
 
 - rawDate: "27/05/10"
   titre: "Violon et piano rue Lafayette"
+  id: "violon_et_piano_rue_lafayette"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Stéphanie Moraly et Romain David"
@@ -2703,6 +2995,7 @@
 
 - rawDate: "21/05/10"
   titre: "Chansons apocryphes à Mantes"
+  id: "chansons_apocryphes_a_mantes"
   oeuvres:
       - Trois chansons apocryphes
   interpretes: "Isabelle Radigon, soprano et Stéphane Bortoli, piano"
@@ -2712,6 +3005,7 @@
 
 - rawDate: "21/05/10"
   titre: "Soirée hommage sur Mezzo"
+  id: "soiree_hommage_sur_mezzo"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
       - Le Tombeau de Ravel
@@ -2725,6 +3019,7 @@
 
 - rawDate: "20/05/10"
   titre: "Matin des musiciens"
+  id: "matin_des_musiciens"
   oeuvres:
       - Trio
   interpretes: "Trio Atanassov"
@@ -2734,6 +3029,7 @@
 
 - rawDate: "15/05/10"
   titre: "Chansons à La Prée"
+  id: "chansons_a_la_pree"
   oeuvres:
       - Cinq Chansons Enfantines
       - Quatre Poèmes de J. Prévert
@@ -2745,6 +3041,7 @@
 
 - rawDate: "15/05/10"
   titre: "Quatuor Ulysses à La Prée"
+  id: "quatuor_ulysses_a_la_pree"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Quatuor Benaïm"
@@ -2754,6 +3051,7 @@
 
 - rawDate: "15/05/10"
   titre: "Veni Creator à La Prée"
+  id: "veni_creator_a_la_pree"
   oeuvres:
       - Veni Creator
   interpretes: "Dominique de Williencourt, violoncelle et Émile Naoumoff, piano"
@@ -2763,6 +3061,7 @@
 
 - rawDate: "13/05/10"
   titre: "Soirée hommage à La Prée"
+  id: "soiree_hommage_a_la_pree"
   oeuvres:
       - Sonate de Requiem
       - Trio
@@ -2773,6 +3072,7 @@
 
 - rawDate: "13/05/10"
   titre: "Solo from “Nô” à La Prée"
+  id: "solo_from_no_a_la_pree"
   oeuvres:
       - Solo from “Nô”
   interpretes: "Paruyr Shahazizian, violoncelle"
@@ -2782,6 +3082,7 @@
 
 - rawDate: "13/05/10"
   titre: "Concert surprise à La Prée"
+  id: "concert_surprise_a_la_pree"
   oeuvres:
   interpretes: ""
   adresse: "Grange"
@@ -2790,6 +3091,7 @@
 
 - rawDate: "12/05/10"
   titre: "La Prée rend hommage à Olivier Greif"
+  id: "la_pree_rend_hommage_a_olivier_greif"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Pascal Amoyel"
@@ -2799,6 +3101,7 @@
 
 - rawDate: "10/05/10"
   titre: "Chérence à Neuilly"
+  id: "cherence_a_neuilly"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Pascal Amoyel"
@@ -2808,6 +3111,7 @@
 
 - rawDate: "06/05/10"
   titre: "Théâtre des Champs Élysées"
+  id: "theatre_des_champs_elysees"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Henri Demarquette, violoncelle et Giovanni Bellucci, piano."
@@ -2817,6 +3121,7 @@
 
 - rawDate: "29/04/10"
   titre: "Matin des musiciens"
+  id: "matin_des_musiciens"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
       - Quatuor à Cordes n°2 avec Voix
@@ -2828,6 +3133,7 @@
 
 - rawDate: "22/04/10"
   titre: "À Deauville"
+  id: "a_deauville"
   oeuvres:
       - Trio
   interpretes: "Jonas Vitaud, Amaury Coeytaux, Yan Levionnois."
@@ -2837,6 +3143,7 @@
 
 - rawDate: "18/04/10"
   titre: "Amaryllis à Carnavalet"
+  id: "amaryllis_a_carnavalet"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Ensemble Syntonia"
@@ -2846,6 +3153,7 @@
 
 - rawDate: "08/04/10"
   titre: "Meeting à Normale Sup"
+  id: "meeting_a_normale_sup"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Stéphanie Moraly, violon et Romain David, piano."
@@ -2855,6 +3163,7 @@
 
 - rawDate: "06/04/10"
   titre: "Hommage à Olivier Greif sur France Musique"
+  id: "hommage_a_olivier_greif_sur_france_musique"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Orchestre Colonne, sous la direction de Laurent Petitgirard."
@@ -2864,6 +3173,7 @@
 
 - rawDate: "26/03/10"
   titre: "Violon et piano à Orléans"
+  id: "violon_et_piano_a_orleans"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Stéphanie Moraly, violon et Romain David, piano"
@@ -2873,6 +3183,7 @@
 
 - rawDate: "20/03/10"
   titre: "Les chants du cygne"
+  id: "les_chants_du_cygne"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "L’Oiseleur des Longchamps, baryton et Mary Olivon, piano"
@@ -2881,6 +3192,7 @@
 
 - rawDate: "16/03/10"
   titre: "Le trio à Copernic"
+  id: "le_trio_a_copernic"
   oeuvres:
       - Trio
   interpretes: "Trio Archiduc: Amaury Coeytaux, violon – Clara Strauss, violoncelle – Yun-yang Lee, piano."
@@ -2890,6 +3202,7 @@
 
 - rawDate: "17/02/10"
   titre: "Valse pour Godino"
+  id: "valse_pour_godino"
   oeuvres:
       - Le Tombeau de Ravel
       - Valse sur le nom de Godino
@@ -2900,6 +3213,7 @@
 
 - rawDate: "15/02/10"
   titre: "Bourbonnais à l’Atelier"
+  id: "bourbonnais_a_l_atelier"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Orchestre de chambre European Camerata. Laurent Quénelle, violon/direction; avec Nicolas Dautricourt, violon, et Malcolm Johnston, alto."
@@ -2909,6 +3223,7 @@
 
 - rawDate: "30/01/10"
   titre: "Violon et piano rue de Madrid"
+  id: "violon_et_piano_rue_de_madrid"
   oeuvres:
       - Variations on Peter Philips “Galiarda Dolorosa”
       - Pièces pour Violon et Piano (2) – 1
@@ -2921,6 +3236,7 @@
 
 - rawDate: "28/01/10"
   titre: "Greif et Hersant à l’Archipel"
+  id: "greif_et_hersant_a_l_archipel"
   oeuvres:
       - Trio
   interpretes: "Trio Atanassov. Perceval Gilles, violon, Sarah Sultan, violoncelle, Pierre-Kaloyann Atanassov, piano"
@@ -2930,6 +3246,7 @@
 
 - rawDate: "08/01/10"
   titre: "Barberine rue Madame"
+  id: "barberine_rue_madame"
   oeuvres:
       - Three Settings of Musset
   interpretes: "L’oiseleur des Longchamps, baryton et Mary Olivon, pianiste"
@@ -2939,6 +3256,7 @@
 
 - rawDate: "23/11/09"
   titre: "Concert dans l’atelier"
+  id: "concert_dans_l_atelier"
   oeuvres:
       - Pièces pour Violon et Piano (2) – 1
       - Pièces pour Violon et Piano (2) – 2
@@ -2956,6 +3274,7 @@
 
 - rawDate: "21/11/09"
   titre: "Les Plaisirs de Chérence à Bourges"
+  id: "les_plaisirs_de_cherence_a_bourges"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Pascal Amoyel, piano."
@@ -2964,6 +3283,7 @@
 
 - rawDate: "17/11/09"
   titre: "Concerto pour violoncelle à Bydgoszcz"
+  id: "concerto_pour_violoncelle_a_bydgoszcz"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Henri Demarquette, violoncelle et l’orchestre Sinfonia Varsovia, sous la direction de Marc Minkowski"
@@ -2973,6 +3293,7 @@
 
 - rawDate: "07/11/09"
   titre: "Codex Domini dans le Gers"
+  id: "codex_domini_dans_le_gers"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Corinne Coudret"
@@ -2982,6 +3303,7 @@
 
 - rawDate: "19/10/09"
   titre: "Le Block 15 à Clermont-Ferrand"
+  id: "le_block_15_a_clermont_ferrand"
   oeuvres:
       - Sonate n°15 “de Guerre”
       - Sonate de Requiem
@@ -2992,6 +3314,7 @@
 
 - rawDate: "18/10/09"
   titre: "Les Plaisirs de Chérence à Saint-Étienne"
+  id: "les_plaisirs_de_cherence_a_saint_etienne"
   oeuvres:
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
   interpretes: "Pascal Amoyel, piano."
@@ -3001,6 +3324,7 @@
 
 - rawDate: "10/10/09"
   titre: "Galiarda Dolorosa à Saint-Merri"
+  id: "galiarda_dolorosa_a_saint_merri"
   oeuvres:
       - Variations on Peter Philips “Galiarda Dolorosa”
       - Pièces pour Violon et Piano (2) – 1
@@ -3011,6 +3335,7 @@
 
 - rawDate: "29/09/09"
   titre: "Programme Olivier Greif à Saint-Maur"
+  id: "programme_olivier_greif_a_saint_maur"
   oeuvres:
       - Pièces pour Violon et Piano (2) – 1
       - Pièces pour Violon et Piano (2) – 2
@@ -3025,6 +3350,7 @@
 
 - rawDate: "20/09/09"
   titre: "Le Tombeau de Ravel orchestré"
+  id: "le_tombeau_de_ravel_orchestre"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Orchestre Colonne, dir. Laurent Petitgirard."
@@ -3034,6 +3360,7 @@
 
 - rawDate: "19/09/09"
   titre: "Les Lettres de Westerbork au festival Présences"
+  id: "les_lettres_de_westerbork_au_festival_presences"
   oeuvres:
       - Lettres de Westerbork
       - Le Tombeau de Ravel
@@ -3044,6 +3371,7 @@
 
 - rawDate: "18/09/09"
   titre: "Concerto pour Violoncelle au festival Présences"
+  id: "concerto_pour_violoncelle_au_festival_presences"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Henri Demarquette, violoncelle - Orchestre National, dir. Jean-Claude Casadesus."
@@ -3053,6 +3381,7 @@
 
 - rawDate: "12/07/09"
   titre: "Variations “Galiarda Dolorosa” à La Rochepot"
+  id: "variations_galiarda_dolorosa_a_la_rochepot"
   oeuvres:
       - Variations on Peter Philips “Galiarda Dolorosa”
   interpretes: "Mathieu Godefroy, violon et Bertrand Giraud, piano (membres du trio Yves Klein)."
@@ -3062,6 +3391,7 @@
 
 - rawDate: "09/04/09"
   titre: "Victor Hugo à Normale Sup"
+  id: "victor_hugo_a_normale_sup"
   oeuvres:
       - Table des Matières
   interpretes: "L’Oiseleur des Longchamps, baryton et Juliette Regnaud, piano."
@@ -3071,6 +3401,7 @@
 
 - rawDate: "30/03/09"
   titre: "Trio et Sonate de Requiem à Nice"
+  id: "trio_et_sonate_de_requiem_a_nice"
   oeuvres:
       - Sonate de Requiem
       - Trio
@@ -3083,6 +3414,7 @@
 
 - rawDate: "07/03/09"
   titre: "Concerto pour violoncelle à Bayonne"
+  id: "concerto_pour_violoncelle_a_bayonne"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Emmanuelle Bertrand, violoncelle, et l’Orchestre Régional Bayonne Côte Basque, dirigé par Kanako Abe."
@@ -3092,6 +3424,7 @@
 
 - rawDate: "06/03/09"
   titre: "Concerto pour violoncelle à Aire sur l’Adour"
+  id: "concerto_pour_violoncelle_a_aire_sur_l_adour"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Emmanuelle Bertrand, violoncelle, et l’Orchestre Régional Bayonne Côte Basque, dirigé par Kanako Abe."
@@ -3101,6 +3434,7 @@
 
 - rawDate: "28/02/09"
   titre: "Le Trio à Nancy"
+  id: "le_trio_a_nancy"
   oeuvres:
       - Trio
   interpretes: "Ensemble Stanislas: Vincent Royer, piano - Bertrand Menut, violon - Pierre Fourcade, violoncelle."
@@ -3112,6 +3446,7 @@
 
 - rawDate: "05/02/09"
   titre: "Block 15 à Grenoble"
+  id: "block_15_a_grenoble"
   oeuvres:
       - Sonate de Requiem
       - Sonate n°15 “de Guerre”
@@ -3122,6 +3457,7 @@
 
 - rawDate: "22/12/08"
   titre: "Le Quadruple Concerto au Châtelet"
+  id: "le_quadruple_concerto_au_chatelet"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Pascal Amoyel, piano – Jakub Haufa, violon – Lise Berthaud, alto – Jérôme Pernoo, violoncelle – Sinfonia Varsovia, dir. Marc Minkowski"
@@ -3131,6 +3467,7 @@
 
 - rawDate: "26/11/08"
   titre: "Block 15 à la synagogue Copernic"
+  id: "block_15_a_la_synagogue_copernic"
   oeuvres:
       - Sonate de Requiem
       - Sonate n°15 “de Guerre”
@@ -3141,6 +3478,7 @@
 
 - rawDate: "16/10/08"
   titre: "Le Tombeau de Ravel à l’Archipel"
+  id: "le_tombeau_de_ravel_a_l_archipel"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Philippa Neuteboom et Zachary Deak."
@@ -3149,6 +3487,7 @@
 
 - rawDate: "28/07/08"
   titre: "Ich ruf zu dir à Cordes"
+  id: "ich_ruf_zu_dir_a_cordes"
   oeuvres:
       - Ich Ruf zu Dir
   interpretes: "  Adam Laloum, piano – Olivier Patey, clarinette – Jérôme Benhaïm et  Pauline Fritsch, violon – Adrien La Marca, alto – Yan Levionnois, violoncelle."
@@ -3157,6 +3496,7 @@
 
 - rawDate: "28/06/08"
   titre: "Le Trio en Irlande"
+  id: "le_trio_en_irlande"
   oeuvres:
       - Trio
   interpretes: "Trio Altenberg"
@@ -3165,6 +3505,7 @@
 
 - rawDate: "22/06/08"
   titre: "Trio de Benoît Menut à la mémoire d’Olivier Greif"
+  id: "trio_de_benoit_menut_a_la_memoire_d_olivier_greif"
   oeuvres:
   interpretes: "Trio Schubert: Nathanaëlle Marie, violon - Christophe Beau, violoncelle - Carine Zarifian, piano."
   adresse: "La Prée, 36100 Ségry."
@@ -3173,6 +3514,7 @@
 
 - rawDate: "20/06/08"
   titre: "La Symphonie à Varsovie"
+  id: "la_symphonie_a_varsovie"
   oeuvres:
       - Symphonie
   interpretes: "Wojciech Gierlach, basse - Orchestre Sinfonia Varsovia, dir. Marc Minkowski."
@@ -3181,6 +3523,7 @@
 
 - rawDate: "29/04/08"
   titre: "Le Tombeau de Ravel au CNR"
+  id: "le_tombeau_de_ravel_au_cnr"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Philippa Neuteboom et Zachary Deak."
@@ -3191,6 +3534,7 @@
 
 - rawDate: "11/04/08"
   titre: "Le Tombeau de Ravel au conservatoire du 17ème"
+  id: "le_tombeau_de_ravel_au_conservatoire_du_17eme"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Philippa Neuteboom et Zachary Deak."
@@ -3199,6 +3543,7 @@
 
 - rawDate: "07/04/08"
   titre: "Sonate de Requiem aux Invalides"
+  id: "sonate_de_requiem_aux_invalides"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano."
@@ -3207,6 +3552,7 @@
 
 - rawDate: "30/03/08"
   titre: "Deux violoncelles à Detroit"
+  id: "deux_violoncelles_a_detroit"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Nadine Deleury et Eugène Zenzen."
@@ -3217,6 +3563,7 @@
 
 - rawDate: "15/03/08"
   titre: "Sonatine à Maisons-Laffitte"
+  id: "sonatine_a_maisons_laffitte"
   oeuvres:
       - Sonate n°12 pour Piano “Sonatine”
   interpretes: "Lorène de Ratuld."
@@ -3225,6 +3572,7 @@
 
 - rawDate: "11/03/08"
   titre: "Sonatine à Toulouse"
+  id: "sonatine_a_toulouse"
   oeuvres:
       - Sonate n°12 pour Piano “Sonatine”
   interpretes: "Lorène de Ratuld."
@@ -3233,6 +3581,7 @@
 
 - rawDate: "10/02/08"
   titre: "Codex Domini à France Musique"
+  id: "codex_domini_a_france_musique"
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
   interpretes: "Jong Hwa Park"
@@ -3242,6 +3591,7 @@
 
 - rawDate: "09/02/08"
   titre: "Concerto pour Violoncelle en Allemagne"
+  id: "concerto_pour_violoncelle_en_allemagne"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Jean-Guihen Queyras, violoncelle - Orchestre symphonique de la SWR de Baden Baden, dir. Marc Minkowski"
@@ -3251,6 +3601,7 @@
 
 - rawDate: "14/12/07"
   titre: "Le Trio à Saint-Raphaël"
+  id: "le_trio_a_saint_raphael"
   oeuvres:
       - Trio
   interpretes: "Laurent Cabasso, piano - Gaëtane Prouvost, violon - Emmanuelle Bertrand, violoncelle."
@@ -3259,6 +3610,7 @@
 
 - rawDate: "13/12/07"
   titre: "Semaine Tony Aubin sur France Musique"
+  id: "semaine_tony_aubin_sur_france_musique"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
   interpretes: "Devy Erlih, violon et Olivier Greif, piano. "
@@ -3269,6 +3621,7 @@
 
 - rawDate: "20/11/07"
   titre: "Le Block 15 au théâtre du Renard"
+  id: "le_block_15_au_theatre_du_renard"
   oeuvres:
       - Sonate de Requiem
       - Sonate n°15 “de Guerre”
@@ -3280,6 +3633,7 @@
 
 - rawDate: "15/10/07"
   titre: "Sonate de Requiem en Hongrie"
+  id: "sonate_de_requiem_en_hongrie"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano."
@@ -3290,6 +3644,7 @@
 
 - rawDate: "06/10/07"
   titre: "Hommage à Olivier Greif au CNR"
+  id: "hommage_a_olivier_greif_au_cnr"
   oeuvres:
       - Night without Sleep
       - Quatuor n°3 “Todesfuge”
@@ -3301,6 +3656,7 @@
 
 - rawDate: "25/08/07"
   titre: "Les Chants de l’Âme à Giverny"
+  id: "les_chants_de_l_ame_a_giverny"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Marie Gautrot, mezzo-soprano, et Maria Belooussova, piano."
@@ -3309,6 +3665,7 @@
 
 - rawDate: "12/08/07"
   titre: "Hoopsa boyaboy hoopsa !"
+  id: "hoopsa_boyaboy_hoopsa"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Ensemble Syntonia"
@@ -3319,6 +3676,7 @@
 
 - rawDate: "23/07/07"
   titre: "Sonate de Requiem à La Meije"
+  id: "sonate_de_requiem_a_la_meije"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano."
@@ -3329,6 +3687,7 @@
 
 - rawDate: "09/06/07"
   titre: "Sonate de Requiem à Melle"
+  id: "sonate_de_requiem_a_melle"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano."
@@ -3337,6 +3696,7 @@
 
 - rawDate: "25/04/07"
   titre: "Sonate de Requiem à Saragosse"
+  id: "sonate_de_requiem_a_saragosse"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano."
@@ -3345,6 +3705,7 @@
 
 - rawDate: "17/04/07"
   titre: "Sonate de Requiem à Hambourg"
+  id: "sonate_de_requiem_a_hambourg"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano."
@@ -3353,6 +3714,7 @@
 
 - rawDate: "04/04/07"
   titre: "Journée d’étude à Lyon"
+  id: "journee_d_etude_a_lyon"
   oeuvres:
   interpretes: ""
   adresse: "Salle Molière, 18 quai de Bondy, 69005 Lyon."
@@ -3362,6 +3724,7 @@
 
 - rawDate: "01/04/07"
   titre: "Les Chants de l’Âme au château"
+  id: "les_chants_de_l_ame_au_chateau"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Barbara Marcus et Maria Belooussova."
@@ -3370,6 +3733,7 @@
 
 - rawDate: "09/03/07"
   titre: "Violon et piano aux Invalides"
+  id: "violon_et_piano_aux_invalides"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
   interpretes: "Luc Hery, violon et Franz Michel, piano."
@@ -3378,6 +3742,7 @@
 
 - rawDate: "22/02/07"
   titre: "Violon et piano à l’Archipel"
+  id: "violon_et_piano_a_l_archipel"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
   interpretes: "Geneviève Laurenceau, violon et Lorène de Ratuld, piano."
@@ -3386,6 +3751,7 @@
 
 - rawDate: "10/10/06"
   titre: "Symphonie à la salle Gaveau"
+  id: "symphonie_a_la_salle_gaveau"
   oeuvres:
       - Symphonie
   interpretes: "Jacques Loiseleur des Longchamps, baryton et l’orchestre Colonne, dir. Claire Gibaud."
@@ -3396,6 +3762,7 @@
 
 - rawDate: "25/08/06"
   titre: "Sonate de Requiem à La Côte Saint-André"
+  id: "sonate_de_requiem_a_la_cote_saint_andre"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Pascal Amoyel, piano et Emmanuelle Bertrand, violoncelle."
@@ -3406,6 +3773,7 @@
 
 - rawDate: "30/07/06"
   titre: "Les Chants de l’Âme au pays de la Meije"
+  id: "les_chants_de_l_ame_au_pays_de_la_meije"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Gweneth-Ann Jeffers, soprano et Cédric Tiberghien, piano ."
@@ -3416,6 +3784,7 @@
 
 - rawDate: "07/07/06"
   titre: "L’Office des Naufragés à Strasbourg"
+  id: "l_office_des_naufrages_a_strasbourg"
   oeuvres:
       - L'Office des Naufragés
   interpretes: "Ensemble Accroche Note : Françoise Kubler, soprano, Armand Angster, clarinette, Alexandre Gasparov, piano, Stéphanie Degand et Nathanaëlle Marie, violons, Pierre Franck, alto et Christophe Beau, violoncelle. Nina Klein, récitante."
@@ -3426,6 +3795,7 @@
 
 - rawDate: "28/06/06"
   titre: "Sonate de Requiem en Irlande"
+  id: "sonate_de_requiem_en_irlande"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Pascal Amoyel, piano et Emmanuelle Bertrand, violoncelle."
@@ -3436,6 +3806,7 @@
 
 - rawDate: "20/06/06"
   titre: "Sonate de Requiem au Musée d’Orsay"
+  id: "sonate_de_requiem_au_musee_d_orsay"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Pascal Amoyel, piano et Emmanuelle Bertrand, violoncelle."
@@ -3444,6 +3815,7 @@
 
 - rawDate: "31/05/06"
   titre: "Olivier Greif à France-Culture"
+  id: "olivier_greif_a_france_culture"
   oeuvres:
   interpretes: ""
   adresse: "France-Culture"
@@ -3453,6 +3825,7 @@
 
 - rawDate: "14/05/06"
   titre: "Olivier Greif sur France Musique"
+  id: "olivier_greif_sur_france_musique"
   oeuvres:
   interpretes: ""
   adresse: "France-Musique"
@@ -3462,6 +3835,7 @@
 
 - rawDate: "11/05/06"
   titre: "Concert hommage à l’Archipel"
+  id: "concert_hommage_a_l_archipel"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
       - Sonate pour Piano n°21 “Codex Domini”
@@ -3475,6 +3849,7 @@
 
 - rawDate: "14/03/06"
   titre: "Ich ruf zu dir à Los Angeles"
+  id: "ich_ruf_zu_dir_a_los_angeles"
   oeuvres:
       - Ich Ruf zu Dir
   interpretes: "William Powell, clarinette, et cinq musiciens de l’institut CalArts."
@@ -3484,6 +3859,7 @@
 
 - rawDate: "21/02/06"
   titre: "Le Block 15 au théâtre du Renard"
+  id: "le_block_15_au_theatre_du_renard"
   oeuvres:
       - Sonate de Requiem
       - Sonate n°15 “de Guerre”
@@ -3495,6 +3871,7 @@
 
 - rawDate: "11/01/06"
   titre: "Sonate de Requiem à Sceaux"
+  id: "sonate_de_requiem_a_sceaux"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Pascal Amoyel, piano et Emmanuelle Bertrand, violoncelle."
@@ -3503,6 +3880,7 @@
 
 - rawDate: "23/09/05"
   titre: "Le Requiem à Ambronay"
+  id: "le_requiem_a_ambronay"
   oeuvres:
       - Requiem
   interpretes: "Les Solistes de Lyon-Bernard Tétu."
@@ -3513,6 +3891,7 @@
 
 - rawDate: "20/07/05"
   titre: "The Battle of Agincourt en  pays d’Auge"
+  id: "the_battle_of_agincourt_en_pays_d_auge"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Agnès Vesterman et Patrick Langot."
@@ -3523,6 +3902,7 @@
 
 - rawDate: "23/06/05"
   titre: "Le Rêve du Monde à l’Archipel"
+  id: "le_reve_du_monde_a_l_archipel"
   oeuvres:
       - Sonate pour Piano n°20 “Le Rêve du Monde”
   interpretes: "Jonathan Bénichou."
@@ -3531,6 +3911,7 @@
 
 - rawDate: "05/06/05"
   titre: "Le Requiem au Bourget-du-Lac"
+  id: "le_requiem_au_bourget_du_lac"
   oeuvres:
       - Requiem
   interpretes: "Solistes de Lyon-Bernard Tétu."
@@ -3542,6 +3923,7 @@
 
 - rawDate: "22/05/05"
   titre: "Festival Musikalia: Hommage à Olivier Greif"
+  id: "festival_musikalia_hommage_a_olivier_greif"
   oeuvres:
       - Quatuor à Cordes n°2 avec Voix
   interpretes: "Quatuor Syntonia. Ariana Vasadari, soprano."
@@ -3550,6 +3932,7 @@
 
 - rawDate: "21/05/05"
   titre: "Festival Musikalia: Hommage à Olivier Greif"
+  id: "festival_musikalia_hommage_a_olivier_greif"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Henri Demarquette et Raphaël Pidou, violoncelles."
@@ -3558,6 +3941,7 @@
 
 - rawDate: "20/05/05"
   titre: "Festival Musikalia: Hommage à Olivier Greif"
+  id: "festival_musikalia_hommage_a_olivier_greif"
   oeuvres:
       - Trio
   interpretes: "Pascal Amoyel, piano. David Grimal, violon. Henri Demarquette, violoncelle. "
@@ -3566,6 +3950,7 @@
 
 - rawDate: "13/05/05"
   titre: "Concert anniversaire à Vincennes"
+  id: "concert_anniversaire_a_vincennes"
   oeuvres:
       - Le Tombeau de Ravel
       - Sonate pour Piano n°20 “Le Rêve du Monde”
@@ -3581,6 +3966,7 @@
 
 - rawDate: "10/05/05"
   titre: "Cinquième anniversaire sur France Musique"
+  id: "cinquieme_anniversaire_sur_france_musique"
   oeuvres:
   interpretes: ""
   adresse: "France Musique"
@@ -3590,6 +3976,7 @@
 
 - rawDate: "09/05/05"
   titre: "Le Rêve du Monde à Normale Sup"
+  id: "le_reve_du_monde_a_normale_sup"
   oeuvres:
       - Sonate pour Piano n°20 “Le Rêve du Monde”
   interpretes: "Jonathan Bénichou."
@@ -3598,6 +3985,7 @@
 
 - rawDate: "09/05/05"
   titre: "Sonate de Requiem à Bruxelles"
+  id: "sonate_de_requiem_a_bruxelles"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Pascal Amoyel, piano et Emmanuelle Bertrand, violoncelle."
@@ -3608,6 +3996,7 @@
 
 - rawDate: "05/05/05"
   titre: "Atelier sur France Musique"
+  id: "atelier_sur_france_musique"
   oeuvres:
   interpretes: ""
   adresse: "France Musique."
@@ -3617,6 +4006,7 @@
 
 - rawDate: "05/05/05"
   titre: "Déchiffrages à La Prée"
+  id: "dechiffrages_a_la_pree"
   oeuvres:
   interpretes: "Jean Ferrandis, flûte – Michel Michalakakos, alto – Dana Ciocarlié, piano."
   adresse: ""
@@ -3627,6 +4017,7 @@
 
 - rawDate: "04/05/05"
   titre: "Na Pari Tomai à La Prée"
+  id: "na_pari_tomai_a_la_pree"
   oeuvres:
       - Na Pari Tomaï
   interpretes: "Michel Michalakakos, alto et Dana Ciocarlié, piano."
@@ -3637,6 +4028,7 @@
 
 - rawDate: "04/05/05"
   titre: "Sonate de Requiem à Bakou"
+  id: "sonate_de_requiem_a_bakou"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Pascal Amoyel, piano et Emmanuelle Bertrand, violoncelle."
@@ -3645,6 +4037,7 @@
 
 - rawDate: "26/04/05"
   titre: "Concerto pour Violoncelle à Riga"
+  id: "concerto_pour_violoncelle_a_riga"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Henri Demarquette et les Riga Chamber Players, direction Normunds Sne."
@@ -3653,6 +4046,7 @@
 
 - rawDate: "16/03/05"
   titre: "Trio au CNR"
+  id: "trio_au_cnr"
   oeuvres:
       - Trio
   interpretes: "Geneviève Laurenceau, violon, Sébastien Van Kuijk, violoncelle et Bertrand Chamayou, piano."
@@ -3663,6 +4057,7 @@
 
 - rawDate: "05/03/05"
   titre: "Sonate de Requiem dans l’Ariège"
+  id: "sonate_de_requiem_dans_l_ariege"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Adrien Frasse-Sombet, violoncelle et Xavier Bouchaud, piano."
@@ -3671,6 +4066,7 @@
 
 - rawDate: "23/01/05"
   titre: "L’Office des Naufragés au MAHJ"
+  id: "l_office_des_naufrages_au_mahj"
   oeuvres:
       - L'Office des Naufragés
   interpretes: "Ensemble Accroche Note : Françoise Kubler, soprano, Armand Angster, clarinette, Alexandre Gasparov, piano, Stéphanie Degand et Nathanaëlle Marie, violons, Pierre Franck, alto et Christophe Beau, violoncelle. Nina Klein, récitante."
@@ -3681,6 +4077,7 @@
 
 - rawDate: "20/01/05"
   titre: "Greif et Bacri à Normale Sup"
+  id: "greif_et_bacri_a_normale_sup"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
   interpretes: "Geneviève Laurenceau, violon, Lorène de Ratuld, piano."
@@ -3691,6 +4088,7 @@
 
 - rawDate: "07/01/05"
   titre: "Le Requiem sur France Musique"
+  id: "le_requiem_sur_france_musique"
   oeuvres:
       - Requiem
   interpretes: "Solistes et Chœurs de Lyon-Bernard Tétu."
@@ -3701,6 +4099,7 @@
 
 - rawDate: "16/12/04"
   titre: "Bataille d’Agincourt dans le 18ème"
+  id: "bataille_d_agincourt_dans_le_18eme"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Patrick Langot et Agnès Vesterman."
@@ -3709,6 +4108,7 @@
 
 - rawDate: "16/12/04"
   titre: "Concerto pour Violoncelle au CNR"
+  id: "concerto_pour_violoncelle_au_cnr"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Henri Demarquette, violoncelle. Orchestre du conservatoire dirigé par Olivier Holt."
@@ -3717,6 +4117,7 @@
 
 - rawDate: "11/12/04"
   titre: "Requiem à Sainte-Clotilde"
+  id: "requiem_a_sainte_clotilde"
   oeuvres:
       - Requiem
   interpretes: "Solistes et Chœurs de Lyon-Bernard Tétu."
@@ -3727,6 +4128,7 @@
 
 - rawDate: "01/12/04"
   titre: "Quatuor n°3 au CNR"
+  id: "quatuor_n_3_au_cnr"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Quatuor Manfred et Pierre-Yves Pruvot, baryton."
@@ -3737,6 +4139,7 @@
 
 - rawDate: "21/11/04"
   titre: "Three Settings of Musset en Artois"
+  id: "three_settings_of_musset_en_artois"
   oeuvres:
       - Three Settings of Musset
   interpretes: "Marie Devellereau, soprano et Cédric Tiberghien, piano."
@@ -3747,6 +4150,7 @@
 
 - rawDate: "16/10/04"
   titre: "Cinq Chansons Enfantines chez Christie’s"
+  id: "cinq_chansons_enfantines_chez_christie_s"
   oeuvres:
       - Cinq Chansons Enfantines
   interpretes: "Jacques Loiseleur des Longchamps, baryton, et Grigori Abramian, piano."
@@ -3755,6 +4159,7 @@
 
 - rawDate: "18/09/04"
   titre: "Le Tombeau de Ravel à Urrugne"
+  id: "le_tombeau_de_ravel_a_urrugne"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Xavier Bouchaud et Romain Descharmes, piano à quatre mains."
@@ -3765,6 +4170,7 @@
 
 - rawDate: "17/08/04"
   titre: "Office des Naufragés au festival des Écrins"
+  id: "office_des_naufrages_au_festival_des_ecrins"
   oeuvres:
       - L'Office des Naufragés
   interpretes: "Françoise Kubler, soprano – Armand Angster, clarinette – Alexandre Gasparov, piano – Stéphanie Degand et Nathanaëlle Marie, violons – Pierre Franck, alto – Christophe Beau, violoncelle."
@@ -3773,6 +4179,7 @@
 
 - rawDate: "18/05/04"
   titre: "Quatuor n°3 à Dijon"
+  id: "quatuor_n_3_a_dijon"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Quatuor Manfred et Pierre-Yves Pruvot, baryton."
@@ -3783,6 +4190,7 @@
 
 - rawDate: "14/04/04"
   titre: "Requiem dans l’Indiana"
+  id: "requiem_dans_l_indiana"
   oeuvres:
       - Requiem
   interpretes: "Chœur de l’université, dirigé par John Poole."
@@ -3793,6 +4201,7 @@
 
 - rawDate: "06/04/04"
   titre: "Concert anniversaire à l’Auditorium Saint-Germain"
+  id: "concert_anniversaire_a_l_auditorium_saint_germain"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
       - Shylock Funèbre
@@ -3805,6 +4214,7 @@
 
 - rawDate: "02/04/04"
   titre: "Lettres de Westerbork à Dijon"
+  id: "lettres_de_westerbork_a_dijon"
   oeuvres:
       - Lettres de Westerbork
   interpretes: "Barbara Marcus, soprano, et des musiciens de la Camerata de Bourgogne."
@@ -3815,6 +4225,7 @@
 
 - rawDate: "02/04/04"
   titre: "Sonate de Requiem à Auxerre"
+  id: "sonate_de_requiem_a_auxerre"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Henri Demarquette et Michel Dalberto."
@@ -3823,6 +4234,7 @@
 
 - rawDate: "30/03/04"
   titre: "Chansons Enfantines au Conservatoire du 14ème"
+  id: "chansons_enfantines_au_conservatoire_du_14eme"
   oeuvres:
       - Cinq Chansons Enfantines
   interpretes: "Élèves du conservatoire"
@@ -3833,6 +4245,7 @@
 
 - rawDate: "20/03/04"
   titre: "Bataille d’Agincourt au Prieuré de Saint-Cosme"
+  id: "bataille_d_agincourt_au_prieure_de_saint_cosme"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Gary Hoffman et Sébastien Van Kuijk."
@@ -3841,6 +4254,7 @@
 
 - rawDate: "11/02/04"
   titre: "Bataille d’Agincourt au CNR"
+  id: "bataille_d_agincourt_au_cnr"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Patrick Langot et Agnès Vesterman."
@@ -3851,6 +4265,7 @@
 
 - rawDate: "08/02/04"
   titre: "Sonate de Guerre sur Mezzo"
+  id: "sonate_de_guerre_sur_mezzo"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: ""
@@ -3861,6 +4276,7 @@
 
 - rawDate: "10/01/04"
   titre: "Sonate de Requiem à Saint-Paul de Vence"
+  id: "sonate_de_requiem_a_saint_paul_de_vence"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Philippe Cauchefer, violoncelle et Marika Hofmeyr, piano."
@@ -3871,6 +4287,7 @@
 
 - rawDate: "06/01/04"
   titre: "Deuxième sonate violon et piano au CNR"
+  id: "deuxieme_sonate_violon_et_piano_au_cnr"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
   interpretes: "Geneviève Laurenceau, violon  et Lorène de Ratuld, piano."
@@ -3880,6 +4297,7 @@
 
 - rawDate: "20/12/03"
   titre: "Quatuor n°4 à la Maroquinerie"
+  id: "quatuor_n_4_a_la_maroquinerie"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Quatuor Klimt"
@@ -3890,6 +4308,7 @@
 
 - rawDate: "23/10/03"
   titre: "Raga au CNSM"
+  id: "raga_au_cnsm"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
   interpretes: "Daniel Garlitsky, violon et Jonathan Bénichou, piano."
@@ -3900,6 +4319,7 @@
 
 - rawDate: "05/09/03"
   titre: "Requiem à Chinon"
+  id: "requiem_a_chinon"
   oeuvres:
       - Requiem
   interpretes: "Solistes et Chœur de Lyon-Bernard Tétu."
@@ -3910,6 +4330,7 @@
 
 - rawDate: "06/08/03"
   titre: "Concert anniversaire du 5 mai sur France Musique"
+  id: "concert_anniversaire_du_5_mai_sur_france_musique"
   oeuvres:
   interpretes: ""
   adresse: "France Musique."
@@ -3917,6 +4338,7 @@
 
 - rawDate: "27/07/03"
   titre: "Le Livre des Saints Irlandais en Pays d’Auge"
+  id: "le_livre_des_saints_irlandais_en_pays_d_auge"
   oeuvres:
       - Le Livre des Saints Irlandais
   interpretes: "Matthieu Lécroart, baryton et Grégory Ballesteros, piano."
@@ -3925,6 +4347,7 @@
 
 - rawDate: "17/07/03"
   titre: "Sonate de Requiem aux Arcs"
+  id: "sonate_de_requiem_aux_arcs"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Edouard Sapey-Triomphe, violoncelle et Michel Dalberto, piano."
@@ -3933,6 +4356,7 @@
 
 - rawDate: "05/06/03"
   titre: "Requiem au Bourget du Lac"
+  id: "requiem_au_bourget_du_lac"
   oeuvres:
       - Requiem
   interpretes: "Solistes et Chœur de Lyon-Bernard Tétu."
@@ -3943,6 +4367,7 @@
 
 - rawDate: "05/05/03"
   titre: "Concert anniversaire à la maison de Radio France"
+  id: "concert_anniversaire_a_la_maison_de_radio_france"
   oeuvres:
       - Trois chansons apocryphes
       - Three Settings of Musset
@@ -3957,6 +4382,7 @@
 
 - rawDate: "17/02/03"
   titre: "Requiem sur France Musique"
+  id: "requiem_sur_france_musique"
   oeuvres:
       - Requiem
   interpretes: "BBC Singers, sous la direction de John Poole."
@@ -3967,6 +4393,7 @@
 
 - rawDate: "23/12/02"
   titre: "L’ensemble Syntonia sur France Musique"
+  id: "l_ensemble_syntonia_sur_france_musique"
   oeuvres:
   interpretes: "Ensemble Syntonia."
   adresse: "France Musique"
@@ -3976,6 +4403,7 @@
 
 - rawDate: "09/11/02"
   titre: "Sonate dans le Goût Ancien à Tokyo"
+  id: "sonate_dans_le_gout_ancien_a_tokyo"
   oeuvres:
       - Sonate n°14 pour piano “Dans le Goût Ancien”
   interpretes: "Henri Barda."
@@ -3986,6 +4414,7 @@
 
 - rawDate: "13/08/02"
   titre: "Quatuor n°4 sur France Musique"
+  id: "quatuor_n_4_sur_france_musique"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Quatuor Syntonia."
@@ -3997,6 +4426,7 @@
 
 - rawDate: "13/06/02"
   titre: "Concerto pour Violoncelle à l’Athénée"
+  id: "concerto_pour_violoncelle_a_l_athenee"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Frédéric Dupuis, violoncelle. Orchestre Ostinato, dirigé par Jean-Luc Tingaud."
@@ -4007,6 +4437,7 @@
 
 - rawDate: "02/06/02"
   titre: "Concert anniversaire au Conservatoire du 9ème"
+  id: "concert_anniversaire_au_conservatoire_du_9eme"
   oeuvres:
       - Les Chants de l’Âme
       - Sonate n°14 pour piano “Dans le Goût Ancien”
@@ -4019,6 +4450,7 @@
 
 - rawDate: "28/04/02"
   titre: "Le trio à Deauville"
+  id: "le_trio_a_deauville"
   oeuvres:
       - Trio
   interpretes: "Jan Orawiec, violon, Dimitri Maslennikov, violoncelle et Jonathan Bénichou, piano, "
@@ -4027,6 +4459,7 @@
 
 - rawDate: "05/04/02"
   titre: "Tombeau d’Olivier Greif au Châtelet"
+  id: "tombeau_d_olivier_greif_au_chatelet"
   oeuvres:
   interpretes: "Quatuor Kandinsky. "
   adresse: "Théâtre du Châtelet, Paris."
@@ -4036,6 +4469,7 @@
 
 - rawDate: "11/03/02"
   titre: "Les Chants de l’Âme à la Péniche Opéra"
+  id: "les_chants_de_l_ame_a_la_peniche_opera"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Guillemette Laurens, mezzo-soprano et Maria Beloussova, piano."
@@ -4046,6 +4480,7 @@
 
 - rawDate: "06/03/02"
   titre: "Quatuor n°3 à Caen"
+  id: "quatuor_n_3_a_caen"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Quatuor Parisii, Matthieu Lecroart, baryton."
@@ -4054,6 +4489,7 @@
 
 - rawDate: "01/03/02"
   titre: "Olivier Greif sur France Musique"
+  id: "olivier_greif_sur_france_musique"
   oeuvres:
   interpretes: ""
   adresse: "France Musique."
@@ -4063,6 +4499,7 @@
 
 - rawDate: "23/02/02"
   titre: "Quatuor n°4 à Deauville"
+  id: "quatuor_n_4_a_deauville"
   oeuvres:
       - Quatuor n°4 “Ulysses”
   interpretes: "Quatuor Syntonia."
@@ -4073,6 +4510,7 @@
 
 - rawDate: "11/02/02"
   titre: "La Symphonie sur France Musique"
+  id: "la_symphonie_sur_france_musique"
   oeuvres:
       - Symphonie
   interpretes: "Orchestre de Picardie, direction Edmon Colomer. Stefan Genz, baryton."
@@ -4083,6 +4521,7 @@
 
 - rawDate: "03/02/02"
   titre: "Le Requiem sur la BBC"
+  id: "le_requiem_sur_la_bbc"
   oeuvres:
       - Requiem
   interpretes: "BBC singers, dir. John Poole."
@@ -4093,6 +4532,7 @@
 
 - rawDate: "07/12/01"
   titre: "La Symphonie à Saint-Roch"
+  id: "la_symphonie_a_saint_roch"
   oeuvres:
       - Symphonie
   interpretes: "Orchestre de Picardie, direction Edmon Colomer. Stefan Genz, baryton."
@@ -4103,6 +4543,7 @@
 
 - rawDate: "05/08/01"
   titre: "Création française du Requiem à Parthenay."
+  id: "creation_francaise_du_requiem_a_parthenay"
   oeuvres:
       - Requiem
   interpretes: "Ensemble dirigé par John Poole."
@@ -4115,6 +4556,7 @@
 
 - rawDate: "24/07/01"
   titre: "Hommage à Olivier au festival de Cordes"
+  id: "hommage_a_olivier_au_festival_de_cordes"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
       - Trio
@@ -4135,6 +4577,7 @@
 
 - rawDate: "23/05/01"
   titre: "Perit ut Vivat à La Prée"
+  id: "perit_ut_vivat_a_la_pree"
   oeuvres:
   interpretes: ""
   adresse: "Abbaye de La Prée"
@@ -4144,6 +4587,7 @@
 
 - rawDate: "14/05/01"
   titre: "Chansons Enfantines au Tambour Royal"
+  id: "chansons_enfantines_au_tambour_royal"
   oeuvres:
       - Cinq Chansons Enfantines
       - Quatre Poèmes de J. Prévert
@@ -4155,6 +4599,7 @@
 
 - rawDate: "13/05/01"
   titre: "Concert anniversaire à Saint-Cloud"
+  id: "concert_anniversaire_a_saint_cloud"
   oeuvres:
       - Les Chants de l’Âme
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
@@ -4168,6 +4613,7 @@
 
 - rawDate: "06/05/01"
   titre: "Concerto pour Violoncelle à Rouen"
+  id: "concerto_pour_violoncelle_a_rouen"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "David Louwerse et l’orchestre de chambre du Conservatoire de Rouen, direction Olivier Holt."
@@ -4176,6 +4622,7 @@
 
 - rawDate: "03/05/01"
   titre: "Chants de l’Âme salle Cortot"
+  id: "chants_de_l_ame_salle_cortot"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Elizabeth Laurence, mezzo-soprano et Maria Belooussova, piano. "
@@ -4186,6 +4633,7 @@
 
 - rawDate: "13/04/01"
   titre: "Shylock Funèbre à Beauvais"
+  id: "shylock_funebre_a_beauvais"
   oeuvres:
       - Shylock Funèbre
   interpretes: "Walter Grimmer, violoncelle, et Mark Foster, piano."
@@ -4194,6 +4642,7 @@
 
 - rawDate: "16/02/01"
   titre: "Création du Requiem à Londres"
+  id: "creation_du_requiem_a_londres"
   oeuvres:
       - Requiem
   interpretes: "Chœurs de la BBC, direction John Poole."
@@ -4204,6 +4653,7 @@
 
 - rawDate: "09/02/01"
   titre: "Quatuor n°3 à la maison de Radio France"
+  id: "quatuor_n_3_a_la_maison_de_radio_france"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Quatuor Parisii."
@@ -4214,6 +4664,7 @@
 
 - rawDate: "22/01/01"
   titre: "Concerto pour Violoncelle sur France Musique"
+  id: "concerto_pour_violoncelle_sur_france_musique"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Henri Demarquette, violoncelle – Philarmonie de Chambre, direction Marc Minkowski."
@@ -4224,6 +4675,7 @@
 
 - rawDate: "26/11/00"
   titre: "Concerto pour Violoncelle à la salle Pleyel"
+  id: "concerto_pour_violoncelle_a_la_salle_pleyel"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Henri Demarquette, violoncelle – Philharmonie de Chambre, direction Marc Minkowski."
@@ -4234,6 +4686,7 @@
 
 - rawDate: "04/06/00"
   titre: "L’Office des Naufragés à La Prée"
+  id: "l_office_des_naufrages_a_la_pree"
   oeuvres:
       - L'Office des Naufragés
   interpretes: "Françoise Kubler, soprano – Armand Angster, clarinette – Michèle Renoul, piano – Quatuor Arpeggione – Michael Lonsdale, récitant."
@@ -4244,6 +4697,7 @@
 
 - rawDate: "23/05/00"
   titre: "Portraits et Apparitions au Sudden Theatre"
+  id: "portraits_et_apparitions_au_sudden_theatre"
   oeuvres:
       - Portraits et Apparitions
   interpretes: "Olivier Greif, piano."
@@ -4253,6 +4707,7 @@
 
 - rawDate: "09/05/00"
   titre: "Three Settings of Musset à la BNF"
+  id: "three_settings_of_musset_a_la_bnf"
   oeuvres:
       - Three Settings of Musset
   interpretes: "Françoise Destambert, chant et Isabelle Aubert, piano."
@@ -4263,6 +4718,7 @@
 
 - rawDate: "23/04/00"
   titre: "Quatuor n°4 à La Prée"
+  id: "quatuor_n_4_a_la_pree"
   oeuvres:
       - Trois chansons apocryphes
       - Quatuor n°4 “Ulysses”
@@ -4274,6 +4730,7 @@
 
 - rawDate: "04/03/00"
   titre: "Quatre Poèmes de Jacques Prévert à Paris III-Sorbonne"
+  id: "quatre_poemes_de_jacques_prevert_a_paris_iii_sorbonne"
   oeuvres:
       - Quatre Poèmes de J. Prévert
   interpretes: "Jacques Loiseleur des Longchamps, baryton et Grigori Abramian, piano."
@@ -4284,6 +4741,7 @@
 
 - rawDate: "15/11/99"
   titre: "Sonate de Guerre au théâtre Sylvia Montfort"
+  id: "sonate_de_guerre_au_theatre_sylvia_montfort"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Pascal Amoyel"
@@ -4294,6 +4752,7 @@
 
 - rawDate: "14/10/99"
   titre: "Shylock Funèbre au musée d’Orsay"
+  id: "shylock_funebre_au_musee_d_orsay"
   oeuvres:
       - Shylock Funèbre
   interpretes: "Walter Grimmer, violoncelle et Mark Foster, piano."
@@ -4304,6 +4763,7 @@
 
 - rawDate: "28/08/99"
   titre: "Galiarda Dolorosa au château"
+  id: "galiarda_dolorosa_au_chateau"
   oeuvres:
       - Variations on Peter Philips “Galiarda Dolorosa”
   interpretes: "Gaëtane Prouvost, violon et Olivier Greif, piano."
@@ -4312,6 +4772,7 @@
 
 - rawDate: "02/07/99"
   titre: "Concerto pour violoncelle à Notre-Dame"
+  id: "concerto_pour_violoncelle_a_notre_dame"
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
   interpretes: "Henri Demarquette, violoncelle et l’Orchestre des Musiciens de La Prée, dirigé par Jérémie Rhorer."
@@ -4322,6 +4783,7 @@
 
 - rawDate: "23/06/99"
   titre: "Heine chez Yves et Aurore"
+  id: "heine_chez_yves_et_aurore"
   oeuvres:
       - Light Music
   interpretes: "Jacques Loiseleur des Longchamps, baryton et Grigori Abramian, pianiste."
@@ -4332,6 +4794,7 @@
 
 - rawDate: "21/06/99"
   titre: "Sonate de Requiem aux Galeries Lafayette"
+  id: "sonate_de_requiem_aux_galeries_lafayette"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano."
@@ -4342,6 +4805,7 @@
 
 - rawDate: "09/06/99"
   titre: "Sonate de Guerre à l’auditorium Saint-Germain"
+  id: "sonate_de_guerre_a_l_auditorium_saint_germain"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Pascal Amoyel"
@@ -4352,6 +4816,7 @@
 
 - rawDate: "05/06/99"
   titre: "Chansons Apocryphes à Lyon"
+  id: "chansons_apocryphes_a_lyon"
   oeuvres:
       - Trois chansons apocryphes
   interpretes: "Marie Devellereau, soprano et Alexandre Tharaud, piano."
@@ -4360,6 +4825,7 @@
 
 - rawDate: "03/06/99"
   titre: "Chansons Apocryphes au Louvre"
+  id: "chansons_apocryphes_au_louvre"
   oeuvres:
       - Trois chansons apocryphes
   interpretes: "Marie Devellereau, soprano et Alexandre Tharaud, piano."
@@ -4370,6 +4836,7 @@
 
 - rawDate: "31/05/99"
   titre: "Portraits et Apparitions à l’Espace Kiron"
+  id: "portraits_et_apparitions_a_l_espace_kiron"
   oeuvres:
       - Trois chansons apocryphes
       - Trio
@@ -4382,6 +4849,7 @@
 
 - rawDate: "16/05/99"
   titre: "Chansons Apocryphes à La Prée"
+  id: "chansons_apocryphes_a_la_pree"
   oeuvres:
       - Trois chansons apocryphes
   interpretes: "Marie Devellereau, soprano et Olivier Greif, piano."
@@ -4390,6 +4858,7 @@
 
 - rawDate: "15/05/99"
   titre: "Veni Creator sur Muzzik"
+  id: "veni_creator_sur_muzzik"
   oeuvres:
       - Veni Creator
   interpretes: "Henri Demarquette, violoncelle et Olivier Greif, piano"
@@ -4400,6 +4869,7 @@
 
 - rawDate: "15/05/99"
   titre: "Sonate de Guerre à La Prée"
+  id: "sonate_de_guerre_a_la_pree"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Pascal Amoyel"
@@ -4408,6 +4878,7 @@
 
 - rawDate: "12/05/99"
   titre: "Le Trio à La Prée"
+  id: "le_trio_a_la_pree"
   oeuvres:
       - Trio
   interpretes: "Bruno Rigutto, piano – Renaud Capuçon, violon – Dominique de Williencourt, violoncelle."
@@ -4418,6 +4889,7 @@
 
 - rawDate: "04/05/99"
   titre: "Todesfuge à Angers"
+  id: "todesfuge_a_angers"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Stephan Genz, baryton et le quatuor Sine Nomine."
@@ -4426,6 +4898,7 @@
 
 - rawDate: "24/03/99"
   titre: "Sonate de Guerre à l’Unesco"
+  id: "sonate_de_guerre_a_l_unesco"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Pascal Amoyel"
@@ -4435,6 +4908,7 @@
 
 - rawDate: "23/01/99"
   titre: "Adieu New-York à  la Fondation Singer"
+  id: "adieu_new_york_a_la_fondation_singer"
   oeuvres:
       - Adieu New York
   interpretes: "Mathieu Dufour, flûte – Bernard Yanotta, clarinette – Gérard Poulet, violon – Éric Villeminey, violoncelle – Noël Lee, piano."
@@ -4444,6 +4918,7 @@
 
 - rawDate: "13/12/98"
   titre: "Todesfuge à la Maison de Radio France"
+  id: "todesfuge_a_la_maison_de_radio_france"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Stephan Genz, baryton, et le quatuor Sine Nomine."
@@ -4454,6 +4929,7 @@
 
 - rawDate: "26/11/98"
   titre: "Todesfuge à Strasbourg"
+  id: "todesfuge_a_strasbourg"
   oeuvres:
       - Quatuor n°3 “Todesfuge”
   interpretes: "Stephan Genz, baryton et le quatuor Sine Nomine."
@@ -4464,6 +4940,7 @@
 
 - rawDate: "11/11/98"
   titre: "Le Trio en Artois"
+  id: "le_trio_en_artois"
   oeuvres:
       - Trio
   interpretes: "Renaud Capuçon, violon – Henri Demarquette, violoncelle – Jérôme Ducros, piano."
@@ -4474,6 +4951,7 @@
 
 - rawDate: "01/10/98"
   titre: "Sonate de Guerre à La Prée"
+  id: "sonate_de_guerre_a_la_pree"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Pascal Amoyel"
@@ -4484,6 +4962,7 @@
 
 - rawDate: "26/09/98"
   titre: "Sonate de Guerre au château de Champs"
+  id: "sonate_de_guerre_au_chateau_de_champs"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Pascal Amoyel"
@@ -4492,6 +4971,7 @@
 
 - rawDate: "22/09/98"
   titre: "Veni Creator à Juan-les-Pins"
+  id: "veni_creator_a_juan_les_pins"
   oeuvres:
       - Veni Creator
   interpretes: "Henri Demarquette, violoncelle et Olivier Greif, piano."
@@ -4502,6 +4982,7 @@
 
 - rawDate: "18/07/98"
   titre: "Quatre œuvres aux Arcs"
+  id: "quatre_oeuvres_aux_arcs"
   oeuvres:
       - Sonate de Requiem
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
@@ -4515,6 +4996,7 @@
 
 - rawDate: "13/07/98"
   titre: "Quadruple Concerto au Festival de Cordes"
+  id: "quadruple_concerto_au_festival_de_cordes"
   oeuvres:
       - Quadruple Concerto “La Danse des morts”
   interpretes: "Jérome Ducros, piano – Nicolas Dautricourt, violon – Florent Brémont, alto – Christophe Morin, violoncelle, et l’orchestre du festival dirigé par Jérémie Rhorer"
@@ -4524,6 +5006,7 @@
 
 - rawDate: "23/05/98"
   titre: "L’Office des Naufragés à Berlin"
+  id: "l_office_des_naufrages_a_berlin"
   oeuvres:
       - L'Office des Naufragés
   interpretes: "Maria Husmann, soprano – Eduard Brunner, clarinette – Frank-Immo Zichner, piano – Quatuor Vogler."
@@ -4534,6 +5017,7 @@
 
 - rawDate: "21/05/98"
   titre: "Westerbork et Chérence à La Prée"
+  id: "westerbork_et_cherence_a_la_pree"
   oeuvres:
       - Lettres de Westerbork
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
@@ -4545,6 +5029,7 @@
 
 - rawDate: "09/05/98"
   titre: "Les Lettres de Westerbork au CNSM"
+  id: "les_lettres_de_westerbork_au_cnsm"
   oeuvres:
       - Lettres de Westerbork
   interpretes: "Doris Lamprecht, soprano, Éric Crambes et Alexis Galpérine, violon."
@@ -4556,6 +5041,7 @@
 
 - rawDate: "11/04/98"
   titre: "Les Saints Irlandais à Deauville"
+  id: "les_saints_irlandais_a_deauville"
   oeuvres:
       - Le Livre des Saints Irlandais
   interpretes: "Stephan Genz, baryton et Olivier Greif, piano."
@@ -4566,6 +5052,7 @@
 
 - rawDate: "03/04/98"
   titre: "Quatuor n°2 au Prieuré de Saint-Cosme"
+  id: "quatuor_n_2_au_prieure_de_saint_cosme"
   oeuvres:
       - Quatuor à Cordes n°2 avec Voix
   interpretes: "Elsa Vacquin, soprano, et le quatuor Danel."
@@ -4577,6 +5064,7 @@
 
 - rawDate: "01/02/98"
   titre: "La Symphonie salle Gaveau"
+  id: "la_symphonie_salle_gaveau"
   oeuvres:
       - Symphonie
   interpretes: "Jacques Loiseleur des Longchamps, baryton et l’orchestre des Musiciens de La Prée, dirigé par Jérémie Rhorer."
@@ -4587,6 +5075,7 @@
 
 - rawDate: "15/11/97"
   titre: "Hymnes Spéculatifs à Pleyel"
+  id: "hymnes_speculatifs_a_pleyel"
   oeuvres:
       - Hymnes Spéculatifs
   interpretes: "Hanna Schaer, mezzo-soprano, et l’ensemble Musique Oblique."
@@ -4597,6 +5086,7 @@
 
 - rawDate: "22/07/97"
   titre: "Sonate de Guerre aux Arcs"
+  id: "sonate_de_guerre_aux_arcs"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Olivier Greif"
@@ -4605,6 +5095,7 @@
 
 - rawDate: "20/07/97"
   titre: "Piano et violon aux Arcs"
+  id: "piano_et_violon_aux_arcs"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
   interpretes: "Alexis Galpérine, violon et Olivier Greif, piano."
@@ -4615,6 +5106,7 @@
 
 - rawDate: "09/06/97"
   titre: "Galiarda Dolorosa aux Halles"
+  id: "galiarda_dolorosa_aux_halles"
   oeuvres:
       - Variations on Peter Philips “Galiarda Dolorosa”
   interpretes: "Gaëtane Prouvost, violon et Jean-Paul Sevilla, piano."
@@ -4625,6 +5117,7 @@
 
 - rawDate: "24/05/97"
   titre: "Quintette à Montpellier"
+  id: "quintette_a_montpellier"
   oeuvres:
       - Quintette pour Piano et cordes “A tale of the world”
   interpretes: "Florent Boffard, piano et la quatuor Sibelius."
@@ -4635,6 +5128,7 @@
 
 - rawDate: "23/05/97"
   titre: "Le Quintette à Arles"
+  id: "le_quintette_a_arles"
   oeuvres:
       - Quintette pour Piano et cordes “A tale of the world”
   interpretes: "Florent Boffard, piano et le quatuor Sibelius"
@@ -4645,6 +5139,7 @@
 
 - rawDate: "08/05/97"
   titre: "Battle of Agincourt à La Prée"
+  id: "battle_of_agincourt_a_la_pree"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Emma Savouret et Valentin Scharff."
@@ -4656,6 +5151,7 @@
 
 - rawDate: "29/04/97"
   titre: "Agincourt à Fribourg"
+  id: "agincourt_a_fribourg"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
   interpretes: "Valentin Scharff et Emma Savouret."
@@ -4666,6 +5162,7 @@
 
 - rawDate: "28/04/97"
   titre: "Ritournelle à Musicora"
+  id: "ritournelle_a_musicora"
   oeuvres:
       - Ritournelle pour Quintette à Vent
   interpretes: "Quintette Nielsen"
@@ -4676,6 +5173,7 @@
 
 - rawDate: "11/01/97"
   titre: "Trottoirs de Paris au Conservatoire d’Art Dramatique"
+  id: "trottoirs_de_paris_au_conservatoire_d_art_dramatique"
   oeuvres:
       - Les Trottoirs de Paris
   interpretes: "Cathrine Dubosc, soprano – Jean-Paul Fouchécourt, ténor – Olivier Greif, piano."
@@ -4687,6 +5185,7 @@
 
 - rawDate: "25/07/96"
   titre: "Quintette à Kuhmo"
+  id: "quintette_a_kuhmo"
   oeuvres:
       - Quintette pour Piano et cordes “A tale of the world”
   interpretes: "Jean-François Heisser, piano et la quatuor Sibelius."
@@ -4698,6 +5197,7 @@
 
 - rawDate: "16/05/96"
   titre: "Violoncelle seul et Chants de l’Âme à La Prée"
+  id: "violoncelle_seul_et_chants_de_l_ame_a_la_pree"
   oeuvres:
       - Sonate pour 2 Violoncelles “The Battle of Agincourt”
       - Les Chants de l’Âme
@@ -4710,6 +5210,7 @@
 
 - rawDate: "13/05/96"
   titre: "Greif sur France Musique"
+  id: "greif_sur_france_musique"
   oeuvres:
       - Wiener Konzert
       - Sonate n°15 “de Guerre”
@@ -4724,6 +5225,7 @@
 
 - rawDate: "08/05/96"
   titre: "Hymnes Spéculatifs aux Halles"
+  id: "hymnes_speculatifs_aux_halles"
   oeuvres:
       - Hymnes Spéculatifs
   interpretes: "Anna Schaer, mezzo-soprano et l’Ensemble Musique Oblique: Rémi Lerner, clarinette – Jean-Pierre Bouchard, cor – Denis Pascal, piano – Marie-Paule Milone, violoncelle."
@@ -4735,6 +5237,7 @@
 
 - rawDate: "22/02/96"
   titre: "Chants de l’Âme à Gaveau"
+  id: "chants_de_l_ame_a_gaveau"
   oeuvres:
       - Les Chants de l’Âme
   interpretes: "Jeniifer Smith, soprano et Olivier Greif, piano."
@@ -4746,6 +5249,7 @@
 
 - rawDate: "28/10/94"
   titre: "Un tailleur à Gloucester"
+  id: "un_tailleur_a_gloucester"
   oeuvres:
       - The Tailor of Gloucester
   interpretes: ""
@@ -4756,6 +5260,7 @@
 
 - rawDate: "18/05/94"
   titre: "Sonate de Requiem à l’Auditorium Saint-Germain"
+  id: "sonate_de_requiem_a_l_auditorium_saint_germain"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Cristoph Henkel, violoncelle et Olivier Greif, piano."
@@ -4764,6 +5269,7 @@
 
 - rawDate: "10/05/94"
   titre: "Hommage à Paul Bowles"
+  id: "hommage_a_paul_bowles"
   oeuvres:
       - Night without Sleep
       - Once a Lady was Here
@@ -4775,6 +5281,7 @@
 
 - rawDate: "18/02/94"
   titre: "Sonate de Requiem au Cargo"
+  id: "sonate_de_requiem_au_cargo"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Christoph Henkel, violoncelle et Olivier Greif, piano."
@@ -4785,6 +5292,7 @@
 
 - rawDate: "06/12/93"
   titre: "Am Grabe Franz Liszts sur France Musique"
+  id: "am_grabe_franz_liszts_sur_france_musique"
   oeuvres:
       - Am Grabe Franz Liszts
   interpretes: "Olivier Greif"
@@ -4795,6 +5303,7 @@
 
 - rawDate: "13/10/93"
   titre: "Concert Greif à Varsovie"
+  id: "concert_greif_a_varsovie"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
       - Sonate pour Piano n°20 “Le Rêve du Monde”
@@ -4807,6 +5316,7 @@
 
 - rawDate: "05/10/93"
   titre: "Les Lettres de Westerbork à la Maison de Radfio France"
+  id: "les_lettres_de_westerbork_a_la_maison_de_radfio_france"
   oeuvres:
       - Lettres de Westerbork
   interpretes: "Doris Lamprecht, mezzo-soprano, Luc Héry et Liliane Rossi, violons."
@@ -4819,6 +5329,7 @@
 
 - rawDate: "26/07/93"
   titre: "Sonate de Requiem à Kuhmo"
+  id: "sonate_de_requiem_a_kuhmo"
   oeuvres:
       - Sonate de Requiem
   interpretes: "Christoph Henkel, violoncelle et Olivier Greif, piano."
@@ -4829,6 +5340,7 @@
 
 - rawDate: "11/07/93"
   titre: "Sonate de Requiem et Rêve du monde à Fribourg"
+  id: "sonate_de_requiem_et_reve_du_monde_a_fribourg"
   oeuvres:
       - Sonate pour Piano n°20 “Le Rêve du Monde”
       - Sonate de Requiem
@@ -4840,6 +5352,7 @@
 
 - rawDate: "23/04/85"
   titre: "In Memoriam chez Total"
+  id: "in_memoriam_chez_total"
   oeuvres:
       - In Memoriam
   interpretes: "Olivier Greif"
@@ -4850,6 +5363,7 @@
 
 - rawDate: "24/05/84"
   titre: "Premaloker"
+  id: "premaloker"
   oeuvres:
       - Premaloker, méditation pour grand chœur mixte
   interpretes: "Atelier-Musique de Ville d’Avray avec Patrice Bocquillon flûte, Dominique Vidal clarinette, Marie-Christine Millière violon, Jacques Wiederker violoncelle, Josette Morata piano, direction Jean-Louis Petit."
@@ -4859,6 +5373,7 @@
 
 - rawDate: "07/06/83"
   titre: "Oi Akashe au CNSM"
+  id: "oi_akashe_au_cnsm"
   oeuvres:
       - Oi Akashe
   interpretes: "Élèves des classes de violoncelle"
@@ -4869,6 +5384,7 @@
 
 - rawDate: "13/12/82"
   titre: "Carte blanche à Olivier Greif"
+  id: "carte_blanche_a_olivier_greif"
   oeuvres:
       - Songs (four)
       - Le Tombeau de Ravel
@@ -4881,6 +5397,7 @@
 
 - rawDate: "07/08/82"
   titre: "Bomben en Gironde"
+  id: "bomben_en_gironde"
   oeuvres:
       - Bomben auf Engelland
   interpretes: "Nell Froger, soprano – Jean Baillon, saxophone – Olivier Greif, piano."
@@ -4889,6 +5406,7 @@
 
 - rawDate: "16/03/82"
   titre: "Soirée Greif à Bruxelles"
+  id: "soiree_greif_a_bruxelles"
   oeuvres:
       - Songs (four)
       - Sonate n°15 “de Guerre”
@@ -4902,6 +5420,7 @@
 
 - rawDate: "26/11/81"
   titre: "Nô au centre Pompidou"
+  id: "no_au_centre_pompidou"
   oeuvres:
       - Nô, Opéra de Chambre en 10 Scènes
   interpretes: "Philippe Duminy/Malcolm Walker; Robert Dume, Anna Ringart, chant.Jean-Philippe Post, clarinette – Jean-Michel Vinit, cor – Mariko Hayashima, orgue – Georges Pludermacher, piano  Sylvio Gualda, percussion."
@@ -4911,6 +5430,7 @@
 
 - rawDate: "18/05/81"
   titre: "Galiarda Dolorosa au musée Guimet"
+  id: "galiarda_dolorosa_au_musee_guimet"
   oeuvres:
       - Variations on Peter Philips “Galiarda Dolorosa”
   interpretes: "Alexandre Bellanger, violon et Julia Tamadjieva, piano."
@@ -4920,6 +5440,7 @@
 
 - rawDate: "27/05/80"
   titre: "Le Llivre du Pélerin salle Cortot"
+  id: "le_llivre_du_pelerin_salle_cortot"
   oeuvres:
       - Le Livre du Pélerin
   interpretes: "Nell Froger, soprano – Raphaël Oleg, violon – Olivier Greif, piano – Quintette à vent Nielsen."
@@ -4929,6 +5450,7 @@
 
 - rawDate: "25/03/80"
   titre: "Three poems of Sri Chinmmoy à la Cité Universitaire"
+  id: "three_poems_of_sri_chinmmoy_a_la_cite_universitaire"
   oeuvres:
       - Three Poems of Sri Chinmoy
   interpretes: "Meredith Parsons, mezzo-soprano, et Olivier Greif, piano."
@@ -4937,6 +5459,7 @@
 
 - rawDate: "18/03/80"
   titre: "Concert Greif à Nanterre"
+  id: "concert_greif_a_nanterre"
   oeuvres:
       - Sonate n°15 “de Guerre”
       - Bomben auf Engelland
@@ -4949,6 +5472,7 @@
 
 - rawDate: "13/12/79"
   titre: "Sonate de Requiem à Montluçon"
+  id: "sonate_de_requiem_a_montlucon"
   oeuvres:
       - Sonate de Requiem 1ère Version
   interpretes: "Frédéric Lodéon, violoncelle et Olivier Greif, piano."
@@ -4957,6 +5481,7 @@
 
 - rawDate: "27/03/79"
   titre: "Sonate de Requiem à la Cité Universitaire"
+  id: "sonate_de_requiem_a_la_cite_universitaire"
   oeuvres:
       - Sonate de Requiem 1ère Version
   interpretes: "Frédéric Lodéon, violoncelle et Olivier Greif, piano."
@@ -4966,6 +5491,7 @@
 
 - rawDate: "28/02/79"
   titre: "Soirée Greif au Théâtre de la Plaine"
+  id: "soiree_greif_au_theatre_de_la_plaine"
   oeuvres:
       - Taking Leave of a Friend
       - Le Tombeau de Ravel
@@ -4978,6 +5504,7 @@
 
 - rawDate: "30/01/79"
   titre: "Three Poems of Sri Chinmoy salle Rossini"
+  id: "three_poems_of_sri_chinmoy_salle_rossini"
   oeuvres:
       - Le Tombeau de Ravel
       - Veni Creator
@@ -4989,6 +5516,7 @@
 
 - rawDate: "15/11/78"
   titre: "Tombeau de Ravel au Vésinet"
+  id: "tombeau_de_ravel_au_vesinet"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Michel Dalberto et Olivier Greif"
@@ -4998,6 +5526,7 @@
 
 - rawDate: "12/09/78"
   titre: "In Memoriam à Pescara"
+  id: "in_memoriam_a_pescara"
   oeuvres:
       - In Memoriam
   interpretes: "Olivier Greif"
@@ -5007,6 +5536,7 @@
 
 - rawDate: "03/06/78"
   titre: "Na Pari Tomai au CNSM"
+  id: "na_pari_tomai_au_cnsm"
   oeuvres:
       - Na Pari Tomaï
   interpretes: "Huit élèves de la classe d’alto."
@@ -5016,6 +5546,7 @@
 
 - rawDate: "20/05/78"
   titre: "La Sonate de Guerre à Royaumont"
+  id: "la_sonate_de_guerre_a_royaumont"
   oeuvres:
       - Sonate n°15 “de Guerre”
   interpretes: "Olivier Greif"
@@ -5025,6 +5556,7 @@
 
 - rawDate: "03/04/78"
   titre: "Concert Greif aux Pâques d’Annecy"
+  id: "concert_greif_aux_paques_d_annecy"
   oeuvres:
       - Sonate pour Violon et Piano n°3 “The Meeting of the Waters”
       - Veni Creator
@@ -5035,6 +5567,7 @@
 
 - rawDate: "20/02/78"
   titre: "Semaine Greif sur France Culture"
+  id: "semaine_greif_sur_france_culture"
   oeuvres:
       - Variations on Peter Philips “Galiarda Dolorosa”
       - Sonate n°14 pour piano “Dans le Goût Ancien”
@@ -5050,6 +5583,7 @@
 
 - rawDate: "13/02/78"
   titre: "Veni Creator en Espagne"
+  id: "veni_creator_en_espagne"
   oeuvres:
       - Veni Creator
   interpretes: "Daniel Raclot, violoncelle et Olivier Greif, piano."
@@ -5060,6 +5594,7 @@
 
 - rawDate: "25/12/77"
   titre: "Petite Cantate de Chambre en Suisse"
+  id: "petite_cantate_de_chambre_en_suisse"
   oeuvres:
       - Petite Cantate de Chambre
   interpretes: "Evelyn Brunner, soprano – Henri Barda et Olivier Greif, pianos."
@@ -5069,6 +5604,7 @@
 
 - rawDate: "18/11/77"
   titre: "Sonate dans le goût ancien salle Cortot"
+  id: "sonate_dans_le_gout_ancien_salle_cortot"
   oeuvres:
       - Sonate n°14 pour piano “Dans le Goût Ancien”
   interpretes: "Henri Barda"
@@ -5079,6 +5615,7 @@
 
 - rawDate: "10/10/77"
   titre: "Concert Greif au théâtre 13"
+  id: "concert_greif_au_theatre_13"
   oeuvres:
       - Le Tombeau de Ravel
       - Bomben auf Engelland
@@ -5091,6 +5628,7 @@
 
 - rawDate: "02/10/77"
   titre: "Li T’ai Po à Hong Kong"
+  id: "li_t_ai_po_a_hong_kong"
   oeuvres:
       - Sonate n°18 pour Piano “Three Poems of Li T’ai Po”
   interpretes: "Fan Siao Ping"
@@ -5100,6 +5638,7 @@
 
 - rawDate: "23/04/77"
   titre: "Li T’ai Po au château de Groussay"
+  id: "li_t_ai_po_au_chateau_de_groussay"
   oeuvres:
       - Sonate n°18 pour Piano “Three Poems of Li T’ai Po”
   interpretes: "Siao Ping Fan"
@@ -5109,6 +5648,7 @@
 
 - rawDate: "07/02/77"
   titre: "Hautbois et Clavecin au Théâtre Essaïon"
+  id: "hautbois_et_clavecin_au_theatre_essaion"
   oeuvres:
       - Sonate pour Hautbois et Clavecin [ou Saxophone Alto et Piano]
   interpretes: "Jacques Vandeville, hautbois et William Christie, clavecin."
@@ -5118,6 +5658,7 @@
 
 - rawDate: "13/12/76"
   titre: "Carte blanche à Olivier Greif au théâtre Essaïon"
+  id: "carte_blanche_a_olivier_greif_au_theatre_essaion"
   oeuvres:
       - Songs (four)
       - Le Tombeau de Ravel
@@ -5131,6 +5672,7 @@
 
 - rawDate: "02/07/76"
   titre: "Four Songs à la Fondation Jacques Ibert"
+  id: "four_songs_a_la_fondation_jacques_ibert"
   oeuvres:
       - Songs (four)
   interpretes: "Nell Froger, soprano et Olivier Greif, piano."
@@ -5139,6 +5681,7 @@
 
 - rawDate: "26/04/76"
   titre: "Le tombeau de Ravel salle Cortot"
+  id: "le_tombeau_de_ravel_salle_cortot"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Henri Barda et Olivier Greif"
@@ -5148,6 +5691,7 @@
 
 - rawDate: "18/03/76"
   titre: "Soirée Greif chez Mme Louis Jacquinot"
+  id: "soiree_greif_chez_mme_louis_jacquinot"
   oeuvres:
       - Le Tombeau de Ravel
       - Songs (four)
@@ -5159,6 +5703,7 @@
 
 - rawDate: "24/05/75"
   titre: "Le Tombeau de Ravel à Montfort L’Amaury"
+  id: "le_tombeau_de_ravel_a_montfort_l_amaury"
   oeuvres:
       - Le Tombeau de Ravel
   interpretes: "Henri Barda et Olivier Greif"
@@ -5168,6 +5713,7 @@
 
 - rawDate: "15/05/74"
   titre: "Wiener Konzert salle Cortot"
+  id: "wiener_konzert_salle_cortot"
   oeuvres:
       - Wiener Konzert
   interpretes: "Nell Froger, soprano et Olivier Greif, piano."
@@ -5176,6 +5722,7 @@
 
 - rawDate: "24/04/74"
   titre: "Création du Wiener Konzert"
+  id: "creation_du_wiener_konzert"
   oeuvres:
       - Wiener Konzert
   interpretes: "Nell Froger, soprano et Olivier Greif, piano."
@@ -5185,6 +5732,7 @@
 
 - rawDate: "07/05/70"
   titre: "In Paradisum à Juilliard School"
+  id: "in_paradisum_a_juilliard_school"
   oeuvres:
   interpretes: "William Powell, clarinette – Marilyn Swindler, flûte– David Frost, percussions – Ultra Violet, voix – Olivier Greif, piano."
   adresse: "Juilliard School, New York"
@@ -5193,6 +5741,7 @@
 
 - rawDate: "06/08/69"
   titre: "Récital à Champéry"
+  id: "recital_a_champery"
   oeuvres:
       - Sonate n°3 pour Piano “Quatre Soli avec Fugue”
   interpretes: "Olivier Greif"
@@ -5202,6 +5751,7 @@
 
 - rawDate: "02/06/69"
   titre: "Sonate pour violon et piano salle Pleyel"
+  id: "sonate_pour_violon_et_piano_salle_pleyel"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
   interpretes: "Jacques Israelevitch, violon et Olivier Greif, piano."
@@ -5211,6 +5761,7 @@
 
 - rawDate: "06/12/68"
   titre: "Sonate pour violon et piano à Gaveau"
+  id: "sonate_pour_violon_et_piano_a_gaveau"
   oeuvres:
       - Sonate n°2 pour Violon et Piano
   interpretes: "Devy Erlih, violon et Olivier Greif, piano"
@@ -5221,6 +5772,7 @@
 
 - rawDate: "01/03/67"
   titre: "Concert des classes de composition"
+  id: "concert_des_classes_de_composition"
   oeuvres:
   interpretes: "Olivier Greif"
   adresse: "Salle Berlioz, CNSM, 14 rue de Madrid, 75008 Paris"
@@ -5229,6 +5781,7 @@
 
 - rawDate: "01/12/65"
   titre: "Olivier Greif à la télévision"
+  id: "olivier_greif_a_la_television"
   oeuvres:
       - Études pour Piano (23)
   interpretes: "Olivier Greif"
@@ -5239,6 +5792,7 @@
 
 - rawDate: "23/05/62"
   titre: "Suite perdue"
+  id: "suite_perdue"
   oeuvres:
   interpretes: "Olivier Greif"
   adresse: "Conservatoire d’Art Dramatique, 75009 Paris"
@@ -5247,6 +5801,7 @@
 
 - rawDate: "24/06/60"
   titre: "Danses Villageoises salle Berlioz"
+  id: "danses_villageoises_salle_berlioz"
   oeuvres:
   interpretes: "Olivier Greif"
   adresse: "Salle Berlioz, CNSM, 14 rue de Madrid, 75008 Paris"
@@ -5255,6 +5810,7 @@
 
 - rawDate: "23/05/60"
   titre: "Cent Cinquantenaire de Chopin"
+  id: "cent_cinquantenaire_de_chopin"
   oeuvres:
   interpretes: "Olivier Greif"
   adresse: "Salle Gaveau, 75008 Paris"
@@ -5263,6 +5819,7 @@
 
 - rawDate: "24/04/60"
   titre: "Royaume de la Musique"
+  id: "royaume_de_la_musique"
   oeuvres:
   interpretes: "Olivier Greif"
   adresse: "Théâtre des Champs-Élysées, 75008 Paris"
@@ -5271,6 +5828,7 @@
 
 - rawDate: "02/07/59"
   titre: "Nausicaa"
+  id: "nausicaa"
   oeuvres:
   interpretes: "Olivier Greif"
   adresse: "Salle Berlioz, CNSM, 14 rue de Madrid, 75008 Paris"
@@ -5279,6 +5837,7 @@
 
 - rawDate: "13/06/57"
   titre: "Audition d’élèves de Mme Descaves"
+  id: "audition_d_eleves_de_mme_descaves"
   oeuvres:
   interpretes: "Olivier Greif"
   adresse: "Salle Berlioz, CNSM, 14 rue de Madrid, 75008 Paris"
