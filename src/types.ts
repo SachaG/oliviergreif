@@ -16,6 +16,7 @@ export type MusicService = {
 };
 
 export type Lien = {
+	id?: string;
 	url: string;
 	titre?: string;
 };
@@ -61,6 +62,7 @@ export type Disque = {
 	ref?: string;
 	ecouter?: MusicService[];
 	liens?: Lien[];
+	acheter?: Lien[];
 };
 export type DisqueWithId = Disque & WithId;
 

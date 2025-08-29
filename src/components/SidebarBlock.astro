@@ -1,0 +1,40 @@
+---
+import T from "./T.astro";
+
+interface Props {
+	k: string;
+	items?: Array<{
+		k?: string;
+		label?: string;
+		url: string;
+		heading?: string;
+	}>;
+}
+
+const { k, items } = Astro.props;
+---
+
+<div class="sidebar-block">
+	<h4 class="sidebar-block-heading">
+		<T k={k} />
+	</h4>
+	{
+		items && (
+			<ul class="items-list">
+				{items.map(({ label, url, k, heading }) => (
+					<li>
+						{heading && <h5 class="item-heading">{heading}</h5>}
+						<a
+							href={url}
+							target={url.includes("http") ? "_blank" : "_self"}
+							class="link-heading"
+						>
+							<T k={k} fallback={label} />
+						</a>
+					</li>
+				))}
+			</ul>
+		)
+	}
+	<slot />
+</div>

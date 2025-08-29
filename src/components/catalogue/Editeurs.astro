@@ -3,6 +3,7 @@ import { getEditeurs } from "../../content";
 const { currentEditeurId, limit } = Astro.props;
 import { capitalizeFirstLetter } from "../../content";
 import { getEditeurCatalogLink } from "../../content";
+import SidebarBlock from "../SidebarBlock.astro";
 import T from "../T.astro";
 
 const editeurs = getEditeurs();
@@ -10,8 +11,7 @@ const editeurs = getEditeurs();
 const showMore = limit && limit <= editeurs.length;
 ---
 
-<div class="editeurs">
-	<h3 class="items-list-heading"><T k="catalogue.editeurs" /></h3>
+<SidebarBlock k="catalogue.editeurs">
 	<ul class="items-list">
 		{
 			editeurs.map(({ id, titre, count }) => {
@@ -39,7 +39,7 @@ const showMore = limit && limit <= editeurs.length;
 			)
 		}
 	</ul>
-</div>
+</SidebarBlock>
 
 <style type="text/scss">
 	.editeur-current {

@@ -1,6 +1,7 @@
 ---
 import Disque from "../../components/disques/Disque.astro";
 import PageLayout from "../../components/layouts/PageLayout.astro";
+import SidebarBlock from "../../components/SidebarBlock.astro";
 import T from "../../components/T.astro";
 import {
 	getDisque,
@@ -16,7 +17,7 @@ export function getStaticPaths() {
 
 const { id } = Astro.params;
 const disque = getDisque(id);
-const { titre, ecouter, liens } = disque;
+const { titre, ecouter, liens, acheter } = disque;
 ---
 
 <Layout title={titre}>
@@ -27,48 +28,38 @@ const { titre, ecouter, liens } = disque;
 		<div slot="page-content"><Disque id={id} /></div>
 
 		{
-			ecouter && ecouter.length > 0 && (
-				<div slot="page-sidebar">
-					<h4 class="sidebar-block-heading">
-						<T k="ecouter" />
-					</h4>
-					<ul class="items-list">
-						{ecouter.map((service) => (
-							<li>
-								<a
-									href={service.url}
-									target="_blank"
-									class="link-heading"
-								>
-									<T k={service.id} />
-								</a>
-							</li>
-						))}
-					</ul>
-				</div>
+			acheter && acheter.length > 0 && (
+				<SidebarBlock
+					k="acheter"
+					items={acheter.map(({ id, url }) => ({
+						k: id,
+						url,
+					}))}
+					slot="page-sidebar"
+				/>
+			)
+		}
+
+		{
+			ecouter && ecouter?.length > 0 && (
+				<SidebarBlock
+					k="ecouter"
+					items={ecouter.map(({ id, url }) => ({ k: id, url }))}
+					slot="page-sidebar"
+				/>
 			)
 		}
 
 		{
 			liens && liens.length > 0 && (
-				<div slot="page-sidebar">
-					<h4 class="sidebar-block-heading">
-						<T k="liens" />
-					</h4>
-					<ul class="items-list">
-						{liens.map((lien) => (
-							<li>
-								<a
-									href={lien.url}
-									target="_blank"
-									class="link-heading"
-								>
-									<T k={lien.titre} />
-								</a>
-							</li>
-						))}
-					</ul>
-				</div>
+				<SidebarBlock
+					k="liens"
+					items={liens.map(({ titre, url }) => ({
+						label: titre,
+						url,
+					}))}
+					slot="page-sidebar"
+				/>
 			)
 		}
 	</PageLayout>

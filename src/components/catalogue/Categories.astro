@@ -2,6 +2,7 @@
 const { currentCategoryId, limit } = Astro.props;
 import { capitalizeFirstLetter } from "../../content";
 import { getCategories, getCategoryLink } from "../../content";
+import SidebarBlock from "../SidebarBlock.astro";
 import T from "../T.astro";
 
 const allCategories = getCategories();
@@ -10,10 +11,7 @@ const categories = limit ? allCategories.slice(0, limit) : allCategories;
 const showMore = limit && limit < allCategories.length;
 ---
 
-<div class="categories">
-	<h3 class="items-list-heading">
-		<T k="catalogue.categories" />
-	</h3>
+<SidebarBlock k="catalogue.categories">
 	<ul class="items-list">
 		{
 			categories.map(({ id, count }) => {
@@ -39,23 +37,23 @@ const showMore = limit && limit < allCategories.length;
 			)
 		}
 	</ul>
+</SidebarBlock>
 
-	<style type="text/scss">
-		.categories .items-list {
-			overflow-y: scroll;
-			max-height: 80vh;
-			overscroll-behavior: contain;
-		}
+<style type="text/scss">
+	.categories .items-list {
+		overflow-y: scroll;
+		max-height: 80vh;
+		overscroll-behavior: contain;
+	}
+	a {
+		/* font-weight: normal; */
+	}
+	.category-current {
 		a {
-			/* font-weight: normal; */
+			font-weight: bold;
 		}
-		.category-current {
-			a {
-				font-weight: bold;
-			}
-		}
-		.count {
-			font-weight: normal;
-		}
-	</style>
-</div>
+	}
+	.count {
+		font-weight: normal;
+	}
+</style>

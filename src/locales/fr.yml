@@ -60,12 +60,8 @@ strings:
       t: Durée
     - key: ecouter
       t: Écouter
-    - key: apple_music
-      t: Apple Music
-    - key: spotify
-      t: Spotify
-    - key: youtube
-      t: YouTube
+    - key: acheter
+      t: Acheter
     - key: catalogue.categories
       t: Catégories
     - key: catalogue.instruments
@@ -104,3 +100,14 @@ strings:
       t: Piano
     - key: musique_de_chambre
       t: Musique de Chambre
+
+    # services
+
+    - key: apple_music
+      t: Apple Music
+    - key: spotify
+      t: Spotify
+    - key: youtube
+      t: YouTube
+    - key: amazon
+      t: Amazon

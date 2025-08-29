@@ -11,6 +11,7 @@ import {
 import { getItemIdFromSlug } from "../../../helpers";
 import Field from "../../Field.astro";
 import PageLayout from "../../layouts/PageLayout.astro";
+import SidebarBlock from "../../SidebarBlock.astro";
 import T from "../../T.astro";
 import Instruments from "./Instruments.astro";
 const { id } = Astro.props;
@@ -99,46 +100,37 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 			</div>
 		)
 	}
+
 	{
 		disques && disques.length > 0 && (
-			<div slot="page-sidebar">
-				<h4 class="sidebar-block-heading">
-					<T k="disques" />
-				</h4>
-				<ul class="items-list">
-					{disques.map((disque) => {
-						return (
-							<li>
-								<h5 class="item-heading">{disque.maison}</h5>
-								<a class="link-heading" href={getPath(disque)}>
-									{disque.titre}
-								</a>
-							</li>
-						);
-					})}
-				</ul>
-			</div>
+			<SidebarBlock
+				k="disques"
+				items={disques.map((disque) => {
+					const { titre, maison } = disque;
+					return {
+						label: titre,
+						url: getPath(disque),
+						heading: maison,
+					};
+				})}
+				slot="page-sidebar"
+			/>
 		)
 	}
 	{
 		concerts && concerts.length > 0 && (
-			<div slot="page-sidebar">
-				<h4 class="sidebar-block-heading">
-					<T k="concerts" />
-				</h4>
-				<ul class="items-list">
-					{concerts.map((concert) => {
-						return (
-							<li>
-								<h5 class="item-heading">{concert.annee}</h5>
-								<a class="link-heading" href={getPath(concert)}>
-									{concert.titre}
-								</a>
-							</li>
-						);
-					})}
-				</ul>
-			</div>
+			<SidebarBlock
+				k="concerts"
+				items={concerts.map((concert) => {
+					const { titre, annee } = concert;
+					return {
+						label: titre,
+						url: getPath(concert),
+						heading: String(annee),
+					};
+				})}
+				slot="page-sidebar"
+			/>
 		)
 	}
 </PageLayout>
