@@ -12,6 +12,12 @@ export enum MusicServiceId {
 export type MusicService = {
 	id: MusicServiceId;
 	url: string;
+	titre?: string;
+};
+
+export type Lien = {
+	url: string;
+	titre?: string;
 };
 
 export type Oeuvre = {
@@ -53,6 +59,8 @@ export type Disque = {
 	maison?: string;
 	image?: string;
 	ref?: string;
+	ecouter?: MusicService[];
+	liens?: Lien[];
 };
 export type DisqueWithId = Disque & WithId;
 

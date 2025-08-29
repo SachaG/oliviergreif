@@ -101,13 +101,14 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 	{
 		disques && disques.length > 0 && (
 			<div slot="page-sidebar">
-				<h4>
+				<h4 class="sidebar-block-heading">
 					<T k="disques" />
 				</h4>
 				<ul class="items-list">
 					{disques.map((disque) => {
 						return (
 							<li>
+								<h5 class="item-heading">{disque.maison}</h5>
 								<a class="link-heading" href={getPath(disque)}>
 									{disque.titre}
 								</a>
@@ -121,13 +122,14 @@ const editeurItem = editeur && getEditeur(convertTitle(editeur));
 	{
 		concerts && concerts.length > 0 && (
 			<div slot="page-sidebar">
-				<h4>
+				<h4 class="sidebar-block-heading">
 					<T k="concerts" />
 				</h4>
 				<ul class="items-list">
 					{concerts.map((concert) => {
 						return (
 							<li>
+								<h5 class="item-heading">{concert.annee}</h5>
 								<a class="link-heading" href={getPath(concert)}>
 									{concert.titre}
 								</a>

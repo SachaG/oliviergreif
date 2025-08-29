@@ -20,6 +20,7 @@ import PageLayout from "../../../components/layouts/PageLayout.astro";
 import Categories from "../../../components/catalogue/Categories.astro";
 import AllCatalog from "../../../components/catalogue/AllCatalog.astro";
 import Editeurs from "../../../components/catalogue/Editeurs.astro";
+import Search from "../../../components/catalogue/Search.astro";
 
 
 export function getStaticPaths() {
@@ -35,6 +36,8 @@ const {titre}=editeur
 const catalogueByEditeur = getCatalogue({editeurId: titre})
 
 ---
+
+<script src="../../../scripts/search.ts"></script>
 
 <Layout title={`${getString("catalogue")?.t} (${titre})`}>
 	<PageLayout sectionId={SectionId.CATALOGUE}>
@@ -53,6 +56,7 @@ const catalogueByEditeur = getCatalogue({editeurId: titre})
 			))
 		}
 		<AllCatalog slot="page-sidebar" />
+		<Search slot="page-sidebar" />
 		<Categories slot="page-sidebar" />
 		<Instruments slot="page-sidebar" />
 		<Editeurs slot="page-sidebar" currentEditeurId={id}  />

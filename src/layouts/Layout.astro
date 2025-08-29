@@ -333,7 +333,7 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		padding: 0;
 		display: flex;
 		flex-direction: column;
-		gap: var(--quarterSpacing);
+		gap: var(--halfSpacing);
 		font-family: var(--fontFamilySecondary);
 		li {
 			/* border-bottom: var(--border); */
@@ -342,6 +342,11 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 			&:last-child {
 				border: none;
 				padding-bottom: 0;
+			}
+			.item-heading {
+				font-size: 0.8rem;
+				font-weight: normal;
+				margin: 0;
 			}
 		}
 	}

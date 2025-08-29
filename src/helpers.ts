@@ -1,3 +1,5 @@
+import { getCollection, getEntry } from "astro:content";
+
 import slugify from "slugify";
 import catalogue_ from "./data/catalogue.yml";
 import concerts_ from "./data/concerts.yml";
@@ -32,7 +34,7 @@ import type {
 // import ActualiteComponent from "./components/actualites/Actualite.astro";
 // import ConcertComponent from "./components/concerts/Concert.astro";
 
-const catalogue = catalogue_ as Oeuvre[];
+const catalogue = await getCollection("catalogue");
 const concerts = concerts_ as Concert[];
 const disques = disques_ as Disque[];
 const editeurs = editeurs_ as Editeur[];
@@ -111,7 +113,8 @@ export const getCatalogue = (options?: {
 	instrumentGroupId?: keyof typeof instrumentGroups;
 	categoryId?: string;
 }) => {
-	const allItems = sortByOpus(decorate<Oeuvre>(catalogue, "catalogue"));
+	const rawCatalog = catalogue.map((c) => c.data as Oeuvre);
+	const allItems = sortByOpus(decorate<Oeuvre>(rawCatalog, "catalogue"));
 	const { instrumentId, instrumentGroupId, categoryId, editeurId } =
 		options || {};
 	if (instrumentGroupId) {
@@ -369,7 +372,11 @@ export const getItemsByYear = <
 			items: items.filter((o) => o.annee === year),
 		}),
 	);
-	return itemsByYear;
+	const unknownYear = {
+		year: "???",
+		items: items.filter((o) => !o.annee),
+	};
+	return [...itemsByYear, unknownYear];
 };
 
 const anim = {

@@ -10,8 +10,12 @@
       - "Sonate n°9 pour Piano “Suite Paradisiac Memories”"
   image: three_piano_sonatas.webp
   liens:
-      - label: https://arion-music.com/product/42411/
-      - apple_music: https://classical.music.apple.com/us/album/1818549425
+      - id: label
+        url: https://arion-music.com/product/42411/
+        titre: Arion Music
+  ecouter:
+      - id: apple_music
+        url: https://classical.music.apple.com/us/album/1818549425
 
 - titre: Les Chants de l'âme (Live in Deauville)
   annee: 2020
@@ -23,8 +27,12 @@
       - "Les Chants de l’Âme"
   image: les_chants_de_l_ame_deauville.webp
   liens:
-      - label: https://arion-music.com/product/42411/
-      - apple_music: https://classical.music.apple.com/pl/album/1571685862
+      - id: label
+        url: https://arion-music.com/product/42411/
+        titre: Arion Music
+  ecouter:
+      - id: apple_music
+        url: https://classical.music.apple.com/pl/album/1571685862
 
 - titre: "Office des Naufragés par l’ensemble Accroche Note"
   annee: 2005
@@ -210,6 +218,10 @@
       - Night without Sleep
       - Les Trottoirs de Paris
   ref: IMV084
+  image: le_reve_du_monde.jpg
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/2LuX6yqQM94uslUdcGIn5U
 
 - titre: "Musique de chambre: Veni Creator, Galiarda dolorosa, 42nd Street, Adieu New York, etc."
   annee: 2010

@@ -1,6 +1,7 @@
 ---
 import Disque from "../../components/disques/Disque.astro";
 import PageLayout from "../../components/layouts/PageLayout.astro";
+import T from "../../components/T.astro";
 import {
 	getDisque,
 	getDisques,
@@ -14,8 +15,8 @@ export function getStaticPaths() {
 }
 
 const { id } = Astro.params;
-const oeuvre = getDisque(id);
-const { titre } = oeuvre;
+const disque = getDisque(id);
+const { titre, ecouter, liens } = disque;
 ---
 
 <Layout title={titre}>
@@ -23,6 +24,52 @@ const { titre } = oeuvre;
 		<h2 slot="page-heading">
 			{titre}
 		</h2>
-		<div slot="page-content"><Disque id={id} /></div></PageLayout
-	>
+		<div slot="page-content"><Disque id={id} /></div>
+
+		{
+			ecouter && ecouter.length > 0 && (
+				<div slot="page-sidebar">
+					<h4 class="sidebar-block-heading">
+						<T k="ecouter" />
+					</h4>
+					<ul class="items-list">
+						{ecouter.map((service) => (
+							<li>
+								<a
+									href={service.url}
+									target="_blank"
+									class="link-heading"
+								>
+									<T k={service.id} />
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			)
+		}
+
+		{
+			liens && liens.length > 0 && (
+				<div slot="page-sidebar">
+					<h4 class="sidebar-block-heading">
+						<T k="liens" />
+					</h4>
+					<ul class="items-list">
+						{liens.map((lien) => (
+							<li>
+								<a
+									href={lien.url}
+									target="_blank"
+									class="link-heading"
+								>
+									<T k={lien.titre} />
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			)
+		}
+	</PageLayout>
 </Layout>
