@@ -79,11 +79,16 @@ export const decorate = <
 	items: T[],
 	parentSlug: string,
 ) =>
-	items.map((item) => ({
-		...item,
-		parentSlug,
-		id: convertTitle(item.titre),
-	})) as Array<T & WithId>;
+	items.map((item) => {
+		const id = item.id || convertTitle(item.titre);
+		const slug = id.replaceAll("_", "-");
+		return {
+			...item,
+			id,
+			slug,
+			parentSlug,
+		};
+	}) as Array<T & WithId>;
 
 export const getter = <T extends WithId>(id: string, items: T[]) => {
 	const item = items.find((item) => item.id === id);
@@ -133,10 +138,6 @@ export const convertTitle = (title: string = "") =>
 		remove: /[*+~.()'"!:@]/g,
 	});
 
-// paths helpers
-export const getItemsStaticPaths = (items: WithId[]) =>
-	items.map((item) => ({ params: { id: getItemSlug(item) } }));
-
 export const getPath = (item: ItemWithId) =>
 	`/${item.parentSlug}/${getItemSlug(item)}`;
 
@@ -150,6 +151,8 @@ export const sortByOpus = (catalogue: OeuvreWithId[]) =>
 
 export const getOeuvre = (id: string) =>
 	getter<OeuvreWithId>(id, getCatalogue());
+export const getOeuvreBySlug = (slug: string) =>
+	getCatalogue().find((o) => o.slug === slug);
 
 export const getOeuvreByTitre = (titre: string) =>
 	getCatalogue().find((oeuvre) => oeuvre.titre === titre);
@@ -278,6 +281,8 @@ export const getConcerts = () =>
 	decorate<Concert>(concerts, "concerts").map(parseConcert);
 export const getConcert = (id: string) =>
 	parseConcert(getter<ConcertWithId>(id, getConcerts()));
+export const getConcertBySlug = (slug: string) =>
+	getConcerts().find((c) => c.slug === slug);
 
 // Disques
 
@@ -287,6 +292,8 @@ export const getDisques = () =>
 		"annee",
 	).toReversed();
 export const getDisque = (id: string) => getter<DisqueWithId>(id, getDisques());
+export const getDisqueBySlug = (slug: string) =>
+	getDisques().find((d) => d.slug === slug);
 
 // Editeurs
 
@@ -304,8 +311,11 @@ export const getEditeurs = () => {
 export const getEditeur = (id: string) =>
 	getter<EditeurWithId>(id, getEditeurs());
 
-export const getEditeurCatalogLink = (instrumentGroupId: string) =>
-	`/catalogue/editeurs/${instrumentGroupId}`;
+export const getEditeurBySlug = (slug: string) =>
+	getEditeurs().find((e) => e.slug === slug);
+
+export const getEditeurCatalogLink = (editeur: EditeurWithId) =>
+	`/catalogue/editeur/${editeur.slug}`;
 
 // Actualites
 
@@ -324,6 +334,8 @@ export const getActualites = () =>
 		.toReversed();
 export const getActualite = (id: string) =>
 	parseActualite(getter<ActualiteWithId>(id, getActualites()));
+export const getActualiteBySlug = (slug: string) =>
+	getActualites().find((a) => a.slug === slug);
 
 // Liens
 

@@ -14,13 +14,14 @@ const showMore = limit && limit <= editeurs.length;
 <SidebarBlock k="catalogue.editeurs">
 	<ul class="items-list">
 		{
-			editeurs.map(({ id, titre, count }) => {
+			editeurs.map((editeur) => {
+				const { id, titre, count } = editeur;
 				const isCurrent = id === currentEditeurId;
 				return (
 					<li class={isCurrent ? "editeur-current" : ""}>
 						<a
 							class="link-heading"
-							href={getEditeurCatalogLink(id)}
+							href={getEditeurCatalogLink(editeur)}
 						>
 							{titre}
 							<span class="count">({count})</span>

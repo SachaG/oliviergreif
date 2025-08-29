@@ -36,6 +36,9 @@ export const uniq = <T>(a: T[]) => [...new Set(a)];
 export const compact = <T>(a: T[]) =>
 	a.filter((item) => item !== undefined && item !== null);
 
+export const getItemsStaticPaths = (items: WithId[]) =>
+	items.map((item) => ({ params: { id: getItemSlug(item) } }));
+
 export const getItemSlug = (item: WithId) => item.id.replaceAll("_", "-");
 
 export const getItemIdFromSlug = (slug: string) => slug.replaceAll("-", "_");

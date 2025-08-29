@@ -1,6 +1,7 @@
 export type WithId = {
 	id: string;
 	parentSlug: string;
+	slug: string;
 };
 
 export enum MusicServiceId {
@@ -22,6 +23,7 @@ export type Lien = {
 };
 
 export type Oeuvre = {
+	id: string;
 	opus: string;
 	titre: string;
 	annee?: number;
@@ -39,6 +41,7 @@ export type Oeuvre = {
 export type OeuvreWithId = Oeuvre & WithId;
 
 export type Concert = {
+	id: string;
 	rawDate: string;
 	date: Date;
 	annee?: number;
@@ -51,6 +54,7 @@ export type Concert = {
 export type ConcertWithId = Concert & WithId;
 
 export type Disque = {
+	id: string;
 	titre: string;
 	oeuvres?: string[];
 	date_disque?: string;
@@ -67,6 +71,7 @@ export type Disque = {
 export type DisqueWithId = Disque & WithId;
 
 export type Editeur = {
+	id: string;
 	titre: string;
 	url?: string;
 	adresse?: string;
@@ -77,6 +82,7 @@ export type EditeurWithId = Editeur & WithId;
 export type EditeurWithCount = EditeurWithId & { count: number };
 
 export type Actualite = {
+	id: string;
 	rawDate: number;
 	date: Date;
 	annee?: number;
@@ -90,6 +96,7 @@ export type LienExterne = {
 };
 
 export type Photo = {
+	id: string;
 	titre: string;
 	image: string;
 };

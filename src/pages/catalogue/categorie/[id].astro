@@ -4,13 +4,12 @@ import {
 	capitalizeFirstLetter,
 	getCategories,
 	getInstrumentsGroups,
-	getItemsStaticPaths,
 	getString,
 	instrumentGroups,
 	SectionId,
+    convertTitle,
+    getCatalogue
 } from "../../../content";
-import { convertTitle } from "../../../content";
-import { getCatalogue } from "../../../content";
 import Layout from "../../../layouts/Layout.astro";
 import type { WithId } from "../../../types";
 import Instruments from "../../../components/catalogue/Instruments.astro";
@@ -21,6 +20,7 @@ import Categories from "../../../components/catalogue/Categories.astro";
 import AllCatalog from "../../../components/catalogue/AllCatalog.astro";
 import Editeurs from "../../../components/catalogue/Editeurs.astro";
 import Search from "../../../components/catalogue/Search.astro";
+import { getItemsStaticPaths } from "../../../helpers";
 
 const { id } = Astro.params;
 const categoryId = id as string;

@@ -1,20 +1,16 @@
 ---
 import Actualite from "../../components/actualites/Actualite.astro";
-import {
-	getActualite,
-	getActualites,
-	getItemsStaticPaths,
-	getString,
-} from "../../content";
+import { getActualiteBySlug, getActualites, getString } from "../../content";
+import { getItemsStaticPaths } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
 export function getStaticPaths() {
 	return getItemsStaticPaths(getActualites());
 }
 
-const { id } = Astro.params;
-const actualite = getActualite(id);
-const { titre } = actualite;
+const { id: slug } = Astro.params;
+const actualite = getActualiteBySlug(slug)!;
+const { id } = actualite;
 ---
 
 <Layout title={getString("actualites")?.t}>

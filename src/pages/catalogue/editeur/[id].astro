@@ -1,36 +1,31 @@
 ---
 import Oeuvre from "../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
 import {
-	capitalizeFirstLetter,
-	getCategories,
 	getEditeur,
 	getEditeurs,
-	getItemsStaticPaths,
 	getString,
 	SectionId,
 } from "../../../content";
-import { convertTitle } from "../../../content";
 import { getCatalogue } from "../../../content";
 import Layout from "../../../layouts/Layout.astro";
-import type { WithId } from "../../../types";
 import Instruments from "../../../components/catalogue/Instruments.astro";
-import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
 import T from "../../../components/T.astro";
 import PageLayout from "../../../components/layouts/PageLayout.astro";
 import Categories from "../../../components/catalogue/Categories.astro";
 import AllCatalog from "../../../components/catalogue/AllCatalog.astro";
 import Editeurs from "../../../components/catalogue/Editeurs.astro";
 import Search from "../../../components/catalogue/Search.astro";
+import { getItemIdFromSlug, getItemsStaticPaths } from "../../../helpers";
 
 
-export function getStaticPaths() {
+export const getStaticPaths = async ()=> {
 	return getItemsStaticPaths(
-		getEditeurs().map(({ id }) => ({ id: convertTitle(id) }) as WithId)
+		getEditeurs()
 	);
 }
 
 const { id } = Astro.params;
-const editeur = getEditeur(id)
+const editeur = getEditeur(getItemIdFromSlug(id))
 const {titre}=editeur
 
 const catalogueByEditeur = getCatalogue({editeurId: titre})

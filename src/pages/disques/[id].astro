@@ -3,12 +3,8 @@ import Disque from "../../components/disques/Disque.astro";
 import PageLayout from "../../components/layouts/PageLayout.astro";
 import SidebarBlock from "../../components/SidebarBlock.astro";
 import T from "../../components/T.astro";
-import {
-	getDisque,
-	getDisques,
-	getItemsStaticPaths,
-	SectionId,
-} from "../../content";
+import { getDisqueBySlug, getDisques, SectionId } from "../../content";
+import { getItemIdFromSlug, getItemsStaticPaths } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
 export function getStaticPaths() {
@@ -16,7 +12,7 @@ export function getStaticPaths() {
 }
 
 const { id } = Astro.params;
-const disque = getDisque(id);
+const disque = getDisqueBySlug(id)!;
 const { titre, ecouter, liens, acheter } = disque;
 ---
 
