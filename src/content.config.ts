@@ -22,6 +22,5 @@ const catalogue = defineCollection({
 	}),
 });
 
-console.log({ catalogue });
 // 4. Export a single `collections` object to register your collection(s)
 export const collections = { catalogue };

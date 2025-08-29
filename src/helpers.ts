@@ -27,6 +27,7 @@ import type {
 	Photo,
 	PhotoWithId,
 	EditeurWithCount,
+	LienExterne,
 } from "./types";
 // import OeuvreComponent from "./components/catalogue/oeuvre/Oeuvre.astro";
 // import DisqueComponent from "./components/disques/Disque.astro";
@@ -38,7 +39,7 @@ const catalogue = await getCollection("catalogue");
 const concerts = concerts_ as Concert[];
 const disques = disques_ as Disque[];
 const editeurs = editeurs_ as Editeur[];
-const liens = liens_ as Lien[];
+const liens = liens_ as LienExterne[];
 const actualites = actualites_ as Actualite[];
 const photos = photos_ as Photo[];
 
@@ -320,7 +321,7 @@ export const getActualite = (id: string) =>
 
 // Liens
 
-export const getLiens = () => liens as Lien[];
+export const getLiens = () => liens as LienExterne[];
 
 // Photos
 

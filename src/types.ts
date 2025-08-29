@@ -83,7 +83,7 @@ export type Actualite = {
 };
 export type ActualiteWithId = Actualite & WithId;
 
-export type Lien = {
+export type LienExterne = {
 	texte: string;
 };
 
