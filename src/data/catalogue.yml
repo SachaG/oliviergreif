@@ -1,6 +1,6 @@
 - opus: "001"
   titre: "Cinq Chansons Enfantines"
-  id: "Cinq Chansons Enfantines"
+  id: "cinq_chansons_enfantines"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -15,7 +15,7 @@
 
 - opus: "001 bis"
   titre: "Petite Suite"
-  id: "Petite Suite"
+  id: "petite_suite"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -30,7 +30,7 @@
 
 - opus: "002"
   titre: "Quatre Poèmes de J. Prévert"
-  id: "Quatre Poèmes de J. Prévert"
+  id: "quatre_poemes_de_j_prevert"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -45,7 +45,7 @@
 
 - opus: "003"
   titre: "Les Saltimbanques"
-  id: "Les Saltimbanques"
+  id: "les_saltimbanques"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -60,7 +60,7 @@
 
 - opus: "004"
   titre: "Première Sonate pour Piano (Sonatine)"
-  id: "Première Sonate pour Piano (Sonatine)"
+  id: "premiere_sonate_pour_piano_sonatine"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -77,7 +77,7 @@
 
 - opus: "005"
   titre: "Thème Varié pour Piano"
-  id: "Thème Varié pour Piano"
+  id: "theme_varie_pour_piano"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -94,7 +94,7 @@
 
 - opus: "006"
   titre: "Sonate n°2 pour Piano (Suite pour Piano)"
-  id: "Sonate n°2 pour Piano (Suite pour Piano)"
+  id: "sonate_n_2_pour_piano_suite_pour_piano"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -113,7 +113,7 @@
 
 - opus: "007"
   titre: "Sept Variations sur un Thème Original"
-  id: "Sept Variations sur un Thème Original"
+  id: "sept_variations_sur_un_theme_original"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -130,7 +130,7 @@
 
 - opus: "008"
   titre: "Étude pour Piano"
-  id: "Étude pour Piano"
+  id: "etude_pour_piano"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -147,7 +147,7 @@
 
 - opus: "009"
   titre: "Trois Variations sur un Thème de Schumann"
-  id: "Trois Variations sur un Thème de Schumann"
+  id: "trois_variations_sur_un_theme_de_schumann"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -166,7 +166,7 @@
 
 - opus: "010"
   titre: "Premier Quatuor à Cordes"
-  id: "Premier Quatuor à Cordes"
+  id: "premier_quatuor_a_cordes"
   categorie: musique_de_chambre
   formation: "Quatuor à cordes"
   instruments: [violon, violon, alto, violoncelle]
@@ -183,7 +183,7 @@
 
 - opus: "011"
   titre: "Chanson de Gaspard Hauser (la)"
-  id: "Chanson de Gaspard Hauser (la)"
+  id: "chanson_de_gaspard_hauser_la"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -198,7 +198,7 @@
 
 - opus: "012"
   titre: "Les Regrets"
-  id: "Les Regrets"
+  id: "les_regrets"
   categorie: melodies
   formation: "Soprano, alto, basse et piano"
   instruments: [soprano, alto (voix), basse (voix), piano]
@@ -215,7 +215,7 @@
 
 - opus: "013"
   titre: "Toit (un)"
-  id: "Toit (un)"
+  id: "toit_un"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -230,7 +230,7 @@
 
 - opus: "014"
   titre: "Marche pour Flûte et Piano"
-  id: "Marche pour Flûte et Piano"
+  id: "marche_pour_flute_et_piano"
   categorie: musique_de_chambre
   formation: "Flûte et piano"
   instruments: [flûte, piano]
@@ -247,7 +247,7 @@
 
 - opus: "015"
   titre: "Sonate n°1 pour Violon et Piano"
-  id: "Sonate n°1 pour Violon et Piano"
+  id: "sonate_n_1_pour_violon_et_piano"
   categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
@@ -264,7 +264,7 @@
 
 - opus: "016"
   titre: "Cadence pour Piano / Variations continues"
-  id: "Cadence pour Piano / Variations continues"
+  id: "cadence_pour_piano_variations_continues"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -281,7 +281,7 @@
 
 - opus: "017"
   titre: "Sonate n°2 pour Violon et Piano"
-  id: "Sonate n°2 pour Violon et Piano"
+  id: "sonate_n_2_pour_violon_et_piano"
   categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
@@ -300,7 +300,7 @@
 
 - opus: "018"
   titre: "Ostinato pour Piano"
-  id: "Ostinato pour Piano"
+  id: "ostinato_pour_piano"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -317,7 +317,7 @@
 
 - opus: "019"
   titre: "The Little and the Fat"
-  id: "The Little and the Fat"
+  id: "the_little_and_the_fat"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -334,7 +334,7 @@
 
 - opus: "020"
   titre: "Le Mort Joyeux"
-  id: "Le Mort Joyeux"
+  id: "le_mort_joyeux"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -349,7 +349,7 @@
 
 - opus: "021"
   titre: "Études pour Piano (23)"
-  id: "Études pour Piano (23)"
+  id: "etudes_pour_piano_23"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -368,7 +368,7 @@
 
 - opus: "022"
   titre: "Sonate n°3 pour Piano “Quatre Soli avec Fugue”"
-  id: "Sonate n°3 pour Piano “Quatre Soli avec Fugue”"
+  id: "sonate_n_3_pour_piano_quatre_soli_avec_fugue"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -385,7 +385,7 @@
 
 - opus: "023"
   titre: "Alabama Song"
-  id: "Alabama Song"
+  id: "alabama_song"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -404,7 +404,7 @@
 
 - opus: "024"
   titre: "Sonate n°4 pour Piano “Trois Pièces”"
-  id: "Sonate n°4 pour Piano “Trois Pièces”"
+  id: "sonate_n_4_pour_piano_trois_pieces"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -421,7 +421,7 @@
 
 - opus: "025"
   titre: "Concerto pour Violon et Orchestre"
-  id: "Concerto pour Violon et Orchestre"
+  id: "concerto_pour_violon_et_orchestre"
   categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
@@ -438,7 +438,7 @@
 
 - opus: "026"
   titre: "Sonate n°5 pour Piano “Trois pièces”"
-  id: "Sonate n°5 pour Piano “Trois pièces”"
+  id: "sonate_n_5_pour_piano_trois_pieces"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -455,7 +455,7 @@
 
 - opus: "027"
   titre: "Sonate n°6 pour Piano"
-  id: "Sonate n°6 pour Piano"
+  id: "sonate_n_6_pour_piano"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -472,7 +472,7 @@
 
 - opus: "028"
   titre: "Sonate n°7 pour Piano"
-  id: "Sonate n°7 pour Piano"
+  id: "sonate_n_7_pour_piano"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -489,7 +489,7 @@
 
 - opus: "029"
   titre: "L'Île du Docteur Moreau"
-  id: "L'Île du Docteur Moreau"
+  id: "l_ile_du_docteur_moreau"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -508,7 +508,7 @@
 
 - opus: "030"
   titre: "Sonate n°8 pour Piano “Nocturne”"
-  id: "Sonate n°8 pour Piano “Nocturne”"
+  id: "sonate_n_8_pour_piano_nocturne"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -525,7 +525,7 @@
 
 - opus: "031"
   titre: "In Memoriam"
-  id: "In Memoriam"
+  id: "in_memoriam"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -548,7 +548,7 @@
 
 - opus: "032"
   titre: "Morbid Fixations"
-  id: "Morbid Fixations"
+  id: "morbid_fixations"
   categorie: piano
   formation: "2 pianos"
   instruments: [piano, piano]
@@ -565,7 +565,7 @@
 
 - opus: "033"
   titre: "Sonate n°9 pour Piano “Suite Paradisiac Memories”"
-  id: "Sonate n°9 pour Piano “Suite Paradisiac Memories”"
+  id: "sonate_n_9_pour_piano_suite_paradisiac_memories"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -587,7 +587,7 @@
 
 - opus: "033a"
   titre: "Rondo pour Piano “42nd Street”"
-  id: "Rondo pour Piano “42nd Street”"
+  id: "rondo_pour_piano_42nd_street"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -602,7 +602,7 @@
 
 - opus: "034"
   titre: "Sonate n°10 pour Piano “Marche, Valse”"
-  id: "Sonate n°10 pour Piano “Marche, Valse”"
+  id: "sonate_n_10_pour_piano_marche_valse"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -621,7 +621,7 @@
 
 - opus: "035"
   titre: "Glorieuse (la)"
-  id: "Glorieuse (la)"
+  id: "glorieuse_la"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -638,7 +638,7 @@
 
 - opus: "036"
   titre: "Sonate n°1 pour 2 Pianos (“Concerto pour deux Pianos”)"
-  id: "Sonate n°1 pour 2 Pianos (“Concerto pour deux Pianos”)"
+  id: "sonate_n_1_pour_2_pianos_concerto_pour_deux_pianos"
   categorie: piano
   formation: "2 pianos"
   instruments: [piano, piano]
@@ -653,7 +653,7 @@
 
 - opus: "037"
   titre: "Second Hommage à Raymond Roussel"
-  id: "Second Hommage à Raymond Roussel"
+  id: "second_hommage_a_raymond_roussel"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -672,7 +672,7 @@
 
 - opus: "038"
   titre: "Sonate n°11 pour Piano"
-  id: "Sonate n°11 pour Piano"
+  id: "sonate_n_11_pour_piano"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -689,7 +689,7 @@
 
 - opus: "039"
   titre: "Die Ilse – Paradisiac Memories n°2"
-  id: "Die Ilse – Paradisiac Memories n°2"
+  id: "die_ilse_paradisiac_memories_n_2"
   categorie: cantate
   formation: "Mezzo soprano, clarinette, quatuor à cordes, piano et percussion."
   instruments:
@@ -720,7 +720,7 @@
 
 - opus: "039a/039b"
   titre: "Le Triomphe de la Tonalité"
-  id: "Le Triomphe de la Tonalité"
+  id: "le_triomphe_de_la_tonalite"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -737,7 +737,7 @@
 
 - opus: "040"
   titre: "Wiener Konzert"
-  id: "Wiener Konzert"
+  id: "wiener_konzert"
   categorie: melodies
   formation: "Voix de femme et piano"
   instruments: [voix, piano]
@@ -758,7 +758,7 @@
 
 - opus: "041"
   titre: "Cantate “And Death Shall Have no Dominion”"
-  id: "Cantate “And Death Shall Have no Dominion”"
+  id: "cantate_and_death_shall_have_no_dominion"
   categorie: cantate
   formation: "Soprano, baryton, piano, instruments à vents, batterie."
   instruments: [soprano, baryton, piano, vents, percussions]
@@ -775,7 +775,7 @@
 
 - opus: "042"
   titre: "Ancient Music"
-  id: "Ancient Music"
+  id: "ancient_music"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -790,7 +790,7 @@
 
 - opus: "043"
   titre: "Bomben auf Engelland - 1"
-  id: "Bomben auf Engelland - 1"
+  id: "bomben_auf_engelland_1"
   categorie: melodies
   formation: "Voix de femme et piano"
   instruments: [voix, piano]
@@ -807,7 +807,7 @@
 
 - opus: "044"
   titre: "Taking Leave of a Friend"
-  id: "Taking Leave of a Friend"
+  id: "taking_leave_of_a_friend"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -822,7 +822,7 @@
 
 - opus: "045"
   titre: "Sonate n°12 pour Piano “Sonatine”"
-  id: "Sonate n°12 pour Piano “Sonatine”"
+  id: "sonate_n_12_pour_piano_sonatine"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -841,7 +841,7 @@
 
 - opus: "046"
   titre: "Périgourdine (la)"
-  id: "Périgourdine (la)"
+  id: "perigourdine_la"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -860,7 +860,7 @@
 
 - opus: "047"
   titre: "Sonate n°13 pour Piano"
-  id: "Sonate n°13 pour Piano"
+  id: "sonate_n_13_pour_piano"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -877,7 +877,7 @@
 
 - opus: "048"
   titre: "Sonate n°14 pour piano “Dans le Goût Ancien”"
-  id: "Sonate n°14 pour piano “Dans le Goût Ancien”"
+  id: "sonate_n_14_pour_piano_dans_le_gout_ancien"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -896,7 +896,7 @@
 
 - opus: "049"
   titre: "Light Music"
-  id: "Light Music"
+  id: "light_music"
   categorie: melodies
   formation: "Voix de femme, voix d'homme et piano"
   instruments: [soprano, baryton, piano]
@@ -923,7 +923,7 @@
 
 - opus: "050"
   titre: "Songs (three)"
-  id: "Songs (three)"
+  id: "songs_three"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -938,7 +938,7 @@
 
 - opus: "051"
   titre: "Birthday Song"
-  id: "Birthday Song"
+  id: "birthday_song"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -953,7 +953,7 @@
 
 - opus: "052"
   titre: "Scherzo pour Piano"
-  id: "Scherzo pour Piano"
+  id: "scherzo_pour_piano"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -970,7 +970,7 @@
 
 - opus: "053"
   titre: "Variations sur un Thème Militaire Allemand"
-  id: "Variations sur un Thème Militaire Allemand"
+  id: "variations_sur_un_theme_militaire_allemand"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -985,7 +985,7 @@
 
 - opus: "054"
   titre: "Sonate n°15 “de Guerre”"
-  id: "Sonate n°15 “de Guerre”"
+  id: "sonate_n_15_de_guerre"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1020,7 +1020,7 @@
 
 - opus: "055"
   titre: "Pillow Talk"
-  id: "Pillow Talk"
+  id: "pillow_talk"
   categorie: piano
   formation: "Piano et peut-être voix."
   instruments: [voix, piano]
@@ -1035,7 +1035,7 @@
 
 - opus: "056"
   titre: "Le Tombeau de Ravel"
-  id: "Le Tombeau de Ravel"
+  id: "le_tombeau_de_ravel"
   categorie: piano
   formation: "Piano à 4 mains"
   instruments: [piano, piano]
@@ -1056,7 +1056,7 @@
 
 - opus: "057"
   titre: "Menuet"
-  id: "Menuet"
+  id: "menuet"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1071,7 +1071,7 @@
 
 - opus: "058"
   titre: "The Spirit’s Song"
-  id: "The Spirit’s Song"
+  id: "the_spirit_s_song"
   categorie: melodies
   formation: "Piano et voix"
   instruments: [voix, piano]
@@ -1086,7 +1086,7 @@
 
 - opus: "059"
   titre: "Time is on my Side"
-  id: "Time is on my Side"
+  id: "time_is_on_my_side"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -1101,7 +1101,7 @@
 
 - opus: "060"
   titre: "Rockin’ Chairs"
-  id: "Rockin’ Chairs"
+  id: "rockin_chairs"
   categorie: piano
   formation: "2 pianos"
   instruments: [piano, piano]
@@ -1116,7 +1116,7 @@
 
 - opus: "061"
   titre: "Eloïse (ou Le Dit du Monde), oratorio en cinq parties"
-  id: "Eloïse (ou Le Dit du Monde), oratorio en cinq parties"
+  id: "eloise_ou_le_dit_du_monde_oratorio_en_cinq_parties"
   categorie: cantate
   formation: "Soli, chœur et orchestre"
   instruments: [soli, chœur, piano]
@@ -1133,7 +1133,7 @@
 
 - opus: "062"
   titre: "Sonate n°2 pour 2 pianos"
-  id: "Sonate n°2 pour 2 pianos"
+  id: "sonate_n_2_pour_2_pianos"
   categorie: piano
   formation: "2 pianos, avec quelques lignes de cor."
   instruments: [piano, piano, cor]
@@ -1152,7 +1152,7 @@
 
 - opus: "063"
   titre: "Songs (four)"
-  id: "Songs (four)"
+  id: "songs_four"
   categorie: melodies
   formation: "Voix de femme et piano"
   instruments: [soprano, piano]
@@ -1167,7 +1167,7 @@
 
 - opus: "064"
   titre: "Sonate n°3 pour 2 pianos"
-  id: "Sonate n°3 pour 2 pianos"
+  id: "sonate_n_3_pour_2_pianos"
   categorie: piano
   formation: "2 pianos"
   instruments: [piano, piano]
@@ -1188,7 +1188,7 @@
 
 - opus: "065"
   titre: "Sonate n°16 pour Piano “Silver String”"
-  id: "Sonate n°16 pour Piano “Silver String”"
+  id: "sonate_n_16_pour_piano_silver_string"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1207,7 +1207,7 @@
 
 - opus: "066"
   titre: "Joy! Joy!"
-  id: "Joy! Joy!"
+  id: "joy_joy"
   formation: "chœur mixte"
   categorie: musique_chorale
   instruments: [chœur]
@@ -1222,7 +1222,7 @@
 
 - opus: "067"
   titre: "Étude pour l’Égalité des Doigts"
-  id: "Étude pour l’Égalité des Doigts"
+  id: "etude_pour_l_egalite_des_doigts"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1239,7 +1239,7 @@
 
 - opus: "068"
   titre: "The Bells"
-  id: "The Bells"
+  id: "the_bells"
   categorie: cantate
   formation: "Chœur et orchestre"
   instruments: [piano, piano, guitare, batterie, chœur]
@@ -1256,7 +1256,7 @@
 
 - opus: "069"
   titre: "Adagio"
-  id: "Adagio"
+  id: "adagio"
   categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
@@ -1273,7 +1273,7 @@
 
 - opus: "070"
   titre: "Sonate pour Violon et Piano n°3 “The Meeting of the Waters”"
-  id: "Sonate pour Violon et Piano n°3 “The Meeting of the Waters”"
+  id: "sonate_pour_violon_et_piano_n_3_the_meeting_of_the_waters"
   categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
@@ -1323,7 +1323,7 @@
 
 - opus: "071"
   titre: "Bomben auf Engelland"
-  id: "Bomben auf Engelland"
+  id: "bomben_auf_engelland"
   categorie: cantate
   formation: "Chant, saxophone, piano"
   instruments: [piano, soprano, saxophone]
@@ -1350,7 +1350,7 @@
 
 - opus: "072"
   titre: "Einst da ich Bittre Tränen Vergoss"
-  id: "Einst da ich Bittre Tränen Vergoss"
+  id: "einst_da_ich_bittre_tranen_vergoss"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -1365,7 +1365,7 @@
 
 - opus: "073"
   titre: "Petite Cantate de Chambre"
-  id: "Petite Cantate de Chambre"
+  id: "petite_cantate_de_chambre"
   categorie: cantate
   formation: "Voix de femme et 2 pianos"
   instruments: [piano, piano, voix]
@@ -1384,7 +1384,7 @@
 
 - opus: "074"
   titre: "Sonate pour Hautbois et Clavecin [ou Saxophone Alto et Piano]"
-  id: "Sonate pour Hautbois et Clavecin [ou Saxophone Alto et Piano]"
+  id: "sonate_pour_hautbois_et_clavecin_ou_saxophone_alto_et_piano"
   categorie: musique_de_chambre
   formation: "Hautbois et clavecin"
   instruments: [clavecin, hautbois]
@@ -1403,7 +1403,7 @@
 
 - opus: "075"
   titre: "Sonate n°17 pour Piano"
-  id: "Sonate n°17 pour Piano"
+  id: "sonate_n_17_pour_piano"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1420,7 +1420,7 @@
 
 - opus: "076"
   titre: "Sonate n°18 pour Piano “Three Poems of Li T’ai Po”"
-  id: "Sonate n°18 pour Piano “Three Poems of Li T’ai Po”"
+  id: "sonate_n_18_pour_piano_three_poems_of_li_t_ai_po"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1437,7 +1437,7 @@
 
 - opus: "077"
   titre: "Revelation"
-  id: "Revelation"
+  id: "revelation"
   categorie: melodies
   formation: "Voix de femme et alto."
   instruments: [voix, alto]
@@ -1451,7 +1451,7 @@
 
 - opus: "078"
   titre: "Piano Book"
-  id: "Piano Book"
+  id: "piano_book"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1487,7 +1487,7 @@
 
 - opus: "079"
   titre: "Mélodies pour Voix de Femme et Piano (5)"
-  id: "Mélodies pour Voix de Femme et Piano (5)"
+  id: "melodies_pour_voix_de_femme_et_piano_5"
   categorie: melodies
   formation: "Voix de femme et piano"
   instruments: [voix, piano]
@@ -1502,7 +1502,7 @@
 
 - opus: "080"
   titre: "Pièces pour Piano (5) pour un concours"
-  id: "Pièces pour Piano (5) pour un concours"
+  id: "pieces_pour_piano_5_pour_un_concours"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1521,7 +1521,7 @@
 
 - opus: "081"
   titre: "Pièce pour Piano pour un Concours (Refusée)"
-  id: "Pièce pour Piano pour un Concours (Refusée)"
+  id: "piece_pour_piano_pour_un_concours_refusee"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1536,7 +1536,7 @@
 
 - opus: "082"
   titre: "Pièces pour Piano (5) pour un concours - 2"
-  id: "Pièces pour Piano (5) pour un concours - 2"
+  id: "pieces_pour_piano_5_pour_un_concours_2"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1557,7 +1557,7 @@
 
 - opus: "083"
   titre: "Pièces pour Violon et Piano (2) – 1"
-  id: "Pièces pour Violon et Piano (2) – 1"
+  id: "pieces_pour_violon_et_piano_2_1"
   categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
@@ -1574,7 +1574,7 @@
 
 - opus: "084"
   titre: "Pièces pour Violon et Piano (2) – 2"
-  id: "Pièces pour Violon et Piano (2) – 2"
+  id: "pieces_pour_violon_et_piano_2_2"
   categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
@@ -1591,7 +1591,7 @@
 
 - opus: "085"
   titre: "Pièces pour Alto et Piano (2) – 1"
-  id: "Pièces pour Alto et Piano (2) – 1"
+  id: "pieces_pour_alto_et_piano_2_1"
   categorie: musique_de_chambre
   formation: "Alto et Piano"
   instruments: [alto, piano]
@@ -1608,7 +1608,7 @@
 
 - opus: "086"
   titre: "Variations on Peter Philips “Galiarda Dolorosa”"
-  id: "Variations on Peter Philips “Galiarda Dolorosa”"
+  id: "variations_on_peter_philips_galiarda_dolorosa"
   categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
@@ -1625,7 +1625,7 @@
 
 - opus: "087"
   titre: "Three Poems of Sri Chinmoy"
-  id: "Three Poems of Sri Chinmoy"
+  id: "three_poems_of_sri_chinmoy"
   categorie: melodies
   formation: "Voix de femme et piano"
   instruments: [voix, piano]
@@ -1640,7 +1640,7 @@
 
 - opus: "089"
   titre: "Danse des Araucans"
-  id: "Danse des Araucans"
+  id: "danse_des_araucans"
   formation: "2 pianos et percussions"
   categorie: musique_de_chambre
   instruments: [piano, piano, percussions]
@@ -1657,7 +1657,7 @@
 
 - opus: "095"
   titre: "Na Pari Tomaï"
-  id: "Na Pari Tomaï"
+  id: "na_pari_tomai"
   categorie: musique_de_chambre
   formation: "Alto et Piano"
   instruments: [alto, piano]
@@ -1676,7 +1676,7 @@
 
 - opus: "103"
   titre: "Veni Creator"
-  id: "Veni Creator"
+  id: "veni_creator"
   categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
@@ -1701,7 +1701,7 @@
 
 - opus: "104"
   titre: "Pièces pour Violon et Piano (2) – 3"
-  id: "Pièces pour Violon et Piano (2) – 3"
+  id: "pieces_pour_violon_et_piano_2_3"
   categorie: musique_de_chambre
   formation: "Violon et piano"
   instruments: [violon, piano]
@@ -1718,7 +1718,7 @@
 
 - opus: "105"
   titre: "Pièces pour Alto et Piano (2) – 2"
-  id: "Pièces pour Alto et Piano (2) – 2"
+  id: "pieces_pour_alto_et_piano_2_2"
   categorie: musique_de_chambre
   formation: "Alto et Piano"
   instruments: [alto, piano]
@@ -1735,7 +1735,7 @@
 
 - opus: "118"
   titre: "Sonate de Requiem 1ère Version"
-  id: "Sonate de Requiem 1ère Version"
+  id: "sonate_de_requiem_1ere_version"
   categorie: musique_de_chambre
   instruments: [violoncelle, piano]
   formation: "violoncelle, piano"
@@ -1750,7 +1750,7 @@
 
 - opus: "120"
   titre: "Running Suite"
-  id: "Running Suite"
+  id: "running_suite"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1769,7 +1769,7 @@
 
 - opus: "127"
   titre: "Easter Wings, Discipline"
-  id: "Easter Wings, Discipline"
+  id: "easter_wings_discipline"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -1790,7 +1790,7 @@
 
 - opus: "128"
   titre: "Song"
-  id: "Song"
+  id: "song"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -1805,7 +1805,7 @@
 
 - opus: "310"
   titre: "Les Chants de l’Âme"
-  id: "Les Chants de l’Âme"
+  id: "les_chants_de_l_ame"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -1831,7 +1831,7 @@
 
 - opus: "139"
   titre: "En Rêve"
-  id: "En Rêve"
+  id: "en_reve"
   categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
@@ -1848,7 +1848,7 @@
 
 - opus: "142"
   titre: "Little Black Mass"
-  id: "Little Black Mass"
+  id: "little_black_mass"
   categorie: cantate
   formation: "Voix de femme, alto et piano"
   instruments: [soprano, alto, piano]
@@ -1863,7 +1863,7 @@
 
 - opus: "144"
   titre: "Le Livre du Pélerin"
-  id: "Le Livre du Pélerin"
+  id: "le_livre_du_pelerin"
   categorie: cantate
   formation: "Voix de femme, flûte, hautbois, clarinette, basson, cor, violon, piano"
   instruments: [voix, flûte, hautbois, clarinette, basson, cor, violon, piano]
@@ -1882,7 +1882,7 @@
 
 - opus: "147"
   titre: "Petit Choral Varié"
-  id: "Petit Choral Varié"
+  id: "petit_choral_varie"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -1901,7 +1901,7 @@
 
 - opus: "154"
   titre: "Solo from “Nô”"
-  id: "Solo from “Nô”"
+  id: "solo_from_no"
   categorie: musique_de_chambre
   formation: "Violoncelle seul"
   instruments: [violoncelle]
@@ -1920,7 +1920,7 @@
 
 - opus: "155"
   titre: "À la Recherche d’une Pièce"
-  id: "À la Recherche d’une Pièce"
+  id: "a_la_recherche_d_une_piece"
   categorie: melodies
   formation: "Chant non accompagné"
   instruments: [voix]
@@ -1935,7 +1935,7 @@
 
 - opus: "158"
   titre: "Nô, Opéra de Chambre en 10 Scènes"
-  id: "Nô, Opéra de Chambre en 10 Scènes"
+  id: "no_opera_de_chambre_en_10_scenes"
   categorie: opera
   formation: "Soprano, ténor, baryton, clarinette, cor en fa, piano, orgue électronique et percussions."
   instruments:
@@ -2120,7 +2120,7 @@
 
 - opus: "167"
   titre: "Pièces pour Violoncelle et piano (2) pour un concours – 1"
-  id: "Pièces pour Violoncelle et piano (2) pour un concours – 1"
+  id: "pieces_pour_violoncelle_et_piano_2_pour_un_concours_1"
   categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
@@ -2137,7 +2137,7 @@
 
 - opus: "169"
   titre: "Hiroshima / Nagasaki"
-  id: "Hiroshima / Nagasaki"
+  id: "hiroshima_nagasaki"
   categorie: musique_chorale
   formation: "Chœur mixte a cappella."
   instruments: [chœur]
@@ -2153,7 +2153,7 @@
 
 - opus: "170"
   titre: "Oi Akashe"
-  id: "Oi Akashe"
+  id: "oi_akashe"
   categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
@@ -2172,7 +2172,7 @@
 
 - opus: "171"
   titre: "Pièces pour Alto et Piano (2) – 3"
-  id: "Pièces pour Alto et Piano (2) – 3"
+  id: "pieces_pour_alto_et_piano_2_3"
   categorie: musique_de_chambre
   formation: "Alto et Piano"
   instruments: [alto, piano]
@@ -2189,7 +2189,7 @@
 
 - opus: "173"
   titre: "Pièces pour Violoncelle et Piano (2) pour un concours – 2"
-  id: "Pièces pour Violoncelle et Piano (2) pour un concours – 2"
+  id: "pieces_pour_violoncelle_et_piano_2_pour_un_concours_2"
   categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
@@ -2206,7 +2206,7 @@
 
 - opus: "174"
   titre: "Pièces pour Alto et Piano (2) – 4"
-  id: "Pièces pour Alto et Piano (2) – 4"
+  id: "pieces_pour_alto_et_piano_2_4"
   categorie: musique_de_chambre
   formation: "Alto et Piano"
   instruments: [alto, piano]
@@ -2223,7 +2223,7 @@
 
 - opus: "175"
   titre: "Carillon (Inclus dans “Piano Book”)"
-  id: "Carillon (Inclus dans “Piano Book”)"
+  id: "carillon_inclus_dans_piano_book"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2237,7 +2237,7 @@
 
 - opus: "176"
   titre: "Vocalise de Serge Rachmaninoff"
-  id: "Vocalise de Serge Rachmaninoff"
+  id: "vocalise_de_serge_rachmaninoff"
   categorie: cantate
   formation: "Voix de femme, 4 violons, 2 altos, 2 violoncelles, hautbois et piano"
   instruments:
@@ -2265,7 +2265,7 @@
 
 - opus: "177"
   titre: "Premaloker, méditation pour grand chœur mixte"
-  id: "Premaloker, méditation pour grand chœur mixte"
+  id: "premaloker_meditation_pour_grand_choeur_mixte"
   categorie: cantate
   formation: "Double chœur mixte, 12 voix d’homme, flûte, clarinette, violon, violoncelle, célesta, orgue électronique"
   instruments:
@@ -2295,7 +2295,7 @@
 
 - opus: "181"
   titre: "Portrait de Johanne Margarethe Büchting"
-  id: "Portrait de Johanne Margarethe Büchting"
+  id: "portrait_de_johanne_margarethe_buchting"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2310,7 +2310,7 @@
 
 - opus: "182"
   titre: "Portrait d’Edith Regina Jaus-Büchting et d’Andreas Büchting"
-  id: "Portrait d’Edith Regina Jaus-Büchting et d’Andreas Büchting"
+  id: "portrait_d_edith_regina_jaus_buchting_et_d_andreas_buchting"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2327,7 +2327,7 @@
 
 - opus: "183"
   titre: "Valse sur le nom de Godino"
-  id: "Valse sur le nom de Godino"
+  id: "valse_sur_le_nom_de_godino"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2346,7 +2346,7 @@
 
 - opus: "184"
   titre: "Prélude pour Henri Barda"
-  id: "Prélude pour Henri Barda"
+  id: "prelude_pour_henri_barda"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2363,7 +2363,7 @@
 
 - opus: "185"
   titre: "Caprice pour Colette"
-  id: "Caprice pour Colette"
+  id: "caprice_pour_colette"
   categorie: musique_de_chambre
   formation: "Violon"
   instruments: [violon]
@@ -2378,7 +2378,7 @@
 
 - opus: "195"
   titre: "Préludes pour piano (6)"
-  id: "Préludes pour piano (6)"
+  id: "preludes_pour_piano_6"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2395,7 +2395,7 @@
 
 - opus: "196"
   titre: "Fantaisie"
-  id: "Fantaisie"
+  id: "fantaisie"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2412,7 +2412,7 @@
 
 - opus: "197"
   titre: "Pièce en Trio"
-  id: "Pièce en Trio"
+  id: "piece_en_trio"
   categorie: musique_de_chambre
   formation: "Violon, violoncelle, piano"
   instruments: [violon, violoncelle, piano]
@@ -2435,7 +2435,7 @@
 
 - opus: "206"
   titre: "The Golden Flute"
-  id: "The Golden Flute"
+  id: "the_golden_flute"
   categorie: cantate
   formation: "Soprano, chœur d'hommes et orchestre."
   instruments:
@@ -2466,7 +2466,7 @@
 
 - opus: "228"
   titre: "Subala"
-  id: "Subala"
+  id: "subala"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2485,7 +2485,7 @@
 
 - opus: "235b"
   titre: "O Gamelan"
-  id: "O Gamelan"
+  id: "o_gamelan"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2500,7 +2500,7 @@
 
 - opus: "248"
   titre: "Amenhotep, fils de Hapou"
-  id: "Amenhotep, fils de Hapou"
+  id: "amenhotep_fils_de_hapou"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2519,7 +2519,7 @@
 
 - opus: "256"
   titre: "Le Rêve du Monde"
-  id: "Le Rêve du Monde"
+  id: "le_reve_du_monde"
   categorie: orchestre
   formation: "Piano, célesta, accordéon ou bandonéon, orchestre."
   instruments: [piano, célesta, accordéon, bandonéon, orchestre]
@@ -2538,7 +2538,7 @@
 
 - opus: "270"
   titre: "Hölderlin Lieder"
-  id: "Hölderlin Lieder"
+  id: "holderlin_lieder"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -2589,7 +2589,7 @@
 
 - opus: "271"
   titre: "Hälfte des Lebens"
-  id: "Hälfte des Lebens"
+  id: "halfte_des_lebens"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -2604,7 +2604,7 @@
 
 - opus: "283"
   titre: "Sonate de Requiem"
-  id: "Sonate de Requiem"
+  id: "sonate_de_requiem"
   categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
@@ -2639,7 +2639,7 @@
 
 - opus: "284"
   titre: "Forêts Anciennes"
-  id: "Forêts Anciennes"
+  id: "forets_anciennes"
   categorie: piano
   formation: "Piano, pianoforte ou clavecin"
   instruments: [piano, clavecin]
@@ -2656,7 +2656,7 @@
 
 - opus: "289"
   titre: "Sonate pour Piano n°19 “Trois Pièces Sérieuses”"
-  id: "Sonate pour Piano n°19 “Trois Pièces Sérieuses”"
+  id: "sonate_pour_piano_n_19_trois_pieces_serieuses"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2689,7 +2689,7 @@
 
 - opus: "290"
   titre: "Sonate pour Piano n°20 “Le Rêve du Monde”"
-  id: "Sonate pour Piano n°20 “Le Rêve du Monde”"
+  id: "sonate_pour_piano_n_20_le_reve_du_monde"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2760,7 +2760,7 @@
 
 - opus: "291"
   titre: "Lettres de Westerbork"
-  id: "Lettres de Westerbork"
+  id: "lettres_de_westerbork"
   categorie: musique_de_chambre
   formation: "Voix, 2 violons"
   instruments: [voix, violon, violon]
@@ -2798,7 +2798,7 @@
 
 - opus: "292"
   titre: "Quodlibet"
-  id: "Quodlibet"
+  id: "quodlibet"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2817,7 +2817,7 @@
 
 - opus: "293"
   titre: "A Tragic Football Game"
-  id: "A Tragic Football Game"
+  id: "a_tragic_football_game"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2838,7 +2838,7 @@
 
 - opus: "295"
   titre: "Am Grabe Franz Liszts"
-  id: "Am Grabe Franz Liszts"
+  id: "am_grabe_franz_liszts"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2863,7 +2863,7 @@
 
 - opus: "297"
   titre: "Once a Lady was Here"
-  id: "Once a Lady was Here"
+  id: "once_a_lady_was_here"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -2880,7 +2880,7 @@
 
 - opus: "298"
   titre: "Night without Sleep"
-  id: "Night without Sleep"
+  id: "night_without_sleep"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -2895,7 +2895,7 @@
 
 - opus: "301"
   titre: "The Tailor of Gloucester"
-  id: "The Tailor of Gloucester"
+  id: "the_tailor_of_gloucester"
   categorie: musique_de_chambre
   formation: "Cor anglais, cor en fa, violon, harpe, célesta et synthétiseur."
   instruments: [cor, cor, violon, harpe, célesta, synthétiseur]
@@ -2912,7 +2912,7 @@
 
 - opus: "302"
   titre: "Le Fantôme d’Enrico Clifford"
-  id: "Le Fantôme d’Enrico Clifford"
+  id: "le_fantome_d_enrico_clifford"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2931,7 +2931,7 @@
 
 - opus: "303"
   titre: "Sonate pour Piano n°21 “Codex Domini”"
-  id: "Sonate pour Piano n°21 “Codex Domini”"
+  id: "sonate_pour_piano_n_21_codex_domini"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -2956,7 +2956,7 @@
 
 - opus: "346"
   titre: "Symphonie “Hiroshima”"
-  id: "Symphonie “Hiroshima”"
+  id: "symphonie_hiroshima"
   categorie: cantate
   formation: "Voix soliste, chœur d’hommes et orchestre."
   instruments: [voix, chœur, piano]
@@ -2979,7 +2979,7 @@
 
 - opus: "307"
   titre: "Quintette pour Piano et cordes “A tale of the world”"
-  id: "Quintette pour Piano et cordes “A tale of the world”"
+  id: "quintette_pour_piano_et_cordes_a_tale_of_the_world"
   categorie: musique_de_chambre
   formation: "Piano et quatuor à cordes"
   instruments: [piano, violon, violon, alto, violoncelle]
@@ -3016,7 +3016,7 @@
 
 - opus: "308"
   titre: "Sonate pour 2 Violoncelles “The Battle of Agincourt”"
-  id: "Sonate pour 2 Violoncelles “The Battle of Agincourt”"
+  id: "sonate_pour_2_violoncelles_the_battle_of_agincourt"
   categorie: musique_de_chambre
   formation: "2 violoncelles"
   instruments: [violoncelle, violoncelle]
@@ -3059,7 +3059,7 @@
 
 - opus: "312"
   titre: "Hymnes Spéculatifs"
-  id: "Hymnes Spéculatifs"
+  id: "hymnes_speculatifs"
   categorie: cantate
   formation: "Voix, clarinette, cor, violoncelle et piano"
   instruments: [voix, clarinette, cor, violoncelle, piano]
@@ -3090,7 +3090,7 @@
 
 - opus: "314"
   titre: "Quatuor à Cordes n°2 avec Voix"
-  id: "Quatuor à Cordes n°2 avec Voix"
+  id: "quatuor_a_cordes_n_2_avec_voix"
   categorie: musique_de_chambre
   formation: "Quatuor à cordes avec voix"
   instruments: [voix, violon, violon, alto, violoncelle]
@@ -3110,7 +3110,7 @@
 
 - opus: "315"
   titre: "Les Trottoirs de Paris"
-  id: "Les Trottoirs de Paris"
+  id: "les_trottoirs_de_paris"
   categorie: melodies
   instruments: [voix, voix, piano]
   formation: "2 voix et piano"
@@ -3146,7 +3146,7 @@
 
 - opus: "319"
   titre: "Sonate pour piano n° 22 “Les plaisirs de Chérence”"
-  id: "Sonate pour piano n° 22 “Les plaisirs de Chérence”"
+  id: "sonate_pour_piano_n_22_les_plaisirs_de_cherence"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -3170,7 +3170,7 @@
 
 - opus: "320"
   titre: "Ritournelle pour Quintette à Vent"
-  id: "Ritournelle pour Quintette à Vent"
+  id: "ritournelle_pour_quintette_a_vent"
   categorie: musique_de_chambre
   formation: "Flûte, hautbois, clarinette, basson, cor en fa."
   instruments: [flûte, hautbois, clarinette, basson, cor]
@@ -3189,7 +3189,7 @@
 
 - opus: "321"
   titre: "Le Lys de Marie"
-  id: "Le Lys de Marie"
+  id: "le_lys_de_marie"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -3206,7 +3206,7 @@
 
 - opus: "323"
   titre: "Le Livre des Saints Irlandais"
-  id: "Le Livre des Saints Irlandais"
+  id: "le_livre_des_saints_irlandais"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -3223,7 +3223,7 @@
 
 - opus: "326"
   titre: "Troubadours et Ménestrels"
-  id: "Troubadours et Ménestrels"
+  id: "troubadours_et_menestrels"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -3242,7 +3242,7 @@
 
 - opus: "327"
   titre: "Symphonie"
-  id: "Symphonie"
+  id: "symphonie"
   categorie: orchestre
   formation: "Voix, 2 flûtes, 2 hautbois, 2 clarinettes, 2 bassons, 2 cors, 2 trompettes, 2 timbales, cordes."
   instruments:
@@ -3309,7 +3309,7 @@
 
 - opus: "331"
   titre: "Table des Matières"
-  id: "Table des Matières"
+  id: "table_des_matieres"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -3328,7 +3328,7 @@
 
 - opus: "345"
   titre: "Funeral march to the memory of a cat"
-  id: "Funeral march to the memory of a cat"
+  id: "funeral_march_to_the_memory_of_a_cat"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -3345,7 +3345,7 @@
 
 - opus: "347"
   titre: "Imago Mundi"
-  id: "Imago Mundi"
+  id: "imago_mundi"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -3380,7 +3380,7 @@
 
 - opus: "348"
   titre: "B comme Brigitte"
-  id: "B comme Brigitte"
+  id: "b_comme_brigitte"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -3395,7 +3395,7 @@
 
 - opus: "349"
   titre: "Adieu New York"
-  id: "Adieu New York"
+  id: "adieu_new_york"
   categorie: musique_de_chambre
   formation: "Piano, flûte, clarinette, violon, violoncelle"
   instruments: [piano, flûte, clarinette, violon, violoncelle]
@@ -3412,7 +3412,7 @@
 
 - opus: "350"
   titre: "Trois chansons apocryphes"
-  id: "Trois chansons apocryphes"
+  id: "trois_chansons_apocryphes"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -3441,7 +3441,7 @@
 
 - opus: "351"
   titre: "Quatuor n°3 “Todesfuge”"
-  id: "Quatuor n°3 “Todesfuge”"
+  id: "quatuor_n_3_todesfuge"
   categorie: musique_de_chambre
   formation: "Quatuor à cordes avec voix."
   instruments: [voix, violon, violon, alto, violoncelle]
@@ -3524,7 +3524,7 @@
 
 - opus: "352"
   titre: "Quadruple Concerto “La Danse des morts”"
-  id: "Quadruple Concerto “La Danse des morts”"
+  id: "quadruple_concerto_la_danse_des_morts"
   categorie: orchestre
   formation: "Piano, violon, alto, violoncelle et orchestre (2 hautbois, 2 cors et orchestre à cordes)."
   instruments: [piano, violon, alto, violoncelle, hautbois, hautbois, cor, cor]
@@ -3555,7 +3555,7 @@
 
 - opus: "353"
   titre: "Trio"
-  id: "Trio"
+  id: "trio"
   categorie: musique_de_chambre
   formation: "Piano, violon et violoncelle."
   instruments: [piano, violon, violoncelle]
@@ -3586,7 +3586,7 @@
 
 - opus: "354"
   titre: "L'Office des Naufragés"
-  id: "L'Office des Naufragés"
+  id: "l_office_des_naufrages"
   categorie: cantate
   formation: "Voix de femme, clarinette, piano et quatuor à cordes"
   instruments: [voix, clarinette, piano, violon, violon, alto, violoncelle]
@@ -3623,7 +3623,7 @@
 
 - opus: "355"
   titre: "Shylock Funèbre"
-  id: "Shylock Funèbre"
+  id: "shylock_funebre"
   categorie: musique_de_chambre
   formation: "Violoncelle et piano"
   instruments: [violoncelle, piano]
@@ -3656,7 +3656,7 @@
 
 - opus: "356"
   titre: "Ich Ruf zu Dir"
-  id: "Ich Ruf zu Dir"
+  id: "ich_ruf_zu_dir"
   categorie: musique_de_chambre
   formation: "Piano, clarinette et quatuor à cordes."
   instruments: [piano, clarinette, violon, violon, alto, violoncelle]
@@ -3685,7 +3685,7 @@
 
 - opus: "357"
   titre: "Concerto pour Violoncelle “Durch Adams Fall”"
-  id: "Concerto pour Violoncelle “Durch Adams Fall”"
+  id: "concerto_pour_violoncelle_durch_adams_fall"
   categorie: orchestre
   formation: "Violoncelle et orchestre (2 x flûtes, hautbois, clarinettes, bassons, cors, trompettes – piano, cordes, percusssion)."
   instruments:
@@ -3748,7 +3748,7 @@
 
 - opus: "358"
   titre: "Requiem"
-  id: "Requiem"
+  id: "requiem"
   categorie: musique_chorale
   formation: "Double chœur mixte a cappella"
   instruments: [chœur, chœur]
@@ -3767,7 +3767,7 @@
 
 - opus: "359"
   titre: "Portraits et Apparitions"
-  id: "Portraits et Apparitions"
+  id: "portraits_et_apparitions"
   categorie: piano
   formation: "Piano"
   instruments: [piano]
@@ -3812,7 +3812,7 @@
 
 - opus: "360"
   titre: "Quatuor n°4 “Ulysses”"
-  id: "Quatuor n°4 “Ulysses”"
+  id: "quatuor_n_4_ulysses"
   categorie: musique_de_chambre
   formation: "Quatuor à cordes"
   instruments: [violon, violon, alto, violoncelle]
@@ -3829,7 +3829,7 @@
 
 - opus: "361"
   titre: "Three Settings of Musset"
-  id: "Three Settings of Musset"
+  id: "three_settings_of_musset"
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
@@ -3848,7 +3848,7 @@
 
 - opus: "327a"
   titre: "Symphonie version voix et orgue"
-  id: "Symphonie version voix et orgue"
+  id: "symphonie_version_voix_et_orgue"
   categorie: orchestre
   formation: "Voix et orgue"
   instruments: [voix, orgue]
