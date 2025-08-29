@@ -1,5 +1,5 @@
 ---
-import { convertTitle } from "../../helpers";
+import { convertTitle } from "../../content";
 
 const { formation, currentFormationId } = Astro.props;
 const isCurrent = convertTitle(formation) === currentFormationId;

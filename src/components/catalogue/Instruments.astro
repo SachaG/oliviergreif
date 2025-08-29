@@ -1,8 +1,8 @@
 ---
-import { getInstrumentsGroups } from "../../helpers";
+import { getInstrumentsGroups } from "../../content";
 const { currentInstrumentId, limit } = Astro.props;
-import { capitalizeFirstLetter } from "../../helpers";
-import { getInstrumentGroupLink } from "../../helpers";
+import { capitalizeFirstLetter } from "../../content";
+import { getInstrumentGroupLink } from "../../content";
 import T from "../T.astro";
 
 const allInstrumentGroups = getInstrumentsGroups();

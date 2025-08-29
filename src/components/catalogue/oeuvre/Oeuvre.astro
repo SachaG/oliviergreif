@@ -7,13 +7,14 @@ import {
 	getEditeur,
 	getPath,
 	SectionId,
-} from "../../../helpers";
+} from "../../../content";
+import { getItemIdFromSlug } from "../../../helpers";
 import Field from "../../Field.astro";
 import PageLayout from "../../layouts/PageLayout.astro";
 import T from "../../T.astro";
 import Instruments from "./Instruments.astro";
 const { id } = Astro.props;
-const oeuvre = getOeuvre(id);
+const oeuvre = getOeuvre(getItemIdFromSlug(id));
 const {
 	annee,
 	opus,

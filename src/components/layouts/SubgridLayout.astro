@@ -1,4 +1,8 @@
-<section class="subgrid-layout">
+---
+const { className } = Astro.props;
+---
+
+<section class={`subgrid-layout ${className}`}>
 	<div class="col1">
 		<div class="subgrid-heading"><slot name="col1" /></div>
 	</div>
@@ -12,7 +16,7 @@
 		gap: var(--spacing);
 	}
 
-	.subgrid-layout:not(:has(.catalogue-oeuvre.visible)) {
+	.catalog-year:not(:has(.catalogue-oeuvre.visible)) {
 		display: none;
 	}
 

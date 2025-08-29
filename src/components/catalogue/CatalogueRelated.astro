@@ -1,6 +1,10 @@
 ---
-import { getOeuvre } from "../../content";
-import { convertTitle, getPath } from "../../helpers";
+import {
+	getOeuvre,
+	convertTitle,
+	getPath,
+	getOeuvreByTitre,
+} from "../../content";
 
 interface Props {
 	titres?: string[];
@@ -14,7 +18,7 @@ const { titres } = Astro.props;
 		<div>
 			<ul class="items-list">
 				{titres.map((titre) => {
-					const oeuvre = getOeuvre(convertTitle(titre));
+					const oeuvre = getOeuvreByTitre(titre)!;
 					return (
 						<li>
 							<a href={getPath(oeuvre)}>{titre}</a>

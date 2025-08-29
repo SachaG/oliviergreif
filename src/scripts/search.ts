@@ -1,5 +1,3 @@
-console.log("search script ready");
-
 const normalize = (str: string) =>
 	str
 		.toLowerCase()

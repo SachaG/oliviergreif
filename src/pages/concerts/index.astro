@@ -9,7 +9,7 @@ import {
 	getSection2,
 	getString,
 	SectionId,
-} from "../../helpers";
+} from "../../content";
 import { fade, slide } from "astro:transitions";
 
 import Layout from "../../layouts/Layout.astro";
@@ -18,7 +18,6 @@ import type { ConcertWithId } from "../../types";
 const concerts = getConcerts();
 const concertsByYear = getItemsByYear<ConcertWithId>(concerts);
 const sectionId = SectionId.CONCERTS;
-const section = getSection2(sectionId)!;
 ---
 
 <Layout title={getString("concerts")?.t}>

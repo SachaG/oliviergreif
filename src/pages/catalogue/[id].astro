@@ -1,15 +1,25 @@
 ---
+import type {
+	InferGetStaticParamsType,
+	InferGetStaticPropsType,
+	GetStaticPaths,
+} from "astro";
+
 import Oeuvre from "../../components/catalogue/oeuvre/Oeuvre.astro";
 import { getCatalogue, getOeuvre } from "../../content";
-import { getItemsStaticPaths } from "../../helpers";
+import { getItemsStaticPaths } from "../../content";
 import Layout from "../../layouts/Layout.astro";
+import { getItemIdFromSlug } from "../../helpers";
 
-export function getStaticPaths() {
-	return getItemsStaticPaths(getCatalogue());
-}
+export const getStaticPaths = (async () => {
+	const catalogue = await getCatalogue();
+	return getItemsStaticPaths(catalogue);
+}) satisfies GetStaticPaths;
 
-const { id } = Astro.params;
-const oeuvre = getOeuvre(id);
+type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+
+const { id } = Astro.params as Params;
+const oeuvre = getOeuvre(getItemIdFromSlug(id));
 const { titre } = oeuvre;
 ---
 

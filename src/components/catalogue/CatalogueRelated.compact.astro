@@ -1,6 +1,10 @@
 ---
-import { getOeuvre } from "../../content";
-import { convertTitle, getPath } from "../../helpers";
+import {
+	getOeuvre,
+	convertTitle,
+	getPath,
+	getOeuvreByTitre,
+} from "../../content";
 
 interface Props {
 	oeuvres: string[];
@@ -12,7 +16,7 @@ const { oeuvres } = Astro.props;
 	<ul class="items-list">
 		{
 			oeuvres.map((oeuvreName, i) => {
-				const oeuvre = getOeuvre(convertTitle(oeuvreName));
+				const oeuvre = getOeuvreByTitre(oeuvreName)!;
 				return (
 					<li>
 						<a class="link-heading" href={getPath(oeuvre)}>
