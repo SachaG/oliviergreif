@@ -17,9 +17,9 @@ export const getStaticPaths = (async () => {
 
 type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 
-const { id } = Astro.params as Params;
-const oeuvre = getOeuvreBySlug(id)!;
-const { titre } = oeuvre;
+const { id: slug } = Astro.params as Params;
+const oeuvre = getOeuvreBySlug(slug)!;
+const { titre, id } = oeuvre;
 ---
 
 <Layout title={titre}>

@@ -1,6 +1,6 @@
 ---
 import Editeur from "../../components/editeurs/Editeur.astro";
-import { getEditeur, getEditeurs, getString } from "../../content";
+import { getEditeurBySlug, getEditeurs } from "../../content";
 import { getItemsStaticPaths } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
@@ -8,9 +8,9 @@ export function getStaticPaths() {
 	return getItemsStaticPaths(getEditeurs());
 }
 
-const { id } = Astro.params;
-const editeur = getEditeur(id);
-const { titre } = editeur;
+const { id: slug } = Astro.params;
+const editeur = getEditeurBySlug(slug)!;
+const { titre, id } = editeur;
 ---
 
 <Layout title={titre}>

@@ -11,9 +11,9 @@ export function getStaticPaths() {
 	return getItemsStaticPaths(getDisques());
 }
 
-const { id } = Astro.params;
-const disque = getDisqueBySlug(id)!;
-const { titre, ecouter, liens, acheter } = disque;
+const { id: slug } = Astro.params;
+const disque = getDisqueBySlug(slug)!;
+const { titre, ecouter, liens, acheter, id } = disque;
 ---
 
 <Layout title={titre}>

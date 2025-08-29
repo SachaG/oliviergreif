@@ -163,11 +163,11 @@ export const getCatalogue = (options?: {
 	instrumentGroupId?: keyof typeof instrumentGroups;
 	categoryId?: string;
 }) => {
-	const rawCatalog = catalogue.map(
-		(c) =>
-			({ ...c.data, parentSlug: "catalogue", id: c.id }) as OeuvreWithId,
+	const collectionData = catalogue.map(
+		({ data, id }) => ({ ...data, id }) as OeuvreWithId,
 	);
-	const allItems = sortByOpus(rawCatalog);
+	const decoratedData = decorate<Oeuvre>(collectionData, "catalogue");
+	const allItems = sortByOpus(decoratedData);
 	const { instrumentId, instrumentGroupId, categoryId, editeurId } =
 		options || {};
 	if (instrumentGroupId) {
@@ -313,6 +313,9 @@ export const getEditeur = (id: string) =>
 
 export const getEditeurBySlug = (slug: string) =>
 	getEditeurs().find((e) => e.slug === slug);
+
+export const getEditeurByTitle = (title: string) =>
+	getEditeurs().find((e) => e.titre === title);
 
 export const getEditeurCatalogLink = (editeur: EditeurWithId) =>
 	`/catalogue/editeur/${editeur.slug}`;

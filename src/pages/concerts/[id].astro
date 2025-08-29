@@ -1,6 +1,6 @@
 ---
 import Concert from "../../components/concerts/Concert.astro";
-import { getConcert, getConcerts } from "../../content";
+import { getConcert, getConcertBySlug, getConcerts } from "../../content";
 import { getItemsStaticPaths } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
@@ -8,10 +8,10 @@ export function getStaticPaths() {
 	return getItemsStaticPaths(getConcerts());
 }
 
-const { id } = Astro.params;
-const concert = getConcert(id);
+const { id: slug } = Astro.params;
+const concert = getConcertBySlug(slug)!;
 
-const { titre } = concert;
+const { titre, id } = concert;
 ---
 
 <Layout title={titre}>
