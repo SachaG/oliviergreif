@@ -64,6 +64,8 @@ export type Editeur = {
 };
 export type EditeurWithId = Editeur & WithId;
 
+export type EditeurWithCount = EditeurWithId & { count: number };
+
 export type Actualite = {
 	rawDate: number;
 	date: Date;

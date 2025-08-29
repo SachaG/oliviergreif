@@ -14,7 +14,9 @@ const showMore = limit && limit <= instrumentGroups.length;
 ---
 
 <div class="instruments">
-	<h3 class="items-list-heading">Instruments</h3>
+	<h3 class="items-list-heading">
+		<T k="catalogue.instruments" />
+	</h3>
 	<ul class="items-list">
 		{
 			instrumentGroups.map(({ id, count }) => {
@@ -52,25 +54,20 @@ const showMore = limit && limit <= instrumentGroups.length;
 			)
 		}
 	</ul>
-</div>
 
-<style type="text/scss">
-	.instruments .items-list {
-		overflow-y: scroll;
-		max-height: 80vh;
-		overscroll-behavior: contain;
-	}
-	a {
-	}
-	.instrument-current {
+	<style type="text/scss">
 		a {
-			font-weight: bold;
 		}
-	}
-	.count {
-		font-weight: normal;
-	}
-	p {
-		margin-bottom: 0;
-	}
-</style>
+		.instrument-current {
+			a {
+				font-weight: bold;
+			}
+		}
+		.count {
+			font-weight: normal;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	</style>
+</div>

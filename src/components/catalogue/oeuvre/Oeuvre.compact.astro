@@ -18,7 +18,7 @@ const className = instruments
 	.join(" ");
 ---
 
-<div class={`visible ${className}`}>
+<div data-titre={titre} class={`catalogue-oeuvre visible ${className}`}>
 	<div class="opus">Opus {opus}</div>
 	<h3>
 		<a class="link-heading" href={getPath(oeuvre)}>{titre}</a>

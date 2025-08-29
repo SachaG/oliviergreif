@@ -11,7 +11,9 @@ const showMore = limit && limit < allCategories.length;
 ---
 
 <div class="categories">
-	<h3 class="items-list-heading">Catégories</h3>
+	<h3 class="items-list-heading">
+		<T k="catalogue.categories" />
+	</h3>
 	<ul class="items-list">
 		{
 			categories.map(({ id, count }) => {
@@ -37,23 +39,23 @@ const showMore = limit && limit < allCategories.length;
 			)
 		}
 	</ul>
-</div>
 
-<style type="text/scss">
-	.categories .items-list {
-		overflow-y: scroll;
-		max-height: 80vh;
-		overscroll-behavior: contain;
-	}
-	a {
-		/* font-weight: normal; */
-	}
-	.category-current {
-		a {
-			font-weight: bold;
+	<style type="text/scss">
+		.categories .items-list {
+			overflow-y: scroll;
+			max-height: 80vh;
+			overscroll-behavior: contain;
 		}
-	}
-	.count {
-		font-weight: normal;
-	}
-</style>
+		a {
+			/* font-weight: normal; */
+		}
+		.category-current {
+			a {
+				font-weight: bold;
+			}
+		}
+		.count {
+			font-weight: normal;
+		}
+	</style>
+</div>

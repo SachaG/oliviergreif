@@ -1,7 +1,10 @@
 ---
 import { getSection2 } from "../../helpers";
 import T from "../T.astro";
-const { sectionId, hasSidebar = false } = Astro.props;
+const { sectionId } = Astro.props;
+
+const sidebarSlotContent = await Astro.slots.render('page-sidebar') || '';
+const hasSidebar = sidebarSlotContent.trim().length > 0;
 
 const defaultSlotContent = await Astro.slots.render('page-heading') || '';
 const hasContent = defaultSlotContent.trim().length > 0;

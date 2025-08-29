@@ -1,0 +1,21 @@
+---
+import T from "../T.astro";
+---
+
+<div class="catalogue-search">
+	<h3 class="items-list-heading"><T k="catalogue.rechercher" /></h3>
+	<input id="searchInput" name="search" type="text" />
+</div>
+<style>
+	.catalogue-search {
+		display: flex;
+		flex-direction: column;
+	}
+	input {
+		background: none;
+		border-radius: 0;
+		border: var(--border);
+		padding: var(--quarterSpacing);
+		font-family: var(--fontFamilySecondary);
+	}
+</style>

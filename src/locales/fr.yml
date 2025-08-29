@@ -66,6 +66,14 @@ strings:
       t: Spotify
     - key: youtube
       t: YouTube
+    - key: catalogue.categories
+      t: Catégories
+    - key: catalogue.instruments
+      t: Instruments
+    - key: catalogue.editeurs
+      t: Éditeurs
+    - key: catalogue.rechercher
+      t: Rechercher
 
     # instruments
     - key: oeuvre
@@ -83,7 +91,7 @@ strings:
 
     # categories
     - key: cantate
-      t: Cantate
+      t: Cantates
     - key: melodies
       t: Mélodies
     - key: musique_chorale

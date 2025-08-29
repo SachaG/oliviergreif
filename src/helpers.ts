@@ -24,6 +24,7 @@ import type {
 	Lien,
 	Photo,
 	PhotoWithId,
+	EditeurWithCount,
 } from "./types";
 // import OeuvreComponent from "./components/catalogue/oeuvre/Oeuvre.astro";
 // import DisqueComponent from "./components/disques/Disque.astro";
@@ -106,11 +107,13 @@ export const sortByOpus = (catalogue: OeuvreWithId[]) =>
 
 export const getCatalogue = (options?: {
 	instrumentId?: string;
+	editeurId?: string;
 	instrumentGroupId?: keyof typeof instrumentGroups;
 	categoryId?: string;
 }) => {
 	const allItems = sortByOpus(decorate<Oeuvre>(catalogue, "catalogue"));
-	const { instrumentId, instrumentGroupId, categoryId } = options || {};
+	const { instrumentId, instrumentGroupId, categoryId, editeurId } =
+		options || {};
 	if (instrumentGroupId) {
 		return allItems.filter(
 			(oeuvre) =>
@@ -126,10 +129,13 @@ export const getCatalogue = (options?: {
 		);
 	} else if (categoryId) {
 		return allItems.filter((oeuvre) => oeuvre.categorie === categoryId);
+	} else if (editeurId) {
+		return allItems.filter((oeuvre) => oeuvre.editeur === editeurId);
 	} else {
 		return allItems;
 	}
 };
+
 export const getOeuvre = (id: string) =>
 	getter<OeuvreWithId>(id, getCatalogue());
 
@@ -274,9 +280,22 @@ export const getDisque = (id: string) => getter<DisqueWithId>(id, getDisques());
 
 // Editeurs
 
-export const getEditeurs = () => decorate<Editeur>(editeurs, "editeurs");
+export const getEditeurs = () => {
+	const editeursWithIds = decorate<Editeur>(editeurs, "editeurs");
+	const editeursWithCounts: EditeurWithCount[] = editeursWithIds.map(
+		(editeur) => ({
+			...editeur,
+			count: getCatalogue({ editeurId: editeur.titre }).length,
+		}),
+	);
+	return sortBy<EditeurWithCount>(editeursWithCounts, "count").toReversed();
+};
+
 export const getEditeur = (id: string) =>
 	getter<EditeurWithId>(id, getEditeurs());
+
+export const getEditeurCatalogLink = (instrumentGroupId: string) =>
+	`/catalogue/editeurs/${instrumentGroupId}`;
 
 // Actualites
 

@@ -1,0 +1,56 @@
+---
+import { getEditeurs } from "../../helpers";
+const { currentEditeurId, limit } = Astro.props;
+import { capitalizeFirstLetter } from "../../helpers";
+import { getEditeurCatalogLink } from "../../helpers";
+import T from "../T.astro";
+
+const editeurs = getEditeurs();
+
+const showMore = limit && limit <= editeurs.length;
+---
+
+<div class="editeurs">
+	<h3 class="items-list-heading"><T k="catalogue.editeurs" /></h3>
+	<ul class="items-list">
+		{
+			editeurs.map(({ id, titre, count }) => {
+				const isCurrent = id === currentEditeurId;
+				return (
+					<li class={isCurrent ? "editeur-current" : ""}>
+						<a
+							class="link-heading"
+							href={getEditeurCatalogLink(id)}
+						>
+							{titre}
+							<span class="count">({count})</span>
+						</a>
+					</li>
+				);
+			})
+		}
+		{
+			showMore && (
+				<li>
+					<a href="/catalogue" class="link-heading">
+						<T k="voir_plus" />
+					</a>
+				</li>
+			)
+		}
+	</ul>
+</div>
+
+<style type="text/scss">
+	.editeur-current {
+		a {
+			font-weight: bold;
+		}
+	}
+	.count {
+		font-weight: normal;
+	}
+	p {
+		margin-bottom: 0;
+	}
+</style>

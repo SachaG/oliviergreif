@@ -1957,6 +1957,17 @@
   creation: 5 octobre 1993, maison de Radio France, Doris Lamprecht, Alexis Galpérine, Eric Crambes
   commentaire: >
       <p>Commande de Radio France.<br />Dédié à son père et à Gilles Cantagrel. La partition offerte à son père porte la dédicace manuscrite: “Pour mon cher père, en témoignage de gratitude profonde pour m’avoir fait naître, doublement: à cette terre, et à la musique!”<br />Les Lettres de Westerbork ont été commandées par Radio France.<br />L’œuvre est composée de trois mouvements qui s’enchaînent, et prend son inspiration dans deux sources littéraires distinctes. D’une partie des extraits de lettres envoyées à ses proches par une jeune Juive hollandaise, Etty Hillesum, du camp d’internement de Westerbork (Hollande), où elle séjourna un an durant avant d’être déportée à Auschwitz et d’y périr assassinée le 30 novembre 1943.  De l’autre des extraits de Psaumes de l’Ancien-Testament. (On sait qu’Etty Hillesum avait emporté la Bible avec elle à Auschwitz.) Ces deux textes sont répartis dans l’œuvre selon un plan commun à ses trois mouvements ( “L’Arrivée”, “La Nuit”, “Le Départ”). Les textes d’Etty Hillesum sont parlés – à la façon d’un mélodrame – et forment comme un prologue statique – sur une tenue des deux violons – à chacun des mouvements. Les textes tirés de l’Ancien-Testament sont chantés (en anglais) et sont la base poétique des mouvements eux-mêmes.<br />Le premier mouvement oppose les appels suppliants de la voix (un extrait du Psaume 54 : “Sauve-moi, O Dieu… Entends ma prière”) aux rythmes syncopés des deux violons, qui semblent engagés dans un combat sauvage.<br />Le second superpose la voix, adoptant l’apparence d’un choral d’église (sur des extraits des Psaumes 22 et 28 : “Mon Dieu, pourquoi m’as-tu abandonné ? ... Si tu demeures silencieux, je serai semblable à ceux qui descendent dans la fosse”), à des traits virtuoses des deux instruments, en une sorte de course-poursuite fantômatique et frissonnante, qui s’achève sur un mouvement contraire. Tandis que la voix descend dans son registre le plus grave (sur les mots : “Je serai semblable à ceux qui descendent dans la fosse”), les deux violons s’envolent vers les hauteurs. Ce passage évoque pour moi ces vers extraits du poème de Paul Celan “Todesfuge” : “alors vous montez en fumée dans les airs / alors vous avez une tombe au creux des nuages / on n’y est pas couché à l’étroit.<br />Le troisième mouvement fait se mêler la ligne vocale et les deux lignes instrumentales en une poignante imploration (sur des extraits des Psaumes 61, 88 et 102 : “O Seigneur, entends ma prière et laisse mes larmes venir jusqu’à toi”). Cette imploration prend peu à peu de l’ampleur, culmine sur les mots : “Entends mon cri, O Dieu, entends ma prière”, avant de redescendre et de s’éteindre dans le silence.</p>
+  ecouter:
+      - id: apple_music
+        url: https://music.apple.com/us/album/olivier-greif-lettres-de-westerbork-chants-de-l%C3%A2me/974208789
+      - id: spotify
+        url: https://open.spotify.com/album/3Inz0ZtPnUghAg1dXZnVrm
+      - id: youtube
+        url: https://www.youtube.com/playlist?list=OLAK5uy_lNNZ-9eHNceoFCSrVY6mkV_k1Hyij-GL0
+      - id: youtube
+        url: https://www.youtube.com/watch?v=0RiSnQpuwrc
+        titre: >
+            Olivier Greif - Lettres de Westerbork - 1993 - ABB Reportages
 
 - opus: "292"
   titre: "Quodlibet"

@@ -18,6 +18,7 @@ import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
 import T from "../../../components/T.astro";
 import PageLayout from "../../../components/layouts/PageLayout.astro";
 import Categories from "../../../components/catalogue/Categories.astro";
+import Editeurs from "../../../components/catalogue/Editeurs.astro";
 
 const { id } = Astro.params;
 const instrumentGroupId = id as keyof typeof instrumentGroups;
@@ -144,25 +145,28 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 			slot="page-sidebar"
 			currentInstrumentId={instrumentGroupId}
 		/>
+		<Editeurs slot="page-sidebar" />
 	</PageLayout>
 
-	<style type="text/scss">
-		// .count-title {
-		// 	position: sticky;
-		// 	top: 0px;
-		// 	font-size: 1.6rem;
-		// }
-		@supports (selector(:has(*))) {
-			.subcontainer:not(:has(.visible)) {
-				display: none;
-			}
-		}
-		.instruments-list {
-			display: flex;
-			gap: var(--halfSpacing);
-		}
-		.count-heading {
-			white-space: nowrap;
-		}
-	</style>
 </Layout>
+
+
+<style type="text/scss">
+    // .count-title {
+    // 	position: sticky;
+    // 	top: 0px;
+    // 	font-size: 1.6rem;
+    // }
+    @supports (selector(:has(*))) {
+        .subcontainer:not(:has(.visible)) {
+            display: none;
+        }
+    }
+    .instruments-list {
+        display: flex;
+        gap: var(--halfSpacing);
+    }
+    .count-heading {
+        white-space: nowrap;
+    }
+</style>
