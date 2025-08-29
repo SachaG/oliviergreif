@@ -1,5 +1,3 @@
-import { getCollection, getEntry } from "astro:content";
-
 import slugify from "slugify";
 // import catalogue_ from "./data/catalogue.yml";
 import concerts_ from "./data/concerts.yml";
