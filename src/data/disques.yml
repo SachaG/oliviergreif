@@ -33,15 +33,18 @@
       - "Les Chants de l’Âme"
   image: les_chants_de_l_ame_deauville.webp
   liens:
-      - id: label
-        url: https://arion-music.com/product/42411/
-        titre: Arion Music
+      - id: review
+        url: https://www.crescendo-magazine.be/olivier-greif-ce-bouleversant-meteore/
+        titre: Olivier Greif, ce bouleversant météore
   ecouter:
       - id: spotify
         url: https://open.spotify.com/album/52mAUQgDAr2hlc1YP2E5p9
       - id: apple_music
         url: https://classical.music.apple.com/pl/album/1571685862
   acheter:
+      - id: label
+        url: https://arion-music.com/product/42411/
+        titre: Arion Music
       - id: amazon
         url: https://www.amazon.com/Grief-Chants-l%C3%A2me-Live-Deauville/dp/B09744FV52
 
@@ -99,6 +102,7 @@
       Wiener Konzert: Hjördis Thébault, soprano, Charles Bouisset, piano<br />
       Le Tombeau de Ravel, Jong Hwa Park et Henri Barda, piano
   maison: Saphir Productions
+  image: sonate_codex_domini.webp
   oeuvres:
       - Sonate pour Piano n°21 “Codex Domini”
       - Sonate n°2 pour Violon et Piano
@@ -201,17 +205,20 @@
       - id: youtube
         url: https://www.youtube.com/playlist?list=OLAK5uy_nxVKKqbO0f9HuaEF6kWhYNAqOYWSZj5Ac
 
-- titre: "Sonate de guerre par P. Amoyel"
+- titre: "Sonate de Guerre"
   id: "sonate_de_guerre_par_p_amoyel"
   annee: 2000
   interpretes_disque: >
       Pascal Amoyel
   maison: Pianovox
+  image: sonate_de_guerre.webp
   oeuvres:
       - Sonate n°15 “de Guerre”
   acheter:
-      - id: eBay
+      - id: ebay
         url: https://www.ebay.fr/itm/277285867548
+      - id: discogs
+        url: https://www.discogs.com/release/7406212-Olivier-Greif-Pascal-Amoyel-Sonate-De-Guerre
 
 - titre: "Sonate de Requiem"
   id: "sonate_de_requiem"
@@ -230,7 +237,6 @@
       Olivier Greif, piano
   maison: >
       Pianovox
-  oeuvres:
 
 - titre: "Francis Poulenc par O. Greif"
   id: "francis_poulenc_par_o_greif"
@@ -239,8 +245,6 @@
       Olivier Greif, piano
   maison: >
       Pianovox
-
-  oeuvres:
 
 - titre: "Sonate de Requiem et Trio par P. Amoyel et E. Bertrand"
   id: "sonate_de_requiem_et_trio_par_p_amoyel_et_e_bertrand"
@@ -367,7 +371,7 @@
   annee: 2010
   interpretes_disque: >
       Delphine Biron, violoncelle. Bertrand Giraud, piano. Mathieu Godefroy, violon. Frédéric Chatoux, flûte. Alexandre Chabod, clarinette.
-  # maison:
+  maison: Anima
   oeuvres:
       - Oi Akashe
       - Pièces pour Violoncelle et piano (2) pour un concours – 1
@@ -395,15 +399,24 @@
       - id: amazon
         url: https://www.amazon.com/Chamber-Music-Olivier-Bertrand-Giraud/dp/B003VEBZKQ
 
-- titre: "Concerto pour violoncelle et Sonate de Requiem par Demarquette"
-  id: "concerto_pour_violoncelle_et_sonate_de_requiem_par_demarquette"
+- titre: Par la Chute d'Adam
+  id: "par_la_chute_d_adam"
   annee: 2010
   interpretes_disque: >
       Henri Demarquette, violoncelle. Giovanni Bellucci, piano. Orchestre national de France, direction Jean-Claude Casadesus.
-  # maison: >
+  maison: Accord
+  image: chute_d_adam.jpg
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
       - Sonate de Requiem
+  acheter:
+      - id: amazon
+        url: https://www.amazon.fr/Olivier-Greif-Par-Chute-dAdam/dp/B003F1UX2G
+      - id: discogs
+        url: https://www.discogs.com/release/15514850-Olivier-Greif-Henri-Demarquette-Giovanni-Bellucci-2-Orchestre-National-De-France-Jean-Claude-Casades?srsltid=AfmBOorioX4UjXZ9DVoE-4whAFDgnBTHwy3Z2OQxEpx_G-6t2z3LmjUv
+  liens:
+      - titre: Olivier Greif par Henri Demarquette, une vision à la hauteur d’une pensée transcendante
+        url: https://www.resmusica.com/2010/07/30/une-vision-a-la-hauteur-dune-pensee-transcendante/
 
 - titre: "Chevauchées lyriques (deuxième chanson enfantine) par Loiseleur des Longchamps"
   id: "chevauchees_lyriques_deuxieme_chanson_enfantine_par_loiseleur_des_longchamps"
@@ -419,22 +432,28 @@
   annee: 2014
   interpretes_disque: >
       Nicolas Horvath
-  # maison:
+  maison: LTM Recordings
+  image: french_avant_garde.jpg
   oeuvres:
       - Second Hommage à Raymond Roussel
+  liens:
+      - id: label
+        url: https://ltmrecordings.com/the_french_avant_garde_in_the_20th_century_ltmcd2571.html
   ecouter:
       - id: spotify
         url: https://open.spotify.com/album/7bwmOoEpj4IhcviXUeRShT
   acheter:
       - id: amazon
-        url: https://www.amazon.co.uk/French-Avant-Garde-20th-Century/dp/B00MGS21JM
+        url: https://www.amazon.fr/French-Avant-Garde-20th-Century/dp/B00MGS21JM
+      - id: discogs
+        url: https://www.discogs.com/release/6198219-Various-The-French-Avant-Garde-In-The-20th-Century?srsltid=AfmBOorBzM_wdBDkXf5WCqdZ2ywB3SU54XMhskGngFwOyFJFipyFL4Pn
 
 - titre: "Portraits et Apparitions, Les plaisirs de Chérence"
   id: "portraits_et_apparitions_les_plaisirs_de_cherence"
   annee: 2014
   interpretes_disque: >
       Olivier Greif, piano
-  # maison:
+  maison: Harmonia Mundi
   oeuvres:
       - Portraits et Apparitions
       - Sonate pour piano n° 22 “Les plaisirs de Chérence”
@@ -448,17 +467,21 @@
         url: https://www.youtube.com/watch?v=h9UwmCIfxYg&list=OLAK5uy_lQlldJhFv0nwTeqMWNfqRAHRfWJYaB1k4
   acheter:
       - id: amazon
-        url: https://www.amazon.de/-/en/Plaisirs-Cherence-Portraits-Oliver-Greif/dp/B00QKYTSOE
+        url: https://www.amazon.fr/-/en/Plaisirs-Cherence-Portraits-Oliver-Greif/dp/B00QKYTSOE
 
-- titre: "Le Quintette"
-  id: "le_quintette"
+- titre: "A Tale Of The World"
+  id: "a_tale_of_the_world"
   #   annee: Enregistré du 19 au 23 février 2020. Parution le 1er octobre 2020."
   annee: 2020
   interpretes_disque: >
       Quintette Syntonia: Stéphanie Moraly et Thibault Noally, violons; Hélène Desaint, alto; Patrick Langot, violoncelle; Romain David, piano.
-  # maison:
+  maison: Azur Classical
+  image: tale_of_the_world.jpg
   oeuvres:
       - Quintette pour Piano et cordes “A tale of the world”
+  liens:
+      - id: label
+        url: https://www.recital.be/label-azur-classical
   ecouter:
       - id: spotify
         url: http://open.spotify.com/album/5ghbClEXLjs9ciitIimuMk
@@ -467,13 +490,3 @@
   acheter:
       - id: amazon
         url: https://www.amazon.fr/World-Piano-Quintet-Quintette-Syntonia/dp/B08JZCMJ9R/
-
-- titre: "Chants de l’âme et Trottoirs de Paris"
-  id: "chants_de_l_ame_et_trottoirs_de_paris"
-  annee: 2020
-  interpretes_disque: >
-      Chants de l’âme: Marie-Laure Granier, Soprano et Philippe Hattat, piano. Les Trottoirs de Paris: Clémentine Decouture, soprano et Paco Garcia, ténor. D’une douleur muette, de Thierry Escaich: Marie-Laure Granier, Soprano; Yan Levionnois, violoncelle; Philippe Hattat, piano.
-  # maison:
-  oeuvres:
-      - Les Chants de l’Âme
-      - Les Trottoirs de Paris

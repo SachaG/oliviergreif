@@ -1,5 +1,5 @@
 // 1. Import utilities from `astro:content`
-import { defineCollection, z } from "astro:content";
+import { defineCollection, reference, z } from "astro:content";
 
 // 2. Import loader(s)
 import { glob, file } from "astro/loaders";
@@ -8,6 +8,7 @@ import { glob, file } from "astro/loaders";
 const catalogue = defineCollection({
 	loader: file("src/data/catalogue.yml"),
 	schema: z.object({
+		id: z.string(),
 		opus: z.string(),
 		titre: z.string(),
 		categorie: z.string(),
@@ -22,5 +23,27 @@ const catalogue = defineCollection({
 	}),
 });
 
+const lien = z.object({
+	url: z.string().optional(),
+	titre: z.string().optional(),
+	id: z.string().optional(),
+});
+
+const disques = defineCollection({
+	loader: file("src/data/disques.yml"),
+	schema: z.object({
+		id: z.string(),
+		titre: z.string(),
+		annee: z.number(),
+		interpretes_disque: z.string().nullable(),
+		maison: z.string().nullable(),
+		oeuvres: z.array(reference("catalogue")).optional(),
+		image: z.string().optional().nullable(),
+		ecouter: z.array(lien).optional().nullable(),
+		acheter: z.array(lien).optional().nullable(),
+		liens: z.array(lien).optional().nullable(),
+	}),
+});
+
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { catalogue };
+export const collections = { catalogue, disques };

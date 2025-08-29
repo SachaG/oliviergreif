@@ -27,8 +27,9 @@ const { titre, ecouter, liens, acheter, id } = disque;
 			acheter && acheter.length > 0 && (
 				<SidebarBlock
 					k="acheter"
-					items={acheter.map(({ id, url }) => ({
+					items={acheter.map(({ id, url, titre }) => ({
 						k: id,
+						label: titre,
 						url,
 					}))}
 					slot="page-sidebar"

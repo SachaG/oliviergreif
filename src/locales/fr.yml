@@ -111,3 +111,5 @@ strings:
       t: YouTube
     - key: amazon
       t: Amazon
+    - key: amazon_music
+      t: Amazon Music

@@ -19,7 +19,6 @@ const {
 	{image ? <DisqueCover id={id} /> : <div class="disque-image-placeholder" />}
 	<div class="disque-compact-content">
 		<h4>{annee}</h4>
-
 		<h3 class="link-heading feed-heading">
 			<a href={getPath(disque)}>{titre}</a>
 		</h3>
@@ -41,6 +40,9 @@ const {
 		& img {
 			display: block;
 		}
+	}
+	h4 {
+		margin-bottom: var(--quarterSpacing);
 	}
 	.disque-image-placeholder {
 		background: #00000033;
