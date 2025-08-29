@@ -1,14 +1,22 @@
 ---
+import type {
+	InferGetStaticParamsType,
+	InferGetStaticPropsType,
+	GetStaticPaths,
+} from "astro";
+
 import Concert from "../../components/concerts/Concert.astro";
 import { getConcert, getConcertBySlug, getConcerts } from "../../content";
 import { getItemsStaticPaths } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
-export function getStaticPaths() {
+export const getStaticPaths = (async () => {
 	return getItemsStaticPaths(getConcerts());
-}
+}) satisfies GetStaticPaths;
 
-const { id: slug } = Astro.params;
+type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+
+const { id: slug } = Astro.params as Params;
 const concert = getConcertBySlug(slug)!;
 
 const { titre, id } = concert;

@@ -39,6 +39,7 @@ export const compact = <T>(a: T[]) =>
 export const getItemsStaticPaths = (items: WithId[]) =>
 	items.map((item) => ({ params: { id: getItemSlug(item) } }));
 
-export const getItemSlug = (item: WithId) => item.id.replaceAll("_", "-");
+export const getItemSlug = (item: WithId) =>
+	item.slug || item.id.replaceAll("_", "-");
 
 export const getItemIdFromSlug = (slug: string) => slug.replaceAll("-", "_");
