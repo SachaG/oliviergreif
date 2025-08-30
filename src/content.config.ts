@@ -15,6 +15,7 @@ const catalogue = defineCollection({
 		formation: z.string(),
 		instruments: z.array(z.string()),
 		annee: z.number().optional().nullable(),
+		partitionUrl: z.string().optional(),
 		nb_pages: z.number().optional().nullable(),
 		duree: z.string().optional().nullable(),
 		texte: z.string().optional().nullable(),

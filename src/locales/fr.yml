@@ -48,16 +48,25 @@ strings:
       t: Contact
 
     # catalog info
-    - key: opus
+    - key: catalogue.opus
       t: Opus
-    - key: formation
+    - key: catalogue.formation
       t: Formation
-    - key: textes
+    - key: catalogue.textes
       t: Textes
-    - key: creation
+    - key: catalogue.creation
       t: Création
-    - key: duree
+    - key: catalogue.duree
       t: Durée
+    - key: catalogue.annee
+      t: Année
+    - key: catalogue.texte
+      t: Texte
+    - key: catalogue.editeur
+      t: Éditeur
+    - key: catalogue.partition
+      t: Partition
+
     - key: ecouter
       t: Écouter
     - key: acheter
@@ -70,6 +79,8 @@ strings:
       t: Éditeurs
     - key: catalogue.rechercher
       t: Rechercher
+    - key: catalogue.acheter_partition
+      t: Acheter la partition
 
     # instruments
     - key: oeuvre
@@ -101,8 +112,21 @@ strings:
     - key: musique_de_chambre
       t: Musique de Chambre
 
-    # services
+    # disques
+    - key: disques.annee
+      t: Année
+    - key: disques.interpretes
+      t: Interprètes
+    - key: disques.oeuvres
+      t: Œuvres
+    - key: disques.articles
+      t: Articles
+    - key: disques.maison
+      t: Maison d'Édition
+    - key: disques.ref
+      t: Ref
 
+    # services
     - key: apple_music
       t: Apple Music
     - key: spotify
@@ -113,3 +137,5 @@ strings:
       t: Amazon
     - key: amazon_music
       t: Amazon Music
+    - key: discogs
+      t: Discogs

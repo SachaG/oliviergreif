@@ -3,16 +3,15 @@
   annee: 2025
   interpretes_disque: >
       Jonathan Benichou
-  maison: >
-      Arion Music
+  maison: Arion Music
+  maisonUrl: https://arion-music.com/product/42411/
   oeuvres:
       - "Sonate n°14 pour piano “Dans le Goût Ancien”"
       - "Le Rêve du Monde"
       - "Sonate n°9 pour Piano “Suite Paradisiac Memories”"
   image: three_piano_sonatas.webp
-  liens:
-      - id: label
-        url: https://arion-music.com/product/42411/
+  acheter:
+      - url: https://arion-music.com/product/42411/
         titre: Arion Music
   ecouter:
       - id: apple_music
@@ -27,14 +26,12 @@
   annee: 2020
   interpretes_disque: >
       Yan Levionnois, Paco Garcia, Marie-Laure Garnier, Philippe Hattat
-  maison: >
-      B Records
+  maison: B Records
   oeuvres:
       - "Les Chants de l’Âme"
   image: les_chants_de_l_ame_deauville.webp
-  liens:
-      - id: review
-        url: https://www.crescendo-magazine.be/olivier-greif-ce-bouleversant-meteore/
+  articles:
+      - url: https://www.crescendo-magazine.be/olivier-greif-ce-bouleversant-meteore/
         titre: Olivier Greif, ce bouleversant météore
   ecouter:
       - id: spotify
@@ -42,9 +39,6 @@
       - id: apple_music
         url: https://classical.music.apple.com/pl/album/1571685862
   acheter:
-      - id: label
-        url: https://arion-music.com/product/42411/
-        titre: Arion Music
       - id: amazon
         url: https://www.amazon.com/Grief-Chants-l%C3%A2me-Live-Deauville/dp/B09744FV52
 
@@ -81,9 +75,8 @@
       - Quatuor n°4 “Ulysses”
   image: ulysses.webp
   ref: TRI 331122
-  liens:
-      - id: review
-        url: https://www.talkclassical.com/threads/weekly-quartet-just-a-music-lover-perspective.64793/page-468
+  articles:
+      - url: https://www.talkclassical.com/threads/weekly-quartet-just-a-music-lover-perspective.64793/page-468
         titre: Talk Classical
   ecouter:
       - id: spotify
@@ -256,9 +249,8 @@
       - Sonate de Requiem
       - Trio
   image: sonate_de_requiem.webp
-  liens:
-      - id: review
-        url: https://expeditionaudio.com/olivier-greif-sonate-de-requiem/
+  articles:
+      - url: https://expeditionaudio.com/olivier-greif-sonate-de-requiem/
         titre: Expedition Audio
   ecouter:
       - id: spotify
@@ -414,7 +406,7 @@
         url: https://www.amazon.fr/Olivier-Greif-Par-Chute-dAdam/dp/B003F1UX2G
       - id: discogs
         url: https://www.discogs.com/release/15514850-Olivier-Greif-Henri-Demarquette-Giovanni-Bellucci-2-Orchestre-National-De-France-Jean-Claude-Casades?srsltid=AfmBOorioX4UjXZ9DVoE-4whAFDgnBTHwy3Z2OQxEpx_G-6t2z3LmjUv
-  liens:
+  articles:
       - titre: Olivier Greif par Henri Demarquette, une vision à la hauteur d’une pensée transcendante
         url: https://www.resmusica.com/2010/07/30/une-vision-a-la-hauteur-dune-pensee-transcendante/
 
@@ -433,12 +425,10 @@
   interpretes_disque: >
       Nicolas Horvath
   maison: LTM Recordings
+  maisonUrl: https://ltmrecordings.com/the_french_avant_garde_in_the_20th_century_ltmcd2571.html
   image: french_avant_garde.jpg
   oeuvres:
       - Second Hommage à Raymond Roussel
-  liens:
-      - id: label
-        url: https://ltmrecordings.com/the_french_avant_garde_in_the_20th_century_ltmcd2571.html
   ecouter:
       - id: spotify
         url: https://open.spotify.com/album/7bwmOoEpj4IhcviXUeRShT
@@ -475,13 +465,15 @@
   annee: 2020
   interpretes_disque: >
       Quintette Syntonia: Stéphanie Moraly et Thibault Noally, violons; Hélène Desaint, alto; Patrick Langot, violoncelle; Romain David, piano.
-  maison: Azur Classical
+  maison: Ciar Classics
   image: tale_of_the_world.jpg
   oeuvres:
       - Quintette pour Piano et cordes “A tale of the world”
-  liens:
-      - id: label
-        url: https://www.recital.be/label-azur-classical
+  articles:
+      - titre: A Tale Of The World
+        url: https://www.patricklangot.com/a-tale-of-the-world
+      - titre: Premier enregistrement du Quintette d’Olivier Greif « A Tale of the World »
+        url: https://www.resmusica.com/2020/11/10/premier-enregistrement-du-quintette-dolivier-greif-a-tale-of-the-world-ensemble-syntonia-ciar-classics/
   ecouter:
       - id: spotify
         url: http://open.spotify.com/album/5ghbClEXLjs9ciitIimuMk
@@ -490,3 +482,22 @@
   acheter:
       - id: amazon
         url: https://www.amazon.fr/World-Piano-Quintet-Quintette-Syntonia/dp/B08JZCMJ9R/
+
+- titre: Coincidentia Oppositorum
+  id: coincidentia_oppositorum
+  image: coincidentia_oppositorum.webp
+  annee: 2024
+  interpretes_disque: Aline Piboule
+  oeuvres:
+      - Sonate pour Piano n°21 “Codex Domini”
+  ecouter:
+      - id: apple_music
+        url: https://classical.music.apple.com/fr/album/1732714953
+  articles:
+      - titre: “Coincidentia oppositorum”, stupéfiante randonnée musicale d’Aline Piboule
+        url: https://www.telerama.fr/musique/coincidentia-oppositorum-stupefiante-randonnee-musicale-d-aline-piboule_cri-7034295.php
+      - titre: Coincidia Oppositorum Bach Greif Liszt
+        url: https://www.culture-tops.fr/critique-evenement/musique/coincidia-oppositorum-bach-greif-liszt
+  acheter:
+      - id: amazon
+        url: https://www.amazon.fr/Coincidentia-Oppositorum-Aline-Piboule/dp/B0CVNJ9WPC/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=37IUFPU52SUL&dib=eyJ2IjoiMSJ9.q5bcpid6sNPflN97Bkrmay0H2Yo5kEsNc_2YEfKI3VfUEofDkn3YOJTeZkLO2r2z2vRtRYb71iH3vBbiQ7Ioig3YD_TiMAmZOldLR2g82U4TIsxmrpcBn2RvTSy8wZo-C6O7VjwUMErV1v00mvzfqig7tz3JEDyw6Pg0KMtTJi9cgzd6w1WJlGvOriA3f2MTESLCMXXYyeOidlV0PLV83U3kwBNvLGAh6hzI66fIF65WnbmTkEz9-BlIAorUksWFs9wWRdGTNscCDpKNGERhj8mPLOby3PMUPpOQJkZ-0vU.NFlyRNLDv_2bqWSZlCdFmcOe2H7T05XkzubO6afmddY&dib_tag=se&keywords=aline+piboule&qid=1756553463&sprefix=aline+pibou%2Caps%2C531&sr=8-1

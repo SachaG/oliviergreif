@@ -9,7 +9,7 @@ import {
 	SectionId,
 	getEditeurByTitle,
 } from "../../../content";
-import { getItemIdFromSlug } from "../../../helpers";
+import { getDomain, getItemIdFromSlug } from "../../../helpers";
 import Field from "../../Field.astro";
 import PageLayout from "../../layouts/PageLayout.astro";
 import SidebarBlock from "../../SidebarBlock.astro";
@@ -27,6 +27,7 @@ const {
 	creation,
 	duree,
 	ecouter,
+	partitionUrl,
 } = oeuvre;
 
 const concerts = getConcerts().filter((concert) =>
@@ -52,22 +53,21 @@ const editeurItem = editeur && getEditeurByTitle(editeur);
 			<tbody>
 				{
 					editeurItem && (
-						<tr>
-							<th>Éditeur</th>
-							<td>
-								<a href={getPath(editeurItem)}>{editeur}</a>
-							</td>
-						</tr>
+						<Field k="catalogue.editeur">
+							<a href={editeurItem.url} target="_blank">
+								{editeurItem.titre}
+							</a>
+						</Field>
 					)
 				}
 
-				<Field label="Instruments"
+				<Field k="catalogue.instruments"
 					><Instruments oeuvre={oeuvre} /></Field
 				>
-				{annee && <Field label="Année">{annee}</Field>}
-				{texte && <Field label="Texte">{texte}</Field>}
-				{creation && <Field label="Création">{creation}</Field>}
-				{duree && <Field label="Durée">{duree}</Field>}
+				{annee && <Field k="catalogue.annee">{annee}</Field>}
+				{texte && <Field k="catalogue.texte">{texte}</Field>}
+				{creation && <Field k="catalogue.creation">{creation}</Field>}
+				{duree && <Field k="catalogue.duree">{duree}</Field>}
 				{
 					commentaire && (
 						<Field>
@@ -80,25 +80,31 @@ const editeurItem = editeur && getEditeurByTitle(editeur);
 	</main>
 
 	{
+		partitionUrl && (
+			<SidebarBlock
+				k="catalogue.partition"
+				items={[
+					{ k: "catalogue.acheter_partition", url: partitionUrl },
+				]}
+				slot="page-sidebar"
+			/>
+		)
+	}
+
+	{
 		ecouter && ecouter.length > 0 && (
-			<div slot="page-sidebar">
-				<h4>
-					<T k="ecouter" />
-				</h4>
-				<ul class="items-list">
-					{ecouter.map((service) => (
-						<li>
-							<a
-								href={service.url}
-								target="_blank"
-								class="link-heading"
-							>
-								<T k={service.id} />
-							</a>
-						</li>
-					))}
-				</ul>
-			</div>
+			<SidebarBlock
+				k="ecouter"
+				items={ecouter.map((lien) => {
+					const { titre, url } = lien;
+					return {
+						label: titre,
+						url,
+						heading: getDomain(url),
+					};
+				})}
+				slot="page-sidebar"
+			/>
 		)
 	}
 

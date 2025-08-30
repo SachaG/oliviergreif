@@ -43,3 +43,10 @@ export const getItemSlug = (item: WithId) =>
 	item.slug || item.id.replaceAll("_", "-");
 
 export const getItemIdFromSlug = (slug: string) => slug.replaceAll("-", "_");
+
+export const getDomain = (url: string) => {
+	const domain = new URL(url);
+	let hostname = domain.hostname;
+	hostname = domain.hostname.replace("www.", "");
+	return hostname;
+};

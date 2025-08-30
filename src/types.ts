@@ -30,6 +30,7 @@ export type Oeuvre = {
 	nb_pages?: number;
 	duree?: string;
 	texte?: string;
+	partitionUrl?: string;
 	editeur?: string;
 	creation?: string;
 	commentaire?: string;
@@ -62,11 +63,13 @@ export type Disque = {
 	interpretes_disque?: string;
 	commentaire?: string;
 	maison?: string;
+	maisonUrl?: string;
 	image?: string;
 	ref?: string;
 	ecouter?: MusicService[];
 	liens?: Lien[];
 	acheter?: Lien[];
+	articles?: Lien[];
 };
 export type DisqueWithId = Disque & WithId;
 

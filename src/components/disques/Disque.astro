@@ -1,5 +1,6 @@
 ---
 import { getDisque } from "../../content";
+import { getDomain } from "../../helpers";
 import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
 import Field from "../Field.astro";
 import DisqueCover from "./DisqueCover.astro";
@@ -14,6 +15,8 @@ const {
 	maison,
 	image,
 	ref,
+	articles,
+	maisonUrl,
 } = disque;
 ---
 
@@ -21,15 +24,53 @@ const {
 	{image && <img alt={titre} src={`/images/disques/${image}`} />}
 	<table>
 		<tbody>
-			<Field label="Année">{annee}</Field>
-			<Field label="Interprètes">
+			<Field k="disques.annee">{annee}</Field>
+			<Field k="disques.interpretes">
 				{interpretes_disque}
 			</Field>
-			{maison && <Field label="Maison d'Édition">{maison}</Field>}
-			<Field label="Oeuvres">
+			{
+				maison && (
+					<Field k="disques.maison">
+						{maisonUrl ? (
+							<a
+								href={maisonUrl}
+								target="_blank"
+								class="link-heading"
+							>
+								{maison}
+							</a>
+						) : (
+							<span>{maison}</span>
+						)}
+					</Field>
+				)
+			}
+			<Field k="disques.oeuvres">
 				<CatalogueRelated titres={oeuvres} />
 			</Field>
-			{ref && <Field label="Ref">{ref}</Field>}
+			{ref && <Field k="disques.ref">{ref}</Field>}
+			{
+				articles && (
+					<Field k="disques.articles">
+						<ul class="items-list">
+							{articles.map(({ titre, url }) => (
+								<li>
+									<h5 class="item-heading">
+										{getDomain(url)}
+									</h5>
+									<a
+										target="_blank"
+										class="link-heading"
+										href={url}
+									>
+										{titre}
+									</a>
+								</li>
+							))}
+						</ul>
+					</Field>
+				)
+			}
 			{commentaire && <Field>{commentaire}</Field>}
 		</tbody>
 	</table>

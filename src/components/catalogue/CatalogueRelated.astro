@@ -21,7 +21,9 @@ const { titres } = Astro.props;
 					const oeuvre = getOeuvreByTitre(titre)!;
 					return (
 						<li>
-							<a href={getPath(oeuvre)}>{titre}</a>
+							<a class="link-heading" href={getPath(oeuvre)}>
+								{titre}
+							</a>
 						</li>
 					);
 				})}

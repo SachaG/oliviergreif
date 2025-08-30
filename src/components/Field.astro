@@ -1,14 +1,14 @@
 ---
+import T from "./T.astro";
 interface Props {
-	label?: string;
-	value?: string | number;
+	k?: string;
 }
 
-const { label } = Astro.props;
+const { k } = Astro.props;
 ---
 
 <tr>
-	<th>{label}</th>
+	<th><T k={k} /></th>
 	<td>
 		<slot />
 	</td>
