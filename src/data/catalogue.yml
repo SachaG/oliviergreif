@@ -46,6 +46,7 @@
 
 - opus: "003"
   titre: "Les Saltimbanques"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19063/Les%2BSaltimbanques
   id: "les_saltimbanques"
   categorie: melodies
   formation: "Voix et piano"
@@ -184,6 +185,7 @@
 
 - opus: "011"
   titre: "Chanson de Gaspard Hauser (la)"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19060/Chanson%2Bde%2BGaspard%2BHauser
   id: "chanson_de_gaspard_hauser_la"
   categorie: melodies
   formation: "Voix et piano"
@@ -231,6 +233,7 @@
 
 - opus: "014"
   titre: "Marche pour Flûte et Piano"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19059/Marche
   id: "marche_pour_flute_et_piano"
   categorie: musique_de_chambre
   formation: "Flûte et piano"
@@ -344,6 +347,7 @@
   duree: ""
   texte: "Charles Baudelaire"
   editeur: "Donemus"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17858/Le%2BMort%2BJoyeux
   creation:
   commentaire: >
       Manuscrit original, soigné et lisible.
@@ -535,6 +539,7 @@
   duree: ""
   texte: ""
   editeur: "Donemus"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18206/In%2Bmemoriam
   creation: 1970 Juilliard School par l'auteur
   commentaire: >
       Indications sur la première page: “In memoriam Gustav Mahler, 1969 New York.”
@@ -558,6 +563,7 @@
   duree: ""
   texte: ""
   editeur: "Donemus"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17859/Morbid%2BFixations
   creation:
   commentaire: >
       Dédié à “Katya and Marielle Labèque, affectionately”. Indications sur la page de titre: “Œuvre cinquante-sixième, mai-juin-novembre 1969, Paris-New York.”
@@ -817,6 +823,7 @@
   duree: "8 mn (selon Olivier)"
   texte: "Poème de Li T'ai Po, traduit par Ezra Pound"
   editeur: "Donemus"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17860
   creation:
   commentaire: >
       Manuscrit soigné et lisible.
@@ -1438,6 +1445,7 @@
 
 - opus: "077"
   titre: "Revelation"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19058/Revelation
   id: "revelation"
   categorie: melodies
   formation: "Voix de femme et alto."
@@ -1452,6 +1460,7 @@
 
 - opus: "078"
   titre: "Piano Book"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19057/Piano%2BBook
   id: "piano_book"
   categorie: piano
   formation: "Piano"
@@ -1849,6 +1858,7 @@
 
 - opus: "142"
   titre: "Little Black Mass"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19062/Little%2BBlack%2BMass
   id: "little_black_mass"
   categorie: cantate
   formation: "Voix de femme, alto et piano"
@@ -1902,6 +1912,7 @@
 
 - opus: "154"
   titre: "Solo from “Nô”"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19061/Solo%2Bfrom%2BN%C3%B4
   id: "solo_from_no"
   categorie: musique_de_chambre
   formation: "Violoncelle seul"
@@ -2657,6 +2668,7 @@
 
 - opus: "289"
   titre: "Sonate pour Piano n°19 “Trois Pièces Sérieuses”"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19067/Sonate%2Bpour%2BPiano%2Bn%C2%B019
   id: "sonate_pour_piano_n_19_trois_pieces_serieuses"
   categorie: piano
   formation: "Piano"
@@ -2839,6 +2851,7 @@
 
 - opus: "295"
   titre: "Am Grabe Franz Liszts"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19064/Am%2BGrabe%2BFranz%2BLiszts
   id: "am_grabe_franz_liszts"
   categorie: piano
   formation: "Piano"
@@ -2873,6 +2886,7 @@
   duree: ""
   texte: "Paul Bowles"
   editeur: "Donemus"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17866/Once%2Ba%2BLady%2Bwas%2BHere
   creation: 1994, Théatre du Rond-Point, Jo-Ann Pickens, Howard Haskin et l'auteur
   commentaire: >
       Indication: à la manière de Philip Glass.
@@ -2896,6 +2910,7 @@
 
 - opus: "301"
   titre: "The Tailor of Gloucester"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19066/The%2BTailor%2Bof%2BGloucester
   id: "the_tailor_of_gloucester"
   categorie: musique_de_chambre
   formation: "Cor anglais, cor en fa, violon, harpe, célesta et synthétiseur."
@@ -3120,6 +3135,7 @@
   duree: "7 mn"
   texte: "Yves Petit de Voize"
   editeur: "Donemus"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18213/Les%2BTrottoirs%2Bde%2BParis
   creation: 1997, ancien conservatoire, Catherine Dubosc, Jean-Paul Fouchécourt et l'auteur
   commentaire: >
       Manuscrit recopié, très lisible.
@@ -3310,6 +3326,7 @@
 
 - opus: "331"
   titre: "Table des Matières"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19065/Table%2Bdes%2BMati%C3%A8res
   id: "table_des_matieres"
   categorie: melodies
   formation: "Voix et piano"
@@ -3758,6 +3775,7 @@
   duree: "32 mn"
   texte: "Liturgie et chants populaires anglais"
   editeur: "Donemus"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18215/Requiem
   creation: 2001, par les BBC Singers sous la direction de John Poole, diffusion BBC en 2002. 2001, création partielle française à Parthenay par l’association Vocal Plus. 2004, création intégrale française en la basilique Sainte-Clotilde de Paris par les Solistes de Lyon – Bernard Tétu.
   commentaire: >
       Dédié à John et Laura Poole.
@@ -3839,6 +3857,7 @@
   duree: "19 mn"
   texte: "Alfred de Musset"
   editeur: "Donemus"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17871/Three%2BSettings%2Bof%2BMusset
   creation: Création de la première mélodie le 5 mai 2000 à la bibliothèque François Mitterrand, en présence d’Olivier, par Françoise Destambert (remplaçant Marie Devellereau) et Jean-Louis Haguenauer. Création du cycle complet le 31 mai, après la mort d’Olivier, à La Prée, par Françoise Destambert et Isabelle Aubert.
   commentaire: >
       Dédié à Guillaume de Chalambert.
