@@ -46,7 +46,7 @@
 
 - opus: "003"
   titre: "Les Saltimbanques"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19063/Les%2BSaltimbanques
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17853
   id: "les_saltimbanques"
   categorie: melodies
   formation: "Voix et piano"
@@ -185,7 +185,7 @@
 
 - opus: "011"
   titre: "Chanson de Gaspard Hauser (la)"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19060/Chanson%2Bde%2BGaspard%2BHauser
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17854
   id: "chanson_de_gaspard_hauser_la"
   categorie: melodies
   formation: "Voix et piano"
@@ -201,6 +201,7 @@
 
 - opus: "012"
   titre: "Les Regrets"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17855
   id: "les_regrets"
   categorie: melodies
   formation: "Soprano, alto, basse et piano"
@@ -233,7 +234,7 @@
 
 - opus: "014"
   titre: "Marche pour Flûte et Piano"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19059/Marche
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17857
   id: "marche_pour_flute_et_piano"
   categorie: musique_de_chambre
   formation: "Flûte et piano"
@@ -1160,6 +1161,7 @@
 
 - opus: "063"
   titre: "Songs (four)"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17861
   id: "songs_four"
   categorie: melodies
   formation: "Voix de femme et piano"
@@ -1445,7 +1447,7 @@
 
 - opus: "077"
   titre: "Revelation"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19058/Revelation
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18220
   id: "revelation"
   categorie: melodies
   formation: "Voix de femme et alto."
@@ -1460,7 +1462,7 @@
 
 - opus: "078"
   titre: "Piano Book"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19057/Piano%2BBook
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18217
   id: "piano_book"
   categorie: piano
   formation: "Piano"
@@ -1635,6 +1637,7 @@
 
 - opus: "087"
   titre: "Three Poems of Sri Chinmoy"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17862
   id: "three_poems_of_sri_chinmoy"
   categorie: melodies
   formation: "Voix de femme et piano"
@@ -1650,6 +1653,7 @@
 
 - opus: "089"
   titre: "Danse des Araucans"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17863
   id: "danse_des_araucans"
   formation: "2 pianos et percussions"
   categorie: musique_de_chambre
@@ -1841,6 +1845,7 @@
 
 - opus: "139"
   titre: "En Rêve"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18223
   id: "en_reve"
   categorie: musique_de_chambre
   formation: "Violoncelle et piano"
@@ -1858,7 +1863,7 @@
 
 - opus: "142"
   titre: "Little Black Mass"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19062/Little%2BBlack%2BMass
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18209
   id: "little_black_mass"
   categorie: cantate
   formation: "Voix de femme, alto et piano"
@@ -1912,7 +1917,7 @@
 
 - opus: "154"
   titre: "Solo from “Nô”"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19061/Solo%2Bfrom%2BN%C3%B4
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18222
   id: "solo_from_no"
   categorie: musique_de_chambre
   formation: "Violoncelle seul"
@@ -2277,6 +2282,7 @@
 
 - opus: "177"
   titre: "Premaloker, méditation pour grand chœur mixte"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17864
   id: "premaloker_meditation_pour_grand_choeur_mixte"
   categorie: cantate
   formation: "Double chœur mixte, 12 voix d’homme, flûte, clarinette, violon, violoncelle, célesta, orgue électronique"
@@ -2668,7 +2674,6 @@
 
 - opus: "289"
   titre: "Sonate pour Piano n°19 “Trois Pièces Sérieuses”"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19067/Sonate%2Bpour%2BPiano%2Bn%C2%B019
   id: "sonate_pour_piano_n_19_trois_pieces_serieuses"
   categorie: piano
   formation: "Piano"
@@ -2851,7 +2856,7 @@
 
 - opus: "295"
   titre: "Am Grabe Franz Liszts"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19064/Am%2BGrabe%2BFranz%2BLiszts
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18210
   id: "am_grabe_franz_liszts"
   categorie: piano
   formation: "Piano"
@@ -2895,6 +2900,7 @@
 
 - opus: "298"
   titre: "Night without Sleep"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17867
   id: "night_without_sleep"
   categorie: melodies
   formation: "Voix et piano"
@@ -2910,7 +2916,7 @@
 
 - opus: "301"
   titre: "The Tailor of Gloucester"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19066/The%2BTailor%2Bof%2BGloucester
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17868
   id: "the_tailor_of_gloucester"
   categorie: musique_de_chambre
   formation: "Cor anglais, cor en fa, violon, harpe, célesta et synthétiseur."
@@ -2995,6 +3001,7 @@
 
 - opus: "307"
   titre: "Quintette pour Piano et cordes “A tale of the world”"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18211
   id: "quintette_pour_piano_et_cordes_a_tale_of_the_world"
   categorie: musique_de_chambre
   formation: "Piano et quatuor à cordes"
@@ -3187,6 +3194,7 @@
 
 - opus: "320"
   titre: "Ritournelle pour Quintette à Vent"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17869
   id: "ritournelle_pour_quintette_a_vent"
   categorie: musique_de_chambre
   formation: "Flûte, hautbois, clarinette, basson, cor en fa."
@@ -3326,7 +3334,7 @@
 
 - opus: "331"
   titre: "Table des Matières"
-  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/19065/Table%2Bdes%2BMati%C3%A8res
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/17870
   id: "table_des_matieres"
   categorie: melodies
   formation: "Voix et piano"
@@ -3641,6 +3649,7 @@
 
 - opus: "355"
   titre: "Shylock Funèbre"
+  partitionUrl: https://webshop.donemus.com/action/front/sheetmusic/18214
   id: "shylock_funebre"
   categorie: musique_de_chambre
   formation: "Violoncelle et piano"
