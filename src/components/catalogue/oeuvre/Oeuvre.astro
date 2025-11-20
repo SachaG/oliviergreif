@@ -1,5 +1,5 @@
 ---
-import { getOeuvre } from "../../../content";
+import { getOeuvre, getSectionPath } from "../../../content";
 import {
 	convertTitle,
 	getConcerts,
@@ -41,7 +41,11 @@ const disques = getDisques().filter((disque) =>
 const editeurItem = editeur && getEditeurByTitle(editeur);
 ---
 
-<PageLayout sectionId={SectionId.CATALOGUE} hasSidebar={true}>
+<PageLayout
+	sectionId={SectionId.CATALOGUE}
+	parentPath={getSectionPath(SectionId.CATALOGUE)}
+	hasSidebar={true}
+>
 	<div slot="page-heading">
 		<h3 class="subheading opus">Opus {opus}</h3>
 		<h2 class="title">

@@ -3,7 +3,12 @@ import Disque from "../../components/disques/Disque.astro";
 import PageLayout from "../../components/layouts/PageLayout.astro";
 import SidebarBlock from "../../components/SidebarBlock.astro";
 import T from "../../components/T.astro";
-import { getDisqueBySlug, getDisques, SectionId } from "../../content";
+import {
+	getDisqueBySlug,
+	getDisques,
+	getSectionPath,
+	SectionId,
+} from "../../content";
 import { getItemIdFromSlug, getItemsStaticPaths } from "../../helpers";
 import Layout from "../../layouts/Layout.astro";
 
@@ -17,7 +22,10 @@ const { titre, ecouter, liens, acheter, id } = disque;
 ---
 
 <Layout title={titre}>
-	<PageLayout sectionId={SectionId.DISQUES}>
+	<PageLayout
+		sectionId={SectionId.DISQUES}
+		parentPath={getSectionPath(SectionId.DISQUES)}
+	>
 		<h2 slot="page-heading">
 			{titre}
 		</h2>

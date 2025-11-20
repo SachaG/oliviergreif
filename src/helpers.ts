@@ -1,5 +1,5 @@
 import slugify from "slugify";
-import type { WithId } from "./types";
+import type { WithId, WithSlug } from "./types";
 
 // see https://youmightnotneed.com/lodash#intersection
 export const intersection = (arr: any[], ...args: any[]) =>
@@ -36,11 +36,13 @@ export const uniq = <T>(a: T[]) => [...new Set(a)];
 export const compact = <T>(a: T[]) =>
 	a.filter((item) => item !== undefined && item !== null);
 
-export const getItemsStaticPaths = (items: WithId[]) =>
+export const getItemsStaticPaths = (items: WithSlug[]) =>
 	items.map((item) => ({ params: { id: getItemSlug(item) } }));
 
-export const getItemSlug = (item: WithId) =>
-	item.slug || item.id.replaceAll("_", "-");
+export const getItemSlug = (item: WithSlug) =>
+	item.slug || generateSlug(item.id);
+
+export const generateSlug = (id: string) => id.replaceAll("_", "-");
 
 export const getItemIdFromSlug = (slug: string) => slug.replaceAll("-", "_");
 

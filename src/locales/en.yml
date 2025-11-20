@@ -84,6 +84,9 @@ strings:
     - key: catalogue.acheter_partition
       t: Buy sheet music
 
+    - key: catalogue.voir_tout
+      t: See all works
+
     # instruments
     - key: oeuvre
       t: work
@@ -141,3 +144,19 @@ strings:
       t: Amazon Music
     - key: discogs
       t: Discogs
+
+    # biographie
+    - key: biographie.short
+      t: Summary
+    - key: biographie.full
+      t: Full Biography
+
+    # concerts
+    - key: concerts.adresse
+      t: Address
+    - key: concerts.interpretes
+      t: Performers
+    - key: concerts.oeuvres
+      t: Works
+    - key: concerts.commentaire
+      t: Notes

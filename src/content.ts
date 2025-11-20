@@ -6,13 +6,13 @@ import editeurs_ from "./data/editeurs.yml";
 import liens_ from "./data/liens.yml";
 import actualites_ from "./data/actualites.yml";
 import photos_ from "./data/photos.yml";
-import { getItemSlug, intersection } from "./helpers";
+import { generateSlug, getItemSlug, intersection } from "./helpers";
 import sortBy from "lodash/sortBy";
 
 import fr from "./locales/fr.yml";
 
 import type {
-	WithId,
+	WithSlug,
 	Concert,
 	Disque,
 	Editeur,
@@ -88,9 +88,9 @@ export const decorate = <
 			slug,
 			parentSlug,
 		};
-	}) as Array<T & WithId>;
+	}) as Array<T & WithSlug>;
 
-export const getter = <T extends WithId>(id: string, items: T[]) => {
+export const getter = <T extends WithSlug>(id: string, items: T[]) => {
 	const item = items.find((item) => item.id === id);
 	if (item) {
 		return item;
@@ -206,7 +206,9 @@ export const getFormations = () =>
 type Category = {
 	id: string;
 	count: number;
+	slug: string;
 };
+
 export const getCategories = () => {
 	const categoryIds = compact(
 		uniq(getCatalogue().map((oeuvre) => oeuvre.categorie)),
@@ -214,12 +216,13 @@ export const getCategories = () => {
 	const categories = categoryIds.map((id) => ({
 		id,
 		count: getCatalogue({ categoryId: id }).length,
+		slug: generateSlug(id),
 	}));
 	return sortBy<Category>(categories, "count").toReversed();
 };
 
-export const getCategoryLink = (categoryId: string) =>
-	`/catalogue/categorie/${categoryId}`;
+export const getCategoryLink = (category: Category) =>
+	`/catalogue/categorie/${getItemSlug(category)}`;
 
 export const getInstruments = () => {
 	const allInstruments = getCatalogue()
@@ -352,7 +355,8 @@ export const getPhoto = (id: string) => getter<PhotoWithId>(id, getPhotos());
 
 // Sections
 
-export const getSectionPath = <T>(sectionId: SectionId) => `/${sectionId}`;
+export const getSectionPath = <T>(sectionId: SectionId) =>
+	`/${generateSlug(sectionId)}`;
 
 export function capitalizeFirstLetter(s: string) {
 	return s.charAt(0).toUpperCase() + s.slice(1);

@@ -6,10 +6,11 @@ import {
 	getInstrumentsGroups,
 	getString,
 	instrumentGroups,
-	SectionId,convertTitle,getCatalogue
+	SectionId,convertTitle,getCatalogue,
+    getSectionPath
 } from "../../../content";
 import Layout from "../../../layouts/Layout.astro";
-import type { WithId } from "../../../types";
+import type { WithSlug } from "../../../types";
 import Instruments from "../../../components/catalogue/Instruments.astro";
 import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
 import T from "../../../components/T.astro";
@@ -25,7 +26,7 @@ const instrumentGroupId = id as keyof typeof instrumentGroups;
 export function getStaticPaths() {
 	return getItemsStaticPaths(
 		getInstrumentsGroups().map(
-			({ id }) => ({ id: convertTitle(id) }) as WithId
+			({ id }) => ({ id: convertTitle(id) }) as WithSlug
 		)
 	);
 }
@@ -79,7 +80,7 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 </script>
 
 <Layout title={`${getString("catalogue")?.t} (${title})`}>
-	<PageLayout sectionId={SectionId.CATALOGUE}>
+	<PageLayout sectionId={SectionId.CATALOGUE} parentPath={getSectionPath(SectionId.CATALOGUE)}>
 		<h2
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}
@@ -93,10 +94,10 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 		<div slot="page-content">
 			{
 				instruments.length > 1 && (
-					<div class="instruments-list">
+					<div class="instruments-filter">
 						{instruments.map((instrument) => (
 							<h5>
-								<label>
+								<label class="instruments-filter-item">
 									<input
 										class="instrument-toggle"
 										type="checkbox"
@@ -164,11 +165,22 @@ const catalogueByNumberOfInstruments = [...Array(100)]
             display: none;
         }
     }
-    .instruments-list {
+    .instruments-filter {
         display: flex;
-        gap: var(--halfSpacing);
+        gap: var(--spacing);
+        flex-wrap: wrap;
+        border: 1px solid var(--borderColor);
+        padding: var(--halfSpacing); 
     }
     .count-heading {
         white-space: nowrap;
+    }
+    .instruments-filter-item {
+        display: flex;
+        justify-content: center;
+        gap: var(--halfSpacing);
+        input {
+            accent-color:  var(--textColor);
+        }
     }
 </style>

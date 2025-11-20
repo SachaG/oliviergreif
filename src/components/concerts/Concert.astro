@@ -1,5 +1,5 @@
 ---
-import { getConcert, SectionId } from "../../content";
+import { getConcert, getSectionPath, SectionId } from "../../content";
 import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
 import Date from "../Date.astro";
 import Field from "../Field.astro";
@@ -12,7 +12,10 @@ const { interpretes, adresse, date, titre, commentaire, oeuvres } = concert;
 const showFull = variant === "full";
 ---
 
-<PageLayout sectionId={SectionId.CONCERTS}>
+<PageLayout
+	sectionId={SectionId.CONCERTS}
+	parentPath={getSectionPath(SectionId.CONCERTS)}
+>
 	<div slot="page-heading">
 		<h3 class="subheading"><Date date={date} /></h3>
 		<h2>
@@ -22,18 +25,18 @@ const showFull = variant === "full";
 	<div slot="page-content">
 		<table>
 			<tbody>
-				{showFull && <Field label="Adresse">{adresse}</Field>}
-				<Field label="Interprètes">{interpretes}</Field>
+				{showFull && <Field k="concerts.adresse">{adresse}</Field>}
+				<Field k="concerts.interpretes">{interpretes}</Field>
 				{
 					oeuvres && oeuvres.length && (
-						<Field label="Œuvres">
+						<Field k="concerts.oeuvres">
 							<CatalogueRelated titres={oeuvres} />
 						</Field>
 					)
 				}
 				{
 					commentaire && (
-						<Field>
+						<Field k="concerts.commentaire">
 							<div set:html={commentaire} />
 						</Field>
 					)

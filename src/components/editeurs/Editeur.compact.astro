@@ -1,6 +1,7 @@
 ---
 import { getCatalogue } from "../../content";
 import { getEditeur, getPath } from "../../content";
+import FeedItemHeading from "../FeedItemHeading.astro";
 import T from "../T.astro";
 
 const { id } = Astro.props;
@@ -11,9 +12,7 @@ const oeuvres = getCatalogue().filter((oeuvre) => oeuvre.editeur === titre);
 ---
 
 <div>
-	<h3 class="link-heading feed-heading">
-		<a href={getPath(editeur)}>{titre}</a>
-	</h3>
+	<FeedItemHeading path={getPath(editeur)} content={titre} />
 	<p>
 		{oeuvres.length}
 		<T k="oeuvre" kPlural="oeuvres" count={oeuvres.length} />

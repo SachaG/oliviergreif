@@ -7,6 +7,7 @@ import {
 } from "../../content";
 import { truncateWords } from "../../helpers";
 import Date from "../Date.astro";
+import FeedItemHeading from "../FeedItemHeading.astro";
 import T from "../T.astro";
 import Actualite from "./Actualite.compact.astro";
 
@@ -20,9 +21,7 @@ const texte_ = truncateWords(texte, 10) + "…";
 <section>
 	<div class="contents">
 		<Date date={date} format="short" />
-		<h3 class="link-heading feed-heading">
-			<a href={getPath(actualite)}>{titre}</a>
-		</h3>
+		<FeedItemHeading path={getPath(actualite)} content={titre} />
 	</div>
 	<a
 		class="home-section-link link-heading"

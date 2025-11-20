@@ -7,14 +7,47 @@ import { Content as FullBioFr } from "../content/biographie.full.fr.mdx";
 import { Content as FullBioEn } from "../content/biographie.full.en.mdx";
 import PageLayout from "../components/layouts/PageLayout.astro";
 import { getString } from "../content";
+import T from "../components/T.astro";
 ---
 
 <Layout title={getString("actualites")?.t} }>
 	<PageLayout sectionId="biographie" hasSidebar={false}>
 		<div slot="page-content">
-			<BioFr />
-			<hr />
-			<FullBioFr />
+			<div class="biographie">
+				<div class="biographie-short">
+					<h2><T k="biographie.short" /></h2>
+					<BioFr />
+				</div>
+				<div class="biographie-full">
+					<h2><T k="biographie.full" /></h2>
+					<FullBioFr />
+				</div>
+			</div>
 		</div>
 	</PageLayout></Layout
 >
+
+<style>
+	.biographie {
+		h3 {
+			margin-top: var(--doubleSpacing);
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			margin-bottom: var(--spacing);
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.biographie-short {
+		border: 1px solid var(--borderColor);
+		padding: var(--spacing);
+		margin-bottom: var(--doubleSpacing);
+	}
+</style>

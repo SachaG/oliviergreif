@@ -3,6 +3,7 @@ import Oeuvre from "../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
 import {
 	getEditeur,
 	getEditeurs,
+	getSectionPath,
 	getString,
 	SectionId,
 } from "../../../content";
@@ -35,7 +36,7 @@ const catalogueByEditeur = getCatalogue({editeurId: titre})
 <script src="../../../scripts/search.ts"></script>
 
 <Layout title={`${getString("catalogue")?.t} (${titre})`}>
-	<PageLayout sectionId={SectionId.CATALOGUE}>
+	<PageLayout sectionId={SectionId.CATALOGUE} parentPath={getSectionPath(SectionId.CATALOGUE)}>
 		<h2
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}

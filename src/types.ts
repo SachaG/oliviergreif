@@ -1,6 +1,9 @@
 export type WithId = {
 	id: string;
-	parentSlug: string;
+};
+
+export type WithSlug = WithId & {
+	parentSlug?: string;
 	slug: string;
 };
 
@@ -39,7 +42,7 @@ export type Oeuvre = {
 	categorie?: string;
 	ecouter?: MusicService[];
 };
-export type OeuvreWithId = Oeuvre & WithId;
+export type OeuvreWithId = Oeuvre & WithSlug;
 
 export type Concert = {
 	id: string;
@@ -52,7 +55,7 @@ export type Concert = {
 	adresse?: string;
 	commentaire?: string;
 };
-export type ConcertWithId = Concert & WithId;
+export type ConcertWithId = Concert & WithSlug;
 
 export type Disque = {
 	id: string;
@@ -71,7 +74,7 @@ export type Disque = {
 	acheter?: Lien[];
 	articles?: Lien[];
 };
-export type DisqueWithId = Disque & WithId;
+export type DisqueWithId = Disque & WithSlug;
 
 export type Editeur = {
 	id: string;
@@ -80,7 +83,7 @@ export type Editeur = {
 	adresse?: string;
 	commentaire?: string;
 };
-export type EditeurWithId = Editeur & WithId;
+export type EditeurWithId = Editeur & WithSlug;
 
 export type EditeurWithCount = EditeurWithId & { count: number };
 
@@ -92,7 +95,7 @@ export type Actualite = {
 	titre: string;
 	texte: string;
 };
-export type ActualiteWithId = Actualite & WithId;
+export type ActualiteWithId = Actualite & WithSlug;
 
 export type LienExterne = {
 	texte: string;
@@ -104,4 +107,4 @@ export type Photo = {
 	image: string;
 };
 
-export type PhotoWithId = Photo & WithId;
+export type PhotoWithId = Photo & WithSlug;

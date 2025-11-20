@@ -14,11 +14,15 @@ const showMore = limit && limit < allCategories.length;
 <SidebarBlock k="catalogue.categories">
 	<ul class="items-list">
 		{
-			categories.map(({ id, count }) => {
+			categories.map((category) => {
+				const { id, count } = category;
 				const isCurrent = id === currentCategoryId;
 				return (
 					<li class={isCurrent ? "category-current" : ""}>
-						<a href={getCategoryLink(id)} class="link-heading">
+						<a
+							href={getCategoryLink(category)}
+							class="link-heading"
+						>
 							<T k={id} fallback={capitalizeFirstLetter(id)} />
 							<span class="count">({count})</span>
 						</a>

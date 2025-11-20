@@ -1,6 +1,6 @@
 ---
 import Oeuvre from "../../components/catalogue/oeuvre/Oeuvre.compact.astro";
-import { getItemsByYear, getString } from "../../content";
+import { getItemsByYear, getString, SectionId } from "../../content";
 import Layout from "../../layouts/Layout.astro";
 import Instruments from "../../components/catalogue/Instruments.astro";
 import Categories from "../../components/catalogue/Categories.astro";
@@ -11,6 +11,7 @@ import Editeurs from "../../components/catalogue/Editeurs.astro";
 import Search from "../../components/catalogue/Search.astro";
 import { getCatalogue } from "../../content";
 import { pluralize } from "../../helpers";
+import T from "../../components/T.astro";
 
 const catalogue = getCatalogue();
 const catalogueByYear = getItemsByYear<OeuvreWithId>(catalogue);
@@ -19,12 +20,12 @@ const catalogueByYear = getItemsByYear<OeuvreWithId>(catalogue);
 <script src="../../scripts/search.ts"></script>
 
 <Layout title={getString("catalogue")?.t}>
-	<PageLayout sectionId="catalogue" hasSidebar={true}>
+	<PageLayout sectionId={SectionId.CATALOGUE} hasSidebar={true}>
 		<h2
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}
 		>
-			Catalogue
+			<T k="catalogue" />
 			<span class="heading-metadata"
 				>({catalogue.length}
 				{pluralize("oeuvre", catalogue.length)})</span

@@ -2,6 +2,7 @@
 import { getActualite, getPath } from "../../content";
 import { truncateWords } from "../../helpers";
 import Date from "../Date.astro";
+import FeedItemHeading from "../FeedItemHeading.astro";
 
 const { id, truncate = false } = Astro.props;
 const actualite = getActualite(id);
@@ -12,8 +13,6 @@ const texte_ = truncate ? truncateWords(texte, 10) + "…" : texte;
 
 <div>
 	<Date date={date} />
-	<h3 class="link-heading feed-heading">
-		<a href={getPath(actualite)}>{titre}</a>
-	</h3>
+	<FeedItemHeading path={getPath(actualite)} content={titre} />
 	<div set:html={texte_} />
 </div>

@@ -8,10 +8,12 @@ import {
 	instrumentGroups,
 	SectionId,
     convertTitle,
-    getCatalogue
+    getCatalogue,
+    getSection2,
+    getSectionPath
 } from "../../../content";
 import Layout from "../../../layouts/Layout.astro";
-import type { WithId } from "../../../types";
+import type { WithSlug } from "../../../types";
 import Instruments from "../../../components/catalogue/Instruments.astro";
 import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
 import T from "../../../components/T.astro";
@@ -20,15 +22,16 @@ import Categories from "../../../components/catalogue/Categories.astro";
 import AllCatalog from "../../../components/catalogue/AllCatalog.astro";
 import Editeurs from "../../../components/catalogue/Editeurs.astro";
 import Search from "../../../components/catalogue/Search.astro";
-import { getItemsStaticPaths } from "../../../helpers";
+import { getItemIdFromSlug, getItemsStaticPaths } from "../../../helpers";
 
 const { id } = Astro.params;
-const categoryId = id as string;
+const categoryId = getItemIdFromSlug(id as string);
 
 export function getStaticPaths() {
-	return getItemsStaticPaths(
-		getCategories().map(({ id }) => ({ id: convertTitle(id) }) as WithId)
+	const staticPaths= getItemsStaticPaths(
+		getCategories().map(({ id }) => ({ id: convertTitle(id) }) as WithSlug)
 	);
+    return staticPaths
 }
 
 const catalogue = getCatalogue({ categoryId });
@@ -40,12 +43,14 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 		items: catalogue.filter((o) => o.instruments?.length === count + 1),
 	}))
 	.filter(({ items }) => items.length > 0);
+
+
 ---
 
 <script src="../../../scripts/search.ts"></script>
 
 <Layout title={`${getString("catalogue")?.t} (${title})`}>
-	<PageLayout sectionId={SectionId.CATALOGUE}>
+	<PageLayout sectionId={SectionId.CATALOGUE} parentPath={getSectionPath(SectionId.CATALOGUE)}}>
 		<h2
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}

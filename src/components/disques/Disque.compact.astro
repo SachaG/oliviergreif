@@ -1,6 +1,7 @@
 ---
 import { getDisque, getPath } from "../../content";
 import CatalogueRelated from "../catalogue/CatalogueRelated.compact.astro";
+import FeedItemHeading from "../FeedItemHeading.astro";
 import DisqueCover from "./DisqueCover.astro";
 const { id } = Astro.props;
 const disque = getDisque(id);
@@ -19,9 +20,7 @@ const {
 	{image ? <DisqueCover id={id} /> : <div class="disque-image-placeholder" />}
 	<div class="disque-compact-content">
 		<h4>{annee}</h4>
-		<h3 class="link-heading feed-heading">
-			<a href={getPath(disque)}>{titre}</a>
-		</h3>
+		<FeedItemHeading path={getPath(disque)} content={titre} />
 		<!-- {oeuvres && <CatalogueRelated oeuvres={oeuvres} />} -->
 	</div>
 </div>

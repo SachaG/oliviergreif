@@ -1,0 +1,13 @@
+---
+const { path, content } = Astro.props;
+---
+
+<h3 class="feed-item-heading">
+	<a class="link-heading" href={path}>{content}</a>
+</h3>
+
+<style>
+	a {
+		text-decoration: none;
+	}
+</style>

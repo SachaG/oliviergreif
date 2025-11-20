@@ -1,6 +1,7 @@
 ---
 import { getOeuvre } from "../../../content";
 import { convertTitle, getPath } from "../../../content";
+import FeedItemHeading from "../../FeedItemHeading.astro";
 import Instruments from "./Instruments.astro";
 const { id } = Astro.props;
 const oeuvre = getOeuvre(id);
@@ -21,9 +22,8 @@ const className = instruments
 
 <div data-titre={titre} class={`catalogue-oeuvre visible ${className}`}>
 	<div class="opus">Opus {opus}</div>
-	<h3>
-		<a class="link-heading" href={getPath(oeuvre)}>{titre}</a>
-	</h3>
+	<FeedItemHeading path={getPath(oeuvre)} content={titre} />
+
 	<main>
 		<Instruments oeuvre={oeuvre} />
 	</main>

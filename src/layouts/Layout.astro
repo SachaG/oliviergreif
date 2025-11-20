@@ -136,16 +136,18 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 			white 60%
 		);
 		/* --bgColor: rgb(132, 214, 223); */
-		--bgColor: #ffad49;
-		--bgColorSecondary: #69d8e9;
-		--bgColorSecondary: #ffad49;
-		--textColor: #25190b;
-		--textColorSecondary: #25190b;
+		/* --bgColor: #303776; */
+		--bgColor: #7bc5b5;
+		/* 303776 */
+		/* 7bc5b5 */
+		--bgColorSecondary: var(--bgColor);
+		--textColor: #252c6d;
+		--textColorSecondary: var(--textColor);
 		--invertedTextColor: #c9e1e5;
 		--invertedHoverTextColor: #fff;
-		--linkColor: #0f3f46dd;
-		--linkColor: #25190b;
-		--linkHoverColor: #fff;
+		/* --linkColor: #0f3f46dd; */
+		--linkColor: var(--textColor);
+		--linkHoverColor: rgb(159, 55, 154);
 		--borderColor: #25190b;
 		--borderWidth: 1px;
 		--border: var(--borderWidth) solid var(--borderColor);

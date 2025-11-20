@@ -1,5 +1,5 @@
 ---
-import { getActualite, SectionId } from "../../content";
+import { getActualite, getSectionPath, SectionId } from "../../content";
 import Date from "../Date.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 
@@ -8,7 +8,10 @@ const actualite = getActualite(id);
 const { titre, texte, date } = actualite;
 ---
 
-<PageLayout sectionId={SectionId.ACTUALITES}>
+<PageLayout
+	sectionId={SectionId.ACTUALITES}
+	parentPath={getSectionPath(SectionId.ACTUALITES)}
+>
 	<span slot="page-heading">
 		<Date date={date} />
 		<h2 class="title">

@@ -1,5 +1,5 @@
 ---
-import { getCatalogue } from "../../content";
+import { getCatalogue, getSectionPath, SectionId } from "../../content";
 import { getEditeur } from "../../content";
 import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
 import PageLayout from "../layouts/PageLayout.astro";
@@ -11,7 +11,10 @@ const { titre, commentaire } = editeur;
 const oeuvres = getCatalogue().filter((oeuvre) => oeuvre.editeur === titre);
 ---
 
-<PageLayout>
+<PageLayout
+	sectionId={SectionId.EDITEURS}
+	parentPath={getSectionPath(SectionId.Editeur)}
+>
 	<div slot="page-heading">
 		<h2 class="title">
 			{titre}

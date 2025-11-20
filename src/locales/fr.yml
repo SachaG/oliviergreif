@@ -82,6 +82,9 @@ strings:
     - key: catalogue.acheter_partition
       t: Acheter la partition
 
+    - key: catalogue.voir_tout
+      t: Voir toutes les oeuvres
+
     # instruments
     - key: oeuvre
       t: œuvre
@@ -139,3 +142,19 @@ strings:
       t: Amazon Music
     - key: discogs
       t: Discogs
+
+    # biographie
+    - key: biographie.short
+      t: Résumé
+    - key: biographie.full
+      t: Biographie Complète
+
+    # concerts
+    - key: concerts.adresse
+      t: Adresse
+    - key: concerts.interpretes
+      t: Interprètes
+    - key: concerts.oeuvres
+      t: Œuvres
+    - key: concerts.commentaire
+      t: Notes

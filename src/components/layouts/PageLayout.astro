@@ -1,18 +1,19 @@
 ---
 import { getSection2 } from "../../content";
 import T from "../T.astro";
-const { sectionId } = Astro.props;
+const { sectionId, parentPath } = Astro.props;
 
 const sidebarSlotContent = await Astro.slots.render('page-sidebar') || '';
 const hasSidebar = sidebarSlotContent.trim().length > 0;
 
 const defaultSlotContent = await Astro.slots.render('page-heading') || '';
 const hasContent = defaultSlotContent.trim().length > 0;
+
 ---
 
 <div class={`page page-${hasSidebar ? 'withSidebar' : 'noSidebar'}`} style={`view-transition-name: section-${sectionId}; `}>
 	<div class="page-heading">
-        <a class="home-link" href="/"><span class="arrow">←</span>
+        <a class="home-link" href={parentPath || "/"}><span class="arrow">←</span>
         <span class="visually-hidden"><T k="retour_accueil"/></span></a>
         <div class="page-heading-content">
         {hasContent ? <slot name="page-heading"/>:<h2
