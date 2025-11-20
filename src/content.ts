@@ -498,11 +498,12 @@ export const getString = (
 	} = {},
 ) => {
 	const { kPlural, count, fallback } = options;
-	const t = strings.find((s) => s.key === k)?.t;
+	const t = strings.find((s) => s.key === k)?.t || fallback;
 	const tPlural =
-		kPlural &&
-		count &&
-		count > 1 &&
-		strings.find((s) => s.key === kPlural)?.t;
+		(kPlural &&
+			count &&
+			count > 1 &&
+			strings.find((s) => s.key === kPlural)?.t) ||
+		fallback + "s";
 	return { t, tPlural };
 };

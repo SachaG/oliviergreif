@@ -1,6 +1,8 @@
 ---
 import { capitalizeFirstLetter, getInstrumentLink } from "../../../content";
 import type { OeuvreWithId } from "../../../types";
+import { getString } from "../../../content";
+import uniq from "lodash/uniq.js";
 
 interface Props {
 	oeuvre: OeuvreWithId;
@@ -8,21 +10,42 @@ interface Props {
 
 const { oeuvre } = Astro.props;
 const { instruments = [] } = oeuvre;
+
+const instrumentsCounts: { [key: string]: number } = {};
+instruments.forEach((instrumentId: string) => {
+	if (instrumentsCounts[instrumentId]) {
+		instrumentsCounts[instrumentId]++;
+	} else {
+		instrumentsCounts[instrumentId] = 1;
+	}
+});
+const instrumentsDeduped: Array<{ count: number; id: string; label: string }> =
+	uniq(instruments).map((id: string) => {
+		const count = instrumentsCounts[id];
+		const key = `instruments.${id}`;
+        const fallback = capitalizeFirstLetter(id)
+		const name = getString(key, {
+			count,
+			kPlural: `${key}s`,
+			fallback,
+		});
+		const label = count >= 2 ? `${count} ${name?.tPlural || fallback}` : name?.t || fallback;
+		return { id, count, label };
+	});
+
 ---
 
 <div>
 	{
-		instruments.map((instrumentId, i) => (
-			<span>
-				<a
-					href={getInstrumentLink(instrumentId)}
-					class={`instrument-${instrumentId}`}
-				>
-					{capitalizeFirstLetter(instrumentId)}
-				</a>
-				{i < instruments.length - 1 && <span>, </span>}
-			</span>
-		))
+		instrumentsDeduped.map(({ id, label }, i) => {
+			const link = getInstrumentLink(id);
+			const c = `instrument-${id}`;
+			return (
+				<span>
+					<a href={link} class={c}>{label}</a>{i < instruments.length - 2 && <span>, </span>}
+				</span>
+			);
+		})
 	}
 	<!-- ({formation}) -->
 </div>

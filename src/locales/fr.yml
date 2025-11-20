@@ -99,6 +99,16 @@ strings:
     - key: clavier-et-orgue
       t: Clavier et Orgue
 
+    - key: instruments.violon
+      t: Violon
+    - key: instruments.violons
+      t: Violons
+
+    - key: instruments.piano
+      t: Piano
+    - key: instruments.pianos
+      t: Pianos
+
     # categories
     - key: cantate
       t: Cantates
