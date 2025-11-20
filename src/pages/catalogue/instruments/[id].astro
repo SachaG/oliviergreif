@@ -6,8 +6,10 @@ import {
 	getInstrumentsGroups,
 	getString,
 	instrumentGroups,
-	SectionId,convertTitle,getCatalogue,
-    getSectionPath
+	SectionId,
+	convertTitle,
+	getCatalogue,
+	getSectionPath,
 } from "../../../content";
 import Layout from "../../../layouts/Layout.astro";
 import type { WithSlug } from "../../../types";
@@ -80,7 +82,10 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 </script>
 
 <Layout title={`${getString("catalogue")?.t} (${title})`}>
-	<PageLayout sectionId={SectionId.CATALOGUE} parentPath={getSectionPath(SectionId.CATALOGUE)}>
+	<PageLayout
+		sectionId={SectionId.CATALOGUE}
+		parentPath={getSectionPath(SectionId.CATALOGUE)}
+	>
 		<h2
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}
@@ -150,37 +155,35 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 		/>
 		<Editeurs slot="page-sidebar" />
 	</PageLayout>
-
 </Layout>
 
-
-<style type="text/scss">
-    // .count-title {
-    // 	position: sticky;
-    // 	top: 0px;
-    // 	font-size: 1.6rem;
-    // }
-    @supports (selector(:has(*))) {
-        .subcontainer:not(:has(.visible)) {
-            display: none;
-        }
-    }
-    .instruments-filter {
-        display: flex;
-        gap: var(--spacing);
-        flex-wrap: wrap;
-        border: 1px solid var(--borderColor);
-        padding: var(--halfSpacing); 
-    }
-    .count-heading {
-        white-space: nowrap;
-    }
-    .instruments-filter-item {
-        display: flex;
-        justify-content: center;
-        gap: var(--halfSpacing);
-        input {
-            accent-color:  var(--textColor);
-        }
-    }
+<style lang="scss" type="text/scss">
+	// .count-title {
+	// 	position: sticky;
+	// 	top: 0px;
+	// 	font-size: 1.6rem;
+	// }
+	@supports (selector(:has(*))) {
+		.subcontainer:not(:has(.visible)) {
+			display: none;
+		}
+	}
+	.instruments-filter {
+		display: flex;
+		gap: var(--spacing);
+		flex-wrap: wrap;
+		border: 1px solid var(--borderColor);
+		padding: var(--halfSpacing);
+	}
+	.count-heading {
+		white-space: nowrap;
+	}
+	.instruments-filter-item {
+		display: flex;
+		justify-content: center;
+		gap: var(--halfSpacing);
+		input {
+			accent-color: var(--textColor);
+		}
+	}
 </style>

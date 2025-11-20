@@ -3,31 +3,38 @@ import { getSection2 } from "../../content";
 import T from "../T.astro";
 const { sectionId, parentPath } = Astro.props;
 
-const sidebarSlotContent = await Astro.slots.render('page-sidebar') || '';
+const sidebarSlotContent = (await Astro.slots.render("page-sidebar")) || "";
 const hasSidebar = sidebarSlotContent.trim().length > 0;
 
-const defaultSlotContent = await Astro.slots.render('page-heading') || '';
+const defaultSlotContent = (await Astro.slots.render("page-heading")) || "";
 const hasContent = defaultSlotContent.trim().length > 0;
-
 ---
 
-<div class={`page page-${hasSidebar ? 'withSidebar' : 'noSidebar'}`} style={`view-transition-name: section-${sectionId}; `}>
+<div
+	class={`page page-${hasSidebar ? "withSidebar" : "noSidebar"}`}
+	style={`view-transition-name: section-${sectionId}; `}
+>
 	<div class="page-heading">
-        <a class="home-link" href={parentPath || "/"}><span class="arrow">←</span>
-        <span class="visually-hidden"><T k="retour_accueil"/></span></a>
-        <div class="page-heading-content">
-        {hasContent ? <slot name="page-heading"/>:<h2
-            style={`view-transition-name: heading-${sectionId}`}
-        >
-            <T k={sectionId} />
-            
-        </h2>}
-        </div>
-    </div>
+		<a class="home-link" href={parentPath || "/"}
+			><span class="arrow">←</span>
+			<span class="visually-hidden"><T k="retour_accueil" /></span></a
+		>
+		<div class="page-heading-content">
+			{
+				hasContent ? (
+					<slot name="page-heading" />
+				) : (
+					<h2 style={`view-transition-name: heading-${sectionId}`}>
+						<T k={sectionId} />
+					</h2>
+				)
+			}
+		</div>
+	</div>
 	<div class="page-content grid">
 		<main class="page-main">
-            <slot name="page-content" />
-        </main>
+			<slot name="page-content" />
+		</main>
 		<div class="page-sidebar">
 			<div class="sidebar-contents">
 				<slot name="page-sidebar" />
@@ -36,35 +43,44 @@ const hasContent = defaultSlotContent.trim().length > 0;
 	</div>
 </div>
 
-<style type="text/scss" is:global>
-.page {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: min-content 1fr;
-}
-    .page-heading {
-        display: grid;
-        grid-template-columns: min-content 1fr;
-		border-bottom: var(--border);
+<style lang="scss" is:global>
+	@import "../../styles/_breakpoints.scss";
 
-    }
-    .home-link {
-        display: grid;
-        place-items: center;
-        font-size: 8rem;
-        text-decoration: none;
+	.page {
+		min-height: 100vh;
+		display: grid;
+		grid-template-rows: min-content 1fr;
+	}
+	.page-heading {
+		display: grid;
+		grid-template-columns: min-content 1fr;
+		border-bottom: var(--border);
+		@include breakpointUnder(lg) {
+			grid-template-columns: 60px 1fr;
+		}
+	}
+	.home-link {
+		display: grid;
+		place-items: center;
+		font-size: 8rem;
+		text-decoration: none;
 		border-right: var(--border);
-        vertical-align: middle;
-        aspect-ratio: 1/1;
-        &:hover {
-            background-color: var(--textColor);
-            color: var(--bgColor);
-        }
-        .arrow {
-            text-box-edge: cap alphabetic;
-            text-box-trim: trim-both;
-        }
-    }
+		vertical-align: middle;
+		&:hover {
+			background-color: var(--textColor);
+			color: var(--bgColor);
+		}
+		.arrow {
+			text-box-edge: cap alphabetic;
+			text-box-trim: trim-both;
+		}
+		@include breakpointUnder(lg) {
+			font-size: 2rem;
+		}
+		@include breakpointOver(lg) {
+			aspect-ratio: 1/1;
+		}
+	}
 
 	.page-heading-content {
 		// position: sticky;
@@ -72,20 +88,19 @@ const hasContent = defaultSlotContent.trim().length > 0;
 		// background-color: var(--bgColor);
 		z-index: 100;
 		padding: var(--doubleSpacing);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		a {
 			color: var(--textColor);
-            text-decoration: none;
+			text-decoration: none;
 		}
-        h2 {
-            font-size: 2rem;
-        }
-	}
-	.page-content {
-		display: grid;
-		grid-template-columns: 3fr 1fr;
+		h2 {
+			font-size: 2rem;
+			@include breakpointUnder(lg) {
+				font-size: 1.4rem;
+			}
+		}
 	}
 	.heading {
 		margin-bottom: var(--spacing);
@@ -95,10 +110,10 @@ const hasContent = defaultSlotContent.trim().length > 0;
 		display: flex;
 		flex-direction: column;
 		gap: var(--doubleSpacing);
-        .page-withSidebar & {
-            border-right: var(--border);
-            padding-right: var(--doubleSpacing);
-        }
+		.page-withSidebar & {
+			border-right: var(--border);
+			padding-right: var(--doubleSpacing);
+		}
 		.subgrid-layout {
 			padding-bottom: var(--doubleSpacing);
 			border-bottom: var(--border);
@@ -111,13 +126,12 @@ const hasContent = defaultSlotContent.trim().length > 0;
 		top: 10px;
 	}
 
-    .sidebar-contents {
-        display: flex;
-        flex-direction: column;
-        gap: var(--doubleSpacing);
-    }
-    .sidebar-block-heading {
-        margin-bottom: var(--halfSpacing);
-    }
-
+	.sidebar-contents {
+		display: flex;
+		flex-direction: column;
+		gap: var(--doubleSpacing);
+	}
+	.sidebar-block-heading {
+		margin-bottom: var(--halfSpacing);
+	}
 </style>

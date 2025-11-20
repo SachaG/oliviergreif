@@ -18,36 +18,39 @@ import Editeurs from "../../../components/catalogue/Editeurs.astro";
 import Search from "../../../components/catalogue/Search.astro";
 import { getItemIdFromSlug, getItemsStaticPaths } from "../../../helpers";
 
-
-export const getStaticPaths = async ()=> {
-	return getItemsStaticPaths(
-		getEditeurs()
-	);
-}
+export const getStaticPaths = async () => {
+	return getItemsStaticPaths(getEditeurs());
+};
 
 const { id } = Astro.params;
-const editeur = getEditeur(getItemIdFromSlug(id))
-const {titre}=editeur
+const editeur = getEditeur(getItemIdFromSlug(id));
+const { titre } = editeur;
 
-const catalogueByEditeur = getCatalogue({editeurId: titre})
-
+const catalogueByEditeur = getCatalogue({ editeurId: titre });
 ---
 
 <script src="../../../scripts/search.ts"></script>
 
 <Layout title={`${getString("catalogue")?.t} (${titre})`}>
-	<PageLayout sectionId={SectionId.CATALOGUE} parentPath={getSectionPath(SectionId.CATALOGUE)}>
+	<PageLayout
+		sectionId={SectionId.CATALOGUE}
+		parentPath={getSectionPath(SectionId.CATALOGUE)}
+	>
 		<h2
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}
 		>
 			<T k="catalogue" />: {titre} ({catalogueByEditeur.length}
-			<T k="oeuvre" kPlural="oeuvres" count={catalogueByEditeur.length} />)
+			<T
+				k="oeuvre"
+				kPlural="oeuvres"
+				count={catalogueByEditeur.length}
+			/>)
 		</h2>
 		{
 			catalogueByEditeur.map((oeuvre) => (
 				<div class="subcontainer" slot="page-content">
-								<Oeuvre id={oeuvre.id} />
+					<Oeuvre id={oeuvre.id} />
 				</div>
 			))
 		}
@@ -55,27 +58,26 @@ const catalogueByEditeur = getCatalogue({editeurId: titre})
 		<Search slot="page-sidebar" />
 		<Categories slot="page-sidebar" />
 		<Instruments slot="page-sidebar" />
-		<Editeurs slot="page-sidebar" currentEditeurId={id}  />
-
+		<Editeurs slot="page-sidebar" currentEditeurId={id} />
 	</PageLayout>
 </Layout>
 
-<style type="text/scss">
-    // .count-title {
-    // 	position: sticky;
-    // 	top: 0px;
-    // 	font-size: 1.6rem;
-    // }
-    @supports (selector(:has(*))) {
-        .subcontainer:not(:has(.visible)) {
-            display: none;
-        }
-    }
-    .instruments-list {
-        display: flex;
-        gap: var(--halfSpacing);
-    }
-    .count-heading {
-        white-space: nowrap;
-    }
+<style lang="scss" type="text/scss">
+	// .count-title {
+	// 	position: sticky;
+	// 	top: 0px;
+	// 	font-size: 1.6rem;
+	// }
+	@supports (selector(:has(*))) {
+		.subcontainer:not(:has(.visible)) {
+			display: none;
+		}
+	}
+	.instruments-list {
+		display: flex;
+		gap: var(--halfSpacing);
+	}
+	.count-heading {
+		white-space: nowrap;
+	}
 </style>

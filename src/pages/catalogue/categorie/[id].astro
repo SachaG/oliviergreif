@@ -7,10 +7,10 @@ import {
 	getString,
 	instrumentGroups,
 	SectionId,
-    convertTitle,
-    getCatalogue,
-    getSection2,
-    getSectionPath
+	convertTitle,
+	getCatalogue,
+	getSection2,
+	getSectionPath,
 } from "../../../content";
 import Layout from "../../../layouts/Layout.astro";
 import type { WithSlug } from "../../../types";
@@ -28,10 +28,10 @@ const { id } = Astro.params;
 const categoryId = getItemIdFromSlug(id as string);
 
 export function getStaticPaths() {
-	const staticPaths= getItemsStaticPaths(
+	const staticPaths = getItemsStaticPaths(
 		getCategories().map(({ id }) => ({ id: convertTitle(id) }) as WithSlug)
 	);
-    return staticPaths
+	return staticPaths;
 }
 
 const catalogue = getCatalogue({ categoryId });
@@ -43,14 +43,16 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 		items: catalogue.filter((o) => o.instruments?.length === count + 1),
 	}))
 	.filter(({ items }) => items.length > 0);
-
-
 ---
 
 <script src="../../../scripts/search.ts"></script>
 
 <Layout title={`${getString("catalogue")?.t} (${title})`}>
-	<PageLayout sectionId={SectionId.CATALOGUE} parentPath={getSectionPath(SectionId.CATALOGUE)}}>
+	<PageLayout
+		sectionId={SectionId.CATALOGUE}
+		parentPath={getSectionPath(SectionId.CATALOGUE)}
+		}
+	>
 		<h2
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}
@@ -93,27 +95,25 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 		<Categories slot="page-sidebar" currentCategoryId={categoryId} />
 		<Instruments slot="page-sidebar" />
 		<Editeurs slot="page-sidebar" />
-
 	</PageLayout>
 </Layout>
 
-
-<style type="text/scss">
-    // .count-title {
-    // 	position: sticky;
-    // 	top: 0px;
-    // 	font-size: 1.6rem;
-    // }
-    @supports (selector(:has(*))) {
-        .subcontainer:not(:has(.visible)) {
-            display: none;
-        }
-    }
-    .instruments-list {
-        display: flex;
-        gap: var(--halfSpacing);
-    }
-    .count-heading {
-        white-space: nowrap;
-    }
+<style lang="scss" type="text/scss">
+	// .count-title {
+	// 	position: sticky;
+	// 	top: 0px;
+	// 	font-size: 1.6rem;
+	// }
+	@supports (selector(:has(*))) {
+		.subcontainer:not(:has(.visible)) {
+			display: none;
+		}
+	}
+	.instruments-list {
+		display: flex;
+		gap: var(--halfSpacing);
+	}
+	.count-heading {
+		white-space: nowrap;
+	}
 </style>

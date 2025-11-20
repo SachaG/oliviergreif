@@ -9,11 +9,14 @@ const { className } = Astro.props;
 	<div class="main"><slot name="main" /></div>
 </section>
 
-<style type="text/scss">
+<style lang="scss" type="text/scss">
+	@import "../../styles/_breakpoints.scss";
 	.subgrid-layout {
-		display: grid;
-		grid-template-columns: minmax(120px, min-content) 1fr;
-		gap: var(--doubleSpacing);
+		@include breakpointOver(lg) {
+			display: grid;
+			grid-template-columns: minmax(120px, min-content) 1fr;
+			gap: var(--doubleSpacing);
+		}
 	}
 
 	.catalogue-year:not(:has(.catalogue-oeuvre.visible)) {
@@ -21,8 +24,13 @@ const { className } = Astro.props;
 	}
 
 	.subgrid-heading {
-		position: sticky;
-		top: 10px;
+		@include breakpointUnder(lg) {
+			margin-bottom: var(--spacing);
+		}
+		@include breakpointOver(lg) {
+			position: sticky;
+			top: 10px;
+		}
 	}
 
 	.main {

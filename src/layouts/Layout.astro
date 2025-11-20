@@ -59,7 +59,8 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	});
 </script>
 
-<style is:global>
+<style lang="scss" is:global>
+	@import "../styles/_breakpoints.scss";
 	/* https://www.joshwcomeau.com/css/custom-css-reset/
 	*/
 	/*
@@ -159,10 +160,19 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 		--fontFamilyPrimary: "STIX Two Text", serif;
 		--fontFamilySecondary: "Lexend", sans-serif;
 		--fontFamilySecondary: "DM Sans", sans-serif;
+
+		--fs-sm: clamp(0.8rem, 0.25vi + 0.74rem, 0.94rem);
+		--fs-base: clamp(1rem, 0.45vi + 0.89rem, 1.25rem);
+		--fs-md: clamp(1.25rem, 0.76vi + 1.06rem, 1.67rem);
+		--fs-lg: clamp(1.56rem, 1.2vi + 1.26rem, 2.22rem);
+		--fs-xl: clamp(1.95rem, 1.83vi + 1.5rem, 2.96rem);
+		--fs-xxl: clamp(2.44rem, 2.74vi + 1.76rem, 3.95rem);
+		--fs-xxxl: clamp(3.05rem, 4.02vi + 2.05rem, 5.26rem);
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		font-size: 20px;
+		/* font-size: 20px; */
+		font-size: var(--fs-base);
 	}
 	code {
 		font-family:
@@ -287,9 +297,11 @@ const fullTitle = title ? `Olivier Greif | ${title}` : "Olivier Greif";
 	}
 
 	.grid {
-		display: grid;
-		grid-template-columns: 3fr 1fr;
-		gap: var(--spacing);
+		@include breakpointOver(lg) {
+			display: grid;
+			grid-template-columns: 3fr 1fr;
+			gap: var(--spacing);
+		}
 	}
 	.sidebar {
 	}

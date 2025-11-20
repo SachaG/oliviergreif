@@ -21,26 +21,33 @@ import Title from "../components/home/Title.astro";
 	</div>
 </Layout>
 
-<style is:global>
+<style lang="scss" is:global>
+	@import "../styles/_breakpoints.scss";
+
 	.home-sections {
 		background: var(--borderColor);
 		border: var(--border);
 		height: 100vh;
 		width: 100vw;
-		display: grid;
 		gap: 1px;
-		/* gap: 0px; */
-		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: 1fr 1fr 1fr;
-		/* grid-template-areas:
+		@include breakpointUnder(lg) {
+			display: flex;
+			flex-direction: column;
+		}
+		@include breakpointOver(lg) {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-rows: 1fr 1fr 1fr;
+			/* grid-template-areas:
 			"title title title concerts concerts actualites "
 			"catalogue catalogue biographie biographie disques media"
 			"catalogue catalogue editeurs association liens contact"
 			"footer footer footer footer footer footer"; */
-		grid-template-areas:
-			"title title title biographie biographie concerts "
-			"catalogue catalogue disques disques photos actualites"
-			" catalogue catalogue disques disques photos footer";
+			grid-template-areas:
+				"title title title biographie biographie concerts "
+				"catalogue catalogue disques disques photos actualites"
+				" catalogue catalogue disques disques photos footer";
+		}
 	}
 
 	.section-footer {
