@@ -29,15 +29,23 @@ const catalogue = getCatalogue();
 </div>
 
 <style lang="scss" is:global>
+	@import "../../styles/_breakpoints.scss";
 	.catalogue-section {
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing);
 	}
 	.catalogue-categories {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: var(--doubleSpacing);
+		@include breakpointUnder(lg) {
+			display: flex;
+			flex-direction: column;
+			gap: var(--spacing);
+		}
+		@include breakpointOver(lg) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: var(--doubleSpacing);
+		}
 	}
 	.count {
 		font-weight: normal;

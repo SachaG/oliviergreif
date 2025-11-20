@@ -14,28 +14,37 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
+	@import "../../styles/_breakpoints.scss";
+
 	.section-title {
 		view-transition-name: title;
 		grid-area: title;
 	}
-	.section-title-sub {
-		display: flex;
-		flex-direction: column;
-		gap: var(--halfSpacing);
-		justify-content: center;
+	@include breakpointUnder(lg) {
+		.section-title-1 {
+			margin-bottom: var(--spacing);
+		}
 	}
-	.section-title-1 {
-		text-align: right;
-		border-right: var(--border);
-		padding-right: var(--spacing);
-	}
-	.section-title-inner {
-		display: grid;
-		grid-template-columns: min-content 1fr;
-		grid-template-rows: 1fr;
-		gap: var(--spacing);
-		height: 100%;
+	@include breakpointOver(lg) {
+		.section-title-sub {
+			display: flex;
+			flex-direction: column;
+			gap: var(--halfSpacing);
+			justify-content: center;
+		}
+		.section-title-1 {
+			text-align: right;
+			border-right: var(--border);
+			padding-right: var(--spacing);
+		}
+		.section-title-inner {
+			display: grid;
+			grid-template-columns: min-content 1fr;
+			grid-template-rows: 1fr;
+			gap: var(--spacing);
+			height: 100%;
+		}
 	}
 	h1 {
 		font-size: 3rem;
