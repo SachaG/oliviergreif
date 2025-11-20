@@ -1,7 +1,11 @@
 ---
+import { getSectionPath, SectionId } from "../../content";
+import LinkItem from "../LinkItem.astro";
 import T from "../T.astro";
 ---
 
 <div>
-	<a class="link-heading" href="/catalogue"><T k="catalogue.voir_tout" /></a>
+	<LinkItem path={getSectionPath(SectionId.CATALOGUE)}
+		><T k="catalogue.voir_tout" /></LinkItem
+	>
 </div>

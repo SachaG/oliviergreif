@@ -1,8 +1,9 @@
 ---
-import { getInstrumentsGroups } from "../../content";
+import { getInstrumentsGroups, getSectionPath, SectionId } from "../../content";
 const { currentInstrumentId, limit } = Astro.props;
 import { capitalizeFirstLetter } from "../../content";
 import { getInstrumentGroupLink } from "../../content";
+import LinkItem from "../LinkItem.astro";
 import SidebarBlock from "../SidebarBlock.astro";
 import T from "../T.astro";
 
@@ -21,13 +22,10 @@ const showMore = limit && limit <= instrumentGroups.length;
 				const isCurrent = id === currentInstrumentId;
 				return (
 					<li class={isCurrent ? "instrument-current" : ""}>
-						<a
-							class="link-heading"
-							href={getInstrumentGroupLink(id)}
-						>
+						<LinkItem path={getInstrumentGroupLink(id)}>
 							<T k={id} fallback={capitalizeFirstLetter(id)} />
 							<span class="count">({count})</span>
-						</a>
+						</LinkItem>
 						{/* {instruments.length > 1 && (
 							<p>
 								{instruments.map((i) => (
@@ -45,9 +43,9 @@ const showMore = limit && limit <= instrumentGroups.length;
 		{
 			showMore && (
 				<li>
-					<a href="/catalogue" class="link-heading">
+					<LinkItem path={getSectionPath(SectionId.CATALOGUE)}>
 						<T k="voir_plus" />
-					</a>
+					</LinkItem>
 				</li>
 			)
 		}

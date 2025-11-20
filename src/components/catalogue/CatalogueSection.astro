@@ -1,5 +1,6 @@
 ---
-import { getCatalogue } from "../../content";
+import { getCatalogue, getSectionPath, SectionId } from "../../content";
+import LinkItem from "../LinkItem.astro";
 import T from "../T.astro";
 import Categories from "./Categories.astro";
 import Instruments from "./Instruments.astro";
@@ -11,9 +12,9 @@ const catalogue = getCatalogue();
 	<div class="catalogue-all">
 		<ul class="items-list">
 			<li>
-				<a href="/catalogue" class="link-heading"
+				<LinkItem path={getSectionPath(SectionId.CATALOGUE)}
 					><T k="toutes_les_oeuvres" />
-					<span class="count">({catalogue.length})</span></a
+					<span class="count">({catalogue.length})</span></LinkItem
 				>
 			</li>
 		</ul>

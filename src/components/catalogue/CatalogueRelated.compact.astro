@@ -5,6 +5,7 @@ import {
 	getPath,
 	getOeuvreByTitre,
 } from "../../content";
+import LinkItem from "../LinkItem.astro";
 
 interface Props {
 	oeuvres: string[];
@@ -19,9 +20,7 @@ const { oeuvres } = Astro.props;
 				const oeuvre = getOeuvreByTitre(oeuvreName)!;
 				return (
 					<li>
-						<a class="link-heading" href={getPath(oeuvre)}>
-							{oeuvreName}
-						</a>
+						<LinkItem path={getPath(oeuvre)} content={oeuvreName} />
 					</li>
 				);
 			})

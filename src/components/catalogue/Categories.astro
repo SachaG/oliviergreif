@@ -1,7 +1,12 @@
 ---
 const { currentCategoryId, limit } = Astro.props;
-import { capitalizeFirstLetter } from "../../content";
+import {
+	capitalizeFirstLetter,
+	getSectionPath,
+	SectionId,
+} from "../../content";
 import { getCategories, getCategoryLink } from "../../content";
+import LinkItem from "../LinkItem.astro";
 import SidebarBlock from "../SidebarBlock.astro";
 import T from "../T.astro";
 
@@ -19,13 +24,10 @@ const showMore = limit && limit < allCategories.length;
 				const isCurrent = id === currentCategoryId;
 				return (
 					<li class={isCurrent ? "category-current" : ""}>
-						<a
-							href={getCategoryLink(category)}
-							class="link-heading"
-						>
+						<LinkItem path={getCategoryLink(category)}>
 							<T k={id} fallback={capitalizeFirstLetter(id)} />
 							<span class="count">({count})</span>
-						</a>
+						</LinkItem>
 					</li>
 				);
 			})
@@ -34,9 +36,9 @@ const showMore = limit && limit < allCategories.length;
 		{
 			showMore && (
 				<li>
-					<a href="/catalogue" class="link-heading">
+					<LinkItem path={getSectionPath(SectionId.CATALOGUE)}>
 						<T k="voir_plus" />
-					</a>
+					</LinkItem>
 				</li>
 			)
 		}
