@@ -52,6 +52,7 @@ const instruments = [
 	"orchestre",
 	"harpe",
 ];
+
 // 3. Define your collection(s)
 const catalogue = defineCollection({
 	loader: file("src/data/catalogue.yml"),
@@ -94,5 +95,18 @@ const disques = defineCollection({
 	}),
 });
 
+const concerts = defineCollection({
+	loader: file("src/data/concerts.yml"),
+	schema: z.object({
+		id: z.string(),
+		titre: z.string(),
+		rawDate: z.string(),
+		oeuvres: z.array(reference("catalogue")).optional(),
+		interpretes: z.string(),
+		adresse: z.string(),
+		commentaire: z.string(),
+	}),
+});
+
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { catalogue, disques };
+export const collections = { catalogue, disques, concerts };

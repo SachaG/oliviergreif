@@ -107,7 +107,9 @@ export const getter = <T extends WithSlug>(id: string, items: T[]) => {
 	}
 };
 
-const concerts = concerts_ as Concert[];
+// const concerts = concerts_ as Concert[];
+const concerts = await getCollection("concerts");
+
 const disques = disques_ as Disque[];
 const editeurs = editeurs_ as Editeur[];
 const liens = liens_ as LienExterne[];
@@ -164,6 +166,9 @@ export const getOeuvreBySlug = (slug: string) =>
 
 export const getOeuvreByTitre = (titre: string) =>
 	getCatalogue().find((oeuvre) => oeuvre.titre === titre);
+
+export const getOeuvreById = (id: string) =>
+	getCatalogue().find((oeuvre) => oeuvre.id === id);
 
 export const getCatalogue = (options?: {
 	instrumentId?: string;
@@ -288,8 +293,12 @@ const parseConcert = (concert: ConcertWithId) => {
 	};
 };
 
-export const getConcerts = () =>
-	decorate<Concert>(concerts, "concerts").map(parseConcert);
+export const getConcerts = () => {
+	const collectionData = concerts.map(
+		({ data, id }) => ({ ...data, id }) as ConcertWithId,
+	);
+	return decorate<Concert>(collectionData, "concerts").map(parseConcert);
+};
 export const getConcert = (id: string) =>
 	parseConcert(getter<ConcertWithId>(id, getConcerts()));
 export const getConcertBySlug = (slug: string) =>

@@ -1,14 +1,9 @@
 ---
-import {
-	getOeuvre,
-	convertTitle,
-	getPath,
-	getOeuvreByTitre,
-} from "../../content";
+import { getPath, getOeuvreByTitre, getOeuvreById } from "../../content";
 import LinkItem from "../LinkItem.astro";
 
 interface Props {
-	oeuvres: string[];
+	oeuvres: Array<{ id: string }>;
 }
 const { oeuvres } = Astro.props;
 ---
@@ -16,12 +11,19 @@ const { oeuvres } = Astro.props;
 <div>
 	<ul class="items-list">
 		{
-			oeuvres.map((oeuvreName, i) => {
-				const oeuvre = getOeuvreByTitre(oeuvreName)!;
-				return (
+			oeuvres.map(({ id }) => {
+				// TODO: decide if we're using id or titre to index oeuvres
+				const oeuvre = getOeuvreByTitre(id) || getOeuvreById(id);
+
+				return oeuvre ? (
 					<li>
-						<LinkItem path={getPath(oeuvre)} content={oeuvreName} />
+						<LinkItem
+							path={getPath(oeuvre)}
+							content={oeuvre.titre}
+						/>
 					</li>
+				) : (
+					<li class="missing-link">{id}</li>
 				);
 			})
 		}
