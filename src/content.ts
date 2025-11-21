@@ -41,34 +41,42 @@ export const instrumentGroups = {
 	alto: ["alto"],
 	violoncelle: ["violoncelle"],
 	percussions: ["batterie", "percussions"],
-	cuivres: ["saxophone", "cor", "trompette"],
-	vents: ["vents", "flûte", "hautbois", "clarinette", "basson", "bois"],
+	cuivres: ["saxophone", "cor", "trompette", "cuivres"],
+	vents: [
+		"bois",
+		"vents",
+		"flute",
+		"hautbois",
+		"clarinette",
+		"basson",
+		"bois",
+	],
 	voix: [
 		"voix",
-		"mezzo soprano",
-		"soprano",
-		"ténor",
-		"alto (voix)",
-		"baryton",
-		"chœur",
-		"basse (voix)",
-		"soli",
+		"mezzo_soprano_voix",
+		"soprano_voix",
+		"tenor_voix",
+		"alto_voix",
+		"baryton_voix",
+		"choeur",
+		"basse_voix",
+		"soli_voix",
 	],
 	"clavier-et-orgue": [
-		"synthétiseur",
+		"synthetiseur",
 		"clavecin",
 		"orgue",
-		"orgue électronique",
+		"orgue_electronique",
 	],
 	"autres-instruments": [
-		"machine à vent",
+		"machine_a_vent",
 		"harpe",
 		"luth",
-		"accordéon",
-		"bandonéon",
+		"accordeon",
+		"bandoneon",
 		"orgue",
 		"guitare",
-		"célesta",
+		"celesta",
 		"orchestre",
 	],
 };
@@ -487,6 +495,7 @@ export const strings: TranslationItem[] = fr.strings;
 export type TranslationItem = {
 	key: string;
 	t: string;
+	tPlural?: string;
 };
 export const getCurrentLocale = () => "fr-FR";
 export const getString = (
@@ -497,13 +506,12 @@ export const getString = (
 		fallback?: string;
 	} = {},
 ) => {
-	const { kPlural, count, fallback } = options;
-	const t = strings.find((s) => s.key === k)?.t || fallback;
-	const tPlural =
-		(kPlural &&
-			count &&
-			count > 1 &&
-			strings.find((s) => s.key === kPlural)?.t) ||
-		fallback + "s";
-	return { t, tPlural };
+	const { count, fallback = k } = options;
+	const s = strings.find((s) => s.key === k);
+	let t = s?.t || fallback;
+	const tPlural = s?.tPlural;
+	if (tPlural && count && count > 1) {
+		t = tPlural;
+	}
+	return { t };
 };

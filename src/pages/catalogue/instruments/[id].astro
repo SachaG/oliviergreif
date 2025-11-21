@@ -110,7 +110,7 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 										data-instrument={instrument}
 									/>
 									<span>
-										{capitalizeFirstLetter(instrument)}
+										<T k={`instruments.${instrument}`} />
 									</span>
 								</label>
 							</h5>

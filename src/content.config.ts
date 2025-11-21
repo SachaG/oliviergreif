@@ -4,6 +4,54 @@ import { defineCollection, reference, z } from "astro:content";
 // 2. Import loader(s)
 import { glob, file } from "astro/loaders";
 
+const instruments = [
+	// clavier
+	"piano",
+	"clavecin",
+	"orgue_electronique",
+	"celesta",
+	"synthetiseur",
+	"orgue",
+
+	// cordes
+	"violon",
+	"alto",
+	"violoncelle",
+	// vents et cuivres
+	"flute",
+	"trompette",
+	"cor",
+	"vents",
+	"saxophone",
+	"hautbois",
+	"basson",
+	"clarinette",
+	"bois",
+	"cuivres",
+
+	// voix
+	"choeur",
+	"voix",
+	"soprano_voix",
+	"tenor_voix",
+	"mezzo_soprano_voix",
+	"baryton_voix",
+	"alto_voix",
+	"basse_voix",
+	"soli_voix",
+	"choeur",
+	// percussions
+	"percussions",
+	"batterie",
+	// autres
+	"guitare",
+	"luth",
+	"machine_a_vent",
+	"bandoneon",
+	"accordeon",
+	"orchestre",
+	"harpe",
+];
 // 3. Define your collection(s)
 const catalogue = defineCollection({
 	loader: file("src/data/catalogue.yml"),
@@ -13,7 +61,7 @@ const catalogue = defineCollection({
 		titre: z.string(),
 		categorie: z.string(),
 		formation: z.string(),
-		instruments: z.array(z.string()),
+		instruments: z.array(z.enum(instruments)),
 		annee: z.number().optional().nullable(),
 		partitionUrl: z.string().optional(),
 		nb_pages: z.number().optional().nullable(),

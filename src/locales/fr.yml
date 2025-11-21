@@ -99,15 +99,118 @@ strings:
     - key: clavier-et-orgue
       t: Clavier et Orgue
 
-    - key: instruments.violon
-      t: Violon
-    - key: instruments.violons
-      t: Violons
-
+    # clavier
     - key: instruments.piano
       t: Piano
-    - key: instruments.pianos
-      t: Pianos
+      tPlural: Pianos
+    - key: instruments.clavecin
+      t: Claveçin
+      tPlural: Claveçins
+    - key: instruments.orgue_electronique
+      t: Orgue électronique
+      tPlural: Orgues électroniques
+    - key: instruments.celesta
+      t: Célesta
+      tPlural: Célestas
+    - key: instruments.synthetiseur
+      t: Synthétiseur
+      tPlural: Synthétiseurs
+    - key: instruments.orgue
+      t: Orgue
+      tPlural: Orgues
+
+    # cordes
+    - key: instruments.violon
+      t: Violon
+      tPlural: Violons
+    - key: instruments.alto
+      t: Alto
+      tPlural: Altos
+    - key: instruments.violoncelle
+      t: Violoncelle
+      tPlural: Violoncelles
+    # vents et cuivres
+    - key: instruments.flute
+      t: Flûte
+      tPlural: Flûtes
+    - key: instruments.trompette
+      t: Trompette
+      tPlural: Trompettes
+    - key: instruments.cor
+      t: Cor
+      tPlural: Cors
+    - key: instruments.vents
+      t: Vents
+    - key: instruments.saxophone
+      t: Saxophone
+      tPlural: Saxophones
+    - key: instruments.hautbois
+      t: Hautbois
+    - key: instruments.basson
+      t: Basson
+      tPlural: Bassons
+    - key: instruments.clarinette
+      t: Clarinette
+      tPlural: Clarinettes
+    - key: instruments.bois
+      t: Bois
+    - key: instruments.cuivres
+      t: Cuivres
+    # voix
+    - key: instruments.choeur
+      t: Chœur
+      tPlural: Chœurs
+    - key: instruments.voix
+      t: Voix
+    - key: instruments.soprano_voix
+      t: Soprano
+      tPlural: Sopranos
+    - key: instruments.tenor_voix
+      t: Ténor
+      tPlural: Ténors
+    - key: instruments.mezzo_soprano_voix
+      t: Mezzo-soprano
+      tPlural: Mezzo-sopranos
+    - key: instruments.baryton_voix
+      t: Baryton
+      tPlural: Barytons
+    - key: instruments.alto_voix
+      t: Alto (voix)
+      tPlural: Altos (voix)
+    - key: instruments.basse_voix
+      t: Basse (voix)
+      tPlural: Basses (voix)
+    - key: instruments.soli_voix
+      t: Soli
+      tPlural: Solis
+    # percussions
+    - key: instruments.percussions
+      t: Percussions
+    - key: instruments.batterie
+      t: Batterie
+      tPlural: Batteries
+    # autres
+    - key: instruments.guitare
+      t: Guitare
+      tPlural: Guitares
+    - key: instruments.luth
+      t: Luth
+      tPlural: Luths
+    - key: instruments.machine_a_vent
+      t: Machine à vent
+      tPlural: Machines à vent
+    - key: instruments.bandoneon
+      t: Bandonéon
+      tPlural: Bandonéons
+    - key: instruments.accordeon
+      t: Accordéon
+      tPlural: Accordéons
+    - key: instruments.orchestre
+      t: Orchestre
+      tPlural: Orchestres
+    - key: instruments.harpe
+      t: Harpe
+      tPlural: Harpes
 
     # categories
     - key: cantate

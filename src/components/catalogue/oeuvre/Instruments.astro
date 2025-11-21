@@ -26,10 +26,9 @@ const instrumentsDeduped: Array<{ count: number; id: string; label: string }> =
         const fallback = capitalizeFirstLetter(id)
 		const name = getString(key, {
 			count,
-			kPlural: `${key}s`,
 			fallback,
 		});
-		const label = count >= 2 ? `${count} ${name?.tPlural || fallback}` : name?.t || fallback;
+		const label = count >= 2 ? `${count} ${name?.t}` : name?.t;
 		return { id, count, label };
 	});
 
@@ -41,9 +40,7 @@ const instrumentsDeduped: Array<{ count: number; id: string; label: string }> =
 			const link = getInstrumentLink(id);
 			const c = `instrument-${id}`;
 			return (
-				<span>
-					<a href={link} class={c}>{label}</a>{i < instruments.length - 2 && <span>, </span>}
-				</span>
+				<span class="instruments-item"><a href={link} class={c}>{label}</a></span>
 			);
 		})
 	}
@@ -54,4 +51,10 @@ const instrumentsDeduped: Array<{ count: number; id: string; label: string }> =
 	a {
 		font-family: var(--fontFamilySecondary);
 	}
+    .instruments-item {
+        &:not(:last-child)::after {
+            content: ", ";
+            display: inline;
+        }
+    }
 </style>

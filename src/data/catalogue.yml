@@ -205,7 +205,7 @@
   id: "les_regrets"
   categorie: melodies
   formation: "Soprano, alto, basse et piano"
-  instruments: [soprano, alto (voix), basse (voix), piano]
+  instruments: [soprano_voix, alto_voix, basse_voix, piano]
   annee: 1966
   nb_pages: 6
   duree: ""
@@ -238,7 +238,7 @@
   id: "marche_pour_flute_et_piano"
   categorie: musique_de_chambre
   formation: "Flûte et piano"
-  instruments: [flûte, piano]
+  instruments: [flute, piano]
   annee: 1967
   nb_pages: 2
   duree: "1 mn 15 selon Olivier."
@@ -702,7 +702,7 @@
   formation: "Mezzo soprano, clarinette, quatuor à cordes, piano et percussion."
   instruments:
       [
-          mezzo soprano,
+          mezzo_soprano_voix,
           clarinette,
           violon,
           violon,
@@ -720,7 +720,7 @@
   commentaire: >
       Dédié à Isabelle Colin-Dufresne (aka Ultra Violet).
 
-      Page de titre du manuscrit: Paradisiac memories n°2, “The Ballad of Gulliver in his Mother’s Cunt”, including “Die Ilse”, a poem by Heinrich Heine, for mezzo soprano, clarinet, string quartet, piano and percussion.
+      Page de titre du manuscrit: Paradisiac memories n°2, “The Ballad of Gulliver in his Mother’s Cunt”, including “Die Ilse”, a poem by Heinrich Heine, for mezzo_soprano_voix, clarinet, string quartet, piano and percussion.
 
       Dans le catalogue de 1998: Die Ilse, cantate pour voix de femme et ensemble instrumental, sur un poème d’Heinrich Heine.
 
@@ -769,7 +769,7 @@
   id: "cantate_and_death_shall_have_no_dominion"
   categorie: cantate
   formation: "Soprano, baryton, piano, instruments à vents, batterie."
-  instruments: [soprano, baryton, piano, vents, percussions]
+  instruments: [soprano_voix, baryton_voix, piano, vents, percussions]
   annee: 1974
   nb_pages: 45
   duree: "22 mn selon Olivier."
@@ -908,7 +908,7 @@
   id: "light_music"
   categorie: melodies
   formation: "Voix de femme, voix d'homme et piano"
-  instruments: [soprano, baryton, piano]
+  instruments: [soprano_voix, baryton_voix, piano]
   annee: 1974
   nb_pages: 59
   duree: ""
@@ -1128,7 +1128,7 @@
   id: "eloise_ou_le_dit_du_monde_oratorio_en_cinq_parties"
   categorie: cantate
   formation: "Soli, chœur et orchestre"
-  instruments: [soli, chœur, piano]
+  instruments: [soli_voix, choeur, piano]
   annee: 1975
   nb_pages: 334
   duree: "3 h 30 selon Olivier"
@@ -1165,7 +1165,7 @@
   id: "songs_four"
   categorie: melodies
   formation: "Voix de femme et piano"
-  instruments: [soprano, piano]
+  instruments: [soprano_voix, piano]
   annee: 1976
   nb_pages: 30
   duree: ""
@@ -1220,7 +1220,7 @@
   id: "joy_joy"
   formation: "chœur mixte"
   categorie: musique_chorale
-  instruments: [chœur]
+  instruments: [choeur]
   annee: 1976
   nb_pages: 6
   duree: ""
@@ -1252,7 +1252,7 @@
   id: "the_bells"
   categorie: cantate
   formation: "Chœur et orchestre"
-  instruments: [piano, piano, guitare, batterie, chœur]
+  instruments: [piano, piano, guitare, batterie, choeur]
   annee: 1976
   nb_pages: 27
   duree: ""
@@ -1336,7 +1336,7 @@
   id: "bomben_auf_engelland"
   categorie: cantate
   formation: "Chant, saxophone, piano"
-  instruments: [piano, soprano, saxophone]
+  instruments: [piano, soprano_voix, saxophone]
   annee: 1976
   nb_pages: 16
   duree: "8 mn"
@@ -1867,7 +1867,7 @@
   id: "little_black_mass"
   categorie: cantate
   formation: "Voix de femme, alto et piano"
-  instruments: [soprano, alto, piano]
+  instruments: [soprano_voix, alto, piano]
   annee: 1980
   nb_pages: 38
   duree: ""
@@ -1882,7 +1882,7 @@
   id: "le_livre_du_pelerin"
   categorie: cantate
   formation: "Voix de femme, flûte, hautbois, clarinette, basson, cor, violon, piano"
-  instruments: [voix, flûte, hautbois, clarinette, basson, cor, violon, piano]
+  instruments: [voix, flute, hautbois, clarinette, basson, cor, violon, piano]
   annee: 1980
   nb_pages: 50
   duree: ""
@@ -1957,13 +1957,13 @@
   formation: "Soprano, ténor, baryton, clarinette, cor en fa, piano, orgue électronique et percussions."
   instruments:
       [
-          soprano,
-          ténor,
-          baryton,
+          soprano_voix,
+          tenor_voix,
+          baryton_voix,
           clarinette,
           cor,
           piano,
-          orgue électronique,
+          orgue_electronique,
           percussions,
       ]
   annee: 1981
@@ -1997,7 +1997,9 @@
 
       Le récitant, le disciple du faux maître, Kyôgun: disciple du sage / ténor
 
-      O’Hara: servante du faux maître / sopranoOUVERTURE
+      O’Hara: servante du faux maître / soprano
+
+      OUVERTURE
 
       (Une époque indéterminée. Un paysage japonais, en bord de mer. Le soleil se lève. Une île se devine au loin, séparée de la côte par un pont en ruines. Entre un vieux sage pèlerin, s’appuyant sur une canne.)
 
@@ -2157,7 +2159,7 @@
   id: "hiroshima_nagasaki"
   categorie: musique_chorale
   formation: "Chœur mixte a cappella."
-  instruments: [chœur]
+  instruments: [choeur]
   annee: 1983
   nb_pages: 52
   duree: "32 mn"
@@ -2288,15 +2290,15 @@
   formation: "Double chœur mixte, 12 voix d’homme, flûte, clarinette, violon, violoncelle, célesta, orgue électronique"
   instruments:
       [
-          chœur,
-          chœur,
+          choeur,
+          choeur,
           voix,
-          flûte,
+          flute,
           clarinette,
           violon,
           violoncelle,
-          célesta,
-          orgue électronique,
+          celesta,
+          orgue_electronique,
       ]
   annee: 1983
   nb_pages: 28
@@ -2459,15 +2461,15 @@
   instruments:
       [
           violoncelle,
-          bandonéon,
+          bandoneon,
           cuivres,
           bois,
-          machine à vent,
+          machine_a_vent,
           luth,
           guitare,
           saxophone,
-          soprano,
-          chœur,
+          soprano_voix,
+          choeur,
       ]
   annee: 1986
   nb_pages: 11
@@ -2540,7 +2542,7 @@
   id: "le_reve_du_monde"
   categorie: orchestre
   formation: "Piano, célesta, accordéon ou bandonéon, orchestre."
-  instruments: [piano, célesta, accordéon, bandonéon, orchestre]
+  instruments: [piano, celesta, accordeon, bandoneon, orchestre]
   annee: 1991
   nb_pages: 10
   duree: ""
@@ -2920,7 +2922,7 @@
   id: "the_tailor_of_gloucester"
   categorie: musique_de_chambre
   formation: "Cor anglais, cor en fa, violon, harpe, célesta et synthétiseur."
-  instruments: [cor, cor, violon, harpe, célesta, synthétiseur]
+  instruments: [cor, cor, violon, harpe, celesta, synthetiseur]
   annee: 1994
   nb_pages: 16
   duree: "7 mn"
@@ -2981,7 +2983,7 @@
   id: "symphonie_hiroshima"
   categorie: cantate
   formation: "Voix soliste, chœur d’hommes et orchestre."
-  instruments: [voix, chœur, piano]
+  instruments: [voix, choeur, piano]
   annee: 1994
   nb_pages: 32
   duree: ""
@@ -3198,7 +3200,7 @@
   id: "ritournelle_pour_quintette_a_vent"
   categorie: musique_de_chambre
   formation: "Flûte, hautbois, clarinette, basson, cor en fa."
-  instruments: [flûte, hautbois, clarinette, basson, cor]
+  instruments: [flute, hautbois, clarinette, basson, cor]
   annee: 1997
   nb_pages: 9
   duree: ""
@@ -3273,8 +3275,8 @@
   instruments:
       [
           voix,
-          flûte,
-          flûte,
+          flute,
+          flute,
           hautbois,
           hautbois,
           clarinette,
@@ -3424,7 +3426,7 @@
   id: "adieu_new_york"
   categorie: musique_de_chambre
   formation: "Piano, flûte, clarinette, violon, violoncelle"
-  instruments: [piano, flûte, clarinette, violon, violoncelle]
+  instruments: [piano, flute, clarinette, violon, violoncelle]
   annee: 1998
   nb_pages: 15
   duree: ""
@@ -3718,8 +3720,8 @@
   instruments:
       [
           violoncelle,
-          flûte,
-          flûte,
+          flute,
+          flute,
           hautbois,
           hautbois,
           clarinette,
@@ -3778,7 +3780,7 @@
   id: "requiem"
   categorie: musique_chorale
   formation: "Double chœur mixte a cappella"
-  instruments: [chœur, chœur]
+  instruments: [choeur, choeur]
   annee: 1999
   nb_pages: 105
   duree: "32 mn"
