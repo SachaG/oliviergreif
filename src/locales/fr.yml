@@ -74,6 +74,10 @@ strings:
       t: Éditeur
     - key: catalogue.partition
       t: Partition
+    - key: catalogue.categorie
+      t: Catégorie
+    - key: catalogue.instrument
+      t: Instrument
 
     - key: ecouter
       t: Écouter

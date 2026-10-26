@@ -52,6 +52,10 @@ strings:
       t: Photos
     - key: a_propos
       t: About
+    - key: catalogue.categorie
+      t: Category
+    - key: catalogue.instrument
+      t: Instrument
 
     # catalog info
     - key: catalogue.opus

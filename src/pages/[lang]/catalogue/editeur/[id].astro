@@ -43,20 +43,15 @@ const locale = getLocale(Astro.currentLocale);
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}
 		>
-			<T k="catalogue" />: {titre} ({catalogueByEditeur.length}{" "}
-			<T
-				k="oeuvre"
-				kPlural="oeuvres"
-				count={catalogueByEditeur.length}
-			/>)
+			<T k="catalogue.editeur" />: {titre} ({catalogueByEditeur.length}{" "}
+			<T k="oeuvre" kPlural="oeuvres" count={catalogueByEditeur.length} />
+			)
 		</h2>
-		{
-			catalogueByEditeur.map((oeuvre) => (
-				<div class="subcontainer" slot="page-content">
-					<Oeuvre id={oeuvre.id} />
-				</div>
-			))
-		}
+		{catalogueByEditeur.map((oeuvre) => (
+			<div class="subcontainer" slot="page-content">
+				<Oeuvre id={oeuvre.id} />
+			</div>
+		))}
 		<AllCatalog slot="page-sidebar" />
 		<Search slot="page-sidebar" />
 		<Categories slot="page-sidebar" />

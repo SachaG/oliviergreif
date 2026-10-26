@@ -29,8 +29,8 @@ const instrumentGroupId = id as keyof typeof instrumentGroups;
 export function getStaticPaths() {
 	return getItemsStaticPaths(
 		getInstrumentsGroups().map(
-			({ id }) => ({ id: convertTitle(id) }) as WithSlug
-		)
+			({ id }) => ({ id: convertTitle(id) }) as WithSlug,
+		),
 	);
 }
 
@@ -66,7 +66,7 @@ const locale = getLocale(Astro.currentLocale);
 			// Get the value of the data-filter attribute
 			const instrument = checkbox.getAttribute("data-instrument");
 			const oeuvres = document.querySelectorAll<HTMLDivElement>(
-				`.instrument-${convertTitle(instrument || "")}`
+				`.instrument-${convertTitle(instrument || "")}`,
 			);
 
 			if (isChecked) {
@@ -95,62 +95,57 @@ const locale = getLocale(Astro.currentLocale);
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}
 		>
-			<T k="catalogue" />: <T
-				k={instrumentGroupId}
-				fallback={capitalizeFirstLetter(title)}
-			/> ({catalogue.length}{" "}
+			<T k="catalogue.instrument" />:{" "}
+			<T k={instrumentGroupId} fallback={capitalizeFirstLetter(title)} />{" "}
+			({catalogue.length}{" "}
 			<T k="oeuvre" kPlural="oeuvres" count={catalogue.length} />)
 		</h2>
 		<div slot="page-content">
-			{
-				instruments.length > 1 && (
-					<div class="instruments-filter">
-						{instruments.map((instrument) => (
-							<h5>
-								<label class="instruments-filter-item">
-									<input
-										class="instrument-toggle"
-										type="checkbox"
-										checked="checked"
-										data-instrument={instrument}
-									/>
-									<span>
-										<T k={`instruments.${instrument}`} />
-									</span>
-								</label>
-							</h5>
-						))}
-					</div>
-				)
-			}
-		</div>
-		{
-			catalogueByNumberOfInstruments.map(({ count, items }) => (
-				<div class="subcontainer" slot="page-content">
-					<SubgridLayout>
-						<h4 class="count-title" slot="col1">
-							<span class="count-heading">
-								{count}{" "}
-								<T
-									k="instrument"
-									kPlural="instruments"
-									count={count}
+			{instruments.length > 1 && (
+				<div class="instruments-filter">
+					{instruments.map((instrument) => (
+						<h5>
+							<label class="instruments-filter-item">
+								<input
+									class="instrument-toggle"
+									type="checkbox"
+									checked="checked"
+									data-instrument={instrument}
 								/>
-								{/* <span>
+								<span>
+									<T k={`instruments.${instrument}`} />
+								</span>
+							</label>
+						</h5>
+					))}
+				</div>
+			)}
+		</div>
+		{catalogueByNumberOfInstruments.map(({ count, items }) => (
+			<div class="subcontainer" slot="page-content">
+				<SubgridLayout>
+					<h4 class="count-title" slot="col1">
+						<span class="count-heading">
+							{count}{" "}
+							<T
+								k="instrument"
+								kPlural="instruments"
+								count={count}
+							/>
+							{/* <span>
 										({items.length}{" "}
 										{pluralize("œuvre", items.length)})
 									</span> */}
-							</span>
-						</h4>
-						<div class="feed-items" slot="main">
-							{items.map((oeuvre) => (
-								<Oeuvre id={oeuvre.id} />
-							))}
-						</div>
-					</SubgridLayout>
-				</div>
-			))
-		}
+						</span>
+					</h4>
+					<div class="feed-items" slot="main">
+						{items.map((oeuvre) => (
+							<Oeuvre id={oeuvre.id} />
+						))}
+					</div>
+				</SubgridLayout>
+			</div>
+		))}
 		<AllCatalog slot="page-sidebar" />
 		<Search slot="page-sidebar" />
 		<Categories slot="page-sidebar" />
