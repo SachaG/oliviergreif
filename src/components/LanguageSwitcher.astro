@@ -20,33 +20,31 @@ const label = getString("changer_de_langue", { locale: currentLocale }).t;
 
 <nav class={`language-switcher ${className}`} aria-label={label}>
 	<ul>
-		{
-			locales.map((locale) =>
-				locale === currentLocale ? (
-					<li>
-						<span
-							class="language-switcher-current"
-							aria-current="true"
-							title={localeNames[locale]}
-						>
-							{locale}
-						</span>
-					</li>
-				) : (
-					<li>
-						<a
-							href={switchPathLocale(Astro.url.pathname, locale)}
-							hreflang={localeCodes[locale]}
-							lang={localeCodes[locale]}
-							title={localeNames[locale]}
-							data-locale-switch={locale}
-						>
-							{locale}
-						</a>
-					</li>
-				),
-			)
-		}
+		{locales.map((locale) =>
+			locale === currentLocale ? (
+				<li>
+					<span
+						class="language-switcher-current"
+						aria-current="true"
+						title={localeNames[locale]}
+					>
+						{locale}
+					</span>
+				</li>
+			) : (
+				<li>
+					<a
+						href={switchPathLocale(Astro.url.pathname, locale)}
+						hreflang={localeCodes[locale]}
+						lang={localeCodes[locale]}
+						title={localeNames[locale]}
+						data-locale-switch={locale}
+					>
+						{locale}
+					</a>
+				</li>
+			),
+		)}
 	</ul>
 </nav>
 
@@ -67,6 +65,9 @@ const label = getString("changer_de_langue", { locale: currentLocale }).t;
 </script>
 
 <style>
+	.language-switcher {
+		margin-bottom: var(--halfSpacing);
+	}
 	.language-switcher ul {
 		display: flex;
 		gap: var(--halfSpacing);
@@ -87,6 +88,7 @@ const label = getString("changer_de_langue", { locale: currentLocale }).t;
 	}
 	.language-switcher-current {
 		font-weight: bold;
-		opacity: 0.6;
+		border: var(--border);
+		padding: 5px 8px;
 	}
 </style>

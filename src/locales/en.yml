@@ -56,6 +56,8 @@ strings:
       t: Category
     - key: catalogue.instrument
       t: Instrument
+    - key: catalogue.recherche_exemple
+      t: Keyword…
 
     # catalog info
     - key: catalogue.opus

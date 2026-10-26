@@ -232,18 +232,38 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		--fontFamilySecondary: "Lexend", sans-serif;
 		--fontFamilySecondary: "DM Sans", sans-serif;
 
-		--fs-sm: clamp(0.8rem, 0.25vi + 0.74rem, 0.94rem);
-		--fs-base: clamp(1rem, 0.45vi + 0.89rem, 1.25rem);
-		--fs-md: clamp(1.25rem, 0.76vi + 1.06rem, 1.67rem);
-		--fs-lg: clamp(1.56rem, 1.2vi + 1.26rem, 2.22rem);
-		--fs-xl: clamp(1.95rem, 1.83vi + 1.5rem, 2.96rem);
-		--fs-xxl: clamp(2.44rem, 2.74vi + 1.76rem, 3.95rem);
-		--fs-xxxl: clamp(3.05rem, 4.02vi + 2.05rem, 5.26rem);
+		/*
+		Type scale: change --font-base to resize all text on the site.
+		It sets the root font size, and every other size is in rem, so they
+		all follow. Expressed in rem so the visitor's browser font size
+		setting is respected (1.25rem = 20px at the default 16px).
+
+		The root size is fluid: --font-base on wide screens, shrinking
+		smoothly with the viewport down to --font-base-min on phones.
+		*/
+		--font-base: 1.25rem;
+		--font-base-min: calc(var(--font-base) * 0.8);
+		/* how fast the size grows with the viewport between the two */
+		--font-fluid: 0.45vw;
+		/* ratio between consecutive steps of the --fs-* scale */
+		--font-ratio: 1.25;
+
+		/* 1rem = --font-base everywhere below the root */
+		--fs-sm: calc(1rem / var(--font-ratio));
+		--fs-base: 1rem;
+		--fs-md: calc(var(--fs-base) * var(--font-ratio));
+		--fs-lg: calc(var(--fs-md) * var(--font-ratio));
+		--fs-xl: calc(var(--fs-lg) * var(--font-ratio));
+		--fs-xxl: calc(var(--fs-xl) * var(--font-ratio));
+		--fs-xxxl: calc(var(--fs-xxl) * var(--font-ratio));
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		/* font-size: 20px; */
-		font-size: var(--fs-base);
+		font-size: clamp(
+			var(--font-base-min),
+			calc(var(--font-base) * 0.7 + var(--font-fluid)),
+			var(--font-base)
+		);
 	}
 	code {
 		font-family:
@@ -298,7 +318,7 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 	p {
 	}
 	a {
-		/* text-decoration: none; */
+		text-decoration: none;
 		font-weight: bold;
 		&:link,
 		&:visited {
@@ -306,6 +326,7 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		}
 		&:hover {
 			color: var(--linkHoverColor);
+			text-decoration: underline;
 		}
 	}
 	h1 {

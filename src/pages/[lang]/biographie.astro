@@ -22,17 +22,21 @@ const FullBio = locale === "en" ? FullBioEn : FullBioFr;
 		<div slot="page-content">
 			<div class="biographie">
 				<div class="biographie-short">
-					<h2><T k="biographie.short" /></h2>
+					<h2>
+						<T k="biographie.short" />
+					</h2>
 					<Bio />
 				</div>
 				<div class="biographie-full">
-					<h2><T k="biographie.full" /></h2>
+					<h2>
+						<T k="biographie.full" />
+					</h2>
 					<FullBio />
 				</div>
 			</div>
 		</div>
-	</PageLayout></Layout
->
+	</PageLayout>
+</Layout>
 
 <style>
 	.biographie {
@@ -56,5 +60,10 @@ const FullBio = locale === "en" ? FullBioEn : FullBioFr;
 		border: 1px solid var(--borderColor);
 		padding: var(--spacing);
 		margin-bottom: var(--doubleSpacing);
+		font-size: 1.125rem;
+	}
+	.biographie-full {
+		max-width: 80ch;
+		font-size: 1.125rem;
 	}
 </style>

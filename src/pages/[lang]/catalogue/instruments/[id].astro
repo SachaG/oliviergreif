@@ -22,6 +22,8 @@ import Editeurs from "../../../../components/catalogue/Editeurs.astro";
 import Search from "../../../../components/catalogue/Search.astro";
 import { getItemsStaticPaths } from "../../../../helpers";
 import { getLocale } from "../../../../i18n";
+import SubgridWrapper from "../../../../components/layouts/SubgridWrapper.astro";
+import { byNumberOfInstruments } from "../../../../helpers";
 
 const { id } = Astro.params;
 const instrumentGroupId = id as keyof typeof instrumentGroups;
@@ -38,12 +40,7 @@ const instruments = instrumentGroups[instrumentGroupId];
 const catalogue = getCatalogue({ instrumentGroupId });
 const title = instrumentGroupId || "";
 
-const catalogueByNumberOfInstruments = [...Array(100)]
-	.map((_x, count) => ({
-		count: count + 1,
-		items: catalogue.filter((o) => o.instruments?.length === count + 1),
-	}))
-	.filter(({ items }) => items.length > 0);
+const catalogueByNumberOfInstruments = byNumberOfInstruments(catalogue);
 
 const locale = getLocale(Astro.currentLocale);
 ---
@@ -121,8 +118,8 @@ const locale = getLocale(Astro.currentLocale);
 				</div>
 			)}
 		</div>
-		{catalogueByNumberOfInstruments.map(({ count, items }) => (
-			<div class="subcontainer" slot="page-content">
+		<SubgridWrapper slot="page-content">
+			{catalogueByNumberOfInstruments.map(({ count, items }) => (
 				<SubgridLayout>
 					<h4 class="count-title" slot="col1">
 						<span class="count-heading">
@@ -144,8 +141,8 @@ const locale = getLocale(Astro.currentLocale);
 						))}
 					</div>
 				</SubgridLayout>
-			</div>
-		))}
+			))}
+		</SubgridWrapper>
 		<AllCatalog slot="page-sidebar" />
 		<Search slot="page-sidebar" />
 		<Categories slot="page-sidebar" />
@@ -163,11 +160,6 @@ const locale = getLocale(Astro.currentLocale);
 	// 	top: 0px;
 	// 	font-size: 1.6rem;
 	// }
-	@supports (selector(:has(*))) {
-		.subcontainer:not(:has(.visible)) {
-			display: none;
-		}
-	}
 	.instruments-filter {
 		display: flex;
 		gap: var(--spacing);

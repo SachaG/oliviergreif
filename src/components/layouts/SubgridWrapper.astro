@@ -1,0 +1,18 @@
+---
+---
+
+<div class="subgrid-wrapper" slot="page-content">
+	<slot />
+</div>
+
+<style lang="scss">
+	@use "../../styles/_breakpoints.scss" as *;
+
+	.subgrid-wrapper {
+		@include breakpointOver(lg) {
+			display: grid;
+			grid-template-columns: minmax(120px, min-content) 1fr;
+			gap: var(--doubleSpacing);
+		}
+	}
+</style>

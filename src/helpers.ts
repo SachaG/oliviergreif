@@ -1,5 +1,5 @@
 import slugify from "slugify";
-import type { WithId, WithSlug } from "./types";
+import type { OeuvreWithId, WithId, WithSlug } from "./types";
 import { locales } from "./i18n";
 
 // see https://youmightnotneed.com/lodash#intersection
@@ -56,3 +56,11 @@ export const getDomain = (url: string) => {
 	hostname = domain.hostname.replace("www.", "");
 	return hostname;
 };
+
+export const byNumberOfInstruments = (catalogue: OeuvreWithId[]) =>
+	[...Array(100)]
+		.map((_x, count) => ({
+			count: count + 1,
+			items: catalogue.filter((o) => o.instruments?.length === count + 1),
+		}))
+		.filter(({ items }) => items.length > 0);

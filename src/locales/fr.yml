@@ -78,6 +78,8 @@ strings:
       t: Catégorie
     - key: catalogue.instrument
       t: Instrument
+    - key: catalogue.recherche_exemple
+      t: Mot clé…
 
     - key: ecouter
       t: Écouter
