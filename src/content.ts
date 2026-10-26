@@ -1,15 +1,11 @@
 import slugify from "slugify";
 // import catalogue_ from "./data/catalogue.yml";
-import concerts_ from "./data/concerts.yml";
-import disques_ from "./data/disques.yml";
-import editeurs_ from "./data/editeurs.yml";
-import liens_ from "./data/liens.yml";
-import actualites_ from "./data/actualites.yml";
-import photos_ from "./data/photos.yml";
 import { generateSlug, getItemSlug, intersection } from "./helpers";
 import sortBy from "lodash/sortBy";
 
 import fr from "./locales/fr.yml";
+import en from "./locales/en.yml";
+import { defaultLocale, localeCodes, type Locale } from "./i18n";
 
 import type {
 	WithSlug,
@@ -28,6 +24,7 @@ import type {
 	PhotoWithId,
 	EditeurWithCount,
 	LienExterne,
+	OeuvreReference,
 } from "./types";
 // import OeuvreComponent from "./components/catalogue/oeuvre/Oeuvre.astro";
 // import DisqueComponent from "./components/disques/Disque.astro";
@@ -107,14 +104,17 @@ export const getter = <T extends WithSlug>(id: string, items: T[]) => {
 	}
 };
 
-// const concerts = concerts_ as Concert[];
+// flatten collection entries into plain objects
+const getEntriesData = <T>(entries: Array<{ id: string; data: object }>) =>
+	entries.map(({ id, data }) => ({ ...data, id }) as T);
+
 const concerts = await getCollection("concerts");
 
-const disques = disques_ as Disque[];
-const editeurs = editeurs_ as Editeur[];
-const liens = liens_ as LienExterne[];
-const actualites = actualites_ as Actualite[];
-const photos = photos_ as Photo[];
+const disques = getEntriesData<Disque>(await getCollection("disques"));
+const editeurs = getEntriesData<Editeur>(await getCollection("editeurs"));
+const liens = getEntriesData<LienExterne>(await getCollection("liens"));
+const actualites = getEntriesData<Actualite>(await getCollection("actualites"));
+const photos = getEntriesData<Photo>(await getCollection("photos"));
 
 export type ItemWithId =
 	| OeuvreWithId
@@ -148,6 +148,7 @@ export const convertTitle = (title: string = "") =>
 		remove: /[*+~.()'"!:@]/g,
 	});
 
+// all paths below are locale-agnostic; render them with <Link> to localize them
 export const getPath = (item: ItemWithId) =>
 	`/${item.parentSlug}/${getItemSlug(item)}`;
 
@@ -169,6 +170,16 @@ export const getOeuvreByTitre = (titre: string) =>
 
 export const getOeuvreById = (id: string) =>
 	getCatalogue().find((oeuvre) => oeuvre.id === id);
+
+// references normally hold a catalogue id, but titles that didn't match
+// any catalogue item are kept as-is by the collection schema
+export const getOeuvreByReference = (reference: OeuvreReference) =>
+	getOeuvreById(reference.id) || getOeuvreByTitre(reference.id);
+
+export const referencesOeuvre = (
+	references: OeuvreReference[] | undefined,
+	oeuvre: OeuvreWithId,
+) => !!references?.some((r) => getOeuvreByReference(r)?.id === oeuvre.id);
 
 export const getCatalogue = (options?: {
 	instrumentId?: string;
@@ -372,7 +383,7 @@ export const getPhoto = (id: string) => getter<PhotoWithId>(id, getPhotos());
 
 // Sections
 
-export const getSectionPath = <T>(sectionId: SectionId) =>
+export const getSectionPath = (sectionId: SectionId) =>
 	`/${generateSlug(sectionId)}`;
 
 export function capitalizeFirstLetter(s: string) {
@@ -499,28 +510,68 @@ const sectionComponents: { [key in SectionId]?: any } = {
 export const getSectionComponent = (sectionId: SectionId) =>
 	sectionComponents[sectionId];
 
-export const strings: TranslationItem[] = fr.strings;
+const strings: { [key in Locale]: TranslationItem[] } = {
+	fr: fr.strings,
+	en: en.strings,
+};
 
 export type TranslationItem = {
 	key: string;
 	t: string;
 	tPlural?: string;
 };
-export const getCurrentLocale = () => "fr-FR";
+
+export const getIntlLocale = (locale: Locale) => localeCodes[locale];
+
+const pluralRules = Object.fromEntries(
+	Object.entries(localeCodes).map(([locale, code]) => [
+		locale,
+		new Intl.PluralRules(code),
+	]),
+) as { [key in Locale]: Intl.PluralRules };
+
+// English: 1 => "one", 0/2+ => "other"; French: 0/1 => "one", 2+ => "other"
+const isPluralCount = (count: number | undefined, locale: Locale) =>
+	count !== undefined && pluralRules[locale].select(count) !== "one";
+
+const warnedMissingKeys = new Set<string>();
+const warnMissingKey = (k: string, locale: Locale) => {
+	const id = `${locale}:${k}`;
+	if (!warnedMissingKeys.has(id)) {
+		warnedMissingKeys.add(id);
+		console.warn(`[i18n] missing "${locale}" string for key "${k}"`);
+	}
+};
+
 export const getString = (
 	k: string,
 	options: {
+		locale: Locale;
 		kPlural?: string;
 		count?: number;
 		fallback?: string;
-	} = {},
+	},
 ) => {
-	const { count, fallback = k } = options;
-	const s = strings.find((s) => s.key === k);
+	const { locale, kPlural, count, fallback = k } = options;
+	const isPlural = isPluralCount(count, locale);
+	// keys with an explicit fallback (e.g. category ids) are allowed to be missing
+	if (
+		k &&
+		options.fallback === undefined &&
+		!strings[locale].some((s) => s.key === k)
+	) {
+		warnMissingKey(k, locale);
+	}
+	const findString = (key: string) =>
+		strings[locale].find((s) => s.key === key) ||
+		// fall back to the default locale's string before falling back to the key
+		strings[defaultLocale].find((s) => s.key === key);
+	const s = findString(k);
 	let t = s?.t || fallback;
-	const tPlural = s?.tPlural;
-	if (tPlural && count && count > 1) {
-		t = tPlural;
+	if (isPlural && s?.tPlural) {
+		t = s.tPlural;
+	} else if (isPlural && kPlural) {
+		t = findString(kPlural)?.t || t;
 	}
 	return { t };
 };

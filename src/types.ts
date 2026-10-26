@@ -25,6 +25,9 @@ export type Lien = {
 	titre?: string;
 };
 
+// a reference to a catalogue item, as stored in other collections
+export type OeuvreReference = { id: string; collection?: string };
+
 export type Oeuvre = {
 	id: string;
 	opus: string;
@@ -50,7 +53,7 @@ export type Concert = {
 	date: Date;
 	annee?: number;
 	titre: string;
-	oeuvres?: string[];
+	oeuvres?: OeuvreReference[];
 	interpretes?: string;
 	adresse?: string;
 	commentaire?: string;
@@ -60,7 +63,7 @@ export type ConcertWithId = Concert & WithSlug;
 export type Disque = {
 	id: string;
 	titre: string;
-	oeuvres?: string[];
+	oeuvres?: OeuvreReference[];
 	date_disque?: string;
 	annee?: number;
 	interpretes_disque?: string;
@@ -89,7 +92,7 @@ export type EditeurWithCount = EditeurWithId & { count: number };
 
 export type Actualite = {
 	id: string;
-	rawDate: number;
+	rawDate: string;
 	date: Date;
 	annee?: number;
 	titre: string;
@@ -98,6 +101,7 @@ export type Actualite = {
 export type ActualiteWithId = Actualite & WithSlug;
 
 export type LienExterne = {
+	id: string;
 	texte: string;
 };
 

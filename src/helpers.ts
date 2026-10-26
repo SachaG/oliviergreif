@@ -1,5 +1,6 @@
 import slugify from "slugify";
 import type { WithId, WithSlug } from "./types";
+import { locales } from "./i18n";
 
 // see https://youmightnotneed.com/lodash#intersection
 export const intersection = (arr: any[], ...args: any[]) =>
@@ -36,8 +37,11 @@ export const uniq = <T>(a: T[]) => [...new Set(a)];
 export const compact = <T>(a: T[]) =>
 	a.filter((item) => item !== undefined && item !== null);
 
+// one path per item per locale
 export const getItemsStaticPaths = (items: WithSlug[]) =>
-	items.map((item) => ({ params: { id: getItemSlug(item) } }));
+	locales.flatMap((lang) =>
+		items.map((item) => ({ params: { lang, id: getItemSlug(item) } })),
+	);
 
 export const getItemSlug = (item: WithSlug) =>
 	item.slug || generateSlug(item.id);

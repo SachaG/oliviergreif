@@ -4,6 +4,18 @@ import { defineCollection, reference, z } from "astro:content";
 // 2. Import loader(s)
 import { glob, file } from "astro/loaders";
 
+import catalogueData from "./data/catalogue.yml";
+
+// let other collections reference catalogue items by title as well as by id
+const catalogueIdsByTitle = new Map<string, string>(
+	catalogueData.map((oeuvre: { id: string; titre: string }) => [oeuvre.titre, oeuvre.id]),
+);
+const oeuvreReference = () =>
+	z.preprocess(
+		(value) => (typeof value === "string" && catalogueIdsByTitle.get(value)) || value,
+		reference("catalogue"),
+	);
+
 const instruments = [
 	// clavier
 	"piano",
@@ -87,11 +99,53 @@ const disques = defineCollection({
 		annee: z.number(),
 		interpretes_disque: z.string().nullable(),
 		maison: z.string().nullable(),
-		oeuvres: z.array(reference("catalogue")).optional(),
+		oeuvres: z.array(oeuvreReference()).optional(),
 		image: z.string().optional().nullable(),
+		ref: z.coerce.string().optional().nullable(),
+		maisonUrl: z.string().optional().nullable(),
+		commentaire: z.string().optional().nullable(),
 		ecouter: z.array(lien).optional().nullable(),
 		acheter: z.array(lien).optional().nullable(),
 		liens: z.array(lien).optional().nullable(),
+		articles: z.array(lien).optional().nullable(),
+	}),
+});
+
+const actualites = defineCollection({
+	loader: file("src/data/actualites.yml"),
+	schema: z.object({
+		id: z.string(),
+		titre: z.string(),
+		rawDate: z.string(),
+		texte: z.string(),
+	}),
+});
+
+const editeurs = defineCollection({
+	loader: file("src/data/editeurs.yml"),
+	schema: z.object({
+		id: z.string(),
+		titre: z.string(),
+		url: z.string().optional().nullable(),
+		adresse: z.string().optional().nullable(),
+		commentaire: z.string().optional().nullable(),
+	}),
+});
+
+const photos = defineCollection({
+	loader: file("src/data/photos.yml"),
+	schema: z.object({
+		id: z.string(),
+		titre: z.string(),
+		image: z.string(),
+	}),
+});
+
+const liens = defineCollection({
+	loader: file("src/data/liens.yml"),
+	schema: z.object({
+		id: z.string(),
+		texte: z.string(),
 	}),
 });
 
@@ -101,7 +155,7 @@ const concerts = defineCollection({
 		id: z.string(),
 		titre: z.string(),
 		rawDate: z.string(),
-		oeuvres: z.array(reference("catalogue")).optional(),
+		oeuvres: z.array(oeuvreReference()).optional(),
 		interpretes: z.string(),
 		adresse: z.string(),
 		commentaire: z.string(),
@@ -109,4 +163,12 @@ const concerts = defineCollection({
 });
 
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { catalogue, disques, concerts };
+export const collections = {
+	catalogue,
+	disques,
+	concerts,
+	actualites,
+	editeurs,
+	photos,
+	liens,
+};
