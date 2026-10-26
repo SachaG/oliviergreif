@@ -18,7 +18,7 @@ const locale = getLocale(Astro.currentLocale);
 ---
 
 <Layout title={getString("actualites", { locale })?.t}>
-	<PageLayout sectionId="actualites">
+	<PageLayout sectionId={SectionId.ACTUALITES}>
 		{
 			actualites.map(({ id }) => (
 				<div slot="page-content">

@@ -1,6 +1,11 @@
 ---
 import Disque from "../../../components/disques/Disque.compact.astro";
-import { getDisques, getItemsByYear, getString } from "../../../content";
+import {
+	getDisques,
+	getItemsByYear,
+	getString,
+	SectionId,
+} from "../../../content";
 import PageLayout from "../../../components/layouts/PageLayout.astro";
 import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
 import type { DisqueWithId } from "../../../types";
@@ -15,7 +20,7 @@ const locale = getLocale(Astro.currentLocale);
 ---
 
 <Layout title={getString("disques", { locale })?.t}>
-	<PageLayout sectionId="disques">
+	<PageLayout sectionId={SectionId.DISQUES}>
 		<div class="disques-grid" slot="page-content">
 			{disques.map((disque) => <Disque id={disque.id} />)}
 		</div>

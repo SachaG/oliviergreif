@@ -29,12 +29,12 @@ const hasSidebar = sidebarSlotContent.trim().length > 0;
 const defaultSlotContent = (await Astro.slots.render("page-heading")) || "";
 const hasContent = defaultSlotContent.trim().length > 0;
 
-const SectionIcon = sectionId && getSectionIcon(sectionId);
+const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 ---
 
 <div
 	class={`page page-${hasSidebar ? "withSidebar" : "noSidebar"}`}
-	style={`view-transition-name: section-${sectionId}; `}
+	style={sectionId ? `view-transition-name: section-${sectionId};` : undefined}
 >
 	<div class="page-heading">
 		<div class="page-heading-breadcrumbs">
@@ -51,9 +51,9 @@ const SectionIcon = sectionId && getSectionIcon(sectionId);
 					href={parentPath || "/"}
 					locale={locale}
 				>
-					<SectionIcon />
+					{SectionIcon && <SectionIcon />}
 
-					<T k="sectionId" locale={locale} hidden={true} />
+					<T k={sectionId} locale={locale} hidden={true} />
 				</Link>
 			)}
 		</div>
