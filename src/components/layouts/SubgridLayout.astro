@@ -28,7 +28,8 @@ const { className } = Astro.props;
 		padding-right: var(--doubleSpacing);
 	}
 
-	.catalogue-year:not(:has(.catalogue-oeuvre.visible)) {
+	/* hide a group (year, number of instruments…) once search has hidden all its items */
+	.subgrid-layout:has(.search-item):not(:has(.search-item:not(.hidden))) {
 		display: none;
 	}
 

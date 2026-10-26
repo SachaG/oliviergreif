@@ -305,11 +305,17 @@ const parseConcert = (concert: ConcertWithId) => {
 	};
 };
 
+// newest first; items with an invalid date go last
+const byDateDesc = (a: { date: Date }, b: { date: Date }) =>
+	(b.date.getTime() || 0) - (a.date.getTime() || 0);
+
 export const getConcerts = () => {
 	const collectionData = concerts.map(
 		({ data, id }) => ({ ...data, id }) as ConcertWithId,
 	);
-	return decorate<Concert>(collectionData, "concerts").map(parseConcert);
+	return decorate<Concert>(collectionData, "concerts")
+		.map(parseConcert)
+		.toSorted(byDateDesc);
 };
 export const getConcert = (id: string) =>
 	parseConcert(getter<ConcertWithId>(id, getConcerts()));
@@ -366,7 +372,7 @@ const parseActualite = (actu: ActualiteWithId) => {
 export const getActualites = () =>
 	decorate<Actualite>(actualites, "actualites")
 		.map(parseActualite)
-		.toReversed();
+		.toSorted(byDateDesc);
 export const getActualite = (id: string) =>
 	parseActualite(getter<ActualiteWithId>(id, getActualites()));
 export const getActualiteBySlug = (slug: string) =>
@@ -426,7 +432,9 @@ export const getItemsByYear = <
 		year: "???",
 		items: items.filter((o) => !o.annee),
 	};
-	return [...itemsByYear, unknownYear];
+	return unknownYear.items.length > 0
+		? [...itemsByYear, unknownYear]
+		: itemsByYear;
 };
 
 const anim = {

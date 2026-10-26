@@ -21,6 +21,23 @@
       - id: amazon_music
         url: https://www.amazon.com/Greif-3-Sonates-pour-piano/dp/B0FB5FSHY5
 
+- titre: Danse des Morts
+  id: "danse_des_morts"
+  annee: 2021
+  interpretes_disque: >
+      Edwin Fardini, baryton, Stephan Genz, baryton, Pierre Fouchenneret, violon, Lise Berthaud, alto, Yan Levionnois, violoncelle, Philippe Hattat, piano, Olivier Greif, piano, L’Atelier de Musique, Pierre Dumoussaud, direction
+  maison: B Records
+  ref: LBM 035
+  oeuvres:
+      - "Symphonie"
+      - "Le Livre des Saints Irlandais"
+      - "Quadruple Concerto “La Danse des morts”"
+  commentaire: >
+      Symphonie et Quadruple Concerto enregistrés le 1er mai 2021 lors du 25e Festival de Pâques de Deauville. Le Livre des Saints Irlandais : archive du Festival de Pâques de Deauville 1998.
+  acheter:
+      - id: discogs
+        url: https://www.discogs.com/release/27826821-Olivier-Greif-Danse-Des-Morts
+
 - titre: Les Chants de l'âme (Live in Deauville)
   id: "les_chants_de_l_ame_live_in_deauville"
   annee: 2020
