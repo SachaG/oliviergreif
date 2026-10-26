@@ -1,7 +1,7 @@
 ---
-import Concert from "../../components/concerts/Concert.compact.astro";
-import PageLayout from "../../components/layouts/PageLayout.astro";
-import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
+import Concert from "../../../components/concerts/Concert.compact.astro";
+import PageLayout from "../../../components/layouts/PageLayout.astro";
+import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
 import {
 	getConcerts,
 	getItemsByYear,
@@ -9,18 +9,26 @@ import {
 	getSection2,
 	getString,
 	SectionId,
-} from "../../content";
+} from "../../../content";
 import { fade, slide } from "astro:transitions";
 
-import Layout from "../../layouts/Layout.astro";
-import type { ConcertWithId } from "../../types";
+import Layout from "../../../layouts/Layout.astro";
+import type { ConcertWithId } from "../../../types";
+import ConcertsSearch from "../../../components/concerts/ConcertsSearch.astro";
+import { getLocale, getLocaleStaticPaths } from "../../../i18n";
+
+export const getStaticPaths = () => getLocaleStaticPaths();
 
 const concerts = getConcerts();
 const concertsByYear = getItemsByYear<ConcertWithId>(concerts);
 const sectionId = SectionId.CONCERTS;
+
+const locale = getLocale(Astro.currentLocale);
 ---
 
-<Layout title={getString("concerts")?.t}>
+<script src="../../../scripts/search.ts"></script>
+
+<Layout title={getString("concerts", { locale })?.t}>
 	<PageLayout sectionId={sectionId}>
 		{
 			concertsByYear.map((yearItem) => (
@@ -36,6 +44,7 @@ const sectionId = SectionId.CONCERTS;
 				</SubgridLayout>
 			))
 		}
+		<ConcertsSearch slot="page-sidebar" />
 	</PageLayout>
 </Layout>
 

@@ -1,14 +1,20 @@
 ---
-import PageLayout from "../components/layouts/PageLayout.astro";
-import { getLiens, getString } from "../content";
+import PageLayout from "../../components/layouts/PageLayout.astro";
+import { getLiens, getString } from "../../content";
 
-import Layout from "../layouts/Layout.astro";
+import T from "../../components/T.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getLocale, getLocaleStaticPaths } from "../../i18n";
+
+export const getStaticPaths = () => getLocaleStaticPaths();
+
+const locale = getLocale(Astro.currentLocale);
 ---
 
-<Layout title={getString("liens")?.t}>
+<Layout title={getString("liens", { locale })?.t}>
 	<PageLayout>
 		<div slot="page-content">
-			<h2>Liens</h2>
+			<h2><T k="liens" /></h2>
 			<ul>
 				{
 					getLiens().map((lien) => {

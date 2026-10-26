@@ -1,9 +1,15 @@
 ---
-import { getString } from "../content";
-import Layout from "../layouts/Layout.astro";
+import { getString } from "../../content";
+import T from "../../components/T.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getLocale, getLocaleStaticPaths } from "../../i18n";
+
+export const getStaticPaths = () => getLocaleStaticPaths();
+
+const locale = getLocale(Astro.currentLocale);
 ---
 
-<Layout title={getString("association")?.t}>
-	<h2>Association</h2>
-	<p>A venir…</p>
+<Layout title={getString("association", { locale })?.t}>
+	<h2><T k="association" /></h2>
+	<p><T k="a_venir" /></p>
 </Layout>

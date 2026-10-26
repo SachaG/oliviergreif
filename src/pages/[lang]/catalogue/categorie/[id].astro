@@ -1,5 +1,5 @@
 ---
-import Oeuvre from "../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
+import Oeuvre from "../../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
 import {
 	capitalizeFirstLetter,
 	getCategories,
@@ -11,18 +11,19 @@ import {
 	getCatalogue,
 	getSection2,
 	getSectionPath,
-} from "../../../content";
-import Layout from "../../../layouts/Layout.astro";
-import type { WithSlug } from "../../../types";
-import Instruments from "../../../components/catalogue/Instruments.astro";
-import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
-import T from "../../../components/T.astro";
-import PageLayout from "../../../components/layouts/PageLayout.astro";
-import Categories from "../../../components/catalogue/Categories.astro";
-import AllCatalog from "../../../components/catalogue/AllCatalog.astro";
-import Editeurs from "../../../components/catalogue/Editeurs.astro";
-import Search from "../../../components/catalogue/Search.astro";
-import { getItemIdFromSlug, getItemsStaticPaths } from "../../../helpers";
+} from "../../../../content";
+import Layout from "../../../../layouts/Layout.astro";
+import type { WithSlug } from "../../../../types";
+import Instruments from "../../../../components/catalogue/Instruments.astro";
+import SubgridLayout from "../../../../components/layouts/SubgridLayout.astro";
+import T from "../../../../components/T.astro";
+import PageLayout from "../../../../components/layouts/PageLayout.astro";
+import Categories from "../../../../components/catalogue/Categories.astro";
+import AllCatalog from "../../../../components/catalogue/AllCatalog.astro";
+import Editeurs from "../../../../components/catalogue/Editeurs.astro";
+import Search from "../../../../components/catalogue/Search.astro";
+import { getItemIdFromSlug, getItemsStaticPaths } from "../../../../helpers";
+import { getLocale } from "../../../../i18n";
 
 const { id } = Astro.params;
 const categoryId = getItemIdFromSlug(id as string);
@@ -43,15 +44,18 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 		items: catalogue.filter((o) => o.instruments?.length === count + 1),
 	}))
 	.filter(({ items }) => items.length > 0);
+
+const locale = getLocale(Astro.currentLocale);
 ---
 
-<script src="../../../scripts/search.ts"></script>
+<script src="../../../../scripts/search.ts"></script>
 
-<Layout title={`${getString("catalogue")?.t} (${title})`}>
+<Layout
+	title={`${getString("catalogue", { locale })?.t} (${getString(categoryId, { locale, fallback: capitalizeFirstLetter(title) }).t})`}
+>
 	<PageLayout
 		sectionId={SectionId.CATALOGUE}
 		parentPath={getSectionPath(SectionId.CATALOGUE)}
-		}
 	>
 		<h2
 			slot="page-heading"
@@ -60,7 +64,7 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 			<T k="catalogue" />: <T
 				k={categoryId}
 				fallback={capitalizeFirstLetter(title)}
-			/> ({catalogue.length}
+			/> ({catalogue.length}{" "}
 			<T k="oeuvre" kPlural="oeuvres" count={catalogue.length} />)
 		</h2>
 		{
@@ -69,7 +73,7 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 					<SubgridLayout>
 						<h4 class="count-title" slot="col1">
 							<span class="count-heading">
-								{count}
+								{count}{" "}
 								<T
 									k="instrument"
 									kPlural="instruments"

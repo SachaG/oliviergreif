@@ -1,6 +1,6 @@
 ---
-import Oeuvre from "../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
-import AllCatalog from "../../../components/catalogue/AllCatalog.astro";
+import Oeuvre from "../../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
+import AllCatalog from "../../../../components/catalogue/AllCatalog.astro";
 import {
 	capitalizeFirstLetter,
 	getInstrumentsGroups,
@@ -10,17 +10,18 @@ import {
 	convertTitle,
 	getCatalogue,
 	getSectionPath,
-} from "../../../content";
-import Layout from "../../../layouts/Layout.astro";
-import type { WithSlug } from "../../../types";
-import Instruments from "../../../components/catalogue/Instruments.astro";
-import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
-import T from "../../../components/T.astro";
-import PageLayout from "../../../components/layouts/PageLayout.astro";
-import Categories from "../../../components/catalogue/Categories.astro";
-import Editeurs from "../../../components/catalogue/Editeurs.astro";
-import Search from "../../../components/catalogue/Search.astro";
-import { getItemsStaticPaths } from "../../../helpers";
+} from "../../../../content";
+import Layout from "../../../../layouts/Layout.astro";
+import type { WithSlug } from "../../../../types";
+import Instruments from "../../../../components/catalogue/Instruments.astro";
+import SubgridLayout from "../../../../components/layouts/SubgridLayout.astro";
+import T from "../../../../components/T.astro";
+import PageLayout from "../../../../components/layouts/PageLayout.astro";
+import Categories from "../../../../components/catalogue/Categories.astro";
+import Editeurs from "../../../../components/catalogue/Editeurs.astro";
+import Search from "../../../../components/catalogue/Search.astro";
+import { getItemsStaticPaths } from "../../../../helpers";
+import { getLocale } from "../../../../i18n";
 
 const { id } = Astro.params;
 const instrumentGroupId = id as keyof typeof instrumentGroups;
@@ -43,12 +44,14 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 		items: catalogue.filter((o) => o.instruments?.length === count + 1),
 	}))
 	.filter(({ items }) => items.length > 0);
+
+const locale = getLocale(Astro.currentLocale);
 ---
 
-<script src="../../../scripts/search.ts"></script>
+<script src="../../../../scripts/search.ts"></script>
 
 <script>
-	import { convertTitle } from "../../../helpers";
+	import { convertTitle } from "../../../../helpers";
 
 	// Find our component DOM on the page.
 	const checkboxes =
@@ -81,7 +84,9 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 	});
 </script>
 
-<Layout title={`${getString("catalogue")?.t} (${title})`}>
+<Layout
+	title={`${getString("catalogue", { locale })?.t} (${getString(instrumentGroupId, { locale, fallback: capitalizeFirstLetter(title) }).t})`}
+>
 	<PageLayout
 		sectionId={SectionId.CATALOGUE}
 		parentPath={getSectionPath(SectionId.CATALOGUE)}
@@ -93,7 +98,7 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 			<T k="catalogue" />: <T
 				k={instrumentGroupId}
 				fallback={capitalizeFirstLetter(title)}
-			/> ({catalogue.length}
+			/> ({catalogue.length}{" "}
 			<T k="oeuvre" kPlural="oeuvres" count={catalogue.length} />)
 		</h2>
 		<div slot="page-content">
@@ -125,7 +130,7 @@ const catalogueByNumberOfInstruments = [...Array(100)]
 					<SubgridLayout>
 						<h4 class="count-title" slot="col1">
 							<span class="count-heading">
-								{count}
+								{count}{" "}
 								<T
 									k="instrument"
 									kPlural="instruments"

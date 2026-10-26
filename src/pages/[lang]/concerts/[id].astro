@@ -5,10 +5,10 @@ import type {
 	GetStaticPaths,
 } from "astro";
 
-import Concert from "../../components/concerts/Concert.astro";
-import { getConcert, getConcertBySlug, getConcerts } from "../../content";
-import { getItemsStaticPaths } from "../../helpers";
-import Layout from "../../layouts/Layout.astro";
+import Concert from "../../../components/concerts/Concert.astro";
+import { getConcert, getConcertBySlug, getConcerts } from "../../../content";
+import { getItemsStaticPaths } from "../../../helpers";
+import Layout from "../../../layouts/Layout.astro";
 
 export const getStaticPaths = (async () => {
 	return getItemsStaticPaths(getConcerts());

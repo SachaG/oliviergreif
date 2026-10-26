@@ -1,22 +1,23 @@
 ---
-import Oeuvre from "../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
+import Oeuvre from "../../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
 import {
 	getEditeur,
 	getEditeurs,
 	getSectionPath,
 	getString,
 	SectionId,
-} from "../../../content";
-import { getCatalogue } from "../../../content";
-import Layout from "../../../layouts/Layout.astro";
-import Instruments from "../../../components/catalogue/Instruments.astro";
-import T from "../../../components/T.astro";
-import PageLayout from "../../../components/layouts/PageLayout.astro";
-import Categories from "../../../components/catalogue/Categories.astro";
-import AllCatalog from "../../../components/catalogue/AllCatalog.astro";
-import Editeurs from "../../../components/catalogue/Editeurs.astro";
-import Search from "../../../components/catalogue/Search.astro";
-import { getItemIdFromSlug, getItemsStaticPaths } from "../../../helpers";
+} from "../../../../content";
+import { getCatalogue } from "../../../../content";
+import Layout from "../../../../layouts/Layout.astro";
+import Instruments from "../../../../components/catalogue/Instruments.astro";
+import T from "../../../../components/T.astro";
+import PageLayout from "../../../../components/layouts/PageLayout.astro";
+import Categories from "../../../../components/catalogue/Categories.astro";
+import AllCatalog from "../../../../components/catalogue/AllCatalog.astro";
+import Editeurs from "../../../../components/catalogue/Editeurs.astro";
+import Search from "../../../../components/catalogue/Search.astro";
+import { getItemIdFromSlug, getItemsStaticPaths } from "../../../../helpers";
+import { getLocale } from "../../../../i18n";
 
 export const getStaticPaths = async () => {
 	return getItemsStaticPaths(getEditeurs());
@@ -27,11 +28,13 @@ const editeur = getEditeur(getItemIdFromSlug(id));
 const { titre } = editeur;
 
 const catalogueByEditeur = getCatalogue({ editeurId: titre });
+
+const locale = getLocale(Astro.currentLocale);
 ---
 
-<script src="../../../scripts/search.ts"></script>
+<script src="../../../../scripts/search.ts"></script>
 
-<Layout title={`${getString("catalogue")?.t} (${titre})`}>
+<Layout title={`${getString("catalogue", { locale })?.t} (${titre})`}>
 	<PageLayout
 		sectionId={SectionId.CATALOGUE}
 		parentPath={getSectionPath(SectionId.CATALOGUE)}
@@ -40,7 +43,7 @@ const catalogueByEditeur = getCatalogue({ editeurId: titre });
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}
 		>
-			<T k="catalogue" />: {titre} ({catalogueByEditeur.length}
+			<T k="catalogue" />: {titre} ({catalogueByEditeur.length}{" "}
 			<T
 				k="oeuvre"
 				kPlural="oeuvres"

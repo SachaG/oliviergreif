@@ -1,15 +1,20 @@
 ---
-import Disque from "../../components/disques/Disque.compact.astro";
-import { getDisques, getItemsByYear, getString } from "../../content";
-import PageLayout from "../../components/layouts/PageLayout.astro";
-import SubgridLayout from "../../components/layouts/SubgridLayout.astro";
-import type { DisqueWithId } from "../../types";
-import Layout from "../../layouts/Layout.astro";
+import Disque from "../../../components/disques/Disque.compact.astro";
+import { getDisques, getItemsByYear, getString } from "../../../content";
+import PageLayout from "../../../components/layouts/PageLayout.astro";
+import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
+import type { DisqueWithId } from "../../../types";
+import Layout from "../../../layouts/Layout.astro";
+import { getLocale, getLocaleStaticPaths } from "../../../i18n";
+
+export const getStaticPaths = () => getLocaleStaticPaths();
 
 const disques = getDisques();
+
+const locale = getLocale(Astro.currentLocale);
 ---
 
-<Layout title={getString("disques")?.t}>
+<Layout title={getString("disques", { locale })?.t}>
 	<PageLayout sectionId="disques">
 		<div class="disques-grid" slot="page-content">
 			{disques.map((disque) => <Disque id={disque.id} />)}

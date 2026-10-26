@@ -1,26 +1,33 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { Content as BioFr } from "../content/biographie.short.fr.md";
-import { Content as BioEn } from "../content/biographie.short.en.md";
+import Layout from "../../layouts/Layout.astro";
+import { Content as BioFr } from "../../content/biographie.short.fr.md";
+import { Content as BioEn } from "../../content/biographie.short.en.md";
 
-import { Content as FullBioFr } from "../content/biographie.full.fr.mdx";
-import { Content as FullBioEn } from "../content/biographie.full.en.mdx";
-import PageLayout from "../components/layouts/PageLayout.astro";
-import { getString } from "../content";
-import T from "../components/T.astro";
+import { Content as FullBioFr } from "../../content/biographie.full.fr.mdx";
+import { Content as FullBioEn } from "../../content/biographie.full.en.mdx";
+import PageLayout from "../../components/layouts/PageLayout.astro";
+import { getString } from "../../content";
+import T from "../../components/T.astro";
+import { getLocale, getLocaleStaticPaths } from "../../i18n";
+
+export const getStaticPaths = () => getLocaleStaticPaths();
+
+const locale = getLocale(Astro.currentLocale);
+const Bio = locale === "en" ? BioEn : BioFr;
+const FullBio = locale === "en" ? FullBioEn : FullBioFr;
 ---
 
-<Layout title={getString("actualites")?.t} }>
+<Layout title={getString("biographie", { locale })?.t}>
 	<PageLayout sectionId="biographie" hasSidebar={false}>
 		<div slot="page-content">
 			<div class="biographie">
 				<div class="biographie-short">
 					<h2><T k="biographie.short" /></h2>
-					<BioFr />
+					<Bio />
 				</div>
 				<div class="biographie-full">
 					<h2><T k="biographie.full" /></h2>
-					<FullBioFr />
+					<FullBio />
 				</div>
 			</div>
 		</div>

@@ -1,8 +1,9 @@
 ---
-import Actualite from "../../components/actualites/Actualite.astro";
-import { getActualiteBySlug, getActualites, getString } from "../../content";
-import { getItemsStaticPaths } from "../../helpers";
-import Layout from "../../layouts/Layout.astro";
+import Actualite from "../../../components/actualites/Actualite.astro";
+import { getActualiteBySlug, getActualites, getString } from "../../../content";
+import { getItemsStaticPaths } from "../../../helpers";
+import Layout from "../../../layouts/Layout.astro";
+import { getLocale } from "../../../i18n";
 
 export function getStaticPaths() {
 	return getItemsStaticPaths(getActualites());
@@ -11,8 +12,10 @@ export function getStaticPaths() {
 const { id: slug } = Astro.params;
 const actualite = getActualiteBySlug(slug)!;
 const { id } = actualite;
+
+const locale = getLocale(Astro.currentLocale);
 ---
 
-<Layout title={getString("actualites")?.t}>
+<Layout title={getString("actualites", { locale })?.t}>
 	<Actualite id={id} />
 </Layout>
