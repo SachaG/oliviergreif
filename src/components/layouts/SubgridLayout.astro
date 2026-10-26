@@ -10,7 +10,7 @@ const { className } = Astro.props;
 </section>
 
 <style lang="scss" type="text/scss">
-	@import "../../styles/_breakpoints.scss";
+	@use "../../styles/_breakpoints.scss" as *;
 	.subgrid-layout {
 		@include breakpointOver(lg) {
 			display: grid;

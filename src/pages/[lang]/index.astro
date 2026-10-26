@@ -23,7 +23,7 @@ export const getStaticPaths = () => getLocaleStaticPaths();
 </Layout>
 
 <style lang="scss" is:global>
-	@import "../../styles/_breakpoints.scss";
+	@use "../../styles/_breakpoints.scss" as *;
 
 	.home-sections {
 		background: var(--borderColor);
