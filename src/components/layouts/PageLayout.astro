@@ -1,12 +1,14 @@
 ---
-import { getSection2 } from "../../content";
+import { getSection2, SectionId } from "../../content";
 import T from "../T.astro";
 import Link from "../Link.astro";
 import LanguageSwitcher from "../LanguageSwitcher.astro";
 import type { Locale } from "../../i18n";
+import { getSectionIcon } from "../../icons";
+import ArrowIcon from "../icons/ArrowIcon.astro";
 
 interface Props {
-	sectionId?: string;
+	sectionId?: SectionId;
 	parentPath?: string;
 	hasSidebar?: boolean;
 	// only needed on pages without a locale in their URL (404)
@@ -14,14 +16,20 @@ interface Props {
 	showLanguageSwitcher?: boolean;
 }
 
-const { sectionId, parentPath, locale, showLanguageSwitcher = true } =
-	Astro.props;
+const {
+	sectionId,
+	parentPath,
+	locale,
+	showLanguageSwitcher = true,
+} = Astro.props;
 
 const sidebarSlotContent = (await Astro.slots.render("page-sidebar")) || "";
 const hasSidebar = sidebarSlotContent.trim().length > 0;
 
 const defaultSlotContent = (await Astro.slots.render("page-heading")) || "";
 const hasContent = defaultSlotContent.trim().length > 0;
+
+const SectionIcon = sectionId && getSectionIcon(sectionId);
 ---
 
 <div
@@ -29,30 +37,40 @@ const hasContent = defaultSlotContent.trim().length > 0;
 	style={`view-transition-name: section-${sectionId}; `}
 >
 	<div class="page-heading">
-		<Link class="home-link" href={parentPath || "/"} locale={locale}
-			><span class="arrow">←</span>
-			<span class="visually-hidden"
-				><T k="retour_accueil" locale={locale} /></span
-			></Link
-		>
-		<div class="page-heading-content">
-			{
-				hasContent ? (
-					<slot name="page-heading" />
-				) : (
-					<h2 style={`view-transition-name: heading-${sectionId}`}>
-						<T k={sectionId} locale={locale} />
-					</h2>
-				)
-			}
+		<div class="page-heading-breadcrumbs">
+			<Link class="home-link" href="/" locale={locale}>
+				<ArrowIcon />
+				<span class="visually-hidden">
+					<T k="retour_accueil" locale={locale} />
+				</span>
+			</Link>
+
+			{parentPath && (
+				<Link
+					class="home-link"
+					href={parentPath || "/"}
+					locale={locale}
+				>
+					<SectionIcon />
+
+					<T k="sectionId" locale={locale} hidden={true} />
+				</Link>
+			)}
 		</div>
-		{
-			showLanguageSwitcher && (
-				<div class="page-heading-language">
-					<LanguageSwitcher />
-				</div>
-			)
-		}
+		<div class="page-heading-content">
+			{hasContent ? (
+				<slot name="page-heading" />
+			) : (
+				<h2 style={`view-transition-name: heading-${sectionId}`}>
+					<T k={sectionId} locale={locale} />
+				</h2>
+			)}
+		</div>
+		{showLanguageSwitcher && (
+			<div class="page-heading-language">
+				<LanguageSwitcher />
+			</div>
+		)}
 	</div>
 	<div class="page-content grid">
 		<main class="page-main">
@@ -72,7 +90,7 @@ const hasContent = defaultSlotContent.trim().length > 0;
 	.page {
 		min-height: 100vh;
 		display: grid;
-		grid-template-rows: min-content 1fr;
+		grid-template-rows: 130px 1fr;
 	}
 	.page-heading {
 		display: grid;
@@ -81,6 +99,9 @@ const hasContent = defaultSlotContent.trim().length > 0;
 		@include breakpointUnder(lg) {
 			grid-template-columns: 60px 1fr auto;
 		}
+	}
+	.page-heading-breadcrumbs {
+		display: flex;
 	}
 	.page-heading-language {
 		display: grid;
@@ -118,7 +139,7 @@ const hasContent = defaultSlotContent.trim().length > 0;
 		// top: 10px;
 		// background-color: var(--bgColor);
 		z-index: 100;
-		padding: var(--doubleSpacing);
+		padding: var(--spacing);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

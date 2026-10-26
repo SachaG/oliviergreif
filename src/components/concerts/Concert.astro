@@ -21,32 +21,28 @@ const showFull = variant === "full";
 >
 	<div slot="page-heading">
 		<h3 class="subheading">
-			<Link href={getSectionPath(SectionId.CONCERTS)}><T k="concerts" /></Link> /
-			<Date date={date} />
+			<Link href={getSectionPath(SectionId.CONCERTS)}>
+				<T k="concerts" />
+			</Link>{" "}
+			/ <Date date={date} />
 		</h3>
-		<h2>
-			{titre}
-		</h2>
+		<h2>{titre}</h2>
 	</div>
 	<div slot="page-content">
 		<table>
 			<tbody>
 				{showFull && <Field k="concerts.adresse">{adresse}</Field>}
 				<Field k="concerts.interpretes">{interpretes}</Field>
-				{
-					oeuvres && oeuvres.length > 0 && (
-						<Field k="concerts.oeuvres">
-							<CatalogueRelated oeuvres={oeuvres} />
-						</Field>
-					)
-				}
-				{
-					commentaire && (
-						<Field k="concerts.commentaire">
-							<div set:html={commentaire} />
-						</Field>
-					)
-				}
+				{oeuvres && oeuvres.length > 0 && (
+					<Field k="concerts.oeuvres">
+						<CatalogueRelated oeuvres={oeuvres} />
+					</Field>
+				)}
+				{commentaire && (
+					<Field k="concerts.commentaire">
+						<div set:html={commentaire} />
+					</Field>
+				)}
 			</tbody>
 		</table>
 	</div>

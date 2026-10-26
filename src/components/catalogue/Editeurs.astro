@@ -14,31 +14,25 @@ const showMore = limit && limit <= editeurs.length;
 
 <SidebarBlock k="catalogue.editeurs">
 	<ul class="items-list">
-		{
-			editeurs.map((editeur) => {
-				const { id, titre, count } = editeur;
-				const isCurrent = id === currentEditeurId;
-				return (
-					<li class={isCurrent ? "editeur-current" : ""}>
-						<LinkItem path={getEditeurCatalogLink(editeur)}>
-							<span>
-								{titre}
-								<span class="count">({count})</span>
-							</span>
-						</LinkItem>
-					</li>
-				);
-			})
-		}
-		{
-			showMore && (
-				<li>
-					<LinkItem path={getSectionPath(SectionId.CATALOGUE)}>
-						<T k="voir_plus" />
+		{editeurs.map((editeur) => {
+			const { id, titre, count } = editeur;
+			const isCurrent = id === currentEditeurId;
+			return (
+				<li class={isCurrent ? "editeur-current" : ""}>
+					<LinkItem path={getEditeurCatalogLink(editeur)}>
+						<span>{titre}</span>{" "}
+						<span class="count">({count})</span>
 					</LinkItem>
 				</li>
-			)
-		}
+			);
+		})}
+		{showMore && (
+			<li>
+				<LinkItem path={getSectionPath(SectionId.CATALOGUE)}>
+					<T k="voir_plus" />
+				</LinkItem>
+			</li>
+		)}
 	</ul>
 </SidebarBlock>
 

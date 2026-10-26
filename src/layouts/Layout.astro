@@ -46,38 +46,31 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		<title>{fullTitle}</title>
 		<meta property="og:title" content={fullTitle} />
 		<meta property="og:locale" content={getOgLocale(locale)} />
-		{
-			locales
-				.filter((l) => l !== locale)
-				.map((l) => (
-					<meta
-						property="og:locale:alternate"
-						content={getOgLocale(l)}
-					/>
-				))
-		}
-		{
-			noindex ? (
-				<meta name="robots" content="noindex" />
-			) : (
-				<>
-					<meta property="og:url" content={getAlternateUrl(locale)} />
-					<link rel="canonical" href={getAlternateUrl(locale)} />
-					{locales.map((l) => (
-						<link
-							rel="alternate"
-							hreflang={localeCodes[l]}
-							href={getAlternateUrl(l)}
-						/>
-					))}
+		{locales
+			.filter((l) => l !== locale)
+			.map((l) => (
+				<meta property="og:locale:alternate" content={getOgLocale(l)} />
+			))}
+		{noindex ? (
+			<meta name="robots" content="noindex" />
+		) : (
+			<>
+				<meta property="og:url" content={getAlternateUrl(locale)} />
+				<link rel="canonical" href={getAlternateUrl(locale)} />
+				{locales.map((l) => (
 					<link
 						rel="alternate"
-						hreflang="x-default"
-						href={getAlternateUrl(defaultLocale)}
+						hreflang={localeCodes[l]}
+						href={getAlternateUrl(l)}
 					/>
-				</>
-			)
-		}
+				))}
+				<link
+					rel="alternate"
+					hreflang="x-default"
+					href={getAlternateUrl(defaultLocale)}
+				/>
+			</>
+		)}
 		<!-- <ClientRouter /> -->
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -102,48 +95,69 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 </html>
 
 <script>
-	document.querySelectorAll(".section-link").forEach((item) => {
-		item.addEventListener("click", (e) => {
-			e.preventDefault();
-			const href = item.getAttribute("href");
+	// Cross-document view transitions (see @view-transition below) morph elements
+	// sharing a view-transition-name across pages, but a name must be unique on a
+	// page. Elements with data-transition-name can all "claim" the same name: the
+	// one that was clicked gets it right before the old page is snapshotted.
+	let clicked: HTMLElement | null = null;
+	const overridden = new Map<HTMLElement, string>();
 
-			document.startViewTransition(() => {
-				window.location.href = href || "";
+	document.addEventListener("click", (e) => {
+		clicked =
+			(e.target as Element | null)?.closest<HTMLElement>(
+				"[data-transition-name]",
+			) ?? null;
+	});
+
+	window.addEventListener("pageswap", (e) => {
+		if (!e.viewTransition || !clicked) return;
+		const name = clicked.dataset.transitionName!;
+		document
+			.querySelectorAll<HTMLElement>(`[data-transition-name="${name}"]`)
+			.forEach((el) => {
+				overridden.set(el, el.style.viewTransitionName);
+				el.style.viewTransitionName = el === clicked ? name : "none";
 			});
-		});
+	});
+
+	// back/forward cache: restore the original names
+	window.addEventListener("pageshow", () => {
+		overridden.forEach((name, el) => (el.style.viewTransitionName = name));
+		overridden.clear();
+		clicked = null;
 	});
 </script>
 
 <style lang="scss" is:global>
 	@import "../styles/_breakpoints.scss";
 	/* https://www.joshwcomeau.com/css/custom-css-reset/
-	*/
+		*/
 	/*
-  1. Use a more-intuitive box-sizing model.
-*/
+	  1. Use a more-intuitive box-sizing model.
+	*/
 	*,
 	*::before,
 	*::after {
 		box-sizing: border-box;
 	}
 	/*
-  2. Remove default margin
-*/
+	  2. Remove default margin
+	*/
 	* {
 		margin: 0;
 	}
 	/*
-  Typographic tweaks!
-  3. Add accessible line-height
-  4. Improve text rendering
-*/
+	  Typographic tweaks!
+	  3. Add accessible line-height
+	  4. Improve text rendering
+	*/
 	body {
 		line-height: 1.5;
 		-webkit-font-smoothing: antialiased;
 	}
 	/*
-  5. Improve media defaults
-*/
+	  5. Improve media defaults
+	*/
 	img,
 	picture,
 	video,
@@ -153,8 +167,8 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		max-width: 100%;
 	}
 	/*
-  6. Remove built-in form typography styles
-*/
+	  6. Remove built-in form typography styles
+	*/
 	input,
 	button,
 	textarea,
@@ -162,8 +176,8 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		font: inherit;
 	}
 	/*
-  7. Avoid text overflows
-*/
+	  7. Avoid text overflows
+	*/
 	p,
 	h1,
 	h2,
@@ -174,8 +188,8 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		overflow-wrap: break-word;
 	}
 	/*
-  8. Create a root stacking context
-*/
+	  8. Create a root stacking context
+	*/
 	#root,
 	#__next {
 		isolation: isolate;
@@ -194,17 +208,19 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		/* --bgColor: rgb(132, 214, 223); */
 		/* --bgColor: #303776; */
 		--bgColor: #7bc5b5;
+		--bgColorInverted: rgb(38, 76, 68);
 		/* 303776 */
 		/* 7bc5b5 */
 		--bgColorSecondary: var(--bgColor);
 		--textColor: #252c6d;
 		--textColorSecondary: var(--textColor);
-		--invertedTextColor: #c9e1e5;
-		--invertedHoverTextColor: #fff;
+		--textColorInverted: #c9e1e5;
+		--textHoverColorInverted: #fff;
 		/* --linkColor: #0f3f46dd; */
 		--linkColor: var(--textColor);
 		--linkHoverColor: rgb(159, 55, 154);
-		--borderColor: #25190b;
+		--linkHoverColor: rgb(0, 116, 74);
+		--borderColor: #4d8175;
 		--borderWidth: 1px;
 		--border: var(--borderWidth) solid var(--borderColor);
 		--doubleSpacing: 40px;
@@ -342,13 +358,13 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		gap: var(--spacing);
 		max-width: 1000px;
 		/* h3,
-		h4,
-		h5,
-		h6,
-		p,
-		hr {
-			margin-bottom: var(--spacing);
-		} */
+			h4,
+			h5,
+			h6,
+			p,
+			hr {
+				margin-bottom: var(--spacing);
+			} */
 	}
 
 	.grid {
@@ -429,8 +445,8 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 			content: "→";
 			display: block;
 			position: absolute;
-			right: 0px;
-			top: 60%;
+			right: 10px;
+			top: 50%;
 			transform: translateY(-50%);
 			display: none;
 		}
@@ -453,8 +469,8 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 	/* Customize the default animation behavior */
 
 	/* ::view-transition-group(root) {
-		animation-duration: 0.5s;
-	} */
+			animation-duration: 0.5s;
+		} */
 	::view-transition-old(section-concerts),
 	::view-transition-new(section-concerts),
 	::view-transition-old(heading-concerts),

@@ -10,13 +10,10 @@ const photos = getPhotos();
 
 <section>
 	<div class="photos-section">
-		{photos.slice(0, 6).map(({ id }) => <Photo id={id} />)}
+		{photos.slice(0, 6).map(({ id }) => (
+			<Photo id={id} />
+		))}
 	</div>
-
-	<Link
-		class="home-section-link link-heading"
-		href={getSectionPath(SectionId.PHOTOS)}><T k="voir_plus" /></Link
-	>
 </section>
 
 <style>

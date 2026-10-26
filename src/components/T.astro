@@ -9,11 +9,18 @@ interface Props {
 	fallback?: string;
 	// override the current locale (e.g. on the 404 page)
 	locale?: Locale;
+	hidden?: boolean;
 }
 
-const { k = "", kPlural, count, fallback } = Astro.props;
+const { k = "", kPlural, count, fallback, hidden = false } = Astro.props;
 const locale = Astro.props.locale ?? getLocale(Astro.currentLocale);
 const { t } = getString(k, { locale, kPlural, count, fallback });
+const classes = ["t"];
+if (hidden) {
+	classes.push("visually-hidden");
+}
 ---
 
-<span data-key={k}>{t || fallback || k}</span>
+<span class={classes.join(" ")} data-key={k}>
+	{t || fallback || k}
+</span>

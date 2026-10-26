@@ -29,31 +29,26 @@ const locale = getLocale(Astro.currentLocale);
 			slot="page-heading"
 			style={`view-transition-name: heading-catalogue`}
 		>
-			<T k="catalogue" />
-			<span class="heading-metadata"
-				>({catalogue.length}{" "}
-				<T k="oeuvre" kPlural="oeuvres" count={catalogue.length} />)</span
-			>
+			<T k="catalogue" />{" "}
+			<span class="heading-metadata">
+				({catalogue.length}{" "}
+				<T k="oeuvre" kPlural="oeuvres" count={catalogue.length} />)
+			</span>
 		</h2>
-		{
-			catalogueByYear.map(({ year, items }) => {
-				return (
-					<SubgridLayout
-						className="catalogue-year"
-						slot="page-content"
-					>
-						<h4 class="year-title" slot="col1">
-							<span>{year}</span>
-						</h4>
-						<div class="feed-items" slot="main">
-							{items.map((oeuvre) => (
-								<Oeuvre id={oeuvre.id} />
-							))}
-						</div>
-					</SubgridLayout>
-				);
-			})
-		}
+		{catalogueByYear.map(({ year, items }) => {
+			return (
+				<SubgridLayout className="catalogue-year" slot="page-content">
+					<h4 class="year-title" slot="col1">
+						<span>{year}</span>
+					</h4>
+					<div class="feed-items" slot="main">
+						{items.map((oeuvre) => (
+							<Oeuvre id={oeuvre.id} />
+						))}
+					</div>
+				</SubgridLayout>
+			);
+		})}
 		<Search slot="page-sidebar" />
 		<Categories slot="page-sidebar" />
 		<Instruments slot="page-sidebar" />

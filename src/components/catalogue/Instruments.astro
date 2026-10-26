@@ -1,6 +1,6 @@
 ---
 import { getInstrumentsGroups, getSectionPath, SectionId } from "../../content";
-const { currentInstrumentId, limit } = Astro.props;
+const { currentInstrumentId, limit, enableShowMore } = Astro.props;
 import { capitalizeFirstLetter } from "../../content";
 import { getInstrumentGroupLink } from "../../content";
 import LinkItem from "../LinkItem.astro";
@@ -17,16 +17,15 @@ const showMore = limit && limit <= instrumentGroups.length;
 
 <SidebarBlock k="catalogue.instruments">
 	<ul class="items-list">
-		{
-			instrumentGroups.map(({ id, count }) => {
-				const isCurrent = id === currentInstrumentId;
-				return (
-					<li class={isCurrent ? "instrument-current" : ""}>
-						<LinkItem path={getInstrumentGroupLink(id)}>
-							<T k={id} fallback={capitalizeFirstLetter(id)} />
-							<span class="count">({count})</span>
-						</LinkItem>
-						{/* {instruments.length > 1 && (
+		{instrumentGroups.map(({ id, count }) => {
+			const isCurrent = id === currentInstrumentId;
+			return (
+				<li class={isCurrent ? "instrument-current" : ""}>
+					<LinkItem path={getInstrumentGroupLink(id)}>
+						<T k={id} fallback={capitalizeFirstLetter(id)} />{" "}
+						<span class="count">({count})</span>
+					</LinkItem>
+					{/* {instruments.length > 1 && (
 							<p>
 								{instruments.map((i) => (
 									<>
@@ -36,19 +35,16 @@ const showMore = limit && limit <= instrumentGroups.length;
 								))}
 							</p>
 						)} */}
-					</li>
-				);
-			})
-		}
-		{
-			showMore && (
-				<li>
-					<LinkItem path={getSectionPath(SectionId.CATALOGUE)}>
-						<T k="voir_plus" />
-					</LinkItem>
 				</li>
-			)
-		}
+			);
+		})}
+		{enableShowMore && showMore && (
+			<li>
+				<LinkItem path={getSectionPath(SectionId.CATALOGUE)}>
+					<T k="voir_plus" />
+				</LinkItem>
+			</li>
+		)}
 	</ul>
 </SidebarBlock>
 

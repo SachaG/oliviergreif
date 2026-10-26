@@ -1,5 +1,5 @@
 ---
-const { currentCategoryId, limit } = Astro.props;
+const { currentCategoryId, limit, enableShowMore = true } = Astro.props;
 import {
 	capitalizeFirstLetter,
 	getSectionPath,
@@ -18,30 +18,26 @@ const showMore = limit && limit < allCategories.length;
 
 <SidebarBlock k="catalogue.categories">
 	<ul class="items-list">
-		{
-			categories.map((category) => {
-				const { id, count } = category;
-				const isCurrent = id === currentCategoryId;
-				return (
-					<li class={isCurrent ? "category-current" : ""}>
-						<LinkItem path={getCategoryLink(category)}>
-							<T k={id} fallback={capitalizeFirstLetter(id)} />
-							<span class="count">({count})</span>
-						</LinkItem>
-					</li>
-				);
-			})
-		}
-
-		{
-			showMore && (
-				<li>
-					<LinkItem path={getSectionPath(SectionId.CATALOGUE)}>
-						<T k="voir_plus" />
+		{categories.map((category) => {
+			const { id, count } = category;
+			const isCurrent = id === currentCategoryId;
+			return (
+				<li class={isCurrent ? "category-current" : ""}>
+					<LinkItem path={getCategoryLink(category)}>
+						<T k={id} fallback={capitalizeFirstLetter(id)} />{" "}
+						<span class="count">({count})</span>
 					</LinkItem>
 				</li>
-			)
-		}
+			);
+		})}
+
+		{enableShowMore && showMore && (
+			<li>
+				<LinkItem path={getSectionPath(SectionId.CATALOGUE)}>
+					<T k="voir_plus" />
+				</LinkItem>
+			</li>
+		)}
 	</ul>
 </SidebarBlock>
 

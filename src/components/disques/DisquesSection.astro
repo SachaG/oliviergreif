@@ -9,17 +9,13 @@ const disques = getDisques();
 
 <section>
 	<div class="disques-section contents">
-		{
-			disques
-				.filter((disque) => disque.image)
-				.slice(0, 6)
-				.map((disque) => <DisqueCover id={disque.id} />)
-		}
+		{disques
+			.filter((disque) => disque.image)
+			.slice(0, 6)
+			.map((disque) => (
+				<DisqueCover id={disque.id} />
+			))}
 	</div>
-	<Link
-		class="home-section-link link-heading"
-		href={getSectionPath(SectionId.DISQUES)}><T k="voir_plus" /></Link
-	>
 </section>
 
 <style>

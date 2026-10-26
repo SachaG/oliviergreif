@@ -7,6 +7,7 @@ import {
 	getSectionComponent,
 } from "../../content";
 import Link from "../Link.astro";
+import PlusIcon from "../icons/PlusIcon.astro";
 const { sectionId, color, inverted } = Astro.props;
 
 const SectionComponent = getSectionComponent(sectionId);
@@ -16,11 +17,11 @@ const SectionComponent = getSectionComponent(sectionId);
 	class={`home-section home-section-active section-${sectionId} section-${inverted ? "inverted" : "normal"}`}
 	style={`view-transition-name: section-${sectionId}`}
 >
-	<div class="bg"></div>
-	<div class="inner">
+	<div class="home-section-inner">
 		<h2
-			class="section-heading"
+			class="home-section-heading"
 			style={`view-transition-name: heading-${sectionId}`}
+			data-transition-name={`heading-${sectionId}`}
 		>
 			<Link
 				class="section-link link-heading"
@@ -29,7 +30,20 @@ const SectionComponent = getSectionComponent(sectionId);
 				<T k={sectionId} />
 			</Link>
 		</h2>
-		{SectionComponent ? <SectionComponent /> : null}
+		<div class="home-section-contents">
+			{SectionComponent ? <SectionComponent /> : null}
+		</div>
+
+		<div class="home-section-footer">
+			<Link
+				class="home-section-expand"
+				href={getSectionPath(sectionId)}
+				data-transition-name={`heading-${sectionId}`}
+			>
+				<PlusIcon />
+				<T k="voir_plus" hidden={true} />
+			</Link>
+		</div>
 	</div>
 </section>
 
@@ -40,28 +54,10 @@ const SectionComponent = getSectionComponent(sectionId);
 		background-color: var(--color);
 		background-color: var(--bgColor);
 
-		padding: var(--spacing);
 		/* border: 2px solid var(--borderColor); */
 		position: relative;
 		background: var(--bgColor);
 
-		.bg {
-			pointer-events: none;
-			background: url("/images/ogreif-large.jpg") fixed;
-			background-size: cover;
-			filter: saturate(0.3) opacity(0.2);
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			/* transition: all 600ms ease-in; */
-		}
-		.inner {
-			display: grid;
-			grid-template-rows: min-content 1fr;
-			height: 100%;
-		}
 		&.home-section-active:hover {
 			background: var(--bgColorSecondary);
 		}
@@ -78,19 +74,46 @@ const SectionComponent = getSectionComponent(sectionId);
 			gap: var(--spacing);
 		}
 	}
-	.section-heading {
+
+	.home-section-inner {
+		display: grid;
+		grid-template-rows: min-content 1fr min-content;
+		height: 100%;
+	}
+	.home-section-heading {
+		margin: 0;
 		a {
+			padding: var(--halfSpacing) var(--spacing);
 			text-transform: uppercase;
 			font-size: 1rem;
-			margin-bottom: var(--spacing);
+			// margin-bottom: var(--spacing);
 			border-bottom: var(--border);
-			padding-bottom: var(--halfSpacing);
 			text-decoration: none;
 			&:hover {
+				background: rgba(255, 255, 255, 0.1);
 				border-color: var(--linkHoverColor);
 			}
-			&::after {
-				top: 40%;
+		}
+	}
+	.home-section-contents {
+		padding: var(--spacing);
+	}
+	.home-section-footer {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.home-section-expand {
+		border-top: var(--border);
+		border-left: var(--border);
+		padding: 10px;
+		svg {
+			height: 24px;
+			width: 24px;
+		}
+		&:hover {
+			border-color: var(--linkHoverColor);
+			svg {
+				color: var(--linkHoverColor);
 			}
 		}
 	}
