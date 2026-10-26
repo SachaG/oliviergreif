@@ -1,31 +1,31 @@
-- id: "ogreif"
+- id: ogreif
   titre: Olivier 1
   image: ogreif.jpg
 
-- id: "ogreif2"
+- id: ogreif2
   titre: Olivier 2
   image: ogreif2.jpg
 
-- id: "ogreif3"
+- id: ogreif3
   titre: Olivier 3
   image: ogreif3.jpg
 
-- id: "ogreif4"
+- id: ogreif4
   titre: Olivier 4
   image: ogreif4.jpg
 
-- id: "ogreif5"
+- id: ogreif5
   titre: Olivier 5
   image: ogreif5.jpg
 
-- id: "ogreif6"
+- id: ogreif6
   titre: Olivier 6
   image: ogreif6.jpg
 
-- id: "ogreif7"
+- id: ogreif7
   titre: Olivier 7
   image: ogreif7.jpg
 
-- id: "ogreif8"
+- id: ogreif8
   titre: Olivier 8
   image: ogreif8.jpg

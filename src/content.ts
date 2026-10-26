@@ -121,7 +121,8 @@ export type ItemWithId =
 	| ConcertWithId
 	| DisqueWithId
 	| EditeurWithId
-	| ActualiteWithId;
+	| ActualiteWithId
+	| PhotoWithId;
 
 export type Section<T> = {
 	id: string;
@@ -380,6 +381,14 @@ export const getLiens = () => liens as LienExterne[];
 export const getPhotos = () => decorate<Photo>(photos, "photos");
 
 export const getPhoto = (id: string) => getter<PhotoWithId>(id, getPhotos());
+export const getPhotoBySlug = (slug: string) =>
+	getPhotos().find((p) => p.slug === slug);
+
+export const getPhotoThumbnailUrl = (photo: Photo) =>
+	`/images/photos/thumbnails/${photo.image}`;
+
+// TODO: point to /images/photos/fullsize/ once full-size images are in place
+export const getPhotoFullsizeUrl = (photo: Photo) => getPhotoThumbnailUrl(photo);
 
 // Sections
 

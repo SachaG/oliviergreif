@@ -1,14 +1,15 @@
 ---
-import { getPhoto } from "../../content";
+import { getPath, getPhoto, getPhotoThumbnailUrl } from "../../content";
+import Link from "../Link.astro";
 
 const { id } = Astro.props;
 
 const photo = getPhoto(id);
-const { image, titre } = photo;
+const { titre } = photo;
 ---
 
-<a class="thumbnail" href={`/images/photos/fullsize/${image}`} target="_blank"
-	><img alt={titre} src={`/images/photos/thumbnails/${image}`} /></a
+<Link class="thumbnail" href={getPath(photo)}
+	><img alt={titre} src={getPhotoThumbnailUrl(photo)} /></Link
 >
 
 <style>

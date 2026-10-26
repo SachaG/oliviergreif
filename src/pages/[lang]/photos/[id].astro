@@ -1,0 +1,44 @@
+---
+import PageLayout from "../../../components/layouts/PageLayout.astro";
+import {
+	getPhotoBySlug,
+	getPhotoFullsizeUrl,
+	getPhotos,
+	getSectionPath,
+	SectionId,
+} from "../../../content";
+import { getItemsStaticPaths } from "../../../helpers";
+import Layout from "../../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+	return getItemsStaticPaths(getPhotos());
+}
+
+const { id: slug } = Astro.params;
+const photo = getPhotoBySlug(slug)!;
+const { titre } = photo;
+---
+
+<Layout title={titre}>
+	<PageLayout
+		sectionId={SectionId.PHOTOS}
+		parentPath={getSectionPath(SectionId.PHOTOS)}
+	>
+		<h2 slot="page-heading">
+			{titre}
+		</h2>
+		<figure class="photo-fullsize" slot="page-content">
+			<img alt={titre} src={getPhotoFullsizeUrl(photo)} />
+		</figure>
+	</PageLayout>
+</Layout>
+
+<style>
+	.photo-fullsize {
+		margin: 0;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+</style>
