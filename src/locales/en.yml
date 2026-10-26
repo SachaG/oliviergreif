@@ -33,7 +33,7 @@ strings:
     - key: concerts
       t: Concerts
     - key: disques
-      t: Discs
+      t: Records
     - key: editeurs
       t: Publishers
     - key: actualites

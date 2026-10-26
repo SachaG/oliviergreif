@@ -34,7 +34,9 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 
 <div
 	class={`page page-${hasSidebar ? "withSidebar" : "noSidebar"}`}
-	style={sectionId ? `view-transition-name: section-${sectionId};` : undefined}
+	style={
+		sectionId ? `view-transition-name: section-${sectionId};` : undefined
+	}
 >
 	<div class="page-heading">
 		<div class="page-heading-breadcrumbs">
@@ -148,7 +150,7 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 			text-decoration: none;
 		}
 		h2 {
-			font-size: 2rem;
+			font-size: 1.6rem;
 			@include breakpointUnder(lg) {
 				font-size: 1.4rem;
 			}
