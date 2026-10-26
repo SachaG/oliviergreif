@@ -12,6 +12,16 @@ strings:
       t: All works
     - key: error_404
       t: Error 404
+    - key: changer_de_langue
+      t: Change language
+    - key: a_venir
+      t: Coming soon…
+    - key: site_description
+      t: Official website of composer and pianist Olivier Greif (1950-2000) — catalog of works, concerts, recordings and biography.
+    - key: home.sous_titre
+      t: Pianist and Composer
+    - key: home.citation
+      t: “A day will come – I will no longer be of this world – when my music will overwhelm you with its obviousness.”
     - key: error_404_description
       t: The requested content could not be found.
 
@@ -42,22 +52,20 @@ strings:
       t: Photos
     - key: a_propos
       t: About
-    - key: liens
-      t: Links
-    - key: contact
-      t: Contact
 
     # catalog info
     - key: catalogue.opus
       t: Opus
+    - key: catalogue.formations
+      t: Ensembles
     - key: catalogue.formation
-      t: Formation
+      t: Ensemble
     - key: catalogue.textes
       t: Texts
     - key: catalogue.creation
       t: Creation
     - key: catalogue.duree
-      t: Durée
+      t: Duration
     - key: catalogue.annee
       t: Year
     - key: catalogue.texte
@@ -90,12 +98,28 @@ strings:
     # instruments
     - key: oeuvre
       t: work
+      tPlural: works
     - key: oeuvres
       t: works
     - key: instrument
       t: Instrument
+      tPlural: Instruments
     - key: instruments
       t: Instruments
+    - key: violon
+      t: Violin
+    - key: alto
+      t: Viola
+    - key: violoncelle
+      t: Cello
+    - key: voix
+      t: Voice
+    - key: vents
+      t: Winds
+    - key: cuivres
+      t: Brass
+    - key: percussions
+      t: Percussion
     - key: autres-instruments
       t: Other Instruments
     - key: clavier-et-orgue
@@ -261,6 +285,12 @@ strings:
       t: Amazon Music
     - key: discogs
       t: Discogs
+    - key: youtube_music
+      t: YouTube Music
+    - key: deezer
+      t: Deezer
+    - key: ebay
+      t: eBay
 
     # biographie
     - key: biographie.short

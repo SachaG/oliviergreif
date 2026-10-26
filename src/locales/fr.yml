@@ -12,6 +12,16 @@ strings:
       t: Toutes les oeuvres
     - key: error_404
       t: Erreur 404
+    - key: changer_de_langue
+      t: Changer de langue
+    - key: a_venir
+      t: À venir…
+    - key: site_description
+      t: Site officiel du compositeur et pianiste Olivier Greif (1950-2000) — catalogue des œuvres, concerts, disques et biographie.
+    - key: home.sous_titre
+      t: Pianiste et Compositeur
+    - key: home.citation
+      t: “Un jour viendra – je ne serai plus de ce monde – où ma musique vous submergera de son évidence.”
     - key: error_404_description
       t: La page demandée n'a pas pu être trouvée.
 
@@ -42,14 +52,12 @@ strings:
       t: Photos
     - key: a_propos
       t: À Propos
-    - key: liens
-      t: Liens
-    - key: contact
-      t: Contact
 
     # catalog info
     - key: catalogue.opus
       t: Opus
+    - key: catalogue.formations
+      t: Formations
     - key: catalogue.formation
       t: Formation
     - key: catalogue.textes
@@ -71,6 +79,8 @@ strings:
       t: Écouter
     - key: acheter
       t: Acheter
+    - key: critiques
+      t: Critiques
     - key: catalogue.categories
       t: Catégories
     - key: catalogue.instruments
@@ -88,12 +98,28 @@ strings:
     # instruments
     - key: oeuvre
       t: œuvre
+      tPlural: œuvres
     - key: oeuvres
       t: œuvres
     - key: instrument
       t: Instrument
+      tPlural: Instruments
     - key: instruments
       t: Instruments
+    - key: violon
+      t: Violon
+    - key: alto
+      t: Alto
+    - key: violoncelle
+      t: Violoncelle
+    - key: voix
+      t: Voix
+    - key: vents
+      t: Vents
+    - key: cuivres
+      t: Cuivres
+    - key: percussions
+      t: Percussions
     - key: autres-instruments
       t: Autres Instruments
     - key: clavier-et-orgue
@@ -255,6 +281,12 @@ strings:
       t: Amazon Music
     - key: discogs
       t: Discogs
+    - key: youtube_music
+      t: YouTube Music
+    - key: deezer
+      t: Deezer
+    - key: ebay
+      t: eBay
 
     # biographie
     - key: biographie.short
