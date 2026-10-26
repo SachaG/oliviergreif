@@ -401,6 +401,11 @@
   oeuvres:
       - Concerto pour Violoncelle “Durch Adams Fall”
       - Sonate de Requiem
+  ecouter:
+      - id: spotify
+        url: https://open.spotify.com/album/0CdOEl4OiIW2h0fzrfuILv
+      - id: youtube
+        url: https://www.youtube.com/watch?v=mss34gFbW5s&list=RDmss34gFbW5s&start_radio=1
   acheter:
       - id: amazon
         url: https://www.amazon.fr/Olivier-Greif-Par-Chute-dAdam/dp/B003F1UX2G

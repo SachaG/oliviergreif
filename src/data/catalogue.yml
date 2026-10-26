@@ -3233,7 +3233,11 @@
 
 - opus: "323"
   titre: "Le Livre des Saints Irlandais"
+  titre_i18n:
+      en: The Book of Irish Saints
   id: "le_livre_des_saints_irlandais"
+  id_i18n:
+      en: the_book_of_irish_saints
   categorie: melodies
   formation: "Voix et piano"
   instruments: [voix, piano]
