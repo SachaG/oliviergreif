@@ -1,16 +1,16 @@
 ---
-import Disque from "../../../components/disques/Disque.compact.astro";
+import Disque from "@components/disques/Disque.compact.astro";
 import {
 	getDisques,
 	getItemsByYear,
 	getString,
 	SectionId,
-} from "../../../content";
-import PageLayout from "../../../components/layouts/PageLayout.astro";
-import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
-import type { DisqueWithId } from "../../../types";
-import Layout from "../../../layouts/Layout.astro";
-import { getLocale, getLocaleStaticPaths } from "../../../i18n";
+} from "@/content";
+import PageLayout from "@components/layouts/PageLayout.astro";
+import SubgridLayout from "@components/layouts/SubgridLayout.astro";
+import type { DisqueWithId } from "@/types";
+import Layout from "@layouts/Layout.astro";
+import { getLocale, getLocaleStaticPaths } from "@/i18n";
 
 export const getStaticPaths = () => getLocaleStaticPaths();
 

@@ -1,11 +1,11 @@
 ---
-import { getEditeurs, getSectionPath, SectionId } from "../../content";
+import { getEditeurs, getSectionPath, SectionId } from "@/content";
 const { currentEditeurId, limit } = Astro.props;
-import { capitalizeFirstLetter } from "../../content";
-import { getEditeurCatalogLink } from "../../content";
-import SidebarBlock from "../SidebarBlock.astro";
-import T from "../T.astro";
-import LinkItem from "../../components/LinkItem.astro";
+import { capitalizeFirstLetter } from "@/content";
+import { getEditeurCatalogLink } from "@/content";
+import SidebarBlock from "@components/SidebarBlock.astro";
+import T from "@components/T.astro";
+import LinkItem from "@components/LinkItem.astro";
 
 const editeurs = getEditeurs();
 

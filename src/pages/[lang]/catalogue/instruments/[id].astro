@@ -1,6 +1,6 @@
 ---
-import Oeuvre from "../../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
-import AllCatalog from "../../../../components/catalogue/AllCatalog.astro";
+import Oeuvre from "@components/catalogue/oeuvre/Oeuvre.compact.astro";
+import AllCatalog from "@components/catalogue/AllCatalog.astro";
 import {
 	capitalizeFirstLetter,
 	getInstrumentsGroups,
@@ -10,20 +10,20 @@ import {
 	convertTitle,
 	getCatalogue,
 	getSectionPath,
-} from "../../../../content";
-import Layout from "../../../../layouts/Layout.astro";
-import type { WithSlug } from "../../../../types";
-import Instruments from "../../../../components/catalogue/Instruments.astro";
-import SubgridLayout from "../../../../components/layouts/SubgridLayout.astro";
-import T from "../../../../components/T.astro";
-import PageLayout from "../../../../components/layouts/PageLayout.astro";
-import Categories from "../../../../components/catalogue/Categories.astro";
-import Editeurs from "../../../../components/catalogue/Editeurs.astro";
-import Search from "../../../../components/catalogue/Search.astro";
-import { getItemsStaticPaths } from "../../../../helpers";
-import { getLocale } from "../../../../i18n";
-import SubgridWrapper from "../../../../components/layouts/SubgridWrapper.astro";
-import { byNumberOfInstruments } from "../../../../helpers";
+} from "@/content";
+import Layout from "@layouts/Layout.astro";
+import type { WithSlug } from "@/types";
+import Instruments from "@components/catalogue/Instruments.astro";
+import SubgridLayout from "@components/layouts/SubgridLayout.astro";
+import T from "@components/T.astro";
+import PageLayout from "@components/layouts/PageLayout.astro";
+import Categories from "@components/catalogue/Categories.astro";
+import Editeurs from "@components/catalogue/Editeurs.astro";
+import Search from "@components/catalogue/Search.astro";
+import { getItemsStaticPaths } from "@/helpers";
+import { getLocale } from "@/i18n";
+import SubgridWrapper from "@components/layouts/SubgridWrapper.astro";
+import { byNumberOfInstruments } from "@/helpers";
 
 const { id } = Astro.params;
 const instrumentGroupId = id as keyof typeof instrumentGroups;
@@ -45,10 +45,10 @@ const catalogueByNumberOfInstruments = byNumberOfInstruments(catalogue);
 const locale = getLocale(Astro.currentLocale);
 ---
 
-<script src="../../../../scripts/search.ts"></script>
+<script src="@scripts/search.ts"></script>
 
 <script>
-	import { convertTitle } from "../../../../helpers";
+	import { convertTitle } from "@/helpers";
 
 	// Find our component DOM on the page.
 	const checkboxes =

@@ -1,11 +1,11 @@
 ---
-import { getConcert, getSectionPath, SectionId } from "../../content";
-import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
-import Date from "../Date.astro";
-import Field from "../Field.astro";
-import PageLayout from "../layouts/PageLayout.astro";
-import T from "../T.astro";
-import Link from "../Link.astro";
+import { getConcert, getSectionPath, SectionId } from "@/content";
+import CatalogueRelated from "@components/catalogue/CatalogueRelated.astro";
+import Date from "@components/Date.astro";
+import Field from "@components/Field.astro";
+import PageLayout from "@components/layouts/PageLayout.astro";
+import T from "@components/T.astro";
+import Link from "@components/Link.astro";
 
 const { id, variant = "full" } = Astro.props;
 const concert = getConcert(id);

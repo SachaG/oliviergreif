@@ -1,8 +1,8 @@
 ---
-import { getActualite, getPath } from "../../content";
-import { truncateWords } from "../../helpers";
-import Date from "../Date.astro";
-import FeedItemHeading from "../FeedItemHeading.astro";
+import { getActualite, getPath } from "@/content";
+import { truncateWords } from "@/helpers";
+import Date from "@components/Date.astro";
+import FeedItemHeading from "@components/FeedItemHeading.astro";
 
 const { id, truncate = false } = Astro.props;
 const actualite = getActualite(id);

@@ -3,12 +3,12 @@
 // the right version is shown client-side based on the requested path.
 // Requests for unprefixed paths (e.g. old "/concerts" links) are redirected
 // to the same path in the visitor's preferred locale instead.
-import Layout from "../layouts/Layout.astro";
-import PageLayout from "../components/layouts/PageLayout.astro";
-import LocaleRedirect from "../components/LocaleRedirect.astro";
-import { getString } from "../content";
-import T from "../components/T.astro";
-import { defaultLocale, localeCodes, locales } from "../i18n";
+import Layout from "@layouts/Layout.astro";
+import PageLayout from "@components/layouts/PageLayout.astro";
+import LocaleRedirect from "@components/LocaleRedirect.astro";
+import { getString } from "@/content";
+import T from "@components/T.astro";
+import { defaultLocale, localeCodes, locales } from "@/i18n";
 
 const titles = Object.fromEntries(
 	locales.map((locale) => [

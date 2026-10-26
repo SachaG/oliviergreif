@@ -5,10 +5,10 @@ import type {
 	GetStaticPaths,
 } from "astro";
 
-import Oeuvre from "../../../components/catalogue/oeuvre/Oeuvre.astro";
-import { getCatalogue, getOeuvre, getOeuvreBySlug } from "../../../content";
-import Layout from "../../../layouts/Layout.astro";
-import { getItemIdFromSlug, getItemsStaticPaths } from "../../../helpers";
+import Oeuvre from "@components/catalogue/oeuvre/Oeuvre.astro";
+import { getCatalogue, getOeuvre, getOeuvreBySlug } from "@/content";
+import Layout from "@layouts/Layout.astro";
+import { getItemIdFromSlug, getItemsStaticPaths } from "@/helpers";
 
 export const getStaticPaths = (async () => {
 	const catalogue = await getCatalogue();

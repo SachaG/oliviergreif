@@ -1,6 +1,6 @@
 ---
-import { convertTitle } from "../../content";
-import Link from "../Link.astro";
+import { convertTitle } from "@/content";
+import Link from "@components/Link.astro";
 
 const { formation, currentFormationId } = Astro.props;
 const isCurrent = convertTitle(formation) === currentFormationId;

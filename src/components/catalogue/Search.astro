@@ -1,7 +1,7 @@
 ---
-import SidebarBlock from "../SidebarBlock.astro";
-import { getString } from "../../content";
-import { getLocale } from "../../i18n";
+import SidebarBlock from "@components/SidebarBlock.astro";
+import { getString } from "@/content";
+import { getLocale } from "@/i18n";
 
 const locale = getLocale(Astro.currentLocale);
 ---
@@ -16,12 +16,15 @@ const locale = getLocale(Astro.currentLocale);
 	/>
 </SidebarBlock>
 
-<style>
+<style lang="scss" type="text/scss">
 	input {
 		background: none;
 		border-radius: 0;
 		border: var(--border);
 		padding: var(--quarterSpacing);
 		font-family: var(--fontFamilySecondary);
+		&::placeholder {
+			color: var(--textColor);
+		}
 	}
 </style>

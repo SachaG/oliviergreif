@@ -1,8 +1,8 @@
 ---
-import Footer from "../components/Footer.astro";
-import Nav from "../components/Nav.astro";
+import Footer from "@components/Footer.astro";
+import Nav from "@components/Nav.astro";
 // import { ClientRouter } from "astro:transitions";
-import { getString } from "../content";
+import { getString } from "@/content";
 import {
 	defaultLocale,
 	getLocale,
@@ -10,7 +10,7 @@ import {
 	localizePath,
 	locales,
 	unlocalizePath,
-} from "../i18n";
+} from "@/i18n";
 // import { fade } from "astro:transitions";
 
 interface Props {
@@ -129,7 +129,7 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 </script>
 
 <style lang="scss" is:global>
-	@use "../styles/_breakpoints.scss" as *;
+	@use "@styles/_breakpoints.scss" as *;
 	/* https://www.joshwcomeau.com/css/custom-css-reset/
 		*/
 	/*

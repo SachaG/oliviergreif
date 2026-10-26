@@ -1,8 +1,8 @@
 ---
-import Editeur from "../../../components/editeurs/Editeur.astro";
-import { getEditeurBySlug, getEditeurs } from "../../../content";
-import { getItemsStaticPaths } from "../../../helpers";
-import Layout from "../../../layouts/Layout.astro";
+import Editeur from "@components/editeurs/Editeur.astro";
+import { getEditeurBySlug, getEditeurs } from "@/content";
+import { getItemsStaticPaths } from "@/helpers";
+import Layout from "@layouts/Layout.astro";
 
 export function getStaticPaths() {
 	return getItemsStaticPaths(getEditeurs());

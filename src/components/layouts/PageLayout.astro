@@ -1,11 +1,11 @@
 ---
-import { getSection2, SectionId } from "../../content";
-import T from "../T.astro";
-import Link from "../Link.astro";
-import LanguageSwitcher from "../LanguageSwitcher.astro";
-import type { Locale } from "../../i18n";
-import { getSectionIcon } from "../../icons";
-import ArrowIcon from "../icons/ArrowIcon.astro";
+import { getSection2, SectionId } from "@/content";
+import T from "@components/T.astro";
+import Link from "@components/Link.astro";
+import LanguageSwitcher from "@components/LanguageSwitcher.astro";
+import type { Locale } from "@/i18n";
+import { getSectionIcon } from "@/icons";
+import ArrowIcon from "@components/icons/ArrowIcon.astro";
 
 interface Props {
 	sectionId?: SectionId;
@@ -85,7 +85,7 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 </div>
 
 <style lang="scss" is:global>
-	@use "../../styles/_breakpoints.scss" as *;
+	@use "@styles/_breakpoints.scss" as *;
 
 	.page {
 		min-height: 100vh;

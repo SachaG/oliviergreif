@@ -1,8 +1,8 @@
 ---
-import { getDisque, getPath } from "../../content";
-import CatalogueRelated from "../catalogue/CatalogueRelated.compact.astro";
-import FeedItemHeading from "../FeedItemHeading.astro";
-import DisqueCover from "./DisqueCover.astro";
+import { getDisque, getPath } from "@/content";
+import CatalogueRelated from "@components/catalogue/CatalogueRelated.compact.astro";
+import FeedItemHeading from "@components/FeedItemHeading.astro";
+import DisqueCover from "@components/disques/DisqueCover.astro";
 const { id } = Astro.props;
 const disque = getDisque(id);
 const {

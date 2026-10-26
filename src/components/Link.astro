@@ -3,7 +3,7 @@
 // "/catalogue" are prefixed with the current locale ("/fr/catalogue").
 // External URLs, files and already-localized paths are passed through as-is.
 import type { HTMLAttributes } from "astro/types";
-import { getLocale, localizePath, type Locale } from "../i18n";
+import { getLocale, localizePath, type Locale } from "@/i18n";
 
 type Props = HTMLAttributes<"a"> & {
 	// override the current locale (e.g. on the 404 page, which has no locale in its URL)

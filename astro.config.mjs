@@ -1,3 +1,4 @@
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "astro/config";
 import yaml from "@rollup/plugin-yaml";
 
@@ -7,6 +8,12 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   vite: {
       plugins: [yaml()],
+      resolve: {
+        // tsconfig "paths" only cover JS/TS imports; Sass @use needs a Vite alias
+        alias: {
+          "@styles": fileURLToPath(new URL("./src/styles", import.meta.url)),
+        },
+      },
 	},
 
   site: "https://ogreifv2.sachagreif.com",

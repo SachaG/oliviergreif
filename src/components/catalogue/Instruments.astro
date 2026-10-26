@@ -1,11 +1,11 @@
 ---
-import { getInstrumentsGroups, getSectionPath, SectionId } from "../../content";
+import { getInstrumentsGroups, getSectionPath, SectionId } from "@/content";
 const { currentInstrumentId, limit, enableShowMore } = Astro.props;
-import { capitalizeFirstLetter } from "../../content";
-import { getInstrumentGroupLink } from "../../content";
-import LinkItem from "../LinkItem.astro";
-import SidebarBlock from "../SidebarBlock.astro";
-import T from "../T.astro";
+import { capitalizeFirstLetter } from "@/content";
+import { getInstrumentGroupLink } from "@/content";
+import LinkItem from "@components/LinkItem.astro";
+import SidebarBlock from "@components/SidebarBlock.astro";
+import T from "@components/T.astro";
 
 const allInstrumentGroups = getInstrumentsGroups();
 const instrumentGroups = limit

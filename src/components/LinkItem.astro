@@ -1,6 +1,6 @@
 ---
 const { path, content } = Astro.props;
-import Link from "./Link.astro";
+import Link from "@components/Link.astro";
 ---
 
 <Link class="link-heading link-item" href={path}>{content}<slot /></Link>

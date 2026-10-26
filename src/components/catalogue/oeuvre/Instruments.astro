@@ -1,10 +1,10 @@
 ---
-import { capitalizeFirstLetter, getInstrumentLink } from "../../../content";
-import type { OeuvreWithId } from "../../../types";
-import { getString } from "../../../content";
+import { capitalizeFirstLetter, getInstrumentLink } from "@/content";
+import type { OeuvreWithId } from "@/types";
+import { getString } from "@/content";
 import uniq from "lodash/uniq.js";
-import { getLocale } from "../../../i18n";
-import Link from "../../Link.astro";
+import { getLocale } from "@/i18n";
+import Link from "@components/Link.astro";
 
 interface Props {
 	oeuvre: OeuvreWithId;

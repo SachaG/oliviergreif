@@ -1,9 +1,9 @@
 ---
-import { getCatalogue, getSectionPath, SectionId } from "../../content";
-import LinkItem from "../LinkItem.astro";
-import T from "../T.astro";
-import Categories from "./Categories.astro";
-import Instruments from "./Instruments.astro";
+import { getCatalogue, getSectionPath, SectionId } from "@/content";
+import LinkItem from "@components/LinkItem.astro";
+import T from "@components/T.astro";
+import Categories from "@components/catalogue/Categories.astro";
+import Instruments from "@components/catalogue/Instruments.astro";
 
 const catalogue = getCatalogue();
 ---
@@ -29,7 +29,7 @@ const catalogue = getCatalogue();
 </div>
 
 <style lang="scss" is:global>
-	@use "../../styles/_breakpoints.scss" as *;
+	@use "@styles/_breakpoints.scss" as *;
 	.catalogue-section {
 		display: flex;
 		flex-direction: column;

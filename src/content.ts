@@ -1,11 +1,11 @@
 import slugify from "slugify";
-// import catalogue_ from "./data/catalogue.yml";
-import { generateSlug, getItemSlug, intersection } from "./helpers";
+// import catalogue_ from "@data/catalogue.yml";
+import { generateSlug, getItemSlug, intersection } from "@/helpers";
 import sortBy from "lodash/sortBy";
 
-import fr from "./locales/fr.yml";
-import en from "./locales/en.yml";
-import { defaultLocale, localeCodes, type Locale } from "./i18n";
+import fr from "@locales/fr.yml";
+import en from "@locales/en.yml";
+import { defaultLocale, localeCodes, type Locale } from "@/i18n";
 
 import type {
 	WithSlug,
@@ -25,12 +25,12 @@ import type {
 	EditeurWithCount,
 	LienExterne,
 	OeuvreReference,
-} from "./types";
-// import OeuvreComponent from "./components/catalogue/oeuvre/Oeuvre.astro";
-// import DisqueComponent from "./components/disques/Disque.astro";
-// import EditeurComponent from "./components/editeurs/Editeur.astro";
-// import ActualiteComponent from "./components/actualites/Actualite.astro";
-// import ConcertComponent from "./components/concerts/Concert.astro";
+} from "@/types";
+// import OeuvreComponent from "@components/catalogue/oeuvre/Oeuvre.astro";
+// import DisqueComponent from "@components/disques/Disque.astro";
+// import EditeurComponent from "@components/editeurs/Editeur.astro";
+// import ActualiteComponent from "@components/actualites/Actualite.astro";
+// import ConcertComponent from "@components/concerts/Concert.astro";
 
 export const instrumentGroups = {
 	violon: ["violon"],
@@ -401,7 +401,7 @@ export function capitalizeFirstLetter(s: string) {
 
 // FooterLinks
 
-import footerLinks from "./data/footer_links.yml";
+import footerLinks from "@data/footer_links.yml";
 
 type FooterLinks = {
 	id: string;
@@ -497,15 +497,15 @@ export const getSection2 = (sectionId: SectionId) => {
 	return section;
 };
 
-import CatalogueSection from "./components/catalogue/CatalogueSection.astro";
-import DisquesSection from "./components/disques/DisquesSection.astro";
-import ConcertsSection from "./components/concerts/ConcertsSection.astro";
-import ActualitesSection from "./components/actualites/ActualitesSection.astro";
-import BiographieSection from "./components/biographie/BiographieSection.astro";
-import MediaSection from "./components/media/MediaSection.astro";
-import PhotosSection from "./components/photos/PhotosSection.astro";
+import CatalogueSection from "@components/catalogue/CatalogueSection.astro";
+import DisquesSection from "@components/disques/DisquesSection.astro";
+import ConcertsSection from "@components/concerts/ConcertsSection.astro";
+import ActualitesSection from "@components/actualites/ActualitesSection.astro";
+import BiographieSection from "@components/biographie/BiographieSection.astro";
+import MediaSection from "@components/media/MediaSection.astro";
+import PhotosSection from "@components/photos/PhotosSection.astro";
 import { getCollection } from "astro:content";
-import { compact, uniq } from "./helpers";
+import { compact, uniq } from "@/helpers";
 
 const sectionComponents: { [key in SectionId]?: any } = {
 	[SectionId.CATALOGUE]: CatalogueSection,

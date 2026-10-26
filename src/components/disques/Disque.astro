@@ -1,9 +1,9 @@
 ---
-import { getDisque } from "../../content";
-import { getDomain } from "../../helpers";
-import CatalogueRelated from "../catalogue/CatalogueRelated.astro";
-import Field from "../Field.astro";
-import DisqueCover from "./DisqueCover.astro";
+import { getDisque } from "@/content";
+import { getDomain } from "@/helpers";
+import CatalogueRelated from "@components/catalogue/CatalogueRelated.astro";
+import Field from "@components/Field.astro";
+import DisqueCover from "@components/disques/DisqueCover.astro";
 const { id } = Astro.props;
 const disque = getDisque(id);
 const {

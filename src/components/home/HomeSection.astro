@@ -1,13 +1,13 @@
 ---
 import { fade, slide } from "astro:transitions";
-import T from "../T.astro";
+import T from "@components/T.astro";
 import {
 	getSectionPath,
 	customTransition,
 	getSectionComponent,
-} from "../../content";
-import Link from "../Link.astro";
-import PlusIcon from "../icons/PlusIcon.astro";
+} from "@/content";
+import Link from "@components/Link.astro";
+import PlusIcon from "@components/icons/PlusIcon.astro";
 const { sectionId, color, inverted } = Astro.props;
 
 const SectionComponent = getSectionComponent(sectionId);

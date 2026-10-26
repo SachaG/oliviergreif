@@ -4,7 +4,7 @@ import { defineCollection, reference, z } from "astro:content";
 // 2. Import loader(s)
 import { glob, file } from "astro/loaders";
 
-import catalogueData from "./data/catalogue.yml";
+import catalogueData from "@data/catalogue.yml";
 
 // let other collections reference catalogue items by title as well as by id
 const catalogueIdsByTitle = new Map<string, string>(

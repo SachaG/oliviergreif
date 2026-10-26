@@ -1,14 +1,14 @@
 ---
-import Actualite from "../../../components/actualites/Actualite.compact.astro";
-import PageLayout from "../../../components/layouts/PageLayout.astro";
+import Actualite from "@components/actualites/Actualite.compact.astro";
+import PageLayout from "@components/layouts/PageLayout.astro";
 import {
 	getActualites,
 	getConcerts,
 	getString,
 	SectionId,
-} from "../../../content";
-import Layout from "../../../layouts/Layout.astro";
-import { getLocale, getLocaleStaticPaths } from "../../../i18n";
+} from "@/content";
+import Layout from "@layouts/Layout.astro";
+import { getLocale, getLocaleStaticPaths } from "@/i18n";
 
 export const getStaticPaths = () => getLocaleStaticPaths();
 

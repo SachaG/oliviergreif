@@ -1,9 +1,9 @@
 ---
-import Actualite from "../../../components/actualites/Actualite.astro";
-import { getActualiteBySlug, getActualites, getString } from "../../../content";
-import { getItemsStaticPaths } from "../../../helpers";
-import Layout from "../../../layouts/Layout.astro";
-import { getLocale } from "../../../i18n";
+import Actualite from "@components/actualites/Actualite.astro";
+import { getActualiteBySlug, getActualites, getString } from "@/content";
+import { getItemsStaticPaths } from "@/helpers";
+import Layout from "@layouts/Layout.astro";
+import { getLocale } from "@/i18n";
 
 export function getStaticPaths() {
 	return getItemsStaticPaths(getActualites());

@@ -1,8 +1,8 @@
 ---
-import { getCatalogue } from "../../content";
-import { getEditeur, getPath } from "../../content";
-import FeedItemHeading from "../FeedItemHeading.astro";
-import T from "../T.astro";
+import { getCatalogue } from "@/content";
+import { getEditeur, getPath } from "@/content";
+import FeedItemHeading from "@components/FeedItemHeading.astro";
+import T from "@components/T.astro";
 
 const { id } = Astro.props;
 const editeur = getEditeur(id);

@@ -1,6 +1,6 @@
 import slugify from "slugify";
-import type { OeuvreWithId, WithId, WithSlug } from "./types";
-import { locales } from "./i18n";
+import type { OeuvreWithId, WithId, WithSlug } from "@/types";
+import { locales } from "@/i18n";
 
 // see https://youmightnotneed.com/lodash#intersection
 export const intersection = (arr: any[], ...args: any[]) =>

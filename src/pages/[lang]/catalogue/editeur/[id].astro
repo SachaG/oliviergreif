@@ -1,26 +1,26 @@
 ---
-import Oeuvre from "../../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
+import Oeuvre from "@components/catalogue/oeuvre/Oeuvre.compact.astro";
 import {
 	getEditeur,
 	getEditeurs,
 	getSectionPath,
 	getString,
 	SectionId,
-} from "../../../../content";
-import { getCatalogue } from "../../../../content";
-import Layout from "../../../../layouts/Layout.astro";
-import Instruments from "../../../../components/catalogue/Instruments.astro";
-import T from "../../../../components/T.astro";
-import PageLayout from "../../../../components/layouts/PageLayout.astro";
-import SubgridWrapper from "../../../../components/layouts/SubgridWrapper.astro";
-import SubgridLayout from "../../../../components/layouts/SubgridLayout.astro";
-import Categories from "../../../../components/catalogue/Categories.astro";
-import AllCatalog from "../../../../components/catalogue/AllCatalog.astro";
-import Editeurs from "../../../../components/catalogue/Editeurs.astro";
-import Search from "../../../../components/catalogue/Search.astro";
-import { getItemIdFromSlug, getItemsStaticPaths } from "../../../../helpers";
-import { getLocale } from "../../../../i18n";
-import { byNumberOfInstruments } from "../../../../helpers";
+} from "@/content";
+import { getCatalogue } from "@/content";
+import Layout from "@layouts/Layout.astro";
+import Instruments from "@components/catalogue/Instruments.astro";
+import T from "@components/T.astro";
+import PageLayout from "@components/layouts/PageLayout.astro";
+import SubgridWrapper from "@components/layouts/SubgridWrapper.astro";
+import SubgridLayout from "@components/layouts/SubgridLayout.astro";
+import Categories from "@components/catalogue/Categories.astro";
+import AllCatalog from "@components/catalogue/AllCatalog.astro";
+import Editeurs from "@components/catalogue/Editeurs.astro";
+import Search from "@components/catalogue/Search.astro";
+import { getItemIdFromSlug, getItemsStaticPaths } from "@/helpers";
+import { getLocale } from "@/i18n";
+import { byNumberOfInstruments } from "@/helpers";
 
 export const getStaticPaths = async () => {
 	return getItemsStaticPaths(getEditeurs());
@@ -37,7 +37,7 @@ const catalogueByEditeur = byNumberOfInstruments(catalogue);
 const locale = getLocale(Astro.currentLocale);
 ---
 
-<script src="../../../../scripts/search.ts"></script>
+<script src="@scripts/search.ts"></script>
 
 <Layout title={`${getString("catalogue", { locale })?.t} (${titre})`}>
 	<PageLayout

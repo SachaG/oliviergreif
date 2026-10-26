@@ -1,3 +1,17 @@
 {
-	"extends": "astro/tsconfigs/strict"
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		// Astro turns these into Vite aliases, so they work in .astro, .ts and Sass files
+		"paths": {
+			"@components/*": ["./src/components/*"],
+			"@layouts/*": ["./src/layouts/*"],
+			"@content/*": ["./src/content/*"],
+			"@data/*": ["./src/data/*"],
+			"@locales/*": ["./src/locales/*"],
+			"@scripts/*": ["./src/scripts/*"],
+			"@styles/*": ["./src/styles/*"],
+			// top-level modules: @/content, @/helpers, @/i18n, @/types, @/icons
+			"@/*": ["./src/*"]
+		}
+	}
 }

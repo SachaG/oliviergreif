@@ -1,17 +1,17 @@
 ---
-import Oeuvre from "../../../components/catalogue/oeuvre/Oeuvre.compact.astro";
-import { getItemsByYear, getString, SectionId } from "../../../content";
-import Layout from "../../../layouts/Layout.astro";
-import Instruments from "../../../components/catalogue/Instruments.astro";
-import Categories from "../../../components/catalogue/Categories.astro";
-import SubgridLayout from "../../../components/layouts/SubgridLayout.astro";
-import PageLayout from "../../../components/layouts/PageLayout.astro";
-import type { OeuvreWithId } from "../../../types";
-import Editeurs from "../../../components/catalogue/Editeurs.astro";
-import Search from "../../../components/catalogue/Search.astro";
-import { getCatalogue } from "../../../content";
-import T from "../../../components/T.astro";
-import { getLocale, getLocaleStaticPaths } from "../../../i18n";
+import Oeuvre from "@components/catalogue/oeuvre/Oeuvre.compact.astro";
+import { getItemsByYear, getString, SectionId } from "@/content";
+import Layout from "@layouts/Layout.astro";
+import Instruments from "@components/catalogue/Instruments.astro";
+import Categories from "@components/catalogue/Categories.astro";
+import SubgridLayout from "@components/layouts/SubgridLayout.astro";
+import PageLayout from "@components/layouts/PageLayout.astro";
+import type { OeuvreWithId } from "@/types";
+import Editeurs from "@components/catalogue/Editeurs.astro";
+import Search from "@components/catalogue/Search.astro";
+import { getCatalogue } from "@/content";
+import T from "@components/T.astro";
+import { getLocale, getLocaleStaticPaths } from "@/i18n";
 
 export const getStaticPaths = () => getLocaleStaticPaths();
 
@@ -21,7 +21,7 @@ const catalogueByYear = getItemsByYear<OeuvreWithId>(catalogue);
 const locale = getLocale(Astro.currentLocale);
 ---
 
-<script src="../../../scripts/search.ts"></script>
+<script src="@scripts/search.ts"></script>
 
 <Layout title={getString("catalogue", { locale })?.t}>
 	<PageLayout sectionId={SectionId.CATALOGUE} hasSidebar={true}>

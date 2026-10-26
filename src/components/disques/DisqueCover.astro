@@ -1,6 +1,6 @@
 ---
-import { getDisque, getPath } from "../../content";
-import Link from "../Link.astro";
+import { getDisque, getPath } from "@/content";
+import Link from "@components/Link.astro";
 const { id } = Astro.props;
 const disque = getDisque(id);
 const { titre, image } = disque;

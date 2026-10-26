@@ -1,11 +1,11 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-// import HomeBlock from "../../components/HomeBlock.astro";
-import { sections } from "../../content";
-import HomeSection from "../../components/home/HomeSection.astro";
-import Footer from "../../components/Footer.astro";
-import Title from "../../components/home/Title.astro";
-import { getLocaleStaticPaths } from "../../i18n";
+import Layout from "@layouts/Layout.astro";
+// import HomeBlock from "@components/HomeBlock.astro";
+import { sections } from "@/content";
+import HomeSection from "@components/home/HomeSection.astro";
+import Footer from "@components/Footer.astro";
+import Title from "@components/home/Title.astro";
+import { getLocaleStaticPaths } from "@/i18n";
 
 export const getStaticPaths = () => getLocaleStaticPaths();
 ---
@@ -23,7 +23,7 @@ export const getStaticPaths = () => getLocaleStaticPaths();
 </Layout>
 
 <style lang="scss" is:global>
-	@use "../../styles/_breakpoints.scss" as *;
+	@use "@styles/_breakpoints.scss" as *;
 
 	.home-sections {
 		background: var(--borderColor);

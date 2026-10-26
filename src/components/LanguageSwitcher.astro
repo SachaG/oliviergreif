@@ -1,13 +1,13 @@
 ---
 // Links to the current page in every other locale
-import { getString } from "../content";
+import { getString } from "@/content";
 import {
 	getLocale,
 	localeCodes,
 	localeNames,
 	locales,
 	switchPathLocale,
-} from "../i18n";
+} from "@/i18n";
 
 interface Props {
 	className?: string;
@@ -81,7 +81,6 @@ const label = getString("changer_de_langue", { locale: currentLocale }).t;
 	.language-switcher li + li::before {
 		content: "/";
 		margin-right: var(--halfSpacing);
-		opacity: 0.5;
 	}
 	.language-switcher a {
 		text-decoration: none;

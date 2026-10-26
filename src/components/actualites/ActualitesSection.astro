@@ -4,13 +4,13 @@ import {
 	getPath,
 	getSectionPath,
 	SectionId,
-} from "../../content";
-import { truncateWords } from "../../helpers";
-import Date from "../Date.astro";
-import FeedItemHeading from "../FeedItemHeading.astro";
-import T from "../T.astro";
-import Actualite from "./Actualite.compact.astro";
-import Link from "../Link.astro";
+} from "@/content";
+import { truncateWords } from "@/helpers";
+import Date from "@components/Date.astro";
+import FeedItemHeading from "@components/FeedItemHeading.astro";
+import T from "@components/T.astro";
+import Actualite from "@components/actualites/Actualite.compact.astro";
+import Link from "@components/Link.astro";
 
 const actus = getActualites();
 const actualite = actus.at(0)!;

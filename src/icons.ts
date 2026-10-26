@@ -1,11 +1,11 @@
-import DiscsIcon from "./components/icons/DiscsIcon.astro";
-import ArrowIcon from "./components/icons/ArrowIcon.astro";
-import PhotosIcon from "./components/icons/PhotosIcon.astro";
-import CatalogIcon from "./components/icons/CatalogIcon.astro";
-import BiographyIcon from "./components/icons/BiographyIcon.astro";
-import ConcertsIcon from "./components/icons/ConcertsIcon.astro";
-import ActualitesIcon from "./components/icons/ActualitesIcon.astro";
-import { SectionId } from "./content";
+import DiscsIcon from "@components/icons/DiscsIcon.astro";
+import ArrowIcon from "@components/icons/ArrowIcon.astro";
+import PhotosIcon from "@components/icons/PhotosIcon.astro";
+import CatalogIcon from "@components/icons/CatalogIcon.astro";
+import BiographyIcon from "@components/icons/BiographyIcon.astro";
+import ConcertsIcon from "@components/icons/ConcertsIcon.astro";
+import ActualitesIcon from "@components/icons/ActualitesIcon.astro";
+import { SectionId } from "@/content";
 
 const sectionIcons: { [key in SectionId]?: typeof DiscsIcon } = {
 	[SectionId.DISQUES]: DiscsIcon,
