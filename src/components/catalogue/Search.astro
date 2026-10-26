@@ -1,10 +1,18 @@
 ---
 import SidebarBlock from "../SidebarBlock.astro";
-import T from "../T.astro";
+import { getString } from "../../content";
+import { getLocale } from "../../i18n";
+
+const locale = getLocale(Astro.currentLocale);
 ---
 
 <SidebarBlock k="catalogue.rechercher">
-	<input id="searchInput" name="search" type="text" />
+	<input
+		id="searchInput"
+		name="search"
+		type="text"
+		aria-label={getString("catalogue.rechercher", { locale }).t}
+	/>
 </SidebarBlock>
 
 <style>

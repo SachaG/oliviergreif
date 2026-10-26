@@ -3,6 +3,7 @@ import { getOeuvre } from "../../../content";
 import { convertTitle, getPath } from "../../../content";
 import FeedItemHeading from "../../FeedItemHeading.astro";
 import Instruments from "./Instruments.astro";
+import T from "../../T.astro";
 const { id } = Astro.props;
 const oeuvre = getOeuvre(id);
 const {
@@ -20,8 +21,11 @@ const className = instruments
 	.join(" ");
 ---
 
-<div data-titre={titre} class={`catalogue-oeuvre visible ${className}`}>
-	<div class="opus">Opus {opus}</div>
+<div
+	data-titre={titre}
+	class={`search-item catalogue-oeuvre visible ${className}`}
+>
+	<div class="opus"><T k="catalogue.opus" /> {opus}</div>
 	<FeedItemHeading path={getPath(oeuvre)} content={titre} />
 
 	<main>
@@ -36,12 +40,6 @@ const className = instruments
 		margin-bottom: var(--eighthSpacing);
 	}
 
-	.visible {
-		display: block;
-	}
-	.hidden {
-		display: none;
-	}
 	h3 {
 		margin-bottom: var(--quarterSpacing);
 	}

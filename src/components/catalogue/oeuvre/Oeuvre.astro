@@ -8,6 +8,7 @@ import {
 	getPath,
 	SectionId,
 	getEditeurByTitle,
+	referencesOeuvre,
 } from "../../../content";
 import { getDomain, getItemIdFromSlug } from "../../../helpers";
 import Field from "../../Field.astro";
@@ -31,11 +32,11 @@ const {
 } = oeuvre;
 
 const concerts = getConcerts().filter((concert) =>
-	concert.oeuvres?.includes(titre)
+	referencesOeuvre(concert.oeuvres, oeuvre)
 );
 
 const disques = getDisques().filter((disque) =>
-	disque.oeuvres?.includes(titre)
+	referencesOeuvre(disque.oeuvres, oeuvre)
 );
 
 const editeurItem = editeur && getEditeurByTitle(editeur);
@@ -47,7 +48,7 @@ const editeurItem = editeur && getEditeurByTitle(editeur);
 	hasSidebar={true}
 >
 	<div slot="page-heading">
-		<h3 class="subheading opus">Opus {opus}</h3>
+		<h3 class="subheading opus"><T k="catalogue.opus" /> {opus}</h3>
 		<h2 class="title">
 			{titre}
 		</h2>

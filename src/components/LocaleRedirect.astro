@@ -1,0 +1,34 @@
+---
+// Sends visitors on a URL without a locale prefix ("/", or legacy URLs such as
+// "/concerts" reaching the 404 page) to the same path in their preferred locale:
+// the one they picked in the language switcher, else their browser's language,
+// else the default locale.
+import { defaultLocale, locales } from "../i18n";
+---
+
+<script is:inline define:vars={{ locales, defaultLocale }}>
+	(function () {
+		var path = location.pathname;
+		if (new RegExp("^/(" + locales.join("|") + ")(/|$)").test(path)) {
+			return;
+		}
+		var locale;
+		try {
+			locale = localStorage.getItem("locale");
+		} catch (e) {}
+		if (locales.indexOf(locale) === -1) {
+			locale = defaultLocale;
+			var preferred = navigator.languages || [navigator.language];
+			for (var i = 0; i < preferred.length; i++) {
+				var code = (preferred[i] || "").slice(0, 2).toLowerCase();
+				if (locales.indexOf(code) !== -1) {
+					locale = code;
+					break;
+				}
+			}
+		}
+		location.replace(
+			"/" + locale + (path === "/" ? "/" : path) + location.search + location.hash,
+		);
+	})();
+</script>

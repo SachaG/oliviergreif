@@ -1,5 +1,6 @@
 ---
-import { capitalizeFirstLetter, getCurrentLocale } from "../content";
+import { capitalizeFirstLetter, getIntlLocale } from "../content";
+import { getLocale } from "../i18n";
 
 interface Props {
 	date: Date;
@@ -23,11 +24,11 @@ const options: Intl.DateTimeFormatOptions =
 			};
 
 const formattedDate = capitalizeFirstLetter(
-	date.toLocaleDateString(getCurrentLocale(), options)
+	date.toLocaleDateString(getIntlLocale(getLocale(Astro.currentLocale)), options),
 );
 ---
 
-<div class="date">{formattedDate}</div>
+<span class="date">{formattedDate}</span>
 
 <style>
 	.date {

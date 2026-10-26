@@ -2,6 +2,8 @@
 
 import { getFooterLinks } from '../content';
 import T from './T.astro';
+import Link from "./Link.astro";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
 const year = new Date().getFullYear();
 
 ---
@@ -10,8 +12,9 @@ const year = new Date().getFullYear();
     <div class="bg"></div>
     <div class="content">
 <ul class="items-list">
-    {getFooterLinks().map((link)=><li><a href={`/${link.id}`}><T k={link.id}/></a></li> )}
+    {getFooterLinks().map((link)=><li><Link href={`/${link.id}`}><T k={link.id}/></Link></li> )}
     </ul>
+<LanguageSwitcher className="footer-language" />
 <p>&copy; Association Olivier Greif {year}</p>
 </div>
 </div>
@@ -41,6 +44,10 @@ const year = new Date().getFullYear();
     }
     a {
         font-size: 0.9rem;
+    }
+    :global(.footer-language ul) {
+        justify-content: center;
+        margin-bottom: var(--halfSpacing);
     }
     p{
         font-size: 0.7rem;

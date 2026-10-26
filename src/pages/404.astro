@@ -1,14 +1,64 @@
 ---
+// The 404 page has no locale in its URL, so it's rendered in every locale and
+// the right version is shown client-side based on the requested path.
+// Requests for unprefixed paths (e.g. old "/concerts" links) are redirected
+// to the same path in the visitor's preferred locale instead.
 import Layout from "../layouts/Layout.astro";
 import PageLayout from "../components/layouts/PageLayout.astro";
+import LocaleRedirect from "../components/LocaleRedirect.astro";
 import { getString } from "../content";
 import T from "../components/T.astro";
+import { defaultLocale, localeCodes, locales } from "../i18n";
+
+const titles = Object.fromEntries(
+	locales.map((locale) => [
+		locale,
+		`Olivier Greif | ${getString("error_404", { locale }).t}`,
+	]),
+);
+
+// only show the block matching html[data-locale]; without JS show the default locale
+const css = locales
+	.map(
+		(locale) =>
+			`html[data-locale="${locale}"] .locale-block-${locale} { display: block; }`,
+	)
+	.join("\n");
 ---
 
-<Layout title={getString("error_404")?.t} }>
-	<PageLayout sectionId="error_404" hasSidebar={false}>
-		<div class="page-content" slot="page-content">
-			<T k="error_404_description" />
-		</div>
-	</PageLayout></Layout
->
+<Layout title={getString("error_404", { locale: defaultLocale }).t} noindex>
+	<LocaleRedirect />
+	<script is:inline define:vars={{ locales, localeCodes, titles }}>
+		var locale = location.pathname.split("/")[1];
+		if (locales.indexOf(locale) !== -1) {
+			document.documentElement.dataset.locale = locale;
+			document.documentElement.lang = localeCodes[locale];
+			document.title = titles[locale];
+		}
+	</script>
+	<noscript>
+		<style
+			set:html={`.locale-block-${defaultLocale} { display: block; }`}
+		></style>
+	</noscript>
+	<style is:inline set:html={`.locale-block { display: none; }\n${css}`}
+	></style>
+	{
+		locales.map((locale) => (
+			<div
+				class={`locale-block locale-block-${locale}`}
+				lang={localeCodes[locale]}
+			>
+				<PageLayout
+					sectionId="error_404"
+					locale={locale}
+					showLanguageSwitcher={false}
+				>
+					<div class="page-content" slot="page-content">
+						<T k="error_404_description" locale={locale} />
+					</div>
+				</PageLayout>
+			</div>
+		))
+	}
+</Layout>

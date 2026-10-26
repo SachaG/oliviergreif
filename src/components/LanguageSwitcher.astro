@@ -1,0 +1,92 @@
+---
+// Links to the current page in every other locale
+import { getString } from "../content";
+import {
+	getLocale,
+	localeCodes,
+	localeNames,
+	locales,
+	switchPathLocale,
+} from "../i18n";
+
+interface Props {
+	className?: string;
+}
+
+const { className = "" } = Astro.props;
+const currentLocale = getLocale(Astro.currentLocale);
+const label = getString("changer_de_langue", { locale: currentLocale }).t;
+---
+
+<nav class={`language-switcher ${className}`} aria-label={label}>
+	<ul>
+		{
+			locales.map((locale) =>
+				locale === currentLocale ? (
+					<li>
+						<span
+							class="language-switcher-current"
+							aria-current="true"
+							title={localeNames[locale]}
+						>
+							{locale}
+						</span>
+					</li>
+				) : (
+					<li>
+						<a
+							href={switchPathLocale(Astro.url.pathname, locale)}
+							hreflang={localeCodes[locale]}
+							lang={localeCodes[locale]}
+							title={localeNames[locale]}
+							data-locale-switch={locale}
+						>
+							{locale}
+						</a>
+					</li>
+				),
+			)
+		}
+	</ul>
+</nav>
+
+<script>
+	// remember the visitor's choice so / and unprefixed URLs send them back to it
+	document
+		.querySelectorAll<HTMLAnchorElement>("[data-locale-switch]")
+		.forEach((link) => {
+			link.addEventListener("click", () => {
+				try {
+					localStorage.setItem(
+						"locale",
+						link.dataset.localeSwitch || "",
+					);
+				} catch (e) {}
+			});
+		});
+</script>
+
+<style>
+	.language-switcher ul {
+		display: flex;
+		gap: var(--halfSpacing);
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		font-family: var(--fontFamilySecondary);
+		text-transform: uppercase;
+		font-size: 0.9rem;
+	}
+	.language-switcher li + li::before {
+		content: "/";
+		margin-right: var(--halfSpacing);
+		opacity: 0.5;
+	}
+	.language-switcher a {
+		text-decoration: none;
+	}
+	.language-switcher-current {
+		font-weight: bold;
+		opacity: 0.6;
+	}
+</style>

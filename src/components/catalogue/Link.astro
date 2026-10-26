@@ -1,5 +1,6 @@
 ---
 import { getOeuvreByTitre } from "../../content";
+import Link from "../Link.astro";
 
 const { titre } = Astro.props;
 
@@ -8,7 +9,7 @@ const oeuvre = getOeuvreByTitre(titre);
 
 {
 	oeuvre ? (
-		<a href={`/catalogue/${oeuvre.id}`}>{titre}</a>
+		<Link href={`/catalogue/${oeuvre.id}`}>{titre}</Link>
 	) : (
 		<span>{titre}</span>
 	)

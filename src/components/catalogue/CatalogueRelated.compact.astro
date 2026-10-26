@@ -1,9 +1,10 @@
 ---
-import { getPath, getOeuvreByTitre, getOeuvreById } from "../../content";
+import { getPath, getOeuvreByReference } from "../../content";
+import type { OeuvreReference } from "../../types";
 import LinkItem from "../LinkItem.astro";
 
 interface Props {
-	oeuvres: Array<{ id: string }>;
+	oeuvres: OeuvreReference[];
 }
 const { oeuvres } = Astro.props;
 ---
@@ -11,9 +12,9 @@ const { oeuvres } = Astro.props;
 <div>
 	<ul class="items-list">
 		{
-			oeuvres.map(({ id }) => {
-				// TODO: decide if we're using id or titre to index oeuvres
-				const oeuvre = getOeuvreByTitre(id) || getOeuvreById(id);
+			oeuvres.map((reference) => {
+				const { id } = reference;
+				const oeuvre = getOeuvreByReference(reference);
 
 				return oeuvre ? (
 					<li>

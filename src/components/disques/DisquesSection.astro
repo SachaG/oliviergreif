@@ -2,6 +2,7 @@
 import { getDisques, getPath, getSectionPath, SectionId } from "../../content";
 import T from "../T.astro";
 import DisqueCover from "./DisqueCover.astro";
+import Link from "../Link.astro";
 
 const disques = getDisques();
 ---
@@ -15,9 +16,9 @@ const disques = getDisques();
 				.map((disque) => <DisqueCover id={disque.id} />)
 		}
 	</div>
-	<a
+	<Link
 		class="home-section-link link-heading"
-		href={getSectionPath(SectionId.DISQUES)}><T k="voir_plus" /></a
+		href={getSectionPath(SectionId.DISQUES)}><T k="voir_plus" /></Link
 	>
 </section>
 

@@ -1,7 +1,21 @@
 ---
 import { getSection2 } from "../../content";
 import T from "../T.astro";
-const { sectionId, parentPath } = Astro.props;
+import Link from "../Link.astro";
+import LanguageSwitcher from "../LanguageSwitcher.astro";
+import type { Locale } from "../../i18n";
+
+interface Props {
+	sectionId?: string;
+	parentPath?: string;
+	hasSidebar?: boolean;
+	// only needed on pages without a locale in their URL (404)
+	locale?: Locale;
+	showLanguageSwitcher?: boolean;
+}
+
+const { sectionId, parentPath, locale, showLanguageSwitcher = true } =
+	Astro.props;
 
 const sidebarSlotContent = (await Astro.slots.render("page-sidebar")) || "";
 const hasSidebar = sidebarSlotContent.trim().length > 0;
@@ -15,9 +29,11 @@ const hasContent = defaultSlotContent.trim().length > 0;
 	style={`view-transition-name: section-${sectionId}; `}
 >
 	<div class="page-heading">
-		<a class="home-link" href={parentPath || "/"}
+		<Link class="home-link" href={parentPath || "/"} locale={locale}
 			><span class="arrow">←</span>
-			<span class="visually-hidden"><T k="retour_accueil" /></span></a
+			<span class="visually-hidden"
+				><T k="retour_accueil" locale={locale} /></span
+			></Link
 		>
 		<div class="page-heading-content">
 			{
@@ -25,11 +41,18 @@ const hasContent = defaultSlotContent.trim().length > 0;
 					<slot name="page-heading" />
 				) : (
 					<h2 style={`view-transition-name: heading-${sectionId}`}>
-						<T k={sectionId} />
+						<T k={sectionId} locale={locale} />
 					</h2>
 				)
 			}
 		</div>
+		{
+			showLanguageSwitcher && (
+				<div class="page-heading-language">
+					<LanguageSwitcher />
+				</div>
+			)
+		}
 	</div>
 	<div class="page-content grid">
 		<main class="page-main">
@@ -53,10 +76,18 @@ const hasContent = defaultSlotContent.trim().length > 0;
 	}
 	.page-heading {
 		display: grid;
-		grid-template-columns: min-content 1fr;
+		grid-template-columns: min-content 1fr auto;
 		border-bottom: var(--border);
 		@include breakpointUnder(lg) {
-			grid-template-columns: 60px 1fr;
+			grid-template-columns: 60px 1fr auto;
+		}
+	}
+	.page-heading-language {
+		display: grid;
+		place-items: center;
+		padding: 0 var(--doubleSpacing);
+		@include breakpointUnder(lg) {
+			padding: 0 var(--spacing);
 		}
 	}
 	.home-link {

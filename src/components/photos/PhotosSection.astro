@@ -3,6 +3,7 @@ import { getSectionPath } from "../../content";
 import { getPhotos, SectionId } from "../../content";
 import T from "../T.astro";
 import Photo from "./Photo.astro";
+import Link from "../Link.astro";
 
 const photos = getPhotos();
 ---
@@ -12,9 +13,9 @@ const photos = getPhotos();
 		{photos.slice(0, 6).map(({ id }) => <Photo id={id} />)}
 	</div>
 
-	<a
+	<Link
 		class="home-section-link link-heading"
-		href={getSectionPath(SectionId.PHOTOS)}><T k="voir_plus" /></a
+		href={getSectionPath(SectionId.PHOTOS)}><T k="voir_plus" /></Link
 	>
 </section>
 

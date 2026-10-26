@@ -1,12 +1,13 @@
 ---
 import { getDisque, getPath } from "../../content";
+import Link from "../Link.astro";
 const { id } = Astro.props;
 const disque = getDisque(id);
 const { titre, image } = disque;
 ---
 
-<a href={getPath(disque)} class="disque-compact-image thumbnail">
+<Link href={getPath(disque)} class="disque-compact-image thumbnail">
 	<img alt={titre} src={`/images/disques/${image}`} />
-</a>
+</Link>
 
 <style></style>

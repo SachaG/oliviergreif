@@ -1,17 +1,23 @@
 ---
 import { getSectionPath, SectionId } from "../../content";
 import { Content as BioFr } from "../../content/biographie.excerpt.fr.md";
+import { Content as BioEn } from "../../content/biographie.excerpt.en.md";
 import T from "../T.astro";
+import { getLocale } from "../../i18n";
+import Link from "../Link.astro";
+
+const locale = getLocale(Astro.currentLocale);
+const Bio = locale === "en" ? BioEn : BioFr;
 ---
 
 <section>
 	<div class="biographie-section-contents">
-		<BioFr />
+		<Bio />
 	</div>
 
-	<a
+	<Link
 		class="home-section-link link-heading"
-		href={getSectionPath(SectionId.BIOGRAPHIE)}><T k="lire_la_suite" /></a
+		href={getSectionPath(SectionId.BIOGRAPHIE)}><T k="lire_la_suite" /></Link
 	>
 </section>
 

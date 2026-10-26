@@ -1,31 +1,28 @@
 ---
-import {
-	getOeuvre,
-	convertTitle,
-	getPath,
-	getOeuvreByTitre,
-} from "../../content";
+import { getPath, getOeuvreByReference } from "../../content";
+import type { OeuvreReference } from "../../types";
 import LinkItem from "../LinkItem.astro";
+import compact from "lodash/compact.js";
 
 interface Props {
-	titres?: string[];
+	oeuvres?: OeuvreReference[];
 }
 
-const { titres } = Astro.props;
+const oeuvres = compact(Astro.props.oeuvres?.map(getOeuvreByReference));
 ---
 
 {
-	titres && titres.length > 0 ? (
+	oeuvres && oeuvres.length > 0 ? (
 		<div>
 			<ul class="items-list">
-				{titres.map((titre) => {
-					const oeuvre = getOeuvreByTitre(titre)!;
-					return (
-						<li>
-							<LinkItem path={getPath(oeuvre)} content={titre} />
-						</li>
-					);
-				})}
+				{oeuvres.map((oeuvre) => (
+					<li>
+						<LinkItem
+							path={getPath(oeuvre)}
+							content={oeuvre?.titre}
+						/>
+					</li>
+				))}
 			</ul>
 		</div>
 	) : null

@@ -1,32 +1,31 @@
-<ul class="nav">
-	<li><a href="/">Accueil</a></li>
-	<li><a href="/catalogue">Catalogue</a></li>
-	<li>
-		<a href="/concerts">Concerts</a>
-	</li>
+---
+import T from "./T.astro";
+import Link from "./Link.astro";
+const links = [
+	{ k: "accueil", path: "/" },
+	{ k: "catalogue", path: "/catalogue" },
+	{ k: "concerts", path: "/concerts" },
+	{ k: "disques", path: "/disques" },
+	{ k: "editeurs", path: "/editeurs" },
+	{ k: "actualites", path: "/actualites" },
+	{ k: "biographie", path: "/biographie" },
+	{ k: "association", path: "/association" },
+	{ k: "media", path: "/media" },
+	{ k: "liens", path: "/liens" },
+	{ k: "contact", path: "/contact" },
+];
+---
 
-	<li><a href="/disques">Disques</a></li>
-	<li>
-		<a href="/editeurs">Editeurs</a>
-	</li>
-	<li>
-		<a href="/actualites">Actualites</a>
-	</li>
-	<li>
-		<a href="/biographie">Biographie</a>
-	</li>
-	<li>
-		<a href="/association">Association</a>
-	</li>
-	<li>
-		<a href="/media">Média</a>
-	</li>
-	<li>
-		<a href="/liens">Liens</a>
-	</li>
-	<li>
-		<a href="/contact">Contact</a>
-	</li>
+<ul class="nav">
+	{
+		links.map(({ k, path }) => (
+			<li>
+				<Link href={path}>
+					<T k={k} />
+				</Link>
+			</li>
+		))
+	}
 </ul>
 
 <style lang="scss" is:global>

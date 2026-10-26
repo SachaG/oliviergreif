@@ -14,7 +14,7 @@ const oeuvres = getCatalogue().filter((oeuvre) => oeuvre.editeur === titre);
 <div>
 	<FeedItemHeading path={getPath(editeur)} content={titre} />
 	<p>
-		{oeuvres.length}
+		{oeuvres.length}{" "}
 		<T k="oeuvre" kPlural="oeuvres" count={oeuvres.length} />
 	</p>
 </div>

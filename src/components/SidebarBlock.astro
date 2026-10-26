@@ -1,5 +1,6 @@
 ---
 import T from "./T.astro";
+import Link from "./Link.astro";
 
 interface Props {
 	k: string;
@@ -24,13 +25,13 @@ const { k, items } = Astro.props;
 				{items.map(({ label, url, k, heading }) => (
 					<li>
 						{heading && <h5 class="item-heading">{heading}</h5>}
-						<a
+						<Link
 							href={url}
 							target={url.includes("http") ? "_blank" : "_self"}
 							class="link-heading"
 						>
 							<T k={k} fallback={label} />
-						</a>
+						</Link>
 					</li>
 				))}
 			</ul>

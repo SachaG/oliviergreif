@@ -1,0 +1,30 @@
+---
+// Static hosts can't read Accept-Language, so the root page picks a locale client-side
+import LocaleRedirect from "../components/LocaleRedirect.astro";
+import { defaultLocale, localeNames, locales } from "../i18n";
+---
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="noindex" />
+		<title>Olivier Greif</title>
+		<LocaleRedirect />
+		<noscript>
+			<meta http-equiv="refresh" content={`0;url=/${defaultLocale}/`} />
+		</noscript>
+	</head>
+	<body>
+		<ul>
+			{
+				locales.map((locale) => (
+					<li>
+						<a href={`/${locale}/`}>{localeNames[locale]}</a>
+					</li>
+				))
+			}
+		</ul>
+	</body>
+</html>

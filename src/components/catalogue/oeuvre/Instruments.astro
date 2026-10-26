@@ -3,12 +3,15 @@ import { capitalizeFirstLetter, getInstrumentLink } from "../../../content";
 import type { OeuvreWithId } from "../../../types";
 import { getString } from "../../../content";
 import uniq from "lodash/uniq.js";
+import { getLocale } from "../../../i18n";
+import Link from "../../Link.astro";
 
 interface Props {
 	oeuvre: OeuvreWithId;
 }
 
 const { oeuvre } = Astro.props;
+const locale = getLocale(Astro.currentLocale);
 const { instruments = [] } = oeuvre;
 
 const instrumentsCounts: { [key: string]: number } = {};
@@ -25,13 +28,13 @@ const instrumentsDeduped: Array<{ count: number; id: string; label: string }> =
 		const key = `instruments.${id}`;
         const fallback = capitalizeFirstLetter(id)
 		const name = getString(key, {
+			locale,
 			count,
 			fallback,
 		});
 		const label = count >= 2 ? `${count} ${name?.t}` : name?.t;
 		return { id, count, label };
 	});
-
 ---
 
 <div>
@@ -40,7 +43,7 @@ const instrumentsDeduped: Array<{ count: number; id: string; label: string }> =
 			const link = getInstrumentLink(id);
 			const c = `instrument-${id}`;
 			return (
-				<span class="instruments-item"><a href={link} class={c}>{label}</a></span>
+				<span class="instruments-item"><Link href={link} class={c}>{label}</Link></span>
 			);
 		})
 	}

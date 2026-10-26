@@ -1,9 +1,10 @@
 ---
 const { path, content } = Astro.props;
+import Link from "./Link.astro";
 ---
 
 <h3 class="feed-item-heading">
-	<a class="link-heading" href={path}>{content}</a>
+	<Link class="link-heading" href={path}>{content}</Link>
 </h3>
 
 <style>

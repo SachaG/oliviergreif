@@ -1,13 +1,14 @@
 ---
 import Formation from "../../components/catalogue/Formation.astro";
 import { getFormations } from "../../content";
+import T from "../T.astro";
 
 const formations = getFormations();
 const { currentFormationId } = Astro.props;
 ---
 
 <div class="formations">
-	<h3>Formations</h3>
+	<h3><T k="catalogue.formations" /></h3>
 	{
 		formations.map((formation) => (
 			<Formation

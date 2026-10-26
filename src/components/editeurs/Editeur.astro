@@ -22,6 +22,6 @@ const oeuvres = getCatalogue().filter((oeuvre) => oeuvre.editeur === titre);
 	</div>
 	<div slot="page-content">
 		<p set:html={commentaire} />
-		<CatalogueRelated titres={oeuvres.map((o) => o.titre)} />
+		<CatalogueRelated oeuvres={oeuvres} />
 	</div>
 </PageLayout>

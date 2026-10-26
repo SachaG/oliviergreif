@@ -4,6 +4,7 @@ import Date from "../Date.astro";
 import FeedItemHeading from "../FeedItemHeading.astro";
 import T from "../T.astro";
 import Concert from "./Concert.compact.astro";
+import Link from "../Link.astro";
 
 const concerts = getConcerts();
 const concert = concerts.at(0)!;
@@ -24,9 +25,9 @@ const {
 		<FeedItemHeading path={getPath(concert)} content={titre} />
 	</div>
 
-	<a
+	<Link
 		class="home-section-link link-heading"
-		href={getSectionPath(SectionId.CONCERTS)}><T k="voir_plus" /></a
+		href={getSectionPath(SectionId.CONCERTS)}><T k="voir_plus" /></Link
 	>
 </section>
 

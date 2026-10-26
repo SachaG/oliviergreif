@@ -6,6 +6,7 @@ import {
 	customTransition,
 	getSectionComponent,
 } from "../../content";
+import Link from "../Link.astro";
 const { sectionId, color, inverted } = Astro.props;
 
 const SectionComponent = getSectionComponent(sectionId);
@@ -21,12 +22,12 @@ const SectionComponent = getSectionComponent(sectionId);
 			class="section-heading"
 			style={`view-transition-name: heading-${sectionId}`}
 		>
-			<a
+			<Link
 				class="section-link link-heading"
 				href={getSectionPath(sectionId)}
 			>
 				<T k={sectionId} />
-			</a>
+			</Link>
 		</h2>
 		{SectionComponent ? <SectionComponent /> : null}
 	</div>

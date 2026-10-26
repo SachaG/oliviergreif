@@ -1,8 +1,19 @@
 ---
 import { getString } from "../content";
+import { getLocale, type Locale } from "../i18n";
 
-const { k, kPlural, count, fallback } = Astro.props;
-const { t, tPlural } = getString(k, { kPlural, count, fallback });
+interface Props {
+	k?: string;
+	kPlural?: string;
+	count?: number;
+	fallback?: string;
+	// override the current locale (e.g. on the 404 page)
+	locale?: Locale;
+}
+
+const { k = "", kPlural, count, fallback } = Astro.props;
+const locale = Astro.props.locale ?? getLocale(Astro.currentLocale);
+const { t } = getString(k, { locale, kPlural, count, fallback });
 ---
 
-<span data-key={k}>{tPlural || t || fallback || k}</span>
+<span data-key={k}>{t || fallback || k}</span>

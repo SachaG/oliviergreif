@@ -1,0 +1,19 @@
+---
+// Use instead of <a> for internal links: locale-agnostic paths such as
+// "/catalogue" are prefixed with the current locale ("/fr/catalogue").
+// External URLs, files and already-localized paths are passed through as-is.
+import type { HTMLAttributes } from "astro/types";
+import { getLocale, localizePath, type Locale } from "../i18n";
+
+type Props = HTMLAttributes<"a"> & {
+	// override the current locale (e.g. on the 404 page, which has no locale in its URL)
+	locale?: Locale;
+};
+
+const { href, locale, ...attrs } = Astro.props;
+const linkLocale = locale ?? getLocale(Astro.currentLocale);
+const localizedHref =
+	typeof href === "string" ? localizePath(href, linkLocale) : href;
+---
+
+<a href={localizedHref} {...attrs}><slot /></a>
