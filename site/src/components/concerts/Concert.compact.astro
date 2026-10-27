@@ -1,0 +1,45 @@
+---
+import { getConcert, getPath } from "@/content";
+import CatalogueRelated from "@components/catalogue/CatalogueRelated.compact.astro";
+import Date from "@components/Date.astro";
+import FeedItemHeading from "@components/FeedItemHeading.astro";
+import T from "@components/T.astro";
+import { getLocale } from "@/i18n";
+
+const locale = getLocale(Astro.currentLocale);
+
+const { id } = Astro.props;
+const concert = getConcert(id, locale);
+
+const {
+	date,
+	heure,
+	titre,
+	oeuvres,
+	// interpretes,
+	// adresse,
+	// commentaire,
+} = concert;
+---
+
+<div class="concert concert-compact search-item" data-titre={titre}>
+	<Date date={date} time={heure} />
+	<FeedItemHeading path={getPath(concert)} content={titre} />
+	{oeuvres && (
+		<div class="concert-compact-oeuvres">
+			<CatalogueRelated oeuvres={oeuvres} />
+		</div>
+	)}
+</div>
+
+<style>
+	h3 {
+		a {
+			text-decoration: none;
+		}
+	}
+	.concert-compact-oeuvres {
+		/* border-left: var(--border); */
+		/* padding-left: var(--spacing); */
+	}
+</style>

@@ -1,0 +1,36 @@
+---
+import { getConcerts, getPath, getSectionPath, SectionId } from "@/content";
+import Date from "@components/Date.astro";
+import FeedItemHeading from "@components/FeedItemHeading.astro";
+import T from "@components/T.astro";
+import Concert from "@components/concerts/Concert.compact.astro";
+import Link from "@components/Link.astro";
+import { getLocale } from "@/i18n";
+
+const locale = getLocale(Astro.currentLocale);
+
+const concerts = getConcerts(locale);
+const concert = concerts.at(0)!;
+
+const {
+	date,
+	titre,
+	oeuvres,
+	// interpretes,
+	// adresse,
+	// commentaire,
+} = concert;
+---
+
+<section>
+	<div class="concerts-section-contents">
+		<Date date={date} format="short" />
+		<FeedItemHeading path={getPath(concert)} content={titre} />
+	</div>
+</section>
+
+<style>
+	h3 {
+		font-size: 0.9rem;
+	}
+</style>

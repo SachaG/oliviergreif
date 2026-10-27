@@ -1,0 +1,88 @@
+---
+import { z } from "zod";
+import EntryForm from "../../components/EntryForm";
+import Layout from "../../layouts/Layout.astro";
+import { getCollection, getReferenceOptions, readEntry } from "../../lib/content";
+
+const collectionId = Astro.params.collection!;
+const collection = getCollection(collectionId);
+if (!collection) return new Response("Collection inconnue", { status: 404 });
+
+// "new" creates an entry
+const id = Astro.params.id === "new" ? undefined : Astro.params.id!;
+const entry = id ? await readEntry(collection.folder, id) : undefined;
+if (id && !entry) return new Response("Entrée introuvable", { status: 404 });
+
+const title = entry?.data.titre?.fr ?? "Nouvelle entrée";
+---
+
+<Layout title={title}>
+	<p><a href={`/${collectionId}`}>← {collection.label}</a></p>
+	<h1>{title}</h1>
+	<EntryForm
+		client:load
+		collection={collectionId}
+		id={id}
+		sha={entry?.sha}
+		schema={z.toJSONSchema(collection.schema) as any}
+		initialData={entry?.data ?? {}}
+		referenceOptions={await getReferenceOptions(collection.schema)}
+	/>
+</Layout>
+
+<style is:global>
+	.entry-form {
+		display: grid;
+		gap: 1.25rem;
+	}
+	.entry-form label {
+		display: grid;
+		gap: 0.3rem;
+	}
+	.entry-form fieldset {
+		display: grid;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0.75rem;
+		border: 1px solid var(--border);
+		border-radius: 4px;
+	}
+	/* translations side by side on wide screens */
+	.entry-form fieldset.localized {
+		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	}
+	.entry-form fieldset.localized legend {
+		grid-column: 1 / -1;
+	}
+	.entry-form ul.selected,
+	.entry-form ul.matches {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 0.25rem;
+	}
+	.entry-form ul.selected li {
+		display: flex;
+		justify-content: space-between;
+		gap: 0.5rem;
+		align-items: center;
+	}
+	.entry-form ul.matches button {
+		width: 100%;
+		text-align: left;
+	}
+	.entry-form .preview {
+		padding: 0.5rem;
+		background: var(--surface);
+		font-family: "STIX Two Text", serif;
+	}
+	.entry-form .actions {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+	}
+	.entry-form .actions .secondary {
+		margin-left: auto;
+	}
+</style>

@@ -1,0 +1,21 @@
+---
+import { getActualite, getPath } from "@/content";
+import { truncateWords } from "@/helpers";
+import Date from "@components/Date.astro";
+import FeedItemHeading from "@components/FeedItemHeading.astro";
+import { getLocale } from "@/i18n";
+
+const locale = getLocale(Astro.currentLocale);
+
+const { id, truncate = false } = Astro.props;
+const actualite = getActualite(id, locale);
+const { titre, texte, date } = actualite;
+
+const texte_ = truncate ? truncateWords(texte, 10) + "…" : texte;
+---
+
+<div>
+	<Date date={date} />
+	<FeedItemHeading path={getPath(actualite)} content={titre} />
+	<div set:html={texte_} />
+</div>

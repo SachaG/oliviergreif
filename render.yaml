@@ -1,0 +1,29 @@
+# Render blueprint for the admin (the site itself stays static, on GitHub Pages)
+services:
+  - type: web
+    name: ogreif-admin
+    runtime: node
+    region: frankfurt
+    plan: free # sleeps after 15 min idle, ~1 min to wake up; nothing is stored on the server
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm --filter admin build
+    startCommand: node admin/dist/server/entry.mjs
+    healthCheckPath: /healthz
+    # commits made by the admin only touch site/ data, so they don't redeploy it
+    buildFilter:
+      paths:
+        - admin/**
+        - shared/**
+        - pnpm-lock.yaml
+    envVars:
+      - key: ADMIN_PASSWORD
+        sync: false # set in the Render dashboard
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: GITHUB_TOKEN
+        sync: false # fine-grained token, this repository only, Contents: read and write
+      - key: GITHUB_REPO
+        value: SachaG/oliviergreif
+      - key: GITHUB_BRANCH
+        value: main
+      - key: HOST
+        value: 0.0.0.0

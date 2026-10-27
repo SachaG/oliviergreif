@@ -1,0 +1,25 @@
+---
+import { getActualite, getSectionPath, SectionId } from "@/content";
+import Date from "@components/Date.astro";
+import PageLayout from "@components/layouts/PageLayout.astro";
+import { getLocale } from "@/i18n";
+
+const locale = getLocale(Astro.currentLocale);
+
+const { id } = Astro.props;
+const actualite = getActualite(id, locale);
+const { titre, texte, date } = actualite;
+---
+
+<PageLayout
+	sectionId={SectionId.ACTUALITES}
+	parentPath={getSectionPath(SectionId.ACTUALITES)}
+>
+	<span slot="page-heading">
+		<Date date={date} />
+		<h2 class="title">
+			{titre}
+		</h2>
+	</span>
+	<div slot="page-content" set:html={texte} />
+</PageLayout>

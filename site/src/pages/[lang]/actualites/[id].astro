@@ -1,0 +1,20 @@
+---
+import Actualite from "@components/actualites/Actualite.astro";
+import { getActualiteBySlug, getActualites, getString } from "@/content";
+import { getItemsStaticPaths } from "@/helpers";
+import Layout from "@layouts/Layout.astro";
+import { getLocale, sourceLocale } from "@/i18n";
+
+export function getStaticPaths() {
+	return getItemsStaticPaths(getActualites(sourceLocale));
+}
+
+const { id: slug } = Astro.params;
+const locale = getLocale(Astro.currentLocale);
+const actualite = getActualiteBySlug(slug, locale)!;
+const { id } = actualite;
+---
+
+<Layout title={getString("actualites", { locale })?.t}>
+	<Actualite id={id} />
+</Layout>

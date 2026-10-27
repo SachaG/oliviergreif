@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {
+	checkPassword,
+	clearFailures,
+	createSession,
+	isThrottled,
+	recordFailure,
+	SESSION_COOKIE,
+	SESSION_MAX_AGE,
+} from "../lib/session";
+
+let error = "";
+if (Astro.request.method === "POST") {
+	// behind Render's proxy, the visitor's address is the first x-forwarded-for entry
+	const ip = Astro.request.headers.get("x-forwarded-for")?.split(",")[0].trim() || Astro.clientAddress;
+	const form = await Astro.request.formData();
+	const name = String(form.get("name") ?? "").trim();
+	if (isThrottled(ip)) {
+		error = "Trop de tentatives. Réessayez dans quelques minutes.";
+	} else if (!name || !checkPassword(String(form.get("password") ?? ""))) {
+		recordFailure(ip);
+		error = name ? "Mot de passe incorrect." : "Indiquez votre nom.";
+	} else {
+		clearFailures(ip);
+		Astro.cookies.set(SESSION_COOKIE, createSession(name), {
+			httpOnly: true,
+			secure: import.meta.env.PROD,
+			sameSite: "strict",
+			path: "/",
+			maxAge: SESSION_MAX_AGE,
+		});
+		return Astro.redirect("/");
+	}
+}
+---
+
+<Layout title="Connexion">
+	<h1>Connexion</h1>
+	<form method="post" class="login">
+		<label>
+			Votre nom <span class="muted">(apparaît dans l’historique des modifications)</span>
+			<input name="name" autocomplete="name" required />
+		</label>
+		<label>
+			Mot de passe
+			<input name="password" type="password" autocomplete="current-password" required />
+		</label>
+		{error && <p class="error">{error}</p>}
+		<button>Se connecter</button>
+	</form>
+</Layout>
+
+<style>
+	.login {
+		display: grid;
+		gap: 1rem;
+		max-width: 22rem;
+	}
+	label {
+		display: grid;
+		gap: 0.3rem;
+	}
+</style>

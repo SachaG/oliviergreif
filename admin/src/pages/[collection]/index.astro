@@ -1,0 +1,61 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection, isTranslated, listEntries } from "../../lib/content";
+
+const collection = getCollection(Astro.params.collection);
+if (!collection) return new Response("Collection inconnue", { status: 404 });
+
+const entries = await listEntries(collection.folder);
+---
+
+<Layout title={collection.label}>
+	<div class="toolbar">
+		<h1>{collection.label} <span class="muted">({entries.length})</span></h1>
+		<a class="button" href={`/${Astro.params.collection}/new`}>Ajouter</a>
+	</div>
+	<input id="search" type="search" placeholder="Rechercher…" aria-label="Rechercher" autofocus />
+	<table>
+		<thead>
+			<tr><th>Date</th><th>Titre</th><th>Traduit</th></tr>
+		</thead>
+		<tbody>
+			{
+				entries.map(({ id, data }) => (
+					<tr data-search={`${data.date ?? ""} ${data.titre?.fr ?? ""} ${data.titre?.en ?? ""}`}>
+						<td class="date">{data.date}</td>
+						<td>
+							<a href={`/${Astro.params.collection}/${id}`}>{data.titre?.fr ?? id}</a>
+						</td>
+						<td>{isTranslated(data) ? "✓" : ""}</td>
+					</tr>
+				))
+			}
+		</tbody>
+	</table>
+</Layout>
+
+<script>
+	// accents and punctuation are ignored: "radio france" finds "Radio-France"
+	const normalize = (s: string) =>
+		s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+	const search = document.getElementById("search") as HTMLInputElement;
+	const rows = [...document.querySelectorAll<HTMLTableRowElement>("tbody tr")];
+	search.addEventListener("input", () => {
+		const query = normalize(search.value);
+		rows.forEach((row) => (row.hidden = !normalize(row.dataset.search ?? "").includes(query)));
+	});
+</script>
+
+<style>
+	.toolbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	#search {
+		margin-bottom: 1rem;
+	}
+	.date {
+		white-space: nowrap;
+	}
+</style>

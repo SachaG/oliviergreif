@@ -1,0 +1,6 @@
+---
+// the collections are listed in the header; start on the first one
+import { editableCollections } from "@ogreif/shared/schemas";
+
+return Astro.redirect(`/${Object.keys(editableCollections)[0]}`);
+---

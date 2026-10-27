@@ -1,0 +1,156 @@
+---
+import { editableCollections } from "@ogreif/shared/schemas";
+import { storage } from "../lib/storage";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+const editor = Astro.locals.editor;
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="noindex" />
+		<title>{title} · Admin Olivier Greif</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		{
+			editor && (
+				<header>
+					<strong>Olivier Greif · admin</strong>
+					<nav>
+						{Object.entries(editableCollections).map(([id, c]) => (
+							<a href={`/${id}`} aria-current={Astro.url.pathname.startsWith(`/${id}`) ? "page" : undefined}>
+								{c.label}
+							</a>
+						))}
+					</nav>
+					<span class="muted">
+						{editor} · {storage.label} · <a href="/logout">Déconnexion</a>
+					</span>
+				</header>
+			)
+		}
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
+
+<style is:global>
+	/* colours and fonts of the main site */
+	:root {
+		--bg: #7bc5b5;
+		--text: #252c6d;
+		--accent: rgb(0, 116, 74);
+		--border: #4d8175;
+		--surface: #f4faf8;
+		--error: #a1192b;
+		color-scheme: light;
+		font-family: "DM Sans", system-ui, sans-serif;
+		color: var(--text);
+		background: var(--bg);
+	}
+	body {
+		margin: 0;
+	}
+	header {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem 2rem;
+		align-items: baseline;
+		padding: 1rem 1.5rem;
+		border-bottom: 1px solid var(--border);
+	}
+	header nav {
+		display: flex;
+		gap: 1rem;
+	}
+	header nav a[aria-current="page"] {
+		text-decoration-thickness: 3px;
+	}
+	main {
+		max-width: 60rem;
+		margin: 0 auto;
+		padding: 1.5rem;
+	}
+	h1 {
+		font-family: "STIX Two Text", serif;
+		margin-top: 0;
+	}
+	a {
+		color: var(--text);
+	}
+	a:hover {
+		color: var(--accent);
+	}
+	.muted {
+		opacity: 0.75;
+		font-size: 0.9rem;
+	}
+	.error {
+		color: var(--error);
+	}
+	input,
+	textarea,
+	select,
+	button {
+		font: inherit;
+		color: inherit;
+	}
+	input:not([type="checkbox"]),
+	textarea,
+	select {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0.4rem 0.5rem;
+		border: 1px solid var(--border);
+		border-radius: 4px;
+		background: var(--surface);
+	}
+	textarea {
+		min-height: 5rem;
+		resize: vertical;
+	}
+	button,
+	.button {
+		display: inline-block;
+		padding: 0.45rem 1rem;
+		border: 1px solid var(--text);
+		border-radius: 4px;
+		background: var(--text);
+		color: white;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	button.secondary {
+		background: transparent;
+		color: var(--text);
+	}
+	button:disabled {
+		opacity: 0.5;
+		cursor: default;
+	}
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	th,
+	td {
+		text-align: left;
+		padding: 0.4rem 0.5rem;
+		border-bottom: 1px solid var(--border);
+		vertical-align: top;
+	}
+</style>

@@ -1,0 +1,36 @@
+---
+import {
+	getActualites,
+	getPath,
+	getSectionPath,
+	SectionId,
+} from "@/content";
+import { truncateWords } from "@/helpers";
+import Date from "@components/Date.astro";
+import FeedItemHeading from "@components/FeedItemHeading.astro";
+import T from "@components/T.astro";
+import Actualite from "@components/actualites/Actualite.compact.astro";
+import Link from "@components/Link.astro";
+import { getLocale } from "@/i18n";
+
+const locale = getLocale(Astro.currentLocale);
+
+const actus = getActualites(locale);
+const actualite = actus.at(0)!;
+const { titre, texte, date } = actualite;
+
+const texte_ = truncateWords(texte, 10) + "…";
+---
+
+<section>
+	<div class="contents">
+		<Date date={date} format="short" />
+		<FeedItemHeading path={getPath(actualite)} content={titre} />
+	</div>
+</section>
+
+<style>
+	h3 {
+		font-size: 0.9rem;
+	}
+</style>

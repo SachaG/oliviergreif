@@ -1,0 +1,153 @@
+---
+import { getOeuvre, getSectionPath } from "@/content";
+import {
+	convertTitle,
+	getConcerts,
+	getDisques,
+	getEditeur,
+	getPath,
+	SectionId,
+	getEditeurByTitle,
+	referencesOeuvre,
+} from "@/content";
+import { getDomain, getItemIdFromSlug } from "@/helpers";
+import Field from "@components/Field.astro";
+import PageLayout from "@components/layouts/PageLayout.astro";
+import SidebarBlock from "@components/SidebarBlock.astro";
+import T from "@components/T.astro";
+import Instruments from "@components/catalogue/oeuvre/Instruments.astro";
+import { getLocale } from "@/i18n";
+
+const locale = getLocale(Astro.currentLocale);
+const { id } = Astro.props;
+const oeuvre = getOeuvre(getItemIdFromSlug(id));
+const {
+	annee,
+	opus,
+	titre,
+	editeur,
+	commentaire,
+	texte,
+	creation,
+	duree,
+	ecouter,
+	partitionUrl,
+} = oeuvre;
+
+const concerts = getConcerts(locale).filter((concert) =>
+	referencesOeuvre(concert.oeuvres, oeuvre)
+);
+
+const disques = getDisques().filter((disque) =>
+	referencesOeuvre(disque.oeuvres, oeuvre)
+);
+
+const editeurItem = editeur && getEditeurByTitle(editeur);
+---
+
+<PageLayout
+	sectionId={SectionId.CATALOGUE}
+	parentPath={getSectionPath(SectionId.CATALOGUE)}
+	hasSidebar={true}
+>
+	<div slot="page-heading">
+		<h3 class="subheading opus"><T k="catalogue.opus" /> {opus}</h3>
+		<h2 class="title">
+			{titre}
+		</h2>
+	</div>
+	<main slot="page-content">
+		<table class="infos">
+			<tbody>
+				{
+					editeurItem && (
+						<Field k="catalogue.editeur">
+							<a href={editeurItem.url} target="_blank">
+								{editeurItem.titre}
+							</a>
+						</Field>
+					)
+				}
+
+				<Field k="catalogue.instruments"
+					><Instruments oeuvre={oeuvre} /></Field
+				>
+				{annee && <Field k="catalogue.annee">{annee}</Field>}
+				{texte && <Field k="catalogue.texte">{texte}</Field>}
+				{creation && <Field k="catalogue.creation">{creation}</Field>}
+				{duree && <Field k="catalogue.duree">{duree}</Field>}
+				{
+					commentaire && (
+						<Field>
+							<div set:html={commentaire} />
+						</Field>
+					)
+				}
+			</tbody>
+		</table>
+	</main>
+
+	{
+		partitionUrl && (
+			<SidebarBlock
+				k="catalogue.partition"
+				items={[
+					{ k: "catalogue.acheter_partition", url: partitionUrl },
+				]}
+				slot="page-sidebar"
+			/>
+		)
+	}
+
+	{
+		ecouter && ecouter.length > 0 && (
+			<SidebarBlock
+				k="ecouter"
+				items={ecouter.map((lien) => {
+					const { titre, url } = lien;
+					return {
+						label: titre,
+						url,
+						heading: getDomain(url),
+					};
+				})}
+				slot="page-sidebar"
+			/>
+		)
+	}
+
+	{
+		disques && disques.length > 0 && (
+			<SidebarBlock
+				k="disques"
+				items={disques.map((disque) => {
+					const { titre, maison } = disque;
+					return {
+						label: titre,
+						url: getPath(disque),
+						heading: maison,
+					};
+				})}
+				slot="page-sidebar"
+			/>
+		)
+	}
+	{
+		concerts && concerts.length > 0 && (
+			<SidebarBlock
+				k="concerts"
+				items={concerts.map((concert) => {
+					const { titre, annee } = concert;
+					return {
+						label: titre,
+						url: getPath(concert),
+						heading: String(annee),
+					};
+				})}
+				slot="page-sidebar"
+			/>
+		)
+	}
+</PageLayout>
+
+<style></style>
