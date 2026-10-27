@@ -5,9 +5,11 @@ import { getLocale } from "@/i18n";
 interface Props {
 	date: Date;
 	format?: "long" | "short";
+	// optional 24-hour "HH:MM" time, shown with the date in the locale's format
+	time?: string;
 }
 
-const { date, format = "long" } = Astro.props;
+const { date, format = "long", time } = Astro.props;
 
 const options: Intl.DateTimeFormatOptions =
 	format === "long"
@@ -23,8 +25,19 @@ const options: Intl.DateTimeFormatOptions =
 				day: "numeric",
 			};
 
+const [hours, minutes] = (time || "").split(":").map(Number);
+const hasTime = time !== undefined && !isNaN(hours) && !isNaN(minutes);
+const dateTime = new globalThis.Date(date);
+if (hasTime) {
+	dateTime.setHours(hours, minutes);
+}
+
+// e.g. "Vendredi 6 novembre 2026 à 19:00" / "Friday, November 6, 2026 at 7:00 PM"
 const formattedDate = capitalizeFirstLetter(
-	date.toLocaleDateString(getIntlLocale(getLocale(Astro.currentLocale)), options),
+	dateTime.toLocaleString(
+		getIntlLocale(getLocale(Astro.currentLocale)),
+		hasTime ? { ...options, hour: "numeric", minute: "2-digit" } : options,
+	),
 );
 ---
 

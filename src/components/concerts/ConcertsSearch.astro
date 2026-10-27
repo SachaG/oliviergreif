@@ -11,6 +11,7 @@ const locale = getLocale(Astro.currentLocale);
 		id="searchInput"
 		name="search"
 		type="text"
+		placeholder={getString("catalogue.recherche_exemple", { locale }).t}
 		aria-label={getString("catalogue.rechercher", { locale }).t}
 	/>
 </SidebarBlock>
@@ -22,5 +23,9 @@ const locale = getLocale(Astro.currentLocale);
 		border: var(--border);
 		padding: var(--quarterSpacing);
 		font-family: var(--fontFamilySecondary);
+		&::placeholder {
+			color: var(--textColor);
+			opacity: 0.5;
+		}
 	}
 </style>

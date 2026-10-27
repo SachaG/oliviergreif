@@ -528,4 +528,24 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 	.search-item.hidden {
 		display: none;
 	}
+
+	.text-content {
+		h3 {
+			margin-top: var(--doubleSpacing);
+		}
+		ul,
+		ol,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			margin-bottom: var(--spacing);
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 </style>

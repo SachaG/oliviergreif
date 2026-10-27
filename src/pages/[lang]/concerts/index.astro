@@ -16,6 +16,7 @@ import Layout from "@layouts/Layout.astro";
 import type { ConcertWithId } from "@/types";
 import ConcertsSearch from "@components/concerts/ConcertsSearch.astro";
 import { getLocale, getLocaleStaticPaths } from "@/i18n";
+import SubgridWrapper from "@components/layouts/SubgridWrapper.astro";
 
 export const getStaticPaths = () => getLocaleStaticPaths();
 
@@ -30,9 +31,9 @@ const locale = getLocale(Astro.currentLocale);
 
 <Layout title={getString("concerts", { locale })?.t}>
 	<PageLayout sectionId={sectionId}>
-		{
-			concertsByYear.map((yearItem) => (
-				<SubgridLayout slot="page-content">
+		<SubgridWrapper slot="page-content">
+			{concertsByYear.map((yearItem) => (
+				<SubgridLayout>
 					<div slot="col1">
 						<h4>{yearItem.year}</h4>
 					</div>
@@ -42,8 +43,8 @@ const locale = getLocale(Astro.currentLocale);
 						))}
 					</div>
 				</SubgridLayout>
-			))
-		}
+			))}
+		</SubgridWrapper>
 		<ConcertsSearch slot="page-sidebar" />
 	</PageLayout>
 </Layout>

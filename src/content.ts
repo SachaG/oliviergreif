@@ -141,6 +141,7 @@ export enum SectionId {
 	LIENS = "liens",
 	ACTUALITES = "actualites",
 	PHOTOS = "photos",
+	A_PROPOS = "a_propos",
 }
 
 export const convertTitle = (title: string = "") =>
@@ -394,7 +395,8 @@ export const getPhotoThumbnailUrl = (photo: Photo) =>
 	`/images/photos/thumbnails/${photo.image}`;
 
 // TODO: point to /images/photos/fullsize/ once full-size images are in place
-export const getPhotoFullsizeUrl = (photo: Photo) => getPhotoThumbnailUrl(photo);
+export const getPhotoFullsizeUrl = (photo: Photo) =>
+	getPhotoThumbnailUrl(photo);
 
 // Sections
 

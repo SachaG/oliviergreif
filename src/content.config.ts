@@ -155,6 +155,11 @@ const concerts = defineCollection({
 		id: z.string(),
 		titre: z.string(),
 		rawDate: z.string(),
+		// start time, 24-hour "HH:MM"; formatted per locale when displayed
+		heure: z
+			.string()
+			.regex(/^\d{2}:\d{2}$/)
+			.optional(),
 		oeuvres: z.array(oeuvreReference()).optional(),
 		interpretes: z.string(),
 		adresse: z.string(),

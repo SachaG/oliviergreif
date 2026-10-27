@@ -20,7 +20,7 @@ const FullBio = locale === "en" ? FullBioEn : FullBioFr;
 <Layout title={getString("biographie", { locale })?.t}>
 	<PageLayout sectionId={SectionId.BIOGRAPHIE} hasSidebar={false}>
 		<div slot="page-content">
-			<div class="biographie">
+			<div class="biographie text-content">
 				<div class="biographie-short">
 					<h2>
 						<T k="biographie.short" />
@@ -39,23 +39,6 @@ const FullBio = locale === "en" ? FullBioEn : FullBioFr;
 </Layout>
 
 <style>
-	.biographie {
-		h3 {
-			margin-top: var(--doubleSpacing);
-		}
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6,
-		p {
-			margin-bottom: var(--spacing);
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
 	.biographie-short {
 		border: 1px solid var(--borderColor);
 		padding: var(--spacing);

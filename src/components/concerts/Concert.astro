@@ -10,7 +10,8 @@ import Link from "@components/Link.astro";
 const { id, variant = "full" } = Astro.props;
 const concert = getConcert(id);
 
-const { interpretes, adresse, date, titre, commentaire, oeuvres } = concert;
+const { interpretes, adresse, date, heure, titre, commentaire, oeuvres } =
+	concert;
 const showFull = variant === "full";
 ---
 
@@ -24,7 +25,7 @@ const showFull = variant === "full";
 				<T k="concerts" />
 			</Link>{" "} -->
 			<!-- / -->
-			<Date date={date} />
+			<Date date={date} time={heure} />
 		</h3>
 		<h2>{titre}</h2>
 	</div>

@@ -1,20 +1,22 @@
 ---
 import PageLayout from "@components/layouts/PageLayout.astro";
-import { getString } from "@/content";
+import { getString, SectionId } from "@/content";
 import T from "@components/T.astro";
 import Layout from "@layouts/Layout.astro";
 import { getLocale, getLocaleStaticPaths } from "@/i18n";
-
+import { Content as AssociationEn } from "@content/association.en.mdx";
+import { Content as AssociationFr } from "@content/association.fr.mdx";
 export const getStaticPaths = () => getLocaleStaticPaths();
 
 const locale = getLocale(Astro.currentLocale);
+
+const Association = locale === "en" ? AssociationEn : AssociationFr;
 ---
 
 <Layout title={getString("a_propos", { locale })?.t}>
-	<PageLayout>
-		<div slot="page-content">
-			<h2><T k="a_propos" /></h2>
-			<p><T k="a_venir" /></p>
+	<PageLayout sectionId={SectionId.A_PROPOS} hasSidebar={false}>
+		<div slot="page-content" class="text-content">
+			<Association />
 		</div>
 	</PageLayout>
 </Layout>

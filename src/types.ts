@@ -51,6 +51,8 @@ export type Concert = {
 	id: string;
 	rawDate: string;
 	date: Date;
+	// start time, 24-hour "HH:MM"
+	heure?: string;
 	annee?: number;
 	titre: string;
 	oeuvres?: OeuvreReference[];

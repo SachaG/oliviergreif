@@ -10,6 +10,7 @@ const concert = getConcert(id);
 
 const {
 	date,
+	heure,
 	titre,
 	oeuvres,
 	// interpretes,
@@ -19,15 +20,13 @@ const {
 ---
 
 <div class="concert concert-compact search-item" data-titre={titre}>
-	<Date date={date} />
+	<Date date={date} time={heure} />
 	<FeedItemHeading path={getPath(concert)} content={titre} />
-	{
-		oeuvres && (
-			<div class="concert-compact-oeuvres">
-				<CatalogueRelated oeuvres={oeuvres} />
-			</div>
-		)
-	}
+	{oeuvres && (
+		<div class="concert-compact-oeuvres">
+			<CatalogueRelated oeuvres={oeuvres} />
+		</div>
+	)}
 </div>
 
 <style>
@@ -37,7 +36,7 @@ const {
 		}
 	}
 	.concert-compact-oeuvres {
-		border-left: var(--border);
-		padding-left: var(--spacing);
+		/* border-left: var(--border); */
+		/* padding-left: var(--spacing); */
 	}
 </style>

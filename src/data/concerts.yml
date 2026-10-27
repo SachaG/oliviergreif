@@ -7,6 +7,299 @@
 #   commentaire: >
 #       <p>Œuvres de Liszt, Scriabine, Grieg, Bizet.</p>
 
+- rawDate: "22/01/27"
+  titre: "Requiem à Leipzig"
+  id: "requiem_a_leipzig"
+  interpretes: "MDR Radio Chor, direction Lionel Sow."
+  adresse: ""
+  commentaire: >
+      <p>Détails à venir.</p>
+
+- rawDate: "06/11/26"
+  heure: "19:00"
+  titre: "Sonate de Requiem à Malakoff"
+  id: "sonate_de_requiem_a_malakoff"
+  oeuvres:
+      - "Sonate de Requiem"
+  interpretes: "Maëlise Parisot, violoncelle et Fanny Machet, piano"
+  adresse: "Conservatoire Nina Simone, 66-68 bd Gabriel Péri 92240 Malakoff"
+  commentaire: >
+      <p>Œuvres de Gabriel Fauré et Nadia Boulanger</p>
+
+- rawDate: "30/09/26"
+  heure: "20:00"
+  titre: "Quintette à Laon"
+  id: "quintette_a_laon"
+  oeuvres:
+      - "Quintette pour Piano et cordes “A tale of the world”"
+  interpretes: "Quintette Syntonia: Stéphanie Moraly et Thibault Noally, violon; Caroline Donin, alto; Patrick Langot, violoncelle; Romain David, piano."
+  adresse: "Église Saint-Martin, place Sœur Marie-Catherine, 02000 Laon"
+  commentaire: >
+      <p>Et <em>Sérénade</em> d’Albert Roussel.</p>
+
+- rawDate: "04/06/26"
+  heure: "12:30"
+  titre: "Sonate de Requiem à Bagneux"
+  id: "sonate_de_requiem_a_bagneux"
+  oeuvres:
+      - "Sonate de Requiem"
+  interpretes: "Maëlise Parisot, violoncelle et Fanny Machet, piano."
+  adresse: "Maison de la musique et de la danse, 4 rue Etienne Dolet 92220 Bagneux"
+  commentaire: >
+      <p>Œuvres de Gabriel Fauré et Nadia Boulanger.</p>
+
+- rawDate: "31/05/26"
+  heure: "17:00"
+  titre: "Chérence à Copernic"
+  id: "cherence_a_copernic"
+  oeuvres:
+      - "Sonate pour piano n° 22 “Les plaisirs de Chérence”"
+  interpretes: "Samuel Bismut et Ilan Zajtmann, piano."
+  adresse: "Synagogue Copernic, 24 rue Copernic, 75116 Paris"
+  commentaire: >
+      <p>Samuel Bismut jouera <em>Le carillon de Chérence</em>, dernier mouvement de la sonate <em>Les plaisirs de Chérence</em>.<br />Œuvres de Schubert (dont la fantaisie en fa mineur à quatre mains) et Liszt.</p>
+
+- rawDate: "03/05/26"
+  heure: "16:00"
+  titre: "Sonate dans le goût ancien à Angers"
+  id: "sonate_dans_le_gout_ancien_a_angers"
+  oeuvres:
+      - "Sonate n°14 pour piano “Dans le Goût Ancien”"
+  interpretes: "Laurent Durupt, piano."
+  adresse: "Le hangar. 128 avenue Patton, Angers."
+  commentaire: >
+      <p>Récital de piano “Dans le goût ancien”. Œuvres de Jean-Philippe Rameau et Laurent Durupt. Entrée libre, participation aux frais.</p>
+
+- rawDate: "09/04/26"
+  heure: "19:30"
+  titre: "Sonate dans le goût ancien à Paris"
+  id: "sonate_dans_le_gout_ancien_a_paris"
+  oeuvres:
+      - "Sonate n°14 pour piano “Dans le Goût Ancien”"
+  interpretes: "Laurent Durupt, piano"
+  adresse: "Conservatoire Municipal Darius Milhaud 2 impasse Vandal, Paris 14e"
+  commentaire: >
+      <p>Œuvres de Laurent Durupt, Olivier Greif, Ludwig Van Beethoven, Isaac Schankler</p>
+
+- rawDate: "15/01/26"
+  heure: "20:00"
+  titre: "Concert Olivier Greif à la maison de Radio-France"
+  id: "concert_olivier_greif_a_la_maison_de_radio_france"
+  oeuvres:
+      - "Requiem"
+      - "Sonate de Requiem"
+      - "Sonate pour piano n° 22 “Les plaisirs de Chérence”"
+      - "Sonate pour 2 Violoncelles “The Battle of Agincourt”"
+      - "Quintette pour Piano et cordes “A tale of the world”"
+  interpretes: "Chœur de Radio-France dir. Lionel Sow, Emmanuelle Bertrand et Patrick Langot violoncelle, Pascal Amoyel piano, quintette Syntonia. Présentation Saskia de Ville."
+  adresse: "Maison de Radio-France, 116 avenue du Président Kennedy, Paris 16ème"
+  commentaire: >
+      <p>Pour les œuvres instrumentales, seuls des extraits seront donnés.</p><p>Radio-France demande que l’on arrive 45 minutes plus tôt.</p>
+
+- rawDate: "13/01/26"
+  heure: "12:30"
+  titre: "Berceuses à Lyon"
+  id: "berceuses_a_lyon"
+  interpretes: "François Mardirossian, piano."
+  adresse: "Opéra de Lyon, place de la Comédie, 69001 Lyon"
+  commentaire: >
+      <p>Deux berceuses du Piano Book op. 78, <em>Berceuse</em> op. 78-02 et <em>Berceuse de la nuit des îles</em> op. 78-21, ont été données dans un récital de berceuses par une douzaine de compositeurs, de Brahms à Gershwin.</p>
+
+- rawDate: "20/11/25"
+  titre: "42ème rue"
+  id: "42eme_rue"
+  oeuvres:
+      - "Portrait de Johanne Margarethe Büchting"
+      - "Troubadours et Ménestrels"
+      - "Valse sur le nom de Godino"
+      - "Rondo pour Piano “42nd Street”"
+      - "Prélude pour Henri Barda"
+  interpretes: "Jonathan Benichou, piano"
+  adresse: "Association Chostakovitch, 19 bis rue du Bac, 75006 Paris"
+  commentaire: >
+      <p>Petit concert donné à l'occasion de l'assemblée générale de l'association Olivier Greif. </p>
+
+- rawDate: "16/11/25"
+  titre: "Requiem à Groningen"
+  id: "requiem_a_groningen"
+  oeuvres:
+      - "Requiem"
+  interpretes: "Jong Vocaal Groningen (chœur des jeunes de Groningen), dir. Merlijn Wackers et Noordelijk Vocaal Ensemble (Chœur nordique), dir. Leendert Runia."
+  adresse: "Groningen Akerk"
+  commentaire: >
+      <p>Œuvres de Francis Poulenc, Peteris Vasks, James MacMillan.</p>
+
+- rawDate: "16/11/25"
+  titre: "Codex Domini à l’Abbaye de La Prée"
+  id: "codex_domini_a_l_abbaye_de_la_pree"
+  oeuvres:
+      - "Sonate pour Piano n°21 “Codex Domini”"
+  interpretes: "Aline Piboule, piano."
+  adresse: "Abbaye de La Prée, 36100 Ségry"
+  commentaire: >
+      <p>Œuvres de Fauré et Liszt.</p>
+
+- rawDate: "02/11/25"
+  titre: "Requiem à Beilen"
+  id: "requiem_a_beilen"
+  oeuvres:
+      - "Requiem"
+  interpretes: "Jong Vocaal Groningen (chœur des jeunes de Groningen), dir. Merlijn Wackers et Noordelijk Vocaal Ensemble (Chœur nordique), dir. Leendert Runia."
+  adresse: "Beilen Stefanuskerk"
+  commentaire: >
+      <p>Œuvres de Francis Poulenc, Peteris Vasks, James MacMillan.</p>
+
+- rawDate: "01/11/25"
+  titre: "Requiem à Leeuwarden"
+  id: "requiem_a_leeuwarden"
+  oeuvres:
+      - "Requiem"
+  interpretes: "Jong Vocaal Groningen (Chœur des jeunes de Groningen), dir. Merlijn Wackers et Noordelijk vocaal ensemble (Ensemble vocal nordique), dir. Leendert Runia."
+  adresse: "Leeuwarden Grote of Jacobijnerkerk"
+  commentaire: >
+      <p>Œuvres de Francis Poulenc, Peteris Vasks, James MacMillan.</p>
+
+- rawDate: "07/08/25"
+  titre: "Sonate dans le goût ancien à Lods"
+  id: "sonate_dans_le_gout_ancien_a_lods"
+  oeuvres:
+      - "Sonate n°14 pour piano “Dans le Goût Ancien”"
+  interpretes: "Laurent Durupt, piano"
+  adresse: "Église Saint-Théodule, 2 rue du Château, 25930 Lods"
+  commentaire: >
+      <p>Œuvres de Rameau, Rachmaninov.<br />Dans le cadre des Estivales de Lods.</p>
+
+- rawDate: "25/07/25"
+  titre: "Quatuor n°2 dans le Vermont"
+  id: "quatuor_n2_dans_le_vermont"
+  oeuvres:
+      - "Quatuor à Cordes n°2 avec Voix"
+  interpretes: "Nathaniel Sullivan, baryton; Alice Van Leuven et Astrid Nakamura, violon; Matthew McDowell, alto; Jean-Michel Fonteneau, violoncelle."
+  adresse: "The Big Barn, Putney, Vermont, États-Unis"
+  commentaire: >
+      <p>Œuvres de Monteverdi, Brahms, Benson, Taïra.</p>
+
+- rawDate: "19/06/25"
+  titre: "42ème rue dans le 8ème"
+  id: "42eme_rue_dans_le_8eme"
+  oeuvres:
+      - "Rondo pour Piano “42nd Street”"
+  interpretes: "Jonathan Benichou, piano."
+  adresse: "Mairie du 8ème arrondissement, 3 rue de Lisbonne 75008 Paris"
+  commentaire: >
+      <p>Œuvres de Rameau, Fauré, Liszt, Saint-Saens. Entrée libre.</p>
+
+- rawDate: "21/05/25"
+  titre: "Vingt-cinq ans: 2000-2025"
+  id: "vingt_cinq_ans_2000_2025"
+  oeuvres:
+      - "Sonate pour Piano n°21 “Codex Domini”"
+      - "Sonate pour 2 Violoncelles “The Battle of Agincourt”"
+      - "Sonate n°9 pour Piano “Suite Paradisiac Memories”"
+  interpretes: "Aline Piboule et Jonathan Benichou, piano; François Salque et Aurélien Pascal, violoncelle."
+  adresse: "Temple du Foyer de l'Âme, 7bis rue du Pasteur Wagner, 75011 Paris"
+  commentaire: >
+      <p>Hommage à Olivier Greif pour le vingt-cinquième anniversaire de sa disparition. </p>
+
+- rawDate: "06/04/25"
+  titre: "Sonate de Requiem à Saint-Dié"
+  id: "sonate_de_requiem_a_saint_die"
+  oeuvres:
+      - "Sonate de Requiem"
+  interpretes: "Emmanuelle Bertrand, violoncelle et Pascal Amoyel, piano."
+  adresse: "Espace George-Sadoul, Saint-Dié les Vosges."
+  commentaire: >
+      <p>Un extrait de la Sonate de Requiem est donné, ainsi que de nombreuses autres œuvres, au cours d'un spectacle musical intitulé <em>Le Block 15</em>, qui raconte le séjour à Auschwitz de la violoncelliste Anita Lasker-Wallfisch, membre de l'orchestre féminin du camp, âgée aujourd'hui de 99 ans. Le petit-fils de celle-ci, Simon Wallfisch, violoncelliste lui-même et baryton, a chanté Les Lettres de Westerbork dans un concert Olivier Greif donné le 24 janvier 2019 à Newcastle.</p>
+
+- rawDate: "01/04/25"
+  titre: "Chants de l’Âme à Grenoble – Annulé"
+  id: "chants_de_l_ame_a_grenoble_annule"
+  oeuvres:
+      - "Les Chants de l’Âme"
+  interpretes: "Chrystèle Chovelon,mezzo soprano et Florence Cioccolani, piano"
+  adresse: "Musée de Grenoble, auditorium 5, Place de Lavalette 38000 Grenoble"
+  commentaire: ""
+
+- rawDate: "09/02/25"
+  titre: "Agincourt à Cornimont"
+  id: "agincourt_a_cornimont"
+  oeuvres:
+      - "Sonate pour 2 Violoncelles “The Battle of Agincourt”"
+  interpretes: "Diego Cardoso et Stann Duguet, violoncelles"
+  adresse: "Atelier de Cherménil, 88310 Cornimont"
+  commentaire: >
+      <p>Œuvres de Erwan LeGuen, Kalie Akel</p>
+
+- rawDate: "08/02/25"
+  titre: "Agincourt au Tholy"
+  id: "agincourt_au_tholy"
+  oeuvres:
+      - "Sonate pour 2 Violoncelles “The Battle of Agincourt”"
+  interpretes: "Diego Cardoso et Stann Duguet, violoncelles"
+  adresse: "Le Pantographe, 29 chemin de Housseramont, 88530 Le Tholy"
+  commentaire: >
+      <p>Œuvres de Erwan LeGuen, Kalie Akel</p>
+
+- rawDate: "07/02/25"
+  titre: "Agincourt à Gerbépal"
+  id: "agincourt_a_gerbepal"
+  oeuvres:
+      - "Sonate pour 2 Violoncelles “The Battle of Agincourt”"
+  interpretes: "Diego Cardoso et Stann Duguet, violoncelles"
+  adresse: "Dojo de Martimpré, 88430 Gerbépal"
+  commentaire: >
+      <p>Œuvres d'Erwan LeGuen, Kalie Akel</p>
+
+- rawDate: "16/12/24"
+  titre: "Sonate dans le goût ancien à Riom"
+  id: "sonate_dans_le_gout_ancien_a_riom"
+  oeuvres:
+      - "Sonate n°14 pour piano “Dans le Goût Ancien”"
+  interpretes: "Philippe Hattat, piano"
+  adresse: "Auvergne Piano, Riom 63200"
+  commentaire: >
+      <p>Et Bach, Schubert. Concert privé.</p>
+
+- rawDate: "17/11/24"
+  titre: "Tombeau de Ravel dans le XXème"
+  id: "tombeau_de_ravel_dans_le_xxeme"
+  oeuvres:
+      - "Le Tombeau de Ravel"
+  interpretes: "Sandra Chamoux et Laurence Garcin, piano."
+  adresse: "Les rendez-vous d'ailleurs, 109 rue des Haies, 75020 Paris"
+  commentaire: >
+      <p>À 18h, Sandra Chamoux jouera <em>Éphémères</em> de Philippe Hersant. À 19h, Philippe Hersant et Graziane Finzi parleront de leurs œuvres (et sans doute d'Olivier Greif, qu'ils ont bien connu tous les deux). À 20h, les deux pianistes joueront <em>Le tombeau de Ravel</em> et des œuvres à quatre mains de Philippe Hersant, Graziane Finzi et Maurice Ravel. </p>
+
+- rawDate: "10/11/24"
+  titre: "Solo from Nô dans le dixième"
+  id: "solo_from_no_dans_le_dixieme"
+  oeuvres:
+      - "Solo from “Nô”"
+  interpretes: "Patrick Langot, violoncelle."
+  adresse: "Galerie P.O.S 49 rue d'Hauteville, 75010 Paris"
+  commentaire: >
+      <p>Dans le cadre de l'exposition d'Étienne Yver, <em>Le réel et son double</em>. Œuvres de Bach, Beethoven, Ravel, Honnegger, Milhaud.</p>
+
+- rawDate: "25/10/24"
+  titre: "Agincourt à Azincourt"
+  id: "agincourt_a_azincourt"
+  oeuvres:
+      - "Sonate pour 2 Violoncelles “The Battle of Agincourt”"
+  interpretes: "Diego Cardoso et Stann Duguet, violoncelles"
+  adresse: "Musée de la bataille d’Azincourt, 24 rue Charles VI, 62310 Azincourt"
+  commentaire: >
+      <p>Œuvres de Erwan LeGuen, Kalie Akel</p>
+
+- rawDate: "24/07/24"
+  titre: "Codex Domini à La Meije"
+  id: "codex_domini_a_la_meije"
+  oeuvres:
+      - "Sonate pour Piano n°21 “Codex Domini”"
+  interpretes: "Aline Piboule, piano"
+  adresse: "Église de La Grave, Place de l'Église, 05320 La Grave"
+  commentaire: >
+      <p>Festival Messiaen au pays de La Meije. Œuvres de Paul Dukas, Olivier Messiaen, Toru Takemitsu, Odette Gartenlaub, Maurice Emmanuel.</p>
+
 - rawDate: "04/06/24"
   titre: "Paradisiac Memories à Meudon"
   id: "paradisiac_memories_a_meudon"
@@ -28,6 +321,26 @@
       <p>Ruines, un récital littéraire avec Pascal Quignard et Aline Piboule</p>
       <p>“Il y a des écrivains de la paix. Il y a des écrivains de la guerre. Il y a des écrivains des ruines. Je suis un écrivain des ruines. J'ai passé mon enfance dans les décombres d'un port entièrement détruit par l'aviation alliée. Il a fallu attendre sept ans avant que la ville commence à se dresser de nouveau face à la mer (…) Avec la merveilleuse musicienne Aline Piboule nous avons construit un récit récital autour de la Fantaisie de Schumann opus 17. Schumann l'avait lui-même intitulé Ruines. Cette extraordinaire déclaration d'amour adressée à Clara est entourée d'autres œuvres de Bach à Adès, du baroque à aujourd'hui.” – <em>Pascal Quignard </em></p>
       <p>Parmi ces autres œuvres figure le deuxième mouvement de la <em>Sonate de guerre</em> d’Olivier Greif.</p>
+
+- rawDate: "11/05/24"
+  titre: "Symphonie à Villers-sur-mer"
+  id: "symphonie_a_villers_sur_mer"
+  oeuvres:
+      - "Symphonie version voix et orgue"
+  interpretes: "Catherine Gouillard, orgue et Francisco Manalich, ténor."
+  adresse: "Église Saint-Martin"
+  commentaire: >
+      <p>Version pour orgue et chant de la Symphonie réalisée par Olivier Dekeister.<br />Œuvres de Guy de Lioncourt, Léo Delibes, André Messager</p>
+
+- rawDate: "10/05/24"
+  titre: "Symphonie à Honfleur"
+  id: "symphonie_a_honfleur"
+  oeuvres:
+      - "Symphonie version voix et orgue"
+  interpretes: "Catherine Gouillard, orgue, et Francisco Manalich, ténor."
+  adresse: "Église Saint-Catherine"
+  commentaire: >
+      <p>Version pour orgue et voix de la Symphonie réalisée par Olivier Dekeister.<br />Œuvres de Guy de Lioncourt, Léo Delibes, André Messager.</p>
 
 - rawDate: "09/04/24"
   titre: "Codex Domini à Reims"

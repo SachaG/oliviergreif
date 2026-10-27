@@ -13,7 +13,7 @@ const { className } = Astro.props;
 	</div>
 </section>
 
-<style lang="scss" type="text/scss">
+<style lang="scss" type="text/scss" is:global>
 	@use "@styles/_breakpoints.scss" as *;
 	.subgrid-layout {
 		@include breakpointOver(lg) {
@@ -34,6 +34,11 @@ const { className } = Astro.props;
 	}
 
 	.subgrid-heading {
+		&,
+		& h3,
+		& h4 {
+			font-family: var(--fontFamilyPrimary);
+		}
 		@include breakpointUnder(lg) {
 			margin-bottom: var(--spacing);
 		}
