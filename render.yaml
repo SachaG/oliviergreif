@@ -5,7 +5,8 @@ services:
     runtime: node
     region: frankfurt
     plan: free # sleeps after 15 min idle, ~1 min to wake up; nothing is stored on the server
-    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm --filter admin build
+    # `corepack pnpm` instead of `corepack enable`: Render already has a pnpm in /usr/bin, which is read-only
+    buildCommand: corepack pnpm install --frozen-lockfile && corepack pnpm --filter admin build
     startCommand: node admin/dist/server/entry.mjs
     healthCheckPath: /healthz
     # commits made by the admin only touch site/ data, so they don't redeploy it
