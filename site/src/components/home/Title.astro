@@ -25,6 +25,9 @@ import T from "@components/T.astro";
 	.section-title {
 		view-transition-name: title;
 		grid-area: title;
+		@include breakpointUnder(sm) {
+			padding: var(--spacing);
+		}
 	}
 	@include breakpointUnder(lg) {
 		.section-title-1 {

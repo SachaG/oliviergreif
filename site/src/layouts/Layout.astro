@@ -242,7 +242,7 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		smoothly with the viewport down to --font-base-min on phones.
 		*/
 		--font-base: 1.25rem;
-		--font-base-min: calc(var(--font-base) * 0.8);
+		--font-base-min: calc(var(--font-base) * 0.9);
 		/* how fast the size grows with the viewport between the two */
 		--font-fluid: 0.45vw;
 		/* ratio between consecutive steps of the --fs-* scale */
@@ -457,8 +457,13 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		}
 	}
 
-	a.link-heading {
+	a.link-button {
 		font-family: var(--fontFamilySecondary);
+		display: block;
+		border: var(--border);
+		padding: 10px;
+	}
+	a.link-heading {
 		position: relative;
 		display: block;
 		&::after {
@@ -529,6 +534,10 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		display: none;
 	}
 
+	.main-content {
+		@include breakpointUnder(sm) {
+		}
+	}
 	.text-content {
 		h3 {
 			margin-top: var(--doubleSpacing);

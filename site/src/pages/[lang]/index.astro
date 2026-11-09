@@ -30,13 +30,17 @@ export const getStaticPaths = () => getLocaleStaticPaths();
 		background: #6aab9c;
 		height: 100vh;
 		width: 100vw;
-		gap: 5px;
 		@include breakpointUnder(lg) {
 			display: flex;
 			flex-direction: column;
+			.home-section {
+				border-bottom: 5px solid #6aab9c;
+			}
 		}
 		@include breakpointOver(lg) {
 			display: grid;
+
+			gap: 5px;
 			grid-template-columns: repeat(6, 1fr);
 			grid-template-rows: 1fr 1fr 1fr;
 			/* grid-template-areas:

@@ -36,18 +36,26 @@ const SectionComponent = getSectionComponent(sectionId);
 
 		<div class="home-section-footer">
 			<Link
-				class="home-section-expand"
+				class="home-section-expand home-section-expand-desktop"
 				href={getSectionPath(sectionId)}
 				data-transition-name={`heading-${sectionId}`}
 			>
 				<PlusIcon />
 				<T k="voir_plus" hidden={true} />
 			</Link>
+			<Link
+				class="home-section-expand home-section-expand-mobile link-button"
+				href={getSectionPath(sectionId)}
+				data-transition-name={`heading-${sectionId}`}
+			>
+				<T k="voir_plus" />
+			</Link>
 		</div>
 	</div>
 </section>
 
 <style lang="scss" is:global define:vars={{ sectionId, color, inverted }}>
+	@use "@styles/_breakpoints.scss" as *;
 	.home-section {
 		view-transition-name: var(--sectionId);
 		grid-area: var(--sectionId);
@@ -101,22 +109,36 @@ const SectionComponent = getSectionComponent(sectionId);
 	.home-section-footer {
 		display: flex;
 		justify-content: flex-end;
+		@include breakpointUnder(lg) {
+			padding: var(--spacing);
+		}
 	}
 	.home-section-expand {
-		border-top: var(--border);
-		border-left: var(--border);
-		padding: 10px;
-		svg {
-			height: 24px;
-			width: 24px;
-		}
-		&:hover {
-			border-color: var(--linkHoverColor);
+		&-desktop {
+			padding: 10px;
+			border-top: var(--border);
+			border-left: var(--border);
 			svg {
-				color: var(--linkHoverColor);
+				height: 24px;
+				width: 24px;
+			}
+			&:hover {
+				border-color: var(--linkHoverColor);
+				svg {
+					color: var(--linkHoverColor);
+				}
+			}
+			@include breakpointUnder(lg) {
+				display: none;
+			}
+		}
+		&-mobile {
+			@include breakpointOver(lg) {
+				display: none;
 			}
 		}
 	}
+
 	.section-inverted {
 		a {
 			color: var(--invertedTextColor);

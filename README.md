@@ -2,7 +2,7 @@
 
 A pnpm workspace with three packages:
 
-- `site/`: the static Astro site, deployed to GitHub Pages by `.github/workflows/deploy.yml`
+- `site/`: the static Astro site, deployed as a Render static site
 - `admin/`: a password-protected app for editing concerts and actualités, deployed to Render (`render.yaml`)
 - `shared/`: the content schemas and locale list used by both
 
