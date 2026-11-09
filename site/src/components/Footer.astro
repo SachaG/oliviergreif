@@ -1,57 +1,58 @@
 ---
-
-import { getFooterLinks } from '@/content';
-import T from '@components/T.astro';
+import { getFooterLinks } from "@/content";
+import T from "@components/T.astro";
 import Link from "@components/Link.astro";
 import LanguageSwitcher from "@components/LanguageSwitcher.astro";
 const year = new Date().getFullYear();
 
+const { variant } = Astro.props;
 ---
 
-<div class="home-section section-footer footer">
-    <div class="bg"></div>
-    <div class="content">
-<ul class="items-list">
-    {getFooterLinks().map((link)=><li><Link href={`/${link.id}`}><T k={link.id}/></Link></li> )}
-    </ul>
-<LanguageSwitcher className="footer-language" />
-<p>&copy; Association Olivier Greif {year}</p>
-</div>
+<div class={`home-section section-footer footer footer-${variant}`}>
+	<div class="bg"></div>
+	<div class="content">
+		<ul class="items-list footer-items-list">
+			{getFooterLinks().map((link) => (
+				<li>
+					<Link href={`/${link.id}`}>
+						<T k={link.id} />
+					</Link>
+				</li>
+			))}
+		</ul>
+		<LanguageSwitcher className="footer-language" />
+		<p>&copy; Association Olivier Greif {year}</p>
+	</div>
 </div>
 
-<style>
+<style lang="scss">
+	@use "@styles/_breakpoints.scss" as *;
+
 	.footer {
 		font-family: var(--fontFamilySecondary);
 
 		text-align: center;
 		// margin-top: var(--spacing);
 		padding: var(--spacing);
-        display: grid;
-        place-items: center;
+		display: grid;
+		place-items: center;
+		&-page {
+			border-top: var(--border);
+			.items-list {
+				flex-direction: row;
+				gap: var(--spacing);
+			}
+		}
 	}
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        margin-bottom: var(--halfSpacing);
-        display: flex;
-        flex-direction: column;
-        gap: var(--quarterSpacing);
-        li {
-            padding: 0;
-            margin: 0;
-        }
-    }
-    a {
-        font-size: 0.9rem;
-    }
-    :global(.footer-language ul) {
-        justify-content: center;
-        margin-bottom: var(--halfSpacing);
-    }
-    p{
-        font-size: 0.7rem;
+	a {
+		font-size: 0.9rem;
+	}
+	:global(.footer-language ul) {
+		justify-content: center;
+		margin-bottom: var(--halfSpacing);
+	}
+	p {
+		font-size: 0.7rem;
 		text-transform: uppercase;
-
-    }
+	}
 </style>

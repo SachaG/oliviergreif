@@ -15,17 +15,28 @@ const { className } = Astro.props;
 
 <style lang="scss" type="text/scss" is:global>
 	@use "@styles/_breakpoints.scss" as *;
+
+	.subcontainer {
+		@include breakpointUnder(lg) {
+			border-bottom: var(--border);
+			padding-bottom: var(--spacing);
+			margin-bottom: var(--spacing);
+		}
+	}
 	.subgrid-layout {
 		@include breakpointOver(lg) {
 			display: grid;
 			grid-template-columns: subgrid;
 			grid-column: 1/-1;
+			padding-bottom: var(--doubleSpacing);
 		}
 	}
 
 	.col1 {
-		border-right: var(--border);
-		padding-right: var(--doubleSpacing);
+		@include breakpointOver(lg) {
+			border-right: var(--border);
+			padding-right: var(--doubleSpacing);
+		}
 	}
 
 	/* hide a group (year, number of instruments…) once search has hidden all its items */

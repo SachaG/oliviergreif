@@ -457,6 +457,11 @@ const getOgLocale = (l: (typeof locales)[number]) =>
 		}
 	}
 
+	.subheading {
+		@include breakpointUnder(lg) {
+			font-size: 1rem;
+		}
+	}
 	a.link-button {
 		font-family: var(--fontFamilySecondary);
 		display: block;

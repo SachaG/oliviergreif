@@ -6,6 +6,7 @@ import LanguageSwitcher from "@components/LanguageSwitcher.astro";
 import type { Locale } from "@/i18n";
 import { getSectionIcon } from "@/icons";
 import ArrowIcon from "@components/icons/ArrowIcon.astro";
+import Footer from "@components/Footer.astro";
 
 interface Props {
 	sectionId?: SectionId;
@@ -46,7 +47,6 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 					<T k="retour_accueil" locale={locale} />
 				</span>
 			</Link>
-
 			{parentPath && (
 				<Link
 					class="home-link"
@@ -68,11 +68,6 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 				</h2>
 			)}
 		</div>
-		{showLanguageSwitcher && (
-			<div class="page-heading-language">
-				<LanguageSwitcher />
-			</div>
-		)}
 	</div>
 	<div class="page-content grid">
 		<main class="page-main">
@@ -84,6 +79,9 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 			</div>
 		</div>
 	</div>
+	<div class="page-content-footer">
+		<Footer variant="page" />
+	</div>
 </div>
 
 <style lang="scss" is:global>
@@ -92,15 +90,20 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 	.page {
 		min-height: 100vh;
 		display: grid;
-		grid-template-rows: 130px 1fr;
+		/* minmax(0, …) so long unbroken content (bare URLs) wraps instead of
+		   widening the page, which makes phones zoom everything out */
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-rows: min-content 1fr;
+	}
+	.page-noSidebar {
+		.page-sidebar {
+			display: none;
+		}
 	}
 	.page-heading {
 		display: grid;
-		grid-template-columns: min-content 1fr auto;
+		grid-template-columns: min-content 1fr;
 		border-bottom: var(--border);
-		@include breakpointUnder(lg) {
-			grid-template-columns: 60px 1fr auto;
-		}
 	}
 	.page-heading-breadcrumbs {
 		display: flex;
@@ -112,6 +115,9 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 		@include breakpointUnder(lg) {
 			padding: 0 var(--spacing);
 		}
+		@include breakpointUnder(sm) {
+			padding: 0 var(--halfSpacing);
+		}
 	}
 	.home-link {
 		display: grid;
@@ -120,6 +126,7 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 		text-decoration: none;
 		border-right: var(--border);
 		vertical-align: middle;
+		padding: var(--halfSpacing);
 		&:hover {
 			background-color: var(--textColor);
 			color: var(--bgColor);
@@ -129,9 +136,11 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 			text-box-trim: trim-both;
 		}
 		@include breakpointUnder(lg) {
-			font-size: 2rem;
+			width: 50px;
 		}
 		@include breakpointOver(lg) {
+			width: 64px;
+
 			aspect-ratio: 1/1;
 		}
 	}
@@ -142,6 +151,9 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 		// background-color: var(--bgColor);
 		z-index: 100;
 		padding: var(--spacing);
+		@include breakpointUnder(sm) {
+			padding: var(--halfSpacing);
+		}
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -160,6 +172,7 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 		margin-bottom: var(--spacing);
 	}
 	.page-main {
+		overflow-wrap: break-word;
 		padding: var(--doubleSpacing);
 		display: flex;
 		flex-direction: column;
@@ -167,10 +180,6 @@ const SectionIcon = sectionId ? getSectionIcon(sectionId) : undefined;
 		.page-withSidebar & {
 			border-right: var(--border);
 			padding-right: var(--doubleSpacing);
-		}
-		.subgrid-layout {
-			padding-bottom: var(--doubleSpacing);
-			border-bottom: var(--border);
 		}
 	}
 

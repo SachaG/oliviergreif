@@ -10,7 +10,7 @@ $breakpoints: (
 
 @mixin breakpointUnder($size) {
 	@if map.has-key($breakpoints, $size) {
-		@media (max-width: map.get($breakpoints, $size)) {
+		@media (width <= map.get($breakpoints, $size)) {
 			@content;
 		}
 	} @else {
@@ -20,7 +20,7 @@ $breakpoints: (
 
 @mixin breakpointOver($size) {
 	@if map.has-key($breakpoints, $size) {
-		@media (min-width: map.get($breakpoints, $size)) {
+		@media (width > map.get($breakpoints, $size)) {
 			@content;
 		}
 	} @else {
