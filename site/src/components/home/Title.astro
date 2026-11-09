@@ -39,8 +39,15 @@ import T from "@components/T.astro";
 			display: flex;
 			flex-direction: column;
 			gap: var(--halfSpacing);
-			justify-content: center;
+			justify-content: safe center;
 			padding: var(--halfSpacing);
+			min-height: 0;
+			overflow: clip;
+			mask-image: linear-gradient(
+				to bottom,
+				#000 calc(100% - var(--halfSpacing)),
+				transparent
+			);
 		}
 		.section-title-1 {
 			text-align: right;
@@ -50,7 +57,7 @@ import T from "@components/T.astro";
 		.section-title-inner {
 			display: grid;
 			grid-template-columns: min-content 1fr;
-			grid-template-rows: 1fr;
+			grid-template-rows: minmax(0, 1fr);
 			gap: var(--spacing);
 			height: 100%;
 		}

@@ -41,8 +41,10 @@ export const getStaticPaths = () => getLocaleStaticPaths();
 			display: grid;
 
 			gap: 5px;
-			grid-template-columns: repeat(6, 1fr);
-			grid-template-rows: 1fr 1fr 1fr;
+			/* minmax(0, …) so that content can never stretch the grid past the
+			   viewport: anything too long is clipped inside its own cell */
+			grid-template-columns: repeat(6, minmax(0, 1fr));
+			grid-template-rows: repeat(3, minmax(0, 1fr));
 			/* grid-template-areas:
 			"title title title concerts concerts actualites "
 			"catalogue catalogue biographie biographie disques media"
@@ -52,6 +54,40 @@ export const getStaticPaths = () => getLocaleStaticPaths();
 				"title title title biographie biographie concerts "
 				"catalogue catalogue disques disques photos actualites"
 				" catalogue catalogue disques disques photos footer";
+
+			/* overflow: clip rather than hidden, so that focusing a clipped link
+			   can't scroll the cell's content out of place */
+			.home-section {
+				min-width: 0;
+				min-height: 0;
+				overflow: clip;
+			}
+			.home-section-inner {
+				grid-template-columns: minmax(0, 1fr);
+				grid-template-rows: min-content minmax(0, 1fr) min-content;
+			}
+			.home-section-heading a {
+				display: block;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			/* the fade covers only the bottom padding, so it's invisible unless
+			   the content actually runs into it */
+			.home-section-contents {
+				min-height: 0;
+				overflow: clip;
+				mask-image: linear-gradient(
+					to bottom,
+					#000 calc(100% - var(--spacing)),
+					transparent
+				);
+			}
+			/* "safe" keeps the top of the content visible when it's too tall to
+			   center, so only the bottom gets clipped */
+			.home-section.section-footer {
+				align-items: safe center;
+			}
 		}
 	}
 
