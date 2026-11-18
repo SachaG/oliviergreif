@@ -1,25 +1,21 @@
 ---
-import { getConcerts, getPath, getSectionPath, SectionId } from "@/content";
+import { getConcerts, getPath } from "@/content";
 import Date from "@components/Date.astro";
 import FeedItemHeading from "@components/FeedItemHeading.astro";
-import T from "@components/T.astro";
-import Concert from "@components/concerts/Concert.compact.astro";
-import Link from "@components/Link.astro";
 import { getLocale } from "@/i18n";
 
 const locale = getLocale(Astro.currentLocale);
 
-const concerts = getConcerts(locale);
-const concert = concerts.at(0)!;
+// local midnight today, so concerts happening today still count as upcoming
+const today = new globalThis.Date();
+today.setHours(0, 0, 0, 0);
 
-const {
-	date,
-	titre,
-	oeuvres,
-	// interpretes,
-	// adresse,
-	// commentaire,
-} = concert;
+// getConcerts is newest first: the next upcoming concert is the last one not
+// yet past; fall back to the most recent concert if none is scheduled
+const concerts = getConcerts(locale).filter((c) => !isNaN(c.date.getTime()));
+const concert = concerts.findLast((c) => c.date >= today) ?? concerts.at(0)!;
+
+const { date, titre } = concert;
 ---
 
 <section>
